@@ -11,6 +11,21 @@ body {
   @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
 }
 
+/* 시험 지문용 — 일본어 본문은 줄 간격을 넉넉히 주고 일본어 폰트를 우선 적용한다.
+   한국어 폰트가 먼저 잡히면 한자 자형이 한국식으로 나와 실전과 인상이 달라진다. */
+.ja-body {
+  font-family:
+    "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", "MS Mincho", serif;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.ja-ui {
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Meiryo", sans-serif;
+  line-height: 1.9;
+}
+
 .card-flip {
   perspective: 1000px;
 }

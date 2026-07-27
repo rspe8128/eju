@@ -21,7 +21,6 @@ import { jlptGrammarPoints } from "./data/jlptGrammar";
 import { jlptGrammarN3Points } from "./data/jlptGrammarN3";
 import { ejuAcademicVocab } from "./data/ejuAcademicVocab";
 import { SUBJECTS, UNITS, ITEMS } from "./data/subjectContent";
-import { BUILTIN_ANSWER_KEYS } from "./data/ejuAnswerKeys2018_1";
 import type { WordEntry } from "./data/japaneseWords";
 
 function makeDeck(id: string, subject: string, title: string, type: Deck["type"]): Deck {
@@ -257,7 +256,9 @@ export function getSeedData(): AppData {
     lastStudyDate: null,
     examProfile: DEFAULT_EXAM_PROFILE,
     examRecords: [],
-    answerKeys: BUILTIN_ANSWER_KEYS,
+    // 기출 정답표 기능은 걷어냈다(모의고사는 정답을 문항 데이터가 직접 들고 있다).
+    // 타입과 저장소는 남겨 두었으므로, 나중에 다시 필요해지면 여기만 채우면 된다.
+    answerKeys: [],
     examAttempts: [],
     planTargets: [
       {

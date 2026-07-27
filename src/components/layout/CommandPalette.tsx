@@ -12,7 +12,7 @@ const staticLinks = [
   { label: "일본어", href: "/study/japanese" },
   { label: "과목 용어", href: "/study/terms" },
   { label: "TOEFL", href: "/study/toefl" },
-  { label: "모의고사 타이머", href: "/mock" },
+  { label: "모의고사", href: "/mock" },
   { label: "약점 분석", href: "/stats" },
   { label: "교과목", href: "/study/subjects" },
   { label: "학습 플랜", href: "/plan" },

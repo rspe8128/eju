@@ -11,7 +11,7 @@ import {
   BookOpen,
   Languages,
   PenLine,
-  Timer,
+  FileText,
   CheckCircle2,
   Circle,
 } from "lucide-react";
@@ -38,7 +38,7 @@ const shortcuts = [
     subject: "toefl",
   },
   { href: "/writing", label: "기술(작문)", desc: "記述 연습", icon: PenLine, subject: "japanese" },
-  { href: "/mock", label: "모의고사", desc: "실전 타이머", icon: Timer, subject: "physics" },
+  { href: "/mock", label: "모의고사", desc: "풀고 바로 채점", icon: FileText, subject: "physics" },
   { href: "/stats", label: "약점 분석", desc: "정답률 · 잔디", icon: BarChart3, subject: "math" },
 ];
 

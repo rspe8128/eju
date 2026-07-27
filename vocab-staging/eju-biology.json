@@ -1,0 +1,2949 @@
+[
+  {
+    "subject": "biology",
+    "kanji": "生物学",
+    "kana": "せいぶつがく",
+    "romaji": "seibutsugaku",
+    "meaning": "생물학"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生物",
+    "kana": "せいぶつ",
+    "romaji": "seibutsu",
+    "meaning": "생물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞",
+    "kana": "さいぼう",
+    "romaji": "saibou",
+    "meaning": "세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞膜",
+    "kana": "さいぼうまく",
+    "romaji": "saiboumaku",
+    "meaning": "세포막"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞壁",
+    "kana": "さいぼうへき",
+    "romaji": "saibouheki",
+    "meaning": "세포벽"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞質",
+    "kana": "さいぼうしつ",
+    "romaji": "saiboushitsu",
+    "meaning": "세포질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "核",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "핵"
+  },
+  {
+    "subject": "biology",
+    "kanji": "核膜",
+    "kana": "かくまく",
+    "romaji": "kakumaku",
+    "meaning": "핵막"
+  },
+  {
+    "subject": "biology",
+    "kanji": "染色体",
+    "kana": "せんしょくたい",
+    "romaji": "senshokutai",
+    "meaning": "염색체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子",
+    "kana": "いでんし",
+    "romaji": "idenshi",
+    "meaning": "유전자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "DNA",
+    "kana": "ディーエヌエー",
+    "romaji": "dei-en'ue-",
+    "meaning": "DNA"
+  },
+  {
+    "subject": "biology",
+    "kanji": "RNA",
+    "kana": "アールエヌエー",
+    "romaji": "a-ruen'ue-",
+    "meaning": "RNA"
+  },
+  {
+    "subject": "biology",
+    "kanji": "塩基配列",
+    "kana": "えんきはいれつ",
+    "romaji": "enkihairetsu",
+    "meaning": "염기서열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヌクレオチド",
+    "kana": "ヌクレオチド",
+    "romaji": "n'ukureochido",
+    "meaning": "뉴클레오타이드"
+  },
+  {
+    "subject": "biology",
+    "kanji": "二重らせん",
+    "kana": "にじゅうらせん",
+    "romaji": "n'ijuurasen",
+    "meaning": "이중나선"
+  },
+  {
+    "subject": "biology",
+    "kanji": "転写",
+    "kana": "てんしゃ",
+    "romaji": "tensha",
+    "meaning": "전사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "翻訳",
+    "kana": "ほんやく",
+    "romaji": "hon'yaku",
+    "meaning": "번역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "複製",
+    "kana": "ふくせい",
+    "romaji": "fukusei",
+    "meaning": "복제"
+  },
+  {
+    "subject": "biology",
+    "kanji": "突然変異",
+    "kana": "とつぜんへんい",
+    "romaji": "totsuzenhen'i",
+    "meaning": "돌연변이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝",
+    "kana": "いでん",
+    "romaji": "iden",
+    "meaning": "유전"
+  },
+  {
+    "subject": "biology",
+    "kanji": "優性",
+    "kana": "ゆうせい",
+    "romaji": "yuusei",
+    "meaning": "우성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "劣性",
+    "kana": "れっせい",
+    "romaji": "ressei",
+    "meaning": "열성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ホモ接合",
+    "kana": "ホモせつごう",
+    "romaji": "homosetsugou",
+    "meaning": "동형접합"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヘテロ接合",
+    "kana": "ヘテロせつごう",
+    "romaji": "heterosetsugou",
+    "meaning": "이형접합"
+  },
+  {
+    "subject": "biology",
+    "kanji": "表現型",
+    "kana": "ひょうげんがた",
+    "romaji": "hyougengata",
+    "meaning": "표현형"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子型",
+    "kana": "いでんしがた",
+    "romaji": "idenshigata",
+    "meaning": "유전자형"
+  },
+  {
+    "subject": "biology",
+    "kanji": "メンデルの法則",
+    "kana": "メンデルのほうそく",
+    "romaji": "menderun'ohousoku",
+    "meaning": "멘델의 법칙"
+  },
+  {
+    "subject": "biology",
+    "kanji": "分離の法則",
+    "kana": "ぶんりのほうそく",
+    "romaji": "bunrin'ohousoku",
+    "meaning": "분리의 법칙"
+  },
+  {
+    "subject": "biology",
+    "kanji": "独立の法則",
+    "kana": "どくりつのほうそく",
+    "romaji": "dokuritsun'ohousoku",
+    "meaning": "독립의 법칙"
+  },
+  {
+    "subject": "biology",
+    "kanji": "優性の法則",
+    "kana": "ゆうせいのほうそく",
+    "romaji": "yuusein'ohousoku",
+    "meaning": "우성의 법칙"
+  },
+  {
+    "subject": "biology",
+    "kanji": "減数分裂",
+    "kana": "げんすうぶんれつ",
+    "romaji": "gensuubunretsu",
+    "meaning": "감수분열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "体細胞分裂",
+    "kana": "たいさいぼうぶんれつ",
+    "romaji": "taisaiboubunretsu",
+    "meaning": "체세포분열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "有糸分裂",
+    "kana": "ゆうしぶんれつ",
+    "romaji": "yuushibunretsu",
+    "meaning": "유사분열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "間期",
+    "kana": "かんき",
+    "romaji": "kanki",
+    "meaning": "간기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "前期",
+    "kana": "ぜんき",
+    "romaji": "zenki",
+    "meaning": "전기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "中期",
+    "kana": "ちゅうき",
+    "romaji": "chuuki",
+    "meaning": "중기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "後期",
+    "kana": "こうき",
+    "romaji": "kouki",
+    "meaning": "후기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "終期",
+    "kana": "しゅうき",
+    "romaji": "shuuki",
+    "meaning": "말기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞分裂",
+    "kana": "さいぼうぶんれつ",
+    "romaji": "saiboubunretsu",
+    "meaning": "세포분열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞周期",
+    "kana": "さいぼうしゅうき",
+    "romaji": "saiboushuuki",
+    "meaning": "세포주기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ミトコンドリア",
+    "kana": "ミトコンドリア",
+    "romaji": "mitokondoria",
+    "meaning": "미토콘드리아"
+  },
+  {
+    "subject": "biology",
+    "kanji": "葉緑体",
+    "kana": "ようりょくたい",
+    "romaji": "youryokutai",
+    "meaning": "엽록체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "葉緑素",
+    "kana": "ようりょくそ",
+    "romaji": "youryokuso",
+    "meaning": "엽록소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "クロロフィル",
+    "kana": "クロロフィル",
+    "romaji": "kurorofuiru",
+    "meaning": "클로로필"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リボソーム",
+    "kana": "リボソーム",
+    "romaji": "riboso-mu",
+    "meaning": "리보솜"
+  },
+  {
+    "subject": "biology",
+    "kanji": "小胞体",
+    "kana": "しょうほうたい",
+    "romaji": "shouhoutai",
+    "meaning": "소포체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ゴルジ体",
+    "kana": "ゴルジたい",
+    "romaji": "gorujitai",
+    "meaning": "골지체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "液胞",
+    "kana": "えきほう",
+    "romaji": "ekihou",
+    "meaning": "액포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リソソーム",
+    "kana": "リソソーム",
+    "romaji": "risoso-mu",
+    "meaning": "리소좀"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞骨格",
+    "kana": "さいぼうこっかく",
+    "romaji": "saiboukokkaku",
+    "meaning": "세포골격"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原核生物",
+    "kana": "げんかくせいぶつ",
+    "romaji": "genkakuseibutsu",
+    "meaning": "원핵생물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "真核生物",
+    "kana": "しんかくせいぶつ",
+    "romaji": "shinkakuseibutsu",
+    "meaning": "진핵생물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細菌",
+    "kana": "さいきん",
+    "romaji": "saikin",
+    "meaning": "세균"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ウイルス",
+    "kana": "ウイルス",
+    "romaji": "uirusu",
+    "meaning": "바이러스"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原生生物",
+    "kana": "げんせいせいぶつ",
+    "romaji": "genseiseibutsu",
+    "meaning": "원생생물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "菌類",
+    "kana": "きんるい",
+    "romaji": "kinrui",
+    "meaning": "균류"
+  },
+  {
+    "subject": "biology",
+    "kanji": "植物",
+    "kana": "しょくぶつ",
+    "romaji": "shokubutsu",
+    "meaning": "식물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "動物",
+    "kana": "どうぶつ",
+    "romaji": "doubutsu",
+    "meaning": "동물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光合成",
+    "kana": "こうごうせい",
+    "romaji": "kougousei",
+    "meaning": "광합성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "呼吸",
+    "kana": "こきゅう",
+    "romaji": "kokyuu",
+    "meaning": "호흡"
+  },
+  {
+    "subject": "biology",
+    "kanji": "好気呼吸",
+    "kana": "こうきこきゅう",
+    "romaji": "koukikokyuu",
+    "meaning": "호기호흡"
+  },
+  {
+    "subject": "biology",
+    "kanji": "嫌気呼吸",
+    "kana": "けんきこきゅう",
+    "romaji": "kenkikokyuu",
+    "meaning": "혐기호흡"
+  },
+  {
+    "subject": "biology",
+    "kanji": "発酵",
+    "kana": "はっこう",
+    "romaji": "hakkou",
+    "meaning": "발효"
+  },
+  {
+    "subject": "biology",
+    "kanji": "解糖系",
+    "kana": "かいとうけい",
+    "romaji": "kaitoukei",
+    "meaning": "해당과정"
+  },
+  {
+    "subject": "biology",
+    "kanji": "クエン酸回路",
+    "kana": "クエンさんかいろ",
+    "romaji": "kuensankairo",
+    "meaning": "시트르산회로"
+  },
+  {
+    "subject": "biology",
+    "kanji": "電子伝達系",
+    "kana": "でんしでんたつけい",
+    "romaji": "denshidentatsukei",
+    "meaning": "전자전달계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ATP",
+    "kana": "エーティーピー",
+    "romaji": "e-tei-pi-",
+    "meaning": "ATP"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ADP",
+    "kana": "エーディーピー",
+    "romaji": "e-dei-pi-",
+    "meaning": "ADP"
+  },
+  {
+    "subject": "biology",
+    "kanji": "NADH",
+    "kana": "エヌエーディーエイチ",
+    "romaji": "en'ue-dei-eichi",
+    "meaning": "NADH"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光反応",
+    "kana": "こうはんのう",
+    "romaji": "kouhann'ou",
+    "meaning": "명반응"
+  },
+  {
+    "subject": "biology",
+    "kanji": "暗反応",
+    "kana": "あんはんのう",
+    "romaji": "anhann'ou",
+    "meaning": "암반응"
+  },
+  {
+    "subject": "biology",
+    "kanji": "カルビン回路",
+    "kana": "カルビンかいろ",
+    "romaji": "karubinkairo",
+    "meaning": "캘빈회로"
+  },
+  {
+    "subject": "biology",
+    "kanji": "気孔",
+    "kana": "きこう",
+    "romaji": "kikou",
+    "meaning": "기공"
+  },
+  {
+    "subject": "biology",
+    "kanji": "蒸散",
+    "kana": "じょうさん",
+    "romaji": "jousan",
+    "meaning": "증산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "師管",
+    "kana": "しかん",
+    "romaji": "shikan",
+    "meaning": "체관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "道管",
+    "kana": "どうかん",
+    "romaji": "doukan",
+    "meaning": "도관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "根",
+    "kana": "ね",
+    "romaji": "n'e",
+    "meaning": "뿌리"
+  },
+  {
+    "subject": "biology",
+    "kanji": "茎",
+    "kana": "くき",
+    "romaji": "kuki",
+    "meaning": "줄기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "葉",
+    "kana": "は",
+    "romaji": "ha",
+    "meaning": "잎"
+  },
+  {
+    "subject": "biology",
+    "kanji": "花",
+    "kana": "はな",
+    "romaji": "han'a",
+    "meaning": "꽃"
+  },
+  {
+    "subject": "biology",
+    "kanji": "種子",
+    "kana": "しゅし",
+    "romaji": "shushi",
+    "meaning": "씨앗"
+  },
+  {
+    "subject": "biology",
+    "kanji": "果実",
+    "kana": "かじつ",
+    "romaji": "kajitsu",
+    "meaning": "열매"
+  },
+  {
+    "subject": "biology",
+    "kanji": "受粉",
+    "kana": "じゅふん",
+    "romaji": "jufun",
+    "meaning": "수분"
+  },
+  {
+    "subject": "biology",
+    "kanji": "受精",
+    "kana": "じゅせい",
+    "romaji": "jusei",
+    "meaning": "수정"
+  },
+  {
+    "subject": "biology",
+    "kanji": "胚",
+    "kana": "はい",
+    "romaji": "hai",
+    "meaning": "배"
+  },
+  {
+    "subject": "biology",
+    "kanji": "発芽",
+    "kana": "はつが",
+    "romaji": "hatsuga",
+    "meaning": "발아"
+  },
+  {
+    "subject": "biology",
+    "kanji": "成長",
+    "kana": "せいちょう",
+    "romaji": "seichou",
+    "meaning": "성장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "発生",
+    "kana": "はっせい",
+    "romaji": "hassei",
+    "meaning": "발생"
+  },
+  {
+    "subject": "biology",
+    "kanji": "分化",
+    "kana": "ぶんか",
+    "romaji": "bunka",
+    "meaning": "분화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "組織",
+    "kana": "そしき",
+    "romaji": "soshiki",
+    "meaning": "조직"
+  },
+  {
+    "subject": "biology",
+    "kanji": "器官",
+    "kana": "きかん",
+    "romaji": "kikan",
+    "meaning": "기관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "個体",
+    "kana": "こたい",
+    "romaji": "kotai",
+    "meaning": "개체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "個体群",
+    "kana": "こたいぐん",
+    "romaji": "kotaigun",
+    "meaning": "개체군"
+  },
+  {
+    "subject": "biology",
+    "kanji": "群集",
+    "kana": "ぐんしゅう",
+    "romaji": "gunshuu",
+    "meaning": "군집"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生態系",
+    "kana": "せいたいけい",
+    "romaji": "seitaikei",
+    "meaning": "생태계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生産者",
+    "kana": "せいさんしゃ",
+    "romaji": "seisansha",
+    "meaning": "생산자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "消費者",
+    "kana": "しょうひしゃ",
+    "romaji": "shouhisha",
+    "meaning": "소비자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "分解者",
+    "kana": "ぶんかいしゃ",
+    "romaji": "bunkaisha",
+    "meaning": "분해자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "食物連鎖",
+    "kana": "しょくもつれんさ",
+    "romaji": "shokumotsurensa",
+    "meaning": "먹이사슬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "食物網",
+    "kana": "しょくもつもう",
+    "romaji": "shokumotsumou",
+    "meaning": "먹이그물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生態的地位",
+    "kana": "せいたいてきちい",
+    "romaji": "seitaitekichii",
+    "meaning": "생태적지위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "競争",
+    "kana": "きょうそう",
+    "romaji": "kyousou",
+    "meaning": "경쟁"
+  },
+  {
+    "subject": "biology",
+    "kanji": "共生",
+    "kana": "きょうせい",
+    "romaji": "kyousei",
+    "meaning": "공생"
+  },
+  {
+    "subject": "biology",
+    "kanji": "寄生",
+    "kana": "きせい",
+    "romaji": "kisei",
+    "meaning": "기생"
+  },
+  {
+    "subject": "biology",
+    "kanji": "捕食",
+    "kana": "ほしょく",
+    "romaji": "hoshoku",
+    "meaning": "포식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "適応",
+    "kana": "てきおう",
+    "romaji": "tekiou",
+    "meaning": "적응"
+  },
+  {
+    "subject": "biology",
+    "kanji": "進化",
+    "kana": "しんか",
+    "romaji": "shinka",
+    "meaning": "진화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "自然選択",
+    "kana": "しぜんせんたく",
+    "romaji": "shizensentaku",
+    "meaning": "자연선택"
+  },
+  {
+    "subject": "biology",
+    "kanji": "種",
+    "kana": "しゅ",
+    "romaji": "shu",
+    "meaning": "종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "種分化",
+    "kana": "しゅぶんか",
+    "romaji": "shubunka",
+    "meaning": "종분화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "共通祖先",
+    "kana": "きょうつうそせん",
+    "romaji": "kyoutsuusosen",
+    "meaning": "공통조상"
+  },
+  {
+    "subject": "biology",
+    "kanji": "相同器官",
+    "kana": "そうどうきかん",
+    "romaji": "soudoukikan",
+    "meaning": "상동기관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "相似器官",
+    "kana": "そうじきかん",
+    "romaji": "soujikikan",
+    "meaning": "상사기관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "痕跡器官",
+    "kana": "こんせききかん",
+    "romaji": "konsekikikan",
+    "meaning": "흔적기관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "化石",
+    "kana": "かせき",
+    "romaji": "kaseki",
+    "meaning": "화석"
+  },
+  {
+    "subject": "biology",
+    "kanji": "分類",
+    "kana": "ぶんるい",
+    "romaji": "bunrui",
+    "meaning": "분류"
+  },
+  {
+    "subject": "biology",
+    "kanji": "界",
+    "kana": "かい",
+    "romaji": "kai",
+    "meaning": "계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "門",
+    "kana": "もん",
+    "romaji": "mon",
+    "meaning": "문"
+  },
+  {
+    "subject": "biology",
+    "kanji": "綱",
+    "kana": "こう",
+    "romaji": "kou",
+    "meaning": "강"
+  },
+  {
+    "subject": "biology",
+    "kanji": "目",
+    "kana": "もく",
+    "romaji": "moku",
+    "meaning": "목"
+  },
+  {
+    "subject": "biology",
+    "kanji": "科",
+    "kana": "か",
+    "romaji": "ka",
+    "meaning": "과"
+  },
+  {
+    "subject": "biology",
+    "kanji": "属",
+    "kana": "ぞく",
+    "romaji": "zoku",
+    "meaning": "속"
+  },
+  {
+    "subject": "biology",
+    "kanji": "二名法",
+    "kana": "にめいほう",
+    "romaji": "n'imeihou",
+    "meaning": "이명법"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ホメオスタシス",
+    "kana": "ホメオスタシス",
+    "romaji": "homeosutashisu",
+    "meaning": "항상성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "フィードバック",
+    "kana": "フィードバック",
+    "romaji": "fui-dobakku",
+    "meaning": "피드백"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ホルモン",
+    "kana": "ホルモン",
+    "romaji": "horumon",
+    "meaning": "호르몬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "神経系",
+    "kana": "しんけいけい",
+    "romaji": "shinkeikei",
+    "meaning": "신경계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "中枢神経",
+    "kana": "ちゅうすうしんけい",
+    "romaji": "chuusuushinkei",
+    "meaning": "중추신경"
+  },
+  {
+    "subject": "biology",
+    "kanji": "末梢神経",
+    "kana": "まっしょうしんけい",
+    "romaji": "masshoushinkei",
+    "meaning": "말초신경"
+  },
+  {
+    "subject": "biology",
+    "kanji": "脳",
+    "kana": "のう",
+    "romaji": "n'ou",
+    "meaning": "뇌"
+  },
+  {
+    "subject": "biology",
+    "kanji": "脊髄",
+    "kana": "せきずい",
+    "romaji": "sekizui",
+    "meaning": "척수"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ニューロン",
+    "kana": "ニューロン",
+    "romaji": "n'yu-ron",
+    "meaning": "뉴런"
+  },
+  {
+    "subject": "biology",
+    "kanji": "シナプス",
+    "kana": "シナプス",
+    "romaji": "shin'apusu",
+    "meaning": "시냅스"
+  },
+  {
+    "subject": "biology",
+    "kanji": "神経伝達物質",
+    "kana": "しんけいでんたつぶっしつ",
+    "romaji": "shinkeidentatsubusshitsu",
+    "meaning": "신경전달물질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "活動電位",
+    "kana": "かつどうでんい",
+    "romaji": "katsudouden'i",
+    "meaning": "활동전위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "活動電位の伝導",
+    "kana": "かつどうでんいのでんどう",
+    "romaji": "katsudouden'in'odendou",
+    "meaning": "활동전위의 전도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "反射",
+    "kana": "はんしゃ",
+    "romaji": "hansha",
+    "meaning": "반사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "感覚器",
+    "kana": "かんかくき",
+    "romaji": "kankakuki",
+    "meaning": "감각기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "視覚",
+    "kana": "しかく",
+    "romaji": "shikaku",
+    "meaning": "시각"
+  },
+  {
+    "subject": "biology",
+    "kanji": "聴覚",
+    "kana": "ちょうかく",
+    "romaji": "choukaku",
+    "meaning": "청각"
+  },
+  {
+    "subject": "biology",
+    "kanji": "嗅覚",
+    "kana": "きゅうかく",
+    "romaji": "kyuukaku",
+    "meaning": "후각"
+  },
+  {
+    "subject": "biology",
+    "kanji": "味覚",
+    "kana": "みかく",
+    "romaji": "mikaku",
+    "meaning": "미각"
+  },
+  {
+    "subject": "biology",
+    "kanji": "触覚",
+    "kana": "しょっかく",
+    "romaji": "shokkaku",
+    "meaning": "촉각"
+  },
+  {
+    "subject": "biology",
+    "kanji": "筋肉",
+    "kana": "きんにく",
+    "romaji": "kinn'iku",
+    "meaning": "근육"
+  },
+  {
+    "subject": "biology",
+    "kanji": "骨格筋",
+    "kana": "こっかくきん",
+    "romaji": "kokkakukin",
+    "meaning": "골격근"
+  },
+  {
+    "subject": "biology",
+    "kanji": "平滑筋",
+    "kana": "へいかつきん",
+    "romaji": "heikatsukin",
+    "meaning": "평활근"
+  },
+  {
+    "subject": "biology",
+    "kanji": "心筋",
+    "kana": "しんきん",
+    "romaji": "shinkin",
+    "meaning": "심근"
+  },
+  {
+    "subject": "biology",
+    "kanji": "収縮",
+    "kana": "しゅうしゅく",
+    "romaji": "shuushuku",
+    "meaning": "수축"
+  },
+  {
+    "subject": "biology",
+    "kanji": "弛緩",
+    "kana": "しかん",
+    "romaji": "shikan",
+    "meaning": "이완"
+  },
+  {
+    "subject": "biology",
+    "kanji": "循環系",
+    "kana": "じゅんかんけい",
+    "romaji": "junkankei",
+    "meaning": "순환계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "心臓",
+    "kana": "しんぞう",
+    "romaji": "shinzou",
+    "meaning": "심장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "血管",
+    "kana": "けっかん",
+    "romaji": "kekkan",
+    "meaning": "혈관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "動脈",
+    "kana": "どうみゃく",
+    "romaji": "doumyaku",
+    "meaning": "동맥"
+  },
+  {
+    "subject": "biology",
+    "kanji": "静脈",
+    "kana": "じょうみゃく",
+    "romaji": "joumyaku",
+    "meaning": "정맥"
+  },
+  {
+    "subject": "biology",
+    "kanji": "毛細血管",
+    "kana": "もうさいけっかん",
+    "romaji": "mousaikekkan",
+    "meaning": "모세혈관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "血液",
+    "kana": "けつえき",
+    "romaji": "ketsueki",
+    "meaning": "혈액"
+  },
+  {
+    "subject": "biology",
+    "kanji": "赤血球",
+    "kana": "せっけっきゅう",
+    "romaji": "sekkekkyuu",
+    "meaning": "적혈구"
+  },
+  {
+    "subject": "biology",
+    "kanji": "白血球",
+    "kana": "はっけっきゅう",
+    "romaji": "hakkekkyuu",
+    "meaning": "백혈구"
+  },
+  {
+    "subject": "biology",
+    "kanji": "血小板",
+    "kana": "けっしょうばん",
+    "romaji": "kesshouban",
+    "meaning": "혈소판"
+  },
+  {
+    "subject": "biology",
+    "kanji": "血漿",
+    "kana": "けっしょう",
+    "romaji": "kesshou",
+    "meaning": "혈장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヘモグロビン",
+    "kana": "ヘモグロビン",
+    "romaji": "hemogurobin",
+    "meaning": "헤모글로빈"
+  },
+  {
+    "subject": "biology",
+    "kanji": "免疫",
+    "kana": "めんえき",
+    "romaji": "men'eki",
+    "meaning": "면역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "抗体",
+    "kana": "こうたい",
+    "romaji": "koutai",
+    "meaning": "항체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "抗原",
+    "kana": "こうげん",
+    "romaji": "kougen",
+    "meaning": "항원"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リンパ球",
+    "kana": "リンパきゅう",
+    "romaji": "rinpakyuu",
+    "meaning": "림프구"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ワクチン",
+    "kana": "ワクチン",
+    "romaji": "wakuchin",
+    "meaning": "백신"
+  },
+  {
+    "subject": "biology",
+    "kanji": "呼吸系",
+    "kana": "こきゅうけい",
+    "romaji": "kokyuukei",
+    "meaning": "호흡계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "肺",
+    "kana": "はい",
+    "romaji": "hai",
+    "meaning": "폐"
+  },
+  {
+    "subject": "biology",
+    "kanji": "気管",
+    "kana": "きかん",
+    "romaji": "kikan",
+    "meaning": "기관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "消化系",
+    "kana": "しょうかけい",
+    "romaji": "shoukakei",
+    "meaning": "소화계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "消化",
+    "kana": "しょうか",
+    "romaji": "shouka",
+    "meaning": "소화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "吸収",
+    "kana": "きゅうしゅう",
+    "romaji": "kyuushuu",
+    "meaning": "흡수"
+  },
+  {
+    "subject": "biology",
+    "kanji": "胃",
+    "kana": "い",
+    "romaji": "i",
+    "meaning": "위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "小腸",
+    "kana": "しょうちょう",
+    "romaji": "shouchou",
+    "meaning": "소장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "大腸",
+    "kana": "だいちょう",
+    "romaji": "daichou",
+    "meaning": "대장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "肝臓",
+    "kana": "かんぞう",
+    "romaji": "kanzou",
+    "meaning": "간"
+  },
+  {
+    "subject": "biology",
+    "kanji": "膵臓",
+    "kana": "すいぞう",
+    "romaji": "suizou",
+    "meaning": "이자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "酵素",
+    "kana": "こうそ",
+    "romaji": "kouso",
+    "meaning": "효소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "基質",
+    "kana": "きしつ",
+    "romaji": "kishitsu",
+    "meaning": "기질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "活性部位",
+    "kana": "かっせいぶい",
+    "romaji": "kasseibui",
+    "meaning": "활성부위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "酵素阻害",
+    "kana": "こうそそがい",
+    "romaji": "kousosogai",
+    "meaning": "효소저해"
+  },
+  {
+    "subject": "biology",
+    "kanji": "排出",
+    "kana": "はいしゅつ",
+    "romaji": "haishutsu",
+    "meaning": "배출"
+  },
+  {
+    "subject": "biology",
+    "kanji": "腎臓",
+    "kana": "じんぞう",
+    "romaji": "jinzou",
+    "meaning": "신장"
+  },
+  {
+    "subject": "biology",
+    "kanji": "尿",
+    "kana": "にょう",
+    "romaji": "n'you",
+    "meaning": "소변"
+  },
+  {
+    "subject": "biology",
+    "kanji": "浸透圧調節",
+    "kana": "しんとうあつちょうせつ",
+    "romaji": "shintouatsuchousetsu",
+    "meaning": "삼투압조절"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生殖",
+    "kana": "せいしょく",
+    "romaji": "seishoku",
+    "meaning": "생식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "有性生殖",
+    "kana": "ゆうせいせいしょく",
+    "romaji": "yuuseiseishoku",
+    "meaning": "유성생식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "無性生殖",
+    "kana": "むせいせいしょく",
+    "romaji": "museiseishoku",
+    "meaning": "무성생식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "精子",
+    "kana": "せいし",
+    "romaji": "seishi",
+    "meaning": "정자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "卵子",
+    "kana": "らんし",
+    "romaji": "ranshi",
+    "meaning": "난자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "卵",
+    "kana": "らん",
+    "romaji": "ran",
+    "meaning": "알"
+  },
+  {
+    "subject": "biology",
+    "kanji": "胎生",
+    "kana": "たいせい",
+    "romaji": "taisei",
+    "meaning": "태생"
+  },
+  {
+    "subject": "biology",
+    "kanji": "卵生",
+    "kana": "らんせい",
+    "romaji": "ransei",
+    "meaning": "난생"
+  },
+  {
+    "subject": "biology",
+    "kanji": "発生段階",
+    "kana": "はっせいだんかい",
+    "romaji": "hasseidankai",
+    "meaning": "발생단계"
+  },
+  {
+    "subject": "biology",
+    "kanji": "卵割",
+    "kana": "らんかつ",
+    "romaji": "rankatsu",
+    "meaning": "난할"
+  },
+  {
+    "subject": "biology",
+    "kanji": "胞胚",
+    "kana": "ほうはい",
+    "romaji": "houhai",
+    "meaning": "포배"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原腸形成",
+    "kana": "げんちょうけいせい",
+    "romaji": "genchoukeisei",
+    "meaning": "낭배형성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "外胚葉",
+    "kana": "がいはいよう",
+    "romaji": "gaihaiyou",
+    "meaning": "외배엽"
+  },
+  {
+    "subject": "biology",
+    "kanji": "中胚葉",
+    "kana": "ちゅうはいよう",
+    "romaji": "chuuhaiyou",
+    "meaning": "중배엽"
+  },
+  {
+    "subject": "biology",
+    "kanji": "内胚葉",
+    "kana": "ないはいよう",
+    "romaji": "n'aihaiyou",
+    "meaning": "내배엽"
+  },
+  {
+    "subject": "biology",
+    "kanji": "誘導",
+    "kana": "ゆうどう",
+    "romaji": "yuudou",
+    "meaning": "유도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "形態形成",
+    "kana": "けいたいけいせい",
+    "romaji": "keitaikeisei",
+    "meaning": "형태형성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "幹細胞",
+    "kana": "かんさいぼう",
+    "romaji": "kansaibou",
+    "meaning": "줄기세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "全能性",
+    "kana": "ぜんのうせい",
+    "romaji": "zenn'ousei",
+    "meaning": "전능성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "多能性",
+    "kana": "たのうせい",
+    "romaji": "tan'ousei",
+    "meaning": "다능성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "クローン",
+    "kana": "クローン",
+    "romaji": "kuro-n",
+    "meaning": "클론"
+  },
+  {
+    "subject": "biology",
+    "kanji": "バイオテクノロジー",
+    "kana": "バイオテクノロジー",
+    "romaji": "baiotekun'oroji-",
+    "meaning": "생명공학"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子組換え",
+    "kana": "いでんしくみかえ",
+    "romaji": "idenshikumikae",
+    "meaning": "유전자재조합"
+  },
+  {
+    "subject": "biology",
+    "kanji": "PCR",
+    "kana": "ピーシーアール",
+    "romaji": "pi-shi-a-ru",
+    "meaning": "PCR"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ゲノム",
+    "kana": "ゲノム",
+    "romaji": "gen'omu",
+    "meaning": "유전체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "プロテオーム",
+    "kana": "プロテオーム",
+    "romaji": "puroteo-mu",
+    "meaning": "프로테옴"
+  },
+  {
+    "subject": "biology",
+    "kanji": "タンパク質",
+    "kana": "タンパクしつ",
+    "romaji": "tanpakushitsu",
+    "meaning": "단백질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アミノ酸",
+    "kana": "アミノさん",
+    "romaji": "amin'osan",
+    "meaning": "아미노산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "脂質",
+    "kana": "ししつ",
+    "romaji": "shishitsu",
+    "meaning": "지질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "糖質",
+    "kana": "とうしつ",
+    "romaji": "toushitsu",
+    "meaning": "당질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "炭水化物",
+    "kana": "たんすいかぶつ",
+    "romaji": "tansuikabutsu",
+    "meaning": "탄수화물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "核酸",
+    "kana": "かくさん",
+    "romaji": "kakusan",
+    "meaning": "핵산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ビタミン",
+    "kana": "ビタミン",
+    "romaji": "bitamin",
+    "meaning": "비타민"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ミネラル",
+    "kana": "ミネラル",
+    "romaji": "min'eraru",
+    "meaning": "미네랄"
+  },
+  {
+    "subject": "biology",
+    "kanji": "栄養",
+    "kana": "えいよう",
+    "romaji": "eiyou",
+    "meaning": "영양"
+  },
+  {
+    "subject": "biology",
+    "kanji": "代謝",
+    "kana": "たいしゃ",
+    "romaji": "taisha",
+    "meaning": "대사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "同化",
+    "kana": "どうか",
+    "romaji": "douka",
+    "meaning": "동화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "異化",
+    "kana": "いか",
+    "romaji": "ika",
+    "meaning": "이화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "同化産物",
+    "kana": "どうかさんぶつ",
+    "romaji": "doukasanbutsu",
+    "meaning": "동화산물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エネルギー代謝",
+    "kana": "エネルギーたいしゃ",
+    "romaji": "en'erugi-taisha",
+    "meaning": "에너지대사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "基礎代謝",
+    "kana": "きそたいしゃ",
+    "romaji": "kisotaisha",
+    "meaning": "기초대사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "恒常性",
+    "kana": "こうじょうせい",
+    "romaji": "koujousei",
+    "meaning": "항상성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "体温調節",
+    "kana": "たいおんちょうせつ",
+    "romaji": "taionchousetsu",
+    "meaning": "체온조절"
+  },
+  {
+    "subject": "biology",
+    "kanji": "血糖調節",
+    "kana": "けっとうちょうせつ",
+    "romaji": "kettouchousetsu",
+    "meaning": "혈당조절"
+  },
+  {
+    "subject": "biology",
+    "kanji": "インスリン",
+    "kana": "インスリン",
+    "romaji": "insurin",
+    "meaning": "인슐린"
+  },
+  {
+    "subject": "biology",
+    "kanji": "グルカゴン",
+    "kana": "グルカゴン",
+    "romaji": "gurukagon",
+    "meaning": "글루카곤"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アドレナリン",
+    "kana": "アドレナリン",
+    "romaji": "adoren'arin",
+    "meaning": "아드레날린"
+  },
+  {
+    "subject": "biology",
+    "kanji": "甲状腺ホルモン",
+    "kana": "こうじょうせんホルモン",
+    "romaji": "koujousenhorumon",
+    "meaning": "갑상선호르몬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "成長ホルモン",
+    "kana": "せいちょうホルモン",
+    "romaji": "seichouhorumon",
+    "meaning": "성장호르몬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "性ホルモン",
+    "kana": "せいホルモン",
+    "romaji": "seihorumon",
+    "meaning": "성호르몬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "概日リズム",
+    "kana": "がいじつリズム",
+    "romaji": "gaijitsurizumu",
+    "meaning": "일주기리듬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光周性",
+    "kana": "こうしゅうせい",
+    "romaji": "koushuusei",
+    "meaning": "광주기성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "屈性",
+    "kana": "くっせい",
+    "romaji": "kussei",
+    "meaning": "굴성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "傾性",
+    "kana": "けいせい",
+    "romaji": "keisei",
+    "meaning": "경성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "オーキシン",
+    "kana": "オーキシン",
+    "romaji": "o-kishin",
+    "meaning": "옥신"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ジベレリン",
+    "kana": "ジベレリン",
+    "romaji": "jibererin",
+    "meaning": "지베렐린"
+  },
+  {
+    "subject": "biology",
+    "kanji": "サイトカイニン",
+    "kana": "サイトカイニン",
+    "romaji": "saitokain'in",
+    "meaning": "사이토카이닌"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エチレン",
+    "kana": "エチレン",
+    "romaji": "echiren",
+    "meaning": "에틸렌"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アブシシン酸",
+    "kana": "アブシシンさん",
+    "romaji": "abushishinsan",
+    "meaning": "앱시스산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "植物ホルモン",
+    "kana": "しょくぶつホルモン",
+    "romaji": "shokubutsuhorumon",
+    "meaning": "식물호르몬"
+  },
+  {
+    "subject": "biology",
+    "kanji": "窒素固定",
+    "kana": "ちっそこてい",
+    "romaji": "chissokotei",
+    "meaning": "질소고정"
+  },
+  {
+    "subject": "biology",
+    "kanji": "根粒菌",
+    "kana": "こんりゅうきん",
+    "romaji": "konryuukin",
+    "meaning": "뿌리혹박테리아"
+  },
+  {
+    "subject": "biology",
+    "kanji": "菌根",
+    "kana": "きんこん",
+    "romaji": "kinkon",
+    "meaning": "균근"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生物濃縮",
+    "kana": "せいぶつのうしゅく",
+    "romaji": "seibutsun'oushuku",
+    "meaning": "생물농축"
+  },
+  {
+    "subject": "biology",
+    "kanji": "富栄養化",
+    "kana": "ふえいようか",
+    "romaji": "fueiyouka",
+    "meaning": "부영양화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "環境破壊",
+    "kana": "かんきょうはかい",
+    "romaji": "kankyouhakai",
+    "meaning": "환경파괴"
+  },
+  {
+    "subject": "biology",
+    "kanji": "絶滅",
+    "kana": "ぜつめつ",
+    "romaji": "zetsumetsu",
+    "meaning": "멸종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生物多様性",
+    "kana": "せいぶつたようせい",
+    "romaji": "seibutsutayousei",
+    "meaning": "생물다양성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "保全",
+    "kana": "ほぜん",
+    "romaji": "hozen",
+    "meaning": "보전"
+  },
+  {
+    "subject": "biology",
+    "kanji": "持続可能性",
+    "kana": "じぞくかのうせい",
+    "romaji": "jizokukan'ousei",
+    "meaning": "지속가능성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "顕微鏡",
+    "kana": "けんびきょう",
+    "romaji": "kenbikyou",
+    "meaning": "현미경"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光学顕微鏡",
+    "kana": "こうがくけんびきょう",
+    "romaji": "kougakukenbikyou",
+    "meaning": "광학현미경"
+  },
+  {
+    "subject": "biology",
+    "kanji": "電子顕微鏡",
+    "kana": "でんしけんびきょう",
+    "romaji": "denshikenbikyou",
+    "meaning": "전자현미경"
+  },
+  {
+    "subject": "biology",
+    "kanji": "観察",
+    "kana": "かんさつ",
+    "romaji": "kansatsu",
+    "meaning": "관찰"
+  },
+  {
+    "subject": "biology",
+    "kanji": "実験",
+    "kana": "じっけん",
+    "romaji": "jikken",
+    "meaning": "실험"
+  },
+  {
+    "subject": "biology",
+    "kanji": "対照実験",
+    "kana": "たいしょうじっけん",
+    "romaji": "taishoujikken",
+    "meaning": "대조실험"
+  },
+  {
+    "subject": "biology",
+    "kanji": "仮説",
+    "kana": "かせつ",
+    "romaji": "kasetsu",
+    "meaning": "가설"
+  },
+  {
+    "subject": "biology",
+    "kanji": "検証",
+    "kana": "けんしょう",
+    "romaji": "kenshou",
+    "meaning": "검증"
+  },
+  {
+    "subject": "biology",
+    "kanji": "データ",
+    "kana": "データ",
+    "romaji": "de-ta",
+    "meaning": "데이터"
+  },
+  {
+    "subject": "biology",
+    "kanji": "グラフ",
+    "kana": "グラフ",
+    "romaji": "gurafu",
+    "meaning": "그래프"
+  },
+  {
+    "subject": "biology",
+    "kanji": "モデル",
+    "kana": "モデル",
+    "romaji": "moderu",
+    "meaning": "모델"
+  },
+  {
+    "subject": "biology",
+    "kanji": "シミュレーション",
+    "kana": "シミュレーション",
+    "romaji": "shimyure-shon",
+    "meaning": "시뮬레이션"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞説",
+    "kana": "さいぼうせつ",
+    "romaji": "saibousetsu",
+    "meaning": "세포설"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原形質",
+    "kana": "げんけいしつ",
+    "romaji": "genkeishitsu",
+    "meaning": "원형질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原形質流動",
+    "kana": "げんけいしつりゅうどう",
+    "romaji": "genkeishitsuryuudou",
+    "meaning": "원형질유동"
+  },
+  {
+    "subject": "biology",
+    "kanji": "浸透",
+    "kana": "しんとう",
+    "romaji": "shintou",
+    "meaning": "삼투"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原形質分離",
+    "kana": "げんけいしつぶんり",
+    "romaji": "genkeishitsubunri",
+    "meaning": "원형질분리"
+  },
+  {
+    "subject": "biology",
+    "kanji": "原形質復帰",
+    "kana": "げんけいしつふっき",
+    "romaji": "genkeishitsufukki",
+    "meaning": "원형질복귀"
+  },
+  {
+    "subject": "biology",
+    "kanji": "膨圧",
+    "kana": "ぼうあつ",
+    "romaji": "bouatsu",
+    "meaning": "팽압"
+  },
+  {
+    "subject": "biology",
+    "kanji": "拡散",
+    "kana": "かくさん",
+    "romaji": "kakusan",
+    "meaning": "확산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "受動輸送",
+    "kana": "じゅどうゆそう",
+    "romaji": "judouyusou",
+    "meaning": "수동수송"
+  },
+  {
+    "subject": "biology",
+    "kanji": "能動輸送",
+    "kana": "のうどうゆそう",
+    "romaji": "n'oudouyusou",
+    "meaning": "능동수송"
+  },
+  {
+    "subject": "biology",
+    "kanji": "促進拡散",
+    "kana": "そくしんかくさん",
+    "romaji": "sokushinkakusan",
+    "meaning": "촉진확산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エンドサイトーシス",
+    "kana": "エンドサイトーシス",
+    "romaji": "endosaito-shisu",
+    "meaning": "세포내섭취"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エキソサイトーシス",
+    "kana": "エキソサイトーシス",
+    "romaji": "ekisosaito-shisu",
+    "meaning": "세포외배출"
+  },
+  {
+    "subject": "biology",
+    "kanji": "食作用",
+    "kana": "しょくさよう",
+    "romaji": "shokusayou",
+    "meaning": "식세포작용"
+  },
+  {
+    "subject": "biology",
+    "kanji": "飲作用",
+    "kana": "いんさよう",
+    "romaji": "insayou",
+    "meaning": "음세포작용"
+  },
+  {
+    "subject": "biology",
+    "kanji": "膜電位",
+    "kana": "まくでんい",
+    "romaji": "makuden'i",
+    "meaning": "막전위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "静止電位",
+    "kana": "せいしでんい",
+    "romaji": "seishiden'i",
+    "meaning": "휴지전위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "脱分極",
+    "kana": "だつぶんきょく",
+    "romaji": "datsubunkyoku",
+    "meaning": "탈분극"
+  },
+  {
+    "subject": "biology",
+    "kanji": "再分極",
+    "kana": "さいぶんきょく",
+    "romaji": "saibunkyoku",
+    "meaning": "재분극"
+  },
+  {
+    "subject": "biology",
+    "kanji": "過分極",
+    "kana": "かぶんきょく",
+    "romaji": "kabunkyoku",
+    "meaning": "과분극"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ナトリウムポンプ",
+    "kana": "ナトリウムポンプ",
+    "romaji": "n'atoriumuponpu",
+    "meaning": "나트륨펌프"
+  },
+  {
+    "subject": "biology",
+    "kanji": "イオンチャネル",
+    "kana": "イオンチャネル",
+    "romaji": "ionchan'eru",
+    "meaning": "이온채널"
+  },
+  {
+    "subject": "biology",
+    "kanji": "受容体",
+    "kana": "じゅようたい",
+    "romaji": "juyoutai",
+    "meaning": "수용체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リガンド",
+    "kana": "リガンド",
+    "romaji": "rigando",
+    "meaning": "리간드"
+  },
+  {
+    "subject": "biology",
+    "kanji": "シグナル伝達",
+    "kana": "シグナルでんたつ",
+    "romaji": "shigun'arudentatsu",
+    "meaning": "신호전달"
+  },
+  {
+    "subject": "biology",
+    "kanji": "二次メッセンジャー",
+    "kana": "にじメッセンジャー",
+    "romaji": "n'ijimessenja-",
+    "meaning": "2차전달자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "cAMP",
+    "kana": "シーエーエムピー",
+    "romaji": "shi-e-emupi-",
+    "meaning": "cAMP"
+  },
+  {
+    "subject": "biology",
+    "kanji": "カルシウムイオン",
+    "kana": "カルシウムイオン",
+    "romaji": "karushiumuion",
+    "meaning": "칼슘이온"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アポトーシス",
+    "kana": "アポトーシス",
+    "romaji": "apoto-shisu",
+    "meaning": "세포자살"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ネクローシス",
+    "kana": "ネクローシス",
+    "romaji": "n'ekuro-shisu",
+    "meaning": "괴사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞死",
+    "kana": "さいぼうし",
+    "romaji": "saiboushi",
+    "meaning": "세포사"
+  },
+  {
+    "subject": "biology",
+    "kanji": "がん",
+    "kana": "がん",
+    "romaji": "gan",
+    "meaning": "암"
+  },
+  {
+    "subject": "biology",
+    "kanji": "腫瘍",
+    "kana": "しゅよう",
+    "romaji": "shuyou",
+    "meaning": "종양"
+  },
+  {
+    "subject": "biology",
+    "kanji": "良性",
+    "kana": "りょうせい",
+    "romaji": "ryousei",
+    "meaning": "양성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "悪性",
+    "kana": "あくせい",
+    "romaji": "akusei",
+    "meaning": "악성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "転移",
+    "kana": "てんい",
+    "romaji": "ten'i",
+    "meaning": "전이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "がん抑制遺伝子",
+    "kana": "がんよくせいいでんし",
+    "romaji": "gan'yokuseiidenshi",
+    "meaning": "암억제유전자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "がん遺伝子",
+    "kana": "がんいでんし",
+    "romaji": "gan'idenshi",
+    "meaning": "암유전자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "テロメア",
+    "kana": "テロメア",
+    "romaji": "teromea",
+    "meaning": "텔로미어"
+  },
+  {
+    "subject": "biology",
+    "kanji": "テロメラーゼ",
+    "kana": "テロメラーゼ",
+    "romaji": "teromera-ze",
+    "meaning": "텔로머레이스"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヒストン",
+    "kana": "ヒストン",
+    "romaji": "hisuton",
+    "meaning": "히스톤"
+  },
+  {
+    "subject": "biology",
+    "kanji": "クロマチン",
+    "kana": "クロマチン",
+    "romaji": "kuromachin",
+    "meaning": "염색질"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヌクレオソーム",
+    "kana": "ヌクレオソーム",
+    "romaji": "n'ukureoso-mu",
+    "meaning": "뉴클레오솜"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エピジェネティクス",
+    "kana": "エピジェネティクス",
+    "romaji": "epijien'eteikusu",
+    "meaning": "후성유전학"
+  },
+  {
+    "subject": "biology",
+    "kanji": "メチル化",
+    "kana": "メチルか",
+    "romaji": "mechiruka",
+    "meaning": "메틸화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アセチル化",
+    "kana": "アセチルか",
+    "romaji": "asechiruka",
+    "meaning": "아세틸화"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子発現",
+    "kana": "いでんしはっげん",
+    "romaji": "idenshihaggen",
+    "meaning": "유전자발현"
+  },
+  {
+    "subject": "biology",
+    "kanji": "プロモーター",
+    "kana": "プロモーター",
+    "romaji": "puromo-ta-",
+    "meaning": "프로모터"
+  },
+  {
+    "subject": "biology",
+    "kanji": "オペレーター",
+    "kana": "オペレーター",
+    "romaji": "opere-ta-",
+    "meaning": "오퍼레이터"
+  },
+  {
+    "subject": "biology",
+    "kanji": "オペロン",
+    "kana": "オペロン",
+    "romaji": "operon",
+    "meaning": "오페론"
+  },
+  {
+    "subject": "biology",
+    "kanji": "転写因子",
+    "kana": "てんしゃいんし",
+    "romaji": "tenshainshi",
+    "meaning": "전사인자"
+  },
+  {
+    "subject": "biology",
+    "kanji": "スプライシング",
+    "kana": "スプライシング",
+    "romaji": "supuraishingu",
+    "meaning": "스플라이싱"
+  },
+  {
+    "subject": "biology",
+    "kanji": "イントロン",
+    "kana": "イントロン",
+    "romaji": "intoron",
+    "meaning": "인트론"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エクソン",
+    "kana": "エクソン",
+    "romaji": "ekuson",
+    "meaning": "엑손"
+  },
+  {
+    "subject": "biology",
+    "kanji": "コドン",
+    "kana": "コドン",
+    "romaji": "kodon",
+    "meaning": "코돈"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アンチコドン",
+    "kana": "アンチコドン",
+    "romaji": "anchikodon",
+    "meaning": "안티코돈"
+  },
+  {
+    "subject": "biology",
+    "kanji": "開始コドン",
+    "kana": "かいしコドン",
+    "romaji": "kaishikodon",
+    "meaning": "개시코돈"
+  },
+  {
+    "subject": "biology",
+    "kanji": "終止コドン",
+    "kana": "しゅうしコドン",
+    "romaji": "shuushikodon",
+    "meaning": "종결코돈"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝暗号",
+    "kana": "いでんあんごう",
+    "romaji": "iden'angou",
+    "meaning": "유전암호"
+  },
+  {
+    "subject": "biology",
+    "kanji": "縮重",
+    "kana": "しゅくじゅう",
+    "romaji": "shukujuu",
+    "meaning": "축퇴"
+  },
+  {
+    "subject": "biology",
+    "kanji": "フレームシフト",
+    "kana": "フレームシフト",
+    "romaji": "fure-mushifuto",
+    "meaning": "틀이동"
+  },
+  {
+    "subject": "biology",
+    "kanji": "点突然変異",
+    "kana": "てんとつぜんへんい",
+    "romaji": "tentotsuzenhen'i",
+    "meaning": "점돌연변이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "欠失",
+    "kana": "けっしつ",
+    "romaji": "kesshitsu",
+    "meaning": "결실"
+  },
+  {
+    "subject": "biology",
+    "kanji": "挿入",
+    "kana": "そうにゅう",
+    "romaji": "soun'yuu",
+    "meaning": "삽입"
+  },
+  {
+    "subject": "biology",
+    "kanji": "転座",
+    "kana": "てんざ",
+    "romaji": "tenza",
+    "meaning": "전좌"
+  },
+  {
+    "subject": "biology",
+    "kanji": "逆位",
+    "kana": "ぎゃくい",
+    "romaji": "gyakui",
+    "meaning": "역위"
+  },
+  {
+    "subject": "biology",
+    "kanji": "倍数性",
+    "kana": "ばいすうせい",
+    "romaji": "baisuusei",
+    "meaning": "배수성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "異数性",
+    "kana": "いすうせい",
+    "romaji": "isuusei",
+    "meaning": "이수성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "染色体異常",
+    "kana": "せんしょくたいいじょう",
+    "romaji": "senshokutaiijou",
+    "meaning": "염색체이상"
+  },
+  {
+    "subject": "biology",
+    "kanji": "伴性遺伝",
+    "kana": "ばんせいいでん",
+    "romaji": "banseiiden",
+    "meaning": "반성유전"
+  },
+  {
+    "subject": "biology",
+    "kanji": "性染色体",
+    "kana": "せいせんしょくたい",
+    "romaji": "seisenshokutai",
+    "meaning": "성염색체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "常染色体",
+    "kana": "じょうせんしょくたい",
+    "romaji": "jousenshokutai",
+    "meaning": "상염색체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "連鎖",
+    "kana": "れんさ",
+    "romaji": "rensa",
+    "meaning": "연관"
+  },
+  {
+    "subject": "biology",
+    "kanji": "組換え",
+    "kana": "くみかえ",
+    "romaji": "kumikae",
+    "meaning": "재조합"
+  },
+  {
+    "subject": "biology",
+    "kanji": "交叉",
+    "kana": "こうさ",
+    "romaji": "kousa",
+    "meaning": "교차"
+  },
+  {
+    "subject": "biology",
+    "kanji": "乗換え",
+    "kana": "のりかえ",
+    "romaji": "n'orikae",
+    "meaning": "교차"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子地図",
+    "kana": "いでんしちず",
+    "romaji": "idenshichizu",
+    "meaning": "유전자지도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "連鎖地図",
+    "kana": "れんさちず",
+    "romaji": "rensachizu",
+    "meaning": "연관지도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "DNAポリメラーゼ",
+    "kana": "ディーエヌエーポリメラーゼ",
+    "romaji": "dei-en'ue-porimera-ze",
+    "meaning": "DNA 중합효소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "RNAポリメラーゼ",
+    "kana": "アールエヌエーポリメラーゼ",
+    "romaji": "a-ruen'ue-porimera-ze",
+    "meaning": "RNA 중합효소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "制限酵素",
+    "kana": "せいげんこうそ",
+    "romaji": "seigenkouso",
+    "meaning": "제한효소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リガーゼ",
+    "kana": "リガーゼ",
+    "romaji": "riga-ze",
+    "meaning": "연결효소"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ベクター",
+    "kana": "ベクター",
+    "romaji": "bekuta-",
+    "meaning": "벡터(운반체)"
+  },
+  {
+    "subject": "biology",
+    "kanji": "プラスミド",
+    "kana": "プラスミド",
+    "romaji": "purasumido",
+    "meaning": "플라스미드"
+  },
+  {
+    "subject": "biology",
+    "kanji": "形質転換",
+    "kana": "けいしつへんかん",
+    "romaji": "keishitsuhenkan",
+    "meaning": "형질전환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "形質導入",
+    "kana": "けいしつどうにゅう",
+    "romaji": "keishitsudoun'yuu",
+    "meaning": "형질도입"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遺伝子治療",
+    "kana": "いでんしちりょう",
+    "romaji": "idenshichiryou",
+    "meaning": "유전자치료"
+  },
+  {
+    "subject": "biology",
+    "kanji": "iPS細胞",
+    "kana": "アイピーエスさいぼう",
+    "romaji": "aipi-esusaibou",
+    "meaning": "iPS세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ES細胞",
+    "kana": "イーエスさいぼう",
+    "romaji": "i-esusaibou",
+    "meaning": "ES세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "再生医療",
+    "kana": "さいせいいりょう",
+    "romaji": "saiseiiryou",
+    "meaning": "재생의료"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光合成の反応式",
+    "kana": "こうごうせいはんのうしき",
+    "romaji": "kougouseihann'oushiki",
+    "meaning": "광합성의 반응식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光化学系I",
+    "kana": "こうかがくけいいち",
+    "romaji": "koukagakukeiichi",
+    "meaning": "광계 I"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光化学系II",
+    "kana": "こうかがくけいに",
+    "romaji": "koukagakukein'i",
+    "meaning": "광계 II"
+  },
+  {
+    "subject": "biology",
+    "kanji": "NADPH",
+    "kana": "エヌエーディーピーエイチ",
+    "romaji": "en'ue-dei-pi-eichi",
+    "meaning": "NADPH"
+  },
+  {
+    "subject": "biology",
+    "kanji": "Rubisco",
+    "kana": "ルビスコ",
+    "romaji": "rubisuko",
+    "meaning": "루비스코"
+  },
+  {
+    "subject": "biology",
+    "kanji": "C3植物",
+    "kana": "シーさんしょくぶつ",
+    "romaji": "shi-sanshokubutsu",
+    "meaning": "C3식물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "C4植物",
+    "kana": "シーよんしょくぶつ",
+    "romaji": "shi-yonshokubutsu",
+    "meaning": "C4식물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "CAM植物",
+    "kana": "カムしょくぶつ",
+    "romaji": "kamushokubutsu",
+    "meaning": "CAM식물"
+  },
+  {
+    "subject": "biology",
+    "kanji": "光呼吸",
+    "kana": "こうこきゅう",
+    "romaji": "koukokyuu",
+    "meaning": "광호흡"
+  },
+  {
+    "subject": "biology",
+    "kanji": "呼吸商",
+    "kana": "こきゅうしょう",
+    "romaji": "kokyuushou",
+    "meaning": "호흡상"
+  },
+  {
+    "subject": "biology",
+    "kanji": "酸素消費量",
+    "kana": "さんそしょうひりょう",
+    "romaji": "sansoshouhiryou",
+    "meaning": "산소소비량"
+  },
+  {
+    "subject": "biology",
+    "kanji": "二酸化炭素放出量",
+    "kana": "にさんかたんそほうしゅつりょう",
+    "romaji": "n'isankatansohoushutsuryou",
+    "meaning": "이산화탄소방출량"
+  },
+  {
+    "subject": "biology",
+    "kanji": "呼吸速度",
+    "kana": "こきゅうそくど",
+    "romaji": "kokyuusokudo",
+    "meaning": "호흡속도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "酵素の至適温度",
+    "kana": "こうそのしてきおんど",
+    "romaji": "kouson'oshitekiondo",
+    "meaning": "효소의 최적온도"
+  },
+  {
+    "subject": "biology",
+    "kanji": "酵素の至適pH",
+    "kana": "こうそのしてきピーエイチ",
+    "romaji": "kouson'oshitekipi-eichi",
+    "meaning": "효소의 최적pH"
+  },
+  {
+    "subject": "biology",
+    "kanji": "競合阻害",
+    "kana": "きょうごうそがい",
+    "romaji": "kyougousogai",
+    "meaning": "경쟁적저해"
+  },
+  {
+    "subject": "biology",
+    "kanji": "非競合阻害",
+    "kana": "ひきょうごうそがい",
+    "romaji": "hikyougousogai",
+    "meaning": "비경쟁적저해"
+  },
+  {
+    "subject": "biology",
+    "kanji": "基質特異性",
+    "kana": "きしつとくいせい",
+    "romaji": "kishitsutokuisei",
+    "meaning": "기질특이성"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ミカエリス・メンテンの式",
+    "kana": "ミカエリスメンテンのしき",
+    "romaji": "mikaerisumentenn'oshiki",
+    "meaning": "미하엘리스-멘텐 식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "Km値",
+    "kana": "ケーエムち",
+    "romaji": "ke-emuchi",
+    "meaning": "Km값"
+  },
+  {
+    "subject": "biology",
+    "kanji": "Vmax",
+    "kana": "ブイマックス",
+    "romaji": "buimakkusu",
+    "meaning": "Vmax"
+  },
+  {
+    "subject": "biology",
+    "kanji": "窒素循環",
+    "kana": "ちっそじゅんかん",
+    "romaji": "chissojunkan",
+    "meaning": "질소순환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "炭素循環",
+    "kana": "たんそじゅんかん",
+    "romaji": "tansojunkan",
+    "meaning": "탄소순환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "水循環",
+    "kana": "みずじゅんかん",
+    "romaji": "mizujunkan",
+    "meaning": "물순환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "リン循環",
+    "kana": "リンじゅんかん",
+    "romaji": "rinjunkan",
+    "meaning": "인순환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "エネルギーピラミッド",
+    "kana": "エネルギーピラミッド",
+    "romaji": "en'erugi-piramiddo",
+    "meaning": "에너지피라미드"
+  },
+  {
+    "subject": "biology",
+    "kanji": "バイオマス",
+    "kana": "バイオマス",
+    "romaji": "baiomasu",
+    "meaning": "생물량"
+  },
+  {
+    "subject": "biology",
+    "kanji": "純一次生産",
+    "kana": "じゅんいちじせいさん",
+    "romaji": "jun'ichijiseisan",
+    "meaning": "순일차생산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "総一次生産",
+    "kana": "そういちじせいさん",
+    "romaji": "souichijiseisan",
+    "meaning": "총일차생산"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遷移",
+    "kana": "せんい",
+    "romaji": "sen'i",
+    "meaning": "천이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "一次遷移",
+    "kana": "いちじせんい",
+    "romaji": "ichijisen'i",
+    "meaning": "1차천이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "二次遷移",
+    "kana": "にじせんい",
+    "romaji": "n'ijisen'i",
+    "meaning": "2차천이"
+  },
+  {
+    "subject": "biology",
+    "kanji": "極相",
+    "kana": "きょくそう",
+    "romaji": "kyokusou",
+    "meaning": "극상수림"
+  },
+  {
+    "subject": "biology",
+    "kanji": "遷移系列",
+    "kana": "せんいけいれつ",
+    "romaji": "sen'ikeiretsu",
+    "meaning": "천이계열"
+  },
+  {
+    "subject": "biology",
+    "kanji": "キーストーン種",
+    "kana": "キーストーンしゅ",
+    "romaji": "ki-suto-nshu",
+    "meaning": "핵심종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "外来種",
+    "kana": "がいらいしゅ",
+    "romaji": "gairaishu",
+    "meaning": "외래종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "固有種",
+    "kana": "こゆうしゅ",
+    "romaji": "koyuushu",
+    "meaning": "고유종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "絶滅危惧種",
+    "kana": "ぜつめつきぐしゅ",
+    "romaji": "zetsumetsukigushu",
+    "meaning": "멸종위기종"
+  },
+  {
+    "subject": "biology",
+    "kanji": "レッドリスト",
+    "kana": "レッドリスト",
+    "romaji": "reddorisuto",
+    "meaning": "적색목록"
+  },
+  {
+    "subject": "biology",
+    "kanji": "生物濃縮の例",
+    "kana": "せいぶつのうしゅくのれい",
+    "romaji": "seibutsun'oushukun'orei",
+    "meaning": "생물농축의 예"
+  },
+  {
+    "subject": "biology",
+    "kanji": "水俣病",
+    "kana": "みなまたびょう",
+    "romaji": "min'amatabyou",
+    "meaning": "미나마타병"
+  },
+  {
+    "subject": "biology",
+    "kanji": "イタイイタイ病",
+    "kana": "イタイイタイびょう",
+    "romaji": "itaiitaibyou",
+    "meaning": "이타이이타이병"
+  },
+  {
+    "subject": "biology",
+    "kanji": "四日市ぜんそく",
+    "kana": "よっかいちぜんそく",
+    "romaji": "yokkaichizensoku",
+    "meaning": "옷카이치 천식"
+  },
+  {
+    "subject": "biology",
+    "kanji": "公害病",
+    "kana": "こうがいびょう",
+    "romaji": "kougaibyou",
+    "meaning": "공해병"
+  },
+  {
+    "subject": "biology",
+    "kanji": "免疫の種類",
+    "kana": "めんえきのしゅるい",
+    "romaji": "men'ekin'oshurui",
+    "meaning": "면역의 종류"
+  },
+  {
+    "subject": "biology",
+    "kanji": "自然免疫",
+    "kana": "しぜんめんえき",
+    "romaji": "shizenmen'eki",
+    "meaning": "선천면역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "獲得免疫",
+    "kana": "かくとくめんえき",
+    "romaji": "kakutokumen'eki",
+    "meaning": "획득면역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "体液性免疫",
+    "kana": "たいえきせいめんえき",
+    "romaji": "taiekiseimen'eki",
+    "meaning": "체액성면역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "細胞性免疫",
+    "kana": "さいぼうせいめんえき",
+    "romaji": "saibouseimen'eki",
+    "meaning": "세포성면역"
+  },
+  {
+    "subject": "biology",
+    "kanji": "B細胞",
+    "kana": "ビーさいぼう",
+    "romaji": "bi-saibou",
+    "meaning": "B세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "T細胞",
+    "kana": "ティーさいぼう",
+    "romaji": "tei-saibou",
+    "meaning": "T세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "ヘルパーT細胞",
+    "kana": "ヘルパーティーさいぼう",
+    "romaji": "herupa-tei-saibou",
+    "meaning": "도움T세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "キラーT細胞",
+    "kana": "キラーティーさいぼう",
+    "romaji": "kira-tei-saibou",
+    "meaning": "살해T세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "記憶細胞",
+    "kana": "きおくさいぼう",
+    "romaji": "kiokusaibou",
+    "meaning": "기억세포"
+  },
+  {
+    "subject": "biology",
+    "kanji": "アレルギー",
+    "kana": "アレルギー",
+    "romaji": "arerugi-",
+    "meaning": "알레르기"
+  },
+  {
+    "subject": "biology",
+    "kanji": "自己免疫疾患",
+    "kana": "じこめんえきしっかん",
+    "romaji": "jikomen'ekishikkan",
+    "meaning": "자가면역질환"
+  },
+  {
+    "subject": "biology",
+    "kanji": "AIDS",
+    "kana": "エイズ",
+    "romaji": "eizu",
+    "meaning": "AIDS"
+  },
+  {
+    "subject": "biology",
+    "kanji": "HIV",
+    "kana": "エイチアイブイ",
+    "romaji": "eichiaibui",
+    "meaning": "HIV"
+  },
+  {
+    "subject": "biology",
+    "kanji": "病原体",
+    "kana": "びょうげんたい",
+    "romaji": "byougentai",
+    "meaning": "병원체"
+  },
+  {
+    "subject": "biology",
+    "kanji": "伝染",
+    "kana": "でんせん",
+    "romaji": "densen",
+    "meaning": "전염"
+  },
+  {
+    "subject": "biology",
+    "kanji": "感染",
+    "kana": "かんせん",
+    "romaji": "kansen",
+    "meaning": "감염"
+  },
+  {
+    "subject": "biology",
+    "kanji": "流行",
+    "kana": "りゅうこう",
+    "romaji": "ryuukou",
+    "meaning": "유행"
+  },
+  {
+    "subject": "biology",
+    "kanji": "パンデミック",
+    "kana": "パンデミック",
+    "romaji": "pandemikku",
+    "meaning": "팬데믹"
+  },
+  {
+    "subject": "biology",
+    "kanji": "疫学",
+    "kana": "えきがく",
+    "romaji": "ekigaku",
+    "meaning": "역학"
+  }
+]

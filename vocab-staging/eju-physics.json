@@ -1,0 +1,3908 @@
+[
+  {
+    "subject": "physics",
+    "kanji": "力学",
+    "kana": "りきがく",
+    "romaji": "rikigaku",
+    "meaning": "역학"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動",
+    "kana": "うんどう",
+    "romaji": "undou",
+    "meaning": "운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "静止",
+    "kana": "せいし",
+    "romaji": "seishi",
+    "meaning": "정지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "速度",
+    "kana": "そくど",
+    "romaji": "sokudo",
+    "meaning": "속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "速さ",
+    "kana": "はやさ",
+    "romaji": "hayasa",
+    "meaning": "속력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "加速度",
+    "kana": "かそくど",
+    "romaji": "kasokudo",
+    "meaning": "가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "変位",
+    "kana": "へんい",
+    "romaji": "hen'i",
+    "meaning": "변위"
+  },
+  {
+    "subject": "physics",
+    "kanji": "距離",
+    "kana": "きょり",
+    "romaji": "kyori",
+    "meaning": "거리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位置",
+    "kana": "いち",
+    "romaji": "ichi",
+    "meaning": "위치"
+  },
+  {
+    "subject": "physics",
+    "kanji": "時刻",
+    "kana": "じこく",
+    "romaji": "jikoku",
+    "meaning": "시각"
+  },
+  {
+    "subject": "physics",
+    "kanji": "時間",
+    "kana": "じかん",
+    "romaji": "jikan",
+    "meaning": "시간"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等速直線運動",
+    "kana": "とうそくちょくせんうんどう",
+    "romaji": "tousokuchokusen'undou",
+    "meaning": "등속직선운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等加速度直線運動",
+    "kana": "とうかそくどちょくせんうんどう",
+    "romaji": "toukasokudochokusen'undou",
+    "meaning": "등가속도직선운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自由落下",
+    "kana": "じゆうらっか",
+    "romaji": "jiyuurakka",
+    "meaning": "자유낙하"
+  },
+  {
+    "subject": "physics",
+    "kanji": "鉛直投げ上げ",
+    "kana": "えんちょくなげあげ",
+    "romaji": "enchokun'ageage",
+    "meaning": "연직위로 던지기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "水平投射",
+    "kana": "すいへいとうしゃ",
+    "romaji": "suiheitousha",
+    "meaning": "수평투사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "斜方投射",
+    "kana": "しゃほうとうしゃ",
+    "romaji": "shahoutousha",
+    "meaning": "사방투사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "放物運動",
+    "kana": "ほうぶつうんどう",
+    "romaji": "houbutsuundou",
+    "meaning": "포물선 운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "落体",
+    "kana": "らくたい",
+    "romaji": "rakutai",
+    "meaning": "낙체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重力加速度",
+    "kana": "じゅうりょくかそくど",
+    "romaji": "juuryokukasokudo",
+    "meaning": "중력가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重力",
+    "kana": "じゅうりょく",
+    "romaji": "juuryoku",
+    "meaning": "중력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "質量",
+    "kana": "しつりょう",
+    "romaji": "shitsuryou",
+    "meaning": "질량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重さ",
+    "kana": "おもさ",
+    "romaji": "omosa",
+    "meaning": "무게"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力",
+    "kana": "ちから",
+    "romaji": "chikara",
+    "meaning": "힘"
+  },
+  {
+    "subject": "physics",
+    "kanji": "合力",
+    "kana": "ごうりょく",
+    "romaji": "gouryoku",
+    "meaning": "합력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分力",
+    "kana": "ぶんりょく",
+    "romaji": "bunryoku",
+    "meaning": "분력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "作用",
+    "kana": "さよう",
+    "romaji": "sayou",
+    "meaning": "작용"
+  },
+  {
+    "subject": "physics",
+    "kanji": "反作用",
+    "kana": "はんさよう",
+    "romaji": "hansayou",
+    "meaning": "반작용"
+  },
+  {
+    "subject": "physics",
+    "kanji": "作用・反作用の法則",
+    "kana": "さようはんさようのほうそく",
+    "romaji": "sayouhansayoun'ohousoku",
+    "meaning": "작용·반작용의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "慣性",
+    "kana": "かんせい",
+    "romaji": "kansei",
+    "meaning": "관성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "慣性の法則",
+    "kana": "かんせいのほうそく",
+    "romaji": "kansein'ohousoku",
+    "meaning": "관성법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動の法則",
+    "kana": "うんどうのほうそく",
+    "romaji": "undoun'ohousoku",
+    "meaning": "운동법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ニュートン",
+    "kana": "ニュートン",
+    "romaji": "n'yu-ton",
+    "meaning": "뉴턴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動方程式",
+    "kana": "うんどうほうていしき",
+    "romaji": "undouhouteishiki",
+    "meaning": "운동방정식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "摩擦力",
+    "kana": "まさつりょく",
+    "romaji": "masatsuryoku",
+    "meaning": "마찰력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "静止摩擦力",
+    "kana": "せいしまさつりょく",
+    "romaji": "seishimasatsuryoku",
+    "meaning": "정지마찰력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "動摩擦力",
+    "kana": "どうまさつりょく",
+    "romaji": "doumasatsuryoku",
+    "meaning": "운동마찰력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "最大静止摩擦力",
+    "kana": "さいだいせいしまさつりょく",
+    "romaji": "saidaiseishimasatsuryoku",
+    "meaning": "최대정지마찰력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "摩擦係数",
+    "kana": "まさつけいすう",
+    "romaji": "masatsukeisuu",
+    "meaning": "마찰계수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "垂直抗力",
+    "kana": "すいちょくこうりょく",
+    "romaji": "suichokukouryoku",
+    "meaning": "수직항력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "張力",
+    "kana": "ちょうりょく",
+    "romaji": "chouryoku",
+    "meaning": "장력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弾性力",
+    "kana": "だんせいりょく",
+    "romaji": "danseiryoku",
+    "meaning": "탄성력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ばね",
+    "kana": "ばね",
+    "romaji": "ban'e",
+    "meaning": "용수철"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ばね定数",
+    "kana": "ばねていすう",
+    "romaji": "ban'eteisuu",
+    "meaning": "용수철상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "フックの法則",
+    "kana": "フックのほうそく",
+    "romaji": "fukkun'ohousoku",
+    "meaning": "훅의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自然長",
+    "kana": "しぜんちょう",
+    "romaji": "shizenchou",
+    "meaning": "자연길이"
+  },
+  {
+    "subject": "physics",
+    "kanji": "伸び",
+    "kana": "のび",
+    "romaji": "n'obi",
+    "meaning": "늘어남"
+  },
+  {
+    "subject": "physics",
+    "kanji": "縮み",
+    "kana": "ちぢみ",
+    "romaji": "chijimi",
+    "meaning": "줄어듦"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振動",
+    "kana": "たんしんどう",
+    "romaji": "tanshindou",
+    "meaning": "단진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "振動",
+    "kana": "しんどう",
+    "romaji": "shindou",
+    "meaning": "진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "周期",
+    "kana": "しゅうき",
+    "romaji": "shuuki",
+    "meaning": "주기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "振動数",
+    "kana": "しんどうすう",
+    "romaji": "shindousuu",
+    "meaning": "진동수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "周波数",
+    "kana": "しゅうはすう",
+    "romaji": "shuuhasuu",
+    "meaning": "주파수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "振幅",
+    "kana": "しんぷく",
+    "romaji": "shinpuku",
+    "meaning": "진폭"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位相",
+    "kana": "いそう",
+    "romaji": "isou",
+    "meaning": "위상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "角振動数",
+    "kana": "かくしんどうすう",
+    "romaji": "kakushindousuu",
+    "meaning": "각진동수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "復元力",
+    "kana": "ふくげんりょく",
+    "romaji": "fukugenryoku",
+    "meaning": "복원력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "振り子",
+    "kana": "ふりこ",
+    "romaji": "furiko",
+    "meaning": "진자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振り子",
+    "kana": "たんふりこ",
+    "romaji": "tanfuriko",
+    "meaning": "단진자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "糸",
+    "kana": "いと",
+    "romaji": "ito",
+    "meaning": "실"
+  },
+  {
+    "subject": "physics",
+    "kanji": "円運動",
+    "kana": "えんうんどう",
+    "romaji": "en'undou",
+    "meaning": "원운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等速円運動",
+    "kana": "とうそくえんうんどう",
+    "romaji": "tousokuen'undou",
+    "meaning": "등속원운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "向心加速度",
+    "kana": "こうしんかそくど",
+    "romaji": "koushinkasokudo",
+    "meaning": "구심가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "向心力",
+    "kana": "こうしんりょく",
+    "romaji": "koushinryoku",
+    "meaning": "구심력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "遠心力",
+    "kana": "えんしんりょく",
+    "romaji": "enshinryoku",
+    "meaning": "원심력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "角速度",
+    "kana": "かくそくど",
+    "romaji": "kakusokudo",
+    "meaning": "각속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "角加速度",
+    "kana": "かくかそくど",
+    "romaji": "kakukasokudo",
+    "meaning": "각가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "接線加速度",
+    "kana": "せっせんかそくど",
+    "romaji": "sessenkasokudo",
+    "meaning": "접선가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "法線加速度",
+    "kana": "ほうせんかそくど",
+    "romaji": "housenkasokudo",
+    "meaning": "법선가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "回転運動",
+    "kana": "かいてんうんどう",
+    "romaji": "kaiten'undou",
+    "meaning": "회전운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "トルク",
+    "kana": "トルク",
+    "romaji": "toruku",
+    "meaning": "토크"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力のモーメント",
+    "kana": "ちからのモーメント",
+    "romaji": "chikaran'omo-mento",
+    "meaning": "힘의 모멘트"
+  },
+  {
+    "subject": "physics",
+    "kanji": "慣性モーメント",
+    "kana": "かんせいモーメント",
+    "romaji": "kanseimo-mento",
+    "meaning": "관성모멘트"
+  },
+  {
+    "subject": "physics",
+    "kanji": "角運動量",
+    "kana": "かくうんどうりょう",
+    "romaji": "kakuundouryou",
+    "meaning": "각운동량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "角運動量保存",
+    "kana": "かくうんどうりょうほぞん",
+    "romaji": "kakuundouryouhozon",
+    "meaning": "각운동량보존"
+  },
+  {
+    "subject": "physics",
+    "kanji": "剛体",
+    "kana": "ごうたい",
+    "romaji": "goutai",
+    "meaning": "강체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重心",
+    "kana": "じゅうしん",
+    "romaji": "juushin",
+    "meaning": "무게중심"
+  },
+  {
+    "subject": "physics",
+    "kanji": "つり合い",
+    "kana": "つりあい",
+    "romaji": "tsuriai",
+    "meaning": "평형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力のつり合い",
+    "kana": "ちからのつりあい",
+    "romaji": "chikaran'otsuriai",
+    "meaning": "힘의 평형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "モーメントのつり合い",
+    "kana": "モーメントのつりあい",
+    "romaji": "mo-menton'otsuriai",
+    "meaning": "모멘트의 평형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事",
+    "kana": "しごと",
+    "romaji": "shigoto",
+    "meaning": "일"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事率",
+    "kana": "しごとりつ",
+    "romaji": "shigotoritsu",
+    "meaning": "일률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エネルギー",
+    "kana": "エネルギー",
+    "romaji": "en'erugi-",
+    "meaning": "에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動エネルギー",
+    "kana": "うんどうエネルギー",
+    "romaji": "undouen'erugi-",
+    "meaning": "운동에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位置エネルギー",
+    "kana": "いちエネルギー",
+    "romaji": "ichien'erugi-",
+    "meaning": "위치에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力学的エネルギー",
+    "kana": "りきがくてきエネルギー",
+    "romaji": "rikigakutekien'erugi-",
+    "meaning": "역학적 에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力学的エネルギー保存",
+    "kana": "りきがくてきエネルギーほぞん",
+    "romaji": "rikigakutekien'erugi-hozon",
+    "meaning": "역학적 에너지 보존"
+  },
+  {
+    "subject": "physics",
+    "kanji": "保存力",
+    "kana": "ほぞんりょく",
+    "romaji": "hozonryoku",
+    "meaning": "보존력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "非保存力",
+    "kana": "ひほぞんりょく",
+    "romaji": "hihozonryoku",
+    "meaning": "비보존력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事・エネルギー定理",
+    "kana": "しごとエネルギーていり",
+    "romaji": "shigotoen'erugi-teiri",
+    "meaning": "일-에너지 정리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "衝突",
+    "kana": "しょうとつ",
+    "romaji": "shoutotsu",
+    "meaning": "충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弾性衝突",
+    "kana": "だんせいしょうとつ",
+    "romaji": "danseishoutotsu",
+    "meaning": "탄성충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "非弾性衝突",
+    "kana": "ひだんせいしょうとつ",
+    "romaji": "hidanseishoutotsu",
+    "meaning": "비탄성충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "完全非弾性衝突",
+    "kana": "かんぜんひだんせいしょうとつ",
+    "romaji": "kanzenhidanseishoutotsu",
+    "meaning": "완전비탄성충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動量",
+    "kana": "うんどうりょう",
+    "romaji": "undouryou",
+    "meaning": "운동량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動量保存",
+    "kana": "うんどうりょうほぞん",
+    "romaji": "undouryouhozon",
+    "meaning": "운동량보존"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力積",
+    "kana": "りきせき",
+    "romaji": "rikiseki",
+    "meaning": "충격량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "反発係数",
+    "kana": "はんぱつけいすう",
+    "romaji": "hanpatsukeisuu",
+    "meaning": "반발계수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "はね返り",
+    "kana": "はねかえり",
+    "romaji": "han'ekaeri",
+    "meaning": "튕김"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波動",
+    "kana": "はどう",
+    "romaji": "hadou",
+    "meaning": "파동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波",
+    "kana": "なみ",
+    "romaji": "n'ami",
+    "meaning": "파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "媒質",
+    "kana": "ばいしつ",
+    "romaji": "baishitsu",
+    "meaning": "매질"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波長",
+    "kana": "はちょう",
+    "romaji": "hachou",
+    "meaning": "파장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波数",
+    "kana": "はすう",
+    "romaji": "hasuu",
+    "meaning": "파수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の速さ",
+    "kana": "なみのはやさ",
+    "romaji": "n'amin'ohayasa",
+    "meaning": "파의 속력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "横波",
+    "kana": "よこなみ",
+    "romaji": "yokon'ami",
+    "meaning": "횡파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "縦波",
+    "kana": "たてなみ",
+    "romaji": "taten'ami",
+    "meaning": "종파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "疎密波",
+    "kana": "そみつは",
+    "romaji": "somitsuha",
+    "meaning": "소밀파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "正弦波",
+    "kana": "せいげんは",
+    "romaji": "seigenha",
+    "meaning": "사인파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "進行波",
+    "kana": "しんこうは",
+    "romaji": "shinkouha",
+    "meaning": "진행파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "定常波",
+    "kana": "ていじょうは",
+    "romaji": "teijouha",
+    "meaning": "정상파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重ね合わせ",
+    "kana": "かさねあわせ",
+    "romaji": "kasan'eawase",
+    "meaning": "중첩"
+  },
+  {
+    "subject": "physics",
+    "kanji": "干渉",
+    "kana": "かんしょう",
+    "romaji": "kanshou",
+    "meaning": "간섭"
+  },
+  {
+    "subject": "physics",
+    "kanji": "回折",
+    "kana": "かいせつ",
+    "romaji": "kaisetsu",
+    "meaning": "회절"
+  },
+  {
+    "subject": "physics",
+    "kanji": "屈折",
+    "kana": "くっせつ",
+    "romaji": "kussetsu",
+    "meaning": "굴절"
+  },
+  {
+    "subject": "physics",
+    "kanji": "反射",
+    "kana": "はんしゃ",
+    "romaji": "hansha",
+    "meaning": "반사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "屈折率",
+    "kana": "くっせつりつ",
+    "romaji": "kussetsuritsu",
+    "meaning": "굴절률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "スネルの法則",
+    "kana": "スネルのほうそく",
+    "romaji": "sun'erun'ohousoku",
+    "meaning": "스넬의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "全反射",
+    "kana": "ぜんはんしゃ",
+    "romaji": "zenhansha",
+    "meaning": "전반사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "臨界角",
+    "kana": "りんかいかく",
+    "romaji": "rinkaikaku",
+    "meaning": "임계각"
+  },
+  {
+    "subject": "physics",
+    "kanji": "音波",
+    "kana": "おんぱ",
+    "romaji": "onpa",
+    "meaning": "음파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "音速",
+    "kana": "おんそく",
+    "romaji": "onsoku",
+    "meaning": "음속"
+  },
+  {
+    "subject": "physics",
+    "kanji": "うなり",
+    "kana": "うなり",
+    "romaji": "un'ari",
+    "meaning": "맥놀이"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ドップラー効果",
+    "kana": "ドップラーこうか",
+    "romaji": "doppura-kouka",
+    "meaning": "도플러 효과"
+  },
+  {
+    "subject": "physics",
+    "kanji": "固有振動",
+    "kana": "こゆうしんどう",
+    "romaji": "koyuushindou",
+    "meaning": "고유진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "共振",
+    "kana": "きょうしん",
+    "romaji": "kyoushin",
+    "meaning": "공진"
+  },
+  {
+    "subject": "physics",
+    "kanji": "共鳴",
+    "kana": "きょうめい",
+    "romaji": "kyoumei",
+    "meaning": "공명"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弦",
+    "kana": "げん",
+    "romaji": "gen",
+    "meaning": "현"
+  },
+  {
+    "subject": "physics",
+    "kanji": "気柱",
+    "kana": "きちゅう",
+    "romaji": "kichuu",
+    "meaning": "기주"
+  },
+  {
+    "subject": "physics",
+    "kanji": "閉管",
+    "kana": "へいかん",
+    "romaji": "heikan",
+    "meaning": "폐관"
+  },
+  {
+    "subject": "physics",
+    "kanji": "開管",
+    "kana": "かいかん",
+    "romaji": "kaikan",
+    "meaning": "개관"
+  },
+  {
+    "subject": "physics",
+    "kanji": "節",
+    "kana": "ふし",
+    "romaji": "fushi",
+    "meaning": "마디"
+  },
+  {
+    "subject": "physics",
+    "kanji": "腹",
+    "kana": "はら",
+    "romaji": "hara",
+    "meaning": "배"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光",
+    "kana": "ひかり",
+    "romaji": "hikari",
+    "meaning": "빛"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光線",
+    "kana": "こうせん",
+    "romaji": "kousen",
+    "meaning": "광선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光速",
+    "kana": "こうそく",
+    "romaji": "kousoku",
+    "meaning": "광속"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電磁波",
+    "kana": "でんじは",
+    "romaji": "denjiha",
+    "meaning": "전자기파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "可視光",
+    "kana": "かしこう",
+    "romaji": "kashikou",
+    "meaning": "가시광선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "紫外線",
+    "kana": "しがいせん",
+    "romaji": "shigaisen",
+    "meaning": "자외선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "赤外線",
+    "kana": "せきがいせん",
+    "romaji": "sekigaisen",
+    "meaning": "적외선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電波",
+    "kana": "でんぱ",
+    "romaji": "denpa",
+    "meaning": "전파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "X線",
+    "kana": "エックスせん",
+    "romaji": "ekkususen",
+    "meaning": "X선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "偏光",
+    "kana": "へんこう",
+    "romaji": "henkou",
+    "meaning": "편광"
+  },
+  {
+    "subject": "physics",
+    "kanji": "回折格子",
+    "kana": "かいせつこうし",
+    "romaji": "kaisetsukoushi",
+    "meaning": "회절격자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "干渉縞",
+    "kana": "かんしょうじま",
+    "romaji": "kanshoujima",
+    "meaning": "간섭무늬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ヤングの実験",
+    "kana": "ヤングのじっけん",
+    "romaji": "yangun'ojikken",
+    "meaning": "영의 실험"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電気",
+    "kana": "でんき",
+    "romaji": "denki",
+    "meaning": "전기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電荷",
+    "kana": "でんか",
+    "romaji": "denka",
+    "meaning": "전하"
+  },
+  {
+    "subject": "physics",
+    "kanji": "クーロンの法則",
+    "kana": "クーロンのほうそく",
+    "romaji": "ku-ronn'ohousoku",
+    "meaning": "쿨롱의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電場",
+    "kana": "でんば",
+    "romaji": "denba",
+    "meaning": "전기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電界",
+    "kana": "でんかい",
+    "romaji": "denkai",
+    "meaning": "전기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電位",
+    "kana": "でんい",
+    "romaji": "den'i",
+    "meaning": "전위"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電位差",
+    "kana": "でんいさ",
+    "romaji": "den'isa",
+    "meaning": "전위차"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電圧",
+    "kana": "でんあつ",
+    "romaji": "den'atsu",
+    "meaning": "전압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電気力線",
+    "kana": "でんきりょくせん",
+    "romaji": "denkiryokusen",
+    "meaning": "전기력선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等電位面",
+    "kana": "とうでんいめん",
+    "romaji": "touden'imen",
+    "meaning": "등전위면"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コンデンサー",
+    "kana": "コンデンサー",
+    "romaji": "kondensa-",
+    "meaning": "축전기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "静電容量",
+    "kana": "せいでんようりょう",
+    "romaji": "seiden'youryou",
+    "meaning": "정전용량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "誘電体",
+    "kana": "ゆうでんたい",
+    "romaji": "yuudentai",
+    "meaning": "유전체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電流",
+    "kana": "でんりゅう",
+    "romaji": "denryuu",
+    "meaning": "전류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "オームの法則",
+    "kana": "オームのほうそく",
+    "romaji": "o-mun'ohousoku",
+    "meaning": "옴의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "抵抗",
+    "kana": "ていこう",
+    "romaji": "teikou",
+    "meaning": "저항"
+  },
+  {
+    "subject": "physics",
+    "kanji": "抵抗率",
+    "kana": "ていこうりつ",
+    "romaji": "teikouritsu",
+    "meaning": "저항률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "直列",
+    "kana": "ちょくれつ",
+    "romaji": "chokuretsu",
+    "meaning": "직렬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "並列",
+    "kana": "へいれつ",
+    "romaji": "heiretsu",
+    "meaning": "병렬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "合成抵抗",
+    "kana": "ごうせいていこう",
+    "romaji": "gouseiteikou",
+    "meaning": "합성저항"
+  },
+  {
+    "subject": "physics",
+    "kanji": "キルヒホッフの法則",
+    "kana": "キルヒホッフのほうそく",
+    "romaji": "kiruhihoffun'ohousoku",
+    "meaning": "키르히호프 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電力",
+    "kana": "でんりょく",
+    "romaji": "denryoku",
+    "meaning": "전력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電力量",
+    "kana": "でんりょくりょう",
+    "romaji": "denryokuryou",
+    "meaning": "전력량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ジュール熱",
+    "kana": "ジュールねつ",
+    "romaji": "ju-run'etsu",
+    "meaning": "줄열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "起電力",
+    "kana": "きでんりょく",
+    "romaji": "kidenryoku",
+    "meaning": "기전력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "内部抵抗",
+    "kana": "ないぶていこう",
+    "romaji": "n'aibuteikou",
+    "meaning": "내부저항"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電池",
+    "kana": "でんち",
+    "romaji": "denchi",
+    "meaning": "전지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁場",
+    "kana": "じば",
+    "romaji": "jiba",
+    "meaning": "자기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁界",
+    "kana": "じかい",
+    "romaji": "jikai",
+    "meaning": "자기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁力線",
+    "kana": "じりょくせん",
+    "romaji": "jiryokusen",
+    "meaning": "자기력선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁束",
+    "kana": "じそく",
+    "romaji": "jisoku",
+    "meaning": "자속"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁束密度",
+    "kana": "じそくみつど",
+    "romaji": "jisokumitsudo",
+    "meaning": "자속밀도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ローレンツ力",
+    "kana": "ローレンツりょく",
+    "romaji": "ro-rentsuryoku",
+    "meaning": "로렌츠 힘"
+  },
+  {
+    "subject": "physics",
+    "kanji": "右ねじの法則",
+    "kana": "みぎねじのほうそく",
+    "romaji": "migin'ejin'ohousoku",
+    "meaning": "오른손 나사 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "フレミングの左手の法則",
+    "kana": "フレミングのひだりてのほうそく",
+    "romaji": "furemingun'ohidariten'ohousoku",
+    "meaning": "플레밍 왼손 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "フレミングの右手の法則",
+    "kana": "フレミングのみぎてのほうそく",
+    "romaji": "furemingun'omigiten'ohousoku",
+    "meaning": "플레밍 오른손 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "アンペールの法則",
+    "kana": "アンペールのほうそく",
+    "romaji": "anpe-run'ohousoku",
+    "meaning": "앙페르 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ビオ・サバールの法則",
+    "kana": "ビオサバールのほうそく",
+    "romaji": "biosaba-run'ohousoku",
+    "meaning": "비오-사바르 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電磁誘導",
+    "kana": "でんじゆうどう",
+    "romaji": "denjiyuudou",
+    "meaning": "전자기유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ファラデーの法則",
+    "kana": "ファラデーのほうそく",
+    "romaji": "fuarade-n'ohousoku",
+    "meaning": "패러데이 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "レンツの法則",
+    "kana": "レンツのほうそく",
+    "romaji": "rentsun'ohousoku",
+    "meaning": "렌츠 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "誘導起電力",
+    "kana": "ゆうどうきでんりょく",
+    "romaji": "yuudoukidenryoku",
+    "meaning": "유도기전력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自己誘導",
+    "kana": "じこゆうどう",
+    "romaji": "jikoyuudou",
+    "meaning": "자기유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相互誘導",
+    "kana": "そうごゆうどう",
+    "romaji": "sougoyuudou",
+    "meaning": "상호유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "インダクタンス",
+    "kana": "インダクタンス",
+    "romaji": "indakutansu",
+    "meaning": "인덕턴스"
+  },
+  {
+    "subject": "physics",
+    "kanji": "交流",
+    "kana": "こうりゅう",
+    "romaji": "kouryuu",
+    "meaning": "교류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "直流",
+    "kana": "ちょくりゅう",
+    "romaji": "chokuryuu",
+    "meaning": "직류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "実効値",
+    "kana": "じっこうち",
+    "romaji": "jikkouchi",
+    "meaning": "실효값"
+  },
+  {
+    "subject": "physics",
+    "kanji": "最大値",
+    "kana": "さいだいち",
+    "romaji": "saidaichi",
+    "meaning": "최댓값"
+  },
+  {
+    "subject": "physics",
+    "kanji": "インピーダンス",
+    "kana": "インピーダンス",
+    "romaji": "inpi-dansu",
+    "meaning": "임피던스"
+  },
+  {
+    "subject": "physics",
+    "kanji": "リアクタンス",
+    "kana": "リアクタンス",
+    "romaji": "riakutansu",
+    "meaning": "리액턴스"
+  },
+  {
+    "subject": "physics",
+    "kanji": "共振回路",
+    "kana": "きょうしんかいろ",
+    "romaji": "kyoushinkairo",
+    "meaning": "공진회로"
+  },
+  {
+    "subject": "physics",
+    "kanji": "変圧器",
+    "kana": "へんあつき",
+    "romaji": "hen'atsuki",
+    "meaning": "변압기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "発電機",
+    "kana": "はつでんき",
+    "romaji": "hatsudenki",
+    "meaning": "발전기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電動機",
+    "kana": "でんどうき",
+    "romaji": "dendouki",
+    "meaning": "전동기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱",
+    "kana": "ねつ",
+    "romaji": "n'etsu",
+    "meaning": "열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "温度",
+    "kana": "おんど",
+    "romaji": "ondo",
+    "meaning": "온도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "絶対温度",
+    "kana": "ぜったいおんど",
+    "romaji": "zettaiondo",
+    "meaning": "절대온도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "セルシウス温度",
+    "kana": "セルシウスおんど",
+    "romaji": "serushiusuondo",
+    "meaning": "섭씨온도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱量",
+    "kana": "ねつりょう",
+    "romaji": "n'etsuryou",
+    "meaning": "열량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "比熱",
+    "kana": "ひねつ",
+    "romaji": "hin'etsu",
+    "meaning": "비열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱容量",
+    "kana": "ねつようりょう",
+    "romaji": "n'etsuyouryou",
+    "meaning": "열용량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "潜熱",
+    "kana": "せんねつ",
+    "romaji": "senn'etsu",
+    "meaning": "잠열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "融解熱",
+    "kana": "ゆうかいねつ",
+    "romaji": "yuukain'etsu",
+    "meaning": "융해열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "気化熱",
+    "kana": "きかねつ",
+    "romaji": "kikan'etsu",
+    "meaning": "기화열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱膨張",
+    "kana": "ねつぼうちょう",
+    "romaji": "n'etsubouchou",
+    "meaning": "열팽창"
+  },
+  {
+    "subject": "physics",
+    "kanji": "線膨張",
+    "kana": "せんぼうちょう",
+    "romaji": "senbouchou",
+    "meaning": "선팽창"
+  },
+  {
+    "subject": "physics",
+    "kanji": "体膨張",
+    "kana": "たいぼうちょう",
+    "romaji": "taibouchou",
+    "meaning": "체팽창"
+  },
+  {
+    "subject": "physics",
+    "kanji": "理想気体",
+    "kana": "りそうきたい",
+    "romaji": "risoukitai",
+    "meaning": "이상기체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ボイルの法則",
+    "kana": "ボイルのほうそく",
+    "romaji": "boirun'ohousoku",
+    "meaning": "보일의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "シャルルの法則",
+    "kana": "シャルルのほうそく",
+    "romaji": "sharurun'ohousoku",
+    "meaning": "샤를의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ボイル・シャルルの法則",
+    "kana": "ボイルシャルルのほうそく",
+    "romaji": "boirusharurun'ohousoku",
+    "meaning": "보일-샤를 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "気体定数",
+    "kana": "きたいていすう",
+    "romaji": "kitaiteisuu",
+    "meaning": "기체상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "アボガドロの法則",
+    "kana": "アボガドロのほうそく",
+    "romaji": "abogadoron'ohousoku",
+    "meaning": "아보가드로 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "内部エネルギー",
+    "kana": "ないぶエネルギー",
+    "romaji": "n'aibuen'erugi-",
+    "meaning": "내부에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱力学第一法則",
+    "kana": "ねつりきがくだいいちほうそく",
+    "romaji": "n'etsurikigakudaiichihousoku",
+    "meaning": "열역학 제1법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱力学第二法則",
+    "kana": "ねつりきがくだいにほうそく",
+    "romaji": "n'etsurikigakudain'ihousoku",
+    "meaning": "열역학 제2법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エントロピー",
+    "kana": "エントロピー",
+    "romaji": "entoropi-",
+    "meaning": "엔트로피"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等温変化",
+    "kana": "とうおんへんか",
+    "romaji": "touonhenka",
+    "meaning": "등온변화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "断熱変化",
+    "kana": "だんねつへんか",
+    "romaji": "dann'etsuhenka",
+    "meaning": "단열변화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等積変化",
+    "kana": "とうせきへんか",
+    "romaji": "tousekihenka",
+    "meaning": "등적변화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等圧変化",
+    "kana": "とうあつへんか",
+    "romaji": "touatsuhenka",
+    "meaning": "등압변화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "カルノーサイクル",
+    "kana": "カルノーサイクル",
+    "romaji": "karun'o-saikuru",
+    "meaning": "카르노 사이클"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱機関",
+    "kana": "ねつきかん",
+    "romaji": "n'etsukikan",
+    "meaning": "열기관"
+  },
+  {
+    "subject": "physics",
+    "kanji": "効率",
+    "kana": "こうりつ",
+    "romaji": "kouritsu",
+    "meaning": "효율"
+  },
+  {
+    "subject": "physics",
+    "kanji": "原子",
+    "kana": "げんし",
+    "romaji": "genshi",
+    "meaning": "원자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "原子核",
+    "kana": "げんしかく",
+    "romaji": "genshikaku",
+    "meaning": "원자핵"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電子",
+    "kana": "でんし",
+    "romaji": "denshi",
+    "meaning": "전자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "陽子",
+    "kana": "ようし",
+    "romaji": "youshi",
+    "meaning": "양성자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "中性子",
+    "kana": "ちゅうせいし",
+    "romaji": "chuuseishi",
+    "meaning": "중성자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光子",
+    "kana": "こうし",
+    "romaji": "koushi",
+    "meaning": "광자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "量子",
+    "kana": "りょうし",
+    "romaji": "ryoushi",
+    "meaning": "양자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "プランク定数",
+    "kana": "プランクていすう",
+    "romaji": "purankuteisuu",
+    "meaning": "플랑크 상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光電効果",
+    "kana": "こうでんこうか",
+    "romaji": "koudenkouka",
+    "meaning": "광전효과"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事関数",
+    "kana": "しごとかんすう",
+    "romaji": "shigotokansuu",
+    "meaning": "일함수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コンプトン効果",
+    "kana": "コンプトンこうか",
+    "romaji": "konputonkouka",
+    "meaning": "콤프턴 효과"
+  },
+  {
+    "subject": "physics",
+    "kanji": "物質波",
+    "kana": "ぶっしつは",
+    "romaji": "busshitsuha",
+    "meaning": "물질파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ド・ブロイ波",
+    "kana": "ド・ブロイは",
+    "romaji": "doburoiha",
+    "meaning": "드브로이파"
+  },
+  {
+    "subject": "physics",
+    "kanji": "不確定性原理",
+    "kana": "ふかくていせいげんり",
+    "romaji": "fukakuteiseigenri",
+    "meaning": "불확정성 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ボーア模型",
+    "kana": "ボーアもけい",
+    "romaji": "bo-amokei",
+    "meaning": "보어 모형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エネルギー準位",
+    "kana": "エネルギーじゅんい",
+    "romaji": "en'erugi-jun'i",
+    "meaning": "에너지 준위"
+  },
+  {
+    "subject": "physics",
+    "kanji": "励起",
+    "kana": "れいき",
+    "romaji": "reiki",
+    "meaning": "들뜸"
+  },
+  {
+    "subject": "physics",
+    "kanji": "基底状態",
+    "kana": "きていじょうたい",
+    "romaji": "kiteijoutai",
+    "meaning": "바닥상태"
+  },
+  {
+    "subject": "physics",
+    "kanji": "放射性崩壊",
+    "kana": "ほうしゃせいほうかい",
+    "romaji": "houshaseihoukai",
+    "meaning": "방사성 붕괴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "半減期",
+    "kana": "はんげんき",
+    "romaji": "hangenki",
+    "meaning": "반감기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "アルファ崩壊",
+    "kana": "アルファほうかい",
+    "romaji": "arufuahoukai",
+    "meaning": "알파 붕괴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ベータ崩壊",
+    "kana": "ベータほうかい",
+    "romaji": "be-tahoukai",
+    "meaning": "베타 붕괴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ガンマ線",
+    "kana": "ガンマせん",
+    "romaji": "ganmasen",
+    "meaning": "감마선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "核融合",
+    "kana": "かくゆうごう",
+    "romaji": "kakuyuugou",
+    "meaning": "핵융합"
+  },
+  {
+    "subject": "physics",
+    "kanji": "核分裂",
+    "kana": "かくぶんれつ",
+    "romaji": "kakubunretsu",
+    "meaning": "핵분열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "質量欠損",
+    "kana": "しつりょうけっそん",
+    "romaji": "shitsuryoukesson",
+    "meaning": "질량결손"
+  },
+  {
+    "subject": "physics",
+    "kanji": "結合エネルギー",
+    "kana": "けつごうエネルギー",
+    "romaji": "ketsugouen'erugi-",
+    "meaning": "결합에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相対性原理",
+    "kana": "そうたいせいげんり",
+    "romaji": "soutaiseigenri",
+    "meaning": "상대성 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "特殊相対性理論",
+    "kana": "とくしゅそうたいせいりろん",
+    "romaji": "tokushusoutaiseiriron",
+    "meaning": "특수상대성이론"
+  },
+  {
+    "subject": "physics",
+    "kanji": "質量とエネルギーの等価性",
+    "kana": "しつりょうとエネルギーのとうかせい",
+    "romaji": "shitsuryoutoen'erugi-n'otoukasei",
+    "meaning": "질량-에너지 등가"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光速不変",
+    "kana": "こうそくふへん",
+    "romaji": "kousokufuhen",
+    "meaning": "광속불변"
+  },
+  {
+    "subject": "physics",
+    "kanji": "時間の遅れ",
+    "kana": "じかんのおくれ",
+    "romaji": "jikann'ookure",
+    "meaning": "시간지연"
+  },
+  {
+    "subject": "physics",
+    "kanji": "長さの収縮",
+    "kana": "ながさのしゅうしゅく",
+    "romaji": "n'agasan'oshuushuku",
+    "meaning": "길이수축"
+  },
+  {
+    "subject": "physics",
+    "kanji": "測定",
+    "kana": "そくてい",
+    "romaji": "sokutei",
+    "meaning": "측정"
+  },
+  {
+    "subject": "physics",
+    "kanji": "誤差",
+    "kana": "ごさ",
+    "romaji": "gosa",
+    "meaning": "오차"
+  },
+  {
+    "subject": "physics",
+    "kanji": "有効数字",
+    "kana": "ゆうこうすうじ",
+    "romaji": "yuukousuuji",
+    "meaning": "유효숫자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "グラフ",
+    "kana": "グラフ",
+    "romaji": "gurafu",
+    "meaning": "그래프"
+  },
+  {
+    "subject": "physics",
+    "kanji": "傾き",
+    "kana": "かたむき",
+    "romaji": "katamuki",
+    "meaning": "기울기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "切片",
+    "kana": "せっぺん",
+    "romaji": "seppen",
+    "meaning": "절편"
+  },
+  {
+    "subject": "physics",
+    "kanji": "実験",
+    "kana": "じっけん",
+    "romaji": "jikken",
+    "meaning": "실험"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仮説",
+    "kana": "かせつ",
+    "romaji": "kasetsu",
+    "meaning": "가설"
+  },
+  {
+    "subject": "physics",
+    "kanji": "法則",
+    "kana": "ほうそく",
+    "romaji": "housoku",
+    "meaning": "법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "原理",
+    "kana": "げんり",
+    "romaji": "genri",
+    "meaning": "원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "保存則",
+    "kana": "ほぞんそく",
+    "romaji": "hozonsoku",
+    "meaning": "보존법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "対称性",
+    "kana": "たいしょうせい",
+    "romaji": "taishousei",
+    "meaning": "대칭성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "次元解析",
+    "kana": "じげんかいせき",
+    "romaji": "jigenkaiseki",
+    "meaning": "차원해석"
+  },
+  {
+    "subject": "physics",
+    "kanji": "SI単位",
+    "kana": "エスアイたんい",
+    "romaji": "esuaitan'i",
+    "meaning": "SI 단위"
+  },
+  {
+    "subject": "physics",
+    "kanji": "メートル",
+    "kana": "メートル",
+    "romaji": "me-toru",
+    "meaning": "미터"
+  },
+  {
+    "subject": "physics",
+    "kanji": "キログラム",
+    "kana": "キログラム",
+    "romaji": "kiroguramu",
+    "meaning": "킬로그램"
+  },
+  {
+    "subject": "physics",
+    "kanji": "秒",
+    "kana": "びょう",
+    "romaji": "byou",
+    "meaning": "초"
+  },
+  {
+    "subject": "physics",
+    "kanji": "アンペア",
+    "kana": "アンペア",
+    "romaji": "anpea",
+    "meaning": "암페어"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ケルビン",
+    "kana": "ケルビン",
+    "romaji": "kerubin",
+    "meaning": "켈빈"
+  },
+  {
+    "subject": "physics",
+    "kanji": "モル",
+    "kana": "モル",
+    "romaji": "moru",
+    "meaning": "몰"
+  },
+  {
+    "subject": "physics",
+    "kanji": "カンデラ",
+    "kana": "カンデラ",
+    "romaji": "kandera",
+    "meaning": "칸델라"
+  },
+  {
+    "subject": "physics",
+    "kanji": "パスカル",
+    "kana": "パスカル",
+    "romaji": "pasukaru",
+    "meaning": "파스칼"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ジュール",
+    "kana": "ジュール",
+    "romaji": "ju-ru",
+    "meaning": "줄"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ワット",
+    "kana": "ワット",
+    "romaji": "watto",
+    "meaning": "와트"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ボルト",
+    "kana": "ボルト",
+    "romaji": "boruto",
+    "meaning": "볼트"
+  },
+  {
+    "subject": "physics",
+    "kanji": "クーロン",
+    "kana": "クーロン",
+    "romaji": "ku-ron",
+    "meaning": "쿨롱"
+  },
+  {
+    "subject": "physics",
+    "kanji": "オーム",
+    "kana": "オーム",
+    "romaji": "o-mu",
+    "meaning": "옴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "テスラ",
+    "kana": "テスラ",
+    "romaji": "tesura",
+    "meaning": "테슬라"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ウェーバ",
+    "kana": "ウェーバ",
+    "romaji": "ue-ba",
+    "meaning": "웨버"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ヘルツ",
+    "kana": "ヘルツ",
+    "romaji": "herutsu",
+    "meaning": "헤르츠"
+  },
+  {
+    "subject": "physics",
+    "kanji": "圧力",
+    "kana": "あつりょく",
+    "romaji": "atsuryoku",
+    "meaning": "압력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "大気圧",
+    "kana": "たいきあつ",
+    "romaji": "taikiatsu",
+    "meaning": "대기압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ゲージ圧",
+    "kana": "ゲージあつ",
+    "romaji": "ge-jiatsu",
+    "meaning": "게이지압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "絶対圧",
+    "kana": "ぜったいあつ",
+    "romaji": "zettaiatsu",
+    "meaning": "절대압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "パスカルの原理",
+    "kana": "パスカルのげんり",
+    "romaji": "pasukarun'ogenri",
+    "meaning": "파스칼의 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "アルキメデスの原理",
+    "kana": "アルキメデスのげんり",
+    "romaji": "arukimedesun'ogenri",
+    "meaning": "아르키메데스의 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "浮力",
+    "kana": "ふりょく",
+    "romaji": "furyoku",
+    "meaning": "부력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "密度",
+    "kana": "みつど",
+    "romaji": "mitsudo",
+    "meaning": "밀도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "比重",
+    "kana": "ひじゅう",
+    "romaji": "hijuu",
+    "meaning": "비중"
+  },
+  {
+    "subject": "physics",
+    "kanji": "流体",
+    "kana": "りゅうたい",
+    "romaji": "ryuutai",
+    "meaning": "유체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "連続の式",
+    "kana": "れんぞくのしき",
+    "romaji": "renzokun'oshiki",
+    "meaning": "연속방정식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ベルヌーイの定理",
+    "kana": "ベルヌーイのていり",
+    "romaji": "berun'u-in'oteiri",
+    "meaning": "베르누이 정리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "粘性",
+    "kana": "ねんせい",
+    "romaji": "n'ensei",
+    "meaning": "점성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "層流",
+    "kana": "そうりゅう",
+    "romaji": "souryuu",
+    "meaning": "층류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "乱流",
+    "kana": "らんりゅう",
+    "romaji": "ranryuu",
+    "meaning": "난류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "表面張力",
+    "kana": "ひょうめんちょうりょく",
+    "romaji": "hyoumenchouryoku",
+    "meaning": "표면장력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "毛細管現象",
+    "kana": "もうさいかんげんしょう",
+    "romaji": "mousaikangenshou",
+    "meaning": "모세관현상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弾性",
+    "kana": "だんせい",
+    "romaji": "dansei",
+    "meaning": "탄성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "塑性",
+    "kana": "そせい",
+    "romaji": "sosei",
+    "meaning": "소성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "応力",
+    "kana": "おうりょく",
+    "romaji": "ouryoku",
+    "meaning": "응력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ひずみ",
+    "kana": "ひずみ",
+    "romaji": "hizumi",
+    "meaning": "변형률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ヤング率",
+    "kana": "ヤングりつ",
+    "romaji": "yanguritsu",
+    "meaning": "영률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ポアソン比",
+    "kana": "ポアソンひ",
+    "romaji": "poasonhi",
+    "meaning": "푸아송비"
+  },
+  {
+    "subject": "physics",
+    "kanji": "破壊",
+    "kana": "はかい",
+    "romaji": "hakai",
+    "meaning": "파괴"
+  },
+  {
+    "subject": "physics",
+    "kanji": "強度",
+    "kana": "きょうど",
+    "romaji": "kyoudo",
+    "meaning": "강도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "剛性",
+    "kana": "ごうせい",
+    "romaji": "gousei",
+    "meaning": "강성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "共振周波数",
+    "kana": "きょうしんしゅうはすう",
+    "romaji": "kyoushinshuuhasuu",
+    "meaning": "공진주파수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "減衰",
+    "kana": "げんすい",
+    "romaji": "gensui",
+    "meaning": "감쇠"
+  },
+  {
+    "subject": "physics",
+    "kanji": "減衰振動",
+    "kana": "げんすいしんどう",
+    "romaji": "gensuishindou",
+    "meaning": "감쇠진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "強制振動",
+    "kana": "きょうせいしんどう",
+    "romaji": "kyouseishindou",
+    "meaning": "강제진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "固有振動数",
+    "kana": "こゆうしんどうすう",
+    "romaji": "koyuushindousuu",
+    "meaning": "고유진동수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "連成振動",
+    "kana": "れんせいしんどう",
+    "romaji": "renseishindou",
+    "meaning": "연진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "うなりの周波数",
+    "kana": "うなりのしゅうはすう",
+    "romaji": "un'arin'oshuuhasuu",
+    "meaning": "맥놀이 주파수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位相差",
+    "kana": "いそうさ",
+    "romaji": "isousa",
+    "meaning": "위상차"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コヒーレンス",
+    "kana": "コヒーレンス",
+    "romaji": "kohi-rensu",
+    "meaning": "결맞음"
+  },
+  {
+    "subject": "physics",
+    "kanji": "インコヒーレンス",
+    "kana": "インコヒーレンス",
+    "romaji": "inkohi-rensu",
+    "meaning": "비결맞음"
+  },
+  {
+    "subject": "physics",
+    "kanji": "干渉条件",
+    "kana": "かんしょうじょうけん",
+    "romaji": "kanshoujouken",
+    "meaning": "간섭조건"
+  },
+  {
+    "subject": "physics",
+    "kanji": "強め合う",
+    "kana": "つよめあう",
+    "romaji": "tsuyomeau",
+    "meaning": "보강간섭"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弱め合う",
+    "kana": "よわめあう",
+    "romaji": "yowameau",
+    "meaning": "상쇄간섭"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光路差",
+    "kana": "こうろさ",
+    "romaji": "kourosa",
+    "meaning": "광로차"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光学的距離",
+    "kana": "こうがくてききょり",
+    "romaji": "kougakutekikyori",
+    "meaning": "광학적 거리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "レンズ",
+    "kana": "レンズ",
+    "romaji": "renzu",
+    "meaning": "렌즈"
+  },
+  {
+    "subject": "physics",
+    "kanji": "凸レンズ",
+    "kana": "とつレンズ",
+    "romaji": "totsurenzu",
+    "meaning": "볼록렌즈"
+  },
+  {
+    "subject": "physics",
+    "kanji": "凹レンズ",
+    "kana": "おうレンズ",
+    "romaji": "ourenzu",
+    "meaning": "오목렌즈"
+  },
+  {
+    "subject": "physics",
+    "kanji": "焦点距離",
+    "kana": "しょうてんきょり",
+    "romaji": "shoutenkyori",
+    "meaning": "초점거리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "レンズの公式",
+    "kana": "レンズのこうしき",
+    "romaji": "renzun'okoushiki",
+    "meaning": "렌즈 공식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "倍率",
+    "kana": "ばいりつ",
+    "romaji": "bairitsu",
+    "meaning": "배율"
+  },
+  {
+    "subject": "physics",
+    "kanji": "実像",
+    "kana": "じつぞう",
+    "romaji": "jitsuzou",
+    "meaning": "실상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "虚像",
+    "kana": "きょぞう",
+    "romaji": "kyozou",
+    "meaning": "허상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "鏡",
+    "kana": "かがみ",
+    "romaji": "kagami",
+    "meaning": "거울"
+  },
+  {
+    "subject": "physics",
+    "kanji": "平面鏡",
+    "kana": "へいめんきょう",
+    "romaji": "heimenkyou",
+    "meaning": "평면거울"
+  },
+  {
+    "subject": "physics",
+    "kanji": "球面鏡",
+    "kana": "きゅうめんきょう",
+    "romaji": "kyuumenkyou",
+    "meaning": "구면거울"
+  },
+  {
+    "subject": "physics",
+    "kanji": "望遠鏡",
+    "kana": "ぼうえんきょう",
+    "romaji": "bouenkyou",
+    "meaning": "망원경"
+  },
+  {
+    "subject": "physics",
+    "kanji": "顕微鏡",
+    "kana": "けんびきょう",
+    "romaji": "kenbikyou",
+    "meaning": "현미경"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分光",
+    "kana": "ぶんこう",
+    "romaji": "bunkou",
+    "meaning": "분광"
+  },
+  {
+    "subject": "physics",
+    "kanji": "スペクトル",
+    "kana": "スペクトル",
+    "romaji": "supekutoru",
+    "meaning": "스펙트럼"
+  },
+  {
+    "subject": "physics",
+    "kanji": "連続スペクトル",
+    "kana": "れんぞくスペクトル",
+    "romaji": "renzokusupekutoru",
+    "meaning": "연속스펙트럼"
+  },
+  {
+    "subject": "physics",
+    "kanji": "線スペクトル",
+    "kana": "せんスペクトル",
+    "romaji": "sensupekutoru",
+    "meaning": "선스펙트럼"
+  },
+  {
+    "subject": "physics",
+    "kanji": "吸収スペクトル",
+    "kana": "きゅうしゅうスペクトル",
+    "romaji": "kyuushuusupekutoru",
+    "meaning": "흡수스펙트럼"
+  },
+  {
+    "subject": "physics",
+    "kanji": "黒体放射",
+    "kana": "こくたいほうしゃ",
+    "romaji": "kokutaihousha",
+    "meaning": "흑체복사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ウィーンの変位則",
+    "kana": "ウィーンのへんいそく",
+    "romaji": "ui-nn'ohen'isoku",
+    "meaning": "빈의 변위법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "シュテファン・ボルツマンの法則",
+    "kana": "シュテファンボルツマンのほうそく",
+    "romaji": "shutefuanborutsumann'ohousoku",
+    "meaning": "슈테판-볼츠만 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "気体分子運動論",
+    "kana": "きたいぶんしうんどうろん",
+    "romaji": "kitaibunshiundouron",
+    "meaning": "기체분자운동론"
+  },
+  {
+    "subject": "physics",
+    "kanji": "平均二乗速度",
+    "kana": "へいきんにじょうそくど",
+    "romaji": "heikinn'ijousokudo",
+    "meaning": "평균제곱속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "平均自由行程",
+    "kana": "へいきんじゆうこうてい",
+    "romaji": "heikinjiyuukoutei",
+    "meaning": "평균자유행정"
+  },
+  {
+    "subject": "physics",
+    "kanji": "衝突頻度",
+    "kana": "しょうとつひんど",
+    "romaji": "shoutotsuhindo",
+    "meaning": "충돌빈도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "マックスウェル分布",
+    "kana": "マックスウェルぶんぷ",
+    "romaji": "makkusuuerubunpu",
+    "meaning": "맥스웰 분포"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ボルツマン定数",
+    "kana": "ボルツマンていすう",
+    "romaji": "borutsumanteisuu",
+    "meaning": "볼츠만 상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自由度",
+    "kana": "じゆうど",
+    "romaji": "jiyuudo",
+    "meaning": "자유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エネルギー等分配則",
+    "kana": "エネルギーとうぶんぱいそく",
+    "romaji": "en'erugi-toubunpaisoku",
+    "meaning": "에너지 등분배법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "比熱比",
+    "kana": "ひねつひ",
+    "romaji": "hin'etsuhi",
+    "meaning": "비열비"
+  },
+  {
+    "subject": "physics",
+    "kanji": "断熱指数",
+    "kana": "だんねつしすう",
+    "romaji": "dann'etsushisuu",
+    "meaning": "단열지수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ポアソンの法則",
+    "kana": "ポアソンのほうそく",
+    "romaji": "poasonn'ohousoku",
+    "meaning": "푸아송의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "可逆過程",
+    "kana": "かぎゃくかてい",
+    "romaji": "kagyakukatei",
+    "meaning": "가역과정"
+  },
+  {
+    "subject": "physics",
+    "kanji": "不可逆過程",
+    "kana": "ふかぎゃくかてい",
+    "romaji": "fukagyakukatei",
+    "meaning": "비가역과정"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱平衡",
+    "kana": "ねつへいこう",
+    "romaji": "n'etsuheikou",
+    "meaning": "열평형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱伝導",
+    "kana": "ねつでんどう",
+    "romaji": "n'etsudendou",
+    "meaning": "열전도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "対流",
+    "kana": "たいりゅう",
+    "romaji": "tairyuu",
+    "meaning": "대류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "放射",
+    "kana": "ほうしゃ",
+    "romaji": "housha",
+    "meaning": "복사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱流",
+    "kana": "ねつりゅう",
+    "romaji": "n'etsuryuu",
+    "meaning": "열류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱伝導率",
+    "kana": "ねつでんどうりつ",
+    "romaji": "n'etsudendouritsu",
+    "meaning": "열전도율"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位置・速度・加速度の関係",
+    "kana": "いちそくどかそくどのかんけい",
+    "romaji": "ichisokudokasokudon'okankei",
+    "meaning": "위치·속도·가속도의 관계"
+  },
+  {
+    "subject": "physics",
+    "kanji": "v-tグラフ",
+    "kana": "ブイティーグラフ",
+    "romaji": "buitei-gurafu",
+    "meaning": "v-t 그래프"
+  },
+  {
+    "subject": "physics",
+    "kanji": "x-tグラフ",
+    "kana": "エックスティーグラフ",
+    "romaji": "ekkusutei-gurafu",
+    "meaning": "x-t 그래프"
+  },
+  {
+    "subject": "physics",
+    "kanji": "傾きの意味",
+    "kana": "かたむきのいみ",
+    "romaji": "katamukin'oimi",
+    "meaning": "기울기의 의미"
+  },
+  {
+    "subject": "physics",
+    "kanji": "面積の意味",
+    "kana": "めんせきのいみ",
+    "romaji": "mensekin'oimi",
+    "meaning": "넓이의 의미"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等加速度運動の公式",
+    "kana": "とうかそくどうんどうのこうしき",
+    "romaji": "toukasokudoundoun'okoushiki",
+    "meaning": "등가속도운동의 공식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "平均の速さ",
+    "kana": "へいきんのはやさ",
+    "romaji": "heikinn'ohayasa",
+    "meaning": "평균속력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "瞬間の速さ",
+    "kana": "しゅんかんのはやさ",
+    "romaji": "shunkann'ohayasa",
+    "meaning": "순간속력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相対速度",
+    "kana": "そうたいそくど",
+    "romaji": "soutaisokudo",
+    "meaning": "상대속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相対加速度",
+    "kana": "そうたいかそくど",
+    "romaji": "soutaikasokudo",
+    "meaning": "상대가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "合成速度",
+    "kana": "ごうせいそくど",
+    "romaji": "gouseisokudo",
+    "meaning": "합성속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分解",
+    "kana": "ぶんかい",
+    "romaji": "bunkai",
+    "meaning": "분해"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力の分解",
+    "kana": "ちからのぶんかい",
+    "romaji": "chikaran'obunkai",
+    "meaning": "힘의 분해"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力の合成",
+    "kana": "ちからのごうせい",
+    "romaji": "chikaran'ogousei",
+    "meaning": "힘의 합성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "平行四辺形の法則",
+    "kana": "へいこうしへんけいのほうそく",
+    "romaji": "heikoushihenkein'ohousoku",
+    "meaning": "평행사변형의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "三点のつり合い",
+    "kana": "さんてんのつりあい",
+    "romaji": "santenn'otsuriai",
+    "meaning": "세 힘의 평형"
+  },
+  {
+    "subject": "physics",
+    "kanji": "一点に働く力",
+    "kana": "いってんにはたらくちから",
+    "romaji": "ittenn'ihatarakuchikara",
+    "meaning": "한 점에 작용하는 힘"
+  },
+  {
+    "subject": "physics",
+    "kanji": "斜面上の物体",
+    "kana": "しゃめんじょうのぶったい",
+    "romaji": "shamenjoun'obuttai",
+    "meaning": "빗면 위의 물체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "斜面",
+    "kana": "しゃめん",
+    "romaji": "shamen",
+    "meaning": "빗면"
+  },
+  {
+    "subject": "physics",
+    "kanji": "傾斜角",
+    "kana": "けいしゃかく",
+    "romaji": "keishakaku",
+    "meaning": "경사각"
+  },
+  {
+    "subject": "physics",
+    "kanji": "滑車",
+    "kana": "かっしゃ",
+    "romaji": "kassha",
+    "meaning": "도르래"
+  },
+  {
+    "subject": "physics",
+    "kanji": "動滑車",
+    "kana": "どうかっしゃ",
+    "romaji": "doukassha",
+    "meaning": "움직도르래"
+  },
+  {
+    "subject": "physics",
+    "kanji": "定滑車",
+    "kana": "ていかっしゃ",
+    "romaji": "teikassha",
+    "meaning": "고정도르래"
+  },
+  {
+    "subject": "physics",
+    "kanji": "糸の張力",
+    "kana": "いとのちょうりょく",
+    "romaji": "iton'ochouryoku",
+    "meaning": "실의 장력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "なめらか",
+    "kana": "なめらか",
+    "romaji": "n'ameraka",
+    "meaning": "마찰 없음(매끄러움)"
+  },
+  {
+    "subject": "physics",
+    "kanji": "粗い",
+    "kana": "あらい",
+    "romaji": "arai",
+    "meaning": "거칠다(마찰 있음)"
+  },
+  {
+    "subject": "physics",
+    "kanji": "摩擦なし",
+    "kana": "まさつなし",
+    "romaji": "masatsun'ashi",
+    "meaning": "마찰 없음"
+  },
+  {
+    "subject": "physics",
+    "kanji": "摩擦あり",
+    "kana": "まさつあり",
+    "romaji": "masatsuari",
+    "meaning": "마찰 있음"
+  },
+  {
+    "subject": "physics",
+    "kanji": "転がり摩擦",
+    "kana": "ころがりまさつ",
+    "romaji": "korogarimasatsu",
+    "meaning": "구름마찰"
+  },
+  {
+    "subject": "physics",
+    "kanji": "空気抵抗",
+    "kana": "くうきていこう",
+    "romaji": "kuukiteikou",
+    "meaning": "공기저항"
+  },
+  {
+    "subject": "physics",
+    "kanji": "終端速度",
+    "kana": "しゅうたんそくど",
+    "romaji": "shuutansokudo",
+    "meaning": "종단속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "粘性抵抗",
+    "kana": "ねんせいていこう",
+    "romaji": "n'enseiteikou",
+    "meaning": "점성저항"
+  },
+  {
+    "subject": "physics",
+    "kanji": "抵抗力",
+    "kana": "ていこうりょく",
+    "romaji": "teikouryoku",
+    "meaning": "저항력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "万有引力",
+    "kana": "ばんゆういんりょく",
+    "romaji": "ban'yuuinryoku",
+    "meaning": "만유인력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "万有引力の法則",
+    "kana": "ばんゆういんりょくのほうそく",
+    "romaji": "ban'yuuinryokun'ohousoku",
+    "meaning": "만유인력의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "引力定数",
+    "kana": "いんりょくていすう",
+    "romaji": "inryokuteisuu",
+    "meaning": "중력상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ケプラーの法則",
+    "kana": "ケプラーのほうそく",
+    "romaji": "kepura-n'ohousoku",
+    "meaning": "케플러의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "惑星運動",
+    "kana": "わくせいうんどう",
+    "romaji": "wakuseiundou",
+    "meaning": "행성운동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "公転",
+    "kana": "こうてん",
+    "romaji": "kouten",
+    "meaning": "공전"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自転",
+    "kana": "じてん",
+    "romaji": "jiten",
+    "meaning": "자전"
+  },
+  {
+    "subject": "physics",
+    "kanji": "人工衛星",
+    "kana": "じんこうえいせい",
+    "romaji": "jinkoueisei",
+    "meaning": "인공위성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "円軌道",
+    "kana": "えんきどう",
+    "romaji": "enkidou",
+    "meaning": "원궤도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "楕円軌道",
+    "kana": "だえんきどう",
+    "romaji": "daenkidou",
+    "meaning": "타원궤도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "第一宇宙速度",
+    "kana": "だいいちうちゅうそくど",
+    "romaji": "daiichiuchuusokudo",
+    "meaning": "제1우주속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "第二宇宙速度",
+    "kana": "だいにうちゅうそくど",
+    "romaji": "dain'iuchuusokudo",
+    "meaning": "제2우주속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "第三宇宙速度",
+    "kana": "だいさんうちゅうそくど",
+    "romaji": "daisan'uchuusokudo",
+    "meaning": "제3우주속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "脱出速度",
+    "kana": "だっしゅつそくど",
+    "romaji": "dasshutsusokudo",
+    "meaning": "탈출속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重力ポテンシャル",
+    "kana": "じゅうりょくポテンシャル",
+    "romaji": "juuryokupotensharu",
+    "meaning": "중력퍼텐셜"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位置エネルギーの基準",
+    "kana": "いちエネルギーのきじゅん",
+    "romaji": "ichien'erugi-n'okijun",
+    "meaning": "위치에너지의 기준"
+  },
+  {
+    "subject": "physics",
+    "kanji": "保存力場",
+    "kana": "ほぞんりょくば",
+    "romaji": "hozonryokuba",
+    "meaning": "보존력장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事の定義",
+    "kana": "しごとのていぎ",
+    "romaji": "shigoton'oteigi",
+    "meaning": "일의 정의"
+  },
+  {
+    "subject": "physics",
+    "kanji": "負の仕事",
+    "kana": "ふのしごと",
+    "romaji": "fun'oshigoto",
+    "meaning": "음의 일"
+  },
+  {
+    "subject": "physics",
+    "kanji": "正の仕事",
+    "kana": "せいのしごと",
+    "romaji": "sein'oshigoto",
+    "meaning": "양의 일"
+  },
+  {
+    "subject": "physics",
+    "kanji": "仕事率が最大",
+    "kana": "しごとりつがさいだい",
+    "romaji": "shigotoritsugasaidai",
+    "meaning": "일률이 최대"
+  },
+  {
+    "subject": "physics",
+    "kanji": "動力",
+    "kana": "どうりょく",
+    "romaji": "douryoku",
+    "meaning": "동력"
+  },
+  {
+    "subject": "physics",
+    "kanji": "効率の計算",
+    "kana": "こうりつのけいさん",
+    "romaji": "kouritsun'okeisan",
+    "meaning": "효율의 계산"
+  },
+  {
+    "subject": "physics",
+    "kanji": "衝突の法則",
+    "kana": "しょうとつのほうそく",
+    "romaji": "shoutotsun'ohousoku",
+    "meaning": "충돌의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "一次元衝突",
+    "kana": "いちじげんしょうとつ",
+    "romaji": "ichijigenshoutotsu",
+    "meaning": "1차원 충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "二次元衝突",
+    "kana": "にじげんしょうとつ",
+    "romaji": "n'ijigenshoutotsu",
+    "meaning": "2차원 충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "斜め衝突",
+    "kana": "ななめしょうとつ",
+    "romaji": "n'an'ameshoutotsu",
+    "meaning": "비스듬한 충돌"
+  },
+  {
+    "subject": "physics",
+    "kanji": "跳ね返り係数",
+    "kana": "はねかえりけいすう",
+    "romaji": "han'ekaerikeisuu",
+    "meaning": "반발계수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "運動量ベクトル",
+    "kana": "うんどうりょうベクトル",
+    "romaji": "undouryoubekutoru",
+    "meaning": "운동량벡터"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力積ベクトル",
+    "kana": "りきせきベクトル",
+    "romaji": "rikisekibekutoru",
+    "meaning": "충격량벡터"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振動の変位",
+    "kana": "たんしんどうのへんい",
+    "romaji": "tanshindoun'ohen'i",
+    "meaning": "단진동의 변위"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振動の速度",
+    "kana": "たんしんどうのそくど",
+    "romaji": "tanshindoun'osokudo",
+    "meaning": "단진동의 속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振動の加速度",
+    "kana": "たんしんどうのかそくど",
+    "romaji": "tanshindoun'okasokudo",
+    "meaning": "단진동의 가속도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "単振動のエネルギー",
+    "kana": "たんしんどうのエネルギー",
+    "romaji": "tanshindoun'oen'erugi-",
+    "meaning": "단진동의 에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等価ばね定数",
+    "kana": "とうかばねていすう",
+    "romaji": "toukaban'eteisuu",
+    "meaning": "등가 용수철상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "連成ばね",
+    "kana": "れんせいばね",
+    "romaji": "renseiban'e",
+    "meaning": "연결된 용수철"
+  },
+  {
+    "subject": "physics",
+    "kanji": "直列ばね",
+    "kana": "ちょくれつばね",
+    "romaji": "chokuretsuban'e",
+    "meaning": "직렬 용수철"
+  },
+  {
+    "subject": "physics",
+    "kanji": "並列ばね",
+    "kana": "へいれつばね",
+    "romaji": "heiretsuban'e",
+    "meaning": "병렬 용수철"
+  },
+  {
+    "subject": "physics",
+    "kanji": "物理振り子",
+    "kana": "ぶつりふりこ",
+    "romaji": "butsurifuriko",
+    "meaning": "물리진자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "二重振り子",
+    "kana": "にじゅうふりこ",
+    "romaji": "n'ijuufuriko",
+    "meaning": "이중진자"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の基本式",
+    "kana": "なみのきほんしき",
+    "romaji": "n'amin'okihonshiki",
+    "meaning": "파동의 기본식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の式",
+    "kana": "なみのしき",
+    "romaji": "n'amin'oshiki",
+    "meaning": "파동식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位相の進み",
+    "kana": "いそうのすすみ",
+    "romaji": "isoun'osusumi",
+    "meaning": "위상의 앞섬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位相の遅れ",
+    "kana": "いそうのおくれ",
+    "romaji": "isoun'ookure",
+    "meaning": "위상의 뒤짐"
+  },
+  {
+    "subject": "physics",
+    "kanji": "同位相",
+    "kana": "どういそう",
+    "romaji": "douisou",
+    "meaning": "동위상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "逆位相",
+    "kana": "ぎゃくいそう",
+    "romaji": "gyakuisou",
+    "meaning": "역위상"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の反射",
+    "kana": "なみのはんしゃ",
+    "romaji": "n'amin'ohansha",
+    "meaning": "파의 반사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "固定端反射",
+    "kana": "こていたんはんしゃ",
+    "romaji": "koteitanhansha",
+    "meaning": "고정단 반사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自由端反射",
+    "kana": "じゆうたんはんしゃ",
+    "romaji": "jiyuutanhansha",
+    "meaning": "자유단 반사"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の屈折",
+    "kana": "なみのくっせつ",
+    "romaji": "n'amin'okussetsu",
+    "meaning": "파의 굴절"
+  },
+  {
+    "subject": "physics",
+    "kanji": "波の回折",
+    "kana": "なみのかいせつ",
+    "romaji": "n'amin'okaisetsu",
+    "meaning": "파의 회절"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ホイヘンスの原理",
+    "kana": "ホイヘンスのげんり",
+    "romaji": "hoihensun'ogenri",
+    "meaning": "호이겐스 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "重ね合わせの原理",
+    "kana": "かさねあわせのげんり",
+    "romaji": "kasan'eawasen'ogenri",
+    "meaning": "중첩의 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "定常波の条件",
+    "kana": "ていじょうはのじょうけん",
+    "romaji": "teijouhan'ojouken",
+    "meaning": "정상파의 조건"
+  },
+  {
+    "subject": "physics",
+    "kanji": "基本振動",
+    "kana": "きほんしんどう",
+    "romaji": "kihonshindou",
+    "meaning": "기본진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "倍振動",
+    "kana": "ばいしんどう",
+    "romaji": "baishindou",
+    "meaning": "배진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "倍音",
+    "kana": "ばいおん",
+    "romaji": "baion",
+    "meaning": "배음"
+  },
+  {
+    "subject": "physics",
+    "kanji": "閉管の固有振動",
+    "kana": "へいかんのこゆうしんどう",
+    "romaji": "heikann'okoyuushindou",
+    "meaning": "폐관의 고유진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "開管の固有振動",
+    "kana": "かいかんのこゆうしんどう",
+    "romaji": "kaikann'okoyuushindou",
+    "meaning": "개관의 고유진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "弦の固有振動",
+    "kana": "げんのこゆうしんどう",
+    "romaji": "genn'okoyuushindou",
+    "meaning": "현의 고유진동"
+  },
+  {
+    "subject": "physics",
+    "kanji": "うなりの周期",
+    "kana": "うなりのしゅうき",
+    "romaji": "un'arin'oshuuki",
+    "meaning": "맥놀이의 주기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "音源が動く場合",
+    "kana": "おんげんがうごくばあい",
+    "romaji": "ongengaugokubaai",
+    "meaning": "음원이 움직이는 경우"
+  },
+  {
+    "subject": "physics",
+    "kanji": "観測者が動く場合",
+    "kana": "かんそくしゃがうごくばあい",
+    "romaji": "kansokushagaugokubaai",
+    "meaning": "관측자가 움직이는 경우"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光の直進",
+    "kana": "ひかりのちょくしん",
+    "romaji": "hikarin'ochokushin",
+    "meaning": "빛의 직진"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光の反射の法則",
+    "kana": "ひかりのはんしゃのほうそく",
+    "romaji": "hikarin'ohanshan'ohousoku",
+    "meaning": "빛의 반사법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光の屈折の法則",
+    "kana": "ひかりのくっせつのほうそく",
+    "romaji": "hikarin'okussetsun'ohousoku",
+    "meaning": "빛의 굴절법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "絶対屈折率",
+    "kana": "ぜったいくっせつりつ",
+    "romaji": "zettaikussetsuritsu",
+    "meaning": "절대굴절률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相対屈折率",
+    "kana": "そうたいくっせつりつ",
+    "romaji": "soutaikussetsuritsu",
+    "meaning": "상대굴절률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "臨界角の計算",
+    "kana": "りんかいかくのけいさん",
+    "romaji": "rinkaikakun'okeisan",
+    "meaning": "임계각의 계산"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光路長",
+    "kana": "こうろちょう",
+    "romaji": "kourochou",
+    "meaning": "광로길이"
+  },
+  {
+    "subject": "physics",
+    "kanji": "干渉条件の導出",
+    "kana": "かんしょうじょうけんのどうしゅつ",
+    "romaji": "kanshoujoukenn'odoushutsu",
+    "meaning": "간섭조건의 유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "薄膜干渉",
+    "kana": "うすまくかんしょう",
+    "romaji": "usumakukanshou",
+    "meaning": "박막간섭"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ニュートンリング",
+    "kana": "ニュートンリング",
+    "romaji": "n'yu-tonringu",
+    "meaning": "뉴턴 링"
+  },
+  {
+    "subject": "physics",
+    "kanji": "回折の条件",
+    "kana": "かいせつのじょうけん",
+    "romaji": "kaisetsun'ojouken",
+    "meaning": "회절의 조건"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分解能",
+    "kana": "ぶんかいのう",
+    "romaji": "bunkain'ou",
+    "meaning": "분해능"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電場の強さ",
+    "kana": "でんばのつよさ",
+    "romaji": "denban'otsuyosa",
+    "meaning": "전기장의 세기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電場の重ね合わせ",
+    "kana": "でんばのかさねあわせ",
+    "romaji": "denban'okasan'eawase",
+    "meaning": "전기장의 중첩"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電位の定義",
+    "kana": "でんいのていぎ",
+    "romaji": "den'in'oteigi",
+    "meaning": "전위의 정의"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電位と電場の関係",
+    "kana": "でんいとでんばのかんけい",
+    "romaji": "den'itodenban'okankei",
+    "meaning": "전위와 전기장의 관계"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等電位面と電場",
+    "kana": "とうでんいめんとでんば",
+    "romaji": "touden'imentodenba",
+    "meaning": "등전위면과 전기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "導体",
+    "kana": "どうたい",
+    "romaji": "doutai",
+    "meaning": "도체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "絶縁体",
+    "kana": "ぜつえんたい",
+    "romaji": "zetsuentai",
+    "meaning": "절연체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "半導体",
+    "kana": "はんどうたい",
+    "romaji": "handoutai",
+    "meaning": "반도체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "静電誘導",
+    "kana": "せいでんゆうどう",
+    "romaji": "seiden'yuudou",
+    "meaning": "정전유도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "帯電",
+    "kana": "たいでん",
+    "romaji": "taiden",
+    "meaning": "대전"
+  },
+  {
+    "subject": "physics",
+    "kanji": "接地",
+    "kana": "せっち",
+    "romaji": "secchi",
+    "meaning": "접지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コンデンサーの直列",
+    "kana": "コンデンサーのちょくれつ",
+    "romaji": "kondensa-n'ochokuretsu",
+    "meaning": "축전기의 직렬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コンデンサーの並列",
+    "kana": "コンデンサーのへいれつ",
+    "romaji": "kondensa-n'oheiretsu",
+    "meaning": "축전기의 병렬"
+  },
+  {
+    "subject": "physics",
+    "kanji": "静電エネルギー",
+    "kana": "せいでんエネルギー",
+    "romaji": "seiden'en'erugi-",
+    "meaning": "정전에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "誘電分極",
+    "kana": "ゆうでんぶんきょく",
+    "romaji": "yuudenbunkyoku",
+    "meaning": "유전분극"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電流の定義",
+    "kana": "でんりゅうのていぎ",
+    "romaji": "denryuun'oteigi",
+    "meaning": "전류의 정의"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電流密度",
+    "kana": "でんりゅうみつど",
+    "romaji": "denryuumitsudo",
+    "meaning": "전류밀도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "抵抗の温度依存性",
+    "kana": "ていこうのおんどいぞんせい",
+    "romaji": "teikoun'oondoizonsei",
+    "meaning": "저항의 온도의존성"
+  },
+  {
+    "subject": "physics",
+    "kanji": "超伝導",
+    "kana": "ちょうでんどう",
+    "romaji": "choudendou",
+    "meaning": "초전도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "回路方程式",
+    "kana": "かいろほうていしき",
+    "romaji": "kairohouteishiki",
+    "meaning": "회로방정식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "キルヒホッフの第一法則",
+    "kana": "キルヒホッフのだいいちほうそく",
+    "romaji": "kiruhihoffun'odaiichihousoku",
+    "meaning": "키르히호프 제1법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "キルヒホッフの第二法則",
+    "kana": "キルヒホッフのだいにほうそく",
+    "romaji": "kiruhihoffun'odain'ihousoku",
+    "meaning": "키르ヒ호프 제2법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分流",
+    "kana": "ぶんりゅう",
+    "romaji": "bunryuu",
+    "meaning": "분류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "分圧",
+    "kana": "ぶんあつ",
+    "romaji": "bun'atsu",
+    "meaning": "분압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ホイートストンブリッジ",
+    "kana": "ホイートストンブリッジ",
+    "romaji": "hoi-tosutonburijji",
+    "meaning": "휘트스톤 브리지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁場の向き",
+    "kana": "じばのむき",
+    "romaji": "jiban'omuki",
+    "meaning": "자기장의 방향"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電流が作る磁場",
+    "kana": "でんりゅうがつくるじば",
+    "romaji": "denryuugatsukurujiba",
+    "meaning": "전류가 만드는 자기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "直線電流の磁場",
+    "kana": "ちょくせんでんりゅうのじば",
+    "romaji": "chokusendenryuun'ojiba",
+    "meaning": "직선전류의 자기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "円形電流の磁場",
+    "kana": "えんけいでんりゅうのじば",
+    "romaji": "enkeidenryuun'ojiba",
+    "meaning": "원형전류의 자기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ソレノイド",
+    "kana": "ソレノイド",
+    "romaji": "soren'oido",
+    "meaning": "솔레노이드"
+  },
+  {
+    "subject": "physics",
+    "kanji": "トロイダルコイル",
+    "kana": "トロイダルコイル",
+    "romaji": "toroidarukoiru",
+    "meaning": "토로이달 코일"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁化",
+    "kana": "じか",
+    "romaji": "jika",
+    "meaning": "자화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "強磁性体",
+    "kana": "きょうじせいたい",
+    "romaji": "kyoujiseitai",
+    "meaning": "강자성체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "常磁性体",
+    "kana": "じょうじせいたい",
+    "romaji": "joujiseitai",
+    "meaning": "상자성체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "反磁性体",
+    "kana": "はんじせいたい",
+    "romaji": "hanjiseitai",
+    "meaning": "반자성체"
+  },
+  {
+    "subject": "physics",
+    "kanji": "電磁誘導の法則",
+    "kana": "でんじゆうどうのほうそく",
+    "romaji": "denjiyuudoun'ohousoku",
+    "meaning": "전자기유도의 법칙"
+  },
+  {
+    "subject": "physics",
+    "kanji": "磁束の変化",
+    "kana": "じそくのへんか",
+    "romaji": "jisokun'ohenka",
+    "meaning": "자속의 변화"
+  },
+  {
+    "subject": "physics",
+    "kanji": "誘導電場",
+    "kana": "ゆうどうでんば",
+    "romaji": "yuudoudenba",
+    "meaning": "유도전기장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "渦電流",
+    "kana": "うずでんりゅう",
+    "romaji": "uzudenryuu",
+    "meaning": "소용돌이전류"
+  },
+  {
+    "subject": "physics",
+    "kanji": "自己誘導係数",
+    "kana": "じこゆうどうけいすう",
+    "romaji": "jikoyuudoukeisuu",
+    "meaning": "자기유도계수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "相互誘導係数",
+    "kana": "そうごゆうどうけいすう",
+    "romaji": "sougoyuudoukeisuu",
+    "meaning": "상호유도계수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "コイルのエネルギー",
+    "kana": "コイルのエネルギー",
+    "romaji": "koirun'oen'erugi-",
+    "meaning": "코일의 에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "交流の実効値",
+    "kana": "こうりゅうのじっこうち",
+    "romaji": "kouryuun'ojikkouchi",
+    "meaning": "교류의 실효값"
+  },
+  {
+    "subject": "physics",
+    "kanji": "交流の平均値",
+    "kana": "こうりゅうのへいきんち",
+    "romaji": "kouryuun'oheikinchi",
+    "meaning": "교류의 평균값"
+  },
+  {
+    "subject": "physics",
+    "kanji": "位相の遅れ（交流）",
+    "kana": "いそうのおくれこうりゅう",
+    "romaji": "isoun'ookurekouryuu",
+    "meaning": "위상의 뒤짐(교류)"
+  },
+  {
+    "subject": "physics",
+    "kanji": "力率",
+    "kana": "りきりつ",
+    "romaji": "rikiritsu",
+    "meaning": "역률"
+  },
+  {
+    "subject": "physics",
+    "kanji": "RLC回路",
+    "kana": "アールエルシーかいろ",
+    "romaji": "a-ruerushi-kairo",
+    "meaning": "RLC 회로"
+  },
+  {
+    "subject": "physics",
+    "kanji": "直列共振",
+    "kana": "ちょくれつきょうしん",
+    "romaji": "chokuretsukyoushin",
+    "meaning": "직렬공진"
+  },
+  {
+    "subject": "physics",
+    "kanji": "並列共振",
+    "kana": "へいれつきょうしん",
+    "romaji": "heiretsukyoushin",
+    "meaning": "병렬공진"
+  },
+  {
+    "subject": "physics",
+    "kanji": "変圧比",
+    "kana": "へんあつひ",
+    "romaji": "hen'atsuhi",
+    "meaning": "변압비"
+  },
+  {
+    "subject": "physics",
+    "kanji": "理想変圧器",
+    "kana": "りそうへんあつき",
+    "romaji": "risouhen'atsuki",
+    "meaning": "이상적 변압기"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱平衡の条件",
+    "kana": "ねつへいこうのじょうけん",
+    "romaji": "n'etsuheikoun'ojouken",
+    "meaning": "열평형의 조건"
+  },
+  {
+    "subject": "physics",
+    "kanji": "熱量保存",
+    "kana": "ねつりょうほぞん",
+    "romaji": "n'etsuryouhozon",
+    "meaning": "열량보존"
+  },
+  {
+    "subject": "physics",
+    "kanji": "混合の温度",
+    "kana": "こんごうのおんど",
+    "romaji": "kongoun'oondo",
+    "meaning": "혼합 온도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "状態方程式",
+    "kana": "じょうたいほうていしき",
+    "romaji": "joutaihouteishiki",
+    "meaning": "상태방정식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "理想気体の内部エネルギー",
+    "kana": "りそうきたいのないぶエネルギー",
+    "romaji": "risoukitain'on'aibuen'erugi-",
+    "meaning": "이상기체의 내부에너지"
+  },
+  {
+    "subject": "physics",
+    "kanji": "定積モル熱容量",
+    "kana": "ていせきモルねつようりょう",
+    "romaji": "teisekimorun'etsuyouryou",
+    "meaning": "정적몰열용량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "定圧モル熱容量",
+    "kana": "ていあつモルねつようりょう",
+    "romaji": "teiatsumorun'etsuyouryou",
+    "meaning": "정압몰열용량"
+  },
+  {
+    "subject": "physics",
+    "kanji": "マイヤーの関係",
+    "kana": "マイヤーのかんけい",
+    "romaji": "maiya-n'okankei",
+    "meaning": "마이어의 관계"
+  },
+  {
+    "subject": "physics",
+    "kanji": "断熱過程の式",
+    "kana": "だんねつかていのしき",
+    "romaji": "dann'etsukatein'oshiki",
+    "meaning": "단열과정의 식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "等温過程の仕事",
+    "kana": "とうおんかていのしごと",
+    "romaji": "touonkatein'oshigoto",
+    "meaning": "등온과정의 일"
+  },
+  {
+    "subject": "physics",
+    "kanji": "カルノー効率",
+    "kana": "カルノーこうりつ",
+    "romaji": "karun'o-kouritsu",
+    "meaning": "카르노 효율"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エントロピー増大の原理",
+    "kana": "エントロピーぞうだいのげんり",
+    "romaji": "entoropi-zoudain'ogenri",
+    "meaning": "엔트로피 증가의 원리"
+  },
+  {
+    "subject": "physics",
+    "kanji": "光電効果の式",
+    "kana": "こうでんこうかのしき",
+    "romaji": "koudenkoukan'oshiki",
+    "meaning": "광전효과의 식"
+  },
+  {
+    "subject": "physics",
+    "kanji": "阻止電圧",
+    "kana": "そしでんあつ",
+    "romaji": "soshiden'atsu",
+    "meaning": "저지전압"
+  },
+  {
+    "subject": "physics",
+    "kanji": "限界波長",
+    "kana": "げんかいはちょう",
+    "romaji": "genkaihachou",
+    "meaning": "한계파장"
+  },
+  {
+    "subject": "physics",
+    "kanji": "エネルギー準位図",
+    "kana": "エネルギーじゅんいず",
+    "romaji": "en'erugi-jun'izu",
+    "meaning": "에너지준위도"
+  },
+  {
+    "subject": "physics",
+    "kanji": "スペクトル線",
+    "kana": "スペクトルせん",
+    "romaji": "supekutorusen",
+    "meaning": "스펙트럼선"
+  },
+  {
+    "subject": "physics",
+    "kanji": "バルマー系列",
+    "kana": "バルマーけいれつ",
+    "romaji": "baruma-keiretsu",
+    "meaning": "발머계열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ライマン系列",
+    "kana": "ライマンけいれつ",
+    "romaji": "raimankeiretsu",
+    "meaning": "라이먼계열"
+  },
+  {
+    "subject": "physics",
+    "kanji": "崩壊定数",
+    "kana": "ほうかいていすう",
+    "romaji": "houkaiteisuu",
+    "meaning": "붕괴상수"
+  },
+  {
+    "subject": "physics",
+    "kanji": "放射能",
+    "kana": "ほうしゃのう",
+    "romaji": "houshan'ou",
+    "meaning": "방사능"
+  },
+  {
+    "subject": "physics",
+    "kanji": "ベクレル",
+    "kana": "ベクレル",
+    "romaji": "bekureru",
+    "meaning": "베크렐"
+  },
+  {
+    "subject": "physics",
+    "kanji": "シーベルト",
+    "kana": "シーベルト",
+    "romaji": "shi-beruto",
+    "meaning": "시버트"
+  },
+  {
+    "subject": "physics",
+    "kanji": "グレイ",
+    "kana": "グレイ",
+    "romaji": "gurei",
+    "meaning": "그레이"
+  }
+]

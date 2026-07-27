@@ -1,0 +1,3383 @@
+[
+  {
+    "subject": "chemistry",
+    "kanji": "化学",
+    "kana": "かがく",
+    "romaji": "kagaku",
+    "meaning": "화학"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "物質",
+    "kana": "ぶっしつ",
+    "romaji": "busshitsu",
+    "meaning": "물질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "元素",
+    "kana": "げんそ",
+    "romaji": "genso",
+    "meaning": "원소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "原子",
+    "kana": "げんし",
+    "romaji": "genshi",
+    "meaning": "원자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子",
+    "kana": "ぶんし",
+    "romaji": "bunshi",
+    "meaning": "분자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン",
+    "kana": "イオン",
+    "romaji": "ion",
+    "meaning": "이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "陽イオン",
+    "kana": "ようイオン",
+    "romaji": "youion",
+    "meaning": "양이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "陰イオン",
+    "kana": "いんイオン",
+    "romaji": "in'ion",
+    "meaning": "음이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電子",
+    "kana": "でんし",
+    "romaji": "denshi",
+    "meaning": "전자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "陽子",
+    "kana": "ようし",
+    "romaji": "youshi",
+    "meaning": "양성자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中性子",
+    "kana": "ちゅうせいし",
+    "romaji": "chuuseishi",
+    "meaning": "중성자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "原子核",
+    "kana": "げんしかく",
+    "romaji": "genshikaku",
+    "meaning": "원자핵"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "原子番号",
+    "kana": "げんしばんごう",
+    "romaji": "genshibangou",
+    "meaning": "원자번호"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量数",
+    "kana": "しつりょうすう",
+    "romaji": "shitsuryousuu",
+    "meaning": "질량수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "同位体",
+    "kana": "どういたい",
+    "romaji": "douitai",
+    "meaning": "동위원소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "放射性同位体",
+    "kana": "ほうしゃせいどういたい",
+    "romaji": "houshaseidouitai",
+    "meaning": "방사성동위원소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電子配置",
+    "kana": "でんしはいち",
+    "romaji": "denshihaichi",
+    "meaning": "전자배치"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電子殻",
+    "kana": "でんしかく",
+    "romaji": "denshikaku",
+    "meaning": "전자껍질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "価電子",
+    "kana": "かでんし",
+    "romaji": "kadenshi",
+    "meaning": "원자가전자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "周期表",
+    "kana": "しゅうきひょう",
+    "romaji": "shuukihyou",
+    "meaning": "주기율표"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "周期",
+    "kana": "しゅうき",
+    "romaji": "shuuki",
+    "meaning": "주기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "族",
+    "kana": "ぞく",
+    "romaji": "zoku",
+    "meaning": "족"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルカリ金属",
+    "kana": "アルカリきんぞく",
+    "romaji": "arukarikinzoku",
+    "meaning": "알칼리 금속"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルカリ土類金属",
+    "kana": "アルカリどるいきんぞく",
+    "romaji": "arukaridoruikinzoku",
+    "meaning": "알칼리 토금속"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ハロゲン",
+    "kana": "ハロゲン",
+    "romaji": "harogen",
+    "meaning": "할로겐"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "貴ガス",
+    "kana": "きガス",
+    "romaji": "kigasu",
+    "meaning": "비활성기체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "遷移元素",
+    "kana": "せんいげんそ",
+    "romaji": "sen'igenso",
+    "meaning": "전이원소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "金属",
+    "kana": "きんぞく",
+    "romaji": "kinzoku",
+    "meaning": "금속"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "非金属",
+    "kana": "ひきんぞく",
+    "romaji": "hikinzoku",
+    "meaning": "비금속"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "半金属",
+    "kana": "はんきんぞく",
+    "romaji": "hankinzoku",
+    "meaning": "준금속"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "単体",
+    "kana": "たんたい",
+    "romaji": "tantai",
+    "meaning": "단체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化合物",
+    "kana": "かごうぶつ",
+    "romaji": "kagoubutsu",
+    "meaning": "화합물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "混合物",
+    "kana": "こんごうぶつ",
+    "romaji": "kongoubutsu",
+    "meaning": "혼합물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "純物質",
+    "kana": "じゅんぶっしつ",
+    "romaji": "junbusshitsu",
+    "meaning": "순물질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学式",
+    "kana": "かがくしき",
+    "romaji": "kagakushiki",
+    "meaning": "화학식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子式",
+    "kana": "ぶんししき",
+    "romaji": "bunshishiki",
+    "meaning": "분자식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "構造式",
+    "kana": "こうぞうしき",
+    "romaji": "kouzoushiki",
+    "meaning": "구조식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "示性式",
+    "kana": "しせいしき",
+    "romaji": "shiseishiki",
+    "meaning": "시성식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "実験式",
+    "kana": "じっけんしき",
+    "romaji": "jikkenshiki",
+    "meaning": "실험식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "組成式",
+    "kana": "そせいしき",
+    "romaji": "soseishiki",
+    "meaning": "조성식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学反応式",
+    "kana": "かがくはんのうしき",
+    "romaji": "kagakuhann'oushiki",
+    "meaning": "화학반응식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学反応",
+    "kana": "かがくはんのう",
+    "romaji": "kagakuhann'ou",
+    "meaning": "화학반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "反応物",
+    "kana": "はんのうぶつ",
+    "romaji": "hann'oubutsu",
+    "meaning": "반응물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "生成物",
+    "kana": "せいせいぶつ",
+    "romaji": "seiseibutsu",
+    "meaning": "생성물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "触媒",
+    "kana": "しょくばい",
+    "romaji": "shokubai",
+    "meaning": "촉매"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酵素",
+    "kana": "こうそ",
+    "romaji": "kouso",
+    "meaning": "효소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化",
+    "kana": "さんか",
+    "romaji": "sanka",
+    "meaning": "산화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "還元",
+    "kana": "かんげん",
+    "romaji": "kangen",
+    "meaning": "환원"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化剤",
+    "kana": "さんかざい",
+    "romaji": "sankazai",
+    "meaning": "산화제"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "還元剤",
+    "kana": "かんげんざい",
+    "romaji": "kangenzai",
+    "meaning": "환원제"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化数",
+    "kana": "さんかすう",
+    "romaji": "sankasuu",
+    "meaning": "산화수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化還元反応",
+    "kana": "さんかかんげんはんのう",
+    "romaji": "sankakangenhann'ou",
+    "meaning": "산화환원반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸",
+    "kana": "さん",
+    "romaji": "san",
+    "meaning": "산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩基",
+    "kana": "えんき",
+    "romaji": "enki",
+    "meaning": "염기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルカリ",
+    "kana": "アルカリ",
+    "romaji": "arukari",
+    "meaning": "알칼리"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中和",
+    "kana": "ちゅうわ",
+    "romaji": "chuuwa",
+    "meaning": "중화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩",
+    "kana": "えん",
+    "romaji": "en",
+    "meaning": "염"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸性",
+    "kana": "さんせい",
+    "romaji": "sansei",
+    "meaning": "산성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩基性",
+    "kana": "えんきせい",
+    "romaji": "enkisei",
+    "meaning": "염기성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中性",
+    "kana": "ちゅうせい",
+    "romaji": "chuusei",
+    "meaning": "중성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水素イオン",
+    "kana": "すいそイオン",
+    "romaji": "suisoion",
+    "meaning": "수소이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水酸化物イオン",
+    "kana": "すいさんかぶつイオン",
+    "romaji": "suisankabutsuion",
+    "meaning": "수산화물이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "pH",
+    "kana": "ピーエイチ",
+    "romaji": "pi-eichi",
+    "meaning": "pH"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "指示薬",
+    "kana": "しじやく",
+    "romaji": "shijiyaku",
+    "meaning": "지시약"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "リトマス紙",
+    "kana": "リトマスし",
+    "romaji": "ritomasushi",
+    "meaning": "리트머스 종이"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フェノールフタレイン",
+    "kana": "フェノールフタレイン",
+    "romaji": "fuen'o-rufutarein",
+    "meaning": "페놀프탈레인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "メチルオレンジ",
+    "kana": "メチルオレンジ",
+    "romaji": "mechiruorenji",
+    "meaning": "메틸오렌지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "滴定",
+    "kana": "てきてい",
+    "romaji": "tekitei",
+    "meaning": "적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中和滴定",
+    "kana": "ちゅうわてきてい",
+    "romaji": "chuuwatekitei",
+    "meaning": "중화적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "モル濃度",
+    "kana": "モルのうど",
+    "romaji": "morun'oudo",
+    "meaning": "몰농도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量パーセント濃度",
+    "kana": "しつりょうパーセントのうど",
+    "romaji": "shitsuryoupa-senton'oudo",
+    "meaning": "질량퍼센트농도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ppm",
+    "kana": "ピーピーエム",
+    "romaji": "pi-pi-emu",
+    "meaning": "ppm"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶液",
+    "kana": "ようえき",
+    "romaji": "youeki",
+    "meaning": "용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶媒",
+    "kana": "ようばい",
+    "romaji": "youbai",
+    "meaning": "용매"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶質",
+    "kana": "ようしつ",
+    "romaji": "youshitsu",
+    "meaning": "용질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶解",
+    "kana": "ようかい",
+    "romaji": "youkai",
+    "meaning": "용해"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶解度",
+    "kana": "ようかいど",
+    "romaji": "youkaido",
+    "meaning": "용해도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "飽和溶液",
+    "kana": "ほうわようえき",
+    "romaji": "houwayoueki",
+    "meaning": "포화용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "不飽和溶液",
+    "kana": "ふほうわようえき",
+    "romaji": "fuhouwayoueki",
+    "meaning": "불포화용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "過飽和溶液",
+    "kana": "かほうわようえき",
+    "romaji": "kahouwayoueki",
+    "meaning": "과포화용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "結晶",
+    "kana": "けっしょう",
+    "romaji": "kesshou",
+    "meaning": "결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "再結晶",
+    "kana": "さいけっしょう",
+    "romaji": "saikesshou",
+    "meaning": "재결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "沈殿",
+    "kana": "ちんでん",
+    "romaji": "chinden",
+    "meaning": "침전"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ろ過",
+    "kana": "ろか",
+    "romaji": "roka",
+    "meaning": "여과"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "蒸留",
+    "kana": "じょうりゅう",
+    "romaji": "jouryuu",
+    "meaning": "증류"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分留",
+    "kana": "ぶんりゅう",
+    "romaji": "bunryuu",
+    "meaning": "분별증류"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "抽出",
+    "kana": "ちゅうしゅつ",
+    "romaji": "chuushutsu",
+    "meaning": "추출"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "クロマトグラフィー",
+    "kana": "クロマトグラフィー",
+    "romaji": "kuromatogurafui-",
+    "meaning": "크로마토그래피"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "気体",
+    "kana": "きたい",
+    "romaji": "kitai",
+    "meaning": "기체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "液体",
+    "kana": "えきたい",
+    "romaji": "ekitai",
+    "meaning": "액체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "固体",
+    "kana": "こたい",
+    "romaji": "kotai",
+    "meaning": "고체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "状態変化",
+    "kana": "じょうたいへんか",
+    "romaji": "joutaihenka",
+    "meaning": "상태변화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "融解",
+    "kana": "ゆうかい",
+    "romaji": "yuukai",
+    "meaning": "융해"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "凝固",
+    "kana": "ぎょうこ",
+    "romaji": "gyouko",
+    "meaning": "응고"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "蒸発",
+    "kana": "じょうはつ",
+    "romaji": "jouhatsu",
+    "meaning": "증발"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "凝縮",
+    "kana": "ぎょうしゅく",
+    "romaji": "gyoushuku",
+    "meaning": "응축"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "昇華",
+    "kana": "しょうか",
+    "romaji": "shouka",
+    "meaning": "승화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "沸点",
+    "kana": "ふってん",
+    "romaji": "futten",
+    "meaning": "끓는점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "融点",
+    "kana": "ゆうてん",
+    "romaji": "yuuten",
+    "meaning": "녹는점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "凝固点",
+    "kana": "ぎょうこてん",
+    "romaji": "gyoukoten",
+    "meaning": "어는점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "蒸気圧",
+    "kana": "じょうきあつ",
+    "romaji": "joukiatsu",
+    "meaning": "증기압"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "沸点上昇",
+    "kana": "ふってんじょうしょう",
+    "romaji": "futtenjoushou",
+    "meaning": "끓는점 오름"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "凝固点降下",
+    "kana": "ぎょうこてんこうか",
+    "romaji": "gyoukotenkouka",
+    "meaning": "어는점 내림"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "浸透圧",
+    "kana": "しんとうあつ",
+    "romaji": "shintouatsu",
+    "meaning": "삼투압"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "コロイド",
+    "kana": "コロイド",
+    "romaji": "koroido",
+    "meaning": "콜로이드"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "チンダル現象",
+    "kana": "チンダルげんしょう",
+    "romaji": "chindarugenshou",
+    "meaning": "틴들 현상"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ブラウン運動",
+    "kana": "ブラウンうんどう",
+    "romaji": "buraun'undou",
+    "meaning": "브라운 운동"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "透析",
+    "kana": "とうせき",
+    "romaji": "touseki",
+    "meaning": "투석"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "モル",
+    "kana": "モル",
+    "romaji": "moru",
+    "meaning": "몰"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アボガドロ定数",
+    "kana": "アボガドロていすう",
+    "romaji": "abogadoroteisuu",
+    "meaning": "아보가드로 상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "モル質量",
+    "kana": "モルしつりょう",
+    "romaji": "morushitsuryou",
+    "meaning": "몰질량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "原子量",
+    "kana": "げんしりょう",
+    "romaji": "genshiryou",
+    "meaning": "원자량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子量",
+    "kana": "ぶんしりょう",
+    "romaji": "bunshiryou",
+    "meaning": "분자량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "式量",
+    "kana": "しきりょう",
+    "romaji": "shikiryou",
+    "meaning": "식량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "物質量",
+    "kana": "ぶっしつりょう",
+    "romaji": "busshitsuryou",
+    "meaning": "물질량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "モル体積",
+    "kana": "モルたいせき",
+    "romaji": "morutaiseki",
+    "meaning": "몰부피"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "標準状態",
+    "kana": "ひょうじゅんじょうたい",
+    "romaji": "hyoujunjoutai",
+    "meaning": "표준상태"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "理想気体",
+    "kana": "りそうきたい",
+    "romaji": "risoukitai",
+    "meaning": "이상기체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "気体定数",
+    "kana": "きたいていすう",
+    "romaji": "kitaiteisuu",
+    "meaning": "기체상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分圧",
+    "kana": "ぶんあつ",
+    "romaji": "bun'atsu",
+    "meaning": "분압"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "全圧",
+    "kana": "ぜんあつ",
+    "romaji": "zen'atsu",
+    "meaning": "전압"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ドルトンの法則",
+    "kana": "ドルトンのほうそく",
+    "romaji": "dorutonn'ohousoku",
+    "meaning": "돌턴의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヘンリーの法則",
+    "kana": "ヘンリーのほうそく",
+    "romaji": "henri-n'ohousoku",
+    "meaning": "헨리의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学結合",
+    "kana": "かがくけつごう",
+    "romaji": "kagakuketsugou",
+    "meaning": "화학결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン結合",
+    "kana": "イオンけつごう",
+    "romaji": "ionketsugou",
+    "meaning": "이온결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共有結合",
+    "kana": "きょうゆうけつごう",
+    "romaji": "kyouyuuketsugou",
+    "meaning": "공유결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "金属結合",
+    "kana": "きんぞくけつごう",
+    "romaji": "kinzokuketsugou",
+    "meaning": "금속결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "配位結合",
+    "kana": "はいいけつごう",
+    "romaji": "haiiketsugou",
+    "meaning": "배위결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水素結合",
+    "kana": "すいそけつごう",
+    "romaji": "suisoketsugou",
+    "meaning": "수소결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ファンデルワールス力",
+    "kana": "ファンデルワールスりょく",
+    "romaji": "fuanderuwa-rusuryoku",
+    "meaning": "반데르발스 힘"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "極性",
+    "kana": "きょくせい",
+    "romaji": "kyokusei",
+    "meaning": "극성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "無極性",
+    "kana": "むきょくせい",
+    "romaji": "mukyokusei",
+    "meaning": "무극성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電気陰性度",
+    "kana": "でんきいんせいど",
+    "romaji": "denkiinseido",
+    "meaning": "전기음성도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン化エネルギー",
+    "kana": "イオンかエネルギー",
+    "romaji": "ionkaen'erugi-",
+    "meaning": "이온화에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電子親和力",
+    "kana": "でんししんわりょく",
+    "romaji": "denshishinwaryoku",
+    "meaning": "전자친화도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "結合エネルギー",
+    "kana": "けつごうエネルギー",
+    "romaji": "ketsugouen'erugi-",
+    "meaning": "결합에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "結合角",
+    "kana": "けつごうかく",
+    "romaji": "ketsugoukaku",
+    "meaning": "결합각"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子構造",
+    "kana": "ぶんしこうぞう",
+    "romaji": "bunshikouzou",
+    "meaning": "분자구조"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "立体構造",
+    "kana": "りったいこうぞう",
+    "romaji": "rittaikouzou",
+    "meaning": "입체구조"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "異性体",
+    "kana": "いせいたい",
+    "romaji": "iseitai",
+    "meaning": "이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "構造異性体",
+    "kana": "こうぞういせいたい",
+    "romaji": "kouzouiseitai",
+    "meaning": "구조이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "立体異性体",
+    "kana": "りったいせいせいたい",
+    "romaji": "rittaiseiseitai",
+    "meaning": "입체이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "光学異性体",
+    "kana": "こうがくいせいたい",
+    "romaji": "kougakuiseitai",
+    "meaning": "광학이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "鏡像異性体",
+    "kana": "きょうぞういせいたい",
+    "romaji": "kyouzouiseitai",
+    "meaning": "거울상이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "幾何異性体",
+    "kana": "きかいせいたい",
+    "romaji": "kikaiseitai",
+    "meaning": "기하이성질체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "シス",
+    "kana": "シス",
+    "romaji": "shisu",
+    "meaning": "시스"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "トランス",
+    "kana": "トランス",
+    "romaji": "toransu",
+    "meaning": "트랜스"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "反応熱",
+    "kana": "はんのうねつ",
+    "romaji": "hann'oun'etsu",
+    "meaning": "반응열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "生成熱",
+    "kana": "せいせいねつ",
+    "romaji": "seisein'etsu",
+    "meaning": "생성열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "燃焼熱",
+    "kana": "ねんしょうねつ",
+    "romaji": "n'enshoun'etsu",
+    "meaning": "연소열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶解熱",
+    "kana": "ようかいねつ",
+    "romaji": "youkain'etsu",
+    "meaning": "용해열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中和熱",
+    "kana": "ちゅうわねつ",
+    "romaji": "chuuwan'etsu",
+    "meaning": "중화열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヘスの法則",
+    "kana": "ヘスのほうそく",
+    "romaji": "hesun'ohousoku",
+    "meaning": "ヘス의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "反応速度",
+    "kana": "はんのうそくど",
+    "romaji": "hann'ousokudo",
+    "meaning": "반응속도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "速度定数",
+    "kana": "そくどていすう",
+    "romaji": "sokudoteisuu",
+    "meaning": "속도상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "活性化エネルギー",
+    "kana": "かっせいかエネルギー",
+    "romaji": "kasseikaen'erugi-",
+    "meaning": "활성화에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学平衡",
+    "kana": "かがくへいこう",
+    "romaji": "kagakuheikou",
+    "meaning": "화학평형"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "平衡定数",
+    "kana": "へいこうていすう",
+    "romaji": "heikouteisuu",
+    "meaning": "평형상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ルシャトリエの原理",
+    "kana": "ルシャトリエのげんり",
+    "romaji": "rushatorien'ogenri",
+    "meaning": "르샤틀리에 원리"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "可逆反応",
+    "kana": "かぎゃくはんのう",
+    "romaji": "kagyakuhann'ou",
+    "meaning": "가역반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "不可逆反応",
+    "kana": "ふかぎゃくはんのう",
+    "romaji": "fukagyakuhann'ou",
+    "meaning": "비가역반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "平衡移動",
+    "kana": "へいこういどう",
+    "romaji": "heikouidou",
+    "meaning": "평형이동"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電離",
+    "kana": "でんり",
+    "romaji": "denri",
+    "meaning": "전리"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電離度",
+    "kana": "でんりど",
+    "romaji": "denrido",
+    "meaning": "전리도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電離平衡",
+    "kana": "でんりへいこう",
+    "romaji": "denriheikou",
+    "meaning": "전리평형"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "弱酸",
+    "kana": "じゃくさん",
+    "romaji": "jakusan",
+    "meaning": "약산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "強酸",
+    "kana": "きょうさん",
+    "romaji": "kyousan",
+    "meaning": "강산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "弱塩基",
+    "kana": "じゃくえんき",
+    "romaji": "jakuenki",
+    "meaning": "약염기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "強塩基",
+    "kana": "きょうえんき",
+    "romaji": "kyouenki",
+    "meaning": "강염기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "緩衝液",
+    "kana": "かんしょうえき",
+    "romaji": "kanshoueki",
+    "meaning": "완충용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "加水分解",
+    "kana": "かすいぶんかい",
+    "romaji": "kasuibunkai",
+    "meaning": "가수분해"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩の加水分解",
+    "kana": "えんのかすいぶんかい",
+    "romaji": "enn'okasuibunkai",
+    "meaning": "염의 가수분해"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電気分解",
+    "kana": "でんきぶんかい",
+    "romaji": "denkibunkai",
+    "meaning": "전기분해"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電解質",
+    "kana": "でんかいしつ",
+    "romaji": "denkaishitsu",
+    "meaning": "전해질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "非電解質",
+    "kana": "ひでんかいしつ",
+    "romaji": "hidenkaishitsu",
+    "meaning": "비전해질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電極",
+    "kana": "でんきょく",
+    "romaji": "denkyoku",
+    "meaning": "전극"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "陽極",
+    "kana": "ようきょく",
+    "romaji": "youkyoku",
+    "meaning": "양극"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "陰極",
+    "kana": "いんきょく",
+    "romaji": "inkyoku",
+    "meaning": "음극"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ファラデーの法則",
+    "kana": "ファラデーのほうそく",
+    "romaji": "fuarade-n'ohousoku",
+    "meaning": "패러데이 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電池",
+    "kana": "でんち",
+    "romaji": "denchi",
+    "meaning": "전지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ボルタ電池",
+    "kana": "ボルタでんち",
+    "romaji": "borutadenchi",
+    "meaning": "볼타 전지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ダニエル電池",
+    "kana": "ダニエルでんち",
+    "romaji": "dan'ierudenchi",
+    "meaning": "다니엘 전지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "鉛蓄電池",
+    "kana": "なまちくでんち",
+    "romaji": "n'amachikudenchi",
+    "meaning": "납축전지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "燃料電池",
+    "kana": "ねんりょうでんち",
+    "romaji": "n'enryoudenchi",
+    "meaning": "연료전지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "起電力",
+    "kana": "きでんりょく",
+    "romaji": "kidenryoku",
+    "meaning": "기전력"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン化傾向",
+    "kana": "イオンかけいこう",
+    "romaji": "ionkakeikou",
+    "meaning": "이온화경향"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "無機化学",
+    "kana": "むきかがく",
+    "romaji": "mukikagaku",
+    "meaning": "무기화학"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "有機化学",
+    "kana": "ゆうきかがく",
+    "romaji": "yuukikagaku",
+    "meaning": "유기화학"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "有機化合物",
+    "kana": "ゆうきかごうぶつ",
+    "romaji": "yuukikagoubutsu",
+    "meaning": "유기화합물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炭化水素",
+    "kana": "たんかすいそ",
+    "romaji": "tankasuiso",
+    "meaning": "탄화수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルカン",
+    "kana": "アルカン",
+    "romaji": "arukan",
+    "meaning": "알케인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルケン",
+    "kana": "アルケン",
+    "romaji": "aruken",
+    "meaning": "알켄"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルキン",
+    "kana": "アルキン",
+    "romaji": "arukin",
+    "meaning": "알카인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "飽和炭化水素",
+    "kana": "ほうわたんかすいそ",
+    "romaji": "houwatankasuiso",
+    "meaning": "포화탄화수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "不飽和炭化水素",
+    "kana": "ふほうわたんかすいそ",
+    "romaji": "fuhouwatankasuiso",
+    "meaning": "불포화탄화수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "芳香族炭化水素",
+    "kana": "ほうこうぞくたんかすいそ",
+    "romaji": "houkouzokutankasuiso",
+    "meaning": "방향족탄화수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ベンゼン",
+    "kana": "ベンゼン",
+    "romaji": "benzen",
+    "meaning": "벤젠"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "メタン",
+    "kana": "メタン",
+    "romaji": "metan",
+    "meaning": "메테인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エタン",
+    "kana": "エタン",
+    "romaji": "etan",
+    "meaning": "에테인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "プロパン",
+    "kana": "プロパン",
+    "romaji": "puropan",
+    "meaning": "프로페인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ブタン",
+    "kana": "ブタン",
+    "romaji": "butan",
+    "meaning": "뷰테인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エチレン",
+    "kana": "エチレン",
+    "romaji": "echiren",
+    "meaning": "에틸렌"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アセチレン",
+    "kana": "アセチレン",
+    "romaji": "asechiren",
+    "meaning": "아세틸렌"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "官能基",
+    "kana": "かんのうき",
+    "romaji": "kann'ouki",
+    "meaning": "작용기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルコール",
+    "kana": "アルコール",
+    "romaji": "aruko-ru",
+    "meaning": "알코올"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エーテル",
+    "kana": "エーテル",
+    "romaji": "e-teru",
+    "meaning": "에테르"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルデヒド",
+    "kana": "アルデヒド",
+    "romaji": "arudehido",
+    "meaning": "알데하이드"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ケトン",
+    "kana": "ケトン",
+    "romaji": "keton",
+    "meaning": "케톤"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "カルボン酸",
+    "kana": "カルボンさん",
+    "romaji": "karubonsan",
+    "meaning": "카복실산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エステル",
+    "kana": "エステル",
+    "romaji": "esuteru",
+    "meaning": "에스터"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アミン",
+    "kana": "アミン",
+    "romaji": "amin",
+    "meaning": "아민"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アミド",
+    "kana": "アミド",
+    "romaji": "amido",
+    "meaning": "아마이드"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フェノール",
+    "kana": "フェノール",
+    "romaji": "fuen'o-ru",
+    "meaning": "페놀"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ニトロ化合物",
+    "kana": "ニトロかごうぶつ",
+    "romaji": "n'itorokagoubutsu",
+    "meaning": "니트로화합물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "付加反応",
+    "kana": "ふかはんのう",
+    "romaji": "fukahann'ou",
+    "meaning": "첨가반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "置換反応",
+    "kana": "ちかんはんのう",
+    "romaji": "chikanhann'ou",
+    "meaning": "치환반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "脱離反応",
+    "kana": "だつりはんのう",
+    "romaji": "datsurihann'ou",
+    "meaning": "제거반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "重合",
+    "kana": "じゅうごう",
+    "romaji": "juugou",
+    "meaning": "중합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "付加重合",
+    "kana": "ふかじゅうごう",
+    "romaji": "fukajuugou",
+    "meaning": "첨가중합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "縮合重合",
+    "kana": "しゅくごうじゅうごう",
+    "romaji": "shukugoujuugou",
+    "meaning": "축합중합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "高分子",
+    "kana": "こうぶんし",
+    "romaji": "koubunshi",
+    "meaning": "고분자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ポリマー",
+    "kana": "ポリマー",
+    "romaji": "porima-",
+    "meaning": "폴리머"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "プラスチック",
+    "kana": "プラスチック",
+    "romaji": "purasuchikku",
+    "meaning": "플라스틱"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "合成繊維",
+    "kana": "ごうせいせんい",
+    "romaji": "gouseisen'i",
+    "meaning": "합성섬유"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ナイロン",
+    "kana": "ナイロン",
+    "romaji": "n'airon",
+    "meaning": "나일론"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ポリエチレン",
+    "kana": "ポリエチレン",
+    "romaji": "poriechiren",
+    "meaning": "폴리에틸렌"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ポリ塩化ビニル",
+    "kana": "ポリえんかビニル",
+    "romaji": "porienkabin'iru",
+    "meaning": "폴리염화비닐"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "糖",
+    "kana": "とう",
+    "romaji": "tou",
+    "meaning": "당"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "単糖",
+    "kana": "たんとう",
+    "romaji": "tantou",
+    "meaning": "단당류"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "二糖",
+    "kana": "にとう",
+    "romaji": "n'itou",
+    "meaning": "이당류"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "多糖",
+    "kana": "たとう",
+    "romaji": "tatou",
+    "meaning": "다당류"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "グルコース",
+    "kana": "グルコース",
+    "romaji": "guruko-su",
+    "meaning": "포도당"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フルクトース",
+    "kana": "フルクトース",
+    "romaji": "furukuto-su",
+    "meaning": "과당"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "スクロース",
+    "kana": "スクロース",
+    "romaji": "sukuro-su",
+    "meaning": "자당"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "デンプン",
+    "kana": "デンプン",
+    "romaji": "denpun",
+    "meaning": "녹말"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "セルロース",
+    "kana": "セルロース",
+    "romaji": "seruro-su",
+    "meaning": "셀룰로스"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アミノ酸",
+    "kana": "アミノさん",
+    "romaji": "amin'osan",
+    "meaning": "아미노산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "タンパク質",
+    "kana": "タンパクしつ",
+    "romaji": "tanpakushitsu",
+    "meaning": "단백질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ペプチド結合",
+    "kana": "ペプチドけつごう",
+    "romaji": "pepuchidoketsugou",
+    "meaning": "펩타이드결합"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "脂質",
+    "kana": "ししつ",
+    "romaji": "shishitsu",
+    "meaning": "지질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "油脂",
+    "kana": "ゆし",
+    "romaji": "yushi",
+    "meaning": "유지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "脂肪酸",
+    "kana": "しぼうさん",
+    "romaji": "shibousan",
+    "meaning": "지방산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "けん化",
+    "kana": "けんか",
+    "romaji": "kenka",
+    "meaning": "비누화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "界面活性剤",
+    "kana": "かいめんかっせいざい",
+    "romaji": "kaimenkasseizai",
+    "meaning": "계면활성제"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "石鹸",
+    "kana": "せっけん",
+    "romaji": "sekken",
+    "meaning": "비누"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "核酸",
+    "kana": "かくさん",
+    "romaji": "kakusan",
+    "meaning": "핵산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "DNA",
+    "kana": "ディーエヌエー",
+    "romaji": "dei-en'ue-",
+    "meaning": "DNA"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "RNA",
+    "kana": "アールエヌエー",
+    "romaji": "a-ruen'ue-",
+    "meaning": "RNA"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "無機質",
+    "kana": "むきしつ",
+    "romaji": "mukishitsu",
+    "meaning": "무기질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化物",
+    "kana": "さんかぶつ",
+    "romaji": "sankabutsu",
+    "meaning": "산화물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水酸化物",
+    "kana": "すいさんかぶつ",
+    "romaji": "suisankabutsu",
+    "meaning": "수산화물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩化物",
+    "kana": "えんかぶつ",
+    "romaji": "enkabutsu",
+    "meaning": "염화물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硫酸",
+    "kana": "りゅうさん",
+    "romaji": "ryuusan",
+    "meaning": "황산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩酸",
+    "kana": "えんさん",
+    "romaji": "ensan",
+    "meaning": "염산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硝酸",
+    "kana": "しょうさん",
+    "romaji": "shousan",
+    "meaning": "질산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酢酸",
+    "kana": "さくさん",
+    "romaji": "sakusan",
+    "meaning": "아세트산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炭酸",
+    "kana": "たんさん",
+    "romaji": "tansan",
+    "meaning": "탄산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アンモニア",
+    "kana": "アンモニア",
+    "romaji": "anmon'ia",
+    "meaning": "암모니아"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水酸化ナトリウム",
+    "kana": "すいさんかナトリウム",
+    "romaji": "suisankan'atoriumu",
+    "meaning": "수산화나트륨"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩化ナトリウム",
+    "kana": "えんかナトリウム",
+    "romaji": "enkan'atoriumu",
+    "meaning": "염화나트륨"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炭酸カルシウム",
+    "kana": "たんさんカルシウム",
+    "romaji": "tansankarushiumu",
+    "meaning": "탄산칼슘"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化カルシウム",
+    "kana": "さんかカルシウム",
+    "romaji": "sankakarushiumu",
+    "meaning": "산화칼슘"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "二酸化炭素",
+    "kana": "にさんかたんそ",
+    "romaji": "n'isankatanso",
+    "meaning": "이산화탄소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "一酸化炭素",
+    "kana": "いっさんかたんそ",
+    "romaji": "issankatanso",
+    "meaning": "일산화탄소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸素",
+    "kana": "さんそ",
+    "romaji": "sanso",
+    "meaning": "산소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水素",
+    "kana": "すいそ",
+    "romaji": "suiso",
+    "meaning": "수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "窒素",
+    "kana": "ちっそ",
+    "romaji": "chisso",
+    "meaning": "질소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩素",
+    "kana": "えんそ",
+    "romaji": "enso",
+    "meaning": "염소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フッ素",
+    "kana": "フッそ",
+    "romaji": "fusso",
+    "meaning": "플루오린"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硫黄",
+    "kana": "いおう",
+    "romaji": "iou",
+    "meaning": "황"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "リン",
+    "kana": "リン",
+    "romaji": "rin",
+    "meaning": "인"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炭素",
+    "kana": "たんそ",
+    "romaji": "tanso",
+    "meaning": "탄소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ケイ素",
+    "kana": "ケイそ",
+    "romaji": "keiso",
+    "meaning": "규소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "鉄",
+    "kana": "てつ",
+    "romaji": "tetsu",
+    "meaning": "철"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "銅",
+    "kana": "どう",
+    "romaji": "dou",
+    "meaning": "구리"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルミニウム",
+    "kana": "アルミニウム",
+    "romaji": "arumin'iumu",
+    "meaning": "알루미늄"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ナトリウム",
+    "kana": "ナトリウム",
+    "romaji": "n'atoriumu",
+    "meaning": "나트륨"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "カリウム",
+    "kana": "カリウム",
+    "romaji": "kariumu",
+    "meaning": "칼륨"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "カルシウム",
+    "kana": "カルシウム",
+    "romaji": "karushiumu",
+    "meaning": "칼슘"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "マグネシウム",
+    "kana": "マグネシウム",
+    "romaji": "magun'eshiumu",
+    "meaning": "마그네슘"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "銀",
+    "kana": "ぎん",
+    "romaji": "gin",
+    "meaning": "은"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "金",
+    "kana": "きん",
+    "romaji": "kin",
+    "meaning": "금"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "鉛",
+    "kana": "なまり",
+    "romaji": "n'amari",
+    "meaning": "납"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水銀",
+    "kana": "すいぎん",
+    "romaji": "suigin",
+    "meaning": "수은"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "亜鉛",
+    "kana": "あえん",
+    "romaji": "aen",
+    "meaning": "아연"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ニッケル",
+    "kana": "ニッケル",
+    "romaji": "n'ikkeru",
+    "meaning": "니켈"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "クロム",
+    "kana": "クロム",
+    "romaji": "kuromu",
+    "meaning": "크로뮴"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "マンガン",
+    "kana": "マンガン",
+    "romaji": "mangan",
+    "meaning": "망가니즈"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "定性分析",
+    "kana": "ていせいぶんせき",
+    "romaji": "teiseibunseki",
+    "meaning": "정성분석"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "定量分析",
+    "kana": "ていりょうぶんせき",
+    "romaji": "teiryoubunseki",
+    "meaning": "정량분석"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炎色反応",
+    "kana": "えんしょくはんのう",
+    "romaji": "enshokuhann'ou",
+    "meaning": "불꽃반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "沈殿反応",
+    "kana": "ちんでんはんのう",
+    "romaji": "chindenhann'ou",
+    "meaning": "침전반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "気体の発生",
+    "kana": "きたいのはっせい",
+    "romaji": "kitain'ohassei",
+    "meaning": "기체 발생"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量保存の法則",
+    "kana": "しつりょうほぞんのほうそく",
+    "romaji": "shitsuryouhozonn'ohousoku",
+    "meaning": "질량보존의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "定比例の法則",
+    "kana": "ていひれいのほうそく",
+    "romaji": "teihirein'ohousoku",
+    "meaning": "일정성분비의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "倍数比例の法則",
+    "kana": "ばいすうひれいのほうそく",
+    "romaji": "baisuuhirein'ohousoku",
+    "meaning": "배수비례의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "気体反応の法則",
+    "kana": "きたいはんのうのほうそく",
+    "romaji": "kitaihann'oun'ohousoku",
+    "meaning": "기체반응의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アボガドロの法則",
+    "kana": "アボガドロのほうそく",
+    "romaji": "abogadoron'ohousoku",
+    "meaning": "아보가드로 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "原子説",
+    "kana": "げんしせつ",
+    "romaji": "genshisetsu",
+    "meaning": "원자설"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子説",
+    "kana": "ぶんしせつ",
+    "romaji": "bunshisetsu",
+    "meaning": "분자설"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電子式",
+    "kana": "でんししき",
+    "romaji": "denshishiki",
+    "meaning": "전자식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ルイス構造",
+    "kana": "ルイスこうぞう",
+    "romaji": "ruisukouzou",
+    "meaning": "루이스 구조"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "オクテット則",
+    "kana": "オクテットそく",
+    "romaji": "okutettosoku",
+    "meaning": "옥텟 규칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共鳴",
+    "kana": "きょうめい",
+    "romaji": "kyoumei",
+    "meaning": "공명"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "混成軌道",
+    "kana": "こんせいきどう",
+    "romaji": "konseikidou",
+    "meaning": "혼성궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "軌道",
+    "kana": "きどう",
+    "romaji": "kidou",
+    "meaning": "궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "s軌道",
+    "kana": "エスきどう",
+    "romaji": "esukidou",
+    "meaning": "s궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "p軌道",
+    "kana": "ピーきどう",
+    "romaji": "pi-kidou",
+    "meaning": "p궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "d軌道",
+    "kana": "ディーきどう",
+    "romaji": "dei-kidou",
+    "meaning": "d궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子軌道",
+    "kana": "ぶんしきどう",
+    "romaji": "bunshikidou",
+    "meaning": "분자궤도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "配位子",
+    "kana": "はいいし",
+    "romaji": "haiishi",
+    "meaning": "리간드"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "錯体",
+    "kana": "さくたい",
+    "romaji": "sakutai",
+    "meaning": "착체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "錯イオン",
+    "kana": "さくイオン",
+    "romaji": "sakuion",
+    "meaning": "착이온"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "配位数",
+    "kana": "はいいすう",
+    "romaji": "haiisuu",
+    "meaning": "배위수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "結晶場理論",
+    "kana": "けっしょうばりろん",
+    "romaji": "kesshoubariron",
+    "meaning": "결정장 이론"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化還元滴定",
+    "kana": "さんかかんげんてきてい",
+    "romaji": "sankakangentekitei",
+    "meaning": "산화환원적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "過マンガン酸カリウム",
+    "kana": "かマンガンさんカリウム",
+    "romaji": "kamangansankariumu",
+    "meaning": "과망가니즈산칼륨"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヨウ素滴定",
+    "kana": "ヨウそてきてい",
+    "romaji": "yousotekitei",
+    "meaning": "아이오딘 적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "銀滴定",
+    "kana": "ぎんてきてい",
+    "romaji": "gintekitei",
+    "meaning": "은 적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "キレート滴定",
+    "kana": "キレートてきてい",
+    "romaji": "kire-totekitei",
+    "meaning": "킬레이트 적정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "吸光光度法",
+    "kana": "きゅうこうこうどほう",
+    "romaji": "kyuukoukoudohou",
+    "meaning": "흡광광도법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ランベルト・ベールの法則",
+    "kana": "ランベルトベールのほうそく",
+    "romaji": "ranberutobe-run'ohousoku",
+    "meaning": "람베르트-비어 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量分析法",
+    "kana": "しつりょうぶんせきほう",
+    "romaji": "shitsuryoubunsekihou",
+    "meaning": "질량분석법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "核磁気共鳴",
+    "kana": "かくじききょうめい",
+    "romaji": "kakujikikyoumei",
+    "meaning": "핵자기공명"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "赤外分光",
+    "kana": "せきがいぶんこう",
+    "romaji": "sekigaibunkou",
+    "meaning": "적외선분광"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "紫外可視分光",
+    "kana": "しがいかしぶんこう",
+    "romaji": "shigaikashibunkou",
+    "meaning": "자외가시분광"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "熱化学方程式",
+    "kana": "ねつかがくほうていしき",
+    "romaji": "n'etsukagakuhouteishiki",
+    "meaning": "열화학방정식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エンタルピー",
+    "kana": "エンタルピー",
+    "romaji": "entarupi-",
+    "meaning": "엔탈피"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エントロピー",
+    "kana": "エントロピー",
+    "romaji": "entoropi-",
+    "meaning": "엔트로피"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ギブズエネルギー",
+    "kana": "ギブズエネルギー",
+    "romaji": "gibuzuen'erugi-",
+    "meaning": "깁스에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "自発変化",
+    "kana": "じはつへんか",
+    "romaji": "jihatsuhenka",
+    "meaning": "자발변화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "平衡定数とギブズエネルギー",
+    "kana": "へいこうていすうとギブズエネルギー",
+    "romaji": "heikouteisuutogibuzuen'erugi-",
+    "meaning": "평형상수와 깁스에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "反応機構",
+    "kana": "はんのうきこう",
+    "romaji": "hann'oukikou",
+    "meaning": "반응기구"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中間体",
+    "kana": "ちゅうかんたい",
+    "romaji": "chuukantai",
+    "meaning": "중간체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "遷移状態",
+    "kana": "せんいじょうたい",
+    "romaji": "sen'ijoutai",
+    "meaning": "전이상태"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "素反応",
+    "kana": "そはんのう",
+    "romaji": "sohann'ou",
+    "meaning": "소반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "律速段階",
+    "kana": "そっそくだんかい",
+    "romaji": "sossokudankai",
+    "meaning": "율속단계"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "一次反応",
+    "kana": "いちじはんのう",
+    "romaji": "ichijihann'ou",
+    "meaning": "1차반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "二次反応",
+    "kana": "にじはんのう",
+    "romaji": "n'ijihann'ou",
+    "meaning": "2차반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "零次反応",
+    "kana": "れいじはんのう",
+    "romaji": "reijihann'ou",
+    "meaning": "0차반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "半減期",
+    "kana": "はんげんき",
+    "romaji": "hangenki",
+    "meaning": "반감기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アレニウスの式",
+    "kana": "アレニウスのしき",
+    "romaji": "aren'iusun'oshiki",
+    "meaning": "아레니우스 식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "頻度因子",
+    "kana": "ひんどいんし",
+    "romaji": "hindoinshi",
+    "meaning": "빈도인자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "衝突理論",
+    "kana": "しょうとつりろん",
+    "romaji": "shoutotsuriron",
+    "meaning": "충돌이론"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "遷移状態理論",
+    "kana": "せんいじょうたいりろん",
+    "romaji": "sen'ijoutairiron",
+    "meaning": "전이상태이론"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学反応の量的関係",
+    "kana": "かがくはんのうのりょうてきかんけい",
+    "romaji": "kagakuhann'oun'oryoutekikankei",
+    "meaning": "화학반응의 양적관계"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "化学反応式の係数",
+    "kana": "かがくはんのうしきのけいすう",
+    "romaji": "kagakuhann'oushikin'okeisuu",
+    "meaning": "화학반응식의 계수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "量論",
+    "kana": "りょうろん",
+    "romaji": "ryouron",
+    "meaning": "양론"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "理論収率",
+    "kana": "りろんしゅうりつ",
+    "romaji": "rironshuuritsu",
+    "meaning": "이론수율"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "実際収率",
+    "kana": "じっさいしゅうりつ",
+    "romaji": "jissaishuuritsu",
+    "meaning": "실제수율"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "百分率収率",
+    "kana": "ひゃくぶんりつしゅうりつ",
+    "romaji": "hyakubunritsushuuritsu",
+    "meaning": "백분율수율"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "限界反応物",
+    "kana": "げんかいはんのうぶつ",
+    "romaji": "genkaihann'oubutsu",
+    "meaning": "제한반응물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "過剰反応物",
+    "kana": "かじょうはんのうぶつ",
+    "romaji": "kajouhann'oubutsu",
+    "meaning": "과잉반응물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "気体の発生量",
+    "kana": "きたいのはっせいりょう",
+    "romaji": "kitain'ohasseiryou",
+    "meaning": "기체 발생량"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "標準状態での体積",
+    "kana": "ひょうじゅんじょうたいでのたいせき",
+    "romaji": "hyoujunjoutaiden'otaiseki",
+    "meaning": "표준상태에서의 부피"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分圧の法則",
+    "kana": "ぶんあつのほうそく",
+    "romaji": "bun'atsun'ohousoku",
+    "meaning": "분압의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "モル分率",
+    "kana": "モルぶんりつ",
+    "romaji": "morubunritsu",
+    "meaning": "몰분율"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量パーセント",
+    "kana": "しつりょうパーセント",
+    "romaji": "shitsuryoupa-sento",
+    "meaning": "질량퍼센트"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "体積パーセント",
+    "kana": "たいせきパーセント",
+    "romaji": "taisekipa-sento",
+    "meaning": "부피퍼센트"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "質量モル濃度",
+    "kana": "しつりょうモルのうど",
+    "romaji": "shitsuryoumorun'oudo",
+    "meaning": "몰랄농도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "規定度",
+    "kana": "きていど",
+    "romaji": "kiteido",
+    "meaning": "노르말농도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "希釈",
+    "kana": "きしゃく",
+    "romaji": "kishaku",
+    "meaning": "희석"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "濃縮",
+    "kana": "のうしゅく",
+    "romaji": "n'oushuku",
+    "meaning": "농축"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "希釈の公式",
+    "kana": "きしゃくのこうしき",
+    "romaji": "kishakun'okoushiki",
+    "meaning": "희석 공식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸塩基反応",
+    "kana": "さんえんきはんのう",
+    "romaji": "san'enkihann'ou",
+    "meaning": "산염기반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "プロトン",
+    "kana": "プロトン",
+    "romaji": "puroton",
+    "meaning": "양성자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ブレンステッド・ローリーの定義",
+    "kana": "ブレンステッドローリーのていぎ",
+    "romaji": "burensuteddoro-ri-n'oteigi",
+    "meaning": "브뢴스테드-로우리 정의"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ルイスの定義",
+    "kana": "ルイスのていぎ",
+    "romaji": "ruisun'oteigi",
+    "meaning": "루이스 정의"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共役酸",
+    "kana": "きょうやくさん",
+    "romaji": "kyouyakusan",
+    "meaning": "짝산"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共役塩基",
+    "kana": "きょうやくえんき",
+    "romaji": "kyouyakuenki",
+    "meaning": "짝염기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸解離定数",
+    "kana": "さんかいりていすう",
+    "romaji": "sankairiteisuu",
+    "meaning": "산해리상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩基解離定数",
+    "kana": "えんきかいりていすう",
+    "romaji": "enkikairiteisuu",
+    "meaning": "염기해리상수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水のイオン積",
+    "kana": "みずのイオンせき",
+    "romaji": "mizun'oionseki",
+    "meaning": "물의 이온곱"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "pOH",
+    "kana": "ピーオーエイチ",
+    "romaji": "pi-o-eichi",
+    "meaning": "pOH"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "緩衝作用",
+    "kana": "かんしょうさよう",
+    "romaji": "kanshousayou",
+    "meaning": "완충작용"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヘンダーソン・ハッセルバルヒの式",
+    "kana": "ヘンダーソンハッセルバルヒのしき",
+    "romaji": "henda-sonhasserubaruhin'oshiki",
+    "meaning": "헨더슨-하셀바흐 식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "中和点",
+    "kana": "ちゅうわてん",
+    "romaji": "chuuwaten",
+    "meaning": "중화점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "当量点",
+    "kana": "とうりょうてん",
+    "romaji": "touryouten",
+    "meaning": "당량점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "滴定曲線",
+    "kana": "てきていきょくせん",
+    "romaji": "tekiteikyokusen",
+    "meaning": "적정곡선"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "半中和点",
+    "kana": "はんちゅうわてん",
+    "romaji": "hanchuuwaten",
+    "meaning": "반중화점"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化還元電位",
+    "kana": "さんかかんげんでんい",
+    "romaji": "sankakangenden'i",
+    "meaning": "산화환원전위"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "標準電極電位",
+    "kana": "ひょうじゅんでんきょくでんい",
+    "romaji": "hyoujundenkyokuden'i",
+    "meaning": "표준전극전위"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ネルンストの式",
+    "kana": "ネルンストのしき",
+    "romaji": "n'erunsuton'oshiki",
+    "meaning": "네른스트 식"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電池の反応",
+    "kana": "でんちのはんのう",
+    "romaji": "denchin'ohann'ou",
+    "meaning": "전지의 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "放電",
+    "kana": "ほうでん",
+    "romaji": "houden",
+    "meaning": "방전"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "充電",
+    "kana": "じゅうでん",
+    "romaji": "juuden",
+    "meaning": "충전"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "電解精錬",
+    "kana": "でんかいせいれん",
+    "romaji": "denkaiseiren",
+    "meaning": "전해정련"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "メッキ",
+    "kana": "メッキ",
+    "romaji": "mekki",
+    "meaning": "도금"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アノード",
+    "kana": "アノード",
+    "romaji": "an'o-do",
+    "meaning": "양극(애노드)"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "カソード",
+    "kana": "カソード",
+    "romaji": "kaso-do",
+    "meaning": "음극(캐소드)"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン化列",
+    "kana": "イオンかれつ",
+    "romaji": "ionkaretsu",
+    "meaning": "이온화열"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "金属の反応性",
+    "kana": "きんぞくのはんのうせい",
+    "romaji": "kinzokun'ohann'ousei",
+    "meaning": "금속의 반응성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "不動態",
+    "kana": "ふどうたい",
+    "romaji": "fudoutai",
+    "meaning": "부동태"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "合金",
+    "kana": "ごうきん",
+    "romaji": "goukin",
+    "meaning": "합금"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ステンレス",
+    "kana": "ステンレス",
+    "romaji": "sutenresu",
+    "meaning": "스테인리스"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "青銅",
+    "kana": "せいどう",
+    "romaji": "seidou",
+    "meaning": "청동"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "黄銅",
+    "kana": "おうどう",
+    "romaji": "oudou",
+    "meaning": "황동"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "鉄の精錬",
+    "kana": "てつのせいれん",
+    "romaji": "tetsun'oseiren",
+    "meaning": "철의 정련"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "高炉",
+    "kana": "こうろ",
+    "romaji": "kouro",
+    "meaning": "용광로"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "転炉",
+    "kana": "てんろ",
+    "romaji": "tenro",
+    "meaning": "전로"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルミニウムの製法",
+    "kana": "アルミニウムのせいほう",
+    "romaji": "arumin'iumun'oseihou",
+    "meaning": "알루미늄의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ホール・エルー法",
+    "kana": "ホールエルーほう",
+    "romaji": "ho-rueru-hou",
+    "meaning": "홀-에루법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アンモニアの製法",
+    "kana": "アンモニアのせいほう",
+    "romaji": "anmon'ian'oseihou",
+    "meaning": "암모니아의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ハーバー・ボッシュ法",
+    "kana": "ハーバーボッシュほう",
+    "romaji": "ha-ba-bosshuhou",
+    "meaning": "하버-보슈법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硫酸の製法",
+    "kana": "りゅうさんのせいほう",
+    "romaji": "ryuusann'oseihou",
+    "meaning": "황산의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "接触法",
+    "kana": "せっしょくほう",
+    "romaji": "sesshokuhou",
+    "meaning": "접촉법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硝酸の製法",
+    "kana": "しょうさんのせいほう",
+    "romaji": "shousann'oseihou",
+    "meaning": "질산의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "オストワルト法",
+    "kana": "オストワルトほう",
+    "romaji": "osutowarutohou",
+    "meaning": "오스트발트법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "塩素の製法",
+    "kana": "えんそのせいほう",
+    "romaji": "enson'oseihou",
+    "meaning": "염소의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "水素の製法",
+    "kana": "すいそのせいほう",
+    "romaji": "suison'oseihou",
+    "meaning": "수소의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸素の製法",
+    "kana": "さんそのせいほう",
+    "romaji": "sanson'oseihou",
+    "meaning": "산소의 제법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "二酸化炭素の性質",
+    "kana": "にさんかたんそのせいしつ",
+    "romaji": "n'isankatanson'oseishitsu",
+    "meaning": "이산화탄소의 성질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "一酸化炭素の性質",
+    "kana": "いっさんかたんそのせいしつ",
+    "romaji": "issankatanson'oseishitsu",
+    "meaning": "일산화탄소의 성질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "オゾン",
+    "kana": "オゾン",
+    "romaji": "ozon",
+    "meaning": "오존"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "過酸化水素",
+    "kana": "かさんかすいそ",
+    "romaji": "kasankasuiso",
+    "meaning": "과산화수소"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "硫黄の同素体",
+    "kana": "いおうのどうそたい",
+    "romaji": "ioun'odousotai",
+    "meaning": "황의 동소체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "リンの同素体",
+    "kana": "リンのどうそたい",
+    "romaji": "rinn'odousotai",
+    "meaning": "인의 동소체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "炭素の同素体",
+    "kana": "たんそのどうそたい",
+    "romaji": "tanson'odousotai",
+    "meaning": "탄소의 동소체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ダイヤモンド",
+    "kana": "ダイヤモンド",
+    "romaji": "daiyamondo",
+    "meaning": "다이아몬드"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "黒鉛",
+    "kana": "こくえん",
+    "romaji": "kokuen",
+    "meaning": "흑연"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フラーレン",
+    "kana": "フラーレン",
+    "romaji": "fura-ren",
+    "meaning": "풀러렌"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ナノチューブ",
+    "kana": "ナノチューブ",
+    "romaji": "n'an'ochu-bu",
+    "meaning": "나노튜브"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "グラフェン",
+    "kana": "グラフェン",
+    "romaji": "gurafuen",
+    "meaning": "그래핀"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "同素体",
+    "kana": "どうそたい",
+    "romaji": "dousotai",
+    "meaning": "동소체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アロトロープ",
+    "kana": "アロトロープ",
+    "romaji": "arotoro-pu",
+    "meaning": "동소체"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "結晶格子",
+    "kana": "けっしょうこうし",
+    "romaji": "kesshoukoushi",
+    "meaning": "결정격자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "単位格子",
+    "kana": "たんいこうし",
+    "romaji": "tan'ikoushi",
+    "meaning": "단위격자"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "単純立方",
+    "kana": "たんじゅんりっぽう",
+    "romaji": "tanjunrippou",
+    "meaning": "단순입방"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "体心立方",
+    "kana": "たいしんりっぽう",
+    "romaji": "taishinrippou",
+    "meaning": "체심입방"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "面心立方",
+    "kana": "めんしんりっぽう",
+    "romaji": "menshinrippou",
+    "meaning": "면심입방"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "六方最密",
+    "kana": "ろっぽうさいみつ",
+    "romaji": "roppousaimitsu",
+    "meaning": "육방최밀"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "イオン結晶",
+    "kana": "イオンけっしょう",
+    "romaji": "ionkesshou",
+    "meaning": "이온결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子結晶",
+    "kana": "ぶんしけっしょう",
+    "romaji": "bunshikesshou",
+    "meaning": "분자결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共有結合結晶",
+    "kana": "きょうゆうけつごうけっしょう",
+    "romaji": "kyouyuuketsugoukesshou",
+    "meaning": "공유결합결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "金属結晶",
+    "kana": "きんぞくけっしょう",
+    "romaji": "kinzokukesshou",
+    "meaning": "금속결정"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "格子エネルギー",
+    "kana": "こうしエネルギー",
+    "romaji": "koushien'erugi-",
+    "meaning": "격자에너지"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ボルン・ハーバーサイクル",
+    "kana": "ボルンハーバーサイクル",
+    "romaji": "borunha-ba-saikuru",
+    "meaning": "본-하버 사이클"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子間力",
+    "kana": "ぶんしかんりょく",
+    "romaji": "bunshikanryoku",
+    "meaning": "분자간력"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "双極子相互作用",
+    "kana": "そうきょくしそうごさよう",
+    "romaji": "soukyokushisougosayou",
+    "meaning": "쌍극자 상호작용"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ロンドン分散力",
+    "kana": "ロンドンぶんさんりょく",
+    "romaji": "rondonbunsanryoku",
+    "meaning": "런던 분산력"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "沸点の比較",
+    "kana": "ふってんのひかく",
+    "romaji": "futtenn'ohikaku",
+    "meaning": "끓는점 비교"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "融点の比較",
+    "kana": "ゆうてんのひかく",
+    "romaji": "yuutenn'ohikaku",
+    "meaning": "녹는점 비교"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "溶解度曲線",
+    "kana": "ようかいどきょくせん",
+    "romaji": "youkaidokyokusen",
+    "meaning": "용해도곡선"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヘンリーの法則の応用",
+    "kana": "ヘンリーのほうそくのおうよう",
+    "romaji": "henri-n'ohousokun'oouyou",
+    "meaning": "헨리의 법칙의 응용"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ラウールの法則",
+    "kana": "ラウールのほうそく",
+    "romaji": "rau-run'ohousoku",
+    "meaning": "라울의 법칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "理想溶液",
+    "kana": "りそうようえき",
+    "romaji": "risouyoueki",
+    "meaning": "이상용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "非理想溶液",
+    "kana": "ひりそうようえき",
+    "romaji": "hirisouyoueki",
+    "meaning": "비이상용액"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "共沸混合物",
+    "kana": "きょうふつこんごうぶつ",
+    "romaji": "kyoufutsukongoubutsu",
+    "meaning": "공비혼합물"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分配係数",
+    "kana": "ぶんぱいけいすう",
+    "romaji": "bunpaikeisuu",
+    "meaning": "분배계수"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "抽出の原理",
+    "kana": "ちゅうしゅつのげんり",
+    "romaji": "chuushutsun'ogenri",
+    "meaning": "추출의 원리"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルカンの命名法",
+    "kana": "アルカンのめいめいほう",
+    "romaji": "arukann'omeimeihou",
+    "meaning": "알케인의 명명법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "IUPAC命名法",
+    "kana": "アイユーパックめいめいほう",
+    "romaji": "aiyu-pakkumeimeihou",
+    "meaning": "IUPAC 명명법"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "置換基",
+    "kana": "ちかんき",
+    "romaji": "chikanki",
+    "meaning": "치환기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "アルキル基",
+    "kana": "アルキルき",
+    "romaji": "arukiruki",
+    "meaning": "알킬기"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "官能基の優先順位",
+    "kana": "かんのうきのゆうせんじゅんい",
+    "romaji": "kann'oukin'oyuusenjun'i",
+    "meaning": "작용기의 우선순위"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸化反応（有機）",
+    "kana": "さんかはんのうゆうき",
+    "romaji": "sankahann'ouyuuki",
+    "meaning": "산화반응(유기)"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "還元反応（有機）",
+    "kana": "かんげんはんのうゆうき",
+    "romaji": "kangenhann'ouyuuki",
+    "meaning": "환원반응(유기)"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "脱水反応",
+    "kana": "だっすいはんのう",
+    "romaji": "dassuihann'ou",
+    "meaning": "탈수반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "加水反応",
+    "kana": "かすいはんのう",
+    "romaji": "kasuihann'ou",
+    "meaning": "가수반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "エステル化",
+    "kana": "エステルか",
+    "romaji": "esuteruka",
+    "meaning": "에스터화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "けん化価",
+    "kana": "けんかか",
+    "romaji": "kenkaka",
+    "meaning": "비누화가"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ヨウ素価",
+    "kana": "ヨウそか",
+    "romaji": "yousoka",
+    "meaning": "아이오딘가"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "酸価",
+    "kana": "さんか",
+    "romaji": "sanka",
+    "meaning": "산가"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "油脂の硬化",
+    "kana": "ゆしのこうか",
+    "romaji": "yushin'okouka",
+    "meaning": "유지의 경화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "マルコフニコフ則",
+    "kana": "マルコフニコフそく",
+    "romaji": "marukofun'ikofusoku",
+    "meaning": "마르코프니코프 규칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ザイツェフ則",
+    "kana": "ザイツェフそく",
+    "romaji": "zaitsuefusoku",
+    "meaning": "자이체프 규칙"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "求核置換",
+    "kana": "きゅうかくちかん",
+    "romaji": "kyuukakuchikan",
+    "meaning": "친핵성 치환"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "求電子置換",
+    "kana": "きゅうでんしちかん",
+    "romaji": "kyuudenshichikan",
+    "meaning": "친전자성 치환"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "SN1反応",
+    "kana": "エスエヌいちはんのう",
+    "romaji": "esuen'uichihann'ou",
+    "meaning": "SN1 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "SN2反応",
+    "kana": "エスエヌにはんのう",
+    "romaji": "esuen'un'ihann'ou",
+    "meaning": "SN2 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "E1反応",
+    "kana": "イーいちはんのう",
+    "romaji": "i-ichihann'ou",
+    "meaning": "E1 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "E2反応",
+    "kana": "イーにはんのう",
+    "romaji": "i-n'ihann'ou",
+    "meaning": "E2 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "芳香族求電子置換",
+    "kana": "ほうこうぞくきゅうでんしちかん",
+    "romaji": "houkouzokukyuudenshichikan",
+    "meaning": "방향족 친전자성 치환"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ニトロ化",
+    "kana": "ニトロか",
+    "romaji": "n'itoroka",
+    "meaning": "나이트로화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "スルホン化",
+    "kana": "スルホンか",
+    "romaji": "suruhonka",
+    "meaning": "설폰화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "ハロゲン化",
+    "kana": "ハロゲンか",
+    "romaji": "harogenka",
+    "meaning": "할로젠화"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "フリーデル・クラフツ反応",
+    "kana": "フリーデルクラフツはんのう",
+    "romaji": "furi-derukurafutsuhann'ou",
+    "meaning": "프리델-크래프츠 반응"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "高分子の性質",
+    "kana": "こうぶんしのせいしつ",
+    "romaji": "koubunshin'oseishitsu",
+    "meaning": "고분자의 성질"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "熱可塑性",
+    "kana": "ねつかそせい",
+    "romaji": "n'etsukasosei",
+    "meaning": "열가소성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "熱硬化性",
+    "kana": "ねつこうかせい",
+    "romaji": "n'etsukoukasei",
+    "meaning": "열경화성"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "架橋",
+    "kana": "かきょう",
+    "romaji": "kakyou",
+    "meaning": "가교"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "重合度",
+    "kana": "じゅうごうど",
+    "romaji": "juugoudo",
+    "meaning": "중합도"
+  },
+  {
+    "subject": "chemistry",
+    "kanji": "分子量分布",
+    "kana": "ぶんしりょうぶんぷ",
+    "romaji": "bunshiryoubunpu",
+    "meaning": "분자량분포"
+  }
+]

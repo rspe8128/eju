@@ -1,0 +1,4895 @@
+[
+  {
+    "subject": "math",
+    "kanji": "方程式",
+    "kana": "ほうていしき",
+    "romaji": "houteishiki",
+    "meaning": "방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "不等式",
+    "kana": "ふとうしき",
+    "romaji": "futoushiki",
+    "meaning": "부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "因数分解",
+    "kana": "いんすうぶんかい",
+    "romaji": "insuubunkai",
+    "meaning": "인수분해"
+  },
+  {
+    "subject": "math",
+    "kanji": "展開",
+    "kana": "てんかい",
+    "romaji": "tenkai",
+    "meaning": "전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次関数",
+    "kana": "にじかんすう",
+    "romaji": "n'ijikansuu",
+    "meaning": "이차함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "頂点",
+    "kana": "ちょうてん",
+    "romaji": "chouten",
+    "meaning": "꼭짓점"
+  },
+  {
+    "subject": "math",
+    "kanji": "軸",
+    "kana": "じく",
+    "romaji": "jiku",
+    "meaning": "축"
+  },
+  {
+    "subject": "math",
+    "kanji": "判別式",
+    "kana": "はんべつしき",
+    "romaji": "hanbetsushiki",
+    "meaning": "판별식"
+  },
+  {
+    "subject": "math",
+    "kanji": "解の公式",
+    "kana": "かいのこうしき",
+    "romaji": "kain'okoushiki",
+    "meaning": "근의 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "実数",
+    "kana": "じっすう",
+    "romaji": "jissuu",
+    "meaning": "실수"
+  },
+  {
+    "subject": "math",
+    "kanji": "整数",
+    "kana": "せいすう",
+    "romaji": "seisuu",
+    "meaning": "정수"
+  },
+  {
+    "subject": "math",
+    "kanji": "自然数",
+    "kana": "しぜんすう",
+    "romaji": "shizensuu",
+    "meaning": "자연수"
+  },
+  {
+    "subject": "math",
+    "kanji": "有理数",
+    "kana": "ゆうりすう",
+    "romaji": "yuurisuu",
+    "meaning": "유리수"
+  },
+  {
+    "subject": "math",
+    "kanji": "無理数",
+    "kana": "むりすう",
+    "romaji": "murisuu",
+    "meaning": "무리수"
+  },
+  {
+    "subject": "math",
+    "kanji": "絶対値",
+    "kana": "ぜったいち",
+    "romaji": "zettaichi",
+    "meaning": "절댓값"
+  },
+  {
+    "subject": "math",
+    "kanji": "平方根",
+    "kana": "へいほうこん",
+    "romaji": "heihoukon",
+    "meaning": "제곱근"
+  },
+  {
+    "subject": "math",
+    "kanji": "累乗",
+    "kana": "るいじょう",
+    "romaji": "ruijou",
+    "meaning": "거듭제곱"
+  },
+  {
+    "subject": "math",
+    "kanji": "指数",
+    "kana": "しすう",
+    "romaji": "shisuu",
+    "meaning": "지수"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数",
+    "kana": "たいすう",
+    "romaji": "taisuu",
+    "meaning": "로그"
+  },
+  {
+    "subject": "math",
+    "kanji": "底",
+    "kana": "てい",
+    "romaji": "tei",
+    "meaning": "밑"
+  },
+  {
+    "subject": "math",
+    "kanji": "分母",
+    "kana": "ぶんぼ",
+    "romaji": "bunbo",
+    "meaning": "분모"
+  },
+  {
+    "subject": "math",
+    "kanji": "分子",
+    "kana": "ぶんし",
+    "romaji": "bunshi",
+    "meaning": "분자"
+  },
+  {
+    "subject": "math",
+    "kanji": "係数",
+    "kana": "けいすう",
+    "romaji": "keisuu",
+    "meaning": "계수"
+  },
+  {
+    "subject": "math",
+    "kanji": "定数",
+    "kana": "ていすう",
+    "romaji": "teisuu",
+    "meaning": "상수"
+  },
+  {
+    "subject": "math",
+    "kanji": "変数",
+    "kana": "へんすう",
+    "romaji": "hensuu",
+    "meaning": "변수"
+  },
+  {
+    "subject": "math",
+    "kanji": "関数",
+    "kana": "かんすう",
+    "romaji": "kansuu",
+    "meaning": "함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "定義域",
+    "kana": "ていぎいき",
+    "romaji": "teigiiki",
+    "meaning": "정의역"
+  },
+  {
+    "subject": "math",
+    "kanji": "値域",
+    "kana": "ちいき",
+    "romaji": "chiiki",
+    "meaning": "치역"
+  },
+  {
+    "subject": "math",
+    "kanji": "最大値",
+    "kana": "さいだいち",
+    "romaji": "saidaichi",
+    "meaning": "최댓값"
+  },
+  {
+    "subject": "math",
+    "kanji": "最小値",
+    "kana": "さいしょうち",
+    "romaji": "saishouchi",
+    "meaning": "최솟값"
+  },
+  {
+    "subject": "math",
+    "kanji": "増加",
+    "kana": "ぞうか",
+    "romaji": "zouka",
+    "meaning": "증가"
+  },
+  {
+    "subject": "math",
+    "kanji": "減少",
+    "kana": "げんしょう",
+    "romaji": "genshou",
+    "meaning": "감소"
+  },
+  {
+    "subject": "math",
+    "kanji": "座標",
+    "kana": "ざひょう",
+    "romaji": "zahyou",
+    "meaning": "좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "原点",
+    "kana": "げんてん",
+    "romaji": "genten",
+    "meaning": "원점"
+  },
+  {
+    "subject": "math",
+    "kanji": "傾き",
+    "kana": "かたむき",
+    "romaji": "katamuki",
+    "meaning": "기울기"
+  },
+  {
+    "subject": "math",
+    "kanji": "切片",
+    "kana": "せっぺん",
+    "romaji": "seppen",
+    "meaning": "절편"
+  },
+  {
+    "subject": "math",
+    "kanji": "直線",
+    "kana": "ちょくせん",
+    "romaji": "chokusen",
+    "meaning": "직선"
+  },
+  {
+    "subject": "math",
+    "kanji": "曲線",
+    "kana": "きょくせん",
+    "romaji": "kyokusen",
+    "meaning": "곡선"
+  },
+  {
+    "subject": "math",
+    "kanji": "放物線",
+    "kana": "ほうぶつせん",
+    "romaji": "houbutsusen",
+    "meaning": "포물선"
+  },
+  {
+    "subject": "math",
+    "kanji": "円",
+    "kana": "えん",
+    "romaji": "en",
+    "meaning": "원"
+  },
+  {
+    "subject": "math",
+    "kanji": "半径",
+    "kana": "はんけい",
+    "romaji": "hankei",
+    "meaning": "반지름"
+  },
+  {
+    "subject": "math",
+    "kanji": "直径",
+    "kana": "ちょっけい",
+    "romaji": "chokkei",
+    "meaning": "지름"
+  },
+  {
+    "subject": "math",
+    "kanji": "円周",
+    "kana": "えんしゅう",
+    "romaji": "enshuu",
+    "meaning": "원주"
+  },
+  {
+    "subject": "math",
+    "kanji": "接線",
+    "kana": "せっせん",
+    "romaji": "sessen",
+    "meaning": "접선"
+  },
+  {
+    "subject": "math",
+    "kanji": "接する",
+    "kana": "せっする",
+    "romaji": "sessuru",
+    "meaning": "접하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "交点",
+    "kana": "こうてん",
+    "romaji": "kouten",
+    "meaning": "교점"
+  },
+  {
+    "subject": "math",
+    "kanji": "平行",
+    "kana": "へいこう",
+    "romaji": "heikou",
+    "meaning": "평행"
+  },
+  {
+    "subject": "math",
+    "kanji": "垂直",
+    "kana": "すいちょく",
+    "romaji": "suichoku",
+    "meaning": "수직"
+  },
+  {
+    "subject": "math",
+    "kanji": "直交",
+    "kana": "ちょっこう",
+    "romaji": "chokkou",
+    "meaning": "직교"
+  },
+  {
+    "subject": "math",
+    "kanji": "二等辺三角形",
+    "kana": "にとうへんさんかくけい",
+    "romaji": "n'itouhensankakukei",
+    "meaning": "이등변삼각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "正三角形",
+    "kana": "せいさんかくけい",
+    "romaji": "seisankakukei",
+    "meaning": "정삼각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "直角三角形",
+    "kana": "ちょっかくさんかくけい",
+    "romaji": "chokkakusankakukei",
+    "meaning": "직각삼각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "相似",
+    "kana": "そうじ",
+    "romaji": "souji",
+    "meaning": "닮음"
+  },
+  {
+    "subject": "math",
+    "kanji": "合同",
+    "kana": "ごうどう",
+    "romaji": "goudou",
+    "meaning": "합동"
+  },
+  {
+    "subject": "math",
+    "kanji": "面積",
+    "kana": "めんせき",
+    "romaji": "menseki",
+    "meaning": "넓이"
+  },
+  {
+    "subject": "math",
+    "kanji": "体積",
+    "kana": "たいせき",
+    "romaji": "taiseki",
+    "meaning": "부피"
+  },
+  {
+    "subject": "math",
+    "kanji": "表面積",
+    "kana": "ひょうめんせき",
+    "romaji": "hyoumenseki",
+    "meaning": "겉넓이"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角形",
+    "kana": "さんかくけい",
+    "romaji": "sankakukei",
+    "meaning": "삼각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "四角形",
+    "kana": "しかくけい",
+    "romaji": "shikakukei",
+    "meaning": "사각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "正方形",
+    "kana": "せいほうけい",
+    "romaji": "seihoukei",
+    "meaning": "정사각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "長方形",
+    "kana": "ちょうほうけい",
+    "romaji": "chouhoukei",
+    "meaning": "직사각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "平行四辺形",
+    "kana": "へいこうしへんけい",
+    "romaji": "heikoushihenkei",
+    "meaning": "평행사변형"
+  },
+  {
+    "subject": "math",
+    "kanji": "ひし形",
+    "kana": "ひしがた",
+    "romaji": "hishigata",
+    "meaning": "마름모"
+  },
+  {
+    "subject": "math",
+    "kanji": "台形",
+    "kana": "だいけい",
+    "romaji": "daikei",
+    "meaning": "사다리꼴"
+  },
+  {
+    "subject": "math",
+    "kanji": "多角形",
+    "kana": "たかくけい",
+    "romaji": "takakukei",
+    "meaning": "다각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "内角",
+    "kana": "ないかく",
+    "romaji": "n'aikaku",
+    "meaning": "내각"
+  },
+  {
+    "subject": "math",
+    "kanji": "外角",
+    "kana": "がいかく",
+    "romaji": "gaikaku",
+    "meaning": "외각"
+  },
+  {
+    "subject": "math",
+    "kanji": "対角線",
+    "kana": "たいかくせん",
+    "romaji": "taikakusen",
+    "meaning": "대각선"
+  },
+  {
+    "subject": "math",
+    "kanji": "中点",
+    "kana": "ちゅうてん",
+    "romaji": "chuuten",
+    "meaning": "중점"
+  },
+  {
+    "subject": "math",
+    "kanji": "重心",
+    "kana": "じゅうしん",
+    "romaji": "juushin",
+    "meaning": "무게중심"
+  },
+  {
+    "subject": "math",
+    "kanji": "外心",
+    "kana": "がいしん",
+    "romaji": "gaishin",
+    "meaning": "외심"
+  },
+  {
+    "subject": "math",
+    "kanji": "内心",
+    "kana": "ないしん",
+    "romaji": "n'aishin",
+    "meaning": "내심"
+  },
+  {
+    "subject": "math",
+    "kanji": "垂心",
+    "kana": "すいしん",
+    "romaji": "suishin",
+    "meaning": "수심"
+  },
+  {
+    "subject": "math",
+    "kanji": "角の二等分線",
+    "kana": "かくのにとうぶんせん",
+    "romaji": "kakun'on'itoubunsen",
+    "meaning": "각의 이등분선"
+  },
+  {
+    "subject": "math",
+    "kanji": "定理",
+    "kana": "ていり",
+    "romaji": "teiri",
+    "meaning": "정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "公理",
+    "kana": "こうり",
+    "romaji": "kouri",
+    "meaning": "공리"
+  },
+  {
+    "subject": "math",
+    "kanji": "証明",
+    "kana": "しょうめい",
+    "romaji": "shoumei",
+    "meaning": "증명"
+  },
+  {
+    "subject": "math",
+    "kanji": "仮定",
+    "kana": "かてい",
+    "romaji": "katei",
+    "meaning": "가정"
+  },
+  {
+    "subject": "math",
+    "kanji": "結論",
+    "kana": "けつろん",
+    "romaji": "ketsuron",
+    "meaning": "결론"
+  },
+  {
+    "subject": "math",
+    "kanji": "必要条件",
+    "kana": "ひつようじょうけん",
+    "romaji": "hitsuyoujouken",
+    "meaning": "필요조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "十分条件",
+    "kana": "じゅうぶんじょうけん",
+    "romaji": "juubunjouken",
+    "meaning": "충분조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "必要十分条件",
+    "kana": "ひつようじゅうぶんじょうけん",
+    "romaji": "hitsuyoujuubunjouken",
+    "meaning": "필요충분조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆",
+    "kana": "ぎゃく",
+    "romaji": "gyaku",
+    "meaning": "역"
+  },
+  {
+    "subject": "math",
+    "kanji": "裏",
+    "kana": "うら",
+    "romaji": "ura",
+    "meaning": "이"
+  },
+  {
+    "subject": "math",
+    "kanji": "対偶",
+    "kana": "たいぐう",
+    "romaji": "taiguu",
+    "meaning": "대우"
+  },
+  {
+    "subject": "math",
+    "kanji": "背理法",
+    "kana": "はいりほう",
+    "romaji": "hairihou",
+    "meaning": "귀류법"
+  },
+  {
+    "subject": "math",
+    "kanji": "数学的帰納法",
+    "kana": "すうがくてききのうほう",
+    "romaji": "suugakutekikin'ouhou",
+    "meaning": "수학적 귀납법"
+  },
+  {
+    "subject": "math",
+    "kanji": "順列",
+    "kana": "じゅんれつ",
+    "romaji": "junretsu",
+    "meaning": "순열"
+  },
+  {
+    "subject": "math",
+    "kanji": "組合せ",
+    "kana": "くみあわせ",
+    "romaji": "kumiawase",
+    "meaning": "조합"
+  },
+  {
+    "subject": "math",
+    "kanji": "場合の数",
+    "kana": "ばあいのかず",
+    "romaji": "baain'okazu",
+    "meaning": "경우의 수"
+  },
+  {
+    "subject": "math",
+    "kanji": "確率",
+    "kana": "かくりつ",
+    "romaji": "kakuritsu",
+    "meaning": "확률"
+  },
+  {
+    "subject": "math",
+    "kanji": "余事象",
+    "kana": "よじしょう",
+    "romaji": "yojishou",
+    "meaning": "여사건"
+  },
+  {
+    "subject": "math",
+    "kanji": "独立",
+    "kana": "どくりつ",
+    "romaji": "dokuritsu",
+    "meaning": "독립"
+  },
+  {
+    "subject": "math",
+    "kanji": "排反",
+    "kana": "はいはん",
+    "romaji": "haihan",
+    "meaning": "배반"
+  },
+  {
+    "subject": "math",
+    "kanji": "期待値",
+    "kana": "きたいち",
+    "romaji": "kitaichi",
+    "meaning": "기댓값"
+  },
+  {
+    "subject": "math",
+    "kanji": "分散",
+    "kana": "ぶんさん",
+    "romaji": "bunsan",
+    "meaning": "분산"
+  },
+  {
+    "subject": "math",
+    "kanji": "標準偏差",
+    "kana": "ひょうじゅんへんさ",
+    "romaji": "hyoujunhensa",
+    "meaning": "표준편차"
+  },
+  {
+    "subject": "math",
+    "kanji": "平均",
+    "kana": "へいきん",
+    "romaji": "heikin",
+    "meaning": "평균"
+  },
+  {
+    "subject": "math",
+    "kanji": "中央値",
+    "kana": "ちゅうおうち",
+    "romaji": "chuuouchi",
+    "meaning": "중앙값"
+  },
+  {
+    "subject": "math",
+    "kanji": "最頻値",
+    "kana": "さいひんち",
+    "romaji": "saihinchi",
+    "meaning": "최빈값"
+  },
+  {
+    "subject": "math",
+    "kanji": "度数分布",
+    "kana": "どすうぶんぷ",
+    "romaji": "dosuubunpu",
+    "meaning": "도수분포"
+  },
+  {
+    "subject": "math",
+    "kanji": "ヒストグラム",
+    "kana": "ヒストグラム",
+    "romaji": "hisutoguramu",
+    "meaning": "히스토그램"
+  },
+  {
+    "subject": "math",
+    "kanji": "箱ひげ図",
+    "kana": "はこひげず",
+    "romaji": "hakohigezu",
+    "meaning": "상자수염그림"
+  },
+  {
+    "subject": "math",
+    "kanji": "相関",
+    "kana": "そうかん",
+    "romaji": "soukan",
+    "meaning": "상관"
+  },
+  {
+    "subject": "math",
+    "kanji": "相関係数",
+    "kana": "そうかんけいすう",
+    "romaji": "soukankeisuu",
+    "meaning": "상관계수"
+  },
+  {
+    "subject": "math",
+    "kanji": "回帰直線",
+    "kana": "かいきちょくせん",
+    "romaji": "kaikichokusen",
+    "meaning": "회귀직선"
+  },
+  {
+    "subject": "math",
+    "kanji": "標本",
+    "kana": "ひょうほん",
+    "romaji": "hyouhon",
+    "meaning": "표본"
+  },
+  {
+    "subject": "math",
+    "kanji": "母集団",
+    "kana": "ぼしゅうだん",
+    "romaji": "boshuudan",
+    "meaning": "모집단"
+  },
+  {
+    "subject": "math",
+    "kanji": "等差数列",
+    "kana": "とうさすうれつ",
+    "romaji": "tousasuuretsu",
+    "meaning": "등차수열"
+  },
+  {
+    "subject": "math",
+    "kanji": "等比数列",
+    "kana": "とうひすうれつ",
+    "romaji": "touhisuuretsu",
+    "meaning": "등비수열"
+  },
+  {
+    "subject": "math",
+    "kanji": "初項",
+    "kana": "しょこう",
+    "romaji": "shokou",
+    "meaning": "첫항"
+  },
+  {
+    "subject": "math",
+    "kanji": "公比",
+    "kana": "こうひ",
+    "romaji": "kouhi",
+    "meaning": "공비"
+  },
+  {
+    "subject": "math",
+    "kanji": "公差",
+    "kana": "こうさ",
+    "romaji": "kousa",
+    "meaning": "공차"
+  },
+  {
+    "subject": "math",
+    "kanji": "一般項",
+    "kana": "いっぱんこう",
+    "romaji": "ippankou",
+    "meaning": "일반항"
+  },
+  {
+    "subject": "math",
+    "kanji": "等差中項",
+    "kana": "とうさちゅうこう",
+    "romaji": "tousachuukou",
+    "meaning": "등차중항"
+  },
+  {
+    "subject": "math",
+    "kanji": "等比中項",
+    "kana": "とうひちゅうこう",
+    "romaji": "touhichuukou",
+    "meaning": "등비중항"
+  },
+  {
+    "subject": "math",
+    "kanji": "無限級数",
+    "kana": "むげんきゅうすう",
+    "romaji": "mugenkyuusuu",
+    "meaning": "무한급수"
+  },
+  {
+    "subject": "math",
+    "kanji": "収束",
+    "kana": "しゅうそく",
+    "romaji": "shuusoku",
+    "meaning": "수렴"
+  },
+  {
+    "subject": "math",
+    "kanji": "発散",
+    "kana": "はっさん",
+    "romaji": "hassan",
+    "meaning": "발산"
+  },
+  {
+    "subject": "math",
+    "kanji": "極限",
+    "kana": "きょくげん",
+    "romaji": "kyokugen",
+    "meaning": "극한"
+  },
+  {
+    "subject": "math",
+    "kanji": "微分",
+    "kana": "びぶん",
+    "romaji": "bibun",
+    "meaning": "미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "積分",
+    "kana": "せきぶん",
+    "romaji": "sekibun",
+    "meaning": "적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "導関数",
+    "kana": "どうかんすう",
+    "romaji": "doukansuu",
+    "meaning": "도함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "微分係数",
+    "kana": "びぶんけいすう",
+    "romaji": "bibunkeisuu",
+    "meaning": "미분계수"
+  },
+  {
+    "subject": "math",
+    "kanji": "接線の方程式",
+    "kana": "せっせんのほうていしき",
+    "romaji": "sessenn'ohouteishiki",
+    "meaning": "접선의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "増減表",
+    "kana": "ぞうげんひょう",
+    "romaji": "zougenhyou",
+    "meaning": "증감표"
+  },
+  {
+    "subject": "math",
+    "kanji": "変曲点",
+    "kana": "へんきょくてん",
+    "romaji": "henkyokuten",
+    "meaning": "변곡점"
+  },
+  {
+    "subject": "math",
+    "kanji": "不定積分",
+    "kana": "ふていせきぶん",
+    "romaji": "futeisekibun",
+    "meaning": "부정적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "定積分",
+    "kana": "ていせきぶん",
+    "romaji": "teisekibun",
+    "meaning": "정적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "原始関数",
+    "kana": "げんしかんすう",
+    "romaji": "genshikansuu",
+    "meaning": "원시함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "置換積分",
+    "kana": "ちかんせきぶん",
+    "romaji": "chikansekibun",
+    "meaning": "치환적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "部分積分",
+    "kana": "ぶぶんせきぶん",
+    "romaji": "bubunsekibun",
+    "meaning": "부분적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "回転体",
+    "kana": "かいてんたい",
+    "romaji": "kaitentai",
+    "meaning": "회전체"
+  },
+  {
+    "subject": "math",
+    "kanji": "ベクトル",
+    "kana": "ベクトル",
+    "romaji": "bekutoru",
+    "meaning": "벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "スカラー",
+    "kana": "スカラー",
+    "romaji": "sukara-",
+    "meaning": "스칼라"
+  },
+  {
+    "subject": "math",
+    "kanji": "内積",
+    "kana": "ないせき",
+    "romaji": "n'aiseki",
+    "meaning": "내적"
+  },
+  {
+    "subject": "math",
+    "kanji": "外積",
+    "kana": "がいせき",
+    "romaji": "gaiseki",
+    "meaning": "외적"
+  },
+  {
+    "subject": "math",
+    "kanji": "単位ベクトル",
+    "kana": "たんいベクトル",
+    "romaji": "tan'ibekutoru",
+    "meaning": "단위벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "成分",
+    "kana": "せいぶん",
+    "romaji": "seibun",
+    "meaning": "성분"
+  },
+  {
+    "subject": "math",
+    "kanji": "大きさ",
+    "kana": "おおきさ",
+    "romaji": "ookisa",
+    "meaning": "크기"
+  },
+  {
+    "subject": "math",
+    "kanji": "方向",
+    "kana": "ほうこう",
+    "romaji": "houkou",
+    "meaning": "방향"
+  },
+  {
+    "subject": "math",
+    "kanji": "位置ベクトル",
+    "kana": "いちベクトル",
+    "romaji": "ichibekutoru",
+    "meaning": "위치벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "平面",
+    "kana": "へいめん",
+    "romaji": "heimen",
+    "meaning": "평면"
+  },
+  {
+    "subject": "math",
+    "kanji": "空間",
+    "kana": "くうかん",
+    "romaji": "kuukan",
+    "meaning": "공간"
+  },
+  {
+    "subject": "math",
+    "kanji": "法線",
+    "kana": "ほうせん",
+    "romaji": "housen",
+    "meaning": "법선"
+  },
+  {
+    "subject": "math",
+    "kanji": "法線ベクトル",
+    "kana": "ほうせんベクトル",
+    "romaji": "housenbekutoru",
+    "meaning": "법선벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "行列",
+    "kana": "ぎょうれつ",
+    "romaji": "gyouretsu",
+    "meaning": "행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "行列式",
+    "kana": "ぎょうれつしき",
+    "romaji": "gyouretsushiki",
+    "meaning": "행렬식"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆行列",
+    "kana": "ぎゃくぎょうれつ",
+    "romaji": "gyakugyouretsu",
+    "meaning": "역행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "単位行列",
+    "kana": "たんいぎょうれつ",
+    "romaji": "tan'igyouretsu",
+    "meaning": "단위행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "転置",
+    "kana": "てんち",
+    "romaji": "tenchi",
+    "meaning": "전치"
+  },
+  {
+    "subject": "math",
+    "kanji": "固有値",
+    "kana": "こゆうち",
+    "romaji": "koyuuchi",
+    "meaning": "고유값"
+  },
+  {
+    "subject": "math",
+    "kanji": "固有ベクトル",
+    "kana": "こゆうベクトル",
+    "romaji": "koyuubekutoru",
+    "meaning": "고유벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "複素数",
+    "kana": "ふくそすう",
+    "romaji": "fukusosuu",
+    "meaning": "복소수"
+  },
+  {
+    "subject": "math",
+    "kanji": "虚数",
+    "kana": "きょすう",
+    "romaji": "kyosuu",
+    "meaning": "허수"
+  },
+  {
+    "subject": "math",
+    "kanji": "虚数単位",
+    "kana": "きょすうたんい",
+    "romaji": "kyosuutan'i",
+    "meaning": "허수단위"
+  },
+  {
+    "subject": "math",
+    "kanji": "共役",
+    "kana": "きょうやく",
+    "romaji": "kyouyaku",
+    "meaning": "켤레"
+  },
+  {
+    "subject": "math",
+    "kanji": "極形式",
+    "kana": "きょくけいしき",
+    "romaji": "kyokukeishiki",
+    "meaning": "극형식"
+  },
+  {
+    "subject": "math",
+    "kanji": "偏角",
+    "kana": "へんかく",
+    "romaji": "henkaku",
+    "meaning": "편각"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数",
+    "kana": "さんかくかんすう",
+    "romaji": "sankakukansuu",
+    "meaning": "삼각함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "正弦",
+    "kana": "せいげん",
+    "romaji": "seigen",
+    "meaning": "사인"
+  },
+  {
+    "subject": "math",
+    "kanji": "余弦",
+    "kana": "よげん",
+    "romaji": "yogen",
+    "meaning": "코사인"
+  },
+  {
+    "subject": "math",
+    "kanji": "正接",
+    "kana": "せいせつ",
+    "romaji": "seisetsu",
+    "meaning": "탄젠트"
+  },
+  {
+    "subject": "math",
+    "kanji": "余接",
+    "kana": "よせつ",
+    "romaji": "yosetsu",
+    "meaning": "코탄젠트"
+  },
+  {
+    "subject": "math",
+    "kanji": "正割",
+    "kana": "せいかつ",
+    "romaji": "seikatsu",
+    "meaning": "세컨트"
+  },
+  {
+    "subject": "math",
+    "kanji": "余割",
+    "kana": "よかつ",
+    "romaji": "yokatsu",
+    "meaning": "코세컨트"
+  },
+  {
+    "subject": "math",
+    "kanji": "弧度法",
+    "kana": "こどほう",
+    "romaji": "kodohou",
+    "meaning": "호도법"
+  },
+  {
+    "subject": "math",
+    "kanji": "度数法",
+    "kana": "どすうほう",
+    "romaji": "dosuuhou",
+    "meaning": "도법"
+  },
+  {
+    "subject": "math",
+    "kanji": "周期",
+    "kana": "しゅうき",
+    "romaji": "shuuki",
+    "meaning": "주기"
+  },
+  {
+    "subject": "math",
+    "kanji": "振幅",
+    "kana": "しんぷく",
+    "romaji": "shinpuku",
+    "meaning": "진폭"
+  },
+  {
+    "subject": "math",
+    "kanji": "位相",
+    "kana": "いそう",
+    "romaji": "isou",
+    "meaning": "위상"
+  },
+  {
+    "subject": "math",
+    "kanji": "加法定理",
+    "kana": "かほうていり",
+    "romaji": "kahouteiri",
+    "meaning": "덧셈정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "倍角",
+    "kana": "ばいかく",
+    "romaji": "baikaku",
+    "meaning": "배각"
+  },
+  {
+    "subject": "math",
+    "kanji": "半角",
+    "kana": "はんかく",
+    "romaji": "hankaku",
+    "meaning": "반각"
+  },
+  {
+    "subject": "math",
+    "kanji": "合成",
+    "kana": "ごうせい",
+    "romaji": "gousei",
+    "meaning": "합성"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆三角関数",
+    "kana": "ぎゃくさんかくかんすう",
+    "romaji": "gyakusankakukansuu",
+    "meaning": "역삼각함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "指数法則",
+    "kana": "しすうほうそく",
+    "romaji": "shisuuhousoku",
+    "meaning": "지수법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数法則",
+    "kana": "たいすうほうそく",
+    "romaji": "taisuuhousoku",
+    "meaning": "로그법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "常用対数",
+    "kana": "じょうようたいすう",
+    "romaji": "jouyoutaisuu",
+    "meaning": "상용로그"
+  },
+  {
+    "subject": "math",
+    "kanji": "自然対数",
+    "kana": "しぜんたいすう",
+    "romaji": "shizentaisuu",
+    "meaning": "자연로그"
+  },
+  {
+    "subject": "math",
+    "kanji": "ネイピア数",
+    "kana": "ネイピアすう",
+    "romaji": "n'eipiasuu",
+    "meaning": "네이피어 수 e"
+  },
+  {
+    "subject": "math",
+    "kanji": "連続",
+    "kana": "れんぞく",
+    "romaji": "renzoku",
+    "meaning": "연속"
+  },
+  {
+    "subject": "math",
+    "kanji": "不連続",
+    "kana": "ふれんぞく",
+    "romaji": "furenzoku",
+    "meaning": "불연속"
+  },
+  {
+    "subject": "math",
+    "kanji": "漸近線",
+    "kana": "ぜんきんせん",
+    "romaji": "zenkinsen",
+    "meaning": "점근선"
+  },
+  {
+    "subject": "math",
+    "kanji": "漸化式",
+    "kana": "ぜんかしき",
+    "romaji": "zenkashiki",
+    "meaning": "점화식"
+  },
+  {
+    "subject": "math",
+    "kanji": "等比級数",
+    "kana": "とうひきゅうすう",
+    "romaji": "touhikyuusuu",
+    "meaning": "등비급수"
+  },
+  {
+    "subject": "math",
+    "kanji": "等差級数",
+    "kana": "とうさきゅうすう",
+    "romaji": "tousakyuusuu",
+    "meaning": "등차급수"
+  },
+  {
+    "subject": "math",
+    "kanji": "総和",
+    "kana": "そうわ",
+    "romaji": "souwa",
+    "meaning": "총합"
+  },
+  {
+    "subject": "math",
+    "kanji": "シグマ",
+    "kana": "シグマ",
+    "romaji": "shiguma",
+    "meaning": "시그마(합)"
+  },
+  {
+    "subject": "math",
+    "kanji": "階差数列",
+    "kana": "かいさすうれつ",
+    "romaji": "kaisasuuretsu",
+    "meaning": "계차수열"
+  },
+  {
+    "subject": "math",
+    "kanji": "群数列",
+    "kana": "ぐんすうれつ",
+    "romaji": "gunsuuretsu",
+    "meaning": "군수열"
+  },
+  {
+    "subject": "math",
+    "kanji": "一次関数",
+    "kana": "いちじかんすう",
+    "romaji": "ichijikansuu",
+    "meaning": "일차함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "三次関数",
+    "kana": "さんじかんすう",
+    "romaji": "sanjikansuu",
+    "meaning": "삼차함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "分数関数",
+    "kana": "ぶんすうかんすう",
+    "romaji": "bunsuukansuu",
+    "meaning": "분수함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "無理関数",
+    "kana": "むりかんすう",
+    "romaji": "murikansuu",
+    "meaning": "무리함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "合成関数",
+    "kana": "ごうせいかんすう",
+    "romaji": "gouseikansuu",
+    "meaning": "합성함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆関数",
+    "kana": "ぎゃくかんすう",
+    "romaji": "gyakukansuu",
+    "meaning": "역함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "偶関数",
+    "kana": "ぐうかんすう",
+    "romaji": "guukansuu",
+    "meaning": "우함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "奇関数",
+    "kana": "きかんすう",
+    "romaji": "kikansuu",
+    "meaning": "기함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "対称",
+    "kana": "たいしょう",
+    "romaji": "taishou",
+    "meaning": "대칭"
+  },
+  {
+    "subject": "math",
+    "kanji": "対称軸",
+    "kana": "たいしょうじく",
+    "romaji": "taishoujiku",
+    "meaning": "대칭축"
+  },
+  {
+    "subject": "math",
+    "kanji": "対称の中心",
+    "kana": "たいしょうのちゅうしん",
+    "romaji": "taishoun'ochuushin",
+    "meaning": "대칭의 중심"
+  },
+  {
+    "subject": "math",
+    "kanji": "平行移動",
+    "kana": "へいこういどう",
+    "romaji": "heikouidou",
+    "meaning": "평행이동"
+  },
+  {
+    "subject": "math",
+    "kanji": "拡大",
+    "kana": "かくだい",
+    "romaji": "kakudai",
+    "meaning": "확대"
+  },
+  {
+    "subject": "math",
+    "kanji": "縮小",
+    "kana": "しゅくしょう",
+    "romaji": "shukushou",
+    "meaning": "축소"
+  },
+  {
+    "subject": "math",
+    "kanji": "変域",
+    "kana": "へんいき",
+    "romaji": "hen'iki",
+    "meaning": "변역"
+  },
+  {
+    "subject": "math",
+    "kanji": "不等式の領域",
+    "kana": "ふとうしきのりょういき",
+    "romaji": "futoushikin'oryouiki",
+    "meaning": "부등식의 영역"
+  },
+  {
+    "subject": "math",
+    "kanji": "線形計画",
+    "kana": "せんけいけいかく",
+    "romaji": "senkeikeikaku",
+    "meaning": "선형계획"
+  },
+  {
+    "subject": "math",
+    "kanji": "最適解",
+    "kana": "さいてきかい",
+    "romaji": "saitekikai",
+    "meaning": "최적해"
+  },
+  {
+    "subject": "math",
+    "kanji": "軌跡",
+    "kana": "きせき",
+    "romaji": "kiseki",
+    "meaning": "궤적"
+  },
+  {
+    "subject": "math",
+    "kanji": "通過",
+    "kana": "つうか",
+    "romaji": "tsuuka",
+    "meaning": "통과"
+  },
+  {
+    "subject": "math",
+    "kanji": "接点",
+    "kana": "せってん",
+    "romaji": "setten",
+    "meaning": "접점"
+  },
+  {
+    "subject": "math",
+    "kanji": "弦",
+    "kana": "げん",
+    "romaji": "gen",
+    "meaning": "현"
+  },
+  {
+    "subject": "math",
+    "kanji": "弧",
+    "kana": "こ",
+    "romaji": "ko",
+    "meaning": "호"
+  },
+  {
+    "subject": "math",
+    "kanji": "扇形",
+    "kana": "おうぎがた",
+    "romaji": "ougigata",
+    "meaning": "부채꼴"
+  },
+  {
+    "subject": "math",
+    "kanji": "中心角",
+    "kana": "ちゅうしんかく",
+    "romaji": "chuushinkaku",
+    "meaning": "중심각"
+  },
+  {
+    "subject": "math",
+    "kanji": "円周角",
+    "kana": "えんしゅうかく",
+    "romaji": "enshuukaku",
+    "meaning": "원주각"
+  },
+  {
+    "subject": "math",
+    "kanji": "接弦定理",
+    "kana": "せっげんていり",
+    "romaji": "seggenteiri",
+    "meaning": "접현정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "方べきの定理",
+    "kana": "ほうべきのていり",
+    "romaji": "houbekin'oteiri",
+    "meaning": "방멱의 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "三平方の定理",
+    "kana": "さんへいほうのていり",
+    "romaji": "sanheihoun'oteiri",
+    "meaning": "피타고라스 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "正弦定理",
+    "kana": "せいげんていり",
+    "romaji": "seigenteiri",
+    "meaning": "사인법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "余弦定理",
+    "kana": "よげんていり",
+    "romaji": "yogenteiri",
+    "meaning": "코사인법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "ヘロンの公式",
+    "kana": "ヘロンのこうしき",
+    "romaji": "heronn'okoushiki",
+    "meaning": "헤론의 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "面積比",
+    "kana": "めんせきひ",
+    "romaji": "mensekihi",
+    "meaning": "넓이비"
+  },
+  {
+    "subject": "math",
+    "kanji": "体積比",
+    "kana": "たいせきひ",
+    "romaji": "taisekihi",
+    "meaning": "부피비"
+  },
+  {
+    "subject": "math",
+    "kanji": "相似比",
+    "kana": "そうじひ",
+    "romaji": "soujihi",
+    "meaning": "닮음비"
+  },
+  {
+    "subject": "math",
+    "kanji": "球",
+    "kana": "きゅう",
+    "romaji": "kyuu",
+    "meaning": "구"
+  },
+  {
+    "subject": "math",
+    "kanji": "円柱",
+    "kana": "えんちゅう",
+    "romaji": "enchuu",
+    "meaning": "원기둥"
+  },
+  {
+    "subject": "math",
+    "kanji": "円錐",
+    "kana": "えんすい",
+    "romaji": "ensui",
+    "meaning": "원뿔"
+  },
+  {
+    "subject": "math",
+    "kanji": "角柱",
+    "kana": "かくちゅう",
+    "romaji": "kakuchuu",
+    "meaning": "각기둥"
+  },
+  {
+    "subject": "math",
+    "kanji": "角錐",
+    "kana": "かくすい",
+    "romaji": "kakusui",
+    "meaning": "각뿔"
+  },
+  {
+    "subject": "math",
+    "kanji": "正四面体",
+    "kana": "せいしめんたい",
+    "romaji": "seishimentai",
+    "meaning": "정사면체"
+  },
+  {
+    "subject": "math",
+    "kanji": "正六面体",
+    "kana": "せいろくめんたい",
+    "romaji": "seirokumentai",
+    "meaning": "정육면체"
+  },
+  {
+    "subject": "math",
+    "kanji": "立方体",
+    "kana": "りっぽうたい",
+    "romaji": "rippoutai",
+    "meaning": "정육면체"
+  },
+  {
+    "subject": "math",
+    "kanji": "直方体",
+    "kana": "ちょくほうたい",
+    "romaji": "chokuhoutai",
+    "meaning": "직육면체"
+  },
+  {
+    "subject": "math",
+    "kanji": "断面",
+    "kana": "だんめん",
+    "romaji": "danmen",
+    "meaning": "단면"
+  },
+  {
+    "subject": "math",
+    "kanji": "切り口",
+    "kana": "きりくち",
+    "romaji": "kirikuchi",
+    "meaning": "절단면"
+  },
+  {
+    "subject": "math",
+    "kanji": "展開図",
+    "kana": "てんかいず",
+    "romaji": "tenkaizu",
+    "meaning": "전개도"
+  },
+  {
+    "subject": "math",
+    "kanji": "投影",
+    "kana": "とうえい",
+    "romaji": "touei",
+    "meaning": "투영"
+  },
+  {
+    "subject": "math",
+    "kanji": "二項定理",
+    "kana": "にこうていり",
+    "romaji": "n'ikouteiri",
+    "meaning": "이항정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "パスカルの三角形",
+    "kana": "パスカルのさんかくけい",
+    "romaji": "pasukarun'osankakukei",
+    "meaning": "파스칼의 삼각형"
+  },
+  {
+    "subject": "math",
+    "kanji": "階乗",
+    "kana": "かいじょう",
+    "romaji": "kaijou",
+    "meaning": "팩토리얼"
+  },
+  {
+    "subject": "math",
+    "kanji": "場合分け",
+    "kana": "ばあいわけ",
+    "romaji": "baaiwake",
+    "meaning": "경우 나누기"
+  },
+  {
+    "subject": "math",
+    "kanji": "条件付き確率",
+    "kana": "じょうけんつきかくりつ",
+    "romaji": "joukentsukikakuritsu",
+    "meaning": "조건부확률"
+  },
+  {
+    "subject": "math",
+    "kanji": "ベイズの定理",
+    "kana": "ベイズのていり",
+    "romaji": "beizun'oteiri",
+    "meaning": "베이즈 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "正規分布",
+    "kana": "せいきぶんぷ",
+    "romaji": "seikibunpu",
+    "meaning": "정규분포"
+  },
+  {
+    "subject": "math",
+    "kanji": "二項分布",
+    "kana": "にこうぶんぷ",
+    "romaji": "n'ikoubunpu",
+    "meaning": "이항분포"
+  },
+  {
+    "subject": "math",
+    "kanji": "一様分布",
+    "kana": "いちようぶんぷ",
+    "romaji": "ichiyoubunpu",
+    "meaning": "균등분포"
+  },
+  {
+    "subject": "math",
+    "kanji": "平均値の定理",
+    "kana": "へいきんちのていり",
+    "romaji": "heikinchin'oteiri",
+    "meaning": "평균값 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "ロルの定理",
+    "kana": "ロルのていり",
+    "romaji": "rorun'oteiri",
+    "meaning": "롤의 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "相加相乗平均",
+    "kana": "そうかそうじょうへいきん",
+    "romaji": "soukasoujouheikin",
+    "meaning": "산술기하평균"
+  },
+  {
+    "subject": "math",
+    "kanji": "コーシー・シュワルツの不等式",
+    "kana": "コーシーシュワルツのふとうしき",
+    "romaji": "ko-shi-shuwarutsun'ofutoushiki",
+    "meaning": "코시-슈바르츠 부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "微分可能性",
+    "kana": "びぶんかのうせい",
+    "romaji": "bibunkan'ousei",
+    "meaning": "미분가능성"
+  },
+  {
+    "subject": "math",
+    "kanji": "連続性",
+    "kana": "れんぞくせい",
+    "romaji": "renzokusei",
+    "meaning": "연속성"
+  },
+  {
+    "subject": "math",
+    "kanji": "高次導関数",
+    "kana": "こうじどうかんすう",
+    "romaji": "koujidoukansuu",
+    "meaning": "고차도함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "陰関数",
+    "kana": "いんかんすう",
+    "romaji": "inkansuu",
+    "meaning": "음함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "媒介変数",
+    "kana": "ばいかいへんすう",
+    "romaji": "baikaihensuu",
+    "meaning": "매개변수"
+  },
+  {
+    "subject": "math",
+    "kanji": "媒介変数表示",
+    "kana": "ばいかいへんすうひょうじ",
+    "romaji": "baikaihensuuhyouji",
+    "meaning": "매개변수 표시"
+  },
+  {
+    "subject": "math",
+    "kanji": "速度",
+    "kana": "そくど",
+    "romaji": "sokudo",
+    "meaning": "속도"
+  },
+  {
+    "subject": "math",
+    "kanji": "加速度",
+    "kana": "かそくど",
+    "romaji": "kasokudo",
+    "meaning": "가속도"
+  },
+  {
+    "subject": "math",
+    "kanji": "瞬間速度",
+    "kana": "しゅんかんそくど",
+    "romaji": "shunkansokudo",
+    "meaning": "순간속도"
+  },
+  {
+    "subject": "math",
+    "kanji": "変位",
+    "kana": "へんい",
+    "romaji": "hen'i",
+    "meaning": "변위"
+  },
+  {
+    "subject": "math",
+    "kanji": "距離",
+    "kana": "きょり",
+    "romaji": "kyori",
+    "meaning": "거리"
+  },
+  {
+    "subject": "math",
+    "kanji": "弧長",
+    "kana": "こちょう",
+    "romaji": "kochou",
+    "meaning": "호장"
+  },
+  {
+    "subject": "math",
+    "kanji": "曲線の長さ",
+    "kana": "きょくせんのながさ",
+    "romaji": "kyokusenn'on'agasa",
+    "meaning": "곡선의 길이"
+  },
+  {
+    "subject": "math",
+    "kanji": "立体",
+    "kana": "りったい",
+    "romaji": "rittai",
+    "meaning": "입체"
+  },
+  {
+    "subject": "math",
+    "kanji": "回転体の体積",
+    "kana": "かいてんたいのたいせき",
+    "romaji": "kaitentain'otaiseki",
+    "meaning": "회전체의 부피"
+  },
+  {
+    "subject": "math",
+    "kanji": "区分求積",
+    "kana": "くぶんきゅうせき",
+    "romaji": "kubunkyuuseki",
+    "meaning": "구분구적"
+  },
+  {
+    "subject": "math",
+    "kanji": "リーマン和",
+    "kana": "リーマンわ",
+    "romaji": "ri-manwa",
+    "meaning": "리만합"
+  },
+  {
+    "subject": "math",
+    "kanji": "分数式",
+    "kana": "ぶんすうしき",
+    "romaji": "bunsuushiki",
+    "meaning": "분수식"
+  },
+  {
+    "subject": "math",
+    "kanji": "有理式",
+    "kana": "ゆうりしき",
+    "romaji": "yuurishiki",
+    "meaning": "유리식"
+  },
+  {
+    "subject": "math",
+    "kanji": "無理式",
+    "kana": "むりしき",
+    "romaji": "murishiki",
+    "meaning": "무리식"
+  },
+  {
+    "subject": "math",
+    "kanji": "通分",
+    "kana": "つうぶん",
+    "romaji": "tsuubun",
+    "meaning": "통분"
+  },
+  {
+    "subject": "math",
+    "kanji": "約分",
+    "kana": "やくぶん",
+    "romaji": "yakubun",
+    "meaning": "약분"
+  },
+  {
+    "subject": "math",
+    "kanji": "既約分数",
+    "kana": "きやくぶんすう",
+    "romaji": "kiyakubunsuu",
+    "meaning": "기약분수"
+  },
+  {
+    "subject": "math",
+    "kanji": "帯分数",
+    "kana": "たいぶんすう",
+    "romaji": "taibunsuu",
+    "meaning": "대분수"
+  },
+  {
+    "subject": "math",
+    "kanji": "仮分数",
+    "kana": "かぶんすう",
+    "romaji": "kabunsuu",
+    "meaning": "가분수"
+  },
+  {
+    "subject": "math",
+    "kanji": "比例",
+    "kana": "ひれい",
+    "romaji": "hirei",
+    "meaning": "비례"
+  },
+  {
+    "subject": "math",
+    "kanji": "反比例",
+    "kana": "はんぴれい",
+    "romaji": "hanpirei",
+    "meaning": "반비례"
+  },
+  {
+    "subject": "math",
+    "kanji": "比例定数",
+    "kana": "ひれいていすう",
+    "romaji": "hireiteisuu",
+    "meaning": "비례상수"
+  },
+  {
+    "subject": "math",
+    "kanji": "比",
+    "kana": "ひ",
+    "romaji": "hi",
+    "meaning": "비"
+  },
+  {
+    "subject": "math",
+    "kanji": "割合",
+    "kana": "わりあい",
+    "romaji": "wariai",
+    "meaning": "비율"
+  },
+  {
+    "subject": "math",
+    "kanji": "百分率",
+    "kana": "ひゃくぶんりつ",
+    "romaji": "hyakubunritsu",
+    "meaning": "백분율"
+  },
+  {
+    "subject": "math",
+    "kanji": "一次式",
+    "kana": "いちじしき",
+    "romaji": "ichijishiki",
+    "meaning": "일차식"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次式",
+    "kana": "にじしき",
+    "romaji": "n'ijishiki",
+    "meaning": "이차식"
+  },
+  {
+    "subject": "math",
+    "kanji": "三次式",
+    "kana": "さんじしき",
+    "romaji": "sanjishiki",
+    "meaning": "삼차식"
+  },
+  {
+    "subject": "math",
+    "kanji": "多項式",
+    "kana": "たこうしき",
+    "romaji": "takoushiki",
+    "meaning": "다항식"
+  },
+  {
+    "subject": "math",
+    "kanji": "項",
+    "kana": "こう",
+    "romaji": "kou",
+    "meaning": "항"
+  },
+  {
+    "subject": "math",
+    "kanji": "次数",
+    "kana": "じすう",
+    "romaji": "jisuu",
+    "meaning": "차수"
+  },
+  {
+    "subject": "math",
+    "kanji": "剰余の定理",
+    "kana": "じょうよのていり",
+    "romaji": "jouyon'oteiri",
+    "meaning": "나머지정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "因数定理",
+    "kana": "いんすうていり",
+    "romaji": "insuuteiri",
+    "meaning": "인수정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "組立除法",
+    "kana": "くみたてじょほう",
+    "romaji": "kumitatejohou",
+    "meaning": "조립제법"
+  },
+  {
+    "subject": "math",
+    "kanji": "割り算",
+    "kana": "わりざん",
+    "romaji": "warizan",
+    "meaning": "나눗셈"
+  },
+  {
+    "subject": "math",
+    "kanji": "商",
+    "kana": "しょう",
+    "romaji": "shou",
+    "meaning": "몫"
+  },
+  {
+    "subject": "math",
+    "kanji": "余り",
+    "kana": "あまり",
+    "romaji": "amari",
+    "meaning": "나머지"
+  },
+  {
+    "subject": "math",
+    "kanji": "約数",
+    "kana": "やくすう",
+    "romaji": "yakusuu",
+    "meaning": "약수"
+  },
+  {
+    "subject": "math",
+    "kanji": "倍数",
+    "kana": "ばいすう",
+    "romaji": "baisuu",
+    "meaning": "배수"
+  },
+  {
+    "subject": "math",
+    "kanji": "最大公約数",
+    "kana": "さいだいこうやくすう",
+    "romaji": "saidaikouyakusuu",
+    "meaning": "최대공약수"
+  },
+  {
+    "subject": "math",
+    "kanji": "最小公倍数",
+    "kana": "さいしょうこうばいすう",
+    "romaji": "saishoukoubaisuu",
+    "meaning": "최소공배수"
+  },
+  {
+    "subject": "math",
+    "kanji": "互いに素",
+    "kana": "たがいにそ",
+    "romaji": "tagain'iso",
+    "meaning": "서로소"
+  },
+  {
+    "subject": "math",
+    "kanji": "素数",
+    "kana": "そすう",
+    "romaji": "sosuu",
+    "meaning": "소수(素)"
+  },
+  {
+    "subject": "math",
+    "kanji": "素因数分解",
+    "kana": "そいんすうぶんかい",
+    "romaji": "soinsuubunkai",
+    "meaning": "소인수분해"
+  },
+  {
+    "subject": "math",
+    "kanji": "偶数",
+    "kana": "ぐうすう",
+    "romaji": "guusuu",
+    "meaning": "짝수"
+  },
+  {
+    "subject": "math",
+    "kanji": "奇数",
+    "kana": "きすう",
+    "romaji": "kisuu",
+    "meaning": "홀수"
+  },
+  {
+    "subject": "math",
+    "kanji": "負の数",
+    "kana": "ふのかず",
+    "romaji": "fun'okazu",
+    "meaning": "음수"
+  },
+  {
+    "subject": "math",
+    "kanji": "正の数",
+    "kana": "せいのかず",
+    "romaji": "sein'okazu",
+    "meaning": "양수"
+  },
+  {
+    "subject": "math",
+    "kanji": "小数",
+    "kana": "しょうすう",
+    "romaji": "shousuu",
+    "meaning": "소수(小数)"
+  },
+  {
+    "subject": "math",
+    "kanji": "循環小数",
+    "kana": "じゅんかんしょうすう",
+    "romaji": "junkanshousuu",
+    "meaning": "순환소수"
+  },
+  {
+    "subject": "math",
+    "kanji": "概数",
+    "kana": "がいすう",
+    "romaji": "gaisuu",
+    "meaning": "어림수"
+  },
+  {
+    "subject": "math",
+    "kanji": "有効数字",
+    "kana": "ゆうこうすうじ",
+    "romaji": "yuukousuuji",
+    "meaning": "유효숫자"
+  },
+  {
+    "subject": "math",
+    "kanji": "単位",
+    "kana": "たんい",
+    "romaji": "tan'i",
+    "meaning": "단위"
+  },
+  {
+    "subject": "math",
+    "kanji": "換算",
+    "kana": "かんさん",
+    "romaji": "kansan",
+    "meaning": "환산"
+  },
+  {
+    "subject": "math",
+    "kanji": "連立方程式",
+    "kana": "れんりつほうていしき",
+    "romaji": "renritsuhouteishiki",
+    "meaning": "연립방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "連立不等式",
+    "kana": "れんりつふとうしき",
+    "romaji": "renritsufutoushiki",
+    "meaning": "연립부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "消去法",
+    "kana": "しょうきょほう",
+    "romaji": "shoukyohou",
+    "meaning": "소거법"
+  },
+  {
+    "subject": "math",
+    "kanji": "代入法",
+    "kana": "だいにゅうほう",
+    "romaji": "dain'yuuhou",
+    "meaning": "대입법"
+  },
+  {
+    "subject": "math",
+    "kanji": "解",
+    "kana": "かい",
+    "romaji": "kai",
+    "meaning": "해"
+  },
+  {
+    "subject": "math",
+    "kanji": "解集合",
+    "kana": "かいしゅうごう",
+    "romaji": "kaishuugou",
+    "meaning": "해집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "空集合",
+    "kana": "くうしゅうごう",
+    "romaji": "kuushuugou",
+    "meaning": "공집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "集合",
+    "kana": "しゅうごう",
+    "romaji": "shuugou",
+    "meaning": "집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "要素",
+    "kana": "ようそ",
+    "romaji": "youso",
+    "meaning": "원소"
+  },
+  {
+    "subject": "math",
+    "kanji": "部分集合",
+    "kana": "ぶぶんしゅうごう",
+    "romaji": "bubunshuugou",
+    "meaning": "부분집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "共通部分",
+    "kana": "きょうつうぶぶん",
+    "romaji": "kyoutsuububun",
+    "meaning": "교집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "和集合",
+    "kana": "わしゅうごう",
+    "romaji": "washuugou",
+    "meaning": "합집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "補集合",
+    "kana": "ほしゅうごう",
+    "romaji": "hoshuugou",
+    "meaning": "여집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "全体集合",
+    "kana": "ぜんたいしゅうごう",
+    "romaji": "zentaishuugou",
+    "meaning": "전체집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "ベン図",
+    "kana": "ベンず",
+    "romaji": "benzu",
+    "meaning": "벤다이어그램"
+  },
+  {
+    "subject": "math",
+    "kanji": "ド・モルガンの法則",
+    "kana": "ドモルガンのほうそく",
+    "romaji": "domorugann'ohousoku",
+    "meaning": "드모르간 법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "写像",
+    "kana": "しゃぞう",
+    "romaji": "shazou",
+    "meaning": "사상"
+  },
+  {
+    "subject": "math",
+    "kanji": "対応",
+    "kana": "たいおう",
+    "romaji": "taiou",
+    "meaning": "대응"
+  },
+  {
+    "subject": "math",
+    "kanji": "一対一",
+    "kana": "いったいいち",
+    "romaji": "ittaiichi",
+    "meaning": "일대일"
+  },
+  {
+    "subject": "math",
+    "kanji": "定義",
+    "kana": "ていぎ",
+    "romaji": "teigi",
+    "meaning": "정의"
+  },
+  {
+    "subject": "math",
+    "kanji": "例題",
+    "kana": "れいだい",
+    "romaji": "reidai",
+    "meaning": "예제"
+  },
+  {
+    "subject": "math",
+    "kanji": "演習",
+    "kana": "えんしゅう",
+    "romaji": "enshuu",
+    "meaning": "연습"
+  },
+  {
+    "subject": "math",
+    "kanji": "解答",
+    "kana": "かいとう",
+    "romaji": "kaitou",
+    "meaning": "해답"
+  },
+  {
+    "subject": "math",
+    "kanji": "解説",
+    "kana": "かいせつ",
+    "romaji": "kaisetsu",
+    "meaning": "해설"
+  },
+  {
+    "subject": "math",
+    "kanji": "検算",
+    "kana": "けんざん",
+    "romaji": "kenzan",
+    "meaning": "검산"
+  },
+  {
+    "subject": "math",
+    "kanji": "途中式",
+    "kana": "とちゅうしき",
+    "romaji": "tochuushiki",
+    "meaning": "중간식"
+  },
+  {
+    "subject": "math",
+    "kanji": "代入",
+    "kana": "だいにゅう",
+    "romaji": "dain'yuu",
+    "meaning": "대입"
+  },
+  {
+    "subject": "math",
+    "kanji": "整理",
+    "kana": "せいり",
+    "romaji": "seiri",
+    "meaning": "정리하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "変形",
+    "kana": "へんけい",
+    "romaji": "henkei",
+    "meaning": "변형"
+  },
+  {
+    "subject": "math",
+    "kanji": "近似",
+    "kana": "きんじ",
+    "romaji": "kinji",
+    "meaning": "근사"
+  },
+  {
+    "subject": "math",
+    "kanji": "誤差",
+    "kana": "ごさ",
+    "romaji": "gosa",
+    "meaning": "오차"
+  },
+  {
+    "subject": "math",
+    "kanji": "相対誤差",
+    "kana": "そうたいごさ",
+    "romaji": "soutaigosa",
+    "meaning": "상대오차"
+  },
+  {
+    "subject": "math",
+    "kanji": "図形",
+    "kana": "ずけい",
+    "romaji": "zukei",
+    "meaning": "도형"
+  },
+  {
+    "subject": "math",
+    "kanji": "計量",
+    "kana": "けいりょう",
+    "romaji": "keiryou",
+    "meaning": "계량"
+  },
+  {
+    "subject": "math",
+    "kanji": "求積",
+    "kana": "きゅうせき",
+    "romaji": "kyuuseki",
+    "meaning": "구적"
+  },
+  {
+    "subject": "math",
+    "kanji": "条件",
+    "kana": "じょうけん",
+    "romaji": "jouken",
+    "meaning": "조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "制約条件",
+    "kana": "せいやくじょうけん",
+    "romaji": "seiyakujouken",
+    "meaning": "제약조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "目的関数",
+    "kana": "もくてきかんすう",
+    "romaji": "mokutekikansuu",
+    "meaning": "목적함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "パラメータ",
+    "kana": "パラメータ",
+    "romaji": "parame-ta",
+    "meaning": "매개변수"
+  },
+  {
+    "subject": "math",
+    "kanji": "定数項",
+    "kana": "ていすうこう",
+    "romaji": "teisuukou",
+    "meaning": "상수항"
+  },
+  {
+    "subject": "math",
+    "kanji": "一次独立",
+    "kana": "いちじどくりつ",
+    "romaji": "ichijidokuritsu",
+    "meaning": "일차독립"
+  },
+  {
+    "subject": "math",
+    "kanji": "一次従属",
+    "kana": "いちじじゅうぞく",
+    "romaji": "ichijijuuzoku",
+    "meaning": "일차종속"
+  },
+  {
+    "subject": "math",
+    "kanji": "基底",
+    "kana": "きてい",
+    "romaji": "kitei",
+    "meaning": "기저"
+  },
+  {
+    "subject": "math",
+    "kanji": "次元",
+    "kana": "じげん",
+    "romaji": "jigen",
+    "meaning": "차원"
+  },
+  {
+    "subject": "math",
+    "kanji": "線形変換",
+    "kana": "せんけいへんかん",
+    "romaji": "senkeihenkan",
+    "meaning": "선형변환"
+  },
+  {
+    "subject": "math",
+    "kanji": "回転",
+    "kana": "かいてん",
+    "romaji": "kaiten",
+    "meaning": "회전"
+  },
+  {
+    "subject": "math",
+    "kanji": "対称移動",
+    "kana": "たいしょういどう",
+    "romaji": "taishouidou",
+    "meaning": "대칭이동"
+  },
+  {
+    "subject": "math",
+    "kanji": "ガウス消去法",
+    "kana": "ガウスしょうきょほう",
+    "romaji": "gausushoukyohou",
+    "meaning": "가우스 소거법"
+  },
+  {
+    "subject": "math",
+    "kanji": "級数",
+    "kana": "きゅうすう",
+    "romaji": "kyuusuu",
+    "meaning": "급수"
+  },
+  {
+    "subject": "math",
+    "kanji": "単調増加",
+    "kana": "たんちょうぞうか",
+    "romaji": "tanchouzouka",
+    "meaning": "단조증가"
+  },
+  {
+    "subject": "math",
+    "kanji": "単調減少",
+    "kana": "たんちょうげんしょう",
+    "romaji": "tanchougenshou",
+    "meaning": "단조감소"
+  },
+  {
+    "subject": "math",
+    "kanji": "有界",
+    "kana": "ゆうかい",
+    "romaji": "yuukai",
+    "meaning": "유계"
+  },
+  {
+    "subject": "math",
+    "kanji": "上限",
+    "kana": "じょうげん",
+    "romaji": "jougen",
+    "meaning": "상한"
+  },
+  {
+    "subject": "math",
+    "kanji": "下限",
+    "kana": "かげん",
+    "romaji": "kagen",
+    "meaning": "하한"
+  },
+  {
+    "subject": "math",
+    "kanji": "はさみうちの原理",
+    "kana": "はさみうちのげんり",
+    "romaji": "hasamiuchin'ogenri",
+    "meaning": "샌드위치 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "無限大",
+    "kana": "むげんだい",
+    "romaji": "mugendai",
+    "meaning": "무한대"
+  },
+  {
+    "subject": "math",
+    "kanji": "積分定数",
+    "kana": "せきぶんていすう",
+    "romaji": "sekibunteisuu",
+    "meaning": "적분상수"
+  },
+  {
+    "subject": "math",
+    "kanji": "ラジアン",
+    "kana": "ラジアン",
+    "romaji": "rajian",
+    "meaning": "라디안"
+  },
+  {
+    "subject": "math",
+    "kanji": "単位円",
+    "kana": "たんいえん",
+    "romaji": "tan'ien",
+    "meaning": "단위원"
+  },
+  {
+    "subject": "math",
+    "kanji": "複素数平面",
+    "kana": "ふくそすうへいめん",
+    "romaji": "fukusosuuheimen",
+    "meaning": "복소평면"
+  },
+  {
+    "subject": "math",
+    "kanji": "実軸",
+    "kana": "じつじく",
+    "romaji": "jitsujiku",
+    "meaning": "실축"
+  },
+  {
+    "subject": "math",
+    "kanji": "虚軸",
+    "kana": "きょじく",
+    "romaji": "kyojiku",
+    "meaning": "허축"
+  },
+  {
+    "subject": "math",
+    "kanji": "オイラーの公式",
+    "kana": "オイラーのこうしき",
+    "romaji": "oira-n'okoushiki",
+    "meaning": "오일러 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "重解",
+    "kana": "じゅうかい",
+    "romaji": "juukai",
+    "meaning": "중근"
+  },
+  {
+    "subject": "math",
+    "kanji": "区間",
+    "kana": "くかん",
+    "romaji": "kukan",
+    "meaning": "구간"
+  },
+  {
+    "subject": "math",
+    "kanji": "閉区間",
+    "kana": "へいくかん",
+    "romaji": "heikukan",
+    "meaning": "닫힌 구간"
+  },
+  {
+    "subject": "math",
+    "kanji": "開区間",
+    "kana": "かいくかん",
+    "romaji": "kaikukan",
+    "meaning": "열린 구간"
+  },
+  {
+    "subject": "math",
+    "kanji": "領域",
+    "kana": "りょういき",
+    "romaji": "ryouiki",
+    "meaning": "영역"
+  },
+  {
+    "subject": "math",
+    "kanji": "図示せよ",
+    "kana": "ずしせよ",
+    "romaji": "zushiseyo",
+    "meaning": "그려라"
+  },
+  {
+    "subject": "math",
+    "kanji": "求めよ",
+    "kana": "もとめよ",
+    "romaji": "motomeyo",
+    "meaning": "구하라"
+  },
+  {
+    "subject": "math",
+    "kanji": "証明せよ",
+    "kana": "しょうめいせよ",
+    "romaji": "shoumeiseyo",
+    "meaning": "증명하라"
+  },
+  {
+    "subject": "math",
+    "kanji": "ド・モアブルの定理",
+    "kana": "ドモアブルのていり",
+    "romaji": "domoaburun'oteiri",
+    "meaning": "드무아브르 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "クラメルの公式",
+    "kana": "クラメルのこうしき",
+    "romaji": "kuramerun'okoushiki",
+    "meaning": "크래머 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次曲線",
+    "kana": "にじきょくせん",
+    "romaji": "n'ijikyokusen",
+    "meaning": "이차곡선"
+  },
+  {
+    "subject": "math",
+    "kanji": "楕円",
+    "kana": "だえん",
+    "romaji": "daen",
+    "meaning": "타원"
+  },
+  {
+    "subject": "math",
+    "kanji": "双曲線",
+    "kana": "そうきょくせん",
+    "romaji": "soukyokusen",
+    "meaning": "쌍곡선"
+  },
+  {
+    "subject": "math",
+    "kanji": "焦点",
+    "kana": "しょうてん",
+    "romaji": "shouten",
+    "meaning": "초점"
+  },
+  {
+    "subject": "math",
+    "kanji": "準線",
+    "kana": "じゅんせん",
+    "romaji": "junsen",
+    "meaning": "준선"
+  },
+  {
+    "subject": "math",
+    "kanji": "離心率",
+    "kana": "りしんりつ",
+    "romaji": "rishinritsu",
+    "meaning": "이심률"
+  },
+  {
+    "subject": "math",
+    "kanji": "極座標",
+    "kana": "きょくざひょう",
+    "romaji": "kyokuzahyou",
+    "meaning": "극좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "動径",
+    "kana": "どうけい",
+    "romaji": "doukei",
+    "meaning": "동경"
+  },
+  {
+    "subject": "math",
+    "kanji": "等差数列の和",
+    "kana": "とうさすうれつのわ",
+    "romaji": "tousasuuretsun'owa",
+    "meaning": "등차수열의 합"
+  },
+  {
+    "subject": "math",
+    "kanji": "等比数列の和",
+    "kana": "とうひすうれつのわ",
+    "romaji": "touhisuuretsun'owa",
+    "meaning": "등비수열의 합"
+  },
+  {
+    "subject": "math",
+    "kanji": "無限等比級数",
+    "kana": "むげんとうひきゅうすう",
+    "romaji": "mugentouhikyuusuu",
+    "meaning": "무한등비급수"
+  },
+  {
+    "subject": "math",
+    "kanji": "等比級数の和",
+    "kana": "とうひきゅうすうのわ",
+    "romaji": "touhikyuusuun'owa",
+    "meaning": "등비급수의 합"
+  },
+  {
+    "subject": "math",
+    "kanji": "帰納法",
+    "kana": "きのうほう",
+    "romaji": "kin'ouhou",
+    "meaning": "귀납법"
+  },
+  {
+    "subject": "math",
+    "kanji": "帰納",
+    "kana": "きのう",
+    "romaji": "kin'ou",
+    "meaning": "귀납"
+  },
+  {
+    "subject": "math",
+    "kanji": "演繹",
+    "kana": "えんえき",
+    "romaji": "en'eki",
+    "meaning": "연역"
+  },
+  {
+    "subject": "math",
+    "kanji": "命題",
+    "kana": "めいだい",
+    "romaji": "meidai",
+    "meaning": "명제"
+  },
+  {
+    "subject": "math",
+    "kanji": "真偽",
+    "kana": "しんぎ",
+    "romaji": "shingi",
+    "meaning": "진위"
+  },
+  {
+    "subject": "math",
+    "kanji": "反例",
+    "kana": "はんれい",
+    "romaji": "hanrei",
+    "meaning": "반례"
+  },
+  {
+    "subject": "math",
+    "kanji": "同値",
+    "kana": "どうち",
+    "romaji": "douchi",
+    "meaning": "동치"
+  },
+  {
+    "subject": "math",
+    "kanji": "同値変形",
+    "kana": "どうちへんけい",
+    "romaji": "douchihenkei",
+    "meaning": "동치변형"
+  },
+  {
+    "subject": "math",
+    "kanji": "同値関係",
+    "kana": "どうちかんけい",
+    "romaji": "douchikankei",
+    "meaning": "동치관계"
+  },
+  {
+    "subject": "math",
+    "kanji": "包含",
+    "kana": "ほうがん",
+    "romaji": "hougan",
+    "meaning": "포함"
+  },
+  {
+    "subject": "math",
+    "kanji": "排他的論理和",
+    "kana": "はいたてきろんりわ",
+    "romaji": "haitatekironriwa",
+    "meaning": "배타적 논리합"
+  },
+  {
+    "subject": "math",
+    "kanji": "論理積",
+    "kana": "ろんりせき",
+    "romaji": "ronriseki",
+    "meaning": "논리곱"
+  },
+  {
+    "subject": "math",
+    "kanji": "論理和",
+    "kana": "ろんりわ",
+    "romaji": "ronriwa",
+    "meaning": "논리합"
+  },
+  {
+    "subject": "math",
+    "kanji": "否定",
+    "kana": "ひてい",
+    "romaji": "hitei",
+    "meaning": "부정"
+  },
+  {
+    "subject": "math",
+    "kanji": "換質",
+    "kana": "かんしつ",
+    "romaji": "kanshitsu",
+    "meaning": "환질"
+  },
+  {
+    "subject": "math",
+    "kanji": "換位",
+    "kana": "かんい",
+    "romaji": "kan'i",
+    "meaning": "환위"
+  },
+  {
+    "subject": "math",
+    "kanji": "背理",
+    "kana": "はいり",
+    "romaji": "hairi",
+    "meaning": "귀리"
+  },
+  {
+    "subject": "math",
+    "kanji": "帰謬法",
+    "kana": "きびゅうほう",
+    "romaji": "kibyuuhou",
+    "meaning": "귀류법"
+  },
+  {
+    "subject": "math",
+    "kanji": "存在",
+    "kana": "そんざい",
+    "romaji": "sonzai",
+    "meaning": "존재"
+  },
+  {
+    "subject": "math",
+    "kanji": "一意性",
+    "kana": "いちいせい",
+    "romaji": "ichiisei",
+    "meaning": "유일성"
+  },
+  {
+    "subject": "math",
+    "kanji": "存在と一意性",
+    "kana": "そんざいといちいせい",
+    "romaji": "sonzaitoichiisei",
+    "meaning": "존재와 유일성"
+  },
+  {
+    "subject": "math",
+    "kanji": "ユークリッドの互除法",
+    "kana": "ユークリッドのごじょほう",
+    "romaji": "yu-kuriddon'ogojohou",
+    "meaning": "유클리드 호제법"
+  },
+  {
+    "subject": "math",
+    "kanji": "剰余",
+    "kana": "じょうよ",
+    "romaji": "jouyo",
+    "meaning": "나머지"
+  },
+  {
+    "subject": "math",
+    "kanji": "合同式",
+    "kana": "ごうどうしき",
+    "romaji": "goudoushiki",
+    "meaning": "합동식"
+  },
+  {
+    "subject": "math",
+    "kanji": "法",
+    "kana": "ほう",
+    "romaji": "hou",
+    "meaning": "법(mod)"
+  },
+  {
+    "subject": "math",
+    "kanji": "剰余類",
+    "kana": "じょうよるい",
+    "romaji": "jouyorui",
+    "meaning": "잉여류"
+  },
+  {
+    "subject": "math",
+    "kanji": "中国の剰余定理",
+    "kana": "ちゅうごくのじょうよていり",
+    "romaji": "chuugokun'ojouyoteiri",
+    "meaning": "중국인의 나머지 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "フェルマーの小定理",
+    "kana": "フェルマーのしょうていり",
+    "romaji": "fueruma-n'oshouteiri",
+    "meaning": "페르마 소정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "オイラーの定理",
+    "kana": "オイラーのていり",
+    "romaji": "oira-n'oteiri",
+    "meaning": "오일러 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "生成関数",
+    "kana": "せいせいかんすう",
+    "romaji": "seiseikansuu",
+    "meaning": "생성함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "母関数",
+    "kana": "ぼかんすう",
+    "romaji": "bokansuu",
+    "meaning": "모함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "漸近展開",
+    "kana": "ぜんきんてんかい",
+    "romaji": "zenkintenkai",
+    "meaning": "점근전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "テイラー展開",
+    "kana": "テイラーてんかい",
+    "romaji": "teira-tenkai",
+    "meaning": "테일러 전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "マクローリン展開",
+    "kana": "マクローリンてんかい",
+    "romaji": "makuro-rintenkai",
+    "meaning": "매클로린 전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "剰余項",
+    "kana": "じょうよこう",
+    "romaji": "jouyokou",
+    "meaning": "나머지항"
+  },
+  {
+    "subject": "math",
+    "kanji": "ラグランジュの剰余項",
+    "kana": "ラグランジュのじょうよこう",
+    "romaji": "raguranjun'ojouyokou",
+    "meaning": "라그랑주 나머지항"
+  },
+  {
+    "subject": "math",
+    "kanji": "ロピタルの定理",
+    "kana": "ロピタルのていり",
+    "romaji": "ropitarun'oteiri",
+    "meaning": "로피탈 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "不定形",
+    "kana": "ふていけい",
+    "romaji": "futeikei",
+    "meaning": "부정형"
+  },
+  {
+    "subject": "math",
+    "kanji": "特異点",
+    "kana": "とくいてん",
+    "romaji": "tokuiten",
+    "meaning": "특이점"
+  },
+  {
+    "subject": "math",
+    "kanji": "分岐点",
+    "kana": "ぶんきてん",
+    "romaji": "bunkiten",
+    "meaning": "분기점"
+  },
+  {
+    "subject": "math",
+    "kanji": "分岐",
+    "kana": "ぶんき",
+    "romaji": "bunki",
+    "meaning": "분기"
+  },
+  {
+    "subject": "math",
+    "kanji": "多価関数",
+    "kana": "たかかんすう",
+    "romaji": "takakansuu",
+    "meaning": "다가함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "主値",
+    "kana": "しゅち",
+    "romaji": "shuchi",
+    "meaning": "주값"
+  },
+  {
+    "subject": "math",
+    "kanji": "偏微分",
+    "kana": "へんびぶん",
+    "romaji": "henbibun",
+    "meaning": "편미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "全微分",
+    "kana": "ぜんびぶん",
+    "romaji": "zenbibun",
+    "meaning": "전미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "勾配",
+    "kana": "こうばい",
+    "romaji": "koubai",
+    "meaning": "기울기/그래디언트"
+  },
+  {
+    "subject": "math",
+    "kanji": "勾配ベクトル",
+    "kana": "こうばいベクトル",
+    "romaji": "koubaibekutoru",
+    "meaning": "기울기 벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "線積分",
+    "kana": "せんせきぶん",
+    "romaji": "sensekibun",
+    "meaning": "선적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "面積分",
+    "kana": "めんせきぶん",
+    "romaji": "mensekibun",
+    "meaning": "면적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "体積積分",
+    "kana": "たいせきせきぶん",
+    "romaji": "taisekisekibun",
+    "meaning": "체적적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "グリーンの定理",
+    "kana": "グリーンのていり",
+    "romaji": "guri-nn'oteiri",
+    "meaning": "그린 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "ストークスの定理",
+    "kana": "ストークスのていり",
+    "romaji": "suto-kusun'oteiri",
+    "meaning": "스토크스 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "ガウスの発散定理",
+    "kana": "ガウスのはっさんていり",
+    "romaji": "gausun'ohassanteiri",
+    "meaning": "가우스 발산정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "二重積分",
+    "kana": "にじゅうせきぶん",
+    "romaji": "n'ijuusekibun",
+    "meaning": "이중적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "三重積分",
+    "kana": "さんじゅうせきぶん",
+    "romaji": "sanjuusekibun",
+    "meaning": "삼중적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "累次積分",
+    "kana": "るいじせきぶん",
+    "romaji": "ruijisekibun",
+    "meaning": "누차적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "ヤコビアン",
+    "kana": "ヤコビアン",
+    "romaji": "yakobian",
+    "meaning": "야코비안"
+  },
+  {
+    "subject": "math",
+    "kanji": "変数変換",
+    "kana": "へんすうへんかん",
+    "romaji": "hensuuhenkan",
+    "meaning": "변수변환"
+  },
+  {
+    "subject": "math",
+    "kanji": "極座標変換",
+    "kana": "きょくざひょうへんかん",
+    "romaji": "kyokuzahyouhenkan",
+    "meaning": "극좌표변환"
+  },
+  {
+    "subject": "math",
+    "kanji": "球面座標",
+    "kana": "きゅうめんざひょう",
+    "romaji": "kyuumenzahyou",
+    "meaning": "구면좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "円柱座標",
+    "kana": "えんちゅうざひょう",
+    "romaji": "enchuuzahyou",
+    "meaning": "원통좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "固有方程式",
+    "kana": "こゆうほうていしき",
+    "romaji": "koyuuhouteishiki",
+    "meaning": "고유방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "特性方程式",
+    "kana": "とくせいほうていしき",
+    "romaji": "tokuseihouteishiki",
+    "meaning": "특성방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "固有空間",
+    "kana": "こゆうくうかん",
+    "romaji": "koyuukuukan",
+    "meaning": "고유공간"
+  },
+  {
+    "subject": "math",
+    "kanji": "対角化",
+    "kana": "たいかくか",
+    "romaji": "taikakuka",
+    "meaning": "대각화"
+  },
+  {
+    "subject": "math",
+    "kanji": "対角行列",
+    "kana": "たいかくぎょうれつ",
+    "romaji": "taikakugyouretsu",
+    "meaning": "대각행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "対称行列",
+    "kana": "たいしょうぎょうれつ",
+    "romaji": "taishougyouretsu",
+    "meaning": "대칭행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "直交行列",
+    "kana": "ちょっこうぎょうれつ",
+    "romaji": "chokkougyouretsu",
+    "meaning": "직교행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "正規直交基底",
+    "kana": "せいきちょっこうきてい",
+    "romaji": "seikichokkoukitei",
+    "meaning": "정규직교기저"
+  },
+  {
+    "subject": "math",
+    "kanji": "グラム・シュミットの直交化",
+    "kana": "グラムシュミットのちょっこうか",
+    "romaji": "guramushumitton'ochokkouka",
+    "meaning": "그람-슈미트 직교화"
+  },
+  {
+    "subject": "math",
+    "kanji": "正定値",
+    "kana": "せいていち",
+    "romaji": "seiteichi",
+    "meaning": "양의 정부호"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次形式",
+    "kana": "にじけいしき",
+    "romaji": "n'ijikeishiki",
+    "meaning": "이차형식"
+  },
+  {
+    "subject": "math",
+    "kanji": "標準形",
+    "kana": "ひょうじゅんけい",
+    "romaji": "hyoujunkei",
+    "meaning": "표준형"
+  },
+  {
+    "subject": "math",
+    "kanji": "完備化",
+    "kana": "かんびか",
+    "romaji": "kanbika",
+    "meaning": "완비화"
+  },
+  {
+    "subject": "math",
+    "kanji": "完備",
+    "kana": "かんび",
+    "romaji": "kanbi",
+    "meaning": "완비"
+  },
+  {
+    "subject": "math",
+    "kanji": "稠密",
+    "kana": "ちゅうみつ",
+    "romaji": "chuumitsu",
+    "meaning": "조밀"
+  },
+  {
+    "subject": "math",
+    "kanji": "開集合",
+    "kana": "かいしゅうごう",
+    "romaji": "kaishuugou",
+    "meaning": "열린집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "閉集合",
+    "kana": "へいしゅうごう",
+    "romaji": "heishuugou",
+    "meaning": "닫힌집합"
+  },
+  {
+    "subject": "math",
+    "kanji": "コンパクト",
+    "kana": "コンパクト",
+    "romaji": "konpakuto",
+    "meaning": "콤팩트"
+  },
+  {
+    "subject": "math",
+    "kanji": "連続写像",
+    "kana": "れんぞくしゃぞう",
+    "romaji": "renzokushazou",
+    "meaning": "연속사상"
+  },
+  {
+    "subject": "math",
+    "kanji": "一様連続",
+    "kana": "いちようれんぞく",
+    "romaji": "ichiyourenzoku",
+    "meaning": "균등연속"
+  },
+  {
+    "subject": "math",
+    "kanji": "リプシッツ連続",
+    "kana": "リプシッツれんぞく",
+    "romaji": "ripushittsurenzoku",
+    "meaning": "립시츠 연속"
+  },
+  {
+    "subject": "math",
+    "kanji": "不動点",
+    "kana": "ふどうてん",
+    "romaji": "fudouten",
+    "meaning": "부동점"
+  },
+  {
+    "subject": "math",
+    "kanji": "不動点定理",
+    "kana": "ふどうてんていり",
+    "romaji": "fudoutenteiri",
+    "meaning": "부동점 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "縮小写像",
+    "kana": "しゅくしょうしゃぞう",
+    "romaji": "shukushoushazou",
+    "meaning": "축소사상"
+  },
+  {
+    "subject": "math",
+    "kanji": "逐次近似",
+    "kana": "ちくじきんじ",
+    "romaji": "chikujikinji",
+    "meaning": "축차근사"
+  },
+  {
+    "subject": "math",
+    "kanji": "ニュートン法",
+    "kana": "ニュートンほう",
+    "romaji": "n'yu-tonhou",
+    "meaning": "뉴턴법"
+  },
+  {
+    "subject": "math",
+    "kanji": "二分法",
+    "kana": "にぶんほう",
+    "romaji": "n'ibunhou",
+    "meaning": "이분법"
+  },
+  {
+    "subject": "math",
+    "kanji": "数値積分",
+    "kana": "すうちせきぶん",
+    "romaji": "suuchisekibun",
+    "meaning": "수치적분"
+  },
+  {
+    "subject": "math",
+    "kanji": "台形公式",
+    "kana": "だいけいこうしき",
+    "romaji": "daikeikoushiki",
+    "meaning": "사다리꼴 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "シンプソンの公式",
+    "kana": "シンプソンのこうしき",
+    "romaji": "shinpusonn'okoushiki",
+    "meaning": "심프슨 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "差分",
+    "kana": "さぶん",
+    "romaji": "sabun",
+    "meaning": "차분"
+  },
+  {
+    "subject": "math",
+    "kanji": "前進差分",
+    "kana": "ぜんしんさぶん",
+    "romaji": "zenshinsabun",
+    "meaning": "전진차분"
+  },
+  {
+    "subject": "math",
+    "kanji": "後退差分",
+    "kana": "こうたいさぶん",
+    "romaji": "koutaisabun",
+    "meaning": "후진차분"
+  },
+  {
+    "subject": "math",
+    "kanji": "中心差分",
+    "kana": "ちゅうしんさぶん",
+    "romaji": "chuushinsabun",
+    "meaning": "중심차분"
+  },
+  {
+    "subject": "math",
+    "kanji": "離散化",
+    "kana": "りさんか",
+    "romaji": "risanka",
+    "meaning": "이산화"
+  },
+  {
+    "subject": "math",
+    "kanji": "離散数学",
+    "kana": "りさんすうがく",
+    "romaji": "risansuugaku",
+    "meaning": "이산수학"
+  },
+  {
+    "subject": "math",
+    "kanji": "グラフ理論",
+    "kana": "グラフりろん",
+    "romaji": "gurafuriron",
+    "meaning": "그래프 이론"
+  },
+  {
+    "subject": "math",
+    "kanji": "辺",
+    "kana": "へん",
+    "romaji": "hen",
+    "meaning": "변/간선"
+  },
+  {
+    "subject": "math",
+    "kanji": "閉路",
+    "kana": "へいろ",
+    "romaji": "heiro",
+    "meaning": "폐로"
+  },
+  {
+    "subject": "math",
+    "kanji": "閉路のないグラフ",
+    "kana": "へいろのないグラフ",
+    "romaji": "heiron'on'aigurafu",
+    "meaning": "트리"
+  },
+  {
+    "subject": "math",
+    "kanji": "木",
+    "kana": "き",
+    "romaji": "ki",
+    "meaning": "트리"
+  },
+  {
+    "subject": "math",
+    "kanji": "全域木",
+    "kana": "ぜんいきぎ",
+    "romaji": "zen'ikigi",
+    "meaning": "신장트리"
+  },
+  {
+    "subject": "math",
+    "kanji": "最短経路",
+    "kana": "さいたんけいろ",
+    "romaji": "saitankeiro",
+    "meaning": "최단경로"
+  },
+  {
+    "subject": "math",
+    "kanji": "最大流",
+    "kana": "さいだいりゅう",
+    "romaji": "saidairyuu",
+    "meaning": "최대유량"
+  },
+  {
+    "subject": "math",
+    "kanji": "最小カット",
+    "kana": "さいしょうカット",
+    "romaji": "saishoukatto",
+    "meaning": "최소컷"
+  },
+  {
+    "subject": "math",
+    "kanji": "組合せ最適化",
+    "kana": "くみあわせさいてきか",
+    "romaji": "kumiawasesaitekika",
+    "meaning": "조합최적화"
+  },
+  {
+    "subject": "math",
+    "kanji": "動的計画法",
+    "kana": "どうてきけいかくほう",
+    "romaji": "doutekikeikakuhou",
+    "meaning": "동적계획법"
+  },
+  {
+    "subject": "math",
+    "kanji": "漸化式を解く",
+    "kana": "ぜんかしきをとく",
+    "romaji": "zenkashikiotoku",
+    "meaning": "점화식을 풀다"
+  },
+  {
+    "subject": "math",
+    "kanji": "隣接二項間漸化式",
+    "kana": "りんせつにこうかんぜんかしき",
+    "romaji": "rinsetsun'ikoukanzenkashiki",
+    "meaning": "인접 2항간 점화식"
+  },
+  {
+    "subject": "math",
+    "kanji": "隣接三項間漸化式",
+    "kana": "りんせつさんこうかんぜんかしき",
+    "romaji": "rinsetsusankoukanzenkashiki",
+    "meaning": "인접 3항간 점화식"
+  },
+  {
+    "subject": "math",
+    "kanji": "連立漸化式",
+    "kana": "れんりつぜんかしき",
+    "romaji": "renritsuzenkashiki",
+    "meaning": "연립점화식"
+  },
+  {
+    "subject": "math",
+    "kanji": "数学オリンピック",
+    "kana": "すうがくオリンピック",
+    "romaji": "suugakuorinpikku",
+    "meaning": "수학 올림픽"
+  },
+  {
+    "subject": "math",
+    "kanji": "入試",
+    "kana": "にゅうし",
+    "romaji": "n'yuushi",
+    "meaning": "입시"
+  },
+  {
+    "subject": "math",
+    "kanji": "記述式",
+    "kana": "きじゅつしき",
+    "romaji": "kijutsushiki",
+    "meaning": "서술식"
+  },
+  {
+    "subject": "math",
+    "kanji": "選択式",
+    "kana": "せんたくしき",
+    "romaji": "sentakushiki",
+    "meaning": "선택식"
+  },
+  {
+    "subject": "math",
+    "kanji": "マークシート",
+    "kana": "マークシート",
+    "romaji": "ma-kushi-to",
+    "meaning": "마크시트"
+  },
+  {
+    "subject": "math",
+    "kanji": "配点",
+    "kana": "はいてん",
+    "romaji": "haiten",
+    "meaning": "배점"
+  },
+  {
+    "subject": "math",
+    "kanji": "満点",
+    "kana": "まんてん",
+    "romaji": "manten",
+    "meaning": "만점"
+  },
+  {
+    "subject": "math",
+    "kanji": "部分点",
+    "kana": "ぶぶんてん",
+    "romaji": "bubunten",
+    "meaning": "부분점수"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次方程式",
+    "kana": "にじほうていしき",
+    "romaji": "n'ijihouteishiki",
+    "meaning": "이차방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "三次方程式",
+    "kana": "さんじほうていしき",
+    "romaji": "sanjihouteishiki",
+    "meaning": "삼차방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "四次方程式",
+    "kana": "よじほうていしき",
+    "romaji": "yojihouteishiki",
+    "meaning": "사차방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "高次方程式",
+    "kana": "こうじほうていしき",
+    "romaji": "koujihouteishiki",
+    "meaning": "고차방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "無理方程式",
+    "kana": "むりほうていしき",
+    "romaji": "murihouteishiki",
+    "meaning": "무리방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "分数方程式",
+    "kana": "ぶんすうほうていしき",
+    "romaji": "bunsuuhouteishiki",
+    "meaning": "분수방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "絶対値方程式",
+    "kana": "ぜったいちほうていしき",
+    "romaji": "zettaichihouteishiki",
+    "meaning": "절댓값방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "不等式の証明",
+    "kana": "ふとうしきのしょうめい",
+    "romaji": "futoushikin'oshoumei",
+    "meaning": "부등식의 증명"
+  },
+  {
+    "subject": "math",
+    "kanji": "恒等式",
+    "kana": "こうとうしき",
+    "romaji": "koutoushiki",
+    "meaning": "항등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "等式",
+    "kana": "とうしき",
+    "romaji": "toushiki",
+    "meaning": "등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "方程式の次数",
+    "kana": "ほうていしきのじすう",
+    "romaji": "houteishikin'ojisuu",
+    "meaning": "방정식의 차수"
+  },
+  {
+    "subject": "math",
+    "kanji": "根と係数の関係",
+    "kana": "ねんとけいすうのかんけい",
+    "romaji": "n'entokeisuun'okankei",
+    "meaning": "근과 계수의 관계"
+  },
+  {
+    "subject": "math",
+    "kanji": "ヴィエトの公式",
+    "kana": "ヴィエトのこうしき",
+    "romaji": "ieton'okoushiki",
+    "meaning": "비에트 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "判別式D",
+    "kana": "はんべつしきディー",
+    "romaji": "hanbetsushikidei-",
+    "meaning": "판별식 D"
+  },
+  {
+    "subject": "math",
+    "kanji": "実数条件",
+    "kana": "じっすうじょうけん",
+    "romaji": "jissuujouken",
+    "meaning": "실수조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "定義域の制限",
+    "kana": "ていぎいきのせいげん",
+    "romaji": "teigiikin'oseigen",
+    "meaning": "정의역의 제한"
+  },
+  {
+    "subject": "math",
+    "kanji": "値域を求める",
+    "kana": "ちいきをもとめる",
+    "romaji": "chiikiomotomeru",
+    "meaning": "치역을 구하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "グラフの平行移動",
+    "kana": "グラフのへいこういどう",
+    "romaji": "gurafun'oheikouidou",
+    "meaning": "그래프의 평행이동"
+  },
+  {
+    "subject": "math",
+    "kanji": "グラフの対称移動",
+    "kana": "グラフのたいしょういどう",
+    "romaji": "gurafun'otaishouidou",
+    "meaning": "그래프의 대칭이동"
+  },
+  {
+    "subject": "math",
+    "kanji": "平方完成",
+    "kana": "へいほうかんせい",
+    "romaji": "heihoukansei",
+    "meaning": "완전제곱식"
+  },
+  {
+    "subject": "math",
+    "kanji": "平方完成する",
+    "kana": "へいほうかんせいする",
+    "romaji": "heihoukanseisuru",
+    "meaning": "완전제곱식으로 만들다"
+  },
+  {
+    "subject": "math",
+    "kanji": "頂点の座標",
+    "kana": "ちょうてんのざひょう",
+    "romaji": "choutenn'ozahyou",
+    "meaning": "꼭짓점의 좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "軸の方程式",
+    "kana": "じくのほうていしき",
+    "romaji": "jikun'ohouteishiki",
+    "meaning": "축의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "最大値・最小値",
+    "kana": "さいだいちさいしょうち",
+    "romaji": "saidaichisaishouchi",
+    "meaning": "최댓값·최솟값"
+  },
+  {
+    "subject": "math",
+    "kanji": "変域を求める",
+    "kana": "へんいきをもとめる",
+    "romaji": "hen'ikiomotomeru",
+    "meaning": "변역을 구하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "二次不等式",
+    "kana": "にじふとうしき",
+    "romaji": "n'ijifutoushiki",
+    "meaning": "이차부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "連立二次不等式",
+    "kana": "れんりつにじふとうしき",
+    "romaji": "renritsun'ijifutoushiki",
+    "meaning": "연립이차부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "高次不等式",
+    "kana": "こうじふとうしき",
+    "romaji": "koujifutoushiki",
+    "meaning": "고차부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "分数不等式",
+    "kana": "ぶんすうふとうしき",
+    "romaji": "bunsuufutoushiki",
+    "meaning": "분수부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "無理不等式",
+    "kana": "むりふとうしき",
+    "romaji": "murifutoushiki",
+    "meaning": "무리부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "絶対値不等式",
+    "kana": "ぜったいちふとうしき",
+    "romaji": "zettaichifutoushiki",
+    "meaning": "절댓값부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角比",
+    "kana": "さんかくひ",
+    "romaji": "sankakuhi",
+    "meaning": "삼각비"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角比の相互関係",
+    "kana": "さんかくひのそうごかんけい",
+    "romaji": "sankakuhin'osougokankei",
+    "meaning": "삼각비의 상호관계"
+  },
+  {
+    "subject": "math",
+    "kanji": "鋭角",
+    "kana": "えいかく",
+    "romaji": "eikaku",
+    "meaning": "예각"
+  },
+  {
+    "subject": "math",
+    "kanji": "鈍角",
+    "kana": "どんかく",
+    "romaji": "donkaku",
+    "meaning": "둔각"
+  },
+  {
+    "subject": "math",
+    "kanji": "直角",
+    "kana": "ちょっかく",
+    "romaji": "chokkaku",
+    "meaning": "직각"
+  },
+  {
+    "subject": "math",
+    "kanji": "平角",
+    "kana": "へいかく",
+    "romaji": "heikaku",
+    "meaning": "평각"
+  },
+  {
+    "subject": "math",
+    "kanji": "周角",
+    "kana": "しゅうかく",
+    "romaji": "shuukaku",
+    "meaning": "주각"
+  },
+  {
+    "subject": "math",
+    "kanji": "補角",
+    "kana": "ほかく",
+    "romaji": "hokaku",
+    "meaning": "보각"
+  },
+  {
+    "subject": "math",
+    "kanji": "余角",
+    "kana": "よかく",
+    "romaji": "yokaku",
+    "meaning": "여각"
+  },
+  {
+    "subject": "math",
+    "kanji": "対頂角",
+    "kana": "たいちょうかく",
+    "romaji": "taichoukaku",
+    "meaning": "맞꼭지각"
+  },
+  {
+    "subject": "math",
+    "kanji": "同位角",
+    "kana": "どういかく",
+    "romaji": "douikaku",
+    "meaning": "동위각"
+  },
+  {
+    "subject": "math",
+    "kanji": "錯角",
+    "kana": "さっかく",
+    "romaji": "sakkaku",
+    "meaning": "엇각"
+  },
+  {
+    "subject": "math",
+    "kanji": "内接円",
+    "kana": "ないせつえん",
+    "romaji": "n'aisetsuen",
+    "meaning": "내접원"
+  },
+  {
+    "subject": "math",
+    "kanji": "外接円",
+    "kana": "がいせつえん",
+    "romaji": "gaisetsuen",
+    "meaning": "외접원"
+  },
+  {
+    "subject": "math",
+    "kanji": "内接する",
+    "kana": "ないせつする",
+    "romaji": "n'aisetsusuru",
+    "meaning": "내접하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "外接する",
+    "kana": "がいせつする",
+    "romaji": "gaisetsusuru",
+    "meaning": "외접하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "交わる",
+    "kana": "まじわる",
+    "romaji": "majiwaru",
+    "meaning": "만나다"
+  },
+  {
+    "subject": "math",
+    "kanji": "交点の座標",
+    "kana": "こうてんのざひょう",
+    "romaji": "koutenn'ozahyou",
+    "meaning": "교점의 좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "二円の位置関係",
+    "kana": "にえんのいちかんけい",
+    "romaji": "n'ienn'oichikankei",
+    "meaning": "두 원의 위치관계"
+  },
+  {
+    "subject": "math",
+    "kanji": "直線と円の位置関係",
+    "kana": "ちょくせんとえんのいちかんけい",
+    "romaji": "chokusentoenn'oichikankei",
+    "meaning": "직선과 원의 위치관계"
+  },
+  {
+    "subject": "math",
+    "kanji": "円の方程式",
+    "kana": "えんのほうていしき",
+    "romaji": "enn'ohouteishiki",
+    "meaning": "원의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "直線の方程式",
+    "kana": "ちょくせんのほうていしき",
+    "romaji": "chokusenn'ohouteishiki",
+    "meaning": "직선의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "点と直線の距離",
+    "kana": "てんとちょくせんのきょり",
+    "romaji": "tentochokusenn'okyori",
+    "meaning": "점과 직선의 거리"
+  },
+  {
+    "subject": "math",
+    "kanji": "二点間の距離",
+    "kana": "にてんかんのきょり",
+    "romaji": "n'itenkann'okyori",
+    "meaning": "두 점 사이의 거리"
+  },
+  {
+    "subject": "math",
+    "kanji": "中点の座標",
+    "kana": "ちゅうてんのざひょう",
+    "romaji": "chuutenn'ozahyou",
+    "meaning": "중점의 좌표"
+  },
+  {
+    "subject": "math",
+    "kanji": "内分点",
+    "kana": "ないぶんてん",
+    "romaji": "n'aibunten",
+    "meaning": "내분점"
+  },
+  {
+    "subject": "math",
+    "kanji": "外分点",
+    "kana": "がいぶんてん",
+    "romaji": "gaibunten",
+    "meaning": "외분점"
+  },
+  {
+    "subject": "math",
+    "kanji": "分点",
+    "kana": "ぶんてん",
+    "romaji": "bunten",
+    "meaning": "분점"
+  },
+  {
+    "subject": "math",
+    "kanji": "線分",
+    "kana": "せんぶん",
+    "romaji": "senbun",
+    "meaning": "선분"
+  },
+  {
+    "subject": "math",
+    "kanji": "半直線",
+    "kana": "はんちょくせん",
+    "romaji": "hanchokusen",
+    "meaning": "반직선"
+  },
+  {
+    "subject": "math",
+    "kanji": "有向線分",
+    "kana": "ゆうこうせんぶん",
+    "romaji": "yuukousenbun",
+    "meaning": "유향선분"
+  },
+  {
+    "subject": "math",
+    "kanji": "平面ベクトル",
+    "kana": "へいめんベクトル",
+    "romaji": "heimenbekutoru",
+    "meaning": "평면벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "空間ベクトル",
+    "kana": "くうかんベクトル",
+    "romaji": "kuukanbekutoru",
+    "meaning": "공간벡터"
+  },
+  {
+    "subject": "math",
+    "kanji": "ベクトルの加法",
+    "kana": "ベクトルのかほう",
+    "romaji": "bekutorun'okahou",
+    "meaning": "벡터의 덧셈"
+  },
+  {
+    "subject": "math",
+    "kanji": "ベクトルの減法",
+    "kana": "ベクトルのげんぽう",
+    "romaji": "bekutorun'ogenpou",
+    "meaning": "벡터의 뺄셈"
+  },
+  {
+    "subject": "math",
+    "kanji": "スカラー倍",
+    "kana": "スカラーばい",
+    "romaji": "sukara-bai",
+    "meaning": "스칼라배"
+  },
+  {
+    "subject": "math",
+    "kanji": "一次結合",
+    "kana": "いちじけつごう",
+    "romaji": "ichijiketsugou",
+    "meaning": "일차결합"
+  },
+  {
+    "subject": "math",
+    "kanji": "直交条件",
+    "kana": "ちょっこうじょうけん",
+    "romaji": "chokkoujouken",
+    "meaning": "직교조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "平行条件",
+    "kana": "へいこうじょうけん",
+    "romaji": "heikoujouken",
+    "meaning": "평행조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "内積の定義",
+    "kana": "ないせきのていぎ",
+    "romaji": "n'aisekin'oteigi",
+    "meaning": "내적의 정의"
+  },
+  {
+    "subject": "math",
+    "kanji": "なす角",
+    "kana": "なすかく",
+    "romaji": "n'asukaku",
+    "meaning": "이루는 각"
+  },
+  {
+    "subject": "math",
+    "kanji": "正射影",
+    "kana": "せいしゃえい",
+    "romaji": "seishaei",
+    "meaning": "정사영"
+  },
+  {
+    "subject": "math",
+    "kanji": "成分表示",
+    "kana": "せいぶんひょうじ",
+    "romaji": "seibunhyouji",
+    "meaning": "성분표시"
+  },
+  {
+    "subject": "math",
+    "kanji": "単位ベクトルへの分解",
+    "kana": "たんいベクトルへのぶんかい",
+    "romaji": "tan'ibekutoruhen'obunkai",
+    "meaning": "단위벡터로의 분해"
+  },
+  {
+    "subject": "math",
+    "kanji": "平面の方程式",
+    "kana": "へいめんのほうていしき",
+    "romaji": "heimenn'ohouteishiki",
+    "meaning": "평면의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "直線の方程式（空間）",
+    "kana": "ちょくせんのほうていしきくうかん",
+    "romaji": "chokusenn'ohouteishikikuukan",
+    "meaning": "직선의 방정식(공간)"
+  },
+  {
+    "subject": "math",
+    "kanji": "球面の方程式",
+    "kana": "きゅうめんのほうていしき",
+    "romaji": "kyuumenn'ohouteishiki",
+    "meaning": "구면의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "点と平面の距離",
+    "kana": "てんとへいめんのきょり",
+    "romaji": "tentoheimenn'okyori",
+    "meaning": "점과 평면의 거리"
+  },
+  {
+    "subject": "math",
+    "kanji": "二平面のなす角",
+    "kana": "にへいめんのなすかく",
+    "romaji": "n'iheimenn'on'asukaku",
+    "meaning": "두 평면이 이루는 각"
+  },
+  {
+    "subject": "math",
+    "kanji": "行列の和",
+    "kana": "ぎょうれつのわ",
+    "romaji": "gyouretsun'owa",
+    "meaning": "행렬의 합"
+  },
+  {
+    "subject": "math",
+    "kanji": "行列の差",
+    "kana": "ぎょうれつのさ",
+    "romaji": "gyouretsun'osa",
+    "meaning": "행렬의 차"
+  },
+  {
+    "subject": "math",
+    "kanji": "零行列",
+    "kana": "れいぎょうれつ",
+    "romaji": "reigyouretsu",
+    "meaning": "영행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "正方行列",
+    "kana": "せいほうぎょうれつ",
+    "romaji": "seihougyouretsu",
+    "meaning": "정사각행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "行",
+    "kana": "ぎょう",
+    "romaji": "gyou",
+    "meaning": "행"
+  },
+  {
+    "subject": "math",
+    "kanji": "列",
+    "kana": "れつ",
+    "romaji": "retsu",
+    "meaning": "열"
+  },
+  {
+    "subject": "math",
+    "kanji": "余因子",
+    "kana": "よいんし",
+    "romaji": "yoinshi",
+    "meaning": "여인수"
+  },
+  {
+    "subject": "math",
+    "kanji": "余因子展開",
+    "kana": "よいんしてんかい",
+    "romaji": "yoinshitenkai",
+    "meaning": "여인수 전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆行列の存在条件",
+    "kana": "ぎゃくぎょうれつのそんざいじょうけん",
+    "romaji": "gyakugyouretsun'osonzaijouken",
+    "meaning": "역행렬의 존재조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "連立方程式と行列",
+    "kana": "れんりつほうていしきとぎょうれつ",
+    "romaji": "renritsuhouteishikitogyouretsu",
+    "meaning": "연립방정식과 행렬"
+  },
+  {
+    "subject": "math",
+    "kanji": "複素数の相等",
+    "kana": "ふくそすうのそうとう",
+    "romaji": "fukusosuun'osoutou",
+    "meaning": "복소수의 상등"
+  },
+  {
+    "subject": "math",
+    "kanji": "複素数の四則",
+    "kana": "ふくそすうのしそく",
+    "romaji": "fukusosuun'oshisoku",
+    "meaning": "복소수의 사칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "実部",
+    "kana": "じつぶ",
+    "romaji": "jitsubu",
+    "meaning": "실수부"
+  },
+  {
+    "subject": "math",
+    "kanji": "虚部",
+    "kana": "きょぶ",
+    "romaji": "kyobu",
+    "meaning": "허수부"
+  },
+  {
+    "subject": "math",
+    "kanji": "共役複素数",
+    "kana": "きょうやくふくそすう",
+    "romaji": "kyouyakufukusosuu",
+    "meaning": "켤레복소수"
+  },
+  {
+    "subject": "math",
+    "kanji": "絶対値の性質",
+    "kana": "ぜったいちのせいしつ",
+    "romaji": "zettaichin'oseishitsu",
+    "meaning": "절댓값의 성질"
+  },
+  {
+    "subject": "math",
+    "kanji": "極形式への変換",
+    "kana": "きょくけいしきへのへんかん",
+    "romaji": "kyokukeishikihen'ohenkan",
+    "meaning": "극형식으로의 변환"
+  },
+  {
+    "subject": "math",
+    "kanji": "積の極形式",
+    "kana": "せきのきょくけいしき",
+    "romaji": "sekin'okyokukeishiki",
+    "meaning": "곱의 극형식"
+  },
+  {
+    "subject": "math",
+    "kanji": "商の極形式",
+    "kana": "しょうのきょくけいしき",
+    "romaji": "shoun'okyokukeishiki",
+    "meaning": "몫의 극형식"
+  },
+  {
+    "subject": "math",
+    "kanji": "n乗",
+    "kana": "エヌじょう",
+    "romaji": "en'ujou",
+    "meaning": "n제곱"
+  },
+  {
+    "subject": "math",
+    "kanji": "n乗根",
+    "kana": "エヌじょうこん",
+    "romaji": "en'ujoukon",
+    "meaning": "n제곱근"
+  },
+  {
+    "subject": "math",
+    "kanji": "方程式の解法",
+    "kana": "ほうていしきのかいほう",
+    "romaji": "houteishikin'okaihou",
+    "meaning": "방정식의 해법"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数のグラフ",
+    "kana": "さんかくかんすうのグラフ",
+    "romaji": "sankakukansuun'ogurafu",
+    "meaning": "삼각함수의 그래프"
+  },
+  {
+    "subject": "math",
+    "kanji": "正弦曲線",
+    "kana": "せいげんきょくせん",
+    "romaji": "seigenkyokusen",
+    "meaning": "사인곡선"
+  },
+  {
+    "subject": "math",
+    "kanji": "余弦曲線",
+    "kana": "よげんきょくせん",
+    "romaji": "yogenkyokusen",
+    "meaning": "코사인곡선"
+  },
+  {
+    "subject": "math",
+    "kanji": "周期関数",
+    "kana": "しゅうきかんすう",
+    "romaji": "shuukikansuu",
+    "meaning": "주기함수"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数の等式",
+    "kana": "さんかくかんすうのとうしき",
+    "romaji": "sankakukansuun'otoushiki",
+    "meaning": "삼각함수의 등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数の不等式",
+    "kana": "さんかくかんすうのふとうしき",
+    "romaji": "sankakukansuun'ofutoushiki",
+    "meaning": "삼각함수의 부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数の合成",
+    "kana": "さんかくかんすうのごうせい",
+    "romaji": "sankakukansuun'ogousei",
+    "meaning": "삼각함수의 합성"
+  },
+  {
+    "subject": "math",
+    "kanji": "和を積に直す公式",
+    "kana": "わをせきになおすこうしき",
+    "romaji": "waosekin'in'aosukoushiki",
+    "meaning": "합을 곱으로 고치는 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "積を和に直す公式",
+    "kana": "せきをわになおすこうしき",
+    "romaji": "sekiowan'in'aosukoushiki",
+    "meaning": "곱을 합으로 고치는 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "指数方程式",
+    "kana": "しすうほうていしき",
+    "romaji": "shisuuhouteishiki",
+    "meaning": "지수방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "指数不等式",
+    "kana": "しすうふとうしき",
+    "romaji": "shisuufutoushiki",
+    "meaning": "지수부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数方程式",
+    "kana": "たいすうほうていしき",
+    "romaji": "taisuuhouteishiki",
+    "meaning": "로그방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数不等式",
+    "kana": "たいすうふとうしき",
+    "romaji": "taisuufutoushiki",
+    "meaning": "로그부등식"
+  },
+  {
+    "subject": "math",
+    "kanji": "底の変換公式",
+    "kana": "ていのへんかんこうしき",
+    "romaji": "tein'ohenkankoushiki",
+    "meaning": "밑변환 공식"
+  },
+  {
+    "subject": "math",
+    "kanji": "真数条件",
+    "kana": "しんすうじょうけん",
+    "romaji": "shinsuujouken",
+    "meaning": "진수조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "底の条件",
+    "kana": "ていのじょうけん",
+    "romaji": "tein'ojouken",
+    "meaning": "밑의 조건"
+  },
+  {
+    "subject": "math",
+    "kanji": "常用対数表",
+    "kana": "じょうようたいすうひょう",
+    "romaji": "jouyoutaisuuhyou",
+    "meaning": "상용로그표"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数微分",
+    "kana": "たいすうびぶん",
+    "romaji": "taisuubibun",
+    "meaning": "로그미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "極限値",
+    "kana": "きょくげんち",
+    "romaji": "kyokugenchi",
+    "meaning": "극한값"
+  },
+  {
+    "subject": "math",
+    "kanji": "無限大に発散",
+    "kana": "むげんだいにはっさん",
+    "romaji": "mugendain'ihassan",
+    "meaning": "무한대로 발산"
+  },
+  {
+    "subject": "math",
+    "kanji": "無限小",
+    "kana": "むげんしょう",
+    "romaji": "mugenshou",
+    "meaning": "무한소"
+  },
+  {
+    "subject": "math",
+    "kanji": "極限の四則",
+    "kana": "きょくげんのしそく",
+    "romaji": "kyokugenn'oshisoku",
+    "meaning": "극한의 사칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "不定形の極限",
+    "kana": "ふていけいのきょくげん",
+    "romaji": "futeikein'okyokugen",
+    "meaning": "부정형의 극한"
+  },
+  {
+    "subject": "math",
+    "kanji": "連続の定義",
+    "kana": "れんぞくのていぎ",
+    "romaji": "renzokun'oteigi",
+    "meaning": "연속의 정의"
+  },
+  {
+    "subject": "math",
+    "kanji": "微分の定義",
+    "kana": "びぶんのていぎ",
+    "romaji": "bibunn'oteigi",
+    "meaning": "미분의 정의"
+  },
+  {
+    "subject": "math",
+    "kanji": "導関数の計算",
+    "kana": "どうかんすうのけいさん",
+    "romaji": "doukansuun'okeisan",
+    "meaning": "도함수의 계산"
+  },
+  {
+    "subject": "math",
+    "kanji": "積の微分",
+    "kana": "せきのびぶん",
+    "romaji": "sekin'obibun",
+    "meaning": "곱의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "商の微分",
+    "kana": "しょうのびぶん",
+    "romaji": "shoun'obibun",
+    "meaning": "몫의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "合成関数の微分",
+    "kana": "ごうせいかんすうのびぶん",
+    "romaji": "gouseikansuun'obibun",
+    "meaning": "합성함수의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "逆関数の微分",
+    "kana": "ぎゃくかんすうのびぶん",
+    "romaji": "gyakukansuun'obibun",
+    "meaning": "역함수의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "対数関数の微分",
+    "kana": "たいすうかんすうのびぶん",
+    "romaji": "taisuukansuun'obibun",
+    "meaning": "로그함수의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "指数関数の微分",
+    "kana": "しすうかんすうのびぶん",
+    "romaji": "shisuukansuun'obibun",
+    "meaning": "지수함수의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "三角関数の微分",
+    "kana": "さんかくかんすうのびぶん",
+    "romaji": "sankakukansuun'obibun",
+    "meaning": "삼각함수의 미분"
+  },
+  {
+    "subject": "math",
+    "kanji": "接線の傾き",
+    "kana": "せっせんのかたむき",
+    "romaji": "sessenn'okatamuki",
+    "meaning": "접선의 기울기"
+  },
+  {
+    "subject": "math",
+    "kanji": "法線の方程式",
+    "kana": "ほうせんのほうていしき",
+    "romaji": "housenn'ohouteishiki",
+    "meaning": "법선의 방정식"
+  },
+  {
+    "subject": "math",
+    "kanji": "増減を調べる",
+    "kana": "ぞうげんをしらべる",
+    "romaji": "zougen'oshiraberu",
+    "meaning": "증감을 조사하다"
+  },
+  {
+    "subject": "math",
+    "kanji": "極値",
+    "kana": "きょくち",
+    "romaji": "kyokuchi",
+    "meaning": "극값"
+  },
+  {
+    "subject": "math",
+    "kanji": "極大値",
+    "kana": "きょくだいち",
+    "romaji": "kyokudaichi",
+    "meaning": "극댓값"
+  },
+  {
+    "subject": "math",
+    "kanji": "極小値",
+    "kana": "きょくしょうち",
+    "romaji": "kyokushouchi",
+    "meaning": "극솟값"
+  },
+  {
+    "subject": "math",
+    "kanji": "凹凸",
+    "kana": "おうとつ",
+    "romaji": "outotsu",
+    "meaning": "요철"
+  },
+  {
+    "subject": "math",
+    "kanji": "漸近線の求め方",
+    "kana": "ぜんきんせんのもとめかた",
+    "romaji": "zenkinsenn'omotomekata",
+    "meaning": "점근선의 구하는 법"
+  },
+  {
+    "subject": "math",
+    "kanji": "不定積分の計算",
+    "kana": "ふていせきぶんのけいさん",
+    "romaji": "futeisekibunn'okeisan",
+    "meaning": "부정적분의 계산"
+  },
+  {
+    "subject": "math",
+    "kanji": "定積分の性質",
+    "kana": "ていせきぶんのせいしつ",
+    "romaji": "teisekibunn'oseishitsu",
+    "meaning": "정적분의 성질"
+  },
+  {
+    "subject": "math",
+    "kanji": "定積分と面積",
+    "kana": "ていせきぶんとめんせき",
+    "romaji": "teisekibuntomenseki",
+    "meaning": "정적분과 넓이"
+  },
+  {
+    "subject": "math",
+    "kanji": "定積分と体積",
+    "kana": "ていせきぶんとたいせき",
+    "romaji": "teisekibuntotaiseki",
+    "meaning": "정적분과 부피"
+  },
+  {
+    "subject": "math",
+    "kanji": "定積分と曲線の長さ",
+    "kana": "ていせきぶんときょくせんのながさ",
+    "romaji": "teisekibuntokyokusenn'on'agasa",
+    "meaning": "정적분과 곡선의 길이"
+  },
+  {
+    "subject": "math",
+    "kanji": "速度と距離",
+    "kana": "そくどときょり",
+    "romaji": "sokudotokyori",
+    "meaning": "속도와 거리"
+  },
+  {
+    "subject": "math",
+    "kanji": "加速度と速度",
+    "kana": "かそくどとそくど",
+    "romaji": "kasokudotosokudo",
+    "meaning": "가속도와 속도"
+  },
+  {
+    "subject": "math",
+    "kanji": "確率の基本性質",
+    "kana": "かくりつのきほんせいしつ",
+    "romaji": "kakuritsun'okihonseishitsu",
+    "meaning": "확률의 기본성질"
+  },
+  {
+    "subject": "math",
+    "kanji": "加法定理（確率）",
+    "kana": "かほうていりかくりつ",
+    "romaji": "kahouteirikakuritsu",
+    "meaning": "덧셈정리(확률)"
+  },
+  {
+    "subject": "math",
+    "kanji": "乗法定理（確率）",
+    "kana": "じょうほうていりかくりつ",
+    "romaji": "jouhouteirikakuritsu",
+    "meaning": "곱셈정리(확률)"
+  },
+  {
+    "subject": "math",
+    "kanji": "独立試行",
+    "kana": "どくりつしこう",
+    "romaji": "dokuritsushikou",
+    "meaning": "독립시행"
+  },
+  {
+    "subject": "math",
+    "kanji": "反復試行",
+    "kana": "はんぷくしこう",
+    "romaji": "hanpukushikou",
+    "meaning": "반복시행"
+  },
+  {
+    "subject": "math",
+    "kanji": "期待値の計算",
+    "kana": "きたいちのけいさん",
+    "romaji": "kitaichin'okeisan",
+    "meaning": "기댓값의 계산"
+  },
+  {
+    "subject": "math",
+    "kanji": "分散の計算",
+    "kana": "ぶんさんのけいさん",
+    "romaji": "bunsann'okeisan",
+    "meaning": "분산의 계산"
+  },
+  {
+    "subject": "math",
+    "kanji": "標準偏差の計算",
+    "kana": "ひょうじゅんへんさのけいさん",
+    "romaji": "hyoujunhensan'okeisan",
+    "meaning": "표준편차의 계산"
+  },
+  {
+    "subject": "math",
+    "kanji": "データの整理",
+    "kana": "データのせいり",
+    "romaji": "de-tan'oseiri",
+    "meaning": "데이터의 정리"
+  },
+  {
+    "subject": "math",
+    "kanji": "度数分布表",
+    "kana": "どすうぶんぷひょう",
+    "romaji": "dosuubunpuhyou",
+    "meaning": "도수분포표"
+  },
+  {
+    "subject": "math",
+    "kanji": "相対度数",
+    "kana": "そうたいどすう",
+    "romaji": "soutaidosuu",
+    "meaning": "상대도수"
+  },
+  {
+    "subject": "math",
+    "kanji": "累積度数",
+    "kana": "るいせきどすう",
+    "romaji": "ruisekidosuu",
+    "meaning": "누적도수"
+  },
+  {
+    "subject": "math",
+    "kanji": "四分位数",
+    "kana": "しぶんいすう",
+    "romaji": "shibun'isuu",
+    "meaning": "사분위수"
+  },
+  {
+    "subject": "math",
+    "kanji": "四分位範囲",
+    "kana": "しぶんいはんい",
+    "romaji": "shibun'ihan'i",
+    "meaning": "사분위범위"
+  },
+  {
+    "subject": "math",
+    "kanji": "散布図",
+    "kana": "さんぷず",
+    "romaji": "sanpuzu",
+    "meaning": "산점도"
+  },
+  {
+    "subject": "math",
+    "kanji": "回帰分析",
+    "kana": "かいきぶんせき",
+    "romaji": "kaikibunseki",
+    "meaning": "회귀분석"
+  },
+  {
+    "subject": "math",
+    "kanji": "推定",
+    "kana": "すいてい",
+    "romaji": "suitei",
+    "meaning": "추정"
+  },
+  {
+    "subject": "math",
+    "kanji": "検定",
+    "kana": "けんてい",
+    "romaji": "kentei",
+    "meaning": "검정"
+  },
+  {
+    "subject": "math",
+    "kanji": "信頼区間",
+    "kana": "しんらいくかん",
+    "romaji": "shinraikukan",
+    "meaning": "신뢰구간"
+  },
+  {
+    "subject": "math",
+    "kanji": "有意水準",
+    "kana": "ゆういすいじゅん",
+    "romaji": "yuuisuijun",
+    "meaning": "유의수준"
+  },
+  {
+    "subject": "math",
+    "kanji": "帰無仮説",
+    "kana": "きむかせつ",
+    "romaji": "kimukasetsu",
+    "meaning": "귀무가설"
+  },
+  {
+    "subject": "math",
+    "kanji": "対立仮説",
+    "kana": "たいりつかせつ",
+    "romaji": "tairitsukasetsu",
+    "meaning": "대립가설"
+  },
+  {
+    "subject": "math",
+    "kanji": "場合の数の基本法則",
+    "kana": "ばあいのかずのきほんほうそく",
+    "romaji": "baain'okazun'okihonhousoku",
+    "meaning": "경우의 수의 기본법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "和の法則",
+    "kana": "わのほうそく",
+    "romaji": "wan'ohousoku",
+    "meaning": "합의 법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "積の法則",
+    "kana": "せきのほうそく",
+    "romaji": "sekin'ohousoku",
+    "meaning": "곱의 법칙"
+  },
+  {
+    "subject": "math",
+    "kanji": "重複順列",
+    "kana": "ちょうふくじゅんれつ",
+    "romaji": "choufukujunretsu",
+    "meaning": "중복순열"
+  },
+  {
+    "subject": "math",
+    "kanji": "円順列",
+    "kana": "えんじゅんれつ",
+    "romaji": "enjunretsu",
+    "meaning": "원순열"
+  },
+  {
+    "subject": "math",
+    "kanji": "重複組合せ",
+    "kana": "ちょうふくくみあわせ",
+    "romaji": "choufukukumiawase",
+    "meaning": "중복조합"
+  },
+  {
+    "subject": "math",
+    "kanji": "同じものを含む順列",
+    "kana": "おなじものをふくむじゅんれつ",
+    "romaji": "on'ajimon'oofukumujunretsu",
+    "meaning": "같은 것을 포함한 순열"
+  },
+  {
+    "subject": "math",
+    "kanji": "二項係数",
+    "kana": "にこうけいすう",
+    "romaji": "n'ikoukeisuu",
+    "meaning": "이항계수"
+  },
+  {
+    "subject": "math",
+    "kanji": "二項展開",
+    "kana": "にこうてんかい",
+    "romaji": "n'ikoutenkai",
+    "meaning": "이항전개"
+  },
+  {
+    "subject": "math",
+    "kanji": "多項定理",
+    "kana": "たこうていり",
+    "romaji": "takouteiri",
+    "meaning": "다항정리"
+  }
+]

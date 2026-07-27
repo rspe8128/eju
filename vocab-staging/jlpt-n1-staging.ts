@@ -1,0 +1,18748 @@
+/**
+ * STAGING ONLY — JLPT N1–N5 from N1-N5단어 통합.pdf
+ * Not imported by the app yet.
+ */
+
+export type StagedVocab = {
+  kanji: string;
+  kana: string;
+  romaji: string;
+  meaning: string;
+  level?: string;
+  subject?: string;
+};
+
+export const jlptN1Staging: StagedVocab[] = [
+  {
+    "kanji": "愛想",
+    "kana": "あいそ",
+    "romaji": "aiso",
+    "meaning": "붙임성",
+    "level": "N1"
+  },
+  {
+    "kanji": "間柄",
+    "kana": "あいだがら",
+    "romaji": "aidagara",
+    "meaning": "사람과 사람의 사이",
+    "level": "N1"
+  },
+  {
+    "kanji": "合間",
+    "kana": "あいま",
+    "romaji": "aima",
+    "meaning": "틈. 짬. 참참",
+    "level": "N1"
+  },
+  {
+    "kanji": "敢えて",
+    "kana": "あえて",
+    "romaji": "aete",
+    "meaning": "감히. 굳이. 구태여. 그다지",
+    "level": "N1"
+  },
+  {
+    "kanji": "仰ぐ",
+    "kana": "あおぐ",
+    "romaji": "aogu",
+    "meaning": "우러러보다. 치켜들다. 위를 보다",
+    "level": "N1"
+  },
+  {
+    "kanji": "あか",
+    "kana": "あか",
+    "romaji": "aka",
+    "meaning": "때. 물때",
+    "level": "N1"
+  },
+  {
+    "kanji": "明かす",
+    "kana": "あかす",
+    "romaji": "akasu",
+    "meaning": "밝히다. 명백히 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "赤らむ",
+    "kana": "あからむ",
+    "romaji": "akaramu",
+    "meaning": "붉어지다. 홍조를 띠다",
+    "level": "N1"
+  },
+  {
+    "kanji": "アクセル",
+    "kana": "アクセル",
+    "romaji": "akuseru",
+    "meaning": "액셀",
+    "level": "N1"
+  },
+  {
+    "kanji": "悪どい",
+    "kana": "あくどい",
+    "romaji": "akudoi",
+    "meaning": "악랄하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "あざ",
+    "kana": "あざ",
+    "romaji": "aza",
+    "meaning": "피부의 반점. 멍. 사마귀",
+    "level": "N1"
+  },
+  {
+    "kanji": "麻",
+    "kana": "あさ",
+    "romaji": "asa",
+    "meaning": "삼",
+    "level": "N1"
+  },
+  {
+    "kanji": "浅ましい",
+    "kana": "あさましい",
+    "romaji": "asamashii",
+    "meaning": "한심스럽다. 비열하다. 야비하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "欺く",
+    "kana": "あざむく",
+    "romaji": "azamuku",
+    "meaning": "속이다. 무색게 하다. 착각시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "鮮やかな",
+    "kana": "あざやかな",
+    "romaji": "azayakan\\'a",
+    "meaning": "또렷한. 선명한",
+    "level": "N1"
+  },
+  {
+    "kanji": "あざ笑う",
+    "kana": "あざわらう",
+    "romaji": "azawarau",
+    "meaning": "조소하다. 비웃다",
+    "level": "N1"
+  },
+  {
+    "kanji": "あしからず",
+    "kana": "あしからず",
+    "romaji": "ashikarazu",
+    "meaning": "나쁘게 생각 말아 주시오",
+    "level": "N1"
+  },
+  {
+    "kanji": "味わい",
+    "kana": "あじわい",
+    "romaji": "ajiwai",
+    "meaning": "맛. 맛의 깊이. 풍미",
+    "level": "N1"
+  },
+  {
+    "kanji": "あせる",
+    "kana": "あせる",
+    "romaji": "aseru",
+    "meaning": "(1G) 빛바래다. 퇴색하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "値",
+    "kana": "あたい",
+    "romaji": "atai",
+    "meaning": "값어치. 가치. 수치",
+    "level": "N1"
+  },
+  {
+    "kanji": "値する",
+    "kana": "あたいする",
+    "romaji": "ataisuru",
+    "meaning": "값하다. 가치가 있다. …ㄹ 만하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "当たり",
+    "kana": "あたり",
+    "romaji": "atari",
+    "meaning": "맞음. 당첨. -당(+얼마임)",
+    "level": "N1"
+  },
+  {
+    "kanji": "扱い",
+    "kana": "あつかい",
+    "romaji": "atsukai",
+    "meaning": "취급. 다룸. 대우",
+    "level": "N1"
+  },
+  {
+    "kanji": "あっけない",
+    "kana": "あっけない",
+    "romaji": "akken\\'ai",
+    "meaning": "싱겁다. 맥없다. 금방 끝나버리는…",
+    "level": "N1"
+  },
+  {
+    "kanji": "あっさり",
+    "kana": "あっさり",
+    "romaji": "assari",
+    "meaning": "담박하게. 산뜻하게. 간단하게. 깨끗이",
+    "level": "N1"
+  },
+  {
+    "kanji": "斡旋",
+    "kana": "あっせん",
+    "romaji": "assen",
+    "meaning": "알선",
+    "level": "N1"
+  },
+  {
+    "kanji": "圧倒",
+    "kana": "あっとう",
+    "romaji": "attou",
+    "meaning": "압도",
+    "level": "N1"
+  },
+  {
+    "kanji": "圧迫",
+    "kana": "あっぱく",
+    "romaji": "appaku",
+    "meaning": "압박",
+    "level": "N1"
+  },
+  {
+    "kanji": "アップ",
+    "kana": "アップ",
+    "romaji": "appu",
+    "meaning": "업",
+    "level": "N1"
+  },
+  {
+    "kanji": "あつらえる",
+    "kana": "あつらえる",
+    "romaji": "atsuraeru",
+    "meaning": "양복 등을 맞추다. 주문하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "圧力",
+    "kana": "あつりょく",
+    "romaji": "atsuryoku",
+    "meaning": "압력",
+    "level": "N1"
+  },
+  {
+    "kanji": "当て",
+    "kana": "あて",
+    "romaji": "ate",
+    "meaning": "목표. 기대. 방법. 수단",
+    "level": "N1"
+  },
+  {
+    "kanji": "当て字",
+    "kana": "あてじ",
+    "romaji": "ateji",
+    "meaning": "취음자. 차자",
+    "level": "N1"
+  },
+  {
+    "kanji": "跡継ぎ/後継ぎ",
+    "kana": "あとつぎ",
+    "romaji": "atotsugi",
+    "meaning": "집안의 대를 이음. 후계자",
+    "level": "N1"
+  },
+  {
+    "kanji": "後回し",
+    "kana": "あとまわし",
+    "romaji": "atomawashi",
+    "meaning": "뒤로 미룸. 뒷전",
+    "level": "N1"
+  },
+  {
+    "kanji": "油絵",
+    "kana": "あぶらえ",
+    "romaji": "aburae",
+    "meaning": "유화",
+    "level": "N1"
+  },
+  {
+    "kanji": "アプローチ",
+    "kana": "アプローチ",
+    "romaji": "apuro-chi",
+    "meaning": "어프로치. 접근",
+    "level": "N1"
+  },
+  {
+    "kanji": "あべこべ",
+    "kana": "あべこべ",
+    "romaji": "abekobe",
+    "meaning": "거꾸로. 반대. 뒤바뀜",
+    "level": "N1"
+  },
+  {
+    "kanji": "甘える",
+    "kana": "あまえる",
+    "romaji": "amaeru",
+    "meaning": "응석 부리다. 어리광 부리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "雨具",
+    "kana": "あまぐ",
+    "romaji": "amagu",
+    "meaning": "우비",
+    "level": "N1"
+  },
+  {
+    "kanji": "甘口",
+    "kana": "あまくち",
+    "romaji": "amakuchi",
+    "meaning": "단맛. 단맛을 좋아함",
+    "level": "N1"
+  },
+  {
+    "kanji": "網",
+    "kana": "あみ",
+    "romaji": "ami",
+    "meaning": "그물. 망",
+    "level": "N1"
+  },
+  {
+    "kanji": "操る",
+    "kana": "あやつる",
+    "romaji": "ayatsuru",
+    "meaning": "조종하다. 다루다",
+    "level": "N1"
+  },
+  {
+    "kanji": "危ぶむ",
+    "kana": "あやぶむ",
+    "romaji": "ayabumu",
+    "meaning": "위험스럽게 여기다. 위태로워하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "あやふやな",
+    "kana": "あやふやな",
+    "romaji": "ayafuyan\\'a",
+    "meaning": "불확실한. 모호한",
+    "level": "N1"
+  },
+  {
+    "kanji": "誤る",
+    "kana": "あやまる",
+    "romaji": "ayamaru",
+    "meaning": "그르치다. 실수하다. 실패하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "歩み",
+    "kana": "あゆみ",
+    "romaji": "ayumi",
+    "meaning": "걸음. 보조. 경과",
+    "level": "N1"
+  },
+  {
+    "kanji": "歩む",
+    "kana": "あゆむ",
+    "romaji": "ayumu",
+    "meaning": "걷다. 전진하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "あらかじめ",
+    "kana": "あらかじめ",
+    "romaji": "arakajime",
+    "meaning": "미리. 사전에",
+    "level": "N1"
+  },
+  {
+    "kanji": "荒らす",
+    "kana": "あらす",
+    "romaji": "arasu",
+    "meaning": "황폐케 하다. 휩쓸다",
+    "level": "N1"
+  },
+  {
+    "kanji": "争い",
+    "kana": "あらそい",
+    "romaji": "arasoi",
+    "meaning": "다툼. 싸움. 분쟁",
+    "level": "N1"
+  },
+  {
+    "kanji": "改まる",
+    "kana": "あらたまる",
+    "romaji": "aratamaru",
+    "meaning": "고쳐지다. 변경되다. 정색하다. 격식을 차리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "荒っぽい",
+    "kana": "あらっぽい",
+    "romaji": "arappoi",
+    "meaning": "난폭하다. 거칠다",
+    "level": "N1"
+  },
+  {
+    "kanji": "アラブ",
+    "kana": "アラブ",
+    "romaji": "arabu",
+    "meaning": "아랍",
+    "level": "N1"
+  },
+  {
+    "kanji": "あられ",
+    "kana": "あられ",
+    "romaji": "arare",
+    "meaning": "싸라기눈. 주사위 모양의 쌀과자",
+    "level": "N1"
+  },
+  {
+    "kanji": "有(り)様",
+    "kana": "ありさま",
+    "romaji": "arisama",
+    "meaning": "모양. 상태",
+    "level": "N1"
+  },
+  {
+    "kanji": "ありのまま",
+    "kana": "ありのまま",
+    "romaji": "arin\\'omama",
+    "meaning": "있는 그대로. 실제대로. 사실대로",
+    "level": "N1"
+  },
+  {
+    "kanji": "ありふれる",
+    "kana": "ありふれる",
+    "romaji": "arifureru",
+    "meaning": "어디에나 있다. 흔하다. 지천으로 있다",
+    "level": "N1"
+  },
+  {
+    "kanji": "アルカリ",
+    "kana": "アルカリ",
+    "romaji": "arukari",
+    "meaning": "알칼리",
+    "level": "N1"
+  },
+  {
+    "kanji": "アルミ",
+    "kana": "アルミ",
+    "romaji": "arumi",
+    "meaning": "→アルミニウム 알루미늄",
+    "level": "N1"
+  },
+  {
+    "kanji": "アワー",
+    "kana": "アワー",
+    "romaji": "awa-",
+    "meaning": "아워",
+    "level": "N1"
+  },
+  {
+    "kanji": "合わす",
+    "kana": "あわす",
+    "romaji": "awasu",
+    "meaning": "맞추다 ＝あわせる[合わせる]",
+    "level": "N1"
+  },
+  {
+    "kanji": "アンコール",
+    "kana": "アンコール",
+    "romaji": "anko-ru",
+    "meaning": "앙코르",
+    "level": "N1"
+  },
+  {
+    "kanji": "暗殺",
+    "kana": "あんさつ",
+    "romaji": "ansatsu",
+    "meaning": "암살",
+    "level": "N1"
+  },
+  {
+    "kanji": "暗算",
+    "kana": "あんざん",
+    "romaji": "anzan",
+    "meaning": "암산",
+    "level": "N1"
+  },
+  {
+    "kanji": "暗示",
+    "kana": "あんじ",
+    "romaji": "anji",
+    "meaning": "암시",
+    "level": "N1"
+  },
+  {
+    "kanji": "案じる",
+    "kana": "あんじる",
+    "romaji": "anjiru",
+    "meaning": "걱정하다. 근심하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "安静",
+    "kana": "あんせい",
+    "romaji": "ansei",
+    "meaning": "안정",
+    "level": "N1"
+  },
+  {
+    "kanji": "案の定",
+    "kana": "あんのじょう",
+    "romaji": "ann\\'ojou",
+    "meaning": "생각한 대로. 예측대로. 아니나다를까",
+    "level": "N1"
+  },
+  {
+    "kanji": "意",
+    "kana": "い",
+    "romaji": "i",
+    "meaning": "마음. 생각. 내용. 뜻",
+    "level": "N1"
+  },
+  {
+    "kanji": "言(い)訳",
+    "kana": "いいわけ",
+    "romaji": "iiwake",
+    "meaning": "변명. 핑계",
+    "level": "N1"
+  },
+  {
+    "kanji": "医院",
+    "kana": "いいん",
+    "romaji": "iin",
+    "meaning": "의원",
+    "level": "N1"
+  },
+  {
+    "kanji": "家出",
+    "kana": "いえで",
+    "romaji": "iede",
+    "meaning": "가출. 집을 나감",
+    "level": "N1"
+  },
+  {
+    "kanji": "生かす",
+    "kana": "いかす",
+    "romaji": "ikasu",
+    "meaning": "살리다. 살려 두다",
+    "level": "N1"
+  },
+  {
+    "kanji": "いかに",
+    "kana": "いかに",
+    "romaji": "ikan\\'i",
+    "meaning": "어떻게. 어떤 방법으로. 아무리",
+    "level": "N1"
+  },
+  {
+    "kanji": "いかにも",
+    "kana": "いかにも",
+    "romaji": "ikan\\'imo",
+    "meaning": "자못. 정말이지. 매우. 과연",
+    "level": "N1"
+  },
+  {
+    "kanji": "異議",
+    "kana": "いぎ",
+    "romaji": "igi",
+    "meaning": "이의",
+    "level": "N1"
+  },
+  {
+    "kanji": "生きがい",
+    "kana": "いきがい",
+    "romaji": "ikigai",
+    "meaning": "사는 보람",
+    "level": "N1"
+  },
+  {
+    "kanji": "意気込む",
+    "kana": "いきごむ",
+    "romaji": "ikigomu",
+    "meaning": "분발하다. 벼르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "行き違い",
+    "kana": "いきちがい",
+    "romaji": "ikichigai",
+    "meaning": "→ゆきちがい",
+    "level": "N1"
+  },
+  {
+    "kanji": "粋な",
+    "kana": "いきな",
+    "romaji": "ikin\\'a",
+    "meaning": "세련되고 운치와 매력이 있는",
+    "level": "N1"
+  },
+  {
+    "kanji": "育成",
+    "kana": "いくせい",
+    "romaji": "ikusei",
+    "meaning": "육성",
+    "level": "N1"
+  },
+  {
+    "kanji": "幾多の",
+    "kana": "いくたの",
+    "romaji": "ikutan\\'o",
+    "meaning": "수많은",
+    "level": "N1"
+  },
+  {
+    "kanji": "生ける",
+    "kana": "いける",
+    "romaji": "ikeru",
+    "meaning": "꽃꽂이를 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "異見",
+    "kana": "いけん",
+    "romaji": "iken",
+    "meaning": "이견. 다른 의견",
+    "level": "N1"
+  },
+  {
+    "kanji": "意向",
+    "kana": "いこう",
+    "romaji": "ikou",
+    "meaning": "의향",
+    "level": "N1"
+  },
+  {
+    "kanji": "移行",
+    "kana": "いこう",
+    "romaji": "ikou",
+    "meaning": "이행. 바뀜",
+    "level": "N1"
+  },
+  {
+    "kanji": "いざ",
+    "kana": "いざ",
+    "romaji": "iza",
+    "meaning": "자. 그럼",
+    "level": "N1"
+  },
+  {
+    "kanji": "意地",
+    "kana": "いじ",
+    "romaji": "iji",
+    "meaning": "고집",
+    "level": "N1"
+  },
+  {
+    "kanji": "移住",
+    "kana": "いじゅう",
+    "romaji": "ijuu",
+    "meaning": "이주",
+    "level": "N1"
+  },
+  {
+    "kanji": "衣装",
+    "kana": "いしょう",
+    "romaji": "ishou",
+    "meaning": "의상",
+    "level": "N1"
+  },
+  {
+    "kanji": "いじる",
+    "kana": "いじる",
+    "romaji": "ijiru",
+    "meaning": "(1G) 주무르다. 만지작거리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "異性",
+    "kana": "いせい",
+    "romaji": "isei",
+    "meaning": "이성",
+    "level": "N1"
+  },
+  {
+    "kanji": "遺跡",
+    "kana": "いせき",
+    "romaji": "iseki",
+    "meaning": "유적",
+    "level": "N1"
+  },
+  {
+    "kanji": "依然",
+    "kana": "いぜん",
+    "romaji": "izen",
+    "meaning": "여전히",
+    "level": "N1"
+  },
+  {
+    "kanji": "依然として",
+    "kana": "いぜんとして",
+    "romaji": "izentoshite",
+    "meaning": "여전히",
+    "level": "N1"
+  },
+  {
+    "kanji": "委託",
+    "kana": "いたく",
+    "romaji": "itaku",
+    "meaning": "위탁",
+    "level": "N1"
+  },
+  {
+    "kanji": "頂",
+    "kana": "いただき",
+    "romaji": "itadaki",
+    "meaning": "정상. 꼭대기 ＝てっぺん",
+    "level": "N1"
+  },
+  {
+    "kanji": "至って",
+    "kana": "いたって",
+    "romaji": "itatte",
+    "meaning": "극히. 매우. 대단히",
+    "level": "N1"
+  },
+  {
+    "kanji": "痛める/傷める",
+    "kana": "いためる",
+    "romaji": "itameru",
+    "meaning": "아프게 하다. 고통을 주다. 상하게 하다. 다치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "いたわる",
+    "kana": "いたわる",
+    "romaji": "itawaru",
+    "meaning": "친절하게 돌보다. 위로하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "市",
+    "kana": "いち",
+    "romaji": "ichi",
+    "meaning": "저자. 시장",
+    "level": "N1"
+  },
+  {
+    "kanji": "一概に",
+    "kana": "いちがいに",
+    "romaji": "ichigain\\'i",
+    "meaning": "일률적으로. 일괄적으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "著しい",
+    "kana": "いちじるしい",
+    "romaji": "ichijirushii",
+    "meaning": "현저하다. 두드러지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "一同",
+    "kana": "いちどう",
+    "romaji": "ichidou",
+    "meaning": "일동",
+    "level": "N1"
+  },
+  {
+    "kanji": "一部分",
+    "kana": "いちぶぶん",
+    "romaji": "ichibubun",
+    "meaning": "일부분",
+    "level": "N1"
+  },
+  {
+    "kanji": "一面",
+    "kana": "いちめん",
+    "romaji": "ichimen",
+    "meaning": "일면. 한쪽 면",
+    "level": "N1"
+  },
+  {
+    "kanji": "一目",
+    "kana": "いちもく",
+    "romaji": "ichimoku",
+    "meaning": "일목. 한번 봄",
+    "level": "N1"
+  },
+  {
+    "kanji": "一様に",
+    "kana": "いちように",
+    "romaji": "ichiyoun\\'i",
+    "meaning": "한결같이. 똑같이",
+    "level": "N1"
+  },
+  {
+    "kanji": "一律に",
+    "kana": "いちりつに",
+    "romaji": "ichiritsun\\'i",
+    "meaning": "일률적으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "一連",
+    "kana": "いちれん",
+    "romaji": "ichiren",
+    "meaning": "일련",
+    "level": "N1"
+  },
+  {
+    "kanji": "一括",
+    "kana": "いっかつ",
+    "romaji": "ikkatsu",
+    "meaning": "일괄",
+    "level": "N1"
+  },
+  {
+    "kanji": "一気に",
+    "kana": "いっきに",
+    "romaji": "ikkin\\'i",
+    "meaning": "단숨에",
+    "level": "N1"
+  },
+  {
+    "kanji": "一挙に",
+    "kana": "いっきょに",
+    "romaji": "ikkyon\\'i",
+    "meaning": "일거에. 단번에",
+    "level": "N1"
+  },
+  {
+    "kanji": "一見",
+    "kana": "いっけん",
+    "romaji": "ikken",
+    "meaning": "일견. 얼핏 보기에는",
+    "level": "N1"
+  },
+  {
+    "kanji": "一切",
+    "kana": "いっさい",
+    "romaji": "issai",
+    "meaning": "일체. 일절. 전혀",
+    "level": "N1"
+  },
+  {
+    "kanji": "一心",
+    "kana": "いっしん",
+    "romaji": "isshin",
+    "meaning": "일심. 한 가지 일에 마음을 집중함",
+    "level": "N1"
+  },
+  {
+    "kanji": "いっそ",
+    "kana": "いっそ",
+    "romaji": "isso",
+    "meaning": "도리어. 차라리",
+    "level": "N1"
+  },
+  {
+    "kanji": "一帯",
+    "kana": "いったい",
+    "romaji": "ittai",
+    "meaning": "일대. 일원",
+    "level": "N1"
+  },
+  {
+    "kanji": "一変",
+    "kana": "いっぺん",
+    "romaji": "ippen",
+    "meaning": "일변",
+    "level": "N1"
+  },
+  {
+    "kanji": "意図",
+    "kana": "いと",
+    "romaji": "ito",
+    "meaning": "의도",
+    "level": "N1"
+  },
+  {
+    "kanji": "異動",
+    "kana": "いどう",
+    "romaji": "idou",
+    "meaning": "이동 (지위 직책의 변동)",
+    "level": "N1"
+  },
+  {
+    "kanji": "営む",
+    "kana": "いとなむ",
+    "romaji": "iton\\'amu",
+    "meaning": "경영하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "挑む",
+    "kana": "いどむ",
+    "romaji": "idomu",
+    "meaning": "도전하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "稲妻",
+    "kana": "いなずま",
+    "romaji": "in\\'azuma",
+    "meaning": "번개",
+    "level": "N1"
+  },
+  {
+    "kanji": "稲光",
+    "kana": "いなびかり",
+    "romaji": "in\\'abikari",
+    "meaning": "번개 ＝いなずま",
+    "level": "N1"
+  },
+  {
+    "kanji": "祈り",
+    "kana": "いのり",
+    "romaji": "in\\'ori",
+    "meaning": "기도",
+    "level": "N1"
+  },
+  {
+    "kanji": "いびき",
+    "kana": "いびき",
+    "romaji": "ibiki",
+    "meaning": "코고는 소리",
+    "level": "N1"
+  },
+  {
+    "kanji": "今更",
+    "kana": "いまさら",
+    "romaji": "imasara",
+    "meaning": "이제 와서. 새삼스럽게",
+    "level": "N1"
+  },
+  {
+    "kanji": "いまだ(に)",
+    "kana": "いまだ(に)",
+    "romaji": "imada",
+    "meaning": "아직",
+    "level": "N1"
+  },
+  {
+    "kanji": "移民",
+    "kana": "いみん",
+    "romaji": "imin",
+    "meaning": "이민",
+    "level": "N1"
+  },
+  {
+    "kanji": "卑しい",
+    "kana": "いやしい",
+    "romaji": "iyashii",
+    "meaning": "천하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "いやに",
+    "kana": "いやに",
+    "romaji": "iyan\\'i",
+    "meaning": "되게. 묘하게. 이상하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "嫌らしい",
+    "kana": "いやらしい",
+    "romaji": "iyarashii",
+    "meaning": "불쾌한 느낌이 들다. 야하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "意欲",
+    "kana": "いよく",
+    "romaji": "iyoku",
+    "meaning": "의욕",
+    "level": "N1"
+  },
+  {
+    "kanji": "依頼",
+    "kana": "いらい",
+    "romaji": "irai",
+    "meaning": "의뢰. 부탁",
+    "level": "N1"
+  },
+  {
+    "kanji": "衣料",
+    "kana": "いりょう",
+    "romaji": "iryou",
+    "meaning": "의료. 의복의 재료",
+    "level": "N1"
+  },
+  {
+    "kanji": "威力",
+    "kana": "いりょく",
+    "romaji": "iryoku",
+    "meaning": "위력",
+    "level": "N1"
+  },
+  {
+    "kanji": "衣類",
+    "kana": "いるい",
+    "romaji": "irui",
+    "meaning": "의류",
+    "level": "N1"
+  },
+  {
+    "kanji": "異論",
+    "kana": "いろん",
+    "romaji": "iron",
+    "meaning": "이론. 이의",
+    "level": "N1"
+  },
+  {
+    "kanji": "印鑑",
+    "kana": "いんかん",
+    "romaji": "inkan",
+    "meaning": "인감. 도장",
+    "level": "N1"
+  },
+  {
+    "kanji": "陰気な",
+    "kana": "いんきな",
+    "romaji": "inkin\\'a",
+    "meaning": "음침한",
+    "level": "N1"
+  },
+  {
+    "kanji": "隠居",
+    "kana": "いんきょ",
+    "romaji": "inkyo",
+    "meaning": "은거. 정년 퇴직후의 노인",
+    "level": "N1"
+  },
+  {
+    "kanji": "インターチェンジ",
+    "kana": "インターチェンジ",
+    "romaji": "inta-chienji",
+    "meaning": "인터체인지. IC",
+    "level": "N1"
+  },
+  {
+    "kanji": "インターナショナル",
+    "kana": "インターナショナル",
+    "romaji": "inta-n\\'ashon\\'aru",
+    "meaning": "인터내셔널",
+    "level": "N1"
+  },
+  {
+    "kanji": "インテリ",
+    "kana": "インテリ",
+    "romaji": "interi",
+    "meaning": "인텔리",
+    "level": "N1"
+  },
+  {
+    "kanji": "インフォメーション",
+    "kana": "インフォメーション",
+    "romaji": "infuome-shon",
+    "meaning": "인포메이션",
+    "level": "N1"
+  },
+  {
+    "kanji": "インフレ",
+    "kana": "インフレ",
+    "romaji": "infure",
+    "meaning": "인플레 →インフレーション",
+    "level": "N1"
+  },
+  {
+    "kanji": "ウイルス",
+    "kana": "ウイルス",
+    "romaji": "uirusu",
+    "meaning": "바이러스",
+    "level": "N1"
+  },
+  {
+    "kanji": "受け入れる",
+    "kana": "うけいれる",
+    "romaji": "ukeireru",
+    "meaning": "받아들이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "受け継ぐ",
+    "kana": "うけつぐ",
+    "romaji": "uketsugu",
+    "meaning": "계승하다. 이어 받다",
+    "level": "N1"
+  },
+  {
+    "kanji": "受け付ける",
+    "kana": "うけつける",
+    "romaji": "uketsukeru",
+    "meaning": "접수하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "受け止める",
+    "kana": "うけとめる",
+    "romaji": "uketomeru",
+    "meaning": "받아내다. 받아들이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "受(け)身",
+    "kana": "うけみ",
+    "romaji": "ukemi",
+    "meaning": "수동태",
+    "level": "N1"
+  },
+  {
+    "kanji": "受(け)持ち",
+    "kana": "うけもち",
+    "romaji": "ukemochi",
+    "meaning": "담당함. 담당한 일. 담임",
+    "level": "N1"
+  },
+  {
+    "kanji": "受け持つ",
+    "kana": "うけもつ",
+    "romaji": "ukemotsu",
+    "meaning": "맡다. 담당하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "動き",
+    "kana": "うごき",
+    "romaji": "ugoki",
+    "meaning": "움직임",
+    "level": "N1"
+  },
+  {
+    "kanji": "渦",
+    "kana": "うず",
+    "romaji": "uzu",
+    "meaning": "소용돌이. 와중",
+    "level": "N1"
+  },
+  {
+    "kanji": "埋める",
+    "kana": "うずめる",
+    "romaji": "uzumeru",
+    "meaning": "묻다. 매장하다. 메우다",
+    "level": "N1"
+  },
+  {
+    "kanji": "嘘つき",
+    "kana": "うそつき",
+    "romaji": "usotsuki",
+    "meaning": "거짓말쟁이",
+    "level": "N1"
+  },
+  {
+    "kanji": "うたた寝",
+    "kana": "うたたね",
+    "romaji": "utatan\\'e",
+    "meaning": "선잠. 얕은 잠",
+    "level": "N1"
+  },
+  {
+    "kanji": "打ち明ける",
+    "kana": "うちあける",
+    "romaji": "uchiakeru",
+    "meaning": "숨김없이 이야기하다. 털어 놓고 이야기하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "打ち切る",
+    "kana": "うちきる",
+    "romaji": "uchikiru",
+    "meaning": "(1G) 중지하다. 중단하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "打(ち)消し",
+    "kana": "うちけし",
+    "romaji": "uchikeshi",
+    "meaning": "부정하는 일",
+    "level": "N1"
+  },
+  {
+    "kanji": "打ち込む",
+    "kana": "うちこむ",
+    "romaji": "uchikomu",
+    "meaning": "박아 넣다. 쳐서 박다. 열중하다. 몰두하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "団扇",
+    "kana": "うちわ",
+    "romaji": "uchiwa",
+    "meaning": "부채",
+    "level": "N1"
+  },
+  {
+    "kanji": "内訳",
+    "kana": "うちわけ",
+    "romaji": "uchiwake",
+    "meaning": "내역. 명세",
+    "level": "N1"
+  },
+  {
+    "kanji": "写し",
+    "kana": "うつし",
+    "romaji": "utsushi",
+    "meaning": "찍음. 베낌. 사본",
+    "level": "N1"
+  },
+  {
+    "kanji": "訴え",
+    "kana": "うったえ",
+    "romaji": "uttae",
+    "meaning": "호소. 소송",
+    "level": "N1"
+  },
+  {
+    "kanji": "うっとうしい",
+    "kana": "うっとうしい",
+    "romaji": "uttoushii",
+    "meaning": "음울하다. 마음이 개운치 않다. 성가시다",
+    "level": "N1"
+  },
+  {
+    "kanji": "うつむく",
+    "kana": "うつむく",
+    "romaji": "utsumuku",
+    "meaning": "머리를 숙이다. 고개를 숙이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "うつろな",
+    "kana": "うつろな",
+    "romaji": "utsuron\\'a",
+    "meaning": "얼빠진",
+    "level": "N1"
+  },
+  {
+    "kanji": "器",
+    "kana": "うつわ",
+    "romaji": "utsuwa",
+    "meaning": "그릇. 용기",
+    "level": "N1"
+  },
+  {
+    "kanji": "腕前",
+    "kana": "うでまえ",
+    "romaji": "udemae",
+    "meaning": "솜씨. 역량. 실력",
+    "level": "N1"
+  },
+  {
+    "kanji": "雨天",
+    "kana": "うてん",
+    "romaji": "uten",
+    "meaning": "우천. 비오는 날",
+    "level": "N1"
+  },
+  {
+    "kanji": "促す",
+    "kana": "うながす",
+    "romaji": "un\\'agasu",
+    "meaning": "재촉하다. 독촉하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "うぬぼれる",
+    "kana": "うぬぼれる",
+    "romaji": "un\\'uboreru",
+    "meaning": "(실력 이상으로)자만하다. 자부하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "生(ま)れ付き",
+    "kana": "うまれつき",
+    "romaji": "umaretsuki",
+    "meaning": "태어나서부터. 선천적으로. 천성으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "梅干(し)",
+    "kana": "うめぼし",
+    "romaji": "umeboshi",
+    "meaning": "매실 장아찌",
+    "level": "N1"
+  },
+  {
+    "kanji": "裏返し",
+    "kana": "うらがえし",
+    "romaji": "uragaeshi",
+    "meaning": "뒤집음. 뒤집혀 있음",
+    "level": "N1"
+  },
+  {
+    "kanji": "売(り)出(し)",
+    "kana": "うりだし",
+    "romaji": "uridashi",
+    "meaning": "팔기 시작함. 매출. 판매",
+    "level": "N1"
+  },
+  {
+    "kanji": "売り出す",
+    "kana": "うりだす",
+    "romaji": "uridasu",
+    "meaning": "팔기 시작하다. 대대적으로 팔다",
+    "level": "N1"
+  },
+  {
+    "kanji": "潤う",
+    "kana": "うるおう",
+    "romaji": "uruou",
+    "meaning": "습기를 띠다. 축축해지다. 풍부해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "浮気",
+    "kana": "うわき",
+    "romaji": "uwaki",
+    "meaning": "바람기. 바람피움",
+    "level": "N1"
+  },
+  {
+    "kanji": "上回る",
+    "kana": "うわまわる",
+    "romaji": "uwamawaru",
+    "meaning": "상회하다. 많아지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "運営",
+    "kana": "うんえい",
+    "romaji": "un\\'ei",
+    "meaning": "운영",
+    "level": "N1"
+  },
+  {
+    "kanji": "うんざり",
+    "kana": "うんざり",
+    "romaji": "unzari",
+    "meaning": "진절머리가 남. 지긋지긋함. 싫증남",
+    "level": "N1"
+  },
+  {
+    "kanji": "運送",
+    "kana": "うんそう",
+    "romaji": "unsou",
+    "meaning": "운송",
+    "level": "N1"
+  },
+  {
+    "kanji": "云云",
+    "kana": "うんぬん",
+    "romaji": "unn\\'un",
+    "meaning": "운운",
+    "level": "N1"
+  },
+  {
+    "kanji": "運搬",
+    "kana": "うんぱん",
+    "romaji": "unpan",
+    "meaning": "운반",
+    "level": "N1"
+  },
+  {
+    "kanji": "運命",
+    "kana": "うんめい",
+    "romaji": "unmei",
+    "meaning": "운명",
+    "level": "N1"
+  },
+  {
+    "kanji": "運輸",
+    "kana": "うんゆ",
+    "romaji": "un\\'yu",
+    "meaning": "운수. 수송",
+    "level": "N1"
+  },
+  {
+    "kanji": "運用",
+    "kana": "うんよう",
+    "romaji": "un\\'you",
+    "meaning": "운용",
+    "level": "N1"
+  },
+  {
+    "kanji": "柄",
+    "kana": "え",
+    "romaji": "e",
+    "meaning": "자루. 손잡이",
+    "level": "N1"
+  },
+  {
+    "kanji": "エアメール",
+    "kana": "エアメール",
+    "romaji": "eame-ru",
+    "meaning": "에어 메일. 항공 우편",
+    "level": "N1"
+  },
+  {
+    "kanji": "英字",
+    "kana": "えいじ",
+    "romaji": "eiji",
+    "meaning": "영자. 영문",
+    "level": "N1"
+  },
+  {
+    "kanji": "映写",
+    "kana": "えいしゃ",
+    "romaji": "eisha",
+    "meaning": "영사",
+    "level": "N1"
+  },
+  {
+    "kanji": "映像",
+    "kana": "えいぞう",
+    "romaji": "eizou",
+    "meaning": "영상",
+    "level": "N1"
+  },
+  {
+    "kanji": "英雄",
+    "kana": "えいゆう",
+    "romaji": "eiyuu",
+    "meaning": "영웅",
+    "level": "N1"
+  },
+  {
+    "kanji": "液",
+    "kana": "えき",
+    "romaji": "eki",
+    "meaning": "액. 즙",
+    "level": "N1"
+  },
+  {
+    "kanji": "閲覧",
+    "kana": "えつらん",
+    "romaji": "etsuran",
+    "meaning": "열람",
+    "level": "N1"
+  },
+  {
+    "kanji": "獲物",
+    "kana": "えもの",
+    "romaji": "emon\\'o",
+    "meaning": "수렵물. 어획물. 전리품. 빼앗은 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "襟",
+    "kana": "えり",
+    "romaji": "eri",
+    "meaning": "옷깃",
+    "level": "N1"
+  },
+  {
+    "kanji": "エレガントな",
+    "kana": "エレガントな",
+    "romaji": "ereganton\\'a",
+    "meaning": "엘리건트. 우아한. 고상한",
+    "level": "N1"
+  },
+  {
+    "kanji": "縁",
+    "kana": "えん",
+    "romaji": "en",
+    "meaning": "인연",
+    "level": "N1"
+  },
+  {
+    "kanji": "円滑な",
+    "kana": "えんかつな",
+    "romaji": "enkatsun\\'a",
+    "meaning": "원활한",
+    "level": "N1"
+  },
+  {
+    "kanji": "縁側",
+    "kana": "えんがわ",
+    "romaji": "engawa",
+    "meaning": "툇마루",
+    "level": "N1"
+  },
+  {
+    "kanji": "沿岸",
+    "kana": "えんがん",
+    "romaji": "engan",
+    "meaning": "연안",
+    "level": "N1"
+  },
+  {
+    "kanji": "婉曲な",
+    "kana": "えんきょくな",
+    "romaji": "enkyokun\\'a",
+    "meaning": "완곡한",
+    "level": "N1"
+  },
+  {
+    "kanji": "エンジニア",
+    "kana": "エンジニア",
+    "romaji": "enjin\\'ia",
+    "meaning": "엔지니어",
+    "level": "N1"
+  },
+  {
+    "kanji": "演出",
+    "kana": "えんしゅつ",
+    "romaji": "enshutsu",
+    "meaning": "연출",
+    "level": "N1"
+  },
+  {
+    "kanji": "沿線",
+    "kana": "えんせん",
+    "romaji": "ensen",
+    "meaning": "연선",
+    "level": "N1"
+  },
+  {
+    "kanji": "縁談",
+    "kana": "えんだん",
+    "romaji": "endan",
+    "meaning": "혼담",
+    "level": "N1"
+  },
+  {
+    "kanji": "遠方",
+    "kana": "えんぽう",
+    "romaji": "enpou",
+    "meaning": "원방. 먼 곳",
+    "level": "N1"
+  },
+  {
+    "kanji": "円満な",
+    "kana": "えんまんな",
+    "romaji": "enmann\\'a",
+    "meaning": "원만한",
+    "level": "N1"
+  },
+  {
+    "kanji": "尾",
+    "kana": "お",
+    "romaji": "o",
+    "meaning": "꼬리",
+    "level": "N1"
+  },
+  {
+    "kanji": "追い込む",
+    "kana": "おいこむ",
+    "romaji": "oikomu",
+    "meaning": "몰아넣다. 몰아들이다. 빠지게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "追い出す",
+    "kana": "おいだす",
+    "romaji": "oidasu",
+    "meaning": "내쫓다. 몰아내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "老いる",
+    "kana": "おいる",
+    "romaji": "oiru",
+    "meaning": "늙다. 노쇠하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "負う",
+    "kana": "おう",
+    "romaji": "ou",
+    "meaning": "지다. 짊어지다. 업다",
+    "level": "N1"
+  },
+  {
+    "kanji": "応急",
+    "kana": "おうきゅう",
+    "romaji": "oukyuu",
+    "meaning": "응급",
+    "level": "N1"
+  },
+  {
+    "kanji": "黄金",
+    "kana": "おうごん",
+    "romaji": "ougon",
+    "meaning": "황금",
+    "level": "N1"
+  },
+  {
+    "kanji": "往診",
+    "kana": "おうしん",
+    "romaji": "oushin",
+    "meaning": "왕진",
+    "level": "N1"
+  },
+  {
+    "kanji": "大方",
+    "kana": "おおかた",
+    "romaji": "ookata",
+    "meaning": "대충. 대개. 거의",
+    "level": "N1"
+  },
+  {
+    "kanji": "大柄な",
+    "kana": "おおがらな",
+    "romaji": "oogaran\\'a",
+    "meaning": "몸집 등이 보통보다 큰",
+    "level": "N1"
+  },
+  {
+    "kanji": "オーケー",
+    "kana": "オーケー",
+    "romaji": "o-ke-",
+    "meaning": "OK",
+    "level": "N1"
+  },
+  {
+    "kanji": "大雑把な",
+    "kana": "おおざっぱな",
+    "romaji": "oozappan\\'a",
+    "meaning": "대략적인. 조잡한. 대충 하는",
+    "level": "N1"
+  },
+  {
+    "kanji": "大筋",
+    "kana": "おおすじ",
+    "romaji": "oosuji",
+    "meaning": "대강. 요점",
+    "level": "N1"
+  },
+  {
+    "kanji": "大空",
+    "kana": "おおぞら",
+    "romaji": "oozora",
+    "meaning": "대공. 넓은 하늘",
+    "level": "N1"
+  },
+  {
+    "kanji": "オートマチック",
+    "kana": "オートマチック",
+    "romaji": "o-tomachikku",
+    "meaning": "오토매틱",
+    "level": "N1"
+  },
+  {
+    "kanji": "大幅な",
+    "kana": "おおはばな",
+    "romaji": "oohaban\\'a",
+    "meaning": "큰 폭의. 대폭적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "オープン",
+    "kana": "オープン",
+    "romaji": "o-pun",
+    "meaning": "오픈",
+    "level": "N1"
+  },
+  {
+    "kanji": "公",
+    "kana": "おおやけ",
+    "romaji": "ooyake",
+    "meaning": "공적인 기관. 공공 장소. 일반에게 알려짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "犯す",
+    "kana": "おかす",
+    "romaji": "okasu",
+    "meaning": "범하다. 어기다. 여자를 능욕하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "臆病な",
+    "kana": "おくびょうな",
+    "romaji": "okubyoun\\'a",
+    "meaning": "겁이 많은",
+    "level": "N1"
+  },
+  {
+    "kanji": "遅らせる/後らせる",
+    "kana": "おくらせる",
+    "romaji": "okuraseru",
+    "meaning": "늦추다",
+    "level": "N1"
+  },
+  {
+    "kanji": "遅れ",
+    "kana": "おくれ",
+    "romaji": "okure",
+    "meaning": "늦음. 지연",
+    "level": "N1"
+  },
+  {
+    "kanji": "厳かな",
+    "kana": "おごそかな",
+    "romaji": "ogosokan\\'a",
+    "meaning": "엄숙한",
+    "level": "N1"
+  },
+  {
+    "kanji": "怠る",
+    "kana": "おこたる",
+    "romaji": "okotaru",
+    "meaning": "게으름을 피우다. 태만히 하다. 방심하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "行(な)い",
+    "kana": "おこない",
+    "romaji": "okon\\'ai",
+    "meaning": "행실. 행위",
+    "level": "N1"
+  },
+  {
+    "kanji": "押さえる/抑える",
+    "kana": "おさえる",
+    "romaji": "osaeru",
+    "meaning": "누르다. 억압하다. 억제하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "治まる",
+    "kana": "おさまる",
+    "romaji": "osamaru",
+    "meaning": "다스려지다. 평화로워지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "収まる",
+    "kana": "おさまる",
+    "romaji": "osamaru",
+    "meaning": "수습되다. 원만해지다. 해결되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "納まる",
+    "kana": "おさまる",
+    "romaji": "osamaru",
+    "meaning": "납입되다. 납부되다. 걷히다",
+    "level": "N1"
+  },
+  {
+    "kanji": "お産",
+    "kana": "おさん",
+    "romaji": "osan",
+    "meaning": "아이를 낳음. 출산",
+    "level": "N1"
+  },
+  {
+    "kanji": "教え",
+    "kana": "おしえ",
+    "romaji": "oshie",
+    "meaning": "가르침. 교육. 교훈",
+    "level": "N1"
+  },
+  {
+    "kanji": "押し切る",
+    "kana": "おしきる",
+    "romaji": "oshikiru",
+    "meaning": "(1G) 강행하다. 무릅쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "押し込む",
+    "kana": "おしこむ",
+    "romaji": "oshikomu",
+    "meaning": "억지로 들어가다. 밀고 들어가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "惜しむ",
+    "kana": "おしむ",
+    "romaji": "oshimu",
+    "meaning": "아끼다. 아쉬워하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "押し寄せる",
+    "kana": "おしよせる",
+    "romaji": "oshiyoseru",
+    "meaning": "몰려들다. 밀어닥치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "雄",
+    "kana": "おす",
+    "romaji": "osu",
+    "meaning": "수컷",
+    "level": "N1"
+  },
+  {
+    "kanji": "お世辞",
+    "kana": "おせじ",
+    "romaji": "oseji",
+    "meaning": "간살. 아부. 아첨. 알랑거림",
+    "level": "N1"
+  },
+  {
+    "kanji": "襲う",
+    "kana": "おそう",
+    "romaji": "osou",
+    "meaning": "습격하다. 덮치다. 느닷없이 찾아오다",
+    "level": "N1"
+  },
+  {
+    "kanji": "遅くとも",
+    "kana": "おそくとも",
+    "romaji": "osokutomo",
+    "meaning": "늦어도",
+    "level": "N1"
+  },
+  {
+    "kanji": "恐れ入る",
+    "kana": "おそれいる",
+    "romaji": "osoreiru",
+    "meaning": "(1G) 황송해하다. 송구스러워하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "おだてる",
+    "kana": "おだてる",
+    "romaji": "odateru",
+    "meaning": "치켜세우다. 추어주다. 부추기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "落ち込む",
+    "kana": "おちこむ",
+    "romaji": "ochikomu",
+    "meaning": "빠지다. 빠져 들다. 좋지 않은 상태가 되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "落ち着き",
+    "kana": "おちつき",
+    "romaji": "ochitsuki",
+    "meaning": "침착성. 차분함. 안정감",
+    "level": "N1"
+  },
+  {
+    "kanji": "落ち葉",
+    "kana": "おちば",
+    "romaji": "ochiba",
+    "meaning": "낙엽",
+    "level": "N1"
+  },
+  {
+    "kanji": "乙",
+    "kana": "おつ",
+    "romaji": "otsu",
+    "meaning": "을. 제2",
+    "level": "N1"
+  },
+  {
+    "kanji": "お使い",
+    "kana": "おつかい",
+    "romaji": "otsukai",
+    "meaning": "심부름",
+    "level": "N1"
+  },
+  {
+    "kanji": "おっかない",
+    "kana": "おっかない",
+    "romaji": "okkan\\'ai",
+    "meaning": "무섭다. 두렵다",
+    "level": "N1"
+  },
+  {
+    "kanji": "お手上げ",
+    "kana": "おてあげ",
+    "romaji": "oteage",
+    "meaning": "어쩔 도리가 없음. 손듦. 도중에서 포기함",
+    "level": "N1"
+  },
+  {
+    "kanji": "おどおど",
+    "kana": "おどおど",
+    "romaji": "odoodo",
+    "meaning": "벌벌. 주뼛주뼛 (겁먹은 모양)",
+    "level": "N1"
+  },
+  {
+    "kanji": "脅す",
+    "kana": "おどす",
+    "romaji": "odosu",
+    "meaning": "위협하다. 협박하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "訪れる",
+    "kana": "おとずれる",
+    "romaji": "otozureru",
+    "meaning": "방문하다. 찾아가다. 찾아오다",
+    "level": "N1"
+  },
+  {
+    "kanji": "お供",
+    "kana": "おとも",
+    "romaji": "otomo",
+    "meaning": "모시고 따라감",
+    "level": "N1"
+  },
+  {
+    "kanji": "衰える",
+    "kana": "おとろえる",
+    "romaji": "otoroeru",
+    "meaning": "쇠하다. 쇠약해지다. 쇠퇴하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "驚き",
+    "kana": "おどろき",
+    "romaji": "odoroki",
+    "meaning": "놀람. 놀랄 일",
+    "level": "N1"
+  },
+  {
+    "kanji": "同い年",
+    "kana": "おないどし",
+    "romaji": "on\\'aidoshi",
+    "meaning": "동갑. 같은 나이",
+    "level": "N1"
+  },
+  {
+    "kanji": "自ら",
+    "kana": "おのずから",
+    "romaji": "on\\'ozukara",
+    "meaning": "저절로. 스스로. 몸소",
+    "level": "N1"
+  },
+  {
+    "kanji": "おびえる",
+    "kana": "おびえる",
+    "romaji": "obieru",
+    "meaning": "무서워하다. 겁내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "おびただしい",
+    "kana": "おびただしい",
+    "romaji": "obitadashii",
+    "meaning": "엄청나다. 매우 많다",
+    "level": "N1"
+  },
+  {
+    "kanji": "帯びる",
+    "kana": "おびる",
+    "romaji": "obiru",
+    "meaning": "띠다. …기가 있다. 머금다",
+    "level": "N1"
+  },
+  {
+    "kanji": "覚え",
+    "kana": "おぼえ",
+    "romaji": "oboe",
+    "meaning": "기억. 이해. …한 적. 경험",
+    "level": "N1"
+  },
+  {
+    "kanji": "お宮",
+    "kana": "おみや",
+    "romaji": "omiya",
+    "meaning": "신사",
+    "level": "N1"
+  },
+  {
+    "kanji": "おむつ",
+    "kana": "おむつ",
+    "romaji": "omutsu",
+    "meaning": "기저귀",
+    "level": "N1"
+  },
+  {
+    "kanji": "思いつき",
+    "kana": "おもいつき",
+    "romaji": "omoitsuki",
+    "meaning": "문득 생각이 남. 고안. 즉흥적인 착상",
+    "level": "N1"
+  },
+  {
+    "kanji": "趣",
+    "kana": "おもむき",
+    "romaji": "omomuki",
+    "meaning": "재미. 정취. 느낌",
+    "level": "N1"
+  },
+  {
+    "kanji": "赴く",
+    "kana": "おもむく",
+    "romaji": "omomuku",
+    "meaning": "향하여 가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "重んじる",
+    "kana": "おもんじる",
+    "romaji": "omonjiru",
+    "meaning": "중요시하다. 존중하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "及び",
+    "kana": "および",
+    "romaji": "oyobi",
+    "meaning": "및. ＝ならびに(및). また(또)",
+    "level": "N1"
+  },
+  {
+    "kanji": "及ぶ",
+    "kana": "およぶ",
+    "romaji": "oyobu",
+    "meaning": "미치다. 달하다. 이르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "折(り)",
+    "kana": "おり",
+    "romaji": "ori",
+    "meaning": "꺾음. 나무 상자(도시락)",
+    "level": "N1"
+  },
+  {
+    "kanji": "折",
+    "kana": "おり",
+    "romaji": "ori",
+    "meaning": "때. 시기. 그 경우",
+    "level": "N1"
+  },
+  {
+    "kanji": "檻",
+    "kana": "おり",
+    "romaji": "ori",
+    "meaning": "우리. 감방",
+    "level": "N1"
+  },
+  {
+    "kanji": "オリエンテーション",
+    "kana": "オリエンテーション",
+    "romaji": "oriente-shon",
+    "meaning": "오리엔테이션",
+    "level": "N1"
+  },
+  {
+    "kanji": "折り返す",
+    "kana": "おりかえす",
+    "romaji": "orikaesu",
+    "meaning": "되접어 꺾다. 되풀이하다. 되짚어 오다",
+    "level": "N1"
+  },
+  {
+    "kanji": "織物",
+    "kana": "おりもの",
+    "romaji": "orimon\\'o",
+    "meaning": "직물",
+    "level": "N1"
+  },
+  {
+    "kanji": "織る",
+    "kana": "おる",
+    "romaji": "oru",
+    "meaning": "(옷감을)짜다",
+    "level": "N1"
+  },
+  {
+    "kanji": "愚かな",
+    "kana": "おろかな",
+    "romaji": "orokan\\'a",
+    "meaning": "어리석은. 바보스러운",
+    "level": "N1"
+  },
+  {
+    "kanji": "卸売(り)",
+    "kana": "おろしうり",
+    "romaji": "oroshiuri",
+    "meaning": "도매(상)",
+    "level": "N1"
+  },
+  {
+    "kanji": "疎かな",
+    "kana": "おろそかな",
+    "romaji": "orosokan\\'a",
+    "meaning": "소홀한",
+    "level": "N1"
+  },
+  {
+    "kanji": "オンライン",
+    "kana": "オンライン",
+    "romaji": "onrain",
+    "meaning": "온라인",
+    "level": "N1"
+  },
+  {
+    "kanji": "温和な",
+    "kana": "おんわな",
+    "romaji": "onwan\\'a",
+    "meaning": "온화한",
+    "level": "N1"
+  },
+  {
+    "kanji": "改悪",
+    "kana": "かいあく",
+    "romaji": "kaiaku",
+    "meaning": "개악",
+    "level": "N1"
+  },
+  {
+    "kanji": "海運",
+    "kana": "かいうん",
+    "romaji": "kaiun",
+    "meaning": "해운",
+    "level": "N1"
+  },
+  {
+    "kanji": "外貨",
+    "kana": "がいか",
+    "romaji": "gaika",
+    "meaning": "외화",
+    "level": "N1"
+  },
+  {
+    "kanji": "改革",
+    "kana": "かいかく",
+    "romaji": "kaikaku",
+    "meaning": "개혁",
+    "level": "N1"
+  },
+  {
+    "kanji": "貝殻",
+    "kana": "かいがら",
+    "romaji": "kaigara",
+    "meaning": "조가비. 조개 껍데기",
+    "level": "N1"
+  },
+  {
+    "kanji": "外観",
+    "kana": "がいかん",
+    "romaji": "gaikan",
+    "meaning": "외관",
+    "level": "N1"
+  },
+  {
+    "kanji": "階級",
+    "kana": "かいきゅう",
+    "romaji": "kaikyuu",
+    "meaning": "계급",
+    "level": "N1"
+  },
+  {
+    "kanji": "海峡",
+    "kana": "かいきょう",
+    "romaji": "kaikyou",
+    "meaning": "해협",
+    "level": "N1"
+  },
+  {
+    "kanji": "介護",
+    "kana": "かいご",
+    "romaji": "kaigo",
+    "meaning": "개호. 간호",
+    "level": "N1"
+  },
+  {
+    "kanji": "怪獣",
+    "kana": "かいじゅう",
+    "romaji": "kaijuu",
+    "meaning": "괴수. 괴물",
+    "level": "N1"
+  },
+  {
+    "kanji": "改修",
+    "kana": "かいしゅう",
+    "romaji": "kaishuu",
+    "meaning": "개수. 수리",
+    "level": "N1"
+  },
+  {
+    "kanji": "解除",
+    "kana": "かいじょ",
+    "romaji": "kaijo",
+    "meaning": "해제",
+    "level": "N1"
+  },
+  {
+    "kanji": "外相",
+    "kana": "がいしょう",
+    "romaji": "gaishou",
+    "meaning": "외무 장관",
+    "level": "N1"
+  },
+  {
+    "kanji": "害する",
+    "kana": "がいする",
+    "romaji": "gaisuru",
+    "meaning": "해치다. 상하게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "概説",
+    "kana": "がいせつ",
+    "romaji": "gaisetsu",
+    "meaning": "개설",
+    "level": "N1"
+  },
+  {
+    "kanji": "回送",
+    "kana": "かいそう",
+    "romaji": "kaisou",
+    "meaning": "회송",
+    "level": "N1"
+  },
+  {
+    "kanji": "階層",
+    "kana": "かいそう",
+    "romaji": "kaisou",
+    "meaning": "계층",
+    "level": "N1"
+  },
+  {
+    "kanji": "開拓",
+    "kana": "かいたく",
+    "romaji": "kaitaku",
+    "meaning": "개척",
+    "level": "N1"
+  },
+  {
+    "kanji": "会談",
+    "kana": "かいだん",
+    "romaji": "kaidan",
+    "meaning": "회담",
+    "level": "N1"
+  },
+  {
+    "kanji": "改定",
+    "kana": "かいてい",
+    "romaji": "kaitei",
+    "meaning": "개정 (고쳐 다시 정함)",
+    "level": "N1"
+  },
+  {
+    "kanji": "改訂",
+    "kana": "かいてい",
+    "romaji": "kaitei",
+    "meaning": "개정 (고쳐 바로잡음)",
+    "level": "N1"
+  },
+  {
+    "kanji": "ガイド",
+    "kana": "ガイド",
+    "romaji": "gaido",
+    "meaning": "가이드",
+    "level": "N1"
+  },
+  {
+    "kanji": "街頭",
+    "kana": "がいとう",
+    "romaji": "gaitou",
+    "meaning": "가두. 길거리. 노상",
+    "level": "N1"
+  },
+  {
+    "kanji": "街道",
+    "kana": "かいどう",
+    "romaji": "kaidou",
+    "meaning": "가도. 교통상 중요한 도로",
+    "level": "N1"
+  },
+  {
+    "kanji": "該当",
+    "kana": "がいとう",
+    "romaji": "gaitou",
+    "meaning": "해당",
+    "level": "N1"
+  },
+  {
+    "kanji": "ガイドブック",
+    "kana": "ガイドブック",
+    "romaji": "gaidobukku",
+    "meaning": "가이드북",
+    "level": "N1"
+  },
+  {
+    "kanji": "介入",
+    "kana": "かいにゅう",
+    "romaji": "kain\\'yuu",
+    "meaning": "개입",
+    "level": "N1"
+  },
+  {
+    "kanji": "概念",
+    "kana": "がいねん",
+    "romaji": "gain\\'en",
+    "meaning": "개념",
+    "level": "N1"
+  },
+  {
+    "kanji": "海抜",
+    "kana": "かいばつ",
+    "romaji": "kaibatsu",
+    "meaning": "해발. 표고",
+    "level": "N1"
+  },
+  {
+    "kanji": "開発",
+    "kana": "かいはつ",
+    "romaji": "kaihatsu",
+    "meaning": "개발",
+    "level": "N1"
+  },
+  {
+    "kanji": "介抱",
+    "kana": "かいほう",
+    "romaji": "kaihou",
+    "meaning": "병구완. 간호. 돌봄. 보호",
+    "level": "N1"
+  },
+  {
+    "kanji": "解剖",
+    "kana": "かいぼう",
+    "romaji": "kaibou",
+    "meaning": "해부",
+    "level": "N1"
+  },
+  {
+    "kanji": "外来",
+    "kana": "がいらい",
+    "romaji": "gairai",
+    "meaning": "외래",
+    "level": "N1"
+  },
+  {
+    "kanji": "回覧",
+    "kana": "かいらん",
+    "romaji": "kairan",
+    "meaning": "회람",
+    "level": "N1"
+  },
+  {
+    "kanji": "概略",
+    "kana": "がいりゃく",
+    "romaji": "gairyaku",
+    "meaning": "개략",
+    "level": "N1"
+  },
+  {
+    "kanji": "海流",
+    "kana": "かいりゅう",
+    "romaji": "kairyuu",
+    "meaning": "해류",
+    "level": "N1"
+  },
+  {
+    "kanji": "改良",
+    "kana": "かいりょう",
+    "romaji": "kairyou",
+    "meaning": "개량",
+    "level": "N1"
+  },
+  {
+    "kanji": "回路",
+    "kana": "かいろ",
+    "romaji": "kairo",
+    "meaning": "회로",
+    "level": "N1"
+  },
+  {
+    "kanji": "海路",
+    "kana": "かいろ",
+    "romaji": "kairo",
+    "meaning": "해로. 뱃길",
+    "level": "N1"
+  },
+  {
+    "kanji": "顧みる",
+    "kana": "かえりみる",
+    "romaji": "kaerimiru",
+    "meaning": "뒤돌아보다. 회고하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "省みる",
+    "kana": "かえりみる",
+    "romaji": "kaerimiru",
+    "meaning": "돌이켜보다. 반성하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "課外",
+    "kana": "かがい",
+    "romaji": "kagai",
+    "meaning": "과외",
+    "level": "N1"
+  },
+  {
+    "kanji": "掲げる",
+    "kana": "かかげる",
+    "romaji": "kakageru",
+    "meaning": "내걸다. 달다. 게양하다. 내세우다",
+    "level": "N1"
+  },
+  {
+    "kanji": "かかと",
+    "kana": "かかと",
+    "romaji": "kakato",
+    "meaning": "발뒤꿈치",
+    "level": "N1"
+  },
+  {
+    "kanji": "書き取る",
+    "kana": "かきとる",
+    "romaji": "kakitoru",
+    "meaning": "받아쓰다. 베껴 쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "かき回す",
+    "kana": "かきまわす",
+    "romaji": "kakimawasu",
+    "meaning": "휘젓다. 어지르다. 휘두르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "格",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "격 (분수)",
+    "level": "N1"
+  },
+  {
+    "kanji": "核",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "핵",
+    "level": "N1"
+  },
+  {
+    "kanji": "角",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "각 (모난 것)",
+    "level": "N1"
+  },
+  {
+    "kanji": "額",
+    "kana": "がく",
+    "romaji": "gaku",
+    "meaning": "액. 액수. 금액. 액자",
+    "level": "N1"
+  },
+  {
+    "kanji": "欠く",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "결하다. 없다. 빠지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "学芸",
+    "kana": "がくげい",
+    "romaji": "gakugei",
+    "meaning": "학예",
+    "level": "N1"
+  },
+  {
+    "kanji": "格差",
+    "kana": "かくさ",
+    "romaji": "kakusa",
+    "meaning": "격차",
+    "level": "N1"
+  },
+  {
+    "kanji": "拡散",
+    "kana": "かくさん",
+    "romaji": "kakusan",
+    "meaning": "확산",
+    "level": "N1"
+  },
+  {
+    "kanji": "学士",
+    "kana": "がくし",
+    "romaji": "gakushi",
+    "meaning": "학사",
+    "level": "N1"
+  },
+  {
+    "kanji": "各種",
+    "kana": "かくしゅ",
+    "romaji": "kakushu",
+    "meaning": "각종",
+    "level": "N1"
+  },
+  {
+    "kanji": "隔週",
+    "kana": "かくしゅう",
+    "romaji": "kakushuu",
+    "meaning": "격주",
+    "level": "N1"
+  },
+  {
+    "kanji": "確信",
+    "kana": "かくしん",
+    "romaji": "kakushin",
+    "meaning": "확신 ⇔ほしゅ[保守]",
+    "level": "N1"
+  },
+  {
+    "kanji": "革新",
+    "kana": "かくしん",
+    "romaji": "kakushin",
+    "meaning": "혁신",
+    "level": "N1"
+  },
+  {
+    "kanji": "学説",
+    "kana": "がくせつ",
+    "romaji": "gakusetsu",
+    "meaning": "학설",
+    "level": "N1"
+  },
+  {
+    "kanji": "確定",
+    "kana": "かくてい",
+    "romaji": "kakutei",
+    "meaning": "확정",
+    "level": "N1"
+  },
+  {
+    "kanji": "カクテル",
+    "kana": "カクテル",
+    "romaji": "kakuteru",
+    "meaning": "칵테일",
+    "level": "N1"
+  },
+  {
+    "kanji": "獲得",
+    "kana": "かくとく",
+    "romaji": "kakutoku",
+    "meaning": "획득",
+    "level": "N1"
+  },
+  {
+    "kanji": "楽譜",
+    "kana": "がくふ",
+    "romaji": "gakufu",
+    "meaning": "악보",
+    "level": "N1"
+  },
+  {
+    "kanji": "格別な",
+    "kana": "かくべつな",
+    "romaji": "kakubetsun\\'a",
+    "meaning": "각별한",
+    "level": "N1"
+  },
+  {
+    "kanji": "革命",
+    "kana": "かくめい",
+    "romaji": "kakumei",
+    "meaning": "혁명",
+    "level": "N1"
+  },
+  {
+    "kanji": "確立",
+    "kana": "かくりつ",
+    "romaji": "kakuritsu",
+    "meaning": "확립",
+    "level": "N1"
+  },
+  {
+    "kanji": "学歴",
+    "kana": "がくれき",
+    "romaji": "gakureki",
+    "meaning": "학력",
+    "level": "N1"
+  },
+  {
+    "kanji": "崖",
+    "kana": "がけ",
+    "romaji": "gake",
+    "meaning": "낭떠러지. 벼랑. 절벽",
+    "level": "N1"
+  },
+  {
+    "kanji": "賭",
+    "kana": "かけ",
+    "romaji": "kake",
+    "meaning": "내기. 도박. 큰 모험",
+    "level": "N1"
+  },
+  {
+    "kanji": "駆け足",
+    "kana": "かけあし",
+    "romaji": "kakeashi",
+    "meaning": "뛰어감. 구보",
+    "level": "N1"
+  },
+  {
+    "kanji": "家計",
+    "kana": "かけい",
+    "romaji": "kakei",
+    "meaning": "가계. 생계",
+    "level": "N1"
+  },
+  {
+    "kanji": "駆けっこ",
+    "kana": "かけっこ",
+    "romaji": "kakekko",
+    "meaning": "달리기",
+    "level": "N1"
+  },
+  {
+    "kanji": "駆ける",
+    "kana": "かける",
+    "romaji": "kakeru",
+    "meaning": "전속력으로 달리다. 뛰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "賭ける",
+    "kana": "かける",
+    "romaji": "kakeru",
+    "meaning": "걸다. 내기를 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "化合物",
+    "kana": "かごうぶつ",
+    "romaji": "kagoubutsu",
+    "meaning": "화합물",
+    "level": "N1"
+  },
+  {
+    "kanji": "かさばる",
+    "kana": "かさばる",
+    "romaji": "kasabaru",
+    "meaning": "부피가 커지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "かさむ",
+    "kana": "かさむ",
+    "romaji": "kasamu",
+    "meaning": "부피가 커지다. 많아지다. 불어나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "箇条書(き)",
+    "kana": "かじょうがき",
+    "romaji": "kajougaki",
+    "meaning": "조목별로 씀. 또는 그 쓴 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "頭",
+    "kana": "かしら",
+    "romaji": "kashira",
+    "meaning": "두목. 우두머리",
+    "level": "N1"
+  },
+  {
+    "kanji": "かすかな",
+    "kana": "かすかな",
+    "romaji": "kasukan\\'a",
+    "meaning": "희미한",
+    "level": "N1"
+  },
+  {
+    "kanji": "かすむ",
+    "kana": "かすむ",
+    "romaji": "kasumu",
+    "meaning": "안개가 끼다. 희미하게 보이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "かする",
+    "kana": "かする",
+    "romaji": "kasuru",
+    "meaning": "스치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "火星",
+    "kana": "かせい",
+    "romaji": "kasei",
+    "meaning": "화성",
+    "level": "N1"
+  },
+  {
+    "kanji": "化石",
+    "kana": "かせき",
+    "romaji": "kaseki",
+    "meaning": "화석",
+    "level": "N1"
+  },
+  {
+    "kanji": "化繊",
+    "kana": "かせん",
+    "romaji": "kasen",
+    "meaning": "화섬. 화학 섬유",
+    "level": "N1"
+  },
+  {
+    "kanji": "過疎",
+    "kana": "かそ",
+    "romaji": "kaso",
+    "meaning": "과소. 인구가 지나치게 적음",
+    "level": "N1"
+  },
+  {
+    "kanji": "かた",
+    "kana": "かた",
+    "romaji": "kata",
+    "meaning": "결말. 처리. かたがつく 처리되다. かたをつける 처리하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "片言",
+    "kana": "かたこと",
+    "romaji": "katakoto",
+    "meaning": "서투른 말씨. 떠듬떠듬 하는 말씨",
+    "level": "N1"
+  },
+  {
+    "kanji": "片付け",
+    "kana": "かたづけ",
+    "romaji": "katazuke",
+    "meaning": "정돈. 정리. 치움",
+    "level": "N1"
+  },
+  {
+    "kanji": "傾ける",
+    "kana": "かたむける",
+    "romaji": "katamukeru",
+    "meaning": "기울이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "固める",
+    "kana": "かためる",
+    "romaji": "katameru",
+    "meaning": "굳히다. 단단히 하다. 다지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "傍ら",
+    "kana": "かたわら",
+    "romaji": "katawara",
+    "meaning": "곁. 옆. 한편. …함과 동시에",
+    "level": "N1"
+  },
+  {
+    "kanji": "花壇",
+    "kana": "かだん",
+    "romaji": "kadan",
+    "meaning": "화단. 꽃밭",
+    "level": "N1"
+  },
+  {
+    "kanji": "家畜",
+    "kana": "かちく",
+    "romaji": "kachiku",
+    "meaning": "가축",
+    "level": "N1"
+  },
+  {
+    "kanji": "画期的な",
+    "kana": "かっきてきな",
+    "romaji": "kakkitekin\\'a",
+    "meaning": "획기적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "がっくり",
+    "kana": "がっくり",
+    "romaji": "gakkuri",
+    "meaning": "푹. 탁. 덜컥 (기가 꺾이거나 맥이 풀리는 모양)",
+    "level": "N1"
+  },
+  {
+    "kanji": "合唱",
+    "kana": "がっしょう",
+    "romaji": "gasshou",
+    "meaning": "합창",
+    "level": "N1"
+  },
+  {
+    "kanji": "がっしり",
+    "kana": "がっしり",
+    "romaji": "gasshiri",
+    "meaning": "(어떤 물건의 구조 또는 체격이) 튼튼하고 실팍한 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "合致",
+    "kana": "がっち",
+    "romaji": "gacchi",
+    "meaning": "합치. 일치",
+    "level": "N1"
+  },
+  {
+    "kanji": "がっちり",
+    "kana": "がっちり",
+    "romaji": "gacchiri",
+    "meaning": "(주로 체격이) 튼튼하고 건장한 모양. 빈틈이 없는 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "かつて",
+    "kana": "かつて",
+    "romaji": "katsute",
+    "meaning": "일찍이. 예전부터",
+    "level": "N1"
+  },
+  {
+    "kanji": "カット",
+    "kana": "カット",
+    "romaji": "katto",
+    "meaning": "컷",
+    "level": "N1"
+  },
+  {
+    "kanji": "活発な",
+    "kana": "かっぱつな",
+    "romaji": "kappatsun\\'a",
+    "meaning": "활발한",
+    "level": "N1"
+  },
+  {
+    "kanji": "合併",
+    "kana": "がっぺい",
+    "romaji": "gappei",
+    "meaning": "합병",
+    "level": "N1"
+  },
+  {
+    "kanji": "カテゴリー",
+    "kana": "カテゴリー",
+    "romaji": "kategori-",
+    "meaning": "카테고리. 범주",
+    "level": "N1"
+  },
+  {
+    "kanji": "かなえる",
+    "kana": "かなえる",
+    "romaji": "kan\\'aeru",
+    "meaning": "뜻대로 하게 하다. 이루게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "金づち",
+    "kana": "かなづち",
+    "romaji": "kan\\'azuchi",
+    "meaning": "쇠망치. 수영을 전혀 못함",
+    "level": "N1"
+  },
+  {
+    "kanji": "かなわない",
+    "kana": "かなわない",
+    "romaji": "kan\\'awan\\'ai",
+    "meaning": "이길 수 없다. 대적할 수 없다",
+    "level": "N1"
+  },
+  {
+    "kanji": "加入",
+    "kana": "かにゅう",
+    "romaji": "kan\\'yuu",
+    "meaning": "가입",
+    "level": "N1"
+  },
+  {
+    "kanji": "かねてから",
+    "kana": "かねてから",
+    "romaji": "kan\\'etekara",
+    "meaning": "미리. 전부터",
+    "level": "N1"
+  },
+  {
+    "kanji": "かばう",
+    "kana": "かばう",
+    "romaji": "kabau",
+    "meaning": "감싸다. 비호하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "株式",
+    "kana": "かぶしき",
+    "romaji": "kabushiki",
+    "meaning": "주식",
+    "level": "N1"
+  },
+  {
+    "kanji": "かぶれる",
+    "kana": "かぶれる",
+    "romaji": "kabureru",
+    "meaning": "(옻 따위를)타다. 독한 기운에 쐬어서 염증이 생기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "花粉",
+    "kana": "かふん",
+    "romaji": "kafun",
+    "meaning": "화분. 꽃가루",
+    "level": "N1"
+  },
+  {
+    "kanji": "貨幣",
+    "kana": "かへい",
+    "romaji": "kahei",
+    "meaning": "화폐",
+    "level": "N1"
+  },
+  {
+    "kanji": "構える",
+    "kana": "かまえる",
+    "romaji": "kamaeru",
+    "meaning": "꾸미다. 짓다. 자세를 취하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "加味",
+    "kana": "かみ",
+    "romaji": "kami",
+    "meaning": "가미. 맛을 가함",
+    "level": "N1"
+  },
+  {
+    "kanji": "かみ切る",
+    "kana": "かみきる",
+    "romaji": "kamikiru",
+    "meaning": "(1G) 물어 끊다",
+    "level": "N1"
+  },
+  {
+    "kanji": "過密",
+    "kana": "かみつ",
+    "romaji": "kamitsu",
+    "meaning": "과밀. 빽빽함",
+    "level": "N1"
+  },
+  {
+    "kanji": "カムバック",
+    "kana": "カムバック",
+    "romaji": "kamubakku",
+    "meaning": "컴백",
+    "level": "N1"
+  },
+  {
+    "kanji": "カメラマン",
+    "kana": "カメラマン",
+    "romaji": "kameraman",
+    "meaning": "카메라맨",
+    "level": "N1"
+  },
+  {
+    "kanji": "粥",
+    "kana": "かゆ",
+    "romaji": "kayu",
+    "meaning": "죽 ＝おかゆ[お粥]",
+    "level": "N1"
+  },
+  {
+    "kanji": "体つき",
+    "kana": "からだつき",
+    "romaji": "karadatsuki",
+    "meaning": "몸매. 몸집. 체격",
+    "level": "N1"
+  },
+  {
+    "kanji": "絡む",
+    "kana": "からむ",
+    "romaji": "karamu",
+    "meaning": "휘감기다. 얽히다",
+    "level": "N1"
+  },
+  {
+    "kanji": "借り",
+    "kana": "かり",
+    "romaji": "kari",
+    "meaning": "빌림. 또. 빌린 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "狩(り)",
+    "kana": "かり",
+    "romaji": "kari",
+    "meaning": "사냥",
+    "level": "N1"
+  },
+  {
+    "kanji": "仮に",
+    "kana": "かりに",
+    "romaji": "karin\\'i",
+    "meaning": "만일. 만약",
+    "level": "N1"
+  },
+  {
+    "kanji": "カルテ",
+    "kana": "カルテ",
+    "romaji": "karute",
+    "meaning": "카르테. 진료 기록 카드",
+    "level": "N1"
+  },
+  {
+    "kanji": "ガレージ",
+    "kana": "ガレージ",
+    "romaji": "gare-ji",
+    "meaning": "개라지. 차고",
+    "level": "N1"
+  },
+  {
+    "kanji": "過労",
+    "kana": "かろう",
+    "romaji": "karou",
+    "meaning": "과로. 지나친 피로",
+    "level": "N1"
+  },
+  {
+    "kanji": "辛うじて",
+    "kana": "かろうじて",
+    "romaji": "karoujite",
+    "meaning": "겨우. 간신히",
+    "level": "N1"
+  },
+  {
+    "kanji": "交わす",
+    "kana": "かわす",
+    "romaji": "kawasu",
+    "meaning": "주고받다. 교환하다. 교차하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "代(わ)る代(わ)る",
+    "kana": "かわるがわる",
+    "romaji": "kawarugawaru",
+    "meaning": "번갈아 가며. 교대로",
+    "level": "N1"
+  },
+  {
+    "kanji": "勘",
+    "kana": "かん",
+    "romaji": "kan",
+    "meaning": "직감력. 육감",
+    "level": "N1"
+  },
+  {
+    "kanji": "簡易",
+    "kana": "かんい",
+    "romaji": "kan\\'i",
+    "meaning": "간이",
+    "level": "N1"
+  },
+  {
+    "kanji": "眼科",
+    "kana": "がんか",
+    "romaji": "ganka",
+    "meaning": "안과",
+    "level": "N1"
+  },
+  {
+    "kanji": "灌漑",
+    "kana": "かんがい",
+    "romaji": "kangai",
+    "meaning": "관개",
+    "level": "N1"
+  },
+  {
+    "kanji": "間隔",
+    "kana": "かんかく",
+    "romaji": "kankaku",
+    "meaning": "간격",
+    "level": "N1"
+  },
+  {
+    "kanji": "玩具",
+    "kana": "がんぐ",
+    "romaji": "gangu",
+    "meaning": "완구. 장난감",
+    "level": "N1"
+  },
+  {
+    "kanji": "簡潔な",
+    "kana": "かんけつな",
+    "romaji": "kanketsun\\'a",
+    "meaning": "간결한",
+    "level": "N1"
+  },
+  {
+    "kanji": "還元",
+    "kana": "かんげん",
+    "romaji": "kangen",
+    "meaning": "환원",
+    "level": "N1"
+  },
+  {
+    "kanji": "漢語",
+    "kana": "かんご",
+    "romaji": "kango",
+    "meaning": "한자어",
+    "level": "N1"
+  },
+  {
+    "kanji": "看護",
+    "kana": "かんご",
+    "romaji": "kango",
+    "meaning": "간호",
+    "level": "N1"
+  },
+  {
+    "kanji": "刊行",
+    "kana": "かんこう",
+    "romaji": "kankou",
+    "meaning": "간행",
+    "level": "N1"
+  },
+  {
+    "kanji": "慣行",
+    "kana": "かんこう",
+    "romaji": "kankou",
+    "meaning": "관행. 관례",
+    "level": "N1"
+  },
+  {
+    "kanji": "勧告",
+    "kana": "かんこく",
+    "romaji": "kankoku",
+    "meaning": "권고",
+    "level": "N1"
+  },
+  {
+    "kanji": "頑固な",
+    "kana": "がんこな",
+    "romaji": "gankon\\'a",
+    "meaning": "완고한. 고집이 센",
+    "level": "N1"
+  },
+  {
+    "kanji": "換算",
+    "kana": "かんさん",
+    "romaji": "kansan",
+    "meaning": "환산",
+    "level": "N1"
+  },
+  {
+    "kanji": "慣習",
+    "kana": "かんしゅう",
+    "romaji": "kanshuu",
+    "meaning": "관습",
+    "level": "N1"
+  },
+  {
+    "kanji": "観衆",
+    "kana": "かんしゅう",
+    "romaji": "kanshuu",
+    "meaning": "관중",
+    "level": "N1"
+  },
+  {
+    "kanji": "願書",
+    "kana": "がんしょ",
+    "romaji": "gansho",
+    "meaning": "원서",
+    "level": "N1"
+  },
+  {
+    "kanji": "勘定",
+    "kana": "かんじょう",
+    "romaji": "kanjou",
+    "meaning": "계산. 셈",
+    "level": "N1"
+  },
+  {
+    "kanji": "干渉",
+    "kana": "かんしょう",
+    "romaji": "kanshou",
+    "meaning": "간섭",
+    "level": "N1"
+  },
+  {
+    "kanji": "頑丈な",
+    "kana": "がんじょうな",
+    "romaji": "ganjoun\\'a",
+    "meaning": "튼튼한",
+    "level": "N1"
+  },
+  {
+    "kanji": "感触",
+    "kana": "かんしょく",
+    "romaji": "kanshoku",
+    "meaning": "감촉. 촉감",
+    "level": "N1"
+  },
+  {
+    "kanji": "肝心な",
+    "kana": "かんじんな",
+    "romaji": "kanjinn\\'a",
+    "meaning": "긴요한",
+    "level": "N1"
+  },
+  {
+    "kanji": "歓声",
+    "kana": "かんせい",
+    "romaji": "kansei",
+    "meaning": "환성. 환호성",
+    "level": "N1"
+  },
+  {
+    "kanji": "関税",
+    "kana": "かんぜい",
+    "romaji": "kanzei",
+    "meaning": "관세",
+    "level": "N1"
+  },
+  {
+    "kanji": "岩石",
+    "kana": "がんせき",
+    "romaji": "ganseki",
+    "meaning": "암석",
+    "level": "N1"
+  },
+  {
+    "kanji": "幹線",
+    "kana": "かんせん",
+    "romaji": "kansen",
+    "meaning": "간선 (도로)",
+    "level": "N1"
+  },
+  {
+    "kanji": "感染",
+    "kana": "かんせん",
+    "romaji": "kansen",
+    "meaning": "감염",
+    "level": "N1"
+  },
+  {
+    "kanji": "簡素化",
+    "kana": "かんそか",
+    "romaji": "kansoka",
+    "meaning": "간소화",
+    "level": "N1"
+  },
+  {
+    "kanji": "簡素な",
+    "kana": "かんそな",
+    "romaji": "kanson\\'a",
+    "meaning": "간소한",
+    "level": "N1"
+  },
+  {
+    "kanji": "観点",
+    "kana": "かんてん",
+    "romaji": "kanten",
+    "meaning": "관점",
+    "level": "N1"
+  },
+  {
+    "kanji": "感度",
+    "kana": "かんど",
+    "romaji": "kando",
+    "meaning": "감도",
+    "level": "N1"
+  },
+  {
+    "kanji": "カンニング",
+    "kana": "カンニング",
+    "romaji": "kann\\'ingu",
+    "meaning": "커닝. 시험 때의 부정 행위",
+    "level": "N1"
+  },
+  {
+    "kanji": "元年",
+    "kana": "がんねん",
+    "romaji": "gann\\'en",
+    "meaning": "원년. 연호의 첫해",
+    "level": "N1"
+  },
+  {
+    "kanji": "幹部",
+    "kana": "かんぶ",
+    "romaji": "kanbu",
+    "meaning": "간부",
+    "level": "N1"
+  },
+  {
+    "kanji": "完璧な",
+    "kana": "かんぺきな",
+    "romaji": "kanpekin\\'a",
+    "meaning": "완벽한",
+    "level": "N1"
+  },
+  {
+    "kanji": "勘弁",
+    "kana": "かんべん",
+    "romaji": "kanben",
+    "meaning": "용서함",
+    "level": "N1"
+  },
+  {
+    "kanji": "感無量だ",
+    "kana": "かんむりょうだ",
+    "romaji": "kanmuryouda",
+    "meaning": "감개무량하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "勧誘",
+    "kana": "かんゆう",
+    "romaji": "kan\\'yuu",
+    "meaning": "권유",
+    "level": "N1"
+  },
+  {
+    "kanji": "関与",
+    "kana": "かんよ",
+    "romaji": "kan\\'yo",
+    "meaning": "관여",
+    "level": "N1"
+  },
+  {
+    "kanji": "寛容な",
+    "kana": "かんような",
+    "romaji": "kan\\'youn\\'a",
+    "meaning": "관용적인. 너그러운",
+    "level": "N1"
+  },
+  {
+    "kanji": "元来",
+    "kana": "がんらい",
+    "romaji": "ganrai",
+    "meaning": "원래",
+    "level": "N1"
+  },
+  {
+    "kanji": "観覧",
+    "kana": "かんらん",
+    "romaji": "kanran",
+    "meaning": "관람",
+    "level": "N1"
+  },
+  {
+    "kanji": "官僚",
+    "kana": "かんりょう",
+    "romaji": "kanryou",
+    "meaning": "관료",
+    "level": "N1"
+  },
+  {
+    "kanji": "慣例",
+    "kana": "かんれい",
+    "romaji": "kanrei",
+    "meaning": "관례",
+    "level": "N1"
+  },
+  {
+    "kanji": "還暦",
+    "kana": "かんれき",
+    "romaji": "kanreki",
+    "meaning": "환갑",
+    "level": "N1"
+  },
+  {
+    "kanji": "貫禄",
+    "kana": "かんろく",
+    "romaji": "kanroku",
+    "meaning": "관록",
+    "level": "N1"
+  },
+  {
+    "kanji": "緩和",
+    "kana": "かんわ",
+    "romaji": "kanwa",
+    "meaning": "완화",
+    "level": "N1"
+  },
+  {
+    "kanji": "議案",
+    "kana": "ぎあん",
+    "romaji": "gian",
+    "meaning": "의안",
+    "level": "N1"
+  },
+  {
+    "kanji": "危害",
+    "kana": "きがい",
+    "romaji": "kigai",
+    "meaning": "위해. 위협이나 해를 가함",
+    "level": "N1"
+  },
+  {
+    "kanji": "器械",
+    "kana": "きかい",
+    "romaji": "kikai",
+    "meaning": "기계 (구조가 간단하고 생산 목적이 아닌 기계)",
+    "level": "N1"
+  },
+  {
+    "kanji": "企画",
+    "kana": "きかく",
+    "romaji": "kikaku",
+    "meaning": "기획",
+    "level": "N1"
+  },
+  {
+    "kanji": "規格",
+    "kana": "きかく",
+    "romaji": "kikaku",
+    "meaning": "규격",
+    "level": "N1"
+  },
+  {
+    "kanji": "着飾る",
+    "kana": "きかざる",
+    "romaji": "kikazaru",
+    "meaning": "몸치장을 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "気兼ね",
+    "kana": "きがね",
+    "romaji": "kigan\\'e",
+    "meaning": "사양. 배려. 신경을 씀",
+    "level": "N1"
+  },
+  {
+    "kanji": "気軽な",
+    "kana": "きがるな",
+    "romaji": "kigarun\\'a",
+    "meaning": "소탈한. 마음 편한",
+    "level": "N1"
+  },
+  {
+    "kanji": "器官",
+    "kana": "きかん",
+    "romaji": "kikan",
+    "meaning": "기관 (생물체 부분)",
+    "level": "N1"
+  },
+  {
+    "kanji": "季刊",
+    "kana": "きかん",
+    "romaji": "kikan",
+    "meaning": "계간",
+    "level": "N1"
+  },
+  {
+    "kanji": "効き目",
+    "kana": "ききめ",
+    "romaji": "kikime",
+    "meaning": "효력. 효과. 효능",
+    "level": "N1"
+  },
+  {
+    "kanji": "帰京",
+    "kana": "ききょう",
+    "romaji": "kikyou",
+    "meaning": "귀경. 서울로 돌아옴",
+    "level": "N1"
+  },
+  {
+    "kanji": "戯曲",
+    "kana": "ぎきょく",
+    "romaji": "gikyoku",
+    "meaning": "희곡",
+    "level": "N1"
+  },
+  {
+    "kanji": "基金",
+    "kana": "ききん",
+    "romaji": "kikin",
+    "meaning": "기금",
+    "level": "N1"
+  },
+  {
+    "kanji": "喜劇",
+    "kana": "きげき",
+    "romaji": "kigeki",
+    "meaning": "희극",
+    "level": "N1"
+  },
+  {
+    "kanji": "議決",
+    "kana": "ぎけつ",
+    "romaji": "giketsu",
+    "meaning": "의결",
+    "level": "N1"
+  },
+  {
+    "kanji": "棄権",
+    "kana": "きけん",
+    "romaji": "kiken",
+    "meaning": "기권",
+    "level": "N1"
+  },
+  {
+    "kanji": "起源/起原",
+    "kana": "きげん",
+    "romaji": "kigen",
+    "meaning": "기원",
+    "level": "N1"
+  },
+  {
+    "kanji": "機構",
+    "kana": "きこう",
+    "romaji": "kikou",
+    "meaning": "기구",
+    "level": "N1"
+  },
+  {
+    "kanji": "既婚",
+    "kana": "きこん",
+    "romaji": "kikon",
+    "meaning": "기혼",
+    "level": "N1"
+  },
+  {
+    "kanji": "記載",
+    "kana": "きさい",
+    "romaji": "kisai",
+    "meaning": "기재",
+    "level": "N1"
+  },
+  {
+    "kanji": "兆し",
+    "kana": "きざし",
+    "romaji": "kizashi",
+    "meaning": "조짐. 징조",
+    "level": "N1"
+  },
+  {
+    "kanji": "きざな",
+    "kana": "きざな",
+    "romaji": "kizan\\'a",
+    "meaning": "태깔스러운. 점잔 빼는",
+    "level": "N1"
+  },
+  {
+    "kanji": "期日",
+    "kana": "きじつ",
+    "romaji": "kijitsu",
+    "meaning": "기일",
+    "level": "N1"
+  },
+  {
+    "kanji": "気質",
+    "kana": "きしつ",
+    "romaji": "kishitsu",
+    "meaning": "기질",
+    "level": "N1"
+  },
+  {
+    "kanji": "議事堂",
+    "kana": "ぎじどう",
+    "romaji": "gijidou",
+    "meaning": "의사당",
+    "level": "N1"
+  },
+  {
+    "kanji": "きしむ",
+    "kana": "きしむ",
+    "romaji": "kishimu",
+    "meaning": "삐걱거리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "記述",
+    "kana": "きじゅつ",
+    "romaji": "kijutsu",
+    "meaning": "기술",
+    "level": "N1"
+  },
+  {
+    "kanji": "規準",
+    "kana": "きじゅん",
+    "romaji": "kijun",
+    "meaning": "규준. 기준",
+    "level": "N1"
+  },
+  {
+    "kanji": "気象",
+    "kana": "きしょう",
+    "romaji": "kishou",
+    "meaning": "기상. 날씨",
+    "level": "N1"
+  },
+  {
+    "kanji": "築く",
+    "kana": "きずく",
+    "romaji": "kizuku",
+    "meaning": "쌓다. 구축하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "傷つく",
+    "kana": "きずつく",
+    "romaji": "kizutsuku",
+    "meaning": "다치다. 상처를 입다. 상하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "傷つける",
+    "kana": "きずつける",
+    "romaji": "kizutsukeru",
+    "meaning": "상처를 입히다. 다치게 하다. 손상시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "犠牲",
+    "kana": "ぎせい",
+    "romaji": "gisei",
+    "meaning": "희생",
+    "level": "N1"
+  },
+  {
+    "kanji": "汽船",
+    "kana": "きせん",
+    "romaji": "kisen",
+    "meaning": "기선",
+    "level": "N1"
+  },
+  {
+    "kanji": "寄贈",
+    "kana": "きぞう",
+    "romaji": "kizou",
+    "meaning": "기증. 증정",
+    "level": "N1"
+  },
+  {
+    "kanji": "偽造",
+    "kana": "ぎぞう",
+    "romaji": "gizou",
+    "meaning": "위조",
+    "level": "N1"
+  },
+  {
+    "kanji": "貴族",
+    "kana": "きぞく",
+    "romaji": "kizoku",
+    "meaning": "귀족",
+    "level": "N1"
+  },
+  {
+    "kanji": "議題",
+    "kana": "ぎだい",
+    "romaji": "gidai",
+    "meaning": "의제",
+    "level": "N1"
+  },
+  {
+    "kanji": "鍛える",
+    "kana": "きたえる",
+    "romaji": "kitaeru",
+    "meaning": "단련하다. 맹렬히 훈련하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "気だて",
+    "kana": "きだて",
+    "romaji": "kidate",
+    "meaning": "마음씨",
+    "level": "N1"
+  },
+  {
+    "kanji": "来る",
+    "kana": "きたる",
+    "romaji": "kitaru",
+    "meaning": "다가올…",
+    "level": "N1"
+  },
+  {
+    "kanji": "きちっと",
+    "kana": "きちっと",
+    "romaji": "kichitto",
+    "meaning": "→きちんと",
+    "level": "N1"
+  },
+  {
+    "kanji": "几帳面な",
+    "kana": "きちょうめんな",
+    "romaji": "kichoumenn\\'a",
+    "meaning": "꼼꼼한",
+    "level": "N1"
+  },
+  {
+    "kanji": "きっかり",
+    "kana": "きっかり",
+    "romaji": "kikkari",
+    "meaning": "꼭. 딱. 아주 뚜렷한 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "きっちり",
+    "kana": "きっちり",
+    "romaji": "kicchiri",
+    "meaning": "꼭 맞는 모양. 빈틈이 없는 모양. 꼭",
+    "level": "N1"
+  },
+  {
+    "kanji": "規定",
+    "kana": "きてい",
+    "romaji": "kitei",
+    "meaning": "규정",
+    "level": "N1"
+  },
+  {
+    "kanji": "起点",
+    "kana": "きてん",
+    "romaji": "kiten",
+    "meaning": "기점. 출발점",
+    "level": "N1"
+  },
+  {
+    "kanji": "軌道",
+    "kana": "きどう",
+    "romaji": "kidou",
+    "meaning": "궤도",
+    "level": "N1"
+  },
+  {
+    "kanji": "技能",
+    "kana": "ぎのう",
+    "romaji": "gin\\'ou",
+    "meaning": "기능",
+    "level": "N1"
+  },
+  {
+    "kanji": "規範",
+    "kana": "きはん",
+    "romaji": "kihan",
+    "meaning": "규범",
+    "level": "N1"
+  },
+  {
+    "kanji": "気品",
+    "kana": "きひん",
+    "romaji": "kihin",
+    "meaning": "기품",
+    "level": "N1"
+  },
+  {
+    "kanji": "気風",
+    "kana": "きふう",
+    "romaji": "kifuu",
+    "meaning": "기풍. 기질",
+    "level": "N1"
+  },
+  {
+    "kanji": "起伏",
+    "kana": "きふく",
+    "romaji": "kifuku",
+    "meaning": "기복",
+    "level": "N1"
+  },
+  {
+    "kanji": "気まぐれな",
+    "kana": "きまぐれな",
+    "romaji": "kimaguren\\'a",
+    "meaning": "변덕스러운",
+    "level": "N1"
+  },
+  {
+    "kanji": "生真面目な",
+    "kana": "きまじめな",
+    "romaji": "kimajimen\\'a",
+    "meaning": "고지식한",
+    "level": "N1"
+  },
+  {
+    "kanji": "期末",
+    "kana": "きまつ",
+    "romaji": "kimatsu",
+    "meaning": "기말",
+    "level": "N1"
+  },
+  {
+    "kanji": "記名",
+    "kana": "きめい",
+    "romaji": "kimei",
+    "meaning": "기명. 이름을 씀",
+    "level": "N1"
+  },
+  {
+    "kanji": "規約",
+    "kana": "きやく",
+    "romaji": "kiyaku",
+    "meaning": "규약",
+    "level": "N1"
+  },
+  {
+    "kanji": "脚色",
+    "kana": "きゃくしょく",
+    "romaji": "kyakushoku",
+    "meaning": "각색",
+    "level": "N1"
+  },
+  {
+    "kanji": "逆転",
+    "kana": "ぎゃくてん",
+    "romaji": "gyakuten",
+    "meaning": "역전. 형세가 뒤집혀짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "脚本",
+    "kana": "きゃくほん",
+    "romaji": "kyakuhon",
+    "meaning": "각본",
+    "level": "N1"
+  },
+  {
+    "kanji": "きゃしゃな",
+    "kana": "きゃしゃな",
+    "romaji": "kyashan\\'a",
+    "meaning": "날씬하고 연약하게 보이는",
+    "level": "N1"
+  },
+  {
+    "kanji": "客観的な",
+    "kana": "きゃっかんてきな",
+    "romaji": "kyakkantekin\\'a",
+    "meaning": "객관적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "キャッチ",
+    "kana": "キャッチ",
+    "romaji": "kyacchi",
+    "meaning": "캐치",
+    "level": "N1"
+  },
+  {
+    "kanji": "キャリア",
+    "kana": "キャリア",
+    "romaji": "kyaria",
+    "meaning": "캐리어. 경력",
+    "level": "N1"
+  },
+  {
+    "kanji": "救援",
+    "kana": "きゅうえん",
+    "romaji": "kyuuen",
+    "meaning": "구원",
+    "level": "N1"
+  },
+  {
+    "kanji": "休学",
+    "kana": "きゅうがく",
+    "romaji": "kyuugaku",
+    "meaning": "휴학",
+    "level": "N1"
+  },
+  {
+    "kanji": "究極/窮極",
+    "kana": "きゅうきょく",
+    "romaji": "kyuukyoku",
+    "meaning": "궁극적임",
+    "level": "N1"
+  },
+  {
+    "kanji": "窮屈な",
+    "kana": "きゅうくつな",
+    "romaji": "kyuukutsun\\'a",
+    "meaning": "갑갑한. 답답한. 꼭 끼는",
+    "level": "N1"
+  },
+  {
+    "kanji": "球根",
+    "kana": "きゅうこん",
+    "romaji": "kyuukon",
+    "meaning": "구근. 알뿌리",
+    "level": "N1"
+  },
+  {
+    "kanji": "救済",
+    "kana": "きゅうさい",
+    "romaji": "kyuusai",
+    "meaning": "구제",
+    "level": "N1"
+  },
+  {
+    "kanji": "休戦",
+    "kana": "きゅうせん",
+    "romaji": "kyuusen",
+    "meaning": "휴전",
+    "level": "N1"
+  },
+  {
+    "kanji": "急速な",
+    "kana": "きゅうそくな",
+    "romaji": "kyuusokun\\'a",
+    "meaning": "급속한",
+    "level": "N1"
+  },
+  {
+    "kanji": "旧知",
+    "kana": "きゅうち",
+    "romaji": "kyuuchi",
+    "meaning": "전부터 아는 사이. 구면",
+    "level": "N1"
+  },
+  {
+    "kanji": "宮殿",
+    "kana": "きゅうでん",
+    "romaji": "kyuuden",
+    "meaning": "궁전",
+    "level": "N1"
+  },
+  {
+    "kanji": "窮乏",
+    "kana": "きゅうぼう",
+    "romaji": "kyuubou",
+    "meaning": "궁핍함",
+    "level": "N1"
+  },
+  {
+    "kanji": "丘陵",
+    "kana": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meaning": "구릉. 언덕",
+    "level": "N1"
+  },
+  {
+    "kanji": "寄与",
+    "kana": "きよ",
+    "romaji": "kiyo",
+    "meaning": "기여. 이바지함",
+    "level": "N1"
+  },
+  {
+    "kanji": "-強",
+    "kana": "きょう",
+    "romaji": "kyou",
+    "meaning": "-강. 조금 넘음. 이상",
+    "level": "N1"
+  },
+  {
+    "kanji": "驚異",
+    "kana": "きょうい",
+    "romaji": "kyoui",
+    "meaning": "경이로움",
+    "level": "N1"
+  },
+  {
+    "kanji": "教科",
+    "kana": "きょうか",
+    "romaji": "kyouka",
+    "meaning": "교과",
+    "level": "N1"
+  },
+  {
+    "kanji": "協会",
+    "kana": "きょうかい",
+    "romaji": "kyoukai",
+    "meaning": "협회",
+    "level": "N1"
+  },
+  {
+    "kanji": "共学",
+    "kana": "きょうがく",
+    "romaji": "kyougaku",
+    "meaning": "공학",
+    "level": "N1"
+  },
+  {
+    "kanji": "共感",
+    "kana": "きょうかん",
+    "romaji": "kyoukan",
+    "meaning": "공감",
+    "level": "N1"
+  },
+  {
+    "kanji": "協議",
+    "kana": "きょうぎ",
+    "romaji": "kyougi",
+    "meaning": "협의",
+    "level": "N1"
+  },
+  {
+    "kanji": "境遇",
+    "kana": "きょうぐう",
+    "romaji": "kyouguu",
+    "meaning": "경우. 처지. 형편",
+    "level": "N1"
+  },
+  {
+    "kanji": "教訓",
+    "kana": "きょうくん",
+    "romaji": "kyoukun",
+    "meaning": "교훈",
+    "level": "N1"
+  },
+  {
+    "kanji": "強行",
+    "kana": "きょうこう",
+    "romaji": "kyoukou",
+    "meaning": "강행",
+    "level": "N1"
+  },
+  {
+    "kanji": "強硬な",
+    "kana": "きょうこうな",
+    "romaji": "kyoukoun\\'a",
+    "meaning": "강경한",
+    "level": "N1"
+  },
+  {
+    "kanji": "教材",
+    "kana": "きょうざい",
+    "romaji": "kyouzai",
+    "meaning": "교재",
+    "level": "N1"
+  },
+  {
+    "kanji": "凶作",
+    "kana": "きょうさく",
+    "romaji": "kyousaku",
+    "meaning": "흉작",
+    "level": "N1"
+  },
+  {
+    "kanji": "業者",
+    "kana": "ぎょうしゃ",
+    "romaji": "gyousha",
+    "meaning": "업자. 업체",
+    "level": "N1"
+  },
+  {
+    "kanji": "享受",
+    "kana": "きょうじゅ",
+    "romaji": "kyouju",
+    "meaning": "향수. 받아들여 누림",
+    "level": "N1"
+  },
+  {
+    "kanji": "教習",
+    "kana": "きょうしゅう",
+    "romaji": "kyoushuu",
+    "meaning": "교습",
+    "level": "N1"
+  },
+  {
+    "kanji": "郷愁",
+    "kana": "きょうしゅう",
+    "romaji": "kyoushuu",
+    "meaning": "향수",
+    "level": "N1"
+  },
+  {
+    "kanji": "教職",
+    "kana": "きょうしょく",
+    "romaji": "kyoushoku",
+    "meaning": "교직",
+    "level": "N1"
+  },
+  {
+    "kanji": "興じる",
+    "kana": "きょうじる",
+    "romaji": "kyoujiru",
+    "meaning": "흥겨워하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "強制",
+    "kana": "きょうせい",
+    "romaji": "kyousei",
+    "meaning": "강제",
+    "level": "N1"
+  },
+  {
+    "kanji": "行政",
+    "kana": "ぎょうせい",
+    "romaji": "gyousei",
+    "meaning": "행정",
+    "level": "N1"
+  },
+  {
+    "kanji": "業績",
+    "kana": "ぎょうせき",
+    "romaji": "gyouseki",
+    "meaning": "업적",
+    "level": "N1"
+  },
+  {
+    "kanji": "協定",
+    "kana": "きょうてい",
+    "romaji": "kyoutei",
+    "meaning": "협정",
+    "level": "N1"
+  },
+  {
+    "kanji": "郷土",
+    "kana": "きょうど",
+    "romaji": "kyoudo",
+    "meaning": "향토",
+    "level": "N1"
+  },
+  {
+    "kanji": "脅迫",
+    "kana": "きょうはく",
+    "romaji": "kyouhaku",
+    "meaning": "협박",
+    "level": "N1"
+  },
+  {
+    "kanji": "業務",
+    "kana": "ぎょうむ",
+    "romaji": "gyoumu",
+    "meaning": "업무",
+    "level": "N1"
+  },
+  {
+    "kanji": "共鳴",
+    "kana": "きょうめい",
+    "romaji": "kyoumei",
+    "meaning": "공명",
+    "level": "N1"
+  },
+  {
+    "kanji": "郷里",
+    "kana": "きょうり",
+    "romaji": "kyouri",
+    "meaning": "향리. 고향",
+    "level": "N1"
+  },
+  {
+    "kanji": "強烈な",
+    "kana": "きょうれつな",
+    "romaji": "kyouretsun\\'a",
+    "meaning": "강렬한",
+    "level": "N1"
+  },
+  {
+    "kanji": "共和国",
+    "kana": "きょうわこく",
+    "romaji": "kyouwakoku",
+    "meaning": "공화국",
+    "level": "N1"
+  },
+  {
+    "kanji": "極限",
+    "kana": "きょくげん",
+    "romaji": "kyokugen",
+    "meaning": "극한",
+    "level": "N1"
+  },
+  {
+    "kanji": "極端な",
+    "kana": "きょくたんな",
+    "romaji": "kyokutann\\'a",
+    "meaning": "극단적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "居住",
+    "kana": "きょじゅう",
+    "romaji": "kyojuu",
+    "meaning": "거주",
+    "level": "N1"
+  },
+  {
+    "kanji": "拒絶",
+    "kana": "きょぜつ",
+    "romaji": "kyozetsu",
+    "meaning": "거절",
+    "level": "N1"
+  },
+  {
+    "kanji": "漁船",
+    "kana": "ぎょせん",
+    "romaji": "gyosen",
+    "meaning": "어선",
+    "level": "N1"
+  },
+  {
+    "kanji": "漁村",
+    "kana": "ぎょそん",
+    "romaji": "gyoson",
+    "meaning": "어촌",
+    "level": "N1"
+  },
+  {
+    "kanji": "拒否",
+    "kana": "きょひ",
+    "romaji": "kyohi",
+    "meaning": "거부",
+    "level": "N1"
+  },
+  {
+    "kanji": "許容",
+    "kana": "きょよう",
+    "romaji": "kyoyou",
+    "meaning": "허용",
+    "level": "N1"
+  },
+  {
+    "kanji": "清らかな",
+    "kana": "きよらかな",
+    "romaji": "kiyorakan\\'a",
+    "meaning": "맑은. 청순한",
+    "level": "N1"
+  },
+  {
+    "kanji": "きらびやかな",
+    "kana": "きらびやかな",
+    "romaji": "kirabiyakan\\'a",
+    "meaning": "눈부시게 아름다운",
+    "level": "N1"
+  },
+  {
+    "kanji": "-*",
+    "kana": "きり",
+    "romaji": "kiri",
+    "meaning": "-만. -뿐. -한 이후(+부정문)",
+    "level": "N1"
+  },
+  {
+    "kanji": "義理",
+    "kana": "ぎり",
+    "romaji": "giri",
+    "meaning": "의리",
+    "level": "N1"
+  },
+  {
+    "kanji": "切り",
+    "kana": "きり",
+    "romaji": "kiri",
+    "meaning": "일단락. 끝맺기. 한도. 끝. 切りがない 끝이 없다",
+    "level": "N1"
+  },
+  {
+    "kanji": "切り替え/切り換え",
+    "kana": "きりかえ",
+    "romaji": "kirikae",
+    "meaning": "전환. 갱신",
+    "level": "N1"
+  },
+  {
+    "kanji": "気流",
+    "kana": "きりゅう",
+    "romaji": "kiryuu",
+    "meaning": "기류",
+    "level": "N1"
+  },
+  {
+    "kanji": "切れ目",
+    "kana": "きれめ",
+    "romaji": "kireme",
+    "meaning": "끊어진 자국. 잘린 곳",
+    "level": "N1"
+  },
+  {
+    "kanji": "疑惑",
+    "kana": "ぎわく",
+    "romaji": "giwaku",
+    "meaning": "의혹",
+    "level": "N1"
+  },
+  {
+    "kanji": "極めて",
+    "kana": "きわめて",
+    "romaji": "kiwamete",
+    "meaning": "극히. 더없이. 지극히",
+    "level": "N1"
+  },
+  {
+    "kanji": "菌",
+    "kana": "きん",
+    "romaji": "kin",
+    "meaning": "균",
+    "level": "N1"
+  },
+  {
+    "kanji": "近眼",
+    "kana": "きんがん",
+    "romaji": "kingan",
+    "meaning": "근안. 근시안",
+    "level": "N1"
+  },
+  {
+    "kanji": "緊急",
+    "kana": "きんきゅう",
+    "romaji": "kinkyuu",
+    "meaning": "긴급",
+    "level": "N1"
+  },
+  {
+    "kanji": "均衡",
+    "kana": "きんこう",
+    "romaji": "kinkou",
+    "meaning": "균형",
+    "level": "N1"
+  },
+  {
+    "kanji": "近郊",
+    "kana": "きんこう",
+    "romaji": "kinkou",
+    "meaning": "근교",
+    "level": "N1"
+  },
+  {
+    "kanji": "勤勉な",
+    "kana": "きんべんな",
+    "romaji": "kinbenn\\'a",
+    "meaning": "근면한. 부지런한",
+    "level": "N1"
+  },
+  {
+    "kanji": "吟味",
+    "kana": "ぎんみ",
+    "romaji": "ginmi",
+    "meaning": "음미",
+    "level": "N1"
+  },
+  {
+    "kanji": "禁物",
+    "kana": "きんもつ",
+    "romaji": "kinmotsu",
+    "meaning": "금물",
+    "level": "N1"
+  },
+  {
+    "kanji": "勤労",
+    "kana": "きんろう",
+    "romaji": "kinrou",
+    "meaning": "근로",
+    "level": "N1"
+  },
+  {
+    "kanji": "苦",
+    "kana": "く",
+    "romaji": "ku",
+    "meaning": "고생. 괴로움",
+    "level": "N1"
+  },
+  {
+    "kanji": "食い違う",
+    "kana": "くいちがう",
+    "romaji": "kuichigau",
+    "meaning": "어긋나다. 엇갈리다. 틀어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "空間",
+    "kana": "くうかん",
+    "romaji": "kuukan",
+    "meaning": "공간",
+    "level": "N1"
+  },
+  {
+    "kanji": "空腹",
+    "kana": "くうふく",
+    "romaji": "kuufuku",
+    "meaning": "배고픔",
+    "level": "N1"
+  },
+  {
+    "kanji": "区画",
+    "kana": "くかく",
+    "romaji": "kukaku",
+    "meaning": "구획",
+    "level": "N1"
+  },
+  {
+    "kanji": "茎",
+    "kana": "くき",
+    "romaji": "kuki",
+    "meaning": "줄기",
+    "level": "N1"
+  },
+  {
+    "kanji": "区切り/句切り",
+    "kana": "くぎり",
+    "romaji": "kugiri",
+    "meaning": "단락. 일단락",
+    "level": "N1"
+  },
+  {
+    "kanji": "潜る",
+    "kana": "くぐる",
+    "romaji": "kuguru",
+    "meaning": "밑으로 빠져 나가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "くじ引き",
+    "kana": "くじびき",
+    "romaji": "kujibiki",
+    "meaning": "제비뽑기. 추첨",
+    "level": "N1"
+  },
+  {
+    "kanji": "くすぐったい",
+    "kana": "くすぐったい",
+    "romaji": "kusuguttai",
+    "meaning": "간지럽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "愚痴",
+    "kana": "ぐち",
+    "romaji": "guchi",
+    "meaning": "푸념. 불평",
+    "level": "N1"
+  },
+  {
+    "kanji": "口ずさむ",
+    "kana": "くちずさむ",
+    "romaji": "kuchizusamu",
+    "meaning": "읊조리다. 흥얼거리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "くちばし",
+    "kana": "くちばし",
+    "romaji": "kuchibashi",
+    "meaning": "부리. 주둥이",
+    "level": "N1"
+  },
+  {
+    "kanji": "朽ちる",
+    "kana": "くちる",
+    "romaji": "kuchiru",
+    "meaning": "(나무 등이)썩다. 쇠퇴하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "覆す",
+    "kana": "くつがえす",
+    "romaji": "kutsugaesu",
+    "meaning": "뒤집다",
+    "level": "N1"
+  },
+  {
+    "kanji": "くっきり",
+    "kana": "くっきり",
+    "romaji": "kukkiri",
+    "meaning": "또렷이. 선명하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "屈折",
+    "kana": "くっせつ",
+    "romaji": "kussetsu",
+    "meaning": "굴절",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぐっと",
+    "kana": "ぐっと",
+    "romaji": "gutto",
+    "meaning": "꿀꺽. 쭉. 한층. 훨씬. 뭉클",
+    "level": "N1"
+  },
+  {
+    "kanji": "首飾り",
+    "kana": "くびかざり",
+    "romaji": "kubikazari",
+    "meaning": "목걸이",
+    "level": "N1"
+  },
+  {
+    "kanji": "首輪",
+    "kana": "くびわ",
+    "romaji": "kubiwa",
+    "meaning": "목걸이. 개목걸이",
+    "level": "N1"
+  },
+  {
+    "kanji": "組み合わせる",
+    "kana": "くみあわせる",
+    "romaji": "kumiawaseru",
+    "meaning": "짜 맞추다. 편성하다. 짝을 짓다",
+    "level": "N1"
+  },
+  {
+    "kanji": "組み込む",
+    "kana": "くみこむ",
+    "romaji": "kumikomu",
+    "meaning": "짜 넣다. 한패에 넣다. 편입하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "倉/蔵",
+    "kana": "くら",
+    "romaji": "kura",
+    "meaning": "곳간. 곳집. 창고",
+    "level": "N1"
+  },
+  {
+    "kanji": "グレー",
+    "kana": "グレー",
+    "romaji": "gure-",
+    "meaning": "그레이. 회색",
+    "level": "N1"
+  },
+  {
+    "kanji": "クレーン",
+    "kana": "クレーン",
+    "romaji": "kure-n",
+    "meaning": "크레인. 기중기",
+    "level": "N1"
+  },
+  {
+    "kanji": "玄人",
+    "kana": "くろうと",
+    "romaji": "kurouto",
+    "meaning": "전문가",
+    "level": "N1"
+  },
+  {
+    "kanji": "-群",
+    "kana": "ぐん",
+    "romaji": "gun",
+    "meaning": "-군 (떼. 무리)",
+    "level": "N1"
+  },
+  {
+    "kanji": "軍艦",
+    "kana": "ぐんかん",
+    "romaji": "gunkan",
+    "meaning": "군함",
+    "level": "N1"
+  },
+  {
+    "kanji": "軍事",
+    "kana": "ぐんじ",
+    "romaji": "gunji",
+    "meaning": "군사",
+    "level": "N1"
+  },
+  {
+    "kanji": "君主",
+    "kana": "くんしゅ",
+    "romaji": "kunshu",
+    "meaning": "군주",
+    "level": "N1"
+  },
+  {
+    "kanji": "群衆",
+    "kana": "ぐんしゅう",
+    "romaji": "gunshuu",
+    "meaning": "군중",
+    "level": "N1"
+  },
+  {
+    "kanji": "群集",
+    "kana": "ぐんしゅう",
+    "romaji": "gunshuu",
+    "meaning": "떼지어 모여듦. 군중",
+    "level": "N1"
+  },
+  {
+    "kanji": "軍備",
+    "kana": "ぐんび",
+    "romaji": "gunbi",
+    "meaning": "군비",
+    "level": "N1"
+  },
+  {
+    "kanji": "軍服",
+    "kana": "ぐんぷく",
+    "romaji": "gunpuku",
+    "meaning": "군복",
+    "level": "N1"
+  },
+  {
+    "kanji": "刑",
+    "kana": "けい",
+    "romaji": "kei",
+    "meaning": "형. 형벌",
+    "level": "N1"
+  },
+  {
+    "kanji": "-系",
+    "kana": "けい",
+    "romaji": "kei",
+    "meaning": "-계 (계통)",
+    "level": "N1"
+  },
+  {
+    "kanji": "芸",
+    "kana": "げい",
+    "romaji": "gei",
+    "meaning": "연예. 문무의 재능. 재주",
+    "level": "N1"
+  },
+  {
+    "kanji": "経緯",
+    "kana": "けいい",
+    "romaji": "keii",
+    "meaning": "경위",
+    "level": "N1"
+  },
+  {
+    "kanji": "経過",
+    "kana": "けいか",
+    "romaji": "keika",
+    "meaning": "경과",
+    "level": "N1"
+  },
+  {
+    "kanji": "警戒",
+    "kana": "けいかい",
+    "romaji": "keikai",
+    "meaning": "경계",
+    "level": "N1"
+  },
+  {
+    "kanji": "軽快な",
+    "kana": "けいかいな",
+    "romaji": "keikain\\'a",
+    "meaning": "경쾌한",
+    "level": "N1"
+  },
+  {
+    "kanji": "計器",
+    "kana": "けいき",
+    "romaji": "keiki",
+    "meaning": "계기 (재는 기구)",
+    "level": "N1"
+  },
+  {
+    "kanji": "敬具",
+    "kana": "けいぐ",
+    "romaji": "keigu",
+    "meaning": "경구. 경백 (편지의 마지막에 쓰는 말)",
+    "level": "N1"
+  },
+  {
+    "kanji": "軽減",
+    "kana": "けいげん",
+    "romaji": "keigen",
+    "meaning": "경감",
+    "level": "N1"
+  },
+  {
+    "kanji": "掲載",
+    "kana": "けいさい",
+    "romaji": "keisai",
+    "meaning": "게재",
+    "level": "N1"
+  },
+  {
+    "kanji": "傾斜",
+    "kana": "けいしゃ",
+    "romaji": "keisha",
+    "meaning": "경사. 기욺",
+    "level": "N1"
+  },
+  {
+    "kanji": "形勢",
+    "kana": "けいせい",
+    "romaji": "keisei",
+    "meaning": "형세",
+    "level": "N1"
+  },
+  {
+    "kanji": "形成",
+    "kana": "けいせい",
+    "romaji": "keisei",
+    "meaning": "형성",
+    "level": "N1"
+  },
+  {
+    "kanji": "軽率な",
+    "kana": "けいそつな",
+    "romaji": "keisotsun\\'a",
+    "meaning": "경솔한",
+    "level": "N1"
+  },
+  {
+    "kanji": "形態",
+    "kana": "けいたい",
+    "romaji": "keitai",
+    "meaning": "형태",
+    "level": "N1"
+  },
+  {
+    "kanji": "刑罰",
+    "kana": "けいばつ",
+    "romaji": "keibatsu",
+    "meaning": "형벌",
+    "level": "N1"
+  },
+  {
+    "kanji": "経費",
+    "kana": "けいひ",
+    "romaji": "keihi",
+    "meaning": "경비",
+    "level": "N1"
+  },
+  {
+    "kanji": "警部",
+    "kana": "けいぶ",
+    "romaji": "keibu",
+    "meaning": "경부 (경찰관 계급의 하나)",
+    "level": "N1"
+  },
+  {
+    "kanji": "軽蔑",
+    "kana": "けいべつ",
+    "romaji": "keibetsu",
+    "meaning": "경멸",
+    "level": "N1"
+  },
+  {
+    "kanji": "経歴",
+    "kana": "けいれき",
+    "romaji": "keireki",
+    "meaning": "경력",
+    "level": "N1"
+  },
+  {
+    "kanji": "経路",
+    "kana": "けいろ",
+    "romaji": "keiro",
+    "meaning": "경로",
+    "level": "N1"
+  },
+  {
+    "kanji": "汚らわしい",
+    "kana": "けがらわしい",
+    "romaji": "kegarawashii",
+    "meaning": "더럽다. 추잡스럽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "劇団",
+    "kana": "げきだん",
+    "romaji": "gekidan",
+    "meaning": "극단. 예술 단체",
+    "level": "N1"
+  },
+  {
+    "kanji": "激励",
+    "kana": "げきれい",
+    "romaji": "gekirei",
+    "meaning": "격려",
+    "level": "N1"
+  },
+  {
+    "kanji": "ゲスト",
+    "kana": "ゲスト",
+    "romaji": "gesuto",
+    "meaning": "게스트",
+    "level": "N1"
+  },
+  {
+    "kanji": "獣",
+    "kana": "けだもの",
+    "romaji": "kedamon\\'o",
+    "meaning": "짐승. 인정이 없는 잔인한 인간",
+    "level": "N1"
+  },
+  {
+    "kanji": "決意",
+    "kana": "けつい",
+    "romaji": "ketsui",
+    "meaning": "결의 (결심)",
+    "level": "N1"
+  },
+  {
+    "kanji": "結核",
+    "kana": "けっかく",
+    "romaji": "kekkaku",
+    "meaning": "결핵",
+    "level": "N1"
+  },
+  {
+    "kanji": "血管",
+    "kana": "けっかん",
+    "romaji": "kekkan",
+    "meaning": "혈관",
+    "level": "N1"
+  },
+  {
+    "kanji": "決議",
+    "kana": "けつぎ",
+    "romaji": "ketsugi",
+    "meaning": "결의 (결정 사항)",
+    "level": "N1"
+  },
+  {
+    "kanji": "結合",
+    "kana": "けつごう",
+    "romaji": "ketsugou",
+    "meaning": "결합",
+    "level": "N1"
+  },
+  {
+    "kanji": "決算",
+    "kana": "けっさん",
+    "romaji": "kessan",
+    "meaning": "결산",
+    "level": "N1"
+  },
+  {
+    "kanji": "月謝",
+    "kana": "げっしゃ",
+    "romaji": "gessha",
+    "meaning": "매달 내는 사례금. 수업료",
+    "level": "N1"
+  },
+  {
+    "kanji": "決勝",
+    "kana": "けっしょう",
+    "romaji": "kesshou",
+    "meaning": "결승",
+    "level": "N1"
+  },
+  {
+    "kanji": "結晶",
+    "kana": "けっしょう",
+    "romaji": "kesshou",
+    "meaning": "결정 (물질의 응결체)",
+    "level": "N1"
+  },
+  {
+    "kanji": "結成",
+    "kana": "けっせい",
+    "romaji": "kessei",
+    "meaning": "결성",
+    "level": "N1"
+  },
+  {
+    "kanji": "結束",
+    "kana": "けっそく",
+    "romaji": "kessoku",
+    "meaning": "결속. 단결",
+    "level": "N1"
+  },
+  {
+    "kanji": "げっそり",
+    "kana": "げっそり",
+    "romaji": "gessori",
+    "meaning": "맥빠진 모양. 홀쪽",
+    "level": "N1"
+  },
+  {
+    "kanji": "決断",
+    "kana": "けつだん",
+    "romaji": "ketsudan",
+    "meaning": "결단",
+    "level": "N1"
+  },
+  {
+    "kanji": "月賦",
+    "kana": "げっぷ",
+    "romaji": "geppu",
+    "meaning": "월부",
+    "level": "N1"
+  },
+  {
+    "kanji": "欠乏",
+    "kana": "けつぼう",
+    "romaji": "ketsubou",
+    "meaning": "결핍",
+    "level": "N1"
+  },
+  {
+    "kanji": "蹴飛ばす",
+    "kana": "けとばす",
+    "romaji": "ketobasu",
+    "meaning": "내차다. 걷어차다. 차버리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "けなす",
+    "kana": "けなす",
+    "romaji": "ken\\'asu",
+    "meaning": "폄하다. 깎아내리다. 헐뜯다",
+    "level": "N1"
+  },
+  {
+    "kanji": "煙る",
+    "kana": "けむる",
+    "romaji": "kemuru",
+    "meaning": "연기가 나다. 연기가 끼다",
+    "level": "N1"
+  },
+  {
+    "kanji": "獣",
+    "kana": "けもの",
+    "romaji": "kemon\\'o",
+    "meaning": "짐승",
+    "level": "N1"
+  },
+  {
+    "kanji": "家来",
+    "kana": "けらい",
+    "romaji": "kerai",
+    "meaning": "가신",
+    "level": "N1"
+  },
+  {
+    "kanji": "下痢",
+    "kana": "げり",
+    "romaji": "geri",
+    "meaning": "설사. 배탈",
+    "level": "N1"
+  },
+  {
+    "kanji": "件",
+    "kana": "けん",
+    "romaji": "ken",
+    "meaning": "건. 사항",
+    "level": "N1"
+  },
+  {
+    "kanji": "権威",
+    "kana": "けんい",
+    "romaji": "ken\\'i",
+    "meaning": "권위",
+    "level": "N1"
+  },
+  {
+    "kanji": "兼業",
+    "kana": "けんぎょう",
+    "romaji": "kengyou",
+    "meaning": "겸업. 부업",
+    "level": "N1"
+  },
+  {
+    "kanji": "原形",
+    "kana": "げんけい",
+    "romaji": "genkei",
+    "meaning": "원형",
+    "level": "N1"
+  },
+  {
+    "kanji": "権限",
+    "kana": "けんげん",
+    "romaji": "kengen",
+    "meaning": "권한",
+    "level": "N1"
+  },
+  {
+    "kanji": "現行",
+    "kana": "げんこう",
+    "romaji": "genkou",
+    "meaning": "현행",
+    "level": "N1"
+  },
+  {
+    "kanji": "健在な",
+    "kana": "けんざいな",
+    "romaji": "kenzain\\'a",
+    "meaning": "건재한",
+    "level": "N1"
+  },
+  {
+    "kanji": "原作",
+    "kana": "げんさく",
+    "romaji": "gensaku",
+    "meaning": "원작",
+    "level": "N1"
+  },
+  {
+    "kanji": "検事",
+    "kana": "けんじ",
+    "romaji": "kenji",
+    "meaning": "검사",
+    "level": "N1"
+  },
+  {
+    "kanji": "原子",
+    "kana": "げんし",
+    "romaji": "genshi",
+    "meaning": "원자",
+    "level": "N1"
+  },
+  {
+    "kanji": "元首",
+    "kana": "げんしゅ",
+    "romaji": "genshu",
+    "meaning": "(국가)원수",
+    "level": "N1"
+  },
+  {
+    "kanji": "原書",
+    "kana": "げんしょ",
+    "romaji": "gensho",
+    "meaning": "원서 (본디의 책)",
+    "level": "N1"
+  },
+  {
+    "kanji": "懸賞",
+    "kana": "けんしょう",
+    "romaji": "kenshou",
+    "meaning": "현상. 상을 걺",
+    "level": "N1"
+  },
+  {
+    "kanji": "減少",
+    "kana": "げんしょう",
+    "romaji": "genshou",
+    "meaning": "감소",
+    "level": "N1"
+  },
+  {
+    "kanji": "健全な",
+    "kana": "けんぜんな",
+    "romaji": "kenzenn\\'a",
+    "meaning": "건전한",
+    "level": "N1"
+  },
+  {
+    "kanji": "元素",
+    "kana": "げんそ",
+    "romaji": "genso",
+    "meaning": "원소",
+    "level": "N1"
+  },
+  {
+    "kanji": "現像",
+    "kana": "げんぞう",
+    "romaji": "genzou",
+    "meaning": "(사진)현상. 인화",
+    "level": "N1"
+  },
+  {
+    "kanji": "原則",
+    "kana": "げんそく",
+    "romaji": "gensoku",
+    "meaning": "원칙",
+    "level": "N1"
+  },
+  {
+    "kanji": "見地",
+    "kana": "けんち",
+    "romaji": "kenchi",
+    "meaning": "견지. 관점",
+    "level": "N1"
+  },
+  {
+    "kanji": "現地",
+    "kana": "げんち",
+    "romaji": "genchi",
+    "meaning": "현지",
+    "level": "N1"
+  },
+  {
+    "kanji": "限定",
+    "kana": "げんてい",
+    "romaji": "gentei",
+    "meaning": "한정",
+    "level": "N1"
+  },
+  {
+    "kanji": "原点",
+    "kana": "げんてん",
+    "romaji": "genten",
+    "meaning": "원점",
+    "level": "N1"
+  },
+  {
+    "kanji": "原爆",
+    "kana": "げんばく",
+    "romaji": "genbaku",
+    "meaning": "원자폭탄",
+    "level": "N1"
+  },
+  {
+    "kanji": "原文",
+    "kana": "げんぶん",
+    "romaji": "genbun",
+    "meaning": "원문",
+    "level": "N1"
+  },
+  {
+    "kanji": "厳密な",
+    "kana": "げんみつな",
+    "romaji": "genmitsun\\'a",
+    "meaning": "엄밀한",
+    "level": "N1"
+  },
+  {
+    "kanji": "倹約",
+    "kana": "けんやく",
+    "romaji": "ken\\'yaku",
+    "meaning": "검약. 절약",
+    "level": "N1"
+  },
+  {
+    "kanji": "兼用",
+    "kana": "けんよう",
+    "romaji": "ken\\'you",
+    "meaning": "겸용",
+    "level": "N1"
+  },
+  {
+    "kanji": "権力",
+    "kana": "けんりょく",
+    "romaji": "kenryoku",
+    "meaning": "권력",
+    "level": "N1"
+  },
+  {
+    "kanji": "言論",
+    "kana": "げんろん",
+    "romaji": "genron",
+    "meaning": "언론",
+    "level": "N1"
+  },
+  {
+    "kanji": "語彙",
+    "kana": "ごい",
+    "romaji": "goi",
+    "meaning": "어휘",
+    "level": "N1"
+  },
+  {
+    "kanji": "恋する",
+    "kana": "こいする",
+    "romaji": "koisuru",
+    "meaning": "연애하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "甲",
+    "kana": "こう",
+    "romaji": "kou",
+    "meaning": "갑. 제1",
+    "level": "N1"
+  },
+  {
+    "kanji": "好意",
+    "kana": "こうい",
+    "romaji": "koui",
+    "meaning": "호의",
+    "level": "N1"
+  },
+  {
+    "kanji": "行為",
+    "kana": "こうい",
+    "romaji": "koui",
+    "meaning": "행위",
+    "level": "N1"
+  },
+  {
+    "kanji": "合意",
+    "kana": "ごうい",
+    "romaji": "goui",
+    "meaning": "합의",
+    "level": "N1"
+  },
+  {
+    "kanji": "公演",
+    "kana": "こうえん",
+    "romaji": "kouen",
+    "meaning": "공연",
+    "level": "N1"
+  },
+  {
+    "kanji": "後悔",
+    "kana": "こうかい",
+    "romaji": "koukai",
+    "meaning": "후회",
+    "level": "N1"
+  },
+  {
+    "kanji": "航海",
+    "kana": "こうかい",
+    "romaji": "koukai",
+    "meaning": "항해",
+    "level": "N1"
+  },
+  {
+    "kanji": "抗議",
+    "kana": "こうぎ",
+    "romaji": "kougi",
+    "meaning": "항의",
+    "level": "N1"
+  },
+  {
+    "kanji": "皇居",
+    "kana": "こうきょ",
+    "romaji": "koukyo",
+    "meaning": "일왕의 거처",
+    "level": "N1"
+  },
+  {
+    "kanji": "興業",
+    "kana": "こうぎょう",
+    "romaji": "kougyou",
+    "meaning": "흥업",
+    "level": "N1"
+  },
+  {
+    "kanji": "好況",
+    "kana": "こうきょう",
+    "romaji": "koukyou",
+    "meaning": "호황. 호경기",
+    "level": "N1"
+  },
+  {
+    "kanji": "鉱業",
+    "kana": "こうぎょう",
+    "romaji": "kougyou",
+    "meaning": "광업",
+    "level": "N1"
+  },
+  {
+    "kanji": "高原",
+    "kana": "こうげん",
+    "romaji": "kougen",
+    "meaning": "고원. 높은 지대",
+    "level": "N1"
+  },
+  {
+    "kanji": "考古学",
+    "kana": "こうこがく",
+    "romaji": "koukogaku",
+    "meaning": "고고학",
+    "level": "N1"
+  },
+  {
+    "kanji": "交互に",
+    "kana": "こうごに",
+    "romaji": "kougon\\'i",
+    "meaning": "번갈아",
+    "level": "N1"
+  },
+  {
+    "kanji": "工作",
+    "kana": "こうさく",
+    "romaji": "kousaku",
+    "meaning": "공작",
+    "level": "N1"
+  },
+  {
+    "kanji": "鉱山",
+    "kana": "こうざん",
+    "romaji": "kouzan",
+    "meaning": "광산",
+    "level": "N1"
+  },
+  {
+    "kanji": "講習",
+    "kana": "こうしゅう",
+    "romaji": "koushuu",
+    "meaning": "강습",
+    "level": "N1"
+  },
+  {
+    "kanji": "口述",
+    "kana": "こうじゅつ",
+    "romaji": "koujutsu",
+    "meaning": "구술",
+    "level": "N1"
+  },
+  {
+    "kanji": "控除",
+    "kana": "こうじょ",
+    "romaji": "koujo",
+    "meaning": "공제",
+    "level": "N1"
+  },
+  {
+    "kanji": "交渉",
+    "kana": "こうしょう",
+    "romaji": "koushou",
+    "meaning": "교섭",
+    "level": "N1"
+  },
+  {
+    "kanji": "高尚な",
+    "kana": "こうしょうな",
+    "romaji": "koushoun\\'a",
+    "meaning": "고상한",
+    "level": "N1"
+  },
+  {
+    "kanji": "行進",
+    "kana": "こうしん",
+    "romaji": "koushin",
+    "meaning": "행진",
+    "level": "N1"
+  },
+  {
+    "kanji": "香辛料",
+    "kana": "こうしんりょう",
+    "romaji": "koushinryou",
+    "meaning": "향신료",
+    "level": "N1"
+  },
+  {
+    "kanji": "洪水",
+    "kana": "こうずい",
+    "romaji": "kouzui",
+    "meaning": "홍수",
+    "level": "N1"
+  },
+  {
+    "kanji": "降水",
+    "kana": "こうすい",
+    "romaji": "kousui",
+    "meaning": "강수",
+    "level": "N1"
+  },
+  {
+    "kanji": "合成",
+    "kana": "ごうせい",
+    "romaji": "gousei",
+    "meaning": "합성",
+    "level": "N1"
+  },
+  {
+    "kanji": "公然と",
+    "kana": "こうぜんと",
+    "romaji": "kouzento",
+    "meaning": "공공연하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "抗争",
+    "kana": "こうそう",
+    "romaji": "kousou",
+    "meaning": "항쟁",
+    "level": "N1"
+  },
+  {
+    "kanji": "構想",
+    "kana": "こうそう",
+    "romaji": "kousou",
+    "meaning": "구상",
+    "level": "N1"
+  },
+  {
+    "kanji": "拘束",
+    "kana": "こうそく",
+    "romaji": "kousoku",
+    "meaning": "구속",
+    "level": "N1"
+  },
+  {
+    "kanji": "後退",
+    "kana": "こうたい",
+    "romaji": "koutai",
+    "meaning": "후퇴",
+    "level": "N1"
+  },
+  {
+    "kanji": "光沢",
+    "kana": "こうたく",
+    "romaji": "koutaku",
+    "meaning": "광택. 윤",
+    "level": "N1"
+  },
+  {
+    "kanji": "公団",
+    "kana": "こうだん",
+    "romaji": "koudan",
+    "meaning": "공단",
+    "level": "N1"
+  },
+  {
+    "kanji": "口頭",
+    "kana": "こうとう",
+    "romaji": "koutou",
+    "meaning": "구두. 입으로 말함",
+    "level": "N1"
+  },
+  {
+    "kanji": "講読",
+    "kana": "こうどく",
+    "romaji": "koudoku",
+    "meaning": "강독",
+    "level": "N1"
+  },
+  {
+    "kanji": "購読",
+    "kana": "こうどく",
+    "romaji": "koudoku",
+    "meaning": "구독",
+    "level": "N1"
+  },
+  {
+    "kanji": "購入",
+    "kana": "こうにゅう",
+    "romaji": "koun\\'yuu",
+    "meaning": "구입",
+    "level": "N1"
+  },
+  {
+    "kanji": "公認",
+    "kana": "こうにん",
+    "romaji": "koun\\'in",
+    "meaning": "공인. 공적인 인정",
+    "level": "N1"
+  },
+  {
+    "kanji": "光熱費",
+    "kana": "こうねつひ",
+    "romaji": "koun\\'etsuhi",
+    "meaning": "광열비",
+    "level": "N1"
+  },
+  {
+    "kanji": "荒廃",
+    "kana": "こうはい",
+    "romaji": "kouhai",
+    "meaning": "황폐",
+    "level": "N1"
+  },
+  {
+    "kanji": "購買",
+    "kana": "こうばい",
+    "romaji": "koubai",
+    "meaning": "구매",
+    "level": "N1"
+  },
+  {
+    "kanji": "好評",
+    "kana": "こうひょう",
+    "romaji": "kouhyou",
+    "meaning": "호평",
+    "level": "N1"
+  },
+  {
+    "kanji": "交付",
+    "kana": "こうふ",
+    "romaji": "koufu",
+    "meaning": "교부",
+    "level": "N1"
+  },
+  {
+    "kanji": "降伏/降服",
+    "kana": "こうふく",
+    "romaji": "koufuku",
+    "meaning": "항복",
+    "level": "N1"
+  },
+  {
+    "kanji": "興奮",
+    "kana": "こうふん",
+    "romaji": "koufun",
+    "meaning": "흥분",
+    "level": "N1"
+  },
+  {
+    "kanji": "公募",
+    "kana": "こうぼ",
+    "romaji": "koubo",
+    "meaning": "공모",
+    "level": "N1"
+  },
+  {
+    "kanji": "巧妙な",
+    "kana": "こうみょうな",
+    "romaji": "koumyoun\\'a",
+    "meaning": "교묘한",
+    "level": "N1"
+  },
+  {
+    "kanji": "公用",
+    "kana": "こうよう",
+    "romaji": "kouyou",
+    "meaning": "공용. 공무",
+    "level": "N1"
+  },
+  {
+    "kanji": "小売(り)",
+    "kana": "こうり",
+    "romaji": "kouri",
+    "meaning": "소매(상)",
+    "level": "N1"
+  },
+  {
+    "kanji": "効率",
+    "kana": "こうりつ",
+    "romaji": "kouritsu",
+    "meaning": "효율",
+    "level": "N1"
+  },
+  {
+    "kanji": "護衛",
+    "kana": "ごえい",
+    "romaji": "goei",
+    "meaning": "호위",
+    "level": "N1"
+  },
+  {
+    "kanji": "コーナー",
+    "kana": "コーナー",
+    "romaji": "ko-n\\'a-",
+    "meaning": "코너",
+    "level": "N1"
+  },
+  {
+    "kanji": "小柄な",
+    "kana": "こがらな",
+    "romaji": "kogaran\\'a",
+    "meaning": "몸집 모양 무늬 등이 작은",
+    "level": "N1"
+  },
+  {
+    "kanji": "小切手",
+    "kana": "こぎって",
+    "romaji": "kogitte",
+    "meaning": "수표",
+    "level": "N1"
+  },
+  {
+    "kanji": "国定",
+    "kana": "こくてい",
+    "romaji": "kokutei",
+    "meaning": "국정 (나라가 정함)",
+    "level": "N1"
+  },
+  {
+    "kanji": "告白",
+    "kana": "こくはく",
+    "romaji": "kokuhaku",
+    "meaning": "고백",
+    "level": "N1"
+  },
+  {
+    "kanji": "国防",
+    "kana": "こくぼう",
+    "romaji": "kokubou",
+    "meaning": "국방",
+    "level": "N1"
+  },
+  {
+    "kanji": "国有",
+    "kana": "こくゆう",
+    "romaji": "kokuyuu",
+    "meaning": "국유",
+    "level": "N1"
+  },
+  {
+    "kanji": "極楽",
+    "kana": "ごくらく",
+    "romaji": "gokuraku",
+    "meaning": "극락",
+    "level": "N1"
+  },
+  {
+    "kanji": "国連",
+    "kana": "こくれん",
+    "romaji": "kokuren",
+    "meaning": "UN",
+    "level": "N1"
+  },
+  {
+    "kanji": "焦(げ)茶色",
+    "kana": "こげちゃいろ",
+    "romaji": "kogechairo",
+    "meaning": "짙은 갈색",
+    "level": "N1"
+  },
+  {
+    "kanji": "語源",
+    "kana": "ごげん",
+    "romaji": "gogen",
+    "meaning": "어원",
+    "level": "N1"
+  },
+  {
+    "kanji": "個々",
+    "kana": "ここ",
+    "romaji": "koko",
+    "meaning": "개개. 낱낱. 하나하나",
+    "level": "N1"
+  },
+  {
+    "kanji": "心地",
+    "kana": "ここち",
+    "romaji": "kokochi",
+    "meaning": "기분. 마음. 느낌",
+    "level": "N1"
+  },
+  {
+    "kanji": "心得",
+    "kana": "こころえ",
+    "romaji": "kokoroe",
+    "meaning": "소양. 지식",
+    "level": "N1"
+  },
+  {
+    "kanji": "心掛け",
+    "kana": "こころがけ",
+    "romaji": "kokorogake",
+    "meaning": "마음가짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "心掛ける",
+    "kana": "こころがける",
+    "romaji": "kokorogakeru",
+    "meaning": "항상 주의하다. 유의하다. 명심하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "志",
+    "kana": "こころざし",
+    "romaji": "kokorozashi",
+    "meaning": "뜻. 하려고 하는 의지",
+    "level": "N1"
+  },
+  {
+    "kanji": "志す",
+    "kana": "こころざす",
+    "romaji": "kokorozasu",
+    "meaning": "뜻하다. 뜻을 두다",
+    "level": "N1"
+  },
+  {
+    "kanji": "心強い",
+    "kana": "こころづよい",
+    "romaji": "kokorozuyoi",
+    "meaning": "마음 든든하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "心細い",
+    "kana": "こころぼそい",
+    "romaji": "kokorobosoi",
+    "meaning": "어쩐지 마음이 안 놓이다. 불안하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "試み",
+    "kana": "こころみ",
+    "romaji": "kokoromi",
+    "meaning": "시도. 시행",
+    "level": "N1"
+  },
+  {
+    "kanji": "試みる",
+    "kana": "こころみる",
+    "romaji": "kokoromiru",
+    "meaning": "시험해 보다. 시도해 보다",
+    "level": "N1"
+  },
+  {
+    "kanji": "快く",
+    "kana": "こころよく",
+    "romaji": "kokoroyoku",
+    "meaning": "쾌히. 기분 좋게. 남에 대해 호의적으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "誤差",
+    "kana": "ごさ",
+    "romaji": "gosa",
+    "meaning": "오차",
+    "level": "N1"
+  },
+  {
+    "kanji": "孤児",
+    "kana": "こじ",
+    "romaji": "koji",
+    "meaning": "고아",
+    "level": "N1"
+  },
+  {
+    "kanji": "こじれる",
+    "kana": "こじれる",
+    "romaji": "kojireru",
+    "meaning": "악화되다. 복잡해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "故人",
+    "kana": "こじん",
+    "romaji": "kojin",
+    "meaning": "고인. 죽은 사람",
+    "level": "N1"
+  },
+  {
+    "kanji": "こす",
+    "kana": "こす",
+    "romaji": "kosu",
+    "meaning": "거르다. 밭다. 여과하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "こずえ",
+    "kana": "こずえ",
+    "romaji": "kozue",
+    "meaning": "나뭇가지 끝. 우듬지",
+    "level": "N1"
+  },
+  {
+    "kanji": "個性",
+    "kana": "こせい",
+    "romaji": "kosei",
+    "meaning": "개성",
+    "level": "N1"
+  },
+  {
+    "kanji": "戸籍",
+    "kana": "こせき",
+    "romaji": "koseki",
+    "meaning": "호적",
+    "level": "N1"
+  },
+  {
+    "kanji": "小銭",
+    "kana": "こぜに",
+    "romaji": "kozen\\'i",
+    "meaning": "잔돈",
+    "level": "N1"
+  },
+  {
+    "kanji": "古代",
+    "kana": "こだい",
+    "romaji": "kodai",
+    "meaning": "고대",
+    "level": "N1"
+  },
+  {
+    "kanji": "こたつ",
+    "kana": "こたつ",
+    "romaji": "kotatsu",
+    "meaning": "일본 난방 기구의 하나",
+    "level": "N1"
+  },
+  {
+    "kanji": "こだわる",
+    "kana": "こだわる",
+    "romaji": "kodawaru",
+    "meaning": "구애되다. 작은 일에 트집을 잡다",
+    "level": "N1"
+  },
+  {
+    "kanji": "誇張",
+    "kana": "こちょう",
+    "romaji": "kochou",
+    "meaning": "과장",
+    "level": "N1"
+  },
+  {
+    "kanji": "滑稽な",
+    "kana": "こっけいな",
+    "romaji": "kokkein\\'a",
+    "meaning": "우스운. 익살맞은. 우스꽝스러운",
+    "level": "N1"
+  },
+  {
+    "kanji": "国交",
+    "kana": "こっこう",
+    "romaji": "kokkou",
+    "meaning": "국교",
+    "level": "N1"
+  },
+  {
+    "kanji": "骨董品",
+    "kana": "こっとうひん",
+    "romaji": "kottouhin",
+    "meaning": "골동품",
+    "level": "N1"
+  },
+  {
+    "kanji": "固定",
+    "kana": "こてい",
+    "romaji": "kotei",
+    "meaning": "고정",
+    "level": "N1"
+  },
+  {
+    "kanji": "事柄",
+    "kana": "ことがら",
+    "romaji": "kotogara",
+    "meaning": "사항. 일",
+    "level": "N1"
+  },
+  {
+    "kanji": "孤独な",
+    "kana": "こどくな",
+    "romaji": "kodokun\\'a",
+    "meaning": "고독한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ことごとく",
+    "kana": "ことごとく",
+    "romaji": "kotogotoku",
+    "meaning": "전부. 모두. 모조리",
+    "level": "N1"
+  },
+  {
+    "kanji": "ことづけ",
+    "kana": "ことづけ",
+    "romaji": "kotozuke",
+    "meaning": "전언",
+    "level": "N1"
+  },
+  {
+    "kanji": "ことに",
+    "kana": "ことに",
+    "romaji": "koton\\'i",
+    "meaning": "각별히. 특히. 그위에. 게다가",
+    "level": "N1"
+  },
+  {
+    "kanji": "事によると",
+    "kana": "ことによると",
+    "romaji": "koton\\'iyoruto",
+    "meaning": "어쩌면. 경우에 따라서는",
+    "level": "N1"
+  },
+  {
+    "kanji": "粉々に",
+    "kana": "こなごなに",
+    "romaji": "kon\\'agon\\'an\\'i",
+    "meaning": "산산이 (부서짐). 산산조각. 박살이 남",
+    "level": "N1"
+  },
+  {
+    "kanji": "好ましい",
+    "kana": "このましい",
+    "romaji": "kon\\'omashii",
+    "meaning": "마음에 들다. 호감이 가다. 바람직하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "個別",
+    "kana": "こべつ",
+    "romaji": "kobetsu",
+    "meaning": "개별. 하나하나",
+    "level": "N1"
+  },
+  {
+    "kanji": "コマーシャル",
+    "kana": "コマーシャル",
+    "romaji": "koma-sharu",
+    "meaning": "커머셜. 방송광고",
+    "level": "N1"
+  },
+  {
+    "kanji": "ごまかす",
+    "kana": "ごまかす",
+    "romaji": "gomakasu",
+    "meaning": "거짓 꾸미다. 속이다. 어물어물 넘기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "細やかな",
+    "kana": "こまやかな",
+    "romaji": "komayakan\\'a",
+    "meaning": "자세한. 섬세한",
+    "level": "N1"
+  },
+  {
+    "kanji": "コメント",
+    "kana": "コメント",
+    "romaji": "komento",
+    "meaning": "코멘트",
+    "level": "N1"
+  },
+  {
+    "kanji": "こもる",
+    "kana": "こもる",
+    "romaji": "komoru",
+    "meaning": "자옥하다. 가득 차다. 담기다. 틀어박히다",
+    "level": "N1"
+  },
+  {
+    "kanji": "固有",
+    "kana": "こゆう",
+    "romaji": "koyuu",
+    "meaning": "고유",
+    "level": "N1"
+  },
+  {
+    "kanji": "暦",
+    "kana": "こよみ",
+    "romaji": "koyomi",
+    "meaning": "달력",
+    "level": "N1"
+  },
+  {
+    "kanji": "凝らす",
+    "kana": "こらす",
+    "romaji": "korasu",
+    "meaning": "엉기게 하다. 한곳에 집중시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "孤立",
+    "kana": "こりつ",
+    "romaji": "koritsu",
+    "meaning": "고립",
+    "level": "N1"
+  },
+  {
+    "kanji": "懲りる",
+    "kana": "こりる",
+    "romaji": "koriru",
+    "meaning": "넌더리 나다. 질리다. 싫증을 내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "凝る",
+    "kana": "こる",
+    "romaji": "koru",
+    "meaning": "(어깨가)뻐근하다. 열중하다. 공들여 만들다",
+    "level": "N1"
+  },
+  {
+    "kanji": "根気",
+    "kana": "こんき",
+    "romaji": "konki",
+    "meaning": "근기. 끈기",
+    "level": "N1"
+  },
+  {
+    "kanji": "根拠",
+    "kana": "こんきょ",
+    "romaji": "konkyo",
+    "meaning": "근거",
+    "level": "N1"
+  },
+  {
+    "kanji": "混血",
+    "kana": "こんけつ",
+    "romaji": "konketsu",
+    "meaning": "혼혈",
+    "level": "N1"
+  },
+  {
+    "kanji": "コンタクト",
+    "kana": "コンタクト",
+    "romaji": "kontakuto",
+    "meaning": "콘택트. 접촉. (콘택트)렌즈",
+    "level": "N1"
+  },
+  {
+    "kanji": "昆虫",
+    "kana": "こんちゅう",
+    "romaji": "konchuu",
+    "meaning": "곤충",
+    "level": "N1"
+  },
+  {
+    "kanji": "根底",
+    "kana": "こんてい",
+    "romaji": "kontei",
+    "meaning": "근저. 근본 토대",
+    "level": "N1"
+  },
+  {
+    "kanji": "コンテスト",
+    "kana": "コンテスト",
+    "romaji": "kontesuto",
+    "meaning": "콘테스트",
+    "level": "N1"
+  },
+  {
+    "kanji": "混同",
+    "kana": "こんどう",
+    "romaji": "kondou",
+    "meaning": "혼동",
+    "level": "N1"
+  },
+  {
+    "kanji": "コントラスト",
+    "kana": "コントラスト",
+    "romaji": "kontorasuto",
+    "meaning": "콘트라스트. 대조. 대비",
+    "level": "N1"
+  },
+  {
+    "kanji": "コントロール",
+    "kana": "コントロール",
+    "romaji": "kontoro-ru",
+    "meaning": "컨트롤",
+    "level": "N1"
+  },
+  {
+    "kanji": "根本",
+    "kana": "こんぽん",
+    "romaji": "konpon",
+    "meaning": "근본",
+    "level": "N1"
+  },
+  {
+    "kanji": "財",
+    "kana": "ざい",
+    "romaji": "zai",
+    "meaning": "재. 재물. 재산",
+    "level": "N1"
+  },
+  {
+    "kanji": "再会",
+    "kana": "さいかい",
+    "romaji": "saikai",
+    "meaning": "재회",
+    "level": "N1"
+  },
+  {
+    "kanji": "災害",
+    "kana": "さいがい",
+    "romaji": "saigai",
+    "meaning": "재해",
+    "level": "N1"
+  },
+  {
+    "kanji": "細菌",
+    "kana": "さいきん",
+    "romaji": "saikin",
+    "meaning": "세균",
+    "level": "N1"
+  },
+  {
+    "kanji": "細工",
+    "kana": "さいく",
+    "romaji": "saiku",
+    "meaning": "세공. 세공품. 농간. 잔꾀",
+    "level": "N1"
+  },
+  {
+    "kanji": "採掘",
+    "kana": "さいくつ",
+    "romaji": "saikutsu",
+    "meaning": "채굴",
+    "level": "N1"
+  },
+  {
+    "kanji": "サイクル",
+    "kana": "サイクル",
+    "romaji": "saikuru",
+    "meaning": "사이클",
+    "level": "N1"
+  },
+  {
+    "kanji": "採決",
+    "kana": "さいけつ",
+    "romaji": "saiketsu",
+    "meaning": "채결",
+    "level": "N1"
+  },
+  {
+    "kanji": "再建",
+    "kana": "さいけん",
+    "romaji": "saiken",
+    "meaning": "재건",
+    "level": "N1"
+  },
+  {
+    "kanji": "再現",
+    "kana": "さいげん",
+    "romaji": "saigen",
+    "meaning": "재현",
+    "level": "N1"
+  },
+  {
+    "kanji": "財源",
+    "kana": "ざいげん",
+    "romaji": "zaigen",
+    "meaning": "재원",
+    "level": "N1"
+  },
+  {
+    "kanji": "在庫",
+    "kana": "ざいこ",
+    "romaji": "zaiko",
+    "meaning": "재고",
+    "level": "N1"
+  },
+  {
+    "kanji": "採算",
+    "kana": "さいさん",
+    "romaji": "saisan",
+    "meaning": "채산",
+    "level": "N1"
+  },
+  {
+    "kanji": "採集",
+    "kana": "さいしゅう",
+    "romaji": "saishuu",
+    "meaning": "채집",
+    "level": "N1"
+  },
+  {
+    "kanji": "財政",
+    "kana": "ざいせい",
+    "romaji": "zaisei",
+    "meaning": "재정",
+    "level": "N1"
+  },
+  {
+    "kanji": "最善",
+    "kana": "さいぜん",
+    "romaji": "saizen",
+    "meaning": "최선",
+    "level": "N1"
+  },
+  {
+    "kanji": "採択",
+    "kana": "さいたく",
+    "romaji": "saitaku",
+    "meaning": "채택",
+    "level": "N1"
+  },
+  {
+    "kanji": "栽培",
+    "kana": "さいばい",
+    "romaji": "saibai",
+    "meaning": "재배",
+    "level": "N1"
+  },
+  {
+    "kanji": "再発",
+    "kana": "さいはつ",
+    "romaji": "saihatsu",
+    "meaning": "재발. 병 따위가 다시 발병함",
+    "level": "N1"
+  },
+  {
+    "kanji": "細胞",
+    "kana": "さいぼう",
+    "romaji": "saibou",
+    "meaning": "세포",
+    "level": "N1"
+  },
+  {
+    "kanji": "採用",
+    "kana": "さいよう",
+    "romaji": "saiyou",
+    "meaning": "채용",
+    "level": "N1"
+  },
+  {
+    "kanji": "遮る",
+    "kana": "さえぎる",
+    "romaji": "saegiru",
+    "meaning": "(1G) 가리다. 막다. 차단하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さえずる",
+    "kana": "さえずる",
+    "romaji": "saezuru",
+    "meaning": "지저귀다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さえる",
+    "kana": "さえる",
+    "romaji": "saeru",
+    "meaning": "선명하다. (머리가)맑아지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さお",
+    "kana": "さお",
+    "romaji": "sao",
+    "meaning": "장대",
+    "level": "N1"
+  },
+  {
+    "kanji": "栄える",
+    "kana": "さかえる",
+    "romaji": "sakaeru",
+    "meaning": "성해지다. 번영하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "差額",
+    "kana": "さがく",
+    "romaji": "sagaku",
+    "meaning": "차액",
+    "level": "N1"
+  },
+  {
+    "kanji": "杯",
+    "kana": "さかずき",
+    "romaji": "sakazuki",
+    "meaning": "술잔",
+    "level": "N1"
+  },
+  {
+    "kanji": "逆立ち",
+    "kana": "さかだち",
+    "romaji": "sakadachi",
+    "meaning": "거꾸로 섬. 곤두섬. 물구나무서기",
+    "level": "N1"
+  },
+  {
+    "kanji": "詐欺",
+    "kana": "さぎ",
+    "romaji": "sagi",
+    "meaning": "사기",
+    "level": "N1"
+  },
+  {
+    "kanji": "先に",
+    "kana": "さきに",
+    "romaji": "sakin\\'i",
+    "meaning": "이전에. 전에. 먼저",
+    "level": "N1"
+  },
+  {
+    "kanji": "柵",
+    "kana": "さく",
+    "romaji": "saku",
+    "meaning": "울타리. 울짱",
+    "level": "N1"
+  },
+  {
+    "kanji": "策",
+    "kana": "さく",
+    "romaji": "saku",
+    "meaning": "대책",
+    "level": "N1"
+  },
+  {
+    "kanji": "裂く",
+    "kana": "さく",
+    "romaji": "saku",
+    "meaning": "찢다. 쪼개다",
+    "level": "N1"
+  },
+  {
+    "kanji": "削減",
+    "kana": "さくげん",
+    "romaji": "sakugen",
+    "meaning": "삭감",
+    "level": "N1"
+  },
+  {
+    "kanji": "錯誤",
+    "kana": "さくご",
+    "romaji": "sakugo",
+    "meaning": "착오",
+    "level": "N1"
+  },
+  {
+    "kanji": "作戦",
+    "kana": "さくせん",
+    "romaji": "sakusen",
+    "meaning": "작전",
+    "level": "N1"
+  },
+  {
+    "kanji": "叫び",
+    "kana": "さけび",
+    "romaji": "sakebi",
+    "meaning": "외침. 부르짖음",
+    "level": "N1"
+  },
+  {
+    "kanji": "裂ける",
+    "kana": "さける",
+    "romaji": "sakeru",
+    "meaning": "찢어지다. 터지다. 갈라지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "捧げる",
+    "kana": "ささげる",
+    "romaji": "sasageru",
+    "meaning": "바치다. 받들어 올리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "差し掛かる",
+    "kana": "さしかかる",
+    "romaji": "sashikakaru",
+    "meaning": "접어들다. 다다르다. 당도하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "指図",
+    "kana": "さしず",
+    "romaji": "sashizu",
+    "meaning": "지시. 지휘",
+    "level": "N1"
+  },
+  {
+    "kanji": "差し出す",
+    "kana": "さしだす",
+    "romaji": "sashidasu",
+    "meaning": "내밀다. 발송하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "差し支える",
+    "kana": "さしつかえる",
+    "romaji": "sashitsukaeru",
+    "meaning": "지장이 있다",
+    "level": "N1"
+  },
+  {
+    "kanji": "差(し)引(き)",
+    "kana": "さしひき",
+    "romaji": "sashihiki",
+    "meaning": "차감. 공제",
+    "level": "N1"
+  },
+  {
+    "kanji": "授ける",
+    "kana": "さずける",
+    "romaji": "sazukeru",
+    "meaning": "주다. 하사하다. 전수하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さする",
+    "kana": "さする",
+    "romaji": "sasuru",
+    "meaning": "가볍게 문지르다. 어루만지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さぞ",
+    "kana": "さぞ",
+    "romaji": "sazo",
+    "meaning": "추측건대. 필시. 틀림없이",
+    "level": "N1"
+  },
+  {
+    "kanji": "定まる",
+    "kana": "さだまる",
+    "romaji": "sadamaru",
+    "meaning": "정해지다. 결정되다. 일정해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "定める",
+    "kana": "さだめる",
+    "romaji": "sadameru",
+    "meaning": "정하다. 결정하다. 제정하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "座談会",
+    "kana": "ざだんかい",
+    "romaji": "zadankai",
+    "meaning": "좌담회",
+    "level": "N1"
+  },
+  {
+    "kanji": "雑貨",
+    "kana": "ざっか",
+    "romaji": "zakka",
+    "meaning": "잡화",
+    "level": "N1"
+  },
+  {
+    "kanji": "早急に",
+    "kana": "さっきゅうに",
+    "romaji": "sakkyuun\\'i",
+    "meaning": "조급히. 지급 ＝そうきゅうに",
+    "level": "N1"
+  },
+  {
+    "kanji": "殺人",
+    "kana": "さつじん",
+    "romaji": "satsujin",
+    "meaning": "살인",
+    "level": "N1"
+  },
+  {
+    "kanji": "察する",
+    "kana": "さっする",
+    "romaji": "sassuru",
+    "meaning": "헤아리다. 살피다",
+    "level": "N1"
+  },
+  {
+    "kanji": "さっと",
+    "kana": "さっと",
+    "romaji": "satto",
+    "meaning": "날렵하게. 휭하니. 휙. 쏴",
+    "level": "N1"
+  },
+  {
+    "kanji": "雑な",
+    "kana": "ざつな",
+    "romaji": "zatsun\\'a",
+    "meaning": "조잡한. 엉성한",
+    "level": "N1"
+  },
+  {
+    "kanji": "悟る",
+    "kana": "さとる",
+    "romaji": "satoru",
+    "meaning": "깨닫다. 분명히 이해하다. 진리를 터득하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "最中",
+    "kana": "さなか",
+    "romaji": "san\\'aka",
+    "meaning": "한창 …인 때",
+    "level": "N1"
+  },
+  {
+    "kanji": "裁く",
+    "kana": "さばく",
+    "romaji": "sabaku",
+    "meaning": "판가름하다. 재판하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "座標",
+    "kana": "ざひょう",
+    "romaji": "zahyou",
+    "meaning": "좌표",
+    "level": "N1"
+  },
+  {
+    "kanji": "さほど",
+    "kana": "さほど",
+    "romaji": "sahodo",
+    "meaning": "그다지. 별로",
+    "level": "N1"
+  },
+  {
+    "kanji": "寒け",
+    "kana": "さむけ",
+    "romaji": "samuke",
+    "meaning": "한기. 오한",
+    "level": "N1"
+  },
+  {
+    "kanji": "侍",
+    "kana": "さむらい",
+    "romaji": "samurai",
+    "meaning": "무사",
+    "level": "N1"
+  },
+  {
+    "kanji": "さも",
+    "kana": "さも",
+    "romaji": "samo",
+    "meaning": "참으로. 자못. 마치",
+    "level": "N1"
+  },
+  {
+    "kanji": "作用",
+    "kana": "さよう",
+    "romaji": "sayou",
+    "meaning": "작용",
+    "level": "N1"
+  },
+  {
+    "kanji": "さらう",
+    "kana": "さらう",
+    "romaji": "sarau",
+    "meaning": "가로채다. 날치기하다. 휩쓸다. 독차지하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "障る",
+    "kana": "さわる",
+    "romaji": "sawaru",
+    "meaning": "방해가 되다. 지장이 있다. 해롭다",
+    "level": "N1"
+  },
+  {
+    "kanji": "酸",
+    "kana": "さん",
+    "romaji": "san",
+    "meaning": "산 (신 것)",
+    "level": "N1"
+  },
+  {
+    "kanji": "酸化",
+    "kana": "さんか",
+    "romaji": "sanka",
+    "meaning": "산화",
+    "level": "N1"
+  },
+  {
+    "kanji": "山岳",
+    "kana": "さんがく",
+    "romaji": "sangaku",
+    "meaning": "산악",
+    "level": "N1"
+  },
+  {
+    "kanji": "参議院",
+    "kana": "さんぎいん",
+    "romaji": "sangiin",
+    "meaning": "참의원 (일본 국회를 구성하는 두 의원 중 하나)",
+    "level": "N1"
+  },
+  {
+    "kanji": "サンキュー",
+    "kana": "サンキュー",
+    "romaji": "sankyu-",
+    "meaning": "탱큐",
+    "level": "N1"
+  },
+  {
+    "kanji": "産休",
+    "kana": "さんきゅう",
+    "romaji": "sankyuu",
+    "meaning": "산휴. 출산휴가",
+    "level": "N1"
+  },
+  {
+    "kanji": "残金",
+    "kana": "ざんきん",
+    "romaji": "zankin",
+    "meaning": "잔금. 잔액",
+    "level": "N1"
+  },
+  {
+    "kanji": "産後",
+    "kana": "さんご",
+    "romaji": "sango",
+    "meaning": "산후",
+    "level": "N1"
+  },
+  {
+    "kanji": "残酷な",
+    "kana": "ざんこくな",
+    "romaji": "zankokun\\'a",
+    "meaning": "잔혹한",
+    "level": "N1"
+  },
+  {
+    "kanji": "産出",
+    "kana": "さんしゅつ",
+    "romaji": "sanshutsu",
+    "meaning": "산출",
+    "level": "N1"
+  },
+  {
+    "kanji": "参照",
+    "kana": "さんしょう",
+    "romaji": "sanshou",
+    "meaning": "참조",
+    "level": "N1"
+  },
+  {
+    "kanji": "参上",
+    "kana": "さんじょう",
+    "romaji": "sanjou",
+    "meaning": "찾아왔음",
+    "level": "N1"
+  },
+  {
+    "kanji": "残高",
+    "kana": "ざんだか",
+    "romaji": "zandaka",
+    "meaning": "잔고. 잔액",
+    "level": "N1"
+  },
+  {
+    "kanji": "サンタクロース",
+    "kana": "サンタクロース",
+    "romaji": "santakuro-su",
+    "meaning": "산타클로스",
+    "level": "N1"
+  },
+  {
+    "kanji": "桟橋",
+    "kana": "さんばし",
+    "romaji": "sanbashi",
+    "meaning": "잔교. 선창. 부두",
+    "level": "N1"
+  },
+  {
+    "kanji": "賛美",
+    "kana": "さんび",
+    "romaji": "sanbi",
+    "meaning": "찬미",
+    "level": "N1"
+  },
+  {
+    "kanji": "山腹",
+    "kana": "さんぷく",
+    "romaji": "sanpuku",
+    "meaning": "산허리. 산의 중턱",
+    "level": "N1"
+  },
+  {
+    "kanji": "産婦人科",
+    "kana": "さんふじんか",
+    "romaji": "sanfujinka",
+    "meaning": "산부인과",
+    "level": "N1"
+  },
+  {
+    "kanji": "産物",
+    "kana": "さんぶつ",
+    "romaji": "sanbutsu",
+    "meaning": "산물",
+    "level": "N1"
+  },
+  {
+    "kanji": "山脈",
+    "kana": "さんみゃく",
+    "romaji": "sanmyaku",
+    "meaning": "산맥",
+    "level": "N1"
+  },
+  {
+    "kanji": "死",
+    "kana": "し",
+    "romaji": "shi",
+    "meaning": "사. 죽음",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕上げ",
+    "kana": "しあげ",
+    "romaji": "shiage",
+    "meaning": "마무리. 완성시킴. 끝손질",
+    "level": "N1"
+  },
+  {
+    "kanji": "飼育",
+    "kana": "しいく",
+    "romaji": "shiiku",
+    "meaning": "사육",
+    "level": "N1"
+  },
+  {
+    "kanji": "強いて",
+    "kana": "しいて",
+    "romaji": "shiite",
+    "meaning": "억지로. 구태여",
+    "level": "N1"
+  },
+  {
+    "kanji": "シート",
+    "kana": "シート",
+    "romaji": "shi-to",
+    "meaning": "시트",
+    "level": "N1"
+  },
+  {
+    "kanji": "強いる",
+    "kana": "しいる",
+    "romaji": "shiiru",
+    "meaning": "강요하다. 강제하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕入れる",
+    "kana": "しいれる",
+    "romaji": "shiireru",
+    "meaning": "사들이다. 매입하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "潮",
+    "kana": "しお",
+    "romaji": "shio",
+    "meaning": "조수. 밀물. 썰물",
+    "level": "N1"
+  },
+  {
+    "kanji": "歯科",
+    "kana": "しか",
+    "romaji": "shika",
+    "meaning": "치과",
+    "level": "N1"
+  },
+  {
+    "kanji": "自我",
+    "kana": "じが",
+    "romaji": "jiga",
+    "meaning": "자아",
+    "level": "N1"
+  },
+  {
+    "kanji": "視覚",
+    "kana": "しかく",
+    "romaji": "shikaku",
+    "meaning": "시각",
+    "level": "N1"
+  },
+  {
+    "kanji": "資格",
+    "kana": "しかく",
+    "romaji": "shikaku",
+    "meaning": "자격",
+    "level": "N1"
+  },
+  {
+    "kanji": "自覚",
+    "kana": "じかく",
+    "romaji": "jikaku",
+    "meaning": "자각",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕掛け",
+    "kana": "しかけ",
+    "romaji": "shikake",
+    "meaning": "(특수하게 고안된)장치",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕掛ける",
+    "kana": "しかける",
+    "romaji": "shikakeru",
+    "meaning": "상대에게 적극적으로 작용하다. 장치하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "しかしながら",
+    "kana": "しかしながら",
+    "romaji": "shikashin\\'agara",
+    "meaning": "그렇지만. 그렇기는 하지만",
+    "level": "N1"
+  },
+  {
+    "kanji": "指揮",
+    "kana": "しき",
+    "romaji": "shiki",
+    "meaning": "지휘",
+    "level": "N1"
+  },
+  {
+    "kanji": "磁気",
+    "kana": "じき",
+    "romaji": "jiki",
+    "meaning": "자기",
+    "level": "N1"
+  },
+  {
+    "kanji": "色彩",
+    "kana": "しきさい",
+    "romaji": "shikisai",
+    "meaning": "색채",
+    "level": "N1"
+  },
+  {
+    "kanji": "式場",
+    "kana": "しきじょう",
+    "romaji": "shikijou",
+    "meaning": "식장",
+    "level": "N1"
+  },
+  {
+    "kanji": "しきたり",
+    "kana": "しきたり",
+    "romaji": "shikitari",
+    "meaning": "관습. 관례",
+    "level": "N1"
+  },
+  {
+    "kanji": "事業",
+    "kana": "じぎょう",
+    "romaji": "jigyou",
+    "meaning": "사업",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕切る",
+    "kana": "しきる",
+    "romaji": "shikiru",
+    "meaning": "(1G) 칸막이하다. 맡아서 처리하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "資金",
+    "kana": "しきん",
+    "romaji": "shikin",
+    "meaning": "자금",
+    "level": "N1"
+  },
+  {
+    "kanji": "軸",
+    "kana": "じく",
+    "romaji": "jiku",
+    "meaning": "축",
+    "level": "N1"
+  },
+  {
+    "kanji": "しくじる",
+    "kana": "しくじる",
+    "romaji": "shikujiru",
+    "meaning": "(1G) 실패하다. 실수하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕組(み)",
+    "kana": "しくみ",
+    "romaji": "shikumi",
+    "meaning": "짜임새. 구조",
+    "level": "N1"
+  },
+  {
+    "kanji": "死刑",
+    "kana": "しけい",
+    "romaji": "shikei",
+    "meaning": "사형",
+    "level": "N1"
+  },
+  {
+    "kanji": "しける",
+    "kana": "しける",
+    "romaji": "shikeru",
+    "meaning": "(1G) 습기가 차다",
+    "level": "N1"
+  },
+  {
+    "kanji": "自己",
+    "kana": "じこ",
+    "romaji": "jiko",
+    "meaning": "자기",
+    "level": "N1"
+  },
+  {
+    "kanji": "志向",
+    "kana": "しこう",
+    "romaji": "shikou",
+    "meaning": "지향",
+    "level": "N1"
+  },
+  {
+    "kanji": "施行",
+    "kana": "しこう",
+    "romaji": "shikou",
+    "meaning": "시행 (관용적으로 せこう라고 읽기도 함)",
+    "level": "N1"
+  },
+  {
+    "kanji": "事項",
+    "kana": "じこう",
+    "romaji": "jikou",
+    "meaning": "사항",
+    "level": "N1"
+  },
+  {
+    "kanji": "嗜好",
+    "kana": "しこう",
+    "romaji": "shikou",
+    "meaning": "기호",
+    "level": "N1"
+  },
+  {
+    "kanji": "地獄",
+    "kana": "じごく",
+    "romaji": "jigoku",
+    "meaning": "지옥",
+    "level": "N1"
+  },
+  {
+    "kanji": "時差",
+    "kana": "じさ",
+    "romaji": "jisa",
+    "meaning": "시차",
+    "level": "N1"
+  },
+  {
+    "kanji": "自在に",
+    "kana": "じざいに",
+    "romaji": "jizain\\'i",
+    "meaning": "자유자재로",
+    "level": "N1"
+  },
+  {
+    "kanji": "視察",
+    "kana": "しさつ",
+    "romaji": "shisatsu",
+    "meaning": "시찰",
+    "level": "N1"
+  },
+  {
+    "kanji": "資産",
+    "kana": "しさん",
+    "romaji": "shisan",
+    "meaning": "자산",
+    "level": "N1"
+  },
+  {
+    "kanji": "支持",
+    "kana": "しじ",
+    "romaji": "shiji",
+    "meaning": "지지",
+    "level": "N1"
+  },
+  {
+    "kanji": "自主",
+    "kana": "じしゅ",
+    "romaji": "jishu",
+    "meaning": "자주",
+    "level": "N1"
+  },
+  {
+    "kanji": "自首",
+    "kana": "じしゅ",
+    "romaji": "jishu",
+    "meaning": "자수",
+    "level": "N1"
+  },
+  {
+    "kanji": "刺繍",
+    "kana": "ししゅう",
+    "romaji": "shishuu",
+    "meaning": "자수",
+    "level": "N1"
+  },
+  {
+    "kanji": "市場",
+    "kana": "しじょう",
+    "romaji": "shijou",
+    "meaning": "(금융)시장",
+    "level": "N1"
+  },
+  {
+    "kanji": "辞職",
+    "kana": "じしょく",
+    "romaji": "jishoku",
+    "meaning": "사직",
+    "level": "N1"
+  },
+  {
+    "kanji": "滴",
+    "kana": "しずく",
+    "romaji": "shizuku",
+    "meaning": "물방울",
+    "level": "N1"
+  },
+  {
+    "kanji": "システム",
+    "kana": "システム",
+    "romaji": "shisutemu",
+    "meaning": "시스템",
+    "level": "N1"
+  },
+  {
+    "kanji": "沈める",
+    "kana": "しずめる",
+    "romaji": "shizumeru",
+    "meaning": "가라앉히다",
+    "level": "N1"
+  },
+  {
+    "kanji": "施設",
+    "kana": "しせつ",
+    "romaji": "shisetsu",
+    "meaning": "시설",
+    "level": "N1"
+  },
+  {
+    "kanji": "子息",
+    "kana": "しそく",
+    "romaji": "shisoku",
+    "meaning": "자식. 아들. 자제",
+    "level": "N1"
+  },
+  {
+    "kanji": "持続",
+    "kana": "じぞく",
+    "romaji": "jizoku",
+    "meaning": "지속",
+    "level": "N1"
+  },
+  {
+    "kanji": "自尊心",
+    "kana": "じそんしん",
+    "romaji": "jisonshin",
+    "meaning": "자존심",
+    "level": "N1"
+  },
+  {
+    "kanji": "事態",
+    "kana": "じたい",
+    "romaji": "jitai",
+    "meaning": "사태",
+    "level": "N1"
+  },
+  {
+    "kanji": "字体",
+    "kana": "じたい",
+    "romaji": "jitai",
+    "meaning": "자체. 글씨체",
+    "level": "N1"
+  },
+  {
+    "kanji": "辞退",
+    "kana": "じたい",
+    "romaji": "jitai",
+    "meaning": "사퇴",
+    "level": "N1"
+  },
+  {
+    "kanji": "慕う",
+    "kana": "したう",
+    "romaji": "shitau",
+    "meaning": "사모하다. 경모하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "下心",
+    "kana": "したごころ",
+    "romaji": "shitagokoro",
+    "meaning": "속마음. 속셈. 나쁜 음모",
+    "level": "N1"
+  },
+  {
+    "kanji": "下地",
+    "kana": "したじ",
+    "romaji": "shitaji",
+    "meaning": "밑바탕. 준비나 기초",
+    "level": "N1"
+  },
+  {
+    "kanji": "親しむ",
+    "kana": "したしむ",
+    "romaji": "shitashimu",
+    "meaning": "친하게 지내다. 즐기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "下調べ",
+    "kana": "したしらべ",
+    "romaji": "shitashirabe",
+    "meaning": "예비 조사",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕立てる",
+    "kana": "したてる",
+    "romaji": "shitateru",
+    "meaning": "만들다. 짓다. 준비하다. 마련하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "下火",
+    "kana": "したび",
+    "romaji": "shitabi",
+    "meaning": "한고비 지남. 한물 갔음",
+    "level": "N1"
+  },
+  {
+    "kanji": "実家",
+    "kana": "じっか",
+    "romaji": "jikka",
+    "meaning": "생가. 친정",
+    "level": "N1"
+  },
+  {
+    "kanji": "失格",
+    "kana": "しっかく",
+    "romaji": "shikkaku",
+    "meaning": "실격",
+    "level": "N1"
+  },
+  {
+    "kanji": "質疑",
+    "kana": "しつぎ",
+    "romaji": "shitsugi",
+    "meaning": "질의. 질문",
+    "level": "N1"
+  },
+  {
+    "kanji": "失脚",
+    "kana": "しっきゃく",
+    "romaji": "shikkyaku",
+    "meaning": "실각",
+    "level": "N1"
+  },
+  {
+    "kanji": "実業家",
+    "kana": "じつぎょうか",
+    "romaji": "jitsugyouka",
+    "meaning": "실업가. 사업가",
+    "level": "N1"
+  },
+  {
+    "kanji": "シックな",
+    "kana": "シックな",
+    "romaji": "shikkun\\'a",
+    "meaning": "(불어) 모양이 멋진. 세련된",
+    "level": "N1"
+  },
+  {
+    "kanji": "じっくり",
+    "kana": "じっくり",
+    "romaji": "jikkuri",
+    "meaning": "차분히. 곰곰이",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕付け",
+    "kana": "しつけ",
+    "romaji": "shitsuke",
+    "meaning": "예의범절을 가르침",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕付ける",
+    "kana": "しつける",
+    "romaji": "shitsukeru",
+    "meaning": "예의범절을 가르치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "実践",
+    "kana": "じっせん",
+    "romaji": "jissen",
+    "meaning": "실천",
+    "level": "N1"
+  },
+  {
+    "kanji": "質素な",
+    "kana": "しっそな",
+    "romaji": "shisson\\'a",
+    "meaning": "검소한",
+    "level": "N1"
+  },
+  {
+    "kanji": "実態",
+    "kana": "じったい",
+    "romaji": "jittai",
+    "meaning": "실태",
+    "level": "N1"
+  },
+  {
+    "kanji": "失調",
+    "kana": "しっちょう",
+    "romaji": "shicchou",
+    "meaning": "실조",
+    "level": "N1"
+  },
+  {
+    "kanji": "嫉妬",
+    "kana": "しっと",
+    "romaji": "shitto",
+    "meaning": "질투. 시샘",
+    "level": "N1"
+  },
+  {
+    "kanji": "実費",
+    "kana": "じっぴ",
+    "romaji": "jippi",
+    "meaning": "실비",
+    "level": "N1"
+  },
+  {
+    "kanji": "指摘",
+    "kana": "してき",
+    "romaji": "shiteki",
+    "meaning": "지적",
+    "level": "N1"
+  },
+  {
+    "kanji": "視点",
+    "kana": "してん",
+    "romaji": "shiten",
+    "meaning": "시점",
+    "level": "N1"
+  },
+  {
+    "kanji": "自転",
+    "kana": "じてん",
+    "romaji": "jiten",
+    "meaning": "자전",
+    "level": "N1"
+  },
+  {
+    "kanji": "自動詞",
+    "kana": "じどうし",
+    "romaji": "jidoushi",
+    "meaning": "자동사",
+    "level": "N1"
+  },
+  {
+    "kanji": "しとやかな",
+    "kana": "しとやかな",
+    "romaji": "shitoyakan\\'a",
+    "meaning": "정숙한. 우아한. 얌전한",
+    "level": "N1"
+  },
+  {
+    "kanji": "しなびる",
+    "kana": "しなびる",
+    "romaji": "shin\\'abiru",
+    "meaning": "시들다. 쭈그러들다",
+    "level": "N1"
+  },
+  {
+    "kanji": "しなやかな",
+    "kana": "しなやかな",
+    "romaji": "shin\\'ayakan\\'a",
+    "meaning": "낭창낭창한. 나긋나긋한. 자늑자늑한",
+    "level": "N1"
+  },
+  {
+    "kanji": "シナリオ",
+    "kana": "シナリオ",
+    "romaji": "shin\\'ario",
+    "meaning": "시나리오",
+    "level": "N1"
+  },
+  {
+    "kanji": "地主",
+    "kana": "じぬし",
+    "romaji": "jin\\'ushi",
+    "meaning": "지주",
+    "level": "N1"
+  },
+  {
+    "kanji": "しのぐ",
+    "kana": "しのぐ",
+    "romaji": "shin\\'ogu",
+    "meaning": "참고 견디어 내다. 헤어나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "芝",
+    "kana": "しば",
+    "romaji": "shiba",
+    "meaning": "잔디",
+    "level": "N1"
+  },
+  {
+    "kanji": "始発",
+    "kana": "しはつ",
+    "romaji": "shihatsu",
+    "meaning": "시발. 처음으로 출발함",
+    "level": "N1"
+  },
+  {
+    "kanji": "私物",
+    "kana": "しぶつ",
+    "romaji": "shibutsu",
+    "meaning": "사물. 개인 소유의 물건",
+    "level": "N1"
+  },
+  {
+    "kanji": "しぶとい",
+    "kana": "しぶとい",
+    "romaji": "shibutoi",
+    "meaning": "끈질기다. 완고하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "司法",
+    "kana": "しほう",
+    "romaji": "shihou",
+    "meaning": "사법",
+    "level": "N1"
+  },
+  {
+    "kanji": "志望",
+    "kana": "しぼう",
+    "romaji": "shibou",
+    "meaning": "지망",
+    "level": "N1"
+  },
+  {
+    "kanji": "脂肪",
+    "kana": "しぼう",
+    "romaji": "shibou",
+    "meaning": "지방",
+    "level": "N1"
+  },
+  {
+    "kanji": "始末",
+    "kana": "しまつ",
+    "romaji": "shimatsu",
+    "meaning": "나쁜 결과. 꼴. 전말. 자초지종",
+    "level": "N1"
+  },
+  {
+    "kanji": "染みる",
+    "kana": "しみる",
+    "romaji": "shimiru",
+    "meaning": "스며들다. 배다. 번지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "使命",
+    "kana": "しめい",
+    "romaji": "shimei",
+    "meaning": "사명",
+    "level": "N1"
+  },
+  {
+    "kanji": "地元",
+    "kana": "じもと",
+    "romaji": "jimoto",
+    "meaning": "그 고장. 그 지방",
+    "level": "N1"
+  },
+  {
+    "kanji": "視野",
+    "kana": "しや",
+    "romaji": "shiya",
+    "meaning": "시야",
+    "level": "N1"
+  },
+  {
+    "kanji": "-弱",
+    "kana": "じゃく",
+    "romaji": "jaku",
+    "meaning": "-약. 조금 모자람. 빠듯",
+    "level": "N1"
+  },
+  {
+    "kanji": "社交",
+    "kana": "しゃこう",
+    "romaji": "shakou",
+    "meaning": "사교",
+    "level": "N1"
+  },
+  {
+    "kanji": "ジャズ",
+    "kana": "ジャズ",
+    "romaji": "jazu",
+    "meaning": "재즈",
+    "level": "N1"
+  },
+  {
+    "kanji": "謝絶",
+    "kana": "しゃぜつ",
+    "romaji": "shazetsu",
+    "meaning": "사절",
+    "level": "N1"
+  },
+  {
+    "kanji": "社宅",
+    "kana": "しゃたく",
+    "romaji": "shataku",
+    "meaning": "사택",
+    "level": "N1"
+  },
+  {
+    "kanji": "若干",
+    "kana": "じゃっかん",
+    "romaji": "jakkan",
+    "meaning": "약간",
+    "level": "N1"
+  },
+  {
+    "kanji": "三味線",
+    "kana": "しゃみせん",
+    "romaji": "shamisen",
+    "meaning": "일본 고유의 현악기",
+    "level": "N1"
+  },
+  {
+    "kanji": "斜面",
+    "kana": "しゃめん",
+    "romaji": "shamen",
+    "meaning": "사면. 경사면",
+    "level": "N1"
+  },
+  {
+    "kanji": "砂利",
+    "kana": "じゃり",
+    "romaji": "jari",
+    "meaning": "자갈",
+    "level": "N1"
+  },
+  {
+    "kanji": "しゃれる",
+    "kana": "しゃれる",
+    "romaji": "shareru",
+    "meaning": "재치가 있다. 세련되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ジャンパー",
+    "kana": "ジャンパー",
+    "romaji": "janpa-",
+    "meaning": "점퍼",
+    "level": "N1"
+  },
+  {
+    "kanji": "ジャンプ",
+    "kana": "ジャンプ",
+    "romaji": "janpu",
+    "meaning": "점프",
+    "level": "N1"
+  },
+  {
+    "kanji": "ジャンボ",
+    "kana": "ジャンボ",
+    "romaji": "janbo",
+    "meaning": "점보",
+    "level": "N1"
+  },
+  {
+    "kanji": "ジャンル",
+    "kana": "ジャンル",
+    "romaji": "janru",
+    "meaning": "장르",
+    "level": "N1"
+  },
+  {
+    "kanji": "-種",
+    "kana": "しゅ",
+    "romaji": "shu",
+    "meaning": "-종 (종류)",
+    "level": "N1"
+  },
+  {
+    "kanji": "私有",
+    "kana": "しゆう",
+    "romaji": "shiyuu",
+    "meaning": "사유. 사적 소유",
+    "level": "N1"
+  },
+  {
+    "kanji": "-宗",
+    "kana": "しゅう",
+    "romaji": "shuu",
+    "meaning": "-종 (종문. 종파. 분파)",
+    "level": "N1"
+  },
+  {
+    "kanji": "収益",
+    "kana": "しゅうえき",
+    "romaji": "shuueki",
+    "meaning": "수익",
+    "level": "N1"
+  },
+  {
+    "kanji": "修学",
+    "kana": "しゅうがく",
+    "romaji": "shuugaku",
+    "meaning": "수학",
+    "level": "N1"
+  },
+  {
+    "kanji": "周期",
+    "kana": "しゅうき",
+    "romaji": "shuuki",
+    "meaning": "주기",
+    "level": "N1"
+  },
+  {
+    "kanji": "衆議院",
+    "kana": "しゅうぎいん",
+    "romaji": "shuugiin",
+    "meaning": "중의원 (일본 국회를 구성하는 두 의원 중 하나)",
+    "level": "N1"
+  },
+  {
+    "kanji": "就業",
+    "kana": "しゅうぎょう",
+    "romaji": "shuugyou",
+    "meaning": "취업. 일을 시작함",
+    "level": "N1"
+  },
+  {
+    "kanji": "従業員",
+    "kana": "じゅうぎょういん",
+    "romaji": "juugyouin",
+    "meaning": "종업원",
+    "level": "N1"
+  },
+  {
+    "kanji": "集計",
+    "kana": "しゅうけい",
+    "romaji": "shuukei",
+    "meaning": "집계",
+    "level": "N1"
+  },
+  {
+    "kanji": "襲撃",
+    "kana": "しゅうげき",
+    "romaji": "shuugeki",
+    "meaning": "습격",
+    "level": "N1"
+  },
+  {
+    "kanji": "収支",
+    "kana": "しゅうし",
+    "romaji": "shuushi",
+    "meaning": "수지",
+    "level": "N1"
+  },
+  {
+    "kanji": "終始",
+    "kana": "しゅうし",
+    "romaji": "shuushi",
+    "meaning": "시종. 내내. 줄곧",
+    "level": "N1"
+  },
+  {
+    "kanji": "従事",
+    "kana": "じゅうじ",
+    "romaji": "juuji",
+    "meaning": "종사",
+    "level": "N1"
+  },
+  {
+    "kanji": "終日",
+    "kana": "しゅうじつ",
+    "romaji": "shuujitsu",
+    "meaning": "종일",
+    "level": "N1"
+  },
+  {
+    "kanji": "充実",
+    "kana": "じゅうじつ",
+    "romaji": "juujitsu",
+    "meaning": "충실",
+    "level": "N1"
+  },
+  {
+    "kanji": "収集",
+    "kana": "しゅうしゅう",
+    "romaji": "shuushuu",
+    "meaning": "수집",
+    "level": "N1"
+  },
+  {
+    "kanji": "修飾",
+    "kana": "しゅうしょく",
+    "romaji": "shuushoku",
+    "meaning": "수식",
+    "level": "N1"
+  },
+  {
+    "kanji": "十字路",
+    "kana": "じゅうじろ",
+    "romaji": "juujiro",
+    "meaning": "십자로. 네거리",
+    "level": "N1"
+  },
+  {
+    "kanji": "修繕",
+    "kana": "しゅうぜん",
+    "romaji": "shuuzen",
+    "meaning": "수선",
+    "level": "N1"
+  },
+  {
+    "kanji": "柔軟な",
+    "kana": "じゅうなんな",
+    "romaji": "juun\\'ann\\'a",
+    "meaning": "유연한",
+    "level": "N1"
+  },
+  {
+    "kanji": "重複",
+    "kana": "じゅうふく",
+    "romaji": "juufuku",
+    "meaning": "중복",
+    "level": "N1"
+  },
+  {
+    "kanji": "収容",
+    "kana": "しゅうよう",
+    "romaji": "shuuyou",
+    "meaning": "수용. 수감",
+    "level": "N1"
+  },
+  {
+    "kanji": "従来",
+    "kana": "じゅうらい",
+    "romaji": "juurai",
+    "meaning": "종래",
+    "level": "N1"
+  },
+  {
+    "kanji": "守衛",
+    "kana": "しゅえい",
+    "romaji": "shuei",
+    "meaning": "수위",
+    "level": "N1"
+  },
+  {
+    "kanji": "主演",
+    "kana": "しゅえん",
+    "romaji": "shuen",
+    "meaning": "주연",
+    "level": "N1"
+  },
+  {
+    "kanji": "主観",
+    "kana": "しゅかん",
+    "romaji": "shukan",
+    "meaning": "주관",
+    "level": "N1"
+  },
+  {
+    "kanji": "主観的な",
+    "kana": "しゅかんてきな",
+    "romaji": "shukantekin\\'a",
+    "meaning": "주관적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "修行",
+    "kana": "しゅぎょう",
+    "romaji": "shugyou",
+    "meaning": "수행. 불도를 닦음",
+    "level": "N1"
+  },
+  {
+    "kanji": "塾",
+    "kana": "じゅく",
+    "romaji": "juku",
+    "meaning": "(주로 초중고 학생을 위한)학원",
+    "level": "N1"
+  },
+  {
+    "kanji": "祝賀",
+    "kana": "しゅくが",
+    "romaji": "shukuga",
+    "meaning": "축하",
+    "level": "N1"
+  },
+  {
+    "kanji": "宿命",
+    "kana": "しゅくめい",
+    "romaji": "shukumei",
+    "meaning": "숙명",
+    "level": "N1"
+  },
+  {
+    "kanji": "手芸",
+    "kana": "しゅげい",
+    "romaji": "shugei",
+    "meaning": "수예. 수공예",
+    "level": "N1"
+  },
+  {
+    "kanji": "主権",
+    "kana": "しゅけん",
+    "romaji": "shuken",
+    "meaning": "주권",
+    "level": "N1"
+  },
+  {
+    "kanji": "主催",
+    "kana": "しゅさい",
+    "romaji": "shusai",
+    "meaning": "주최",
+    "level": "N1"
+  },
+  {
+    "kanji": "趣旨",
+    "kana": "しゅし",
+    "romaji": "shushi",
+    "meaning": "취지",
+    "level": "N1"
+  },
+  {
+    "kanji": "種々",
+    "kana": "しゅじゅ",
+    "romaji": "shuju",
+    "meaning": "갖가지. 여러 가지 (しゅしゅ라고 읽기도 함)",
+    "level": "N1"
+  },
+  {
+    "kanji": "主食",
+    "kana": "しゅしょく",
+    "romaji": "shushoku",
+    "meaning": "주식. 주로 먹는 음식",
+    "level": "N1"
+  },
+  {
+    "kanji": "主体",
+    "kana": "しゅたい",
+    "romaji": "shutai",
+    "meaning": "주체",
+    "level": "N1"
+  },
+  {
+    "kanji": "主題",
+    "kana": "しゅだい",
+    "romaji": "shudai",
+    "meaning": "주제",
+    "level": "N1"
+  },
+  {
+    "kanji": "出演",
+    "kana": "しゅつえん",
+    "romaji": "shutsuen",
+    "meaning": "출연",
+    "level": "N1"
+  },
+  {
+    "kanji": "出産",
+    "kana": "しゅっさん",
+    "romaji": "shussan",
+    "meaning": "출산",
+    "level": "N1"
+  },
+  {
+    "kanji": "出社",
+    "kana": "しゅっしゃ",
+    "romaji": "shussha",
+    "meaning": "출사. 출근",
+    "level": "N1"
+  },
+  {
+    "kanji": "出生",
+    "kana": "しゅっしょう",
+    "romaji": "shusshou",
+    "meaning": "출생 (しゅっせい라고도 읽음)",
+    "level": "N1"
+  },
+  {
+    "kanji": "出生",
+    "kana": "しゅっせい",
+    "romaji": "shussei",
+    "meaning": "출생 (しゅっしょう라고도 읽음)",
+    "level": "N1"
+  },
+  {
+    "kanji": "出題",
+    "kana": "しゅつだい",
+    "romaji": "shutsudai",
+    "meaning": "출제",
+    "level": "N1"
+  },
+  {
+    "kanji": "出動",
+    "kana": "しゅつどう",
+    "romaji": "shutsudou",
+    "meaning": "출동",
+    "level": "N1"
+  },
+  {
+    "kanji": "出費",
+    "kana": "しゅっぴ",
+    "romaji": "shuppi",
+    "meaning": "출비. 지출",
+    "level": "N1"
+  },
+  {
+    "kanji": "出品",
+    "kana": "しゅっぴん",
+    "romaji": "shuppin",
+    "meaning": "출품",
+    "level": "N1"
+  },
+  {
+    "kanji": "主導",
+    "kana": "しゅどう",
+    "romaji": "shudou",
+    "meaning": "주도",
+    "level": "N1"
+  },
+  {
+    "kanji": "主任",
+    "kana": "しゅにん",
+    "romaji": "shun\\'in",
+    "meaning": "주임",
+    "level": "N1"
+  },
+  {
+    "kanji": "首脳",
+    "kana": "しゅのう",
+    "romaji": "shun\\'ou",
+    "meaning": "(국가)수뇌. 정상",
+    "level": "N1"
+  },
+  {
+    "kanji": "守備",
+    "kana": "しゅび",
+    "romaji": "shubi",
+    "meaning": "수비",
+    "level": "N1"
+  },
+  {
+    "kanji": "手法",
+    "kana": "しゅほう",
+    "romaji": "shuhou",
+    "meaning": "수법",
+    "level": "N1"
+  },
+  {
+    "kanji": "樹木",
+    "kana": "じゅもく",
+    "romaji": "jumoku",
+    "meaning": "수목",
+    "level": "N1"
+  },
+  {
+    "kanji": "樹立",
+    "kana": "じゅりつ",
+    "romaji": "juritsu",
+    "meaning": "수립",
+    "level": "N1"
+  },
+  {
+    "kanji": "循環",
+    "kana": "じゅんかん",
+    "romaji": "junkan",
+    "meaning": "순환",
+    "level": "N1"
+  },
+  {
+    "kanji": "準急",
+    "kana": "じゅんきゅう",
+    "romaji": "junkyuu",
+    "meaning": "준급 (준급행열차)",
+    "level": "N1"
+  },
+  {
+    "kanji": "巡査",
+    "kana": "じゅんさ",
+    "romaji": "junsa",
+    "meaning": "순경. 경찰관",
+    "level": "N1"
+  },
+  {
+    "kanji": "準じる",
+    "kana": "じゅんじる",
+    "romaji": "junjiru",
+    "meaning": "준하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕様",
+    "kana": "しよう",
+    "romaji": "shiyou",
+    "meaning": "만드는 물품에 관해 요구되는 규정",
+    "level": "N1"
+  },
+  {
+    "kanji": "私用",
+    "kana": "しよう",
+    "romaji": "shiyou",
+    "meaning": "사사로운 일. 사사로이 씀",
+    "level": "N1"
+  },
+  {
+    "kanji": "-嬢",
+    "kana": "じょう",
+    "romaji": "jou",
+    "meaning": "-양 (결혼 전 처녀의 존칭)",
+    "level": "N1"
+  },
+  {
+    "kanji": "情",
+    "kana": "じょう",
+    "romaji": "jou",
+    "meaning": "정",
+    "level": "N1"
+  },
+  {
+    "kanji": "上位",
+    "kana": "じょうい",
+    "romaji": "joui",
+    "meaning": "상위",
+    "level": "N1"
+  },
+  {
+    "kanji": "上演",
+    "kana": "じょうえん",
+    "romaji": "jouen",
+    "meaning": "상연",
+    "level": "N1"
+  },
+  {
+    "kanji": "生涯",
+    "kana": "しょうがい",
+    "romaji": "shougai",
+    "meaning": "생애. 평생",
+    "level": "N1"
+  },
+  {
+    "kanji": "消去",
+    "kana": "しょうきょ",
+    "romaji": "shoukyo",
+    "meaning": "소거. 지워버림",
+    "level": "N1"
+  },
+  {
+    "kanji": "上空",
+    "kana": "じょうくう",
+    "romaji": "joukuu",
+    "meaning": "상공",
+    "level": "N1"
+  },
+  {
+    "kanji": "衝撃",
+    "kana": "しょうげき",
+    "romaji": "shougeki",
+    "meaning": "충격",
+    "level": "N1"
+  },
+  {
+    "kanji": "証言",
+    "kana": "しょうげん",
+    "romaji": "shougen",
+    "meaning": "증언",
+    "level": "N1"
+  },
+  {
+    "kanji": "証拠",
+    "kana": "しょうこ",
+    "romaji": "shouko",
+    "meaning": "증거",
+    "level": "N1"
+  },
+  {
+    "kanji": "照合",
+    "kana": "しょうごう",
+    "romaji": "shougou",
+    "meaning": "조합. 대조하여 확인함",
+    "level": "N1"
+  },
+  {
+    "kanji": "詳細な",
+    "kana": "しょうさいな",
+    "romaji": "shousain\\'a",
+    "meaning": "상세한. 자세한",
+    "level": "N1"
+  },
+  {
+    "kanji": "情緒",
+    "kana": "じょうしょ",
+    "romaji": "jousho",
+    "meaning": "정서 (지금은 관용음 じょうちょ를 더 많이 사용함)",
+    "level": "N1"
+  },
+  {
+    "kanji": "昇進",
+    "kana": "しょうしん",
+    "romaji": "shoushin",
+    "meaning": "승진",
+    "level": "N1"
+  },
+  {
+    "kanji": "称する",
+    "kana": "しょうする",
+    "romaji": "shousuru",
+    "meaning": "일컫다. 칭하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "消息",
+    "kana": "しょうそく",
+    "romaji": "shousoku",
+    "meaning": "소식",
+    "level": "N1"
+  },
+  {
+    "kanji": "正体",
+    "kana": "しょうたい",
+    "romaji": "shoutai",
+    "meaning": "정체",
+    "level": "N1"
+  },
+  {
+    "kanji": "承諾",
+    "kana": "しょうだく",
+    "romaji": "shoudaku",
+    "meaning": "승낙",
+    "level": "N1"
+  },
+  {
+    "kanji": "情緒",
+    "kana": "じょうちょ",
+    "romaji": "joucho",
+    "meaning": "정서 (원래 독음은 じょうしょ임)",
+    "level": "N1"
+  },
+  {
+    "kanji": "小児科",
+    "kana": "しょうにか",
+    "romaji": "shoun\\'ika",
+    "meaning": "소아과",
+    "level": "N1"
+  },
+  {
+    "kanji": "使用人",
+    "kana": "しようにん",
+    "romaji": "shiyoun\\'in",
+    "meaning": "사용인. 피고용자",
+    "level": "N1"
+  },
+  {
+    "kanji": "情熱",
+    "kana": "じょうねつ",
+    "romaji": "joun\\'etsu",
+    "meaning": "정열",
+    "level": "N1"
+  },
+  {
+    "kanji": "譲歩",
+    "kana": "じょうほ",
+    "romaji": "jouho",
+    "meaning": "양보",
+    "level": "N1"
+  },
+  {
+    "kanji": "正味",
+    "kana": "しょうみ",
+    "romaji": "shoumi",
+    "meaning": "실질적으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "照明",
+    "kana": "しょうめい",
+    "romaji": "shoumei",
+    "meaning": "조명",
+    "level": "N1"
+  },
+  {
+    "kanji": "条約",
+    "kana": "じょうやく",
+    "romaji": "jouyaku",
+    "meaning": "조약",
+    "level": "N1"
+  },
+  {
+    "kanji": "勝利",
+    "kana": "しょうり",
+    "romaji": "shouri",
+    "meaning": "승리",
+    "level": "N1"
+  },
+  {
+    "kanji": "上陸",
+    "kana": "じょうりく",
+    "romaji": "jouriku",
+    "meaning": "상륙",
+    "level": "N1"
+  },
+  {
+    "kanji": "蒸留",
+    "kana": "じょうりゅう",
+    "romaji": "jouryuu",
+    "meaning": "증류",
+    "level": "N1"
+  },
+  {
+    "kanji": "奨励",
+    "kana": "しょうれい",
+    "romaji": "shourei",
+    "meaning": "장려",
+    "level": "N1"
+  },
+  {
+    "kanji": "ショー",
+    "kana": "ショー",
+    "romaji": "sho-",
+    "meaning": "쇼",
+    "level": "N1"
+  },
+  {
+    "kanji": "除外",
+    "kana": "じょがい",
+    "romaji": "jogai",
+    "meaning": "제외",
+    "level": "N1"
+  },
+  {
+    "kanji": "職員",
+    "kana": "しょくいん",
+    "romaji": "shokuin",
+    "meaning": "직원",
+    "level": "N1"
+  },
+  {
+    "kanji": "植民地",
+    "kana": "しょくみんち",
+    "romaji": "shokuminchi",
+    "meaning": "식민지",
+    "level": "N1"
+  },
+  {
+    "kanji": "職務",
+    "kana": "しょくむ",
+    "romaji": "shokumu",
+    "meaning": "직무",
+    "level": "N1"
+  },
+  {
+    "kanji": "諸君",
+    "kana": "しょくん",
+    "romaji": "shokun",
+    "meaning": "제군. 여러분",
+    "level": "N1"
+  },
+  {
+    "kanji": "助言",
+    "kana": "じょげん",
+    "romaji": "jogen",
+    "meaning": "조언",
+    "level": "N1"
+  },
+  {
+    "kanji": "徐行",
+    "kana": "じょこう",
+    "romaji": "jokou",
+    "meaning": "서행",
+    "level": "N1"
+  },
+  {
+    "kanji": "所在",
+    "kana": "しょざい",
+    "romaji": "shozai",
+    "meaning": "소재. 있는 곳",
+    "level": "N1"
+  },
+  {
+    "kanji": "所持",
+    "kana": "しょじ",
+    "romaji": "shoji",
+    "meaning": "소지",
+    "level": "N1"
+  },
+  {
+    "kanji": "助詞",
+    "kana": "じょし",
+    "romaji": "joshi",
+    "meaning": "조사. 토씨",
+    "level": "N1"
+  },
+  {
+    "kanji": "女史",
+    "kana": "じょし",
+    "romaji": "joshi",
+    "meaning": "여사",
+    "level": "N1"
+  },
+  {
+    "kanji": "所属",
+    "kana": "しょぞく",
+    "romaji": "shozoku",
+    "meaning": "소속함",
+    "level": "N1"
+  },
+  {
+    "kanji": "処置",
+    "kana": "しょち",
+    "romaji": "shochi",
+    "meaning": "처치. 조치",
+    "level": "N1"
+  },
+  {
+    "kanji": "ショック",
+    "kana": "ショック",
+    "romaji": "shokku",
+    "meaning": "쇼크. 충격",
+    "level": "N1"
+  },
+  {
+    "kanji": "しょっちゅう",
+    "kana": "しょっちゅう",
+    "romaji": "shocchuu",
+    "meaning": "늘. 언제나. 자주. 자꾸만",
+    "level": "N1"
+  },
+  {
+    "kanji": "所定",
+    "kana": "しょてい",
+    "romaji": "shotei",
+    "meaning": "소정",
+    "level": "N1"
+  },
+  {
+    "kanji": "助動詞",
+    "kana": "じょどうし",
+    "romaji": "jodoushi",
+    "meaning": "조동사",
+    "level": "N1"
+  },
+  {
+    "kanji": "所得",
+    "kana": "しょとく",
+    "romaji": "shotoku",
+    "meaning": "소득",
+    "level": "N1"
+  },
+  {
+    "kanji": "処罰",
+    "kana": "しょばつ",
+    "romaji": "shobatsu",
+    "meaning": "처벌",
+    "level": "N1"
+  },
+  {
+    "kanji": "初版",
+    "kana": "しょはん",
+    "romaji": "shohan",
+    "meaning": "초판",
+    "level": "N1"
+  },
+  {
+    "kanji": "処分",
+    "kana": "しょぶん",
+    "romaji": "shobun",
+    "meaning": "처분. 처리",
+    "level": "N1"
+  },
+  {
+    "kanji": "庶民",
+    "kana": "しょみん",
+    "romaji": "shomin",
+    "meaning": "서민",
+    "level": "N1"
+  },
+  {
+    "kanji": "所有",
+    "kana": "しょゆう",
+    "romaji": "shoyuu",
+    "meaning": "소유",
+    "level": "N1"
+  },
+  {
+    "kanji": "調べ",
+    "kana": "しらべ",
+    "romaji": "shirabe",
+    "meaning": "조사. 수사",
+    "level": "N1"
+  },
+  {
+    "kanji": "自立",
+    "kana": "じりつ",
+    "romaji": "jiritsu",
+    "meaning": "자립",
+    "level": "N1"
+  },
+  {
+    "kanji": "記す",
+    "kana": "しるす",
+    "romaji": "shirusu",
+    "meaning": "적다. 쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "指令",
+    "kana": "しれい",
+    "romaji": "shirei",
+    "meaning": "지령",
+    "level": "N1"
+  },
+  {
+    "kanji": "-陣",
+    "kana": "じん",
+    "romaji": "jin",
+    "meaning": "-진 (대열)",
+    "level": "N1"
+  },
+  {
+    "kanji": "進化",
+    "kana": "しんか",
+    "romaji": "shinka",
+    "meaning": "진화",
+    "level": "N1"
+  },
+  {
+    "kanji": "人格",
+    "kana": "じんかく",
+    "romaji": "jinkaku",
+    "meaning": "인격",
+    "level": "N1"
+  },
+  {
+    "kanji": "審議",
+    "kana": "しんぎ",
+    "romaji": "shingi",
+    "meaning": "심의",
+    "level": "N1"
+  },
+  {
+    "kanji": "振興",
+    "kana": "しんこう",
+    "romaji": "shinkou",
+    "meaning": "진흥",
+    "level": "N1"
+  },
+  {
+    "kanji": "新興",
+    "kana": "しんこう",
+    "romaji": "shinkou",
+    "meaning": "신흥",
+    "level": "N1"
+  },
+  {
+    "kanji": "新婚",
+    "kana": "しんこん",
+    "romaji": "shinkon",
+    "meaning": "신혼",
+    "level": "N1"
+  },
+  {
+    "kanji": "審査",
+    "kana": "しんさ",
+    "romaji": "shinsa",
+    "meaning": "심사",
+    "level": "N1"
+  },
+  {
+    "kanji": "人材",
+    "kana": "じんざい",
+    "romaji": "jinzai",
+    "meaning": "인재",
+    "level": "N1"
+  },
+  {
+    "kanji": "紳士",
+    "kana": "しんし",
+    "romaji": "shinshi",
+    "meaning": "신사 (남자)",
+    "level": "N1"
+  },
+  {
+    "kanji": "真実",
+    "kana": "しんじつ",
+    "romaji": "shinjitsu",
+    "meaning": "진실",
+    "level": "N1"
+  },
+  {
+    "kanji": "信者",
+    "kana": "しんじゃ",
+    "romaji": "shinja",
+    "meaning": "신자. 신도",
+    "level": "N1"
+  },
+  {
+    "kanji": "真珠",
+    "kana": "しんじゅ",
+    "romaji": "shinju",
+    "meaning": "진주",
+    "level": "N1"
+  },
+  {
+    "kanji": "心中",
+    "kana": "しんじゅう",
+    "romaji": "shinjuu",
+    "meaning": "정사. 함께 죽음. 동반 자살함",
+    "level": "N1"
+  },
+  {
+    "kanji": "進出",
+    "kana": "しんしゅつ",
+    "romaji": "shinshutsu",
+    "meaning": "진출",
+    "level": "N1"
+  },
+  {
+    "kanji": "心情",
+    "kana": "しんじょう",
+    "romaji": "shinjou",
+    "meaning": "심정",
+    "level": "N1"
+  },
+  {
+    "kanji": "神聖な",
+    "kana": "しんせいな",
+    "romaji": "shinsein\\'a",
+    "meaning": "신성한. 성스럽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "親善",
+    "kana": "しんぜん",
+    "romaji": "shinzen",
+    "meaning": "친선",
+    "level": "N1"
+  },
+  {
+    "kanji": "真相",
+    "kana": "しんそう",
+    "romaji": "shinsou",
+    "meaning": "진상",
+    "level": "N1"
+  },
+  {
+    "kanji": "迅速な",
+    "kana": "じんそくな",
+    "romaji": "jinsokun\\'a",
+    "meaning": "신속한",
+    "level": "N1"
+  },
+  {
+    "kanji": "人体",
+    "kana": "じんたい",
+    "romaji": "jintai",
+    "meaning": "인체. 몸",
+    "level": "N1"
+  },
+  {
+    "kanji": "新築",
+    "kana": "しんちく",
+    "romaji": "shinchiku",
+    "meaning": "신축",
+    "level": "N1"
+  },
+  {
+    "kanji": "進呈",
+    "kana": "しんてい",
+    "romaji": "shintei",
+    "meaning": "진정. 진상",
+    "level": "N1"
+  },
+  {
+    "kanji": "神殿",
+    "kana": "しんでん",
+    "romaji": "shinden",
+    "meaning": "신전",
+    "level": "N1"
+  },
+  {
+    "kanji": "進展",
+    "kana": "しんてん",
+    "romaji": "shinten",
+    "meaning": "진전",
+    "level": "N1"
+  },
+  {
+    "kanji": "進度",
+    "kana": "しんど",
+    "romaji": "shindo",
+    "meaning": "진도. 진행 속도",
+    "level": "N1"
+  },
+  {
+    "kanji": "振動",
+    "kana": "しんどう",
+    "romaji": "shindou",
+    "meaning": "진동",
+    "level": "N1"
+  },
+  {
+    "kanji": "信任",
+    "kana": "しんにん",
+    "romaji": "shinn\\'in",
+    "meaning": "신임",
+    "level": "N1"
+  },
+  {
+    "kanji": "神秘",
+    "kana": "しんぴ",
+    "romaji": "shinpi",
+    "meaning": "신비",
+    "level": "N1"
+  },
+  {
+    "kanji": "辛抱",
+    "kana": "しんぼう",
+    "romaji": "shinbou",
+    "meaning": "참음. 참고 견딤",
+    "level": "N1"
+  },
+  {
+    "kanji": "人民",
+    "kana": "じんみん",
+    "romaji": "jinmin",
+    "meaning": "인민",
+    "level": "N1"
+  },
+  {
+    "kanji": "真理",
+    "kana": "しんり",
+    "romaji": "shinri",
+    "meaning": "진리",
+    "level": "N1"
+  },
+  {
+    "kanji": "侵略",
+    "kana": "しんりゃく",
+    "romaji": "shinryaku",
+    "meaning": "침략",
+    "level": "N1"
+  },
+  {
+    "kanji": "診療",
+    "kana": "しんりょう",
+    "romaji": "shinryou",
+    "meaning": "진료",
+    "level": "N1"
+  },
+  {
+    "kanji": "神話",
+    "kana": "しんわ",
+    "romaji": "shinwa",
+    "meaning": "신화",
+    "level": "N1"
+  },
+  {
+    "kanji": "粋",
+    "kana": "すい",
+    "romaji": "sui",
+    "meaning": "가장 정도가 높은 부분. 粋を集める 정수를 모으다",
+    "level": "N1"
+  },
+  {
+    "kanji": "水源",
+    "kana": "すいげん",
+    "romaji": "suigen",
+    "meaning": "수원. 물의 근원",
+    "level": "N1"
+  },
+  {
+    "kanji": "推進",
+    "kana": "すいしん",
+    "romaji": "suishin",
+    "meaning": "추진",
+    "level": "N1"
+  },
+  {
+    "kanji": "水洗",
+    "kana": "すいせん",
+    "romaji": "suisen",
+    "meaning": "수세 (+トイレ 화장실)",
+    "level": "N1"
+  },
+  {
+    "kanji": "吹奏楽",
+    "kana": "すいそうがく",
+    "romaji": "suisougaku",
+    "meaning": "취주악",
+    "level": "N1"
+  },
+  {
+    "kanji": "推測",
+    "kana": "すいそく",
+    "romaji": "suisoku",
+    "meaning": "추측",
+    "level": "N1"
+  },
+  {
+    "kanji": "水田",
+    "kana": "すいでん",
+    "romaji": "suiden",
+    "meaning": "수전. 무논. 수답",
+    "level": "N1"
+  },
+  {
+    "kanji": "推理",
+    "kana": "すいり",
+    "romaji": "suiri",
+    "meaning": "추리",
+    "level": "N1"
+  },
+  {
+    "kanji": "数詞",
+    "kana": "すうし",
+    "romaji": "suushi",
+    "meaning": "수사",
+    "level": "N1"
+  },
+  {
+    "kanji": "崇拝",
+    "kana": "すうはい",
+    "romaji": "suuhai",
+    "meaning": "숭배",
+    "level": "N1"
+  },
+  {
+    "kanji": "据え付ける",
+    "kana": "すえつける",
+    "romaji": "suetsukeru",
+    "meaning": "설치하다. 고정시켜 놓다",
+    "level": "N1"
+  },
+  {
+    "kanji": "据える",
+    "kana": "すえる",
+    "romaji": "sueru",
+    "meaning": "설치하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "すがすがしい",
+    "kana": "すがすがしい",
+    "romaji": "sugasugashii",
+    "meaning": "상쾌하다. 시원하다. 산뜻하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "すき",
+    "kana": "すき",
+    "romaji": "suki",
+    "meaning": "빈틈",
+    "level": "N1"
+  },
+  {
+    "kanji": "好き好き",
+    "kana": "すきずき",
+    "romaji": "sukizuki",
+    "meaning": "각자 기호가 다름",
+    "level": "N1"
+  },
+  {
+    "kanji": "救い",
+    "kana": "すくい",
+    "romaji": "sukui",
+    "meaning": "구제. 도움. 위안",
+    "level": "N1"
+  },
+  {
+    "kanji": "すくう",
+    "kana": "すくう",
+    "romaji": "sukuu",
+    "meaning": "떠내다. 건져 올리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "健やかな",
+    "kana": "すこやかな",
+    "romaji": "sukoyakan\\'a",
+    "meaning": "튼튼한. 건전한. 건강한",
+    "level": "N1"
+  },
+  {
+    "kanji": "すすぐ",
+    "kana": "すすぐ",
+    "romaji": "susugu",
+    "meaning": "헹구다. 씻어 없애다",
+    "level": "N1"
+  },
+  {
+    "kanji": "裾",
+    "kana": "すそ",
+    "romaji": "suso",
+    "meaning": "옷단. 옷자락",
+    "level": "N1"
+  },
+  {
+    "kanji": "スタジオ",
+    "kana": "スタジオ",
+    "romaji": "sutajio",
+    "meaning": "스튜디오",
+    "level": "N1"
+  },
+  {
+    "kanji": "スチーム",
+    "kana": "スチーム",
+    "romaji": "suchi-mu",
+    "meaning": "스팀",
+    "level": "N1"
+  },
+  {
+    "kanji": "ストライキ",
+    "kana": "ストライキ",
+    "romaji": "sutoraiki",
+    "meaning": "스트라이크. 동맹 파업",
+    "level": "N1"
+  },
+  {
+    "kanji": "ストロー",
+    "kana": "ストロー",
+    "romaji": "sutoro-",
+    "meaning": "스트로. 빨대",
+    "level": "N1"
+  },
+  {
+    "kanji": "ストロボ",
+    "kana": "ストロボ",
+    "romaji": "sutorobo",
+    "meaning": "스트로보. 섬광 장치",
+    "level": "N1"
+  },
+  {
+    "kanji": "すばしこい",
+    "kana": "すばしこい",
+    "romaji": "subashikoi",
+    "meaning": "재빠르다. 날래다",
+    "level": "N1"
+  },
+  {
+    "kanji": "素早い",
+    "kana": "すばやい",
+    "romaji": "subayai",
+    "meaning": "재빠르다. 날래다. 민첩하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ずばり",
+    "kana": "ずばり",
+    "romaji": "zubari",
+    "meaning": "정곡을 정확히 찌르는 모양. 정통으로. 거침없이. 바로",
+    "level": "N1"
+  },
+  {
+    "kanji": "ずぶ濡れ",
+    "kana": "ずぶぬれ",
+    "romaji": "zubun\\'ure",
+    "meaning": "흠뻑 젖음",
+    "level": "N1"
+  },
+  {
+    "kanji": "スプリング",
+    "kana": "スプリング",
+    "romaji": "supuringu",
+    "meaning": "스프링. 용수철",
+    "level": "N1"
+  },
+  {
+    "kanji": "スペース",
+    "kana": "スペース",
+    "romaji": "supe-su",
+    "meaning": "스페이스",
+    "level": "N1"
+  },
+  {
+    "kanji": "済ます",
+    "kana": "すます",
+    "romaji": "sumasu",
+    "meaning": "끝내다. 마치다. 때우다. 해결하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "澄ます",
+    "kana": "すます",
+    "romaji": "sumasu",
+    "meaning": "(귀를)기울여서 듣다. 경청하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "速やかな",
+    "kana": "すみやかな",
+    "romaji": "sumiyakan\\'a",
+    "meaning": "신속한. 조속한",
+    "level": "N1"
+  },
+  {
+    "kanji": "澄む",
+    "kana": "すむ",
+    "romaji": "sumu",
+    "meaning": "맑다. 말쑥해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "スラックス",
+    "kana": "スラックス",
+    "romaji": "surakkusu",
+    "meaning": "슬랙스. 좁은 바지",
+    "level": "N1"
+  },
+  {
+    "kanji": "擦る",
+    "kana": "する",
+    "romaji": "suru",
+    "meaning": "문지르다. 비비다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ずるずる",
+    "kana": "ずるずる",
+    "romaji": "zuruzuru",
+    "meaning": "질질. 주르르. 훌쩍훌쩍",
+    "level": "N1"
+  },
+  {
+    "kanji": "ずれ",
+    "kana": "ずれ",
+    "romaji": "zure",
+    "meaning": "엇갈리는 일. 엇갈림. 어긋남",
+    "level": "N1"
+  },
+  {
+    "kanji": "擦れ違い",
+    "kana": "すれちがい",
+    "romaji": "surechigai",
+    "meaning": "스치듯 지나감. 엇갈림",
+    "level": "N1"
+  },
+  {
+    "kanji": "擦れる",
+    "kana": "すれる",
+    "romaji": "sureru",
+    "meaning": "스치다. 비비어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "すんなり",
+    "kana": "すんなり",
+    "romaji": "sunn\\'ari",
+    "meaning": "척척. 순조롭게",
+    "level": "N1"
+  },
+  {
+    "kanji": "成育",
+    "kana": "せいいく",
+    "romaji": "seiiku",
+    "meaning": "성육. 자람",
+    "level": "N1"
+  },
+  {
+    "kanji": "生育",
+    "kana": "せいいく",
+    "romaji": "seiiku",
+    "meaning": "생육. 나서 키움",
+    "level": "N1"
+  },
+  {
+    "kanji": "成果",
+    "kana": "せいか",
+    "romaji": "seika",
+    "meaning": "성과",
+    "level": "N1"
+  },
+  {
+    "kanji": "正規",
+    "kana": "せいき",
+    "romaji": "seiki",
+    "meaning": "정규",
+    "level": "N1"
+  },
+  {
+    "kanji": "正義",
+    "kana": "せいぎ",
+    "romaji": "seigi",
+    "meaning": "정의",
+    "level": "N1"
+  },
+  {
+    "kanji": "生計",
+    "kana": "せいけい",
+    "romaji": "seikei",
+    "meaning": "생계. 생활",
+    "level": "N1"
+  },
+  {
+    "kanji": "政権",
+    "kana": "せいけん",
+    "romaji": "seiken",
+    "meaning": "정권",
+    "level": "N1"
+  },
+  {
+    "kanji": "精巧な",
+    "kana": "せいこうな",
+    "romaji": "seikoun\\'a",
+    "meaning": "정교한",
+    "level": "N1"
+  },
+  {
+    "kanji": "星座",
+    "kana": "せいざ",
+    "romaji": "seiza",
+    "meaning": "성좌. 별자리",
+    "level": "N1"
+  },
+  {
+    "kanji": "制裁",
+    "kana": "せいさい",
+    "romaji": "seisai",
+    "meaning": "제재",
+    "level": "N1"
+  },
+  {
+    "kanji": "政策",
+    "kana": "せいさく",
+    "romaji": "seisaku",
+    "meaning": "정책",
+    "level": "N1"
+  },
+  {
+    "kanji": "精算",
+    "kana": "せいさん",
+    "romaji": "seisan",
+    "meaning": "정산. 금액을 정밀하게 계산함",
+    "level": "N1"
+  },
+  {
+    "kanji": "生死",
+    "kana": "せいし",
+    "romaji": "seishi",
+    "meaning": "생사",
+    "level": "N1"
+  },
+  {
+    "kanji": "静止",
+    "kana": "せいし",
+    "romaji": "seishi",
+    "meaning": "정지. 멈추어 움직이지 않음",
+    "level": "N1"
+  },
+  {
+    "kanji": "誠実な",
+    "kana": "せいじつな",
+    "romaji": "seijitsun\\'a",
+    "meaning": "성실한",
+    "level": "N1"
+  },
+  {
+    "kanji": "成熟",
+    "kana": "せいじゅく",
+    "romaji": "seijuku",
+    "meaning": "성숙",
+    "level": "N1"
+  },
+  {
+    "kanji": "清純な",
+    "kana": "せいじゅんな",
+    "romaji": "seijunn\\'a",
+    "meaning": "청순한",
+    "level": "N1"
+  },
+  {
+    "kanji": "聖書",
+    "kana": "せいしょ",
+    "romaji": "seisho",
+    "meaning": "성서. 성경",
+    "level": "N1"
+  },
+  {
+    "kanji": "制する",
+    "kana": "せいする",
+    "romaji": "seisuru",
+    "meaning": "제압하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "整然と",
+    "kana": "せいぜんと",
+    "romaji": "seizento",
+    "meaning": "정연하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "盛大な",
+    "kana": "せいだいな",
+    "romaji": "seidain\\'a",
+    "meaning": "성대한",
+    "level": "N1"
+  },
+  {
+    "kanji": "制定",
+    "kana": "せいてい",
+    "romaji": "seitei",
+    "meaning": "제정",
+    "level": "N1"
+  },
+  {
+    "kanji": "製鉄",
+    "kana": "せいてつ",
+    "romaji": "seitetsu",
+    "meaning": "제철",
+    "level": "N1"
+  },
+  {
+    "kanji": "晴天",
+    "kana": "せいてん",
+    "romaji": "seiten",
+    "meaning": "청천. 맑게 갠 하늘",
+    "level": "N1"
+  },
+  {
+    "kanji": "正当な",
+    "kana": "せいとうな",
+    "romaji": "seitoun\\'a",
+    "meaning": "정당한",
+    "level": "N1"
+  },
+  {
+    "kanji": "成年",
+    "kana": "せいねん",
+    "romaji": "sein\\'en",
+    "meaning": "성년",
+    "level": "N1"
+  },
+  {
+    "kanji": "征服",
+    "kana": "せいふく",
+    "romaji": "seifuku",
+    "meaning": "정복",
+    "level": "N1"
+  },
+  {
+    "kanji": "製法",
+    "kana": "せいほう",
+    "romaji": "seihou",
+    "meaning": "제법",
+    "level": "N1"
+  },
+  {
+    "kanji": "精密な",
+    "kana": "せいみつな",
+    "romaji": "seimitsun\\'a",
+    "meaning": "정밀한",
+    "level": "N1"
+  },
+  {
+    "kanji": "税務署",
+    "kana": "ぜいむしょ",
+    "romaji": "zeimusho",
+    "meaning": "세무서",
+    "level": "N1"
+  },
+  {
+    "kanji": "姓名",
+    "kana": "せいめい",
+    "romaji": "seimei",
+    "meaning": "성명 (성과 이름)",
+    "level": "N1"
+  },
+  {
+    "kanji": "声明",
+    "kana": "せいめい",
+    "romaji": "seimei",
+    "meaning": "성명 (견해 발표)",
+    "level": "N1"
+  },
+  {
+    "kanji": "制約",
+    "kana": "せいやく",
+    "romaji": "seiyaku",
+    "meaning": "제약. 제한",
+    "level": "N1"
+  },
+  {
+    "kanji": "生理",
+    "kana": "せいり",
+    "romaji": "seiri",
+    "meaning": "생리. 월경",
+    "level": "N1"
+  },
+  {
+    "kanji": "勢力",
+    "kana": "せいりょく",
+    "romaji": "seiryoku",
+    "meaning": "세력",
+    "level": "N1"
+  },
+  {
+    "kanji": "整列",
+    "kana": "せいれつ",
+    "romaji": "seiretsu",
+    "meaning": "정렬",
+    "level": "N1"
+  },
+  {
+    "kanji": "急かす",
+    "kana": "せかす",
+    "romaji": "sekasu",
+    "meaning": "재촉하다. 서두르게 하다 ＝せかせる",
+    "level": "N1"
+  },
+  {
+    "kanji": "せがれ",
+    "kana": "せがれ",
+    "romaji": "segare",
+    "meaning": "(나의) 아들",
+    "level": "N1"
+  },
+  {
+    "kanji": "責務",
+    "kana": "せきむ",
+    "romaji": "sekimu",
+    "meaning": "책무",
+    "level": "N1"
+  },
+  {
+    "kanji": "セクション",
+    "kana": "セクション",
+    "romaji": "sekushon",
+    "meaning": "섹션",
+    "level": "N1"
+  },
+  {
+    "kanji": "是正",
+    "kana": "ぜせい",
+    "romaji": "zesei",
+    "meaning": "시정",
+    "level": "N1"
+  },
+  {
+    "kanji": "世帯",
+    "kana": "せたい",
+    "romaji": "setai",
+    "meaning": "가구. 세대",
+    "level": "N1"
+  },
+  {
+    "kanji": "世代",
+    "kana": "せだい",
+    "romaji": "sedai",
+    "meaning": "세대. 어떤 연령층",
+    "level": "N1"
+  },
+  {
+    "kanji": "節",
+    "kana": "せつ",
+    "romaji": "setsu",
+    "meaning": "절. 단락. 마디",
+    "level": "N1"
+  },
+  {
+    "kanji": "切開",
+    "kana": "せっかい",
+    "romaji": "sekkai",
+    "meaning": "절개",
+    "level": "N1"
+  },
+  {
+    "kanji": "セックス",
+    "kana": "セックス",
+    "romaji": "sekkusu",
+    "meaning": "섹스",
+    "level": "N1"
+  },
+  {
+    "kanji": "切実な",
+    "kana": "せつじつな",
+    "romaji": "setsujitsun\\'a",
+    "meaning": "절실한",
+    "level": "N1"
+  },
+  {
+    "kanji": "接触",
+    "kana": "せっしょく",
+    "romaji": "sesshoku",
+    "meaning": "접촉",
+    "level": "N1"
+  },
+  {
+    "kanji": "接続詞",
+    "kana": "せつぞくし",
+    "romaji": "setsuzokushi",
+    "meaning": "접속사",
+    "level": "N1"
+  },
+  {
+    "kanji": "設置",
+    "kana": "せっち",
+    "romaji": "secchi",
+    "meaning": "설치",
+    "level": "N1"
+  },
+  {
+    "kanji": "折衷/折中",
+    "kana": "せっちゅう",
+    "romaji": "secchuu",
+    "meaning": "절충",
+    "level": "N1"
+  },
+  {
+    "kanji": "設定",
+    "kana": "せってい",
+    "romaji": "settei",
+    "meaning": "설정",
+    "level": "N1"
+  },
+  {
+    "kanji": "切ない",
+    "kana": "せつない",
+    "romaji": "setsun\\'ai",
+    "meaning": "애달프다. 안타깝다",
+    "level": "N1"
+  },
+  {
+    "kanji": "絶版",
+    "kana": "ぜっぱん",
+    "romaji": "zeppan",
+    "meaning": "절판",
+    "level": "N1"
+  },
+  {
+    "kanji": "設立",
+    "kana": "せつりつ",
+    "romaji": "setsuritsu",
+    "meaning": "설립",
+    "level": "N1"
+  },
+  {
+    "kanji": "攻め",
+    "kana": "せめ",
+    "romaji": "seme",
+    "meaning": "공격. 공세",
+    "level": "N1"
+  },
+  {
+    "kanji": "ゼリー",
+    "kana": "ゼリー",
+    "romaji": "zeri-",
+    "meaning": "젤리",
+    "level": "N1"
+  },
+  {
+    "kanji": "セレモニー",
+    "kana": "セレモニー",
+    "romaji": "seremon\\'i-",
+    "meaning": "세리머니",
+    "level": "N1"
+  },
+  {
+    "kanji": "世論",
+    "kana": "せろん",
+    "romaji": "seron",
+    "meaning": "여론",
+    "level": "N1"
+  },
+  {
+    "kanji": "禅",
+    "kana": "ぜん",
+    "romaji": "zen",
+    "meaning": "선. 좌선 (불교)",
+    "level": "N1"
+  },
+  {
+    "kanji": "膳",
+    "kana": "ぜん",
+    "romaji": "zen",
+    "meaning": "밥상 ＝おぜん",
+    "level": "N1"
+  },
+  {
+    "kanji": "繊維",
+    "kana": "せんい",
+    "romaji": "sen\\'i",
+    "meaning": "섬유",
+    "level": "N1"
+  },
+  {
+    "kanji": "全快",
+    "kana": "ぜんかい",
+    "romaji": "zenkai",
+    "meaning": "전쾌. 완쾌",
+    "level": "N1"
+  },
+  {
+    "kanji": "宣教",
+    "kana": "せんきょう",
+    "romaji": "senkyou",
+    "meaning": "선교. 전도",
+    "level": "N1"
+  },
+  {
+    "kanji": "宣言",
+    "kana": "せんげん",
+    "romaji": "sengen",
+    "meaning": "선언",
+    "level": "N1"
+  },
+  {
+    "kanji": "先行",
+    "kana": "せんこう",
+    "romaji": "senkou",
+    "meaning": "선행",
+    "level": "N1"
+  },
+  {
+    "kanji": "選考",
+    "kana": "せんこう",
+    "romaji": "senkou",
+    "meaning": "(서류)전형",
+    "level": "N1"
+  },
+  {
+    "kanji": "戦災",
+    "kana": "せんさい",
+    "romaji": "sensai",
+    "meaning": "전재",
+    "level": "N1"
+  },
+  {
+    "kanji": "専修",
+    "kana": "せんしゅう",
+    "romaji": "senshuu",
+    "meaning": "전수. 전공",
+    "level": "N1"
+  },
+  {
+    "kanji": "全集",
+    "kana": "ぜんしゅう",
+    "romaji": "zenshuu",
+    "meaning": "전집",
+    "level": "N1"
+  },
+  {
+    "kanji": "戦術",
+    "kana": "せんじゅつ",
+    "romaji": "senjutsu",
+    "meaning": "전술",
+    "level": "N1"
+  },
+  {
+    "kanji": "センス",
+    "kana": "センス",
+    "romaji": "sensu",
+    "meaning": "센스",
+    "level": "N1"
+  },
+  {
+    "kanji": "潜水",
+    "kana": "せんすい",
+    "romaji": "sensui",
+    "meaning": "잠수",
+    "level": "N1"
+  },
+  {
+    "kanji": "専制",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "meaning": "전제(정치)",
+    "level": "N1"
+  },
+  {
+    "kanji": "全盛期",
+    "kana": "ぜんせいき",
+    "romaji": "zenseiki",
+    "meaning": "전성기",
+    "level": "N1"
+  },
+  {
+    "kanji": "先代",
+    "kana": "せんだい",
+    "romaji": "sendai",
+    "meaning": "선대. 전대",
+    "level": "N1"
+  },
+  {
+    "kanji": "先達て",
+    "kana": "せんだって",
+    "romaji": "sendatte",
+    "meaning": "앞서. 얼마 전에. 요전에",
+    "level": "N1"
+  },
+  {
+    "kanji": "先着",
+    "kana": "せんちゃく",
+    "romaji": "senchaku",
+    "meaning": "선착",
+    "level": "N1"
+  },
+  {
+    "kanji": "前提",
+    "kana": "ぜんてい",
+    "romaji": "zentei",
+    "meaning": "전제",
+    "level": "N1"
+  },
+  {
+    "kanji": "先天的な",
+    "kana": "せんてんてきな",
+    "romaji": "sententekin\\'a",
+    "meaning": "선천적이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "前途",
+    "kana": "ぜんと",
+    "romaji": "zento",
+    "meaning": "전도. 앞길",
+    "level": "N1"
+  },
+  {
+    "kanji": "戦闘",
+    "kana": "せんとう",
+    "romaji": "sentou",
+    "meaning": "전투",
+    "level": "N1"
+  },
+  {
+    "kanji": "潜入",
+    "kana": "せんにゅう",
+    "romaji": "senn\\'yuu",
+    "meaning": "잠입",
+    "level": "N1"
+  },
+  {
+    "kanji": "船舶",
+    "kana": "せんぱく",
+    "romaji": "senpaku",
+    "meaning": "선박",
+    "level": "N1"
+  },
+  {
+    "kanji": "全滅",
+    "kana": "ぜんめつ",
+    "romaji": "zenmetsu",
+    "meaning": "전멸",
+    "level": "N1"
+  },
+  {
+    "kanji": "専用",
+    "kana": "せんよう",
+    "romaji": "sen\\'you",
+    "meaning": "전용",
+    "level": "N1"
+  },
+  {
+    "kanji": "占領",
+    "kana": "せんりょう",
+    "romaji": "senryou",
+    "meaning": "점령",
+    "level": "N1"
+  },
+  {
+    "kanji": "善良な",
+    "kana": "ぜんりょうな",
+    "romaji": "zenryoun\\'a",
+    "meaning": "선량한",
+    "level": "N1"
+  },
+  {
+    "kanji": "戦力",
+    "kana": "せんりょく",
+    "romaji": "senryoku",
+    "meaning": "전력. 전투 능력",
+    "level": "N1"
+  },
+  {
+    "kanji": "前例",
+    "kana": "ぜんれい",
+    "romaji": "zenrei",
+    "meaning": "전례",
+    "level": "N1"
+  },
+  {
+    "kanji": "沿う",
+    "kana": "そう",
+    "romaji": "sou",
+    "meaning": "따르다. 어떤 물건의 주위에 있다",
+    "level": "N1"
+  },
+  {
+    "kanji": "僧",
+    "kana": "そう",
+    "romaji": "sou",
+    "meaning": "중. 승려. 스님",
+    "level": "N1"
+  },
+  {
+    "kanji": "相",
+    "kana": "そう",
+    "romaji": "sou",
+    "meaning": "상. 생김새. 인상",
+    "level": "N1"
+  },
+  {
+    "kanji": "像",
+    "kana": "ぞう",
+    "romaji": "zou",
+    "meaning": "상. 동상",
+    "level": "N1"
+  },
+  {
+    "kanji": "添う",
+    "kana": "そう",
+    "romaji": "sou",
+    "meaning": "더하다. 첨가하다. (기대 목적에) 부합되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "相応",
+    "kana": "そうおう",
+    "romaji": "souou",
+    "meaning": "상응. 걸맞음",
+    "level": "N1"
+  },
+  {
+    "kanji": "相応な",
+    "kana": "そうおうな",
+    "romaji": "sououn\\'a",
+    "meaning": "상응한. 걸맞는",
+    "level": "N1"
+  },
+  {
+    "kanji": "総会",
+    "kana": "そうかい",
+    "romaji": "soukai",
+    "meaning": "총회",
+    "level": "N1"
+  },
+  {
+    "kanji": "創刊",
+    "kana": "そうかん",
+    "romaji": "soukan",
+    "meaning": "창간",
+    "level": "N1"
+  },
+  {
+    "kanji": "雑木",
+    "kana": "ぞうき",
+    "romaji": "zouki",
+    "meaning": "잡목",
+    "level": "N1"
+  },
+  {
+    "kanji": "早急に",
+    "kana": "そうきゅうに",
+    "romaji": "soukyuun\\'i",
+    "meaning": "조급히. 지급 ＝さっきゅうに",
+    "level": "N1"
+  },
+  {
+    "kanji": "増強",
+    "kana": "ぞうきょう",
+    "romaji": "zoukyou",
+    "meaning": "증강",
+    "level": "N1"
+  },
+  {
+    "kanji": "走行",
+    "kana": "そうこう",
+    "romaji": "soukou",
+    "meaning": "주행",
+    "level": "N1"
+  },
+  {
+    "kanji": "捜索",
+    "kana": "そうさく",
+    "romaji": "sousaku",
+    "meaning": "수색",
+    "level": "N1"
+  },
+  {
+    "kanji": "操縦",
+    "kana": "そうじゅう",
+    "romaji": "soujuu",
+    "meaning": "조종",
+    "level": "N1"
+  },
+  {
+    "kanji": "装飾",
+    "kana": "そうしょく",
+    "romaji": "soushoku",
+    "meaning": "장식",
+    "level": "N1"
+  },
+  {
+    "kanji": "増進",
+    "kana": "ぞうしん",
+    "romaji": "zoushin",
+    "meaning": "증진",
+    "level": "N1"
+  },
+  {
+    "kanji": "創造",
+    "kana": "そうぞう",
+    "romaji": "souzou",
+    "meaning": "창조",
+    "level": "N1"
+  },
+  {
+    "kanji": "相対",
+    "kana": "そうたい",
+    "romaji": "soutai",
+    "meaning": "상대",
+    "level": "N1"
+  },
+  {
+    "kanji": "壮大な",
+    "kana": "そうだいな",
+    "romaji": "soudain\\'a",
+    "meaning": "웅장한",
+    "level": "N1"
+  },
+  {
+    "kanji": "騒動",
+    "kana": "そうどう",
+    "romaji": "soudou",
+    "meaning": "소동",
+    "level": "N1"
+  },
+  {
+    "kanji": "遭難",
+    "kana": "そうなん",
+    "romaji": "soun\\'an",
+    "meaning": "조난",
+    "level": "N1"
+  },
+  {
+    "kanji": "相場",
+    "kana": "そうば",
+    "romaji": "souba",
+    "meaning": "시세. 시가. 값어치",
+    "level": "N1"
+  },
+  {
+    "kanji": "装備",
+    "kana": "そうび",
+    "romaji": "soubi",
+    "meaning": "장비",
+    "level": "N1"
+  },
+  {
+    "kanji": "創立",
+    "kana": "そうりつ",
+    "romaji": "souritsu",
+    "meaning": "창립",
+    "level": "N1"
+  },
+  {
+    "kanji": "添える",
+    "kana": "そえる",
+    "romaji": "soeru",
+    "meaning": "첨부하다. 붙이다. 곁들이다. 더하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "促進",
+    "kana": "そくしん",
+    "romaji": "sokushin",
+    "meaning": "촉진",
+    "level": "N1"
+  },
+  {
+    "kanji": "即する",
+    "kana": "そくする",
+    "romaji": "sokusuru",
+    "meaning": "꼭 맞다. 입각하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "束縛",
+    "kana": "そくばく",
+    "romaji": "sokubaku",
+    "meaning": "속박",
+    "level": "N1"
+  },
+  {
+    "kanji": "側面",
+    "kana": "そくめん",
+    "romaji": "sokumen",
+    "meaning": "측면",
+    "level": "N1"
+  },
+  {
+    "kanji": "損なう",
+    "kana": "そこなう",
+    "romaji": "sokon\\'au",
+    "meaning": "손상하다. 파손하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "素材",
+    "kana": "そざい",
+    "romaji": "sozai",
+    "meaning": "소재",
+    "level": "N1"
+  },
+  {
+    "kanji": "阻止",
+    "kana": "そし",
+    "romaji": "soshi",
+    "meaning": "저지",
+    "level": "N1"
+  },
+  {
+    "kanji": "訴訟",
+    "kana": "そしょう",
+    "romaji": "soshou",
+    "meaning": "소송",
+    "level": "N1"
+  },
+  {
+    "kanji": "育ち",
+    "kana": "そだち",
+    "romaji": "sodachi",
+    "meaning": "성장. …에서 자랐음",
+    "level": "N1"
+  },
+  {
+    "kanji": "措置",
+    "kana": "そち",
+    "romaji": "sochi",
+    "meaning": "조치",
+    "level": "N1"
+  },
+  {
+    "kanji": "ソックス",
+    "kana": "ソックス",
+    "romaji": "sokkusu",
+    "meaning": "속스. 양말",
+    "level": "N1"
+  },
+  {
+    "kanji": "素っ気無い",
+    "kana": "そっけない",
+    "romaji": "sokken\\'ai",
+    "meaning": "무정하다. 인정머리 없다. 냉담하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "そっぽ",
+    "kana": "そっぽ",
+    "romaji": "soppo",
+    "meaning": "다른 쪽. 딴 쪽",
+    "level": "N1"
+  },
+  {
+    "kanji": "備え付ける",
+    "kana": "そなえつける",
+    "romaji": "son\\'aetsukeru",
+    "meaning": "설치하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "備わる",
+    "kana": "そなわる",
+    "romaji": "son\\'awaru",
+    "meaning": "갖춰지다. 구비되다. 비치되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "そびえる",
+    "kana": "そびえる",
+    "romaji": "sobieru",
+    "meaning": "우뚝 솟다. 치솟다",
+    "level": "N1"
+  },
+  {
+    "kanji": "染まる",
+    "kana": "そまる",
+    "romaji": "somaru",
+    "meaning": "물들다",
+    "level": "N1"
+  },
+  {
+    "kanji": "背く",
+    "kana": "そむく",
+    "romaji": "somuku",
+    "meaning": "등지다. 등을 돌리다. …을 뒤로 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "染める",
+    "kana": "そめる",
+    "romaji": "someru",
+    "meaning": "물들이다. 염색하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "反らす",
+    "kana": "そらす",
+    "romaji": "sorasu",
+    "meaning": "휘게 하다. 뒤로 젖히다",
+    "level": "N1"
+  },
+  {
+    "kanji": "そり",
+    "kana": "そり",
+    "romaji": "sori",
+    "meaning": "썰매",
+    "level": "N1"
+  },
+  {
+    "kanji": "反る",
+    "kana": "そる",
+    "romaji": "soru",
+    "meaning": "휘다. 몸 따위가 뒤로 젖혀지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "それ故",
+    "kana": "それゆえ",
+    "romaji": "soreyue",
+    "meaning": "그러므로. 고로",
+    "level": "N1"
+  },
+  {
+    "kanji": "ソロ",
+    "kana": "ソロ",
+    "romaji": "soro",
+    "meaning": "솔로",
+    "level": "N1"
+  },
+  {
+    "kanji": "揃い",
+    "kana": "そろい",
+    "romaji": "soroi",
+    "meaning": "모두 갖추어짐. 모두 같은 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぞんざいな",
+    "kana": "ぞんざいな",
+    "romaji": "zonzain\\'a",
+    "meaning": "일을 소홀히 하는. 겉날리게 하는. 아무렇게나 하는",
+    "level": "N1"
+  },
+  {
+    "kanji": "損失",
+    "kana": "そんしつ",
+    "romaji": "sonshitsu",
+    "meaning": "손실",
+    "level": "N1"
+  },
+  {
+    "kanji": "存続",
+    "kana": "そんぞく",
+    "romaji": "sonzoku",
+    "meaning": "존속",
+    "level": "N1"
+  },
+  {
+    "kanji": "ダース",
+    "kana": "ダース",
+    "romaji": "da-su",
+    "meaning": "다스. 12개로 한 조를 이루는 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "対応",
+    "kana": "たいおう",
+    "romaji": "taiou",
+    "meaning": "대응",
+    "level": "N1"
+  },
+  {
+    "kanji": "退化",
+    "kana": "たいか",
+    "romaji": "taika",
+    "meaning": "퇴화",
+    "level": "N1"
+  },
+  {
+    "kanji": "大家",
+    "kana": "たいか",
+    "romaji": "taika",
+    "meaning": "대가. 거장",
+    "level": "N1"
+  },
+  {
+    "kanji": "大概",
+    "kana": "たいがい",
+    "romaji": "taigai",
+    "meaning": "대개. 대강. 대부분",
+    "level": "N1"
+  },
+  {
+    "kanji": "体格",
+    "kana": "たいかく",
+    "romaji": "taikaku",
+    "meaning": "체격",
+    "level": "N1"
+  },
+  {
+    "kanji": "大金",
+    "kana": "たいきん",
+    "romaji": "taikin",
+    "meaning": "대금. 큰돈",
+    "level": "N1"
+  },
+  {
+    "kanji": "待遇",
+    "kana": "たいぐう",
+    "romaji": "taiguu",
+    "meaning": "대우",
+    "level": "N1"
+  },
+  {
+    "kanji": "対決",
+    "kana": "たいけつ",
+    "romaji": "taiketsu",
+    "meaning": "대결",
+    "level": "N1"
+  },
+  {
+    "kanji": "体験",
+    "kana": "たいけん",
+    "romaji": "taiken",
+    "meaning": "체험",
+    "level": "N1"
+  },
+  {
+    "kanji": "対抗",
+    "kana": "たいこう",
+    "romaji": "taikou",
+    "meaning": "대항",
+    "level": "N1"
+  },
+  {
+    "kanji": "退治",
+    "kana": "たいじ",
+    "romaji": "taiji",
+    "meaning": "퇴치",
+    "level": "N1"
+  },
+  {
+    "kanji": "大衆",
+    "kana": "たいしゅう",
+    "romaji": "taishuu",
+    "meaning": "대중",
+    "level": "N1"
+  },
+  {
+    "kanji": "対処",
+    "kana": "たいしょ",
+    "romaji": "taisho",
+    "meaning": "대처",
+    "level": "N1"
+  },
+  {
+    "kanji": "題する",
+    "kana": "だいする",
+    "romaji": "daisuru",
+    "meaning": "제목을 붙이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "態勢",
+    "kana": "たいせい",
+    "romaji": "taisei",
+    "meaning": "태세",
+    "level": "N1"
+  },
+  {
+    "kanji": "大層",
+    "kana": "たいそう",
+    "romaji": "taisou",
+    "meaning": "매우. 몹시. 어마어마하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "対談",
+    "kana": "たいだん",
+    "romaji": "taidan",
+    "meaning": "대담",
+    "level": "N1"
+  },
+  {
+    "kanji": "大胆な",
+    "kana": "だいたんな",
+    "romaji": "daitann\\'a",
+    "meaning": "대담한",
+    "level": "N1"
+  },
+  {
+    "kanji": "対等な",
+    "kana": "たいとうな",
+    "romaji": "taitoun\\'a",
+    "meaning": "대등한",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイトル",
+    "kana": "タイトル",
+    "romaji": "taitoru",
+    "meaning": "타이틀",
+    "level": "N1"
+  },
+  {
+    "kanji": "台無し",
+    "kana": "だいなし",
+    "romaji": "dain\\'ashi",
+    "meaning": "아주 망그러짐. 엉망이 됨. 못쓰게 됨",
+    "level": "N1"
+  },
+  {
+    "kanji": "滞納",
+    "kana": "たいのう",
+    "romaji": "tain\\'ou",
+    "meaning": "체납",
+    "level": "N1"
+  },
+  {
+    "kanji": "対比",
+    "kana": "たいひ",
+    "romaji": "taihi",
+    "meaning": "대비. 비교",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイピスト",
+    "kana": "タイピスト",
+    "romaji": "taipisuto",
+    "meaning": "타이피스트",
+    "level": "N1"
+  },
+  {
+    "kanji": "代弁",
+    "kana": "だいべん",
+    "romaji": "daiben",
+    "meaning": "대변. 대신 말함",
+    "level": "N1"
+  },
+  {
+    "kanji": "大便",
+    "kana": "だいべん",
+    "romaji": "daiben",
+    "meaning": "대변. 똥",
+    "level": "N1"
+  },
+  {
+    "kanji": "待望",
+    "kana": "たいぼう",
+    "romaji": "taibou",
+    "meaning": "대망",
+    "level": "N1"
+  },
+  {
+    "kanji": "台本",
+    "kana": "だいほん",
+    "romaji": "daihon",
+    "meaning": "대본. 극본",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイマー",
+    "kana": "タイマー",
+    "romaji": "taima-",
+    "meaning": "타이머",
+    "level": "N1"
+  },
+  {
+    "kanji": "怠慢な",
+    "kana": "たいまんな",
+    "romaji": "taimann\\'a",
+    "meaning": "태만한",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイミング",
+    "kana": "タイミング",
+    "romaji": "taimingu",
+    "meaning": "타이밍",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイム",
+    "kana": "タイム",
+    "romaji": "taimu",
+    "meaning": "타임",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイムリー",
+    "kana": "タイムリー",
+    "romaji": "taimuri-",
+    "meaning": "타임리. 때맞춤. 시의 적절함",
+    "level": "N1"
+  },
+  {
+    "kanji": "対面",
+    "kana": "たいめん",
+    "romaji": "taimen",
+    "meaning": "대면",
+    "level": "N1"
+  },
+  {
+    "kanji": "代用",
+    "kana": "だいよう",
+    "romaji": "daiyou",
+    "meaning": "대용",
+    "level": "N1"
+  },
+  {
+    "kanji": "タイル",
+    "kana": "タイル",
+    "romaji": "tairu",
+    "meaning": "타일",
+    "level": "N1"
+  },
+  {
+    "kanji": "対話",
+    "kana": "たいわ",
+    "romaji": "taiwa",
+    "meaning": "대화",
+    "level": "N1"
+  },
+  {
+    "kanji": "ダウン",
+    "kana": "ダウン",
+    "romaji": "daun",
+    "meaning": "다운",
+    "level": "N1"
+  },
+  {
+    "kanji": "絶える",
+    "kana": "たえる",
+    "romaji": "taeru",
+    "meaning": "끊어지다. 끝나다. 없어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "耐える/堪える",
+    "kana": "たえる",
+    "romaji": "taeru",
+    "meaning": "견디다. 참다. 버티다",
+    "level": "N1"
+  },
+  {
+    "kanji": "打開",
+    "kana": "だかい",
+    "romaji": "dakai",
+    "meaning": "타개",
+    "level": "N1"
+  },
+  {
+    "kanji": "たき火",
+    "kana": "たきび",
+    "romaji": "takibi",
+    "meaning": "모닥불. 횃불",
+    "level": "N1"
+  },
+  {
+    "kanji": "妥協",
+    "kana": "だきょう",
+    "romaji": "dakyou",
+    "meaning": "타협",
+    "level": "N1"
+  },
+  {
+    "kanji": "たくましい",
+    "kana": "たくましい",
+    "romaji": "takumashii",
+    "meaning": "몸이 억세 보이다. 건장하다. 늠름하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "巧みな",
+    "kana": "たくみな",
+    "romaji": "takumin\\'a",
+    "meaning": "솜씨가 좋은. 정교한",
+    "level": "N1"
+  },
+  {
+    "kanji": "丈",
+    "kana": "たけ",
+    "romaji": "take",
+    "meaning": "키. 기장. 길이",
+    "level": "N1"
+  },
+  {
+    "kanji": "打撃",
+    "kana": "だげき",
+    "romaji": "dageki",
+    "meaning": "타격",
+    "level": "N1"
+  },
+  {
+    "kanji": "妥結",
+    "kana": "だけつ",
+    "romaji": "daketsu",
+    "meaning": "타결",
+    "level": "N1"
+  },
+  {
+    "kanji": "駄作",
+    "kana": "ださく",
+    "romaji": "dasaku",
+    "meaning": "태작. 졸작",
+    "level": "N1"
+  },
+  {
+    "kanji": "多数決",
+    "kana": "たすうけつ",
+    "romaji": "tasuuketsu",
+    "meaning": "다수결",
+    "level": "N1"
+  },
+  {
+    "kanji": "助け",
+    "kana": "たすけ",
+    "romaji": "tasuke",
+    "meaning": "도움. 구원. 구조",
+    "level": "N1"
+  },
+  {
+    "kanji": "携わる",
+    "kana": "たずさわる",
+    "romaji": "tazusawaru",
+    "meaning": "관계하다. 종사하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "漂う",
+    "kana": "ただよう",
+    "romaji": "tadayou",
+    "meaning": "떠돌다. 표류하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "立ち去る",
+    "kana": "たちさる",
+    "romaji": "tachisaru",
+    "meaning": "떠나다. 물러가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "立ち寄る",
+    "kana": "たちよる",
+    "romaji": "tachiyoru",
+    "meaning": "들르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "断つ",
+    "kana": "たつ",
+    "romaji": "tatsu",
+    "meaning": "끊다. 자르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "達者な",
+    "kana": "たっしゃな",
+    "romaji": "tasshan\\'a",
+    "meaning": "능숙한",
+    "level": "N1"
+  },
+  {
+    "kanji": "脱出",
+    "kana": "だっしゅつ",
+    "romaji": "dasshutsu",
+    "meaning": "탈출",
+    "level": "N1"
+  },
+  {
+    "kanji": "脱する",
+    "kana": "だっする",
+    "romaji": "dassuru",
+    "meaning": "벗어나다. 탈출하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "達成",
+    "kana": "たっせい",
+    "romaji": "tassei",
+    "meaning": "달성",
+    "level": "N1"
+  },
+  {
+    "kanji": "脱退",
+    "kana": "だったい",
+    "romaji": "dattai",
+    "meaning": "탈퇴",
+    "level": "N1"
+  },
+  {
+    "kanji": "だったら",
+    "kana": "だったら",
+    "romaji": "dattara",
+    "meaning": "그렇다면. …다면. …라면",
+    "level": "N1"
+  },
+  {
+    "kanji": "盾",
+    "kana": "たて",
+    "romaji": "tate",
+    "meaning": "방패",
+    "level": "N1"
+  },
+  {
+    "kanji": "立て替える",
+    "kana": "たてかえる",
+    "romaji": "tatekaeru",
+    "meaning": "입체하다. 대신 치르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "建(て)前",
+    "kana": "たてまえ",
+    "romaji": "tatemae",
+    "meaning": "(표면상의) 방침. 원칙",
+    "level": "N1"
+  },
+  {
+    "kanji": "奉る",
+    "kana": "たてまつる",
+    "romaji": "tatematsuru",
+    "meaning": "바치다. 헌상하다. 받들다",
+    "level": "N1"
+  },
+  {
+    "kanji": "他動詞",
+    "kana": "たどうし",
+    "romaji": "tadoushi",
+    "meaning": "타동사",
+    "level": "N1"
+  },
+  {
+    "kanji": "例え",
+    "kana": "たとえ",
+    "romaji": "tatoe",
+    "meaning": "비유. 예",
+    "level": "N1"
+  },
+  {
+    "kanji": "たどり着く",
+    "kana": "たどりつく",
+    "romaji": "tadoritsuku",
+    "meaning": "길을 묻고 물어 겨우 다다르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "たどる",
+    "kana": "たどる",
+    "romaji": "tadoru",
+    "meaning": "더듬다. 더듬어 찾다",
+    "level": "N1"
+  },
+  {
+    "kanji": "束ねる",
+    "kana": "たばねる",
+    "romaji": "taban\\'eru",
+    "meaning": "묶다. 한 뭉치로 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ダブル",
+    "kana": "ダブル",
+    "romaji": "daburu",
+    "meaning": "더블",
+    "level": "N1"
+  },
+  {
+    "kanji": "他方",
+    "kana": "たほう",
+    "romaji": "tahou",
+    "meaning": "타방. 다른 방향. 한편",
+    "level": "N1"
+  },
+  {
+    "kanji": "多忙な",
+    "kana": "たぼうな",
+    "romaji": "taboun\\'a",
+    "meaning": "매우 바쁜",
+    "level": "N1"
+  },
+  {
+    "kanji": "賜う",
+    "kana": "たまう",
+    "romaji": "tamau",
+    "meaning": "주시다 (존경어 문장체)",
+    "level": "N1"
+  },
+  {
+    "kanji": "魂",
+    "kana": "たましい",
+    "romaji": "tamashii",
+    "meaning": "혼. 영혼",
+    "level": "N1"
+  },
+  {
+    "kanji": "たまり場",
+    "kana": "たまりば",
+    "romaji": "tamariba",
+    "meaning": "(불량 학생들이)모이는 곳",
+    "level": "N1"
+  },
+  {
+    "kanji": "賜(わ)る",
+    "kana": "たまわる",
+    "romaji": "tamawaru",
+    "meaning": "받다 (겸양어 문장체)",
+    "level": "N1"
+  },
+  {
+    "kanji": "保つ",
+    "kana": "たもつ",
+    "romaji": "tamotsu",
+    "meaning": "지니다. 유지하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "たやすい",
+    "kana": "たやすい",
+    "romaji": "tayasui",
+    "meaning": "쉽다. 용이하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "多様な",
+    "kana": "たような",
+    "romaji": "tayoun\\'a",
+    "meaning": "다양한",
+    "level": "N1"
+  },
+  {
+    "kanji": "だるい",
+    "kana": "だるい",
+    "romaji": "darui",
+    "meaning": "나른하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "たるみ",
+    "kana": "たるみ",
+    "romaji": "tarumi",
+    "meaning": "느슨함. 느즈러짐. 늘어짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "たるむ",
+    "kana": "たるむ",
+    "romaji": "tarumu",
+    "meaning": "느슨해지다. 느즈러지다. 늘어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "垂れる",
+    "kana": "たれる",
+    "romaji": "tareru",
+    "meaning": "늘어지다. 드리워지다. 늘어뜨리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "タレント",
+    "kana": "タレント",
+    "romaji": "tarento",
+    "meaning": "탤런트",
+    "level": "N1"
+  },
+  {
+    "kanji": "タワー",
+    "kana": "タワー",
+    "romaji": "tawa-",
+    "meaning": "타워. 탑",
+    "level": "N1"
+  },
+  {
+    "kanji": "単一な",
+    "kana": "たんいつな",
+    "romaji": "tan\\'itsun\\'a",
+    "meaning": "단일한",
+    "level": "N1"
+  },
+  {
+    "kanji": "担架",
+    "kana": "たんか",
+    "romaji": "tanka",
+    "meaning": "담가. 들것",
+    "level": "N1"
+  },
+  {
+    "kanji": "短歌",
+    "kana": "たんか",
+    "romaji": "tanka",
+    "meaning": "단가. 일본 고유형식의 시",
+    "level": "N1"
+  },
+  {
+    "kanji": "短気な",
+    "kana": "たんきな",
+    "romaji": "tankin\\'a",
+    "meaning": "성질이 급한. 쉽게 화를 내는",
+    "level": "N1"
+  },
+  {
+    "kanji": "団結",
+    "kana": "だんけつ",
+    "romaji": "danketsu",
+    "meaning": "단결",
+    "level": "N1"
+  },
+  {
+    "kanji": "探検/探険",
+    "kana": "たんけん",
+    "romaji": "tanken",
+    "meaning": "탐험",
+    "level": "N1"
+  },
+  {
+    "kanji": "断言",
+    "kana": "だんげん",
+    "romaji": "dangen",
+    "meaning": "단언",
+    "level": "N1"
+  },
+  {
+    "kanji": "短縮",
+    "kana": "たんしゅく",
+    "romaji": "tanshuku",
+    "meaning": "단축",
+    "level": "N1"
+  },
+  {
+    "kanji": "淡水",
+    "kana": "たんすい",
+    "romaji": "tansui",
+    "meaning": "담수. 민물",
+    "level": "N1"
+  },
+  {
+    "kanji": "断然",
+    "kana": "だんぜん",
+    "romaji": "danzen",
+    "meaning": "단연코. 훨씬",
+    "level": "N1"
+  },
+  {
+    "kanji": "炭素",
+    "kana": "たんそ",
+    "romaji": "tanso",
+    "meaning": "탄소",
+    "level": "N1"
+  },
+  {
+    "kanji": "短大",
+    "kana": "たんだい",
+    "romaji": "tandai",
+    "meaning": "단기대학 (2년제 대학)",
+    "level": "N1"
+  },
+  {
+    "kanji": "単調な",
+    "kana": "たんちょうな",
+    "romaji": "tanchoun\\'a",
+    "meaning": "단조로운",
+    "level": "N1"
+  },
+  {
+    "kanji": "単独",
+    "kana": "たんどく",
+    "romaji": "tandoku",
+    "meaning": "단독",
+    "level": "N1"
+  },
+  {
+    "kanji": "旦那",
+    "kana": "だんな",
+    "romaji": "dann\\'a",
+    "meaning": "주인. 남편",
+    "level": "N1"
+  },
+  {
+    "kanji": "短波",
+    "kana": "たんぱ",
+    "romaji": "tanpa",
+    "meaning": "단파",
+    "level": "N1"
+  },
+  {
+    "kanji": "蛋白質",
+    "kana": "たんぱくしつ",
+    "romaji": "tanpakushitsu",
+    "meaning": "단백질",
+    "level": "N1"
+  },
+  {
+    "kanji": "断面",
+    "kana": "だんめん",
+    "romaji": "danmen",
+    "meaning": "단면. 일면",
+    "level": "N1"
+  },
+  {
+    "kanji": "弾力",
+    "kana": "だんりょく",
+    "romaji": "danryoku",
+    "meaning": "탄력",
+    "level": "N1"
+  },
+  {
+    "kanji": "治安",
+    "kana": "ちあん",
+    "romaji": "chian",
+    "meaning": "치안",
+    "level": "N1"
+  },
+  {
+    "kanji": "チームワーク",
+    "kana": "チームワーク",
+    "romaji": "chi-muwa-ku",
+    "meaning": "팀워크",
+    "level": "N1"
+  },
+  {
+    "kanji": "チェンジ",
+    "kana": "チェンジ",
+    "romaji": "chienji",
+    "meaning": "체인지",
+    "level": "N1"
+  },
+  {
+    "kanji": "違える",
+    "kana": "ちがえる",
+    "romaji": "chigaeru",
+    "meaning": "다르게 하다. 잘못 …하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "畜産",
+    "kana": "ちくさん",
+    "romaji": "chikusan",
+    "meaning": "축산",
+    "level": "N1"
+  },
+  {
+    "kanji": "畜生",
+    "kana": "ちくしょう",
+    "romaji": "chikushou",
+    "meaning": "빌어먹을. 개새끼",
+    "level": "N1"
+  },
+  {
+    "kanji": "蓄積",
+    "kana": "ちくせき",
+    "romaji": "chikuseki",
+    "meaning": "축적",
+    "level": "N1"
+  },
+  {
+    "kanji": "地形",
+    "kana": "ちけい",
+    "romaji": "chikei",
+    "meaning": "지형",
+    "level": "N1"
+  },
+  {
+    "kanji": "知性",
+    "kana": "ちせい",
+    "romaji": "chisei",
+    "meaning": "지성",
+    "level": "N1"
+  },
+  {
+    "kanji": "乳",
+    "kana": "ちち",
+    "romaji": "chichi",
+    "meaning": "젖. 유방",
+    "level": "N1"
+  },
+  {
+    "kanji": "縮まる",
+    "kana": "ちぢまる",
+    "romaji": "chijimaru",
+    "meaning": "오그라들다. (시간 거리 따위가) 짧아지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "秩序",
+    "kana": "ちつじょ",
+    "romaji": "chitsujo",
+    "meaning": "질서",
+    "level": "N1"
+  },
+  {
+    "kanji": "窒息",
+    "kana": "ちっそく",
+    "romaji": "chissoku",
+    "meaning": "질식",
+    "level": "N1"
+  },
+  {
+    "kanji": "知的な",
+    "kana": "ちてきな",
+    "romaji": "chitekin\\'a",
+    "meaning": "지적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "チャイム",
+    "kana": "チャイム",
+    "romaji": "chaimu",
+    "meaning": "차임. 종",
+    "level": "N1"
+  },
+  {
+    "kanji": "着手",
+    "kana": "ちゃくしゅ",
+    "romaji": "chakushu",
+    "meaning": "착수",
+    "level": "N1"
+  },
+  {
+    "kanji": "着色",
+    "kana": "ちゃくしょく",
+    "romaji": "chakushoku",
+    "meaning": "착색. 채색",
+    "level": "N1"
+  },
+  {
+    "kanji": "着席",
+    "kana": "ちゃくせき",
+    "romaji": "chakuseki",
+    "meaning": "착석",
+    "level": "N1"
+  },
+  {
+    "kanji": "着目",
+    "kana": "ちゃくもく",
+    "romaji": "chakumoku",
+    "meaning": "착목. 주목",
+    "level": "N1"
+  },
+  {
+    "kanji": "着陸",
+    "kana": "ちゃくりく",
+    "romaji": "chakuriku",
+    "meaning": "착륙",
+    "level": "N1"
+  },
+  {
+    "kanji": "着工",
+    "kana": "ちゃっこう",
+    "romaji": "chakkou",
+    "meaning": "착공",
+    "level": "N1"
+  },
+  {
+    "kanji": "茶の間",
+    "kana": "ちゃのま",
+    "romaji": "chan\\'oma",
+    "meaning": "거실. 다실",
+    "level": "N1"
+  },
+  {
+    "kanji": "ちやほや",
+    "kana": "ちやほや",
+    "romaji": "chiyahoya",
+    "meaning": "얼러주는 모양. 상대를 추어올리는 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "チャンネル",
+    "kana": "チャンネル",
+    "romaji": "chann\\'eru",
+    "meaning": "채널",
+    "level": "N1"
+  },
+  {
+    "kanji": "注",
+    "kana": "ちゅう",
+    "romaji": "chuu",
+    "meaning": "주. 풀이. 주해",
+    "level": "N1"
+  },
+  {
+    "kanji": "宙返り",
+    "kana": "ちゅうがえり",
+    "romaji": "chuugaeri",
+    "meaning": "공중제비. 공중회전",
+    "level": "N1"
+  },
+  {
+    "kanji": "中継",
+    "kana": "ちゅうけい",
+    "romaji": "chuukei",
+    "meaning": "중계",
+    "level": "N1"
+  },
+  {
+    "kanji": "忠告",
+    "kana": "ちゅうこく",
+    "romaji": "chuukoku",
+    "meaning": "충고",
+    "level": "N1"
+  },
+  {
+    "kanji": "中傷",
+    "kana": "ちゅうしょう",
+    "romaji": "chuushou",
+    "meaning": "중상",
+    "level": "N1"
+  },
+  {
+    "kanji": "中枢",
+    "kana": "ちゅうすう",
+    "romaji": "chuusuu",
+    "meaning": "중추. 가장 중요한 부분",
+    "level": "N1"
+  },
+  {
+    "kanji": "抽選",
+    "kana": "ちゅうせん",
+    "romaji": "chuusen",
+    "meaning": "추첨",
+    "level": "N1"
+  },
+  {
+    "kanji": "中断",
+    "kana": "ちゅうだん",
+    "romaji": "chuudan",
+    "meaning": "중단",
+    "level": "N1"
+  },
+  {
+    "kanji": "中毒",
+    "kana": "ちゅうどく",
+    "romaji": "chuudoku",
+    "meaning": "중독",
+    "level": "N1"
+  },
+  {
+    "kanji": "中腹",
+    "kana": "ちゅうふく",
+    "romaji": "chuufuku",
+    "meaning": "중복. 산 중턱",
+    "level": "N1"
+  },
+  {
+    "kanji": "中和",
+    "kana": "ちゅうわ",
+    "romaji": "chuuwa",
+    "meaning": "중화. 서로 융합하여 그 특성을 잃음",
+    "level": "N1"
+  },
+  {
+    "kanji": "-著",
+    "kana": "ちょ",
+    "romaji": "cho",
+    "meaning": "-저 (저술. 저서)",
+    "level": "N1"
+  },
+  {
+    "kanji": "腸",
+    "kana": "ちょう",
+    "romaji": "chou",
+    "meaning": "장. 창자",
+    "level": "N1"
+  },
+  {
+    "kanji": "蝶",
+    "kana": "ちょう",
+    "romaji": "chou",
+    "meaning": "나비",
+    "level": "N1"
+  },
+  {
+    "kanji": "調印",
+    "kana": "ちょういん",
+    "romaji": "chouin",
+    "meaning": "조인",
+    "level": "N1"
+  },
+  {
+    "kanji": "聴覚",
+    "kana": "ちょうかく",
+    "romaji": "choukaku",
+    "meaning": "청각",
+    "level": "N1"
+  },
+  {
+    "kanji": "聴講",
+    "kana": "ちょうこう",
+    "romaji": "choukou",
+    "meaning": "청강",
+    "level": "N1"
+  },
+  {
+    "kanji": "徴収",
+    "kana": "ちょうしゅう",
+    "romaji": "choushuu",
+    "meaning": "징수",
+    "level": "N1"
+  },
+  {
+    "kanji": "聴診器",
+    "kana": "ちょうしんき",
+    "romaji": "choushinki",
+    "meaning": "청진기",
+    "level": "N1"
+  },
+  {
+    "kanji": "挑戦",
+    "kana": "ちょうせん",
+    "romaji": "chousen",
+    "meaning": "도전",
+    "level": "N1"
+  },
+  {
+    "kanji": "調停",
+    "kana": "ちょうてい",
+    "romaji": "choutei",
+    "meaning": "조정. 중재",
+    "level": "N1"
+  },
+  {
+    "kanji": "重複",
+    "kana": "ちょうふく",
+    "romaji": "choufuku",
+    "meaning": "중복",
+    "level": "N1"
+  },
+  {
+    "kanji": "長編",
+    "kana": "ちょうへん",
+    "romaji": "chouhen",
+    "meaning": "장편",
+    "level": "N1"
+  },
+  {
+    "kanji": "重宝",
+    "kana": "ちょうほう",
+    "romaji": "chouhou",
+    "meaning": "편리하고 도움이 됨. 소중히 여김. 아낌",
+    "level": "N1"
+  },
+  {
+    "kanji": "調和",
+    "kana": "ちょうわ",
+    "romaji": "chouwa",
+    "meaning": "조화",
+    "level": "N1"
+  },
+  {
+    "kanji": "ちょくちょく",
+    "kana": "ちょくちょく",
+    "romaji": "chokuchoku",
+    "meaning": "이따금. 가끔",
+    "level": "N1"
+  },
+  {
+    "kanji": "直面",
+    "kana": "ちょくめん",
+    "romaji": "chokumen",
+    "meaning": "직면",
+    "level": "N1"
+  },
+  {
+    "kanji": "貯蓄",
+    "kana": "ちょちく",
+    "romaji": "chochiku",
+    "meaning": "저축",
+    "level": "N1"
+  },
+  {
+    "kanji": "直感",
+    "kana": "ちょっかん",
+    "romaji": "chokkan",
+    "meaning": "직감",
+    "level": "N1"
+  },
+  {
+    "kanji": "著名な",
+    "kana": "ちょめいな",
+    "romaji": "chomein\\'a",
+    "meaning": "저명한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ちらっと",
+    "kana": "ちらっと",
+    "romaji": "chiratto",
+    "meaning": "흘끗. 잠깐. 언뜻",
+    "level": "N1"
+  },
+  {
+    "kanji": "ちり",
+    "kana": "ちり",
+    "romaji": "chiri",
+    "meaning": "티끌. 먼지. 작은 쓰레기",
+    "level": "N1"
+  },
+  {
+    "kanji": "ちり取り",
+    "kana": "ちりとり",
+    "romaji": "chiritori",
+    "meaning": "쓰레받기",
+    "level": "N1"
+  },
+  {
+    "kanji": "賃金",
+    "kana": "ちんぎん",
+    "romaji": "chingin",
+    "meaning": "임금. 보수. 품삯",
+    "level": "N1"
+  },
+  {
+    "kanji": "沈殿",
+    "kana": "ちんでん",
+    "romaji": "chinden",
+    "meaning": "침전",
+    "level": "N1"
+  },
+  {
+    "kanji": "沈没",
+    "kana": "ちんぼつ",
+    "romaji": "chinbotsu",
+    "meaning": "침몰",
+    "level": "N1"
+  },
+  {
+    "kanji": "沈黙",
+    "kana": "ちんもく",
+    "romaji": "chinmoku",
+    "meaning": "침묵",
+    "level": "N1"
+  },
+  {
+    "kanji": "陳列",
+    "kana": "ちんれつ",
+    "romaji": "chinretsu",
+    "meaning": "진열",
+    "level": "N1"
+  },
+  {
+    "kanji": "追及",
+    "kana": "ついきゅう",
+    "romaji": "tsuikyuu",
+    "meaning": "뒤쫓음. 추궁함. 뒤를 따라감",
+    "level": "N1"
+  },
+  {
+    "kanji": "追跡",
+    "kana": "ついせき",
+    "romaji": "tsuiseki",
+    "meaning": "추적",
+    "level": "N1"
+  },
+  {
+    "kanji": "追放",
+    "kana": "ついほう",
+    "romaji": "tsuihou",
+    "meaning": "추방",
+    "level": "N1"
+  },
+  {
+    "kanji": "費やす",
+    "kana": "ついやす",
+    "romaji": "tsuiyasu",
+    "meaning": "쓰다. 써 없애다. 낭비하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "墜落",
+    "kana": "ついらく",
+    "romaji": "tsuiraku",
+    "meaning": "추락",
+    "level": "N1"
+  },
+  {
+    "kanji": "痛感",
+    "kana": "つうかん",
+    "romaji": "tsuukan",
+    "meaning": "통감",
+    "level": "N1"
+  },
+  {
+    "kanji": "通常",
+    "kana": "つうじょう",
+    "romaji": "tsuujou",
+    "meaning": "통상. 보통",
+    "level": "N1"
+  },
+  {
+    "kanji": "痛切に",
+    "kana": "つうせつに",
+    "romaji": "tsuusetsun\\'i",
+    "meaning": "통절하게. 뼈에 사무치도록",
+    "level": "N1"
+  },
+  {
+    "kanji": "つえ",
+    "kana": "つえ",
+    "romaji": "tsue",
+    "meaning": "지팡이",
+    "level": "N1"
+  },
+  {
+    "kanji": "使い道",
+    "kana": "つかいみち",
+    "romaji": "tsukaimichi",
+    "meaning": "용도. 사용법. 쓰는 법",
+    "level": "N1"
+  },
+  {
+    "kanji": "仕える",
+    "kana": "つかえる",
+    "romaji": "tsukaeru",
+    "meaning": "시중들다. 봉사하다. 섬기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つかさどる",
+    "kana": "つかさどる",
+    "romaji": "tsukasadoru",
+    "meaning": "맡다. 담당하다. 관리하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "束の間",
+    "kana": "つかのま",
+    "romaji": "tsukan\\'oma",
+    "meaning": "잠깐 동안. 한순간",
+    "level": "N1"
+  },
+  {
+    "kanji": "月並(み)な",
+    "kana": "つきなみな",
+    "romaji": "tsukin\\'amin\\'a",
+    "meaning": "평범한. 진부한",
+    "level": "N1"
+  },
+  {
+    "kanji": "継(ぎ)目",
+    "kana": "つぎめ",
+    "romaji": "tsugime",
+    "meaning": "이음매. 이은 자리",
+    "level": "N1"
+  },
+  {
+    "kanji": "継ぐ",
+    "kana": "つぐ",
+    "romaji": "tsugu",
+    "meaning": "잇다. 계승하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "接ぐ",
+    "kana": "つぐ",
+    "romaji": "tsugu",
+    "meaning": "접목하다. 이어 붙이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "尽(く)す",
+    "kana": "つくす",
+    "romaji": "tsukusu",
+    "meaning": "다하다. 있는 대로 다하다. 애쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つくづく",
+    "kana": "つくづく",
+    "romaji": "tsukuzuku",
+    "meaning": "곰곰이. 정말. 아주 (마음속 깊이 느끼는 모양)",
+    "level": "N1"
+  },
+  {
+    "kanji": "作り/造り",
+    "kana": "つくり",
+    "romaji": "tsukuri",
+    "meaning": "만듦새. 구조",
+    "level": "N1"
+  },
+  {
+    "kanji": "繕う",
+    "kana": "つくろう",
+    "romaji": "tsukurou",
+    "meaning": "고치다. 수선하다. 겉을 꾸미다",
+    "level": "N1"
+  },
+  {
+    "kanji": "付け加える",
+    "kana": "つけくわえる",
+    "romaji": "tsukekuwaeru",
+    "meaning": "보태다. 덧붙이다. 첨가하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "告げる",
+    "kana": "つげる",
+    "romaji": "tsugeru",
+    "meaning": "고하다. 알리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つじつま",
+    "kana": "つじつま",
+    "romaji": "tsujitsuma",
+    "meaning": "사리. 이치. 계산 つじつまが合わない (말의)앞뒤가 안맞다",
+    "level": "N1"
+  },
+  {
+    "kanji": "筒",
+    "kana": "つつ",
+    "romaji": "tsutsu",
+    "meaning": "통. 속이 비고 긴 관",
+    "level": "N1"
+  },
+  {
+    "kanji": "つつく",
+    "kana": "つつく",
+    "romaji": "tsutsuku",
+    "meaning": "쿡쿡 찌르다. 가볍게 여러 번 쿡쿡 쪼다",
+    "level": "N1"
+  },
+  {
+    "kanji": "慎む/謹む",
+    "kana": "つつしむ",
+    "romaji": "tsutsushimu",
+    "meaning": "삼가하다. 조심하다. 경의를 표하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つっつく",
+    "kana": "つっつく",
+    "romaji": "tsuttsuku",
+    "meaning": "＝つつく",
+    "level": "N1"
+  },
+  {
+    "kanji": "つっぱる",
+    "kana": "つっぱる",
+    "romaji": "tsupparu",
+    "meaning": "대고 버티다. 떠받치다. 끝까지 버티다",
+    "level": "N1"
+  },
+  {
+    "kanji": "勤め先",
+    "kana": "つとめさき",
+    "romaji": "tsutomesaki",
+    "meaning": "근무처. 직장",
+    "level": "N1"
+  },
+  {
+    "kanji": "努めて",
+    "kana": "つとめて",
+    "romaji": "tsutomete",
+    "meaning": "가능한 한. 될 수 있는 대로. 애써",
+    "level": "N1"
+  },
+  {
+    "kanji": "つなぐ",
+    "kana": "つなぐ",
+    "romaji": "tsun\\'agu",
+    "meaning": "매다. 묶어 놓다. 잇다. 연결하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "津波",
+    "kana": "つなみ",
+    "romaji": "tsun\\'ami",
+    "meaning": "지진 해일",
+    "level": "N1"
+  },
+  {
+    "kanji": "角",
+    "kana": "つの",
+    "romaji": "tsun\\'o",
+    "meaning": "뿔",
+    "level": "N1"
+  },
+  {
+    "kanji": "募る",
+    "kana": "つのる",
+    "romaji": "tsun\\'oru",
+    "meaning": "점점 심해지다. 격화하다. 모집하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つぶやく",
+    "kana": "つぶやく",
+    "romaji": "tsubuyaku",
+    "meaning": "중얼거리다. 투덜대다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つぶらな",
+    "kana": "つぶらな",
+    "romaji": "tsuburan\\'a",
+    "meaning": "(눈동자가) 둥글고 귀여운",
+    "level": "N1"
+  },
+  {
+    "kanji": "つぶる",
+    "kana": "つぶる",
+    "romaji": "tsuburu",
+    "meaning": "눈을 감다",
+    "level": "N1"
+  },
+  {
+    "kanji": "つぼ",
+    "kana": "つぼ",
+    "romaji": "tsubo",
+    "meaning": "단지. 항아리",
+    "level": "N1"
+  },
+  {
+    "kanji": "つぼみ",
+    "kana": "つぼみ",
+    "romaji": "tsubomi",
+    "meaning": "꽃봉오리",
+    "level": "N1"
+  },
+  {
+    "kanji": "摘む",
+    "kana": "つむ",
+    "romaji": "tsumu",
+    "meaning": "뜯다. 따다",
+    "level": "N1"
+  },
+  {
+    "kanji": "露",
+    "kana": "つゆ",
+    "romaji": "tsuyu",
+    "meaning": "이슬",
+    "level": "N1"
+  },
+  {
+    "kanji": "連なる",
+    "kana": "つらなる",
+    "romaji": "tsuran\\'aru",
+    "meaning": "나란히 줄지어 있다",
+    "level": "N1"
+  },
+  {
+    "kanji": "貫く",
+    "kana": "つらぬく",
+    "romaji": "tsuran\\'uku",
+    "meaning": "관통하다. 꿰뚫다. 관철하다. 일관하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "連ねる",
+    "kana": "つらねる",
+    "romaji": "tsuran\\'eru",
+    "meaning": "늘어놓다. 한 줄로 죽 잇다",
+    "level": "N1"
+  },
+  {
+    "kanji": "釣(り)鐘",
+    "kana": "つりがね",
+    "romaji": "tsurigan\\'e",
+    "meaning": "큰 종. 범종",
+    "level": "N1"
+  },
+  {
+    "kanji": "吊(り)革",
+    "kana": "つりかわ",
+    "romaji": "tsurikawa",
+    "meaning": "(전철 버스의) 승객용 손잡이",
+    "level": "N1"
+  },
+  {
+    "kanji": "手当(て)",
+    "kana": "てあて",
+    "romaji": "teate",
+    "meaning": "수당. 급여. 치료",
+    "level": "N1"
+  },
+  {
+    "kanji": "定義",
+    "kana": "ていぎ",
+    "romaji": "teigi",
+    "meaning": "정의",
+    "level": "N1"
+  },
+  {
+    "kanji": "提供",
+    "kana": "ていきょう",
+    "romaji": "teikyou",
+    "meaning": "제공",
+    "level": "N1"
+  },
+  {
+    "kanji": "提携",
+    "kana": "ていけい",
+    "romaji": "teikei",
+    "meaning": "제휴",
+    "level": "N1"
+  },
+  {
+    "kanji": "体裁",
+    "kana": "ていさい",
+    "romaji": "teisai",
+    "meaning": "외관. 겉모양. 체면",
+    "level": "N1"
+  },
+  {
+    "kanji": "提示",
+    "kana": "ていじ",
+    "romaji": "teiji",
+    "meaning": "제시",
+    "level": "N1"
+  },
+  {
+    "kanji": "定食",
+    "kana": "ていしょく",
+    "romaji": "teishoku",
+    "meaning": "정식",
+    "level": "N1"
+  },
+  {
+    "kanji": "訂正",
+    "kana": "ていせい",
+    "romaji": "teisei",
+    "meaning": "정정",
+    "level": "N1"
+  },
+  {
+    "kanji": "停滞",
+    "kana": "ていたい",
+    "romaji": "teitai",
+    "meaning": "정체",
+    "level": "N1"
+  },
+  {
+    "kanji": "邸宅",
+    "kana": "ていたく",
+    "romaji": "teitaku",
+    "meaning": "저택",
+    "level": "N1"
+  },
+  {
+    "kanji": "定年/停年",
+    "kana": "ていねん",
+    "romaji": "tein\\'en",
+    "meaning": "정년",
+    "level": "N1"
+  },
+  {
+    "kanji": "堤防",
+    "kana": "ていぼう",
+    "romaji": "teibou",
+    "meaning": "제방. 둑",
+    "level": "N1"
+  },
+  {
+    "kanji": "手遅れ/手後れ",
+    "kana": "ておくれ",
+    "romaji": "teokure",
+    "meaning": "때를 놓침. 때늦음",
+    "level": "N1"
+  },
+  {
+    "kanji": "でかい",
+    "kana": "でかい",
+    "romaji": "dekai",
+    "meaning": "크다. 방대하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "手掛(か)り/手懸(か)り",
+    "kana": "てがかり",
+    "romaji": "tegakari",
+    "meaning": "(수사 진행의) 단서. 실마리",
+    "level": "N1"
+  },
+  {
+    "kanji": "手掛ける/手懸ける",
+    "kana": "てがける",
+    "romaji": "tegakeru",
+    "meaning": "손수 다루다",
+    "level": "N1"
+  },
+  {
+    "kanji": "手軽な",
+    "kana": "てがるな",
+    "romaji": "tegarun\\'a",
+    "meaning": "간편한",
+    "level": "N1"
+  },
+  {
+    "kanji": "適応",
+    "kana": "てきおう",
+    "romaji": "tekiou",
+    "meaning": "적응",
+    "level": "N1"
+  },
+  {
+    "kanji": "適宜な",
+    "kana": "てきぎな",
+    "romaji": "tekigin\\'a",
+    "meaning": "적의한. 적당한",
+    "level": "N1"
+  },
+  {
+    "kanji": "適性",
+    "kana": "てきせい",
+    "romaji": "tekisei",
+    "meaning": "적성",
+    "level": "N1"
+  },
+  {
+    "kanji": "出来物",
+    "kana": "できもの",
+    "romaji": "dekimon\\'o",
+    "meaning": "부스럼. 종기 ＝おでき",
+    "level": "N1"
+  },
+  {
+    "kanji": "手際",
+    "kana": "てぎわ",
+    "romaji": "tegiwa",
+    "meaning": "처리하는 수법. 솜씨",
+    "level": "N1"
+  },
+  {
+    "kanji": "デコレーション",
+    "kana": "デコレーション",
+    "romaji": "dekore-shon",
+    "meaning": "데코레이션. 장식",
+    "level": "N1"
+  },
+  {
+    "kanji": "手ごろな",
+    "kana": "てごろな",
+    "romaji": "tegoron\\'a",
+    "meaning": "(자기 능력 조건에)알맞는. 적당한. 구하기 쉬운",
+    "level": "N1"
+  },
+  {
+    "kanji": "デザイン",
+    "kana": "デザイン",
+    "romaji": "dezain",
+    "meaning": "디자인",
+    "level": "N1"
+  },
+  {
+    "kanji": "手順",
+    "kana": "てじゅん",
+    "romaji": "tejun",
+    "meaning": "수순. 순서. 절차",
+    "level": "N1"
+  },
+  {
+    "kanji": "手錠",
+    "kana": "てじょう",
+    "romaji": "tejou",
+    "meaning": "수갑. 쇠고랑",
+    "level": "N1"
+  },
+  {
+    "kanji": "手数",
+    "kana": "てすう",
+    "romaji": "tesuu",
+    "meaning": "수고. 손이 많이 감. 귀찮음",
+    "level": "N1"
+  },
+  {
+    "kanji": "手近な",
+    "kana": "てぢかな",
+    "romaji": "tejikan\\'a",
+    "meaning": "가까이에 있는",
+    "level": "N1"
+  },
+  {
+    "kanji": "てっきり",
+    "kana": "てっきり",
+    "romaji": "tekkiri",
+    "meaning": "틀림없이. 꼭 (+…인 줄 알았지만 잘못이었다)",
+    "level": "N1"
+  },
+  {
+    "kanji": "鉄鋼",
+    "kana": "てっこう",
+    "romaji": "tekkou",
+    "meaning": "철강",
+    "level": "N1"
+  },
+  {
+    "kanji": "デッサン",
+    "kana": "デッサン",
+    "romaji": "dessan",
+    "meaning": "데생. 스케치",
+    "level": "N1"
+  },
+  {
+    "kanji": "徹する",
+    "kana": "てっする",
+    "romaji": "tessuru",
+    "meaning": "철저하다. 투철하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "てっぺん",
+    "kana": "てっぺん",
+    "romaji": "teppen",
+    "meaning": "꼭대기. 정상",
+    "level": "N1"
+  },
+  {
+    "kanji": "鉄棒",
+    "kana": "てつぼう",
+    "romaji": "tetsubou",
+    "meaning": "철봉",
+    "level": "N1"
+  },
+  {
+    "kanji": "出直し",
+    "kana": "でなおし",
+    "romaji": "den\\'aoshi",
+    "meaning": "처음부터 다시 함",
+    "level": "N1"
+  },
+  {
+    "kanji": "手のひら",
+    "kana": "てのひら",
+    "romaji": "ten\\'ohira",
+    "meaning": "손바닥",
+    "level": "N1"
+  },
+  {
+    "kanji": "手配",
+    "kana": "てはい",
+    "romaji": "tehai",
+    "meaning": "준비. 절차. (범인 체포를 위한)수배",
+    "level": "N1"
+  },
+  {
+    "kanji": "手はず",
+    "kana": "てはず",
+    "romaji": "tehazu",
+    "meaning": "준비. 계획. 순서",
+    "level": "N1"
+  },
+  {
+    "kanji": "手引き",
+    "kana": "てびき",
+    "romaji": "tebiki",
+    "meaning": "안내. 인도. 입문서",
+    "level": "N1"
+  },
+  {
+    "kanji": "手本",
+    "kana": "てほん",
+    "romaji": "tehon",
+    "meaning": "본보기. 모범",
+    "level": "N1"
+  },
+  {
+    "kanji": "手回し",
+    "kana": "てまわし",
+    "romaji": "temawashi",
+    "meaning": "손으로 돌림. 준비. 채비",
+    "level": "N1"
+  },
+  {
+    "kanji": "照り返す",
+    "kana": "てりかえす",
+    "romaji": "terikaesu",
+    "meaning": "반사하다. 되비치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "手分け",
+    "kana": "てわけ",
+    "romaji": "tewake",
+    "meaning": "분담",
+    "level": "N1"
+  },
+  {
+    "kanji": "天",
+    "kana": "てん",
+    "romaji": "ten",
+    "meaning": "천. 하늘",
+    "level": "N1"
+  },
+  {
+    "kanji": "田園",
+    "kana": "でんえん",
+    "romaji": "den\\'en",
+    "meaning": "전원 (논과 밭)",
+    "level": "N1"
+  },
+  {
+    "kanji": "天下",
+    "kana": "てんか",
+    "romaji": "tenka",
+    "meaning": "천하",
+    "level": "N1"
+  },
+  {
+    "kanji": "転回",
+    "kana": "てんかい",
+    "romaji": "tenkai",
+    "meaning": "전회. 회전",
+    "level": "N1"
+  },
+  {
+    "kanji": "転換",
+    "kana": "てんかん",
+    "romaji": "tenkan",
+    "meaning": "전환",
+    "level": "N1"
+  },
+  {
+    "kanji": "転居",
+    "kana": "てんきょ",
+    "romaji": "tenkyo",
+    "meaning": "전거. 이사",
+    "level": "N1"
+  },
+  {
+    "kanji": "転勤",
+    "kana": "てんきん",
+    "romaji": "tenkin",
+    "meaning": "전근",
+    "level": "N1"
+  },
+  {
+    "kanji": "点検",
+    "kana": "てんけん",
+    "romaji": "tenken",
+    "meaning": "점검",
+    "level": "N1"
+  },
+  {
+    "kanji": "電源",
+    "kana": "でんげん",
+    "romaji": "dengen",
+    "meaning": "전원 (스위치)",
+    "level": "N1"
+  },
+  {
+    "kanji": "転校",
+    "kana": "てんこう",
+    "romaji": "tenkou",
+    "meaning": "전교. 전학",
+    "level": "N1"
+  },
+  {
+    "kanji": "天才",
+    "kana": "てんさい",
+    "romaji": "tensai",
+    "meaning": "천재",
+    "level": "N1"
+  },
+  {
+    "kanji": "天災",
+    "kana": "てんさい",
+    "romaji": "tensai",
+    "meaning": "천재. 자연 재해",
+    "level": "N1"
+  },
+  {
+    "kanji": "転じる",
+    "kana": "てんじる",
+    "romaji": "tenjiru",
+    "meaning": "변하다. 바꾸다. 바뀌다",
+    "level": "N1"
+  },
+  {
+    "kanji": "伝説",
+    "kana": "でんせつ",
+    "romaji": "densetsu",
+    "meaning": "전설",
+    "level": "N1"
+  },
+  {
+    "kanji": "点線",
+    "kana": "てんせん",
+    "romaji": "tensen",
+    "meaning": "점선",
+    "level": "N1"
+  },
+  {
+    "kanji": "天体",
+    "kana": "てんたい",
+    "romaji": "tentai",
+    "meaning": "천체",
+    "level": "N1"
+  },
+  {
+    "kanji": "伝達",
+    "kana": "でんたつ",
+    "romaji": "dentatsu",
+    "meaning": "전달",
+    "level": "N1"
+  },
+  {
+    "kanji": "天地",
+    "kana": "てんち",
+    "romaji": "tenchi",
+    "meaning": "천지. 하늘과 땅",
+    "level": "N1"
+  },
+  {
+    "kanji": "てんで",
+    "kana": "てんで",
+    "romaji": "tende",
+    "meaning": "처음부터. 전혀 (+부정문)",
+    "level": "N1"
+  },
+  {
+    "kanji": "転任",
+    "kana": "てんにん",
+    "romaji": "tenn\\'in",
+    "meaning": "전임 (다른 업무로 옮김)",
+    "level": "N1"
+  },
+  {
+    "kanji": "展望",
+    "kana": "てんぼう",
+    "romaji": "tenbou",
+    "meaning": "전망",
+    "level": "N1"
+  },
+  {
+    "kanji": "伝来",
+    "kana": "でんらい",
+    "romaji": "denrai",
+    "meaning": "전래",
+    "level": "N1"
+  },
+  {
+    "kanji": "転落",
+    "kana": "てんらく",
+    "romaji": "tenraku",
+    "meaning": "전락. 굴러 떨어짐. 타락함",
+    "level": "N1"
+  },
+  {
+    "kanji": "問い合わせる",
+    "kana": "といあわせる",
+    "romaji": "toiawaseru",
+    "meaning": "문의하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "胴",
+    "kana": "どう",
+    "romaji": "dou",
+    "meaning": "몸통. 몸체",
+    "level": "N1"
+  },
+  {
+    "kanji": "問う",
+    "kana": "とう",
+    "romaji": "tou",
+    "meaning": "묻다. 물어보다. 질문하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "同意",
+    "kana": "どうい",
+    "romaji": "doui",
+    "meaning": "동의",
+    "level": "N1"
+  },
+  {
+    "kanji": "動員",
+    "kana": "どういん",
+    "romaji": "douin",
+    "meaning": "동원",
+    "level": "N1"
+  },
+  {
+    "kanji": "同感",
+    "kana": "どうかん",
+    "romaji": "doukan",
+    "meaning": "동감",
+    "level": "N1"
+  },
+  {
+    "kanji": "討議",
+    "kana": "とうぎ",
+    "romaji": "tougi",
+    "meaning": "토의. 토론",
+    "level": "N1"
+  },
+  {
+    "kanji": "陶器",
+    "kana": "とうき",
+    "romaji": "touki",
+    "meaning": "도기. 도자기",
+    "level": "N1"
+  },
+  {
+    "kanji": "動機",
+    "kana": "どうき",
+    "romaji": "douki",
+    "meaning": "동기",
+    "level": "N1"
+  },
+  {
+    "kanji": "等級",
+    "kana": "とうきゅう",
+    "romaji": "toukyuu",
+    "meaning": "등급",
+    "level": "N1"
+  },
+  {
+    "kanji": "同級生",
+    "kana": "どうきゅうせい",
+    "romaji": "doukyuusei",
+    "meaning": "동급생. 반친구",
+    "level": "N1"
+  },
+  {
+    "kanji": "同居",
+    "kana": "どうきょ",
+    "romaji": "doukyo",
+    "meaning": "동거",
+    "level": "N1"
+  },
+  {
+    "kanji": "登校",
+    "kana": "とうこう",
+    "romaji": "toukou",
+    "meaning": "등교",
+    "level": "N1"
+  },
+  {
+    "kanji": "統合",
+    "kana": "とうごう",
+    "romaji": "tougou",
+    "meaning": "통합",
+    "level": "N1"
+  },
+  {
+    "kanji": "動向",
+    "kana": "どうこう",
+    "romaji": "doukou",
+    "meaning": "동향",
+    "level": "N1"
+  },
+  {
+    "kanji": "倒産",
+    "kana": "とうさん",
+    "romaji": "tousan",
+    "meaning": "도산. 파산",
+    "level": "N1"
+  },
+  {
+    "kanji": "投資",
+    "kana": "とうし",
+    "romaji": "toushi",
+    "meaning": "투자",
+    "level": "N1"
+  },
+  {
+    "kanji": "同士",
+    "kana": "どうし",
+    "romaji": "doushi",
+    "meaning": "같은 동아리. 같은 종류. -끼리",
+    "level": "N1"
+  },
+  {
+    "kanji": "同志",
+    "kana": "どうし",
+    "romaji": "doushi",
+    "meaning": "동지",
+    "level": "N1"
+  },
+  {
+    "kanji": "陶磁器",
+    "kana": "とうじき",
+    "romaji": "toujiki",
+    "meaning": "도자기. 사기그릇 ＝とうき[陶器]",
+    "level": "N1"
+  },
+  {
+    "kanji": "同情",
+    "kana": "どうじょう",
+    "romaji": "doujou",
+    "meaning": "동정",
+    "level": "N1"
+  },
+  {
+    "kanji": "道場",
+    "kana": "どうじょう",
+    "romaji": "doujou",
+    "meaning": "도장. 도를 닦는 곳",
+    "level": "N1"
+  },
+  {
+    "kanji": "統制",
+    "kana": "とうせい",
+    "romaji": "tousei",
+    "meaning": "통제",
+    "level": "N1"
+  },
+  {
+    "kanji": "当選",
+    "kana": "とうせん",
+    "romaji": "tousen",
+    "meaning": "당선",
+    "level": "N1"
+  },
+  {
+    "kanji": "逃走",
+    "kana": "とうそう",
+    "romaji": "tousou",
+    "meaning": "도주",
+    "level": "N1"
+  },
+  {
+    "kanji": "統率",
+    "kana": "とうそつ",
+    "romaji": "tousotsu",
+    "meaning": "통솔",
+    "level": "N1"
+  },
+  {
+    "kanji": "到達",
+    "kana": "とうたつ",
+    "romaji": "toutatsu",
+    "meaning": "도달",
+    "level": "N1"
+  },
+  {
+    "kanji": "統治",
+    "kana": "とうち",
+    "romaji": "touchi",
+    "meaning": "통치",
+    "level": "N1"
+  },
+  {
+    "kanji": "同調",
+    "kana": "どうちょう",
+    "romaji": "douchou",
+    "meaning": "동조. 보조를 맞춤",
+    "level": "N1"
+  },
+  {
+    "kanji": "到底",
+    "kana": "とうてい",
+    "romaji": "toutei",
+    "meaning": "도저히. 아무리 하여도",
+    "level": "N1"
+  },
+  {
+    "kanji": "尊い/貴い",
+    "kana": "とうとい",
+    "romaji": "toutoi",
+    "meaning": "소중하다. 귀중하다. 고귀하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "堂々と",
+    "kana": "どうどうと",
+    "romaji": "doudouto",
+    "meaning": "당당. 거침없이. 버젓이",
+    "level": "N1"
+  },
+  {
+    "kanji": "同等な",
+    "kana": "どうとうな",
+    "romaji": "doutoun\\'a",
+    "meaning": "동등한",
+    "level": "N1"
+  },
+  {
+    "kanji": "尊ぶ/貴ぶ",
+    "kana": "とうとぶ",
+    "romaji": "toutobu",
+    "meaning": "공경하다. 존경하다. 존중하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "どうにか",
+    "kana": "どうにか",
+    "romaji": "doun\\'ika",
+    "meaning": "이럭저럭. 그런 대로. 어떻게",
+    "level": "N1"
+  },
+  {
+    "kanji": "投入",
+    "kana": "とうにゅう",
+    "romaji": "toun\\'yuu",
+    "meaning": "투입",
+    "level": "N1"
+  },
+  {
+    "kanji": "導入",
+    "kana": "どうにゅう",
+    "romaji": "doun\\'yuu",
+    "meaning": "도입",
+    "level": "N1"
+  },
+  {
+    "kanji": "当人",
+    "kana": "とうにん",
+    "romaji": "toun\\'in",
+    "meaning": "당사자. 본인",
+    "level": "N1"
+  },
+  {
+    "kanji": "同封",
+    "kana": "どうふう",
+    "romaji": "doufuu",
+    "meaning": "동봉",
+    "level": "N1"
+  },
+  {
+    "kanji": "逃亡",
+    "kana": "とうぼう",
+    "romaji": "toubou",
+    "meaning": "도망",
+    "level": "N1"
+  },
+  {
+    "kanji": "冬眠",
+    "kana": "とうみん",
+    "romaji": "toumin",
+    "meaning": "동면",
+    "level": "N1"
+  },
+  {
+    "kanji": "同盟",
+    "kana": "どうめい",
+    "romaji": "doumei",
+    "meaning": "동맹",
+    "level": "N1"
+  },
+  {
+    "kanji": "どうやら",
+    "kana": "どうやら",
+    "romaji": "douyara",
+    "meaning": "어쩐지. 어딘지. 아무래도. 아마",
+    "level": "N1"
+  },
+  {
+    "kanji": "動揺",
+    "kana": "どうよう",
+    "romaji": "douyou",
+    "meaning": "동요 (흔들림)",
+    "level": "N1"
+  },
+  {
+    "kanji": "動力",
+    "kana": "どうりょく",
+    "romaji": "douryoku",
+    "meaning": "동력. 원동력",
+    "level": "N1"
+  },
+  {
+    "kanji": "遠ざかる",
+    "kana": "とおざかる",
+    "romaji": "toozakaru",
+    "meaning": "멀어지다. 물러가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "トーン",
+    "kana": "トーン",
+    "romaji": "to-n",
+    "meaning": "톤. 음조. 색조",
+    "level": "N1"
+  },
+  {
+    "kanji": "とかく",
+    "kana": "とかく",
+    "romaji": "tokaku",
+    "meaning": "이것저것. 자칫하면",
+    "level": "N1"
+  },
+  {
+    "kanji": "とがめる",
+    "kana": "とがめる",
+    "romaji": "togameru",
+    "meaning": "책망하다. 타박하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "時折",
+    "kana": "ときおり",
+    "romaji": "tokiori",
+    "meaning": "때때로. 가끔",
+    "level": "N1"
+  },
+  {
+    "kanji": "途切れる",
+    "kana": "とぎれる",
+    "romaji": "togireru",
+    "meaning": "중단되다. 도중에 끊어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "研ぐ",
+    "kana": "とぐ",
+    "romaji": "togu",
+    "meaning": "갈다. 닦다. (쌀을)씻다",
+    "level": "N1"
+  },
+  {
+    "kanji": "説く",
+    "kana": "とく",
+    "romaji": "toku",
+    "meaning": "말하다. 설득하다. 설명하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "特技",
+    "kana": "とくぎ",
+    "romaji": "tokugi",
+    "meaning": "특기",
+    "level": "N1"
+  },
+  {
+    "kanji": "独裁",
+    "kana": "どくさい",
+    "romaji": "dokusai",
+    "meaning": "독재",
+    "level": "N1"
+  },
+  {
+    "kanji": "特産",
+    "kana": "とくさん",
+    "romaji": "tokusan",
+    "meaning": "특산",
+    "level": "N1"
+  },
+  {
+    "kanji": "独自に",
+    "kana": "どくじに",
+    "romaji": "dokujin\\'i",
+    "meaning": "독자적이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "特集",
+    "kana": "とくしゅう",
+    "romaji": "tokushuu",
+    "meaning": "특집",
+    "level": "N1"
+  },
+  {
+    "kanji": "独占",
+    "kana": "どくせん",
+    "romaji": "dokusen",
+    "meaning": "독점",
+    "level": "N1"
+  },
+  {
+    "kanji": "独創的な",
+    "kana": "どくそうてきな",
+    "romaji": "dokusoutekin\\'a",
+    "meaning": "독창적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "得点",
+    "kana": "とくてん",
+    "romaji": "tokuten",
+    "meaning": "득점",
+    "level": "N1"
+  },
+  {
+    "kanji": "特派員",
+    "kana": "とくはいん",
+    "romaji": "tokuhain",
+    "meaning": "특파원",
+    "level": "N1"
+  },
+  {
+    "kanji": "特有な",
+    "kana": "とくゆうな",
+    "romaji": "tokuyuun\\'a",
+    "meaning": "특유한",
+    "level": "N1"
+  },
+  {
+    "kanji": "とげ",
+    "kana": "とげ",
+    "romaji": "toge",
+    "meaning": "가시",
+    "level": "N1"
+  },
+  {
+    "kanji": "遂げる",
+    "kana": "とげる",
+    "romaji": "togeru",
+    "meaning": "이루다. 얻다. 성취하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "-*",
+    "kana": "どころか",
+    "romaji": "dokoroka",
+    "meaning": "-는커녕",
+    "level": "N1"
+  },
+  {
+    "kanji": "年頃",
+    "kana": "としごろ",
+    "romaji": "toshigoro",
+    "meaning": "알맞은 나이. 적령. 혼기",
+    "level": "N1"
+  },
+  {
+    "kanji": "戸締(ま)り",
+    "kana": "とじまり",
+    "romaji": "tojimari",
+    "meaning": "문단속",
+    "level": "N1"
+  },
+  {
+    "kanji": "途上",
+    "kana": "とじょう",
+    "romaji": "tojou",
+    "meaning": "도상. 도중",
+    "level": "N1"
+  },
+  {
+    "kanji": "とじる",
+    "kana": "とじる",
+    "romaji": "tojiru",
+    "meaning": "(문서를)철하다. 꿰매다",
+    "level": "N1"
+  },
+  {
+    "kanji": "土台",
+    "kana": "どだい",
+    "romaji": "dodai",
+    "meaning": "토대",
+    "level": "N1"
+  },
+  {
+    "kanji": "途絶える",
+    "kana": "とだえる",
+    "romaji": "todaeru",
+    "meaning": "끊어지다. 두절되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "特許",
+    "kana": "とっきょ",
+    "romaji": "tokkyo",
+    "meaning": "특허",
+    "level": "N1"
+  },
+  {
+    "kanji": "特権",
+    "kana": "とっけん",
+    "romaji": "tokken",
+    "meaning": "특권",
+    "level": "N1"
+  },
+  {
+    "kanji": "とっさに",
+    "kana": "とっさに",
+    "romaji": "tossan\\'i",
+    "meaning": "아차하는 순간에",
+    "level": "N1"
+  },
+  {
+    "kanji": "突如",
+    "kana": "とつじょ",
+    "romaji": "totsujo",
+    "meaning": "갑자기. 별안간",
+    "level": "N1"
+  },
+  {
+    "kanji": "突破",
+    "kana": "とっぱ",
+    "romaji": "toppa",
+    "meaning": "돌파",
+    "level": "N1"
+  },
+  {
+    "kanji": "土手",
+    "kana": "どて",
+    "romaji": "dote",
+    "meaning": "둑. 제방",
+    "level": "N1"
+  },
+  {
+    "kanji": "届(け)",
+    "kana": "とどけ",
+    "romaji": "todoke",
+    "meaning": "신고(서)",
+    "level": "N1"
+  },
+  {
+    "kanji": "滞る",
+    "kana": "とどこおる",
+    "romaji": "todokooru",
+    "meaning": "정체하다. 막히다. 밀리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "整える",
+    "kana": "ととのえる",
+    "romaji": "toton\\'oeru",
+    "meaning": "조정하다. 조절하다. 정돈하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "とどめる",
+    "kana": "とどめる",
+    "romaji": "todomeru",
+    "meaning": "멈추다. 세우다. 말리다. 만류하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "唱える",
+    "kana": "となえる",
+    "romaji": "ton\\'aeru",
+    "meaning": "소리내어 읽다. 외치다. 주창하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "殿様",
+    "kana": "とのさま",
+    "romaji": "ton\\'osama",
+    "meaning": "에도시대의 大名에 대한 존칭",
+    "level": "N1"
+  },
+  {
+    "kanji": "土俵",
+    "kana": "どひょう",
+    "romaji": "dohyou",
+    "meaning": "씨름판",
+    "level": "N1"
+  },
+  {
+    "kanji": "扉",
+    "kana": "とびら",
+    "romaji": "tobira",
+    "meaning": "문짝",
+    "level": "N1"
+  },
+  {
+    "kanji": "溝",
+    "kana": "どぶ",
+    "romaji": "dobu",
+    "meaning": "도랑. 시궁창. 하수구",
+    "level": "N1"
+  },
+  {
+    "kanji": "土木",
+    "kana": "どぼく",
+    "romaji": "doboku",
+    "meaning": "토목",
+    "level": "N1"
+  },
+  {
+    "kanji": "とぼける",
+    "kana": "とぼける",
+    "romaji": "tobokeru",
+    "meaning": "얼빠지다. 정신나가다. 짐짓 시치미떼다",
+    "level": "N1"
+  },
+  {
+    "kanji": "乏しい",
+    "kana": "とぼしい",
+    "romaji": "toboshii",
+    "meaning": "모자라다. 부족하다. 결핍하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "富",
+    "kana": "とみ",
+    "romaji": "tomi",
+    "meaning": "부. 재산",
+    "level": "N1"
+  },
+  {
+    "kanji": "富む",
+    "kana": "とむ",
+    "romaji": "tomu",
+    "meaning": "(재산 등이)많다. 풍부하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "共稼ぎ",
+    "kana": "ともかせぎ",
+    "romaji": "tomokasegi",
+    "meaning": "맞벌이 ＝ともばたらき",
+    "level": "N1"
+  },
+  {
+    "kanji": "共働き",
+    "kana": "ともばたらき",
+    "romaji": "tomobataraki",
+    "meaning": "맞벌이",
+    "level": "N1"
+  },
+  {
+    "kanji": "ドライ",
+    "kana": "ドライ",
+    "romaji": "dorai",
+    "meaning": "드라이. 건조함. 메마름",
+    "level": "N1"
+  },
+  {
+    "kanji": "ドライクリーニング",
+    "kana": "ドライクリーニング",
+    "romaji": "doraikuri-n\\'ingu",
+    "meaning": "드라이클리닝",
+    "level": "N1"
+  },
+  {
+    "kanji": "ドライバー",
+    "kana": "ドライバー",
+    "romaji": "doraiba-",
+    "meaning": "드라이버",
+    "level": "N1"
+  },
+  {
+    "kanji": "ドライブイン",
+    "kana": "ドライブイン",
+    "romaji": "doraibuin",
+    "meaning": "드라이브인",
+    "level": "N1"
+  },
+  {
+    "kanji": "トラブル",
+    "kana": "トラブル",
+    "romaji": "toraburu",
+    "meaning": "트러블",
+    "level": "N1"
+  },
+  {
+    "kanji": "トランジスター",
+    "kana": "トランジスター",
+    "romaji": "toranjisuta-",
+    "meaning": "트랜지스터",
+    "level": "N1"
+  },
+  {
+    "kanji": "取(り)扱(い)",
+    "kana": "とりあつかい",
+    "romaji": "toriatsukai",
+    "meaning": "취급",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り扱う",
+    "kana": "とりあつかう",
+    "romaji": "toriatsukau",
+    "meaning": "다루다. 처리하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "鳥居",
+    "kana": "とりい",
+    "romaji": "torii",
+    "meaning": "신사 입구에 세운 기둥문",
+    "level": "N1"
+  },
+  {
+    "kanji": "取(り)替(え)",
+    "kana": "とりかえ",
+    "romaji": "torikae",
+    "meaning": "교체. 대체",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り組む",
+    "kana": "とりくむ",
+    "romaji": "torikumu",
+    "meaning": "맞붙다. 대전하다. 몰두하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取(り)締(ま)り",
+    "kana": "とりしまり",
+    "romaji": "torishimari",
+    "meaning": "단속함",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り締まる",
+    "kana": "とりしまる",
+    "romaji": "torishimaru",
+    "meaning": "단속하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り調べる",
+    "kana": "とりしらべる",
+    "romaji": "torishiraberu",
+    "meaning": "조사하다. 취조하다. 신문하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り立てる",
+    "kana": "とりたてる",
+    "romaji": "toritateru",
+    "meaning": "거두다. 징수하다. 특별히 내세우다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り次ぐ",
+    "kana": "とりつぐ",
+    "romaji": "toritsugu",
+    "meaning": "한 쪽의 의사를 다른 편에 전하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り付ける",
+    "kana": "とりつける",
+    "romaji": "toritsukeru",
+    "meaning": "달다. 설치하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り除く",
+    "kana": "とりのぞく",
+    "romaji": "torin\\'ozoku",
+    "meaning": "없애다. 제거하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り巻く",
+    "kana": "とりまく",
+    "romaji": "torimaku",
+    "meaning": "둘러싸다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り戻す",
+    "kana": "とりもどす",
+    "romaji": "torimodosu",
+    "meaning": "되찾다. 회복하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "取り寄せる",
+    "kana": "とりよせる",
+    "romaji": "toriyoseru",
+    "meaning": "가까이 끌어당기다. 주문하여 가져오게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ドリル",
+    "kana": "ドリル",
+    "romaji": "doriru",
+    "meaning": "드릴. 나사 송곳. 천공기. 반복 연습",
+    "level": "N1"
+  },
+  {
+    "kanji": "とりわけ",
+    "kana": "とりわけ",
+    "romaji": "toriwake",
+    "meaning": "특히. 유난히. 그 중에서도",
+    "level": "N1"
+  },
+  {
+    "kanji": "採る",
+    "kana": "とる",
+    "romaji": "toru",
+    "meaning": "채집하다. 채용하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "とろける",
+    "kana": "とろける",
+    "romaji": "torokeru",
+    "meaning": "녹다. 황홀해지다. 넋을 빼앗기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "度忘れ",
+    "kana": "どわすれ",
+    "romaji": "dowasure",
+    "meaning": "깜빡 잊어버림. 까맣게 잊음",
+    "level": "N1"
+  },
+  {
+    "kanji": "鈍感な",
+    "kana": "どんかんな",
+    "romaji": "donkann\\'a",
+    "meaning": "둔감한",
+    "level": "N1"
+  },
+  {
+    "kanji": "とんだ",
+    "kana": "とんだ",
+    "romaji": "tonda",
+    "meaning": "뜻하지 않은. 돌이킬 수 없는",
+    "level": "N1"
+  },
+  {
+    "kanji": "問屋",
+    "kana": "とんや",
+    "romaji": "ton\\'ya",
+    "meaning": "도매상",
+    "level": "N1"
+  },
+  {
+    "kanji": "内閣",
+    "kana": "ないかく",
+    "romaji": "n\\'aikaku",
+    "meaning": "내각",
+    "level": "N1"
+  },
+  {
+    "kanji": "ないし",
+    "kana": "ないし",
+    "romaji": "n\\'aishi",
+    "meaning": "내지. 또는. 혹은",
+    "level": "N1"
+  },
+  {
+    "kanji": "内緒",
+    "kana": "ないしょ",
+    "romaji": "n\\'aisho",
+    "meaning": "내밀. 비밀",
+    "level": "N1"
+  },
+  {
+    "kanji": "内心",
+    "kana": "ないしん",
+    "romaji": "n\\'aishin",
+    "meaning": "내심. 마음속",
+    "level": "N1"
+  },
+  {
+    "kanji": "内蔵",
+    "kana": "ないぞう",
+    "romaji": "n\\'aizou",
+    "meaning": "내장",
+    "level": "N1"
+  },
+  {
+    "kanji": "ナイター",
+    "kana": "ナイター",
+    "romaji": "n\\'aita-",
+    "meaning": "나이터. 야간 경기",
+    "level": "N1"
+  },
+  {
+    "kanji": "内乱",
+    "kana": "ないらん",
+    "romaji": "n\\'airan",
+    "meaning": "내란",
+    "level": "N1"
+  },
+  {
+    "kanji": "内陸",
+    "kana": "ないりく",
+    "romaji": "n\\'airiku",
+    "meaning": "내륙",
+    "level": "N1"
+  },
+  {
+    "kanji": "苗",
+    "kana": "なえ",
+    "romaji": "n\\'ae",
+    "meaning": "모종. 특히 볏모",
+    "level": "N1"
+  },
+  {
+    "kanji": "なおさら",
+    "kana": "なおさら",
+    "romaji": "n\\'aosara",
+    "meaning": "그 위에. 더욱. 한층 더",
+    "level": "N1"
+  },
+  {
+    "kanji": "流し台",
+    "kana": "ながしだい",
+    "romaji": "n\\'agashidai",
+    "meaning": "싱크대",
+    "level": "N1"
+  },
+  {
+    "kanji": "中程",
+    "kana": "なかほど",
+    "romaji": "n\\'akahodo",
+    "meaning": "중간. 절반. 도중",
+    "level": "N1"
+  },
+  {
+    "kanji": "なぎさ",
+    "kana": "なぎさ",
+    "romaji": "n\\'agisa",
+    "meaning": "(물결이 밀려오는)물가",
+    "level": "N1"
+  },
+  {
+    "kanji": "嘆く",
+    "kana": "なげく",
+    "romaji": "n\\'ageku",
+    "meaning": "한탄하다. 슬퍼하다. 분개하다. 개탄하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "投げ出す",
+    "kana": "なげだす",
+    "romaji": "n\\'agedasu",
+    "meaning": "내던지다. 팽개치다. 포기하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "仲人",
+    "kana": "なこうど",
+    "romaji": "n\\'akoudo",
+    "meaning": "중매인",
+    "level": "N1"
+  },
+  {
+    "kanji": "和やかな",
+    "kana": "なごやかな",
+    "romaji": "n\\'agoyakan\\'a",
+    "meaning": "분위기가 부드러운. 온화한",
+    "level": "N1"
+  },
+  {
+    "kanji": "名残",
+    "kana": "なごり",
+    "romaji": "n\\'agori",
+    "meaning": "자취. 흔적",
+    "level": "N1"
+  },
+  {
+    "kanji": "情け",
+    "kana": "なさけ",
+    "romaji": "n\\'asake",
+    "meaning": "정. 인정. 자비",
+    "level": "N1"
+  },
+  {
+    "kanji": "情けない",
+    "kana": "なさけない",
+    "romaji": "n\\'asaken\\'ai",
+    "meaning": "한심하다. 정나미가 떨어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "情け深い",
+    "kana": "なさけぶかい",
+    "romaji": "n\\'asakebukai",
+    "meaning": "동정심이 많다. 인정이 많다",
+    "level": "N1"
+  },
+  {
+    "kanji": "なじる",
+    "kana": "なじる",
+    "romaji": "n\\'ajiru",
+    "meaning": "(1G) 힐책하다. 힐문하다. 따지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "名高い",
+    "kana": "なだかい",
+    "romaji": "n\\'adakai",
+    "meaning": "유명하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "雪崩",
+    "kana": "なだれ",
+    "romaji": "n\\'adare",
+    "meaning": "눈사태",
+    "level": "N1"
+  },
+  {
+    "kanji": "懐く",
+    "kana": "なつく",
+    "romaji": "n\\'atsuku",
+    "meaning": "(아이가)잘 따르다. 길들여지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "名付ける",
+    "kana": "なづける",
+    "romaji": "n\\'azukeru",
+    "meaning": "명명하다. 이름을 짓다",
+    "level": "N1"
+  },
+  {
+    "kanji": "何気無い",
+    "kana": "なにげない",
+    "romaji": "n\\'an\\'igen\\'ai",
+    "meaning": "아무렇지도 않다. 무심하다. 무의식적이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "何とぞ",
+    "kana": "なにとぞ",
+    "romaji": "n\\'an\\'itozo",
+    "meaning": "제발. 부디. 아무쪼록",
+    "level": "N1"
+  },
+  {
+    "kanji": "何より",
+    "kana": "なにより",
+    "romaji": "n\\'an\\'iyori",
+    "meaning": "무엇보다도. 제일임. 다행임",
+    "level": "N1"
+  },
+  {
+    "kanji": "ナプキン",
+    "kana": "ナプキン",
+    "romaji": "n\\'apukin",
+    "meaning": "냅킨",
+    "level": "N1"
+  },
+  {
+    "kanji": "名札",
+    "kana": "なふだ",
+    "romaji": "n\\'afuda",
+    "meaning": "명찰. 명패. 문패",
+    "level": "N1"
+  },
+  {
+    "kanji": "生臭い",
+    "kana": "なまぐさい",
+    "romaji": "n\\'amagusai",
+    "meaning": "비린내가 나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "生温い",
+    "kana": "なまぬるい",
+    "romaji": "n\\'aman\\'urui",
+    "meaning": "미적지근하다. 흐리멍텅하다. 미온적이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "生身",
+    "kana": "なまみ",
+    "romaji": "n\\'amami",
+    "meaning": "살아 있는 (인간의) 몸뚱이",
+    "level": "N1"
+  },
+  {
+    "kanji": "鉛",
+    "kana": "なまり",
+    "romaji": "n\\'amari",
+    "meaning": "납",
+    "level": "N1"
+  },
+  {
+    "kanji": "並(み)",
+    "kana": "なみ",
+    "romaji": "n\\'ami",
+    "meaning": "보통. 평균. 평범. …과 같음",
+    "level": "N1"
+  },
+  {
+    "kanji": "滑らかな",
+    "kana": "なめらかな",
+    "romaji": "n\\'amerakan\\'a",
+    "meaning": "매끄러운. 매끈매끈한",
+    "level": "N1"
+  },
+  {
+    "kanji": "なめる",
+    "kana": "なめる",
+    "romaji": "n\\'ameru",
+    "meaning": "핥다",
+    "level": "N1"
+  },
+  {
+    "kanji": "悩ましい",
+    "kana": "なやましい",
+    "romaji": "n\\'ayamashii",
+    "meaning": "괴롭다. 고민이 되다. 관능(官能)이 자극을 받아서 마음이",
+    "level": "N1"
+  },
+  {
+    "kanji": "悩ます",
+    "kana": "なやます",
+    "romaji": "n\\'ayamasu",
+    "meaning": "괴롭히다. 성가시게 굴다. 시달리게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "悩み",
+    "kana": "なやみ",
+    "romaji": "n\\'ayami",
+    "meaning": "고민",
+    "level": "N1"
+  },
+  {
+    "kanji": "倣う",
+    "kana": "ならう",
+    "romaji": "n\\'arau",
+    "meaning": "모방하다. 따르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "慣らす",
+    "kana": "ならす",
+    "romaji": "n\\'arasu",
+    "meaning": "환경에 익도록 하다. 순응시키다. 길들이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "並びに",
+    "kana": "ならびに",
+    "romaji": "n\\'arabin\\'i",
+    "meaning": "및. 또 ＝および[及び] (및)",
+    "level": "N1"
+  },
+  {
+    "kanji": "成り立つ",
+    "kana": "なりたつ",
+    "romaji": "n\\'aritatsu",
+    "meaning": "성립하다. 이루어지다. 구성되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "なるたけ",
+    "kana": "なるたけ",
+    "romaji": "n\\'arutake",
+    "meaning": "되도록. 될 수 있는 대로 ＝なるだけ",
+    "level": "N1"
+  },
+  {
+    "kanji": "慣れ",
+    "kana": "なれ",
+    "romaji": "n\\'are",
+    "meaning": "습관. 익숙해짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "馴れ馴れしい",
+    "kana": "なれなれしい",
+    "romaji": "n\\'aren\\'areshii",
+    "meaning": "친압하다. 허물없다. 무례하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ナンセンス",
+    "kana": "ナンセンス",
+    "romaji": "n\\'ansensu",
+    "meaning": "난센스",
+    "level": "N1"
+  },
+  {
+    "kanji": "何だか",
+    "kana": "なんだか",
+    "romaji": "n\\'andaka",
+    "meaning": "왜 그런지. 어쩐지. 무엇인지",
+    "level": "N1"
+  },
+  {
+    "kanji": "何だかんだと",
+    "kana": "なんだかんだと",
+    "romaji": "n\\'andakandato",
+    "meaning": "이러쿵저러쿵",
+    "level": "N1"
+  },
+  {
+    "kanji": "荷",
+    "kana": "に",
+    "romaji": "n\\'i",
+    "meaning": "짐",
+    "level": "N1"
+  },
+  {
+    "kanji": "-*",
+    "kana": "において",
+    "romaji": "n\\'ioite",
+    "meaning": "…에서. …에 있어서. …에 관하여",
+    "level": "N1"
+  },
+  {
+    "kanji": "似通う",
+    "kana": "にかよう",
+    "romaji": "n\\'ikayou",
+    "meaning": "서로 잘 닮다. 서로 비슷하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "にきび",
+    "kana": "にきび",
+    "romaji": "n\\'ikibi",
+    "meaning": "여드름",
+    "level": "N1"
+  },
+  {
+    "kanji": "賑わう",
+    "kana": "にぎわう",
+    "romaji": "n\\'igiwau",
+    "meaning": "활기차다. 번성하다. 붐비다. 흥청거리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "憎しみ",
+    "kana": "にくしみ",
+    "romaji": "n\\'ikushimi",
+    "meaning": "미움. 증오",
+    "level": "N1"
+  },
+  {
+    "kanji": "肉親",
+    "kana": "にくしん",
+    "romaji": "n\\'ikushin",
+    "meaning": "육친",
+    "level": "N1"
+  },
+  {
+    "kanji": "肉体",
+    "kana": "にくたい",
+    "romaji": "n\\'ikutai",
+    "meaning": "육체",
+    "level": "N1"
+  },
+  {
+    "kanji": "逃げ出す",
+    "kana": "にげだす",
+    "romaji": "n\\'igedasu",
+    "meaning": "도망가다. 도망치기 시작하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "西日",
+    "kana": "にしび",
+    "romaji": "n\\'ishibi",
+    "meaning": "석양. 저녁해",
+    "level": "N1"
+  },
+  {
+    "kanji": "にじむ",
+    "kana": "にじむ",
+    "romaji": "n\\'ijimu",
+    "meaning": "번지다. 스미다. 배다",
+    "level": "N1"
+  },
+  {
+    "kanji": "偽物",
+    "kana": "にせもの",
+    "romaji": "n\\'isemon\\'o",
+    "meaning": "가짜. 위조품",
+    "level": "N1"
+  },
+  {
+    "kanji": "日夜",
+    "kana": "にちや",
+    "romaji": "n\\'ichiya",
+    "meaning": "주야. 밤낮. 늘. 언제나",
+    "level": "N1"
+  },
+  {
+    "kanji": "荷造り/荷作り",
+    "kana": "にづくり",
+    "romaji": "n\\'izukuri",
+    "meaning": "짐을 쌈. 짐 꾸리기",
+    "level": "N1"
+  },
+  {
+    "kanji": "-*",
+    "kana": "にとって",
+    "romaji": "n\\'itotte",
+    "meaning": "…에게. …에(게) 있어서",
+    "level": "N1"
+  },
+  {
+    "kanji": "担う",
+    "kana": "になう",
+    "romaji": "n\\'in\\'au",
+    "meaning": "짊어지다. 메다. 떠맡다. 지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "鈍る",
+    "kana": "にぶる",
+    "romaji": "n\\'iburu",
+    "meaning": "둔해지다. 무디어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "-*",
+    "kana": "にもかかわらず",
+    "romaji": "n\\'imokakawarazu",
+    "meaning": "…인데도. …임에도 불구하고",
+    "level": "N1"
+  },
+  {
+    "kanji": "ニュアンス",
+    "kana": "ニュアンス",
+    "romaji": "n\\'yuansu",
+    "meaning": "뉘앙스",
+    "level": "N1"
+  },
+  {
+    "kanji": "ニュー",
+    "kana": "ニュー",
+    "romaji": "n\\'yu-",
+    "meaning": "뉴",
+    "level": "N1"
+  },
+  {
+    "kanji": "入手",
+    "kana": "にゅうしゅ",
+    "romaji": "n\\'yuushu",
+    "meaning": "입수",
+    "level": "N1"
+  },
+  {
+    "kanji": "入賞",
+    "kana": "にゅうしょう",
+    "romaji": "n\\'yuushou",
+    "meaning": "입상",
+    "level": "N1"
+  },
+  {
+    "kanji": "尿",
+    "kana": "にょう",
+    "romaji": "n\\'you",
+    "meaning": "소변. 오줌",
+    "level": "N1"
+  },
+  {
+    "kanji": "にらむ",
+    "kana": "にらむ",
+    "romaji": "n\\'iramu",
+    "meaning": "쏘아보다. 노려보다. 감시하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "にわかに",
+    "kana": "にわかに",
+    "romaji": "n\\'iwakan\\'i",
+    "meaning": "돌연. 갑자기",
+    "level": "N1"
+  },
+  {
+    "kanji": "認識",
+    "kana": "にんしき",
+    "romaji": "n\\'inshiki",
+    "meaning": "인식",
+    "level": "N1"
+  },
+  {
+    "kanji": "妊娠",
+    "kana": "にんしん",
+    "romaji": "n\\'inshin",
+    "meaning": "임신",
+    "level": "N1"
+  },
+  {
+    "kanji": "任務",
+    "kana": "にんむ",
+    "romaji": "n\\'inmu",
+    "meaning": "임무",
+    "level": "N1"
+  },
+  {
+    "kanji": "任命",
+    "kana": "にんめい",
+    "romaji": "n\\'inmei",
+    "meaning": "임명",
+    "level": "N1"
+  },
+  {
+    "kanji": "抜かす",
+    "kana": "ぬかす",
+    "romaji": "n\\'ukasu",
+    "meaning": "빠뜨리다. 빼다",
+    "level": "N1"
+  },
+  {
+    "kanji": "抜け出す",
+    "kana": "ぬけだす",
+    "romaji": "n\\'ukedasu",
+    "meaning": "빠져나가다. 살짝 도망치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "主",
+    "kana": "ぬし",
+    "romaji": "n\\'ushi",
+    "meaning": "주인",
+    "level": "N1"
+  },
+  {
+    "kanji": "沼",
+    "kana": "ぬま",
+    "romaji": "n\\'uma",
+    "meaning": "늪",
+    "level": "N1"
+  },
+  {
+    "kanji": "音",
+    "kana": "ね",
+    "romaji": "n\\'e",
+    "meaning": "음. 소리. 울음소리",
+    "level": "N1"
+  },
+  {
+    "kanji": "音色",
+    "kana": "ねいろ",
+    "romaji": "n\\'eiro",
+    "meaning": "음색",
+    "level": "N1"
+  },
+  {
+    "kanji": "値打ち",
+    "kana": "ねうち",
+    "romaji": "n\\'euchi",
+    "meaning": "가치. 값어치",
+    "level": "N1"
+  },
+  {
+    "kanji": "寝かす",
+    "kana": "ねかす",
+    "romaji": "n\\'ekasu",
+    "meaning": "재우다 ＝ねかせる[寝かせる]",
+    "level": "N1"
+  },
+  {
+    "kanji": "寝かせる",
+    "kana": "ねかせる",
+    "romaji": "n\\'ekaseru",
+    "meaning": "재우다 ＝ねかす[寝かす]",
+    "level": "N1"
+  },
+  {
+    "kanji": "ネガティブ",
+    "kana": "ネガティブ",
+    "romaji": "n\\'egateibu",
+    "meaning": "네거티프",
+    "level": "N1"
+  },
+  {
+    "kanji": "ねじ回し",
+    "kana": "ねじまわし",
+    "romaji": "n\\'ejimawashi",
+    "meaning": "나사돌리개. 드라이버",
+    "level": "N1"
+  },
+  {
+    "kanji": "ねじれる",
+    "kana": "ねじれる",
+    "romaji": "n\\'ejireru",
+    "meaning": "비틀어지다. 뒤틀리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "妬む",
+    "kana": "ねたむ",
+    "romaji": "n\\'etamu",
+    "meaning": "샘하다. 질투하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ねだる",
+    "kana": "ねだる",
+    "romaji": "n\\'edaru",
+    "meaning": "조르다. 치근거리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "熱意",
+    "kana": "ねつい",
+    "romaji": "n\\'etsui",
+    "meaning": "열의. 열성",
+    "level": "N1"
+  },
+  {
+    "kanji": "熱湯",
+    "kana": "ねっとう",
+    "romaji": "n\\'ettou",
+    "meaning": "열탕. 뜨거운 물",
+    "level": "N1"
+  },
+  {
+    "kanji": "熱量",
+    "kana": "ねつりょう",
+    "romaji": "n\\'etsuryou",
+    "meaning": "열량",
+    "level": "N1"
+  },
+  {
+    "kanji": "粘り",
+    "kana": "ねばり",
+    "romaji": "n\\'ebari",
+    "meaning": "끈기. 찰기",
+    "level": "N1"
+  },
+  {
+    "kanji": "粘る",
+    "kana": "ねばる",
+    "romaji": "n\\'ebaru",
+    "meaning": "잘 달라붙다. 차지게 붙다. 끈기 있게 견디어내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "根回し",
+    "kana": "ねまわし",
+    "romaji": "n\\'emawashi",
+    "meaning": "사전 교섭. 로비 활동",
+    "level": "N1"
+  },
+  {
+    "kanji": "練る",
+    "kana": "ねる",
+    "romaji": "n\\'eru",
+    "meaning": "반죽하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "念",
+    "kana": "ねん",
+    "romaji": "n\\'en",
+    "meaning": "생각. 주의함. 念を入れる 실수가 없도록 신경을 쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "年賀",
+    "kana": "ねんが",
+    "romaji": "n\\'enga",
+    "meaning": "연하 (신년 축하)",
+    "level": "N1"
+  },
+  {
+    "kanji": "年鑑",
+    "kana": "ねんかん",
+    "romaji": "n\\'enkan",
+    "meaning": "연감",
+    "level": "N1"
+  },
+  {
+    "kanji": "念願",
+    "kana": "ねんがん",
+    "romaji": "n\\'engan",
+    "meaning": "염원. 소원",
+    "level": "N1"
+  },
+  {
+    "kanji": "年号",
+    "kana": "ねんごう",
+    "romaji": "n\\'engou",
+    "meaning": "연호",
+    "level": "N1"
+  },
+  {
+    "kanji": "燃焼",
+    "kana": "ねんしょう",
+    "romaji": "n\\'enshou",
+    "meaning": "연소 (불탐)",
+    "level": "N1"
+  },
+  {
+    "kanji": "年長",
+    "kana": "ねんちょう",
+    "romaji": "n\\'enchou",
+    "meaning": "연장. 연상 (나이가 많음)",
+    "level": "N1"
+  },
+  {
+    "kanji": "燃料",
+    "kana": "ねんりょう",
+    "romaji": "n\\'enryou",
+    "meaning": "연료",
+    "level": "N1"
+  },
+  {
+    "kanji": "年輪",
+    "kana": "ねんりん",
+    "romaji": "n\\'enrin",
+    "meaning": "연륜. 나이테",
+    "level": "N1"
+  },
+  {
+    "kanji": "ノイローゼ",
+    "kana": "ノイローゼ",
+    "romaji": "n\\'oiro-ze",
+    "meaning": "노이로제",
+    "level": "N1"
+  },
+  {
+    "kanji": "脳",
+    "kana": "のう",
+    "romaji": "n\\'ou",
+    "meaning": "뇌",
+    "level": "N1"
+  },
+  {
+    "kanji": "農耕",
+    "kana": "のうこう",
+    "romaji": "n\\'oukou",
+    "meaning": "농경",
+    "level": "N1"
+  },
+  {
+    "kanji": "農場",
+    "kana": "のうじょう",
+    "romaji": "n\\'oujou",
+    "meaning": "농장",
+    "level": "N1"
+  },
+  {
+    "kanji": "農地",
+    "kana": "のうち",
+    "romaji": "n\\'ouchi",
+    "meaning": "농지. 농토",
+    "level": "N1"
+  },
+  {
+    "kanji": "納入",
+    "kana": "のうにゅう",
+    "romaji": "n\\'oun\\'yuu",
+    "meaning": "납입",
+    "level": "N1"
+  },
+  {
+    "kanji": "逃れる",
+    "kana": "のがれる",
+    "romaji": "n\\'ogareru",
+    "meaning": "달아나다. 도망치다. 벗어나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "軒並",
+    "kana": "のきなみ",
+    "romaji": "n\\'okin\\'ami",
+    "meaning": "집집마다. 일제히. 모두",
+    "level": "N1"
+  },
+  {
+    "kanji": "望ましい",
+    "kana": "のぞましい",
+    "romaji": "n\\'ozomashii",
+    "meaning": "바람직하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "臨む",
+    "kana": "のぞむ",
+    "romaji": "n\\'ozomu",
+    "meaning": "향하다. 임하다. 당면하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "乗っ取る",
+    "kana": "のっとる",
+    "romaji": "n\\'ottoru",
+    "meaning": "납치하다. 점령하다. 빼앗다",
+    "level": "N1"
+  },
+  {
+    "kanji": "のどかな",
+    "kana": "のどかな",
+    "romaji": "n\\'odokan\\'a",
+    "meaning": "화창한. 마음이 편안하고 한가로운",
+    "level": "N1"
+  },
+  {
+    "kanji": "罵る",
+    "kana": "ののしる",
+    "romaji": "n\\'on\\'oshiru",
+    "meaning": "(1G) 욕을 퍼부으며 떠들다. 매도하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "延べ",
+    "kana": "のべ",
+    "romaji": "n\\'obe",
+    "meaning": "연. 총계. 누적수",
+    "level": "N1"
+  },
+  {
+    "kanji": "飲み込む",
+    "kana": "のみこむ",
+    "romaji": "n\\'omikomu",
+    "meaning": "삼키다. 이해하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "乗り込む",
+    "kana": "のりこむ",
+    "romaji": "n\\'orikomu",
+    "meaning": "올라타다",
+    "level": "N1"
+  },
+  {
+    "kanji": "刃",
+    "kana": "は",
+    "romaji": "ha",
+    "meaning": "칼날",
+    "level": "N1"
+  },
+  {
+    "kanji": "-派",
+    "kana": "は",
+    "romaji": "ha",
+    "meaning": "-파 (갈래)",
+    "level": "N1"
+  },
+  {
+    "kanji": "バー",
+    "kana": "バー",
+    "romaji": "ba-",
+    "meaning": "바",
+    "level": "N1"
+  },
+  {
+    "kanji": "把握",
+    "kana": "はあく",
+    "romaji": "haaku",
+    "meaning": "파악",
+    "level": "N1"
+  },
+  {
+    "kanji": "パート",
+    "kana": "パート",
+    "romaji": "pa-to",
+    "meaning": "파트",
+    "level": "N1"
+  },
+  {
+    "kanji": "肺",
+    "kana": "はい",
+    "romaji": "hai",
+    "meaning": "폐",
+    "level": "N1"
+  },
+  {
+    "kanji": "廃棄",
+    "kana": "はいき",
+    "romaji": "haiki",
+    "meaning": "폐기",
+    "level": "N1"
+  },
+  {
+    "kanji": "配給",
+    "kana": "はいきゅう",
+    "romaji": "haikyuu",
+    "meaning": "배급",
+    "level": "N1"
+  },
+  {
+    "kanji": "ばい菌",
+    "kana": "ばいきん",
+    "romaji": "baikin",
+    "meaning": "미균. 세균",
+    "level": "N1"
+  },
+  {
+    "kanji": "配偶者",
+    "kana": "はいぐうしゃ",
+    "romaji": "haiguusha",
+    "meaning": "배우자",
+    "level": "N1"
+  },
+  {
+    "kanji": "拝啓",
+    "kana": "はいけい",
+    "romaji": "haikei",
+    "meaning": "근계 (편지 서두에 쓰는 말)",
+    "level": "N1"
+  },
+  {
+    "kanji": "背景",
+    "kana": "はいけい",
+    "romaji": "haikei",
+    "meaning": "배경",
+    "level": "N1"
+  },
+  {
+    "kanji": "背後",
+    "kana": "はいご",
+    "romaji": "haigo",
+    "meaning": "배후",
+    "level": "N1"
+  },
+  {
+    "kanji": "廃止",
+    "kana": "はいし",
+    "romaji": "haishi",
+    "meaning": "폐지",
+    "level": "N1"
+  },
+  {
+    "kanji": "拝借",
+    "kana": "はいしゃく",
+    "romaji": "haishaku",
+    "meaning": "かりる[借りる]의 낮춤말. 빌리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "排除",
+    "kana": "はいじょ",
+    "romaji": "haijo",
+    "meaning": "배제. 제거",
+    "level": "N1"
+  },
+  {
+    "kanji": "賠償",
+    "kana": "ばいしょう",
+    "romaji": "baishou",
+    "meaning": "배상",
+    "level": "N1"
+  },
+  {
+    "kanji": "排水",
+    "kana": "はいすい",
+    "romaji": "haisui",
+    "meaning": "배수",
+    "level": "N1"
+  },
+  {
+    "kanji": "敗戦",
+    "kana": "はいせん",
+    "romaji": "haisen",
+    "meaning": "패전",
+    "level": "N1"
+  },
+  {
+    "kanji": "配置",
+    "kana": "はいち",
+    "romaji": "haichi",
+    "meaning": "배치",
+    "level": "N1"
+  },
+  {
+    "kanji": "配布",
+    "kana": "はいふ",
+    "romaji": "haifu",
+    "meaning": "배포",
+    "level": "N1"
+  },
+  {
+    "kanji": "敗北",
+    "kana": "はいぼく",
+    "romaji": "haiboku",
+    "meaning": "패배",
+    "level": "N1"
+  },
+  {
+    "kanji": "倍率",
+    "kana": "ばいりつ",
+    "romaji": "bairitsu",
+    "meaning": "배율",
+    "level": "N1"
+  },
+  {
+    "kanji": "配慮",
+    "kana": "はいりょ",
+    "romaji": "hairyo",
+    "meaning": "배려. 심려",
+    "level": "N1"
+  },
+  {
+    "kanji": "配列/排列",
+    "kana": "はいれつ",
+    "romaji": "hairetsu",
+    "meaning": "배열",
+    "level": "N1"
+  },
+  {
+    "kanji": "はう",
+    "kana": "はう",
+    "romaji": "hau",
+    "meaning": "기다. 붙어서 뻗어 가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "映える",
+    "kana": "はえる",
+    "romaji": "haeru",
+    "meaning": "빛나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "破壊",
+    "kana": "はかい",
+    "romaji": "hakai",
+    "meaning": "파괴",
+    "level": "N1"
+  },
+  {
+    "kanji": "はかどる",
+    "kana": "はかどる",
+    "romaji": "hakadoru",
+    "meaning": "일이 순조롭게 되어 가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "はかない",
+    "kana": "はかない",
+    "romaji": "hakan\\'ai",
+    "meaning": "덧없다. 허무하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "馬鹿馬鹿しい",
+    "kana": "ばかばかしい",
+    "romaji": "bakabakashii",
+    "meaning": "매우 어리석다. 우습다",
+    "level": "N1"
+  },
+  {
+    "kanji": "図る",
+    "kana": "はかる",
+    "romaji": "hakaru",
+    "meaning": "목적하다. 노리다. 계획하다. 도모하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "破棄",
+    "kana": "はき",
+    "romaji": "haki",
+    "meaning": "파기",
+    "level": "N1"
+  },
+  {
+    "kanji": "剝ぐ",
+    "kana": "はぐ",
+    "romaji": "hagu",
+    "meaning": "벗기다. 박탈하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "迫害",
+    "kana": "はくがい",
+    "romaji": "hakugai",
+    "meaning": "박해",
+    "level": "N1"
+  },
+  {
+    "kanji": "薄弱な",
+    "kana": "はくじゃくな",
+    "romaji": "hakujakun\\'a",
+    "meaning": "박약한",
+    "level": "N1"
+  },
+  {
+    "kanji": "白状",
+    "kana": "はくじょう",
+    "romaji": "hakujou",
+    "meaning": "자백",
+    "level": "N1"
+  },
+  {
+    "kanji": "漠然と",
+    "kana": "ばくぜんと",
+    "romaji": "bakuzento",
+    "meaning": "막연하게",
+    "level": "N1"
+  },
+  {
+    "kanji": "爆弾",
+    "kana": "ばくだん",
+    "romaji": "bakudan",
+    "meaning": "폭탄",
+    "level": "N1"
+  },
+  {
+    "kanji": "爆破",
+    "kana": "ばくは",
+    "romaji": "bakuha",
+    "meaning": "폭파",
+    "level": "N1"
+  },
+  {
+    "kanji": "暴露",
+    "kana": "ばくろ",
+    "romaji": "bakuro",
+    "meaning": "폭로",
+    "level": "N1"
+  },
+  {
+    "kanji": "励ます",
+    "kana": "はげます",
+    "romaji": "hagemasu",
+    "meaning": "북돋다. 격려하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "励む",
+    "kana": "はげむ",
+    "romaji": "hagemu",
+    "meaning": "힘쓰다",
+    "level": "N1"
+  },
+  {
+    "kanji": "化ける",
+    "kana": "ばける",
+    "romaji": "bakeru",
+    "meaning": "모습이 딴판으로 바뀌다. 둔갑하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "剝げる",
+    "kana": "はげる",
+    "romaji": "hageru",
+    "meaning": "벗겨지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "派遣",
+    "kana": "はけん",
+    "romaji": "haken",
+    "meaning": "파견",
+    "level": "N1"
+  },
+  {
+    "kanji": "恥",
+    "kana": "はじ",
+    "romaji": "haji",
+    "meaning": "부끄러움. 수치. 치욕",
+    "level": "N1"
+  },
+  {
+    "kanji": "弾く",
+    "kana": "はじく",
+    "romaji": "hajiku",
+    "meaning": "튀기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "弾ける",
+    "kana": "はじける",
+    "romaji": "hajikeru",
+    "meaning": "터지다. 세게 튀다",
+    "level": "N1"
+  },
+  {
+    "kanji": "パジャマ",
+    "kana": "パジャマ",
+    "romaji": "pajama",
+    "meaning": "파자마. 서양식 잠옷",
+    "level": "N1"
+  },
+  {
+    "kanji": "恥じらう",
+    "kana": "はじらう",
+    "romaji": "hajirau",
+    "meaning": "부끄러워하다. 수줍어하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "恥じる",
+    "kana": "はじる",
+    "romaji": "hajiru",
+    "meaning": "부끄러이 여기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "橋渡し",
+    "kana": "はしわたし",
+    "romaji": "hashiwatashi",
+    "meaning": "중개함. 중간 역할",
+    "level": "N1"
+  },
+  {
+    "kanji": "破損",
+    "kana": "はそん",
+    "romaji": "hason",
+    "meaning": "파손",
+    "level": "N1"
+  },
+  {
+    "kanji": "はたく",
+    "kana": "はたく",
+    "romaji": "hataku",
+    "meaning": "털다. 털어 내다. 돈을 다 써버리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "裸足",
+    "kana": "はだし",
+    "romaji": "hadashi",
+    "meaning": "맨발",
+    "level": "N1"
+  },
+  {
+    "kanji": "果たす",
+    "kana": "はたす",
+    "romaji": "hatasu",
+    "meaning": "완수하다. 다하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "蜂蜜",
+    "kana": "はちみつ",
+    "romaji": "hachimitsu",
+    "meaning": "벌꿀",
+    "level": "N1"
+  },
+  {
+    "kanji": "パチンコ",
+    "kana": "パチンコ",
+    "romaji": "pachinko",
+    "meaning": "빠찡코",
+    "level": "N1"
+  },
+  {
+    "kanji": "罰",
+    "kana": "ばつ",
+    "romaji": "batsu",
+    "meaning": "벌",
+    "level": "N1"
+  },
+  {
+    "kanji": "発育",
+    "kana": "はついく",
+    "romaji": "hatsuiku",
+    "meaning": "발육",
+    "level": "N1"
+  },
+  {
+    "kanji": "発芽",
+    "kana": "はつが",
+    "romaji": "hatsuga",
+    "meaning": "발아. 싹이 틈",
+    "level": "N1"
+  },
+  {
+    "kanji": "発言",
+    "kana": "はつげん",
+    "romaji": "hatsugen",
+    "meaning": "발언",
+    "level": "N1"
+  },
+  {
+    "kanji": "バッジ",
+    "kana": "バッジ",
+    "romaji": "bajji",
+    "meaning": "배지",
+    "level": "N1"
+  },
+  {
+    "kanji": "発生",
+    "kana": "はっせい",
+    "romaji": "hassei",
+    "meaning": "발생",
+    "level": "N1"
+  },
+  {
+    "kanji": "バッテリー",
+    "kana": "バッテリー",
+    "romaji": "batteri-",
+    "meaning": "배터리",
+    "level": "N1"
+  },
+  {
+    "kanji": "ばってん",
+    "kana": "ばってん",
+    "romaji": "batten",
+    "meaning": "×표 ＝ばつ",
+    "level": "N1"
+  },
+  {
+    "kanji": "バット",
+    "kana": "バット",
+    "romaji": "batto",
+    "meaning": "배트. 방망이",
+    "level": "N1"
+  },
+  {
+    "kanji": "発病",
+    "kana": "はつびょう",
+    "romaji": "hatsubyou",
+    "meaning": "발병",
+    "level": "N1"
+  },
+  {
+    "kanji": "初耳",
+    "kana": "はつみみ",
+    "romaji": "hatsumimi",
+    "meaning": "초문. 처음 듣는 일",
+    "level": "N1"
+  },
+  {
+    "kanji": "果て",
+    "kana": "はて",
+    "romaji": "hate",
+    "meaning": "(넓은 지역의)끝",
+    "level": "N1"
+  },
+  {
+    "kanji": "ばてる",
+    "kana": "ばてる",
+    "romaji": "bateru",
+    "meaning": "지치다. 기진하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "果てる",
+    "kana": "はてる",
+    "romaji": "hateru",
+    "meaning": "끝나다. 목숨이 다하다. 죽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "パトカー",
+    "kana": "パトカー",
+    "romaji": "patoka-",
+    "meaning": "순찰차 →パトロールカー",
+    "level": "N1"
+  },
+  {
+    "kanji": "甚だ",
+    "kana": "はなはだ",
+    "romaji": "han\\'ahada",
+    "meaning": "매우. 몹시. 심히",
+    "level": "N1"
+  },
+  {
+    "kanji": "華々しい",
+    "kana": "はなばなしい",
+    "romaji": "han\\'aban\\'ashii",
+    "meaning": "눈부시다. 매우 화려하다. 훌륭하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "花びら",
+    "kana": "はなびら",
+    "romaji": "han\\'abira",
+    "meaning": "꽃잎",
+    "level": "N1"
+  },
+  {
+    "kanji": "華やかな",
+    "kana": "はなやかな",
+    "romaji": "han\\'ayakan\\'a",
+    "meaning": "화려한",
+    "level": "N1"
+  },
+  {
+    "kanji": "パパ",
+    "kana": "パパ",
+    "romaji": "papa",
+    "meaning": "파파. 아빠",
+    "level": "N1"
+  },
+  {
+    "kanji": "阻む",
+    "kana": "はばむ",
+    "romaji": "habamu",
+    "meaning": "방해하다. 저지하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "浜",
+    "kana": "はま",
+    "romaji": "hama",
+    "meaning": "해변의 모래밭",
+    "level": "N1"
+  },
+  {
+    "kanji": "浜辺",
+    "kana": "はまべ",
+    "romaji": "hamabe",
+    "meaning": "바닷가. 해변",
+    "level": "N1"
+  },
+  {
+    "kanji": "はまる",
+    "kana": "はまる",
+    "romaji": "hamaru",
+    "meaning": "꼭 끼이다. 꼭 맞다. 빠지다. 속다",
+    "level": "N1"
+  },
+  {
+    "kanji": "生やす",
+    "kana": "はやす",
+    "romaji": "hayasu",
+    "meaning": "자라게 하다. 기르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "早める",
+    "kana": "はやめる",
+    "romaji": "hayameru",
+    "meaning": "예정보다 이르게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "原っぱ",
+    "kana": "はらっぱ",
+    "romaji": "harappa",
+    "meaning": "빈 터. 들",
+    "level": "N1"
+  },
+  {
+    "kanji": "ばらまく",
+    "kana": "ばらまく",
+    "romaji": "baramaku",
+    "meaning": "뿌리다. 흩어 뿌리다. 여기저기 흩어지게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "張(り)紙",
+    "kana": "はりがみ",
+    "romaji": "harigami",
+    "meaning": "붙인 종이. 벽보",
+    "level": "N1"
+  },
+  {
+    "kanji": "はるか",
+    "kana": "はるか",
+    "romaji": "haruka",
+    "meaning": "아득히. 훨씬",
+    "level": "N1"
+  },
+  {
+    "kanji": "はるかな",
+    "kana": "はるかな",
+    "romaji": "harukan\\'a",
+    "meaning": "아득히 먼",
+    "level": "N1"
+  },
+  {
+    "kanji": "破裂",
+    "kana": "はれつ",
+    "romaji": "haretsu",
+    "meaning": "파열",
+    "level": "N1"
+  },
+  {
+    "kanji": "腫れる",
+    "kana": "はれる",
+    "romaji": "hareru",
+    "meaning": "붓다. 부어오르다",
+    "level": "N1"
+  },
+  {
+    "kanji": "-判",
+    "kana": "はん",
+    "romaji": "han",
+    "meaning": "-판 (종이 크기)",
+    "level": "N1"
+  },
+  {
+    "kanji": "-版",
+    "kana": "はん",
+    "romaji": "han",
+    "meaning": "-판 (인쇄)",
+    "level": "N1"
+  },
+  {
+    "kanji": "班",
+    "kana": "はん",
+    "romaji": "han",
+    "meaning": "반 (class. team)",
+    "level": "N1"
+  },
+  {
+    "kanji": "繁栄",
+    "kana": "はんえい",
+    "romaji": "han\\'ei",
+    "meaning": "번영",
+    "level": "N1"
+  },
+  {
+    "kanji": "版画",
+    "kana": "はんが",
+    "romaji": "hanga",
+    "meaning": "판화",
+    "level": "N1"
+  },
+  {
+    "kanji": "ハンガー",
+    "kana": "ハンガー",
+    "romaji": "hanga-",
+    "meaning": "양복걸이. 옷걸이",
+    "level": "N1"
+  },
+  {
+    "kanji": "反感",
+    "kana": "はんかん",
+    "romaji": "hankan",
+    "meaning": "반감",
+    "level": "N1"
+  },
+  {
+    "kanji": "反響",
+    "kana": "はんきょう",
+    "romaji": "hankyou",
+    "meaning": "반향",
+    "level": "N1"
+  },
+  {
+    "kanji": "パンク",
+    "kana": "パンク",
+    "romaji": "panku",
+    "meaning": "펑크",
+    "level": "N1"
+  },
+  {
+    "kanji": "反撃",
+    "kana": "はんげき",
+    "romaji": "hangeki",
+    "meaning": "반격",
+    "level": "N1"
+  },
+  {
+    "kanji": "判決",
+    "kana": "はんけつ",
+    "romaji": "hanketsu",
+    "meaning": "판결",
+    "level": "N1"
+  },
+  {
+    "kanji": "反射",
+    "kana": "はんしゃ",
+    "romaji": "hansha",
+    "meaning": "반사",
+    "level": "N1"
+  },
+  {
+    "kanji": "繁盛",
+    "kana": "はんじょう",
+    "romaji": "hanjou",
+    "meaning": "번성. 번창. 장사가 잘됨",
+    "level": "N1"
+  },
+  {
+    "kanji": "繁殖",
+    "kana": "はんしょく",
+    "romaji": "hanshoku",
+    "meaning": "번식",
+    "level": "N1"
+  },
+  {
+    "kanji": "判定",
+    "kana": "はんてい",
+    "romaji": "hantei",
+    "meaning": "판정",
+    "level": "N1"
+  },
+  {
+    "kanji": "晩年",
+    "kana": "ばんねん",
+    "romaji": "bann\\'en",
+    "meaning": "만년. 말년",
+    "level": "N1"
+  },
+  {
+    "kanji": "万能",
+    "kana": "ばんのう",
+    "romaji": "bann\\'ou",
+    "meaning": "만능",
+    "level": "N1"
+  },
+  {
+    "kanji": "反発",
+    "kana": "はんぱつ",
+    "romaji": "hanpatsu",
+    "meaning": "반발",
+    "level": "N1"
+  },
+  {
+    "kanji": "半端な",
+    "kana": "はんぱな",
+    "romaji": "hanpan\\'a",
+    "meaning": "전부가 갖춰지지 않는. 어정쩡한",
+    "level": "N1"
+  },
+  {
+    "kanji": "反乱",
+    "kana": "はんらん",
+    "romaji": "hanran",
+    "meaning": "반란",
+    "level": "N1"
+  },
+  {
+    "kanji": "氾濫",
+    "kana": "はんらん",
+    "romaji": "hanran",
+    "meaning": "범람",
+    "level": "N1"
+  },
+  {
+    "kanji": "-碑",
+    "kana": "ひ",
+    "romaji": "hi",
+    "meaning": "-비 (비석)",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひいては",
+    "kana": "ひいては",
+    "romaji": "hiiteha",
+    "meaning": "나아가서는",
+    "level": "N1"
+  },
+  {
+    "kanji": "控え室",
+    "kana": "ひかえしつ",
+    "romaji": "hikaeshitsu",
+    "meaning": "대기실",
+    "level": "N1"
+  },
+  {
+    "kanji": "控える",
+    "kana": "ひかえる",
+    "romaji": "hikaeru",
+    "meaning": "삼가하다. 앞두다. 순서를 기다리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "悲観",
+    "kana": "ひかん",
+    "romaji": "hikan",
+    "meaning": "비관",
+    "level": "N1"
+  },
+  {
+    "kanji": "引き上げる",
+    "kana": "ひきあげる",
+    "romaji": "hikiageru",
+    "meaning": "끌어올리다. 밑에서 위로 올리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "引き揚げる",
+    "kana": "ひきあげる",
+    "romaji": "hikiageru",
+    "meaning": "철수하다. 퇴각하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "率いる",
+    "kana": "ひきいる",
+    "romaji": "hikiiru",
+    "meaning": "거느리다. 인솔하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "引き起こす",
+    "kana": "ひきおこす",
+    "romaji": "hikiokosu",
+    "meaning": "일으키다. 야기하다. 발생시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "引き下げる",
+    "kana": "ひきさげる",
+    "romaji": "hikisageru",
+    "meaning": "내리다. 인하하다. 싸게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "引きずる",
+    "kana": "ひきずる",
+    "romaji": "hikizuru",
+    "meaning": "질질 끌다",
+    "level": "N1"
+  },
+  {
+    "kanji": "引き取る",
+    "kana": "ひきとる",
+    "romaji": "hikitoru",
+    "meaning": "물러가다. 떠맡다",
+    "level": "N1"
+  },
+  {
+    "kanji": "否決",
+    "kana": "ひけつ",
+    "romaji": "hiketsu",
+    "meaning": "부결",
+    "level": "N1"
+  },
+  {
+    "kanji": "非行",
+    "kana": "ひこう",
+    "romaji": "hikou",
+    "meaning": "비행",
+    "level": "N1"
+  },
+  {
+    "kanji": "日頃",
+    "kana": "ひごろ",
+    "romaji": "higoro",
+    "meaning": "평소. 평상시. 늘",
+    "level": "N1"
+  },
+  {
+    "kanji": "久しい",
+    "kana": "ひさしい",
+    "romaji": "hisashii",
+    "meaning": "오래다. 오래간만이다",
+    "level": "N1"
+  },
+  {
+    "kanji": "悲惨な",
+    "kana": "ひさんな",
+    "romaji": "hisann\\'a",
+    "meaning": "비참한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ビジネス",
+    "kana": "ビジネス",
+    "romaji": "bijin\\'esu",
+    "meaning": "비즈니스",
+    "level": "N1"
+  },
+  {
+    "kanji": "比重",
+    "kana": "ひじゅう",
+    "romaji": "hijuu",
+    "meaning": "비중",
+    "level": "N1"
+  },
+  {
+    "kanji": "秘書",
+    "kana": "ひしょ",
+    "romaji": "hisho",
+    "meaning": "비서",
+    "level": "N1"
+  },
+  {
+    "kanji": "微笑",
+    "kana": "びしょう",
+    "romaji": "bishou",
+    "meaning": "미소 ＝ほほえみ",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひずみ",
+    "kana": "ひずみ",
+    "romaji": "hizumi",
+    "meaning": "비뚤어짐. 일그러짐. 뒤틀림. 나쁜 여파",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひそかに",
+    "kana": "ひそかに",
+    "romaji": "hisokan\\'i",
+    "meaning": "가만히. 몰래. 비밀리에",
+    "level": "N1"
+  },
+  {
+    "kanji": "浸す",
+    "kana": "ひたす",
+    "romaji": "hitasu",
+    "meaning": "담그다. 잠그다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひたすら",
+    "kana": "ひたすら",
+    "romaji": "hitasura",
+    "meaning": "오로지. 그저. 일편단심으로",
+    "level": "N1"
+  },
+  {
+    "kanji": "左利き",
+    "kana": "ひだりきき",
+    "romaji": "hidarikiki",
+    "meaning": "왼손잡이",
+    "level": "N1"
+  },
+  {
+    "kanji": "引っかく",
+    "kana": "ひっかく",
+    "romaji": "hikkaku",
+    "meaning": "세게 긁다. 할퀴다",
+    "level": "N1"
+  },
+  {
+    "kanji": "必修",
+    "kana": "ひっしゅう",
+    "romaji": "hisshuu",
+    "meaning": "필수(과목)",
+    "level": "N1"
+  },
+  {
+    "kanji": "びっしょり",
+    "kana": "びっしょり",
+    "romaji": "bisshori",
+    "meaning": "흠뻑",
+    "level": "N1"
+  },
+  {
+    "kanji": "必然的な",
+    "kana": "ひつぜんてきな",
+    "romaji": "hitsuzentekin\\'a",
+    "meaning": "필연적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "匹敵",
+    "kana": "ひってき",
+    "romaji": "hitteki",
+    "meaning": "필적",
+    "level": "N1"
+  },
+  {
+    "kanji": "一息",
+    "kana": "ひといき",
+    "romaji": "hitoiki",
+    "meaning": "단숨. 잠깐 쉼",
+    "level": "N1"
+  },
+  {
+    "kanji": "人影",
+    "kana": "ひとかげ",
+    "romaji": "hitokage",
+    "meaning": "사람의 그림자. 사람의 모습",
+    "level": "N1"
+  },
+  {
+    "kanji": "人柄",
+    "kana": "ひとがら",
+    "romaji": "hitogara",
+    "meaning": "인품. 사람됨",
+    "level": "N1"
+  },
+  {
+    "kanji": "人け",
+    "kana": "ひとけ",
+    "romaji": "hitoke",
+    "meaning": "인기척",
+    "level": "N1"
+  },
+  {
+    "kanji": "一頃",
+    "kana": "ひところ",
+    "romaji": "hitokoro",
+    "meaning": "한때. 이전의 어떤 시기",
+    "level": "N1"
+  },
+  {
+    "kanji": "人質",
+    "kana": "ひとじち",
+    "romaji": "hitojichi",
+    "meaning": "인질",
+    "level": "N1"
+  },
+  {
+    "kanji": "一筋",
+    "kana": "ひとすじ",
+    "romaji": "hitosuji",
+    "meaning": "한 줄기",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひとまず",
+    "kana": "ひとまず",
+    "romaji": "hitomazu",
+    "meaning": "우선. 일단. 하여튼",
+    "level": "N1"
+  },
+  {
+    "kanji": "人目",
+    "kana": "ひとめ",
+    "romaji": "hitome",
+    "meaning": "남의 눈. 주변의 시선",
+    "level": "N1"
+  },
+  {
+    "kanji": "日取り",
+    "kana": "ひどり",
+    "romaji": "hidori",
+    "meaning": "날짜를 정함. 택일. 정한 날짜",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひな",
+    "kana": "ひな",
+    "romaji": "hin\\'a",
+    "meaning": "갓 깬 날짐승의 새끼. 병아리",
+    "level": "N1"
+  },
+  {
+    "kanji": "日なた",
+    "kana": "ひなた",
+    "romaji": "hin\\'ata",
+    "meaning": "양지",
+    "level": "N1"
+  },
+  {
+    "kanji": "避難",
+    "kana": "ひなん",
+    "romaji": "hin\\'an",
+    "meaning": "피난",
+    "level": "N1"
+  },
+  {
+    "kanji": "日の丸",
+    "kana": "ひのまる",
+    "romaji": "hin\\'omaru",
+    "meaning": "태양을 본뜬 붉은 동그라미. 일장기",
+    "level": "N1"
+  },
+  {
+    "kanji": "火花",
+    "kana": "ひばな",
+    "romaji": "hiban\\'a",
+    "meaning": "불똥. 불티",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひび",
+    "kana": "ひび",
+    "romaji": "hibi",
+    "meaning": "금. 터진 데",
+    "level": "N1"
+  },
+  {
+    "kanji": "悲鳴",
+    "kana": "ひめい",
+    "romaji": "himei",
+    "meaning": "비명",
+    "level": "N1"
+  },
+  {
+    "kanji": "冷(や)かす",
+    "kana": "ひやかす",
+    "romaji": "hiyakasu",
+    "meaning": "놀리다. 희롱하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "日焼け",
+    "kana": "ひやけ",
+    "romaji": "hiyake",
+    "meaning": "피부가 햇볕에 탐. 선탠",
+    "level": "N1"
+  },
+  {
+    "kanji": "票",
+    "kana": "ひょう",
+    "romaji": "hyou",
+    "meaning": "표 (투표)",
+    "level": "N1"
+  },
+  {
+    "kanji": "標語",
+    "kana": "ひょうご",
+    "romaji": "hyougo",
+    "meaning": "표어",
+    "level": "N1"
+  },
+  {
+    "kanji": "描写",
+    "kana": "びょうしゃ",
+    "romaji": "byousha",
+    "meaning": "묘사",
+    "level": "N1"
+  },
+  {
+    "kanji": "ひょっとして",
+    "kana": "ひょっとして",
+    "romaji": "hyottoshite",
+    "meaning": "어쩌면. 혹시. 만일",
+    "level": "N1"
+  },
+  {
+    "kanji": "びら",
+    "kana": "びら",
+    "romaji": "bira",
+    "meaning": "한 장으로 된 광고지. 전단지. 삐라",
+    "level": "N1"
+  },
+  {
+    "kanji": "平たい",
+    "kana": "ひらたい",
+    "romaji": "hiratai",
+    "meaning": "평평하다. 평탄하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "びり",
+    "kana": "びり",
+    "romaji": "biri",
+    "meaning": "꼴찌",
+    "level": "N1"
+  },
+  {
+    "kanji": "比率",
+    "kana": "ひりつ",
+    "romaji": "hiritsu",
+    "meaning": "비율",
+    "level": "N1"
+  },
+  {
+    "kanji": "微量",
+    "kana": "びりょう",
+    "romaji": "biryou",
+    "meaning": "미량. 극히 적은 양",
+    "level": "N1"
+  },
+  {
+    "kanji": "昼飯",
+    "kana": "ひるめし",
+    "romaji": "hirumeshi",
+    "meaning": "점심",
+    "level": "N1"
+  },
+  {
+    "kanji": "比例",
+    "kana": "ひれい",
+    "romaji": "hirei",
+    "meaning": "비례",
+    "level": "N1"
+  },
+  {
+    "kanji": "広まる",
+    "kana": "ひろまる",
+    "romaji": "hiromaru",
+    "meaning": "널리 퍼지다. 널리 알려지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "敏感な",
+    "kana": "びんかんな",
+    "romaji": "binkann\\'a",
+    "meaning": "민감한",
+    "level": "N1"
+  },
+  {
+    "kanji": "品質",
+    "kana": "ひんしつ",
+    "romaji": "hinshitsu",
+    "meaning": "품질",
+    "level": "N1"
+  },
+  {
+    "kanji": "貧弱な",
+    "kana": "ひんじゃくな",
+    "romaji": "hinjakun\\'a",
+    "meaning": "빈약한",
+    "level": "N1"
+  },
+  {
+    "kanji": "品種",
+    "kana": "ひんしゅ",
+    "romaji": "hinshu",
+    "meaning": "품종",
+    "level": "N1"
+  },
+  {
+    "kanji": "ヒント",
+    "kana": "ヒント",
+    "romaji": "hinto",
+    "meaning": "힌트",
+    "level": "N1"
+  },
+  {
+    "kanji": "頻繁な",
+    "kana": "ひんぱんな",
+    "romaji": "hinpann\\'a",
+    "meaning": "빈번한",
+    "level": "N1"
+  },
+  {
+    "kanji": "貧乏な",
+    "kana": "びんぼうな",
+    "romaji": "binboun\\'a",
+    "meaning": "가난한",
+    "level": "N1"
+  },
+  {
+    "kanji": "-分",
+    "kana": "ぶ",
+    "romaji": "bu",
+    "meaning": "1%",
+    "level": "N1"
+  },
+  {
+    "kanji": "ファイト",
+    "kana": "ファイト",
+    "romaji": "fuaito",
+    "meaning": "파이트. 파이팅",
+    "level": "N1"
+  },
+  {
+    "kanji": "ファン",
+    "kana": "ファン",
+    "romaji": "fuan",
+    "meaning": "팬. 선풍기. 열렬한 애호가",
+    "level": "N1"
+  },
+  {
+    "kanji": "不意に",
+    "kana": "ふいに",
+    "romaji": "fuin\\'i",
+    "meaning": "뜻밖에. 불시에. 갑작스럽게",
+    "level": "N1"
+  },
+  {
+    "kanji": "封",
+    "kana": "ふう",
+    "romaji": "fuu",
+    "meaning": "봉함. 봉한 것",
+    "level": "N1"
+  },
+  {
+    "kanji": "封鎖",
+    "kana": "ふうさ",
+    "romaji": "fuusa",
+    "meaning": "봉쇄",
+    "level": "N1"
+  },
+  {
+    "kanji": "風車",
+    "kana": "ふうしゃ",
+    "romaji": "fuusha",
+    "meaning": "풍차",
+    "level": "N1"
+  },
+  {
+    "kanji": "風習",
+    "kana": "ふうしゅう",
+    "romaji": "fuushuu",
+    "meaning": "풍습",
+    "level": "N1"
+  },
+  {
+    "kanji": "風俗",
+    "kana": "ふうぞく",
+    "romaji": "fuuzoku",
+    "meaning": "풍속. 풍습",
+    "level": "N1"
+  },
+  {
+    "kanji": "ブーツ",
+    "kana": "ブーツ",
+    "romaji": "bu-tsu",
+    "meaning": "부츠",
+    "level": "N1"
+  },
+  {
+    "kanji": "風土",
+    "kana": "ふうど",
+    "romaji": "fuudo",
+    "meaning": "풍토",
+    "level": "N1"
+  },
+  {
+    "kanji": "フォーム",
+    "kana": "フォーム",
+    "romaji": "fuo-mu",
+    "meaning": "폼. 형식",
+    "level": "N1"
+  },
+  {
+    "kanji": "不可欠な",
+    "kana": "ふかけつな",
+    "romaji": "fukaketsun\\'a",
+    "meaning": "불가결한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぶかぶか",
+    "kana": "ぶかぶか",
+    "romaji": "bukabuka",
+    "meaning": "헐렁헐렁",
+    "level": "N1"
+  },
+  {
+    "kanji": "不吉な",
+    "kana": "ふきつな",
+    "romaji": "fukitsun\\'a",
+    "meaning": "불길한",
+    "level": "N1"
+  },
+  {
+    "kanji": "不況",
+    "kana": "ふきょう",
+    "romaji": "fukyou",
+    "meaning": "불황",
+    "level": "N1"
+  },
+  {
+    "kanji": "布巾",
+    "kana": "ふきん",
+    "romaji": "fukin",
+    "meaning": "행주",
+    "level": "N1"
+  },
+  {
+    "kanji": "福",
+    "kana": "ふく",
+    "romaji": "fuku",
+    "meaning": "복. 행복",
+    "level": "N1"
+  },
+  {
+    "kanji": "複合",
+    "kana": "ふくごう",
+    "romaji": "fukugou",
+    "meaning": "복합",
+    "level": "N1"
+  },
+  {
+    "kanji": "福祉",
+    "kana": "ふくし",
+    "romaji": "fukushi",
+    "meaning": "복지",
+    "level": "N1"
+  },
+  {
+    "kanji": "覆面",
+    "kana": "ふくめん",
+    "romaji": "fukumen",
+    "meaning": "복면",
+    "level": "N1"
+  },
+  {
+    "kanji": "膨れる",
+    "kana": "ふくれる",
+    "romaji": "fukureru",
+    "meaning": "부풀다. 불룩해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "不景気",
+    "kana": "ふけいき",
+    "romaji": "fukeiki",
+    "meaning": "불경기",
+    "level": "N1"
+  },
+  {
+    "kanji": "ふける",
+    "kana": "ふける",
+    "romaji": "fukeru",
+    "meaning": "열중하다. 빠지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "老ける",
+    "kana": "ふける",
+    "romaji": "fukeru",
+    "meaning": "나이를 먹다. 늙다",
+    "level": "N1"
+  },
+  {
+    "kanji": "富豪",
+    "kana": "ふごう",
+    "romaji": "fugou",
+    "meaning": "부호. 재산가",
+    "level": "N1"
+  },
+  {
+    "kanji": "布告",
+    "kana": "ふこく",
+    "romaji": "fukoku",
+    "meaning": "포고",
+    "level": "N1"
+  },
+  {
+    "kanji": "ブザー",
+    "kana": "ブザー",
+    "romaji": "buza-",
+    "meaning": "버저. 벨",
+    "level": "N1"
+  },
+  {
+    "kanji": "不在",
+    "kana": "ふざい",
+    "romaji": "fuzai",
+    "meaning": "부재",
+    "level": "N1"
+  },
+  {
+    "kanji": "負債",
+    "kana": "ふさい",
+    "romaji": "fusai",
+    "meaning": "부채. 빚",
+    "level": "N1"
+  },
+  {
+    "kanji": "相応しい",
+    "kana": "ふさわしい",
+    "romaji": "fusawashii",
+    "meaning": "어울리다. 적합하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "不順な",
+    "kana": "ふじゅんな",
+    "romaji": "fujunn\\'a",
+    "meaning": "불순한. 순탄치 못한",
+    "level": "N1"
+  },
+  {
+    "kanji": "負傷",
+    "kana": "ふしょう",
+    "romaji": "fushou",
+    "meaning": "부상",
+    "level": "N1"
+  },
+  {
+    "kanji": "侮辱",
+    "kana": "ぶじょく",
+    "romaji": "bujoku",
+    "meaning": "모욕",
+    "level": "N1"
+  },
+  {
+    "kanji": "不審な",
+    "kana": "ふしんな",
+    "romaji": "fushinn\\'a",
+    "meaning": "의심스러운",
+    "level": "N1"
+  },
+  {
+    "kanji": "不振な",
+    "kana": "ふしんな",
+    "romaji": "fushinn\\'a",
+    "meaning": "부진한",
+    "level": "N1"
+  },
+  {
+    "kanji": "武装",
+    "kana": "ぶそう",
+    "romaji": "busou",
+    "meaning": "무장",
+    "level": "N1"
+  },
+  {
+    "kanji": "札",
+    "kana": "ふだ",
+    "romaji": "fuda",
+    "meaning": "표. 팻말. 패. 명찰",
+    "level": "N1"
+  },
+  {
+    "kanji": "不調",
+    "kana": "ふちょう",
+    "romaji": "fuchou",
+    "meaning": "상태가 나쁨. 잘 이루어지지 않음",
+    "level": "N1"
+  },
+  {
+    "kanji": "復活",
+    "kana": "ふっかつ",
+    "romaji": "fukkatsu",
+    "meaning": "부활",
+    "level": "N1"
+  },
+  {
+    "kanji": "物議",
+    "kana": "ぶつぎ",
+    "romaji": "butsugi",
+    "meaning": "물의. 뭇사람의 평판",
+    "level": "N1"
+  },
+  {
+    "kanji": "復旧",
+    "kana": "ふっきゅう",
+    "romaji": "fukkyuu",
+    "meaning": "복구",
+    "level": "N1"
+  },
+  {
+    "kanji": "復興",
+    "kana": "ふっこう",
+    "romaji": "fukkou",
+    "meaning": "부흥. 복구",
+    "level": "N1"
+  },
+  {
+    "kanji": "物資",
+    "kana": "ぶっし",
+    "romaji": "busshi",
+    "meaning": "물자",
+    "level": "N1"
+  },
+  {
+    "kanji": "仏像",
+    "kana": "ぶつぞう",
+    "romaji": "butsuzou",
+    "meaning": "불상",
+    "level": "N1"
+  },
+  {
+    "kanji": "物体",
+    "kana": "ぶったい",
+    "romaji": "buttai",
+    "meaning": "물체",
+    "level": "N1"
+  },
+  {
+    "kanji": "沸騰",
+    "kana": "ふっとう",
+    "romaji": "futtou",
+    "meaning": "비등. 물이 끓음",
+    "level": "N1"
+  },
+  {
+    "kanji": "不動産",
+    "kana": "ふどうさん",
+    "romaji": "fudousan",
+    "meaning": "부동산",
+    "level": "N1"
+  },
+  {
+    "kanji": "不当な",
+    "kana": "ふとうな",
+    "romaji": "futoun\\'a",
+    "meaning": "부당한",
+    "level": "N1"
+  },
+  {
+    "kanji": "無難な",
+    "kana": "ぶなんな",
+    "romaji": "bun\\'ann\\'a",
+    "meaning": "무난한",
+    "level": "N1"
+  },
+  {
+    "kanji": "赴任",
+    "kana": "ふにん",
+    "romaji": "fun\\'in",
+    "meaning": "부임",
+    "level": "N1"
+  },
+  {
+    "kanji": "腐敗",
+    "kana": "ふはい",
+    "romaji": "fuhai",
+    "meaning": "부패",
+    "level": "N1"
+  },
+  {
+    "kanji": "不評",
+    "kana": "ふひょう",
+    "romaji": "fuhyou",
+    "meaning": "평판이 나쁨. 악평",
+    "level": "N1"
+  },
+  {
+    "kanji": "不服",
+    "kana": "ふふく",
+    "romaji": "fufuku",
+    "meaning": "불복함",
+    "level": "N1"
+  },
+  {
+    "kanji": "普遍的な",
+    "kana": "ふへんてき",
+    "romaji": "fuhenteki",
+    "meaning": "보편적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "踏まえる",
+    "kana": "ふまえる",
+    "romaji": "fumaeru",
+    "meaning": "근거로 하다. 입각하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "踏み込む",
+    "kana": "ふみこむ",
+    "romaji": "fumikomu",
+    "meaning": "발을 들여놓다. 예고나 허가 없이 들어가다",
+    "level": "N1"
+  },
+  {
+    "kanji": "不明な",
+    "kana": "ふめいな",
+    "romaji": "fumein\\'a",
+    "meaning": "불명한. 불명료한",
+    "level": "N1"
+  },
+  {
+    "kanji": "部門",
+    "kana": "ぶもん",
+    "romaji": "bumon",
+    "meaning": "부문",
+    "level": "N1"
+  },
+  {
+    "kanji": "扶養",
+    "kana": "ふよう",
+    "romaji": "fuyou",
+    "meaning": "부양",
+    "level": "N1"
+  },
+  {
+    "kanji": "ふらふら",
+    "kana": "ふらふら",
+    "romaji": "furafura",
+    "meaning": "비트적비트적. 흔들흔들. 빙빙",
+    "level": "N1"
+  },
+  {
+    "kanji": "振り",
+    "kana": "ふり",
+    "romaji": "furi",
+    "meaning": "(…하는) 척",
+    "level": "N1"
+  },
+  {
+    "kanji": "振り返る",
+    "kana": "ふりかえる",
+    "romaji": "furikaeru",
+    "meaning": "(1G) 뒤돌아보다. 회고하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "振り出し",
+    "kana": "ふりだし",
+    "romaji": "furidashi",
+    "meaning": "출발점",
+    "level": "N1"
+  },
+  {
+    "kanji": "不良",
+    "kana": "ふりょう",
+    "romaji": "furyou",
+    "meaning": "불량. 불량자",
+    "level": "N1"
+  },
+  {
+    "kanji": "浮力",
+    "kana": "ふりょく",
+    "romaji": "furyoku",
+    "meaning": "부력",
+    "level": "N1"
+  },
+  {
+    "kanji": "武力",
+    "kana": "ぶりょく",
+    "romaji": "buryoku",
+    "meaning": "무력. 병력",
+    "level": "N1"
+  },
+  {
+    "kanji": "ブルジョア",
+    "kana": "ブルジョア",
+    "romaji": "burujoa",
+    "meaning": "부르주아. 부자",
+    "level": "N1"
+  },
+  {
+    "kanji": "震わせる",
+    "kana": "ふるわせる",
+    "romaji": "furuwaseru",
+    "meaning": "떨다. 진동시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "無礼な",
+    "kana": "ぶれいな",
+    "romaji": "burein\\'a",
+    "meaning": "무례한",
+    "level": "N1"
+  },
+  {
+    "kanji": "付録/附録",
+    "kana": "ふろく",
+    "romaji": "furoku",
+    "meaning": "부록",
+    "level": "N1"
+  },
+  {
+    "kanji": "フロント",
+    "kana": "フロント",
+    "romaji": "furonto",
+    "meaning": "프런트. 호텔 등의 접수처",
+    "level": "N1"
+  },
+  {
+    "kanji": "憤慨",
+    "kana": "ふんがい",
+    "romaji": "fungai",
+    "meaning": "분개",
+    "level": "N1"
+  },
+  {
+    "kanji": "文化財",
+    "kana": "ぶんかざい",
+    "romaji": "bunkazai",
+    "meaning": "문화재",
+    "level": "N1"
+  },
+  {
+    "kanji": "分業",
+    "kana": "ぶんぎょう",
+    "romaji": "bungyou",
+    "meaning": "분업",
+    "level": "N1"
+  },
+  {
+    "kanji": "文語",
+    "kana": "ぶんご",
+    "romaji": "bungo",
+    "meaning": "문어. 문장체",
+    "level": "N1"
+  },
+  {
+    "kanji": "分散",
+    "kana": "ぶんさん",
+    "romaji": "bunsan",
+    "meaning": "분산",
+    "level": "N1"
+  },
+  {
+    "kanji": "分子",
+    "kana": "ぶんし",
+    "romaji": "bunshi",
+    "meaning": "분자",
+    "level": "N1"
+  },
+  {
+    "kanji": "紛失",
+    "kana": "ふんしつ",
+    "romaji": "funshitsu",
+    "meaning": "분실",
+    "level": "N1"
+  },
+  {
+    "kanji": "噴出",
+    "kana": "ふんしゅつ",
+    "romaji": "funshutsu",
+    "meaning": "분출",
+    "level": "N1"
+  },
+  {
+    "kanji": "紛争",
+    "kana": "ふんそう",
+    "romaji": "funsou",
+    "meaning": "분쟁",
+    "level": "N1"
+  },
+  {
+    "kanji": "分担",
+    "kana": "ぶんたん",
+    "romaji": "buntan",
+    "meaning": "분담",
+    "level": "N1"
+  },
+  {
+    "kanji": "ふんだんに",
+    "kana": "ふんだんに",
+    "romaji": "fundann\\'i",
+    "meaning": "충분히. 풍부하게. 흥청망청",
+    "level": "N1"
+  },
+  {
+    "kanji": "奮闘",
+    "kana": "ふんとう",
+    "romaji": "funtou",
+    "meaning": "분투",
+    "level": "N1"
+  },
+  {
+    "kanji": "分配",
+    "kana": "ぶんぱい",
+    "romaji": "bunpai",
+    "meaning": "분배",
+    "level": "N1"
+  },
+  {
+    "kanji": "粉末",
+    "kana": "ふんまつ",
+    "romaji": "funmatsu",
+    "meaning": "분말. 가루",
+    "level": "N1"
+  },
+  {
+    "kanji": "分離",
+    "kana": "ぶんり",
+    "romaji": "bunri",
+    "meaning": "분리",
+    "level": "N1"
+  },
+  {
+    "kanji": "分裂",
+    "kana": "ぶんれつ",
+    "romaji": "bunretsu",
+    "meaning": "분열",
+    "level": "N1"
+  },
+  {
+    "kanji": "ペア",
+    "kana": "ペア",
+    "romaji": "pea",
+    "meaning": "페어. 쌍. 짝",
+    "level": "N1"
+  },
+  {
+    "kanji": "兵器",
+    "kana": "へいき",
+    "romaji": "heiki",
+    "meaning": "병기. 무기",
+    "level": "N1"
+  },
+  {
+    "kanji": "閉口",
+    "kana": "へいこう",
+    "romaji": "heikou",
+    "meaning": "질림. 손듦. 항복함",
+    "level": "N1"
+  },
+  {
+    "kanji": "閉鎖",
+    "kana": "へいさ",
+    "romaji": "heisa",
+    "meaning": "폐쇄",
+    "level": "N1"
+  },
+  {
+    "kanji": "兵士",
+    "kana": "へいし",
+    "romaji": "heishi",
+    "meaning": "병사",
+    "level": "N1"
+  },
+  {
+    "kanji": "平常",
+    "kana": "へいじょう",
+    "romaji": "heijou",
+    "meaning": "평상. 평소. 보통",
+    "level": "N1"
+  },
+  {
+    "kanji": "平方",
+    "kana": "へいほう",
+    "romaji": "heihou",
+    "meaning": "평방. 제곱",
+    "level": "N1"
+  },
+  {
+    "kanji": "並列",
+    "kana": "へいれつ",
+    "romaji": "heiretsu",
+    "meaning": "병렬",
+    "level": "N1"
+  },
+  {
+    "kanji": "ベース",
+    "kana": "ベース",
+    "romaji": "be-su",
+    "meaning": "베이스",
+    "level": "N1"
+  },
+  {
+    "kanji": "辟易",
+    "kana": "へきえき",
+    "romaji": "hekieki",
+    "meaning": "질려서 물러남 ≒へいこう[閉口]",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぺこぺこ",
+    "kana": "ぺこぺこ",
+    "romaji": "pekopeko",
+    "meaning": "우그렁우그렁 우그러진 모양. 몹시 배고픈 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "ベスト",
+    "kana": "ベスト",
+    "romaji": "besuto",
+    "meaning": "베스트",
+    "level": "N1"
+  },
+  {
+    "kanji": "ベストセラー",
+    "kana": "ベストセラー",
+    "romaji": "besutosera-",
+    "meaning": "베스트셀러",
+    "level": "N1"
+  },
+  {
+    "kanji": "縁",
+    "kana": "へり",
+    "romaji": "heri",
+    "meaning": "가장자리. 언저리",
+    "level": "N1"
+  },
+  {
+    "kanji": "へりくだる",
+    "kana": "へりくだる",
+    "romaji": "herikudaru",
+    "meaning": "자기를 낮추다. 겸양하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "経る",
+    "kana": "へる",
+    "romaji": "heru",
+    "meaning": "지나가다. 거치다. 경과하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "弁解",
+    "kana": "べんかい",
+    "romaji": "benkai",
+    "meaning": "변해. 변명",
+    "level": "N1"
+  },
+  {
+    "kanji": "変革",
+    "kana": "へんかく",
+    "romaji": "henkaku",
+    "meaning": "변혁",
+    "level": "N1"
+  },
+  {
+    "kanji": "返還",
+    "kana": "へんかん",
+    "romaji": "henkan",
+    "meaning": "반환",
+    "level": "N1"
+  },
+  {
+    "kanji": "便宜",
+    "kana": "べんぎ",
+    "romaji": "bengi",
+    "meaning": "편의",
+    "level": "N1"
+  },
+  {
+    "kanji": "偏見",
+    "kana": "へんけん",
+    "romaji": "henken",
+    "meaning": "편견",
+    "level": "N1"
+  },
+  {
+    "kanji": "弁護",
+    "kana": "べんご",
+    "romaji": "bengo",
+    "meaning": "변호",
+    "level": "N1"
+  },
+  {
+    "kanji": "返済",
+    "kana": "へんさい",
+    "romaji": "hensai",
+    "meaning": "변제. 빚을 갚음",
+    "level": "N1"
+  },
+  {
+    "kanji": "弁償",
+    "kana": "べんしょう",
+    "romaji": "benshou",
+    "meaning": "변상",
+    "level": "N1"
+  },
+  {
+    "kanji": "変遷",
+    "kana": "へんせん",
+    "romaji": "hensen",
+    "meaning": "변천",
+    "level": "N1"
+  },
+  {
+    "kanji": "変動",
+    "kana": "へんどう",
+    "romaji": "hendou",
+    "meaning": "변동",
+    "level": "N1"
+  },
+  {
+    "kanji": "返答",
+    "kana": "へんとう",
+    "romaji": "hentou",
+    "meaning": "대답. 응답",
+    "level": "N1"
+  },
+  {
+    "kanji": "弁論",
+    "kana": "べんろん",
+    "romaji": "benron",
+    "meaning": "변론. 웅변(대회)",
+    "level": "N1"
+  },
+  {
+    "kanji": "穂",
+    "kana": "ほ",
+    "romaji": "ho",
+    "meaning": "이삭",
+    "level": "N1"
+  },
+  {
+    "kanji": "保育",
+    "kana": "ほいく",
+    "romaji": "hoiku",
+    "meaning": "보육",
+    "level": "N1"
+  },
+  {
+    "kanji": "ボイコット",
+    "kana": "ボイコット",
+    "romaji": "boikotto",
+    "meaning": "보이콧",
+    "level": "N1"
+  },
+  {
+    "kanji": "ポイント",
+    "kana": "ポイント",
+    "romaji": "pointo",
+    "meaning": "포인트",
+    "level": "N1"
+  },
+  {
+    "kanji": "法案",
+    "kana": "ほうあん",
+    "romaji": "houan",
+    "meaning": "법안",
+    "level": "N1"
+  },
+  {
+    "kanji": "防衛",
+    "kana": "ぼうえい",
+    "romaji": "bouei",
+    "meaning": "방위",
+    "level": "N1"
+  },
+  {
+    "kanji": "防火",
+    "kana": "ぼうか",
+    "romaji": "bouka",
+    "meaning": "방화",
+    "level": "N1"
+  },
+  {
+    "kanji": "崩壊",
+    "kana": "ほうかい",
+    "romaji": "houkai",
+    "meaning": "붕괴",
+    "level": "N1"
+  },
+  {
+    "kanji": "妨害",
+    "kana": "ぼうがい",
+    "romaji": "bougai",
+    "meaning": "방해",
+    "level": "N1"
+  },
+  {
+    "kanji": "法学",
+    "kana": "ほうがく",
+    "romaji": "hougaku",
+    "meaning": "법학",
+    "level": "N1"
+  },
+  {
+    "kanji": "封建",
+    "kana": "ほうけん",
+    "romaji": "houken",
+    "meaning": "봉건",
+    "level": "N1"
+  },
+  {
+    "kanji": "方策",
+    "kana": "ほうさく",
+    "romaji": "housaku",
+    "meaning": "방책",
+    "level": "N1"
+  },
+  {
+    "kanji": "豊作",
+    "kana": "ほうさく",
+    "romaji": "housaku",
+    "meaning": "풍작",
+    "level": "N1"
+  },
+  {
+    "kanji": "奉仕",
+    "kana": "ほうし",
+    "romaji": "houshi",
+    "meaning": "봉사",
+    "level": "N1"
+  },
+  {
+    "kanji": "方式",
+    "kana": "ほうしき",
+    "romaji": "houshiki",
+    "meaning": "방식",
+    "level": "N1"
+  },
+  {
+    "kanji": "放射能",
+    "kana": "ほうしゃのう",
+    "romaji": "houshan\\'ou",
+    "meaning": "방사능",
+    "level": "N1"
+  },
+  {
+    "kanji": "報酬",
+    "kana": "ほうしゅう",
+    "romaji": "houshuu",
+    "meaning": "보수 (근로의 대가)",
+    "level": "N1"
+  },
+  {
+    "kanji": "報じる",
+    "kana": "ほうじる",
+    "romaji": "houjiru",
+    "meaning": "알리다. 보도하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "紡績",
+    "kana": "ぼうせき",
+    "romaji": "bouseki",
+    "meaning": "방적. 실을 자음",
+    "level": "N1"
+  },
+  {
+    "kanji": "呆然/茫然と",
+    "kana": "ぼうぜんと",
+    "romaji": "bouzento",
+    "meaning": "망연자실하게. 멍하니",
+    "level": "N1"
+  },
+  {
+    "kanji": "放置",
+    "kana": "ほうち",
+    "romaji": "houchi",
+    "meaning": "방치",
+    "level": "N1"
+  },
+  {
+    "kanji": "膨張",
+    "kana": "ぼうちょう",
+    "romaji": "bouchou",
+    "meaning": "팽창",
+    "level": "N1"
+  },
+  {
+    "kanji": "法廷",
+    "kana": "ほうてい",
+    "romaji": "houtei",
+    "meaning": "법정",
+    "level": "N1"
+  },
+  {
+    "kanji": "報道",
+    "kana": "ほうどう",
+    "romaji": "houdou",
+    "meaning": "보도",
+    "level": "N1"
+  },
+  {
+    "kanji": "暴動",
+    "kana": "ぼうどう",
+    "romaji": "boudou",
+    "meaning": "폭동",
+    "level": "N1"
+  },
+  {
+    "kanji": "冒頭",
+    "kana": "ぼうとう",
+    "romaji": "boutou",
+    "meaning": "서두",
+    "level": "N1"
+  },
+  {
+    "kanji": "褒美",
+    "kana": "ほうび",
+    "romaji": "houbi",
+    "meaning": "포상. 상",
+    "level": "N1"
+  },
+  {
+    "kanji": "暴風",
+    "kana": "ぼうふう",
+    "romaji": "boufuu",
+    "meaning": "폭풍",
+    "level": "N1"
+  },
+  {
+    "kanji": "葬る",
+    "kana": "ほうむる",
+    "romaji": "houmuru",
+    "meaning": "매장하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ほうり込む",
+    "kana": "ほうりこむ",
+    "romaji": "hourikomu",
+    "meaning": "(아무렇게나) 던져넣다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ほうり出す",
+    "kana": "ほうりだす",
+    "romaji": "houridasu",
+    "meaning": "내팽개치다. 내쫓다. 추방하다. 중도에서 포기하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "飽和",
+    "kana": "ほうわ",
+    "romaji": "houwa",
+    "meaning": "포화",
+    "level": "N1"
+  },
+  {
+    "kanji": "ポーズ",
+    "kana": "ポーズ",
+    "romaji": "po-zu",
+    "meaning": "포즈",
+    "level": "N1"
+  },
+  {
+    "kanji": "ホース",
+    "kana": "ホース",
+    "romaji": "ho-su",
+    "meaning": "호스",
+    "level": "N1"
+  },
+  {
+    "kanji": "ホール",
+    "kana": "ホール",
+    "romaji": "ho-ru",
+    "meaning": "홀",
+    "level": "N1"
+  },
+  {
+    "kanji": "保温",
+    "kana": "ほおん",
+    "romaji": "hoon",
+    "meaning": "보온",
+    "level": "N1"
+  },
+  {
+    "kanji": "捕獲",
+    "kana": "ほかく",
+    "romaji": "hokaku",
+    "meaning": "포획",
+    "level": "N1"
+  },
+  {
+    "kanji": "保管",
+    "kana": "ほかん",
+    "romaji": "hokan",
+    "meaning": "보관",
+    "level": "N1"
+  },
+  {
+    "kanji": "補給",
+    "kana": "ほきゅう",
+    "romaji": "hokyuu",
+    "meaning": "보급",
+    "level": "N1"
+  },
+  {
+    "kanji": "補強",
+    "kana": "ほきょう",
+    "romaji": "hokyou",
+    "meaning": "보강",
+    "level": "N1"
+  },
+  {
+    "kanji": "募金",
+    "kana": "ぼきん",
+    "romaji": "bokin",
+    "meaning": "모금",
+    "level": "N1"
+  },
+  {
+    "kanji": "牧師",
+    "kana": "ぼくし",
+    "romaji": "bokushi",
+    "meaning": "목사",
+    "level": "N1"
+  },
+  {
+    "kanji": "捕鯨",
+    "kana": "ほげい",
+    "romaji": "hogei",
+    "meaning": "포경. 고래잡이",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぼける",
+    "kana": "ぼける",
+    "romaji": "bokeru",
+    "meaning": "흐려지다. 치매에 걸리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "保険",
+    "kana": "ほけん",
+    "romaji": "hoken",
+    "meaning": "보험",
+    "level": "N1"
+  },
+  {
+    "kanji": "保護",
+    "kana": "ほご",
+    "romaji": "hogo",
+    "meaning": "보호",
+    "level": "N1"
+  },
+  {
+    "kanji": "母校",
+    "kana": "ぼこう",
+    "romaji": "bokou",
+    "meaning": "모교",
+    "level": "N1"
+  },
+  {
+    "kanji": "母国",
+    "kana": "ぼこく",
+    "romaji": "bokoku",
+    "meaning": "모국",
+    "level": "N1"
+  },
+  {
+    "kanji": "誇る",
+    "kana": "ほこる",
+    "romaji": "hokoru",
+    "meaning": "자랑하다. 뽐내다. 자랑으로 여기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "綻びる",
+    "kana": "ほころびる",
+    "romaji": "hokorobiru",
+    "meaning": "(실밥이)풀리다. (꿰맨 자리가)터지다. 조금 벌어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ポジション",
+    "kana": "ポジション",
+    "romaji": "pojishon",
+    "meaning": "포지션",
+    "level": "N1"
+  },
+  {
+    "kanji": "保守",
+    "kana": "ほしゅ",
+    "romaji": "hoshu",
+    "meaning": "보수 ⇔かくしん[革新]",
+    "level": "N1"
+  },
+  {
+    "kanji": "補充",
+    "kana": "ほじゅう",
+    "romaji": "hojuu",
+    "meaning": "보충",
+    "level": "N1"
+  },
+  {
+    "kanji": "補助",
+    "kana": "ほじょ",
+    "romaji": "hojo",
+    "meaning": "보조",
+    "level": "N1"
+  },
+  {
+    "kanji": "保障",
+    "kana": "ほしょう",
+    "romaji": "hoshou",
+    "meaning": "보장",
+    "level": "N1"
+  },
+  {
+    "kanji": "補償",
+    "kana": "ほしょう",
+    "romaji": "hoshou",
+    "meaning": "보상",
+    "level": "N1"
+  },
+  {
+    "kanji": "舗装",
+    "kana": "ほそう",
+    "romaji": "hosou",
+    "meaning": "포장(도로)",
+    "level": "N1"
+  },
+  {
+    "kanji": "補足",
+    "kana": "ほそく",
+    "romaji": "hosoku",
+    "meaning": "부족분을 채움",
+    "level": "N1"
+  },
+  {
+    "kanji": "墓地",
+    "kana": "ぼち",
+    "romaji": "bochi",
+    "meaning": "묘지",
+    "level": "N1"
+  },
+  {
+    "kanji": "発作",
+    "kana": "ほっさ",
+    "romaji": "hossa",
+    "meaning": "발작",
+    "level": "N1"
+  },
+  {
+    "kanji": "没収",
+    "kana": "ぼっしゅう",
+    "romaji": "bosshuu",
+    "meaning": "몰수",
+    "level": "N1"
+  },
+  {
+    "kanji": "発足",
+    "kana": "ほっそく",
+    "romaji": "hossoku",
+    "meaning": "발족",
+    "level": "N1"
+  },
+  {
+    "kanji": "ポット",
+    "kana": "ポット",
+    "romaji": "potto",
+    "meaning": "포트. 보온병",
+    "level": "N1"
+  },
+  {
+    "kanji": "頬っぺた",
+    "kana": "ほっぺた",
+    "romaji": "hoppeta",
+    "meaning": "뺨",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぼつぼつ",
+    "kana": "ぼつぼつ",
+    "romaji": "botsubotsu",
+    "meaning": "작은 점이나 구멍이 여기저기 많은 모양. 뻐끔뻐끔",
+    "level": "N1"
+  },
+  {
+    "kanji": "没落",
+    "kana": "ぼつらく",
+    "romaji": "botsuraku",
+    "meaning": "몰락. 영락",
+    "level": "N1"
+  },
+  {
+    "kanji": "ほどく",
+    "kana": "ほどく",
+    "romaji": "hodoku",
+    "meaning": "풀다. 뜯다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ほどける",
+    "kana": "ほどける",
+    "romaji": "hodokeru",
+    "meaning": "풀어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "施す",
+    "kana": "ほどこす",
+    "romaji": "hodokosu",
+    "meaning": "베풀다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ほとり",
+    "kana": "ほとり",
+    "romaji": "hotori",
+    "meaning": "근처. 부근",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぼやく",
+    "kana": "ぼやく",
+    "romaji": "boyaku",
+    "meaning": "투덜거리다. 불평하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ぼやける",
+    "kana": "ぼやける",
+    "romaji": "boyakeru",
+    "meaning": "희미해지다. 부예지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "保養",
+    "kana": "ほよう",
+    "romaji": "hoyou",
+    "meaning": "보양",
+    "level": "N1"
+  },
+  {
+    "kanji": "捕虜",
+    "kana": "ほりょ",
+    "romaji": "horyo",
+    "meaning": "포로",
+    "level": "N1"
+  },
+  {
+    "kanji": "ボルト",
+    "kana": "ボルト",
+    "romaji": "boruto",
+    "meaning": "볼트",
+    "level": "N1"
+  },
+  {
+    "kanji": "滅びる",
+    "kana": "ほろびる",
+    "romaji": "horobiru",
+    "meaning": "멸망하다. 없어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "滅ぼす",
+    "kana": "ほろぼす",
+    "romaji": "horobosu",
+    "meaning": "멸망시키다. 없애다",
+    "level": "N1"
+  },
+  {
+    "kanji": "本格",
+    "kana": "ほんかく",
+    "romaji": "honkaku",
+    "meaning": "본격",
+    "level": "N1"
+  },
+  {
+    "kanji": "本館",
+    "kana": "ほんかん",
+    "romaji": "honkan",
+    "meaning": "본관",
+    "level": "N1"
+  },
+  {
+    "kanji": "本国",
+    "kana": "ほんごく",
+    "romaji": "hongoku",
+    "meaning": "본국",
+    "level": "N1"
+  },
+  {
+    "kanji": "本質",
+    "kana": "ほんしつ",
+    "romaji": "honshitsu",
+    "meaning": "본질",
+    "level": "N1"
+  },
+  {
+    "kanji": "本体",
+    "kana": "ほんたい",
+    "romaji": "hontai",
+    "meaning": "본체",
+    "level": "N1"
+  },
+  {
+    "kanji": "本音",
+    "kana": "ほんね",
+    "romaji": "honn\\'e",
+    "meaning": "본심에서 우러나온 말",
+    "level": "N1"
+  },
+  {
+    "kanji": "本能",
+    "kana": "ほんのう",
+    "romaji": "honn\\'ou",
+    "meaning": "본능",
+    "level": "N1"
+  },
+  {
+    "kanji": "本場",
+    "kana": "ほんば",
+    "romaji": "honba",
+    "meaning": "본고장",
+    "level": "N1"
+  },
+  {
+    "kanji": "ポンプ",
+    "kana": "ポンプ",
+    "romaji": "ponpu",
+    "meaning": "펌프",
+    "level": "N1"
+  },
+  {
+    "kanji": "本文",
+    "kana": "ほんぶん",
+    "romaji": "honbun",
+    "meaning": "본문",
+    "level": "N1"
+  },
+  {
+    "kanji": "本名",
+    "kana": "ほんみょう",
+    "romaji": "honmyou",
+    "meaning": "본명. 실명",
+    "level": "N1"
+  },
+  {
+    "kanji": "マーク",
+    "kana": "マーク",
+    "romaji": "ma-ku",
+    "meaning": "마크",
+    "level": "N1"
+  },
+  {
+    "kanji": "埋蔵",
+    "kana": "まいぞう",
+    "romaji": "maizou",
+    "meaning": "매장",
+    "level": "N1"
+  },
+  {
+    "kanji": "舞う",
+    "kana": "まう",
+    "romaji": "mau",
+    "meaning": "흩날리다. 춤추다",
+    "level": "N1"
+  },
+  {
+    "kanji": "真上",
+    "kana": "まうえ",
+    "romaji": "maue",
+    "meaning": "바로 위",
+    "level": "N1"
+  },
+  {
+    "kanji": "前売(り)",
+    "kana": "まえうり",
+    "romaji": "maeuri",
+    "meaning": "예매",
+    "level": "N1"
+  },
+  {
+    "kanji": "前置き",
+    "kana": "まえおき",
+    "romaji": "maeoki",
+    "meaning": "서론. 머리말. 서문",
+    "level": "N1"
+  },
+  {
+    "kanji": "前もって",
+    "kana": "まえもって",
+    "romaji": "maemotte",
+    "meaning": "미리. 앞서. 사전에",
+    "level": "N1"
+  },
+  {
+    "kanji": "任す",
+    "kana": "まかす",
+    "romaji": "makasu",
+    "meaning": "맡기다. 위임하다 ＝まかせる[任せる]",
+    "level": "N1"
+  },
+  {
+    "kanji": "負かす",
+    "kana": "まかす",
+    "romaji": "makasu",
+    "meaning": "지게 하다. 이기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "賄う",
+    "kana": "まかなう",
+    "romaji": "makan\\'au",
+    "meaning": "마련해 공급하다. 조달하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "紛らわしい",
+    "kana": "まぎらわしい",
+    "romaji": "magirawashii",
+    "meaning": "혼동하기 쉽다. 헷갈리기 쉽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "紛れる",
+    "kana": "まぎれる",
+    "romaji": "magireru",
+    "meaning": "헷갈리다. 분간 못하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "膜",
+    "kana": "まく",
+    "romaji": "maku",
+    "meaning": "막 (얇은 물질)",
+    "level": "N1"
+  },
+  {
+    "kanji": "真心",
+    "kana": "まごころ",
+    "romaji": "magokoro",
+    "meaning": "진심. 성심. 참마음",
+    "level": "N1"
+  },
+  {
+    "kanji": "まごつく",
+    "kana": "まごつく",
+    "romaji": "magotsuku",
+    "meaning": "당황하다. 망설이다. 갈피를 못 잡다",
+    "level": "N1"
+  },
+  {
+    "kanji": "誠に",
+    "kana": "まことに",
+    "romaji": "makoton\\'i",
+    "meaning": "진심으로. 정말로. 실로",
+    "level": "N1"
+  },
+  {
+    "kanji": "まさしく",
+    "kana": "まさしく",
+    "romaji": "masashiku",
+    "meaning": "바로. 틀림없이. 확실히",
+    "level": "N1"
+  },
+  {
+    "kanji": "勝る",
+    "kana": "まさる",
+    "romaji": "masaru",
+    "meaning": "낫다. 우수하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "増し",
+    "kana": "まし",
+    "romaji": "mashi",
+    "meaning": "늘어남. 증가",
+    "level": "N1"
+  },
+  {
+    "kanji": "交える",
+    "kana": "まじえる",
+    "romaji": "majieru",
+    "meaning": "섞다. 끼게 하다. 맞대다. 주고받다",
+    "level": "N1"
+  },
+  {
+    "kanji": "真下",
+    "kana": "ました",
+    "romaji": "mashita",
+    "meaning": "바로 아래",
+    "level": "N1"
+  },
+  {
+    "kanji": "増して",
+    "kana": "まして",
+    "romaji": "mashite",
+    "meaning": "한층 더. …보다도 더",
+    "level": "N1"
+  },
+  {
+    "kanji": "ましてや",
+    "kana": "ましてや",
+    "romaji": "mashiteya",
+    "meaning": "하물며",
+    "level": "N1"
+  },
+  {
+    "kanji": "ましな",
+    "kana": "ましな",
+    "romaji": "mashin\\'a",
+    "meaning": "더 나은",
+    "level": "N1"
+  },
+  {
+    "kanji": "交わる",
+    "kana": "まじわる",
+    "romaji": "majiwaru",
+    "meaning": "교차하다. 엇걸리다. 교제하다. 어울리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "麻酔",
+    "kana": "ますい",
+    "romaji": "masui",
+    "meaning": "마취",
+    "level": "N1"
+  },
+  {
+    "kanji": "マスコミ",
+    "kana": "マスコミ",
+    "romaji": "masukomi",
+    "meaning": "매스컴 →マスコミュニケーション 매스커뮤니케이션",
+    "level": "N1"
+  },
+  {
+    "kanji": "股",
+    "kana": "また",
+    "romaji": "mata",
+    "meaning": "가랑이",
+    "level": "N1"
+  },
+  {
+    "kanji": "またがる",
+    "kana": "またがる",
+    "romaji": "matagaru",
+    "meaning": "두 다리를 벌리고 올라타다. 걸터타다",
+    "level": "N1"
+  },
+  {
+    "kanji": "待(ち)遠しい",
+    "kana": "まちどおしい",
+    "romaji": "machidooshii",
+    "meaning": "오래 기다리다. 빨리 왔으면 하고 기대하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "待ち望む",
+    "kana": "まちのぞむ",
+    "romaji": "machin\\'ozomu",
+    "meaning": "어서 이룩하기를 바라다. 대망하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "まちまち",
+    "kana": "まちまち",
+    "romaji": "machimachi",
+    "meaning": "제각기 다름",
+    "level": "N1"
+  },
+  {
+    "kanji": "末期",
+    "kana": "まっき",
+    "romaji": "makki",
+    "meaning": "말기",
+    "level": "N1"
+  },
+  {
+    "kanji": "マッサージ",
+    "kana": "マッサージ",
+    "romaji": "massa-ji",
+    "meaning": "마사지",
+    "level": "N1"
+  },
+  {
+    "kanji": "真っ二つ",
+    "kana": "まっぷたつ",
+    "romaji": "mapputatsu",
+    "meaning": "딱 절반. 딱 두 동강이 남",
+    "level": "N1"
+  },
+  {
+    "kanji": "的",
+    "kana": "まと",
+    "romaji": "mato",
+    "meaning": "과녁. 표적",
+    "level": "N1"
+  },
+  {
+    "kanji": "まとまり",
+    "kana": "まとまり",
+    "romaji": "matomari",
+    "meaning": "통합. 합침. 정리",
+    "level": "N1"
+  },
+  {
+    "kanji": "まとめ",
+    "kana": "まとめ",
+    "romaji": "matome",
+    "meaning": "정리함. 요약",
+    "level": "N1"
+  },
+  {
+    "kanji": "招き",
+    "kana": "まねき",
+    "romaji": "man\\'eki",
+    "meaning": "초대. 초청",
+    "level": "N1"
+  },
+  {
+    "kanji": "まばたき",
+    "kana": "まばたき",
+    "romaji": "mabataki",
+    "meaning": "눈을 깜빡임. 빤짝임",
+    "level": "N1"
+  },
+  {
+    "kanji": "麻痺",
+    "kana": "まひ",
+    "romaji": "mahi",
+    "meaning": "마비",
+    "level": "N1"
+  },
+  {
+    "kanji": "眉",
+    "kana": "まゆ",
+    "romaji": "mayu",
+    "meaning": "눈썹",
+    "level": "N1"
+  },
+  {
+    "kanji": "まり",
+    "kana": "まり",
+    "romaji": "mari",
+    "meaning": "공",
+    "level": "N1"
+  },
+  {
+    "kanji": "丸ごと",
+    "kana": "まるごと",
+    "romaji": "marugoto",
+    "meaning": "통째로. 통거리로",
+    "level": "N1"
+  },
+  {
+    "kanji": "まるっきり",
+    "kana": "まるっきり",
+    "romaji": "marukkiri",
+    "meaning": "전혀 (+부정문)",
+    "level": "N1"
+  },
+  {
+    "kanji": "丸々",
+    "kana": "まるまる",
+    "romaji": "marumaru",
+    "meaning": "모조리. 전부. 깡그리. 통통하게 살찐 모양",
+    "level": "N1"
+  },
+  {
+    "kanji": "丸める",
+    "kana": "まるめる",
+    "romaji": "marumeru",
+    "meaning": "둥글게 하다. 뭉치다",
+    "level": "N1"
+  },
+  {
+    "kanji": "満月",
+    "kana": "まんげつ",
+    "romaji": "mangetsu",
+    "meaning": "보름달",
+    "level": "N1"
+  },
+  {
+    "kanji": "満場",
+    "kana": "まんじょう",
+    "romaji": "manjou",
+    "meaning": "만장",
+    "level": "N1"
+  },
+  {
+    "kanji": "真ん前",
+    "kana": "まんまえ",
+    "romaji": "manmae",
+    "meaning": "정면. 바로 앞",
+    "level": "N1"
+  },
+  {
+    "kanji": "真ん丸い/真ん円い",
+    "kana": "まんまるい",
+    "romaji": "manmarui",
+    "meaning": "아주 둥글다. 똥그랗다",
+    "level": "N1"
+  },
+  {
+    "kanji": "見合(い)",
+    "kana": "みあい",
+    "romaji": "miai",
+    "meaning": "맞선",
+    "level": "N1"
+  },
+  {
+    "kanji": "見合わせる",
+    "kana": "みあわせる",
+    "romaji": "miawaseru",
+    "meaning": "(사정을 고려하여) 실행을 미루다. 보류하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "見落とす",
+    "kana": "みおとす",
+    "romaji": "miotosu",
+    "meaning": "간과하다. 못보고 넘기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "未開",
+    "kana": "みかい",
+    "romaji": "mikai",
+    "meaning": "미개",
+    "level": "N1"
+  },
+  {
+    "kanji": "味覚",
+    "kana": "みかく",
+    "romaji": "mikaku",
+    "meaning": "미각",
+    "level": "N1"
+  },
+  {
+    "kanji": "幹",
+    "kana": "みき",
+    "romaji": "miki",
+    "meaning": "나무의 줄기",
+    "level": "N1"
+  },
+  {
+    "kanji": "見苦しい",
+    "kana": "みぐるしい",
+    "romaji": "migurushii",
+    "meaning": "보기 흉하다. 모양 사납다",
+    "level": "N1"
+  },
+  {
+    "kanji": "見込み",
+    "kana": "みこみ",
+    "romaji": "mikomi",
+    "meaning": "가망. 예상. 전망",
+    "level": "N1"
+  },
+  {
+    "kanji": "未婚",
+    "kana": "みこん",
+    "romaji": "mikon",
+    "meaning": "미혼",
+    "level": "N1"
+  },
+  {
+    "kanji": "未熟な",
+    "kana": "みじゅくな",
+    "romaji": "mijukun\\'a",
+    "meaning": "미숙한",
+    "level": "N1"
+  },
+  {
+    "kanji": "微塵",
+    "kana": "みじん",
+    "romaji": "mijin",
+    "meaning": "미진. 微塵もない 추호도 없다",
+    "level": "N1"
+  },
+  {
+    "kanji": "水気",
+    "kana": "みずけ",
+    "romaji": "mizuke",
+    "meaning": "물기",
+    "level": "N1"
+  },
+  {
+    "kanji": "ミスプリント",
+    "kana": "ミスプリント",
+    "romaji": "misupurinto",
+    "meaning": "미스프린트. 오식",
+    "level": "N1"
+  },
+  {
+    "kanji": "みすぼらしい",
+    "kana": "みすぼらしい",
+    "romaji": "misuborashii",
+    "meaning": "초라하다. 빈약하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ミセス",
+    "kana": "ミセス",
+    "romaji": "misesu",
+    "meaning": "미세스. 기혼 여성",
+    "level": "N1"
+  },
+  {
+    "kanji": "見せびらかす",
+    "kana": "みせびらかす",
+    "romaji": "misebirakasu",
+    "meaning": "자랑스럽게 내 보이다. 과시하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "見せ物",
+    "kana": "みせもの",
+    "romaji": "misemon\\'o",
+    "meaning": "흥행. 구경거리",
+    "level": "N1"
+  },
+  {
+    "kanji": "店屋",
+    "kana": "みせや",
+    "romaji": "miseya",
+    "meaning": "상점. 가게",
+    "level": "N1"
+  },
+  {
+    "kanji": "溝",
+    "kana": "みぞ",
+    "romaji": "mizo",
+    "meaning": "도랑. 홈",
+    "level": "N1"
+  },
+  {
+    "kanji": "満たす",
+    "kana": "みたす",
+    "romaji": "mitasu",
+    "meaning": "가득히 채우다. 만족시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "乱す",
+    "kana": "みだす",
+    "romaji": "midasu",
+    "meaning": "어지럽히다. 흩뜨리다. 어지르다. 혼란시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "未知",
+    "kana": "みち",
+    "romaji": "michi",
+    "meaning": "미지",
+    "level": "N1"
+  },
+  {
+    "kanji": "身近な",
+    "kana": "みぢかな",
+    "romaji": "mijikan\\'a",
+    "meaning": "가까운 곳에 있는. 친근한",
+    "level": "N1"
+  },
+  {
+    "kanji": "導く",
+    "kana": "みちびく",
+    "romaji": "michibiku",
+    "meaning": "인도하다. 이끌다",
+    "level": "N1"
+  },
+  {
+    "kanji": "密集",
+    "kana": "みっしゅう",
+    "romaji": "misshuu",
+    "meaning": "밀집",
+    "level": "N1"
+  },
+  {
+    "kanji": "密接な",
+    "kana": "みっせつな",
+    "romaji": "missetsun\\'a",
+    "meaning": "밀접한",
+    "level": "N1"
+  },
+  {
+    "kanji": "密度",
+    "kana": "みつど",
+    "romaji": "mitsudo",
+    "meaning": "밀도",
+    "level": "N1"
+  },
+  {
+    "kanji": "密な",
+    "kana": "みつな",
+    "romaji": "mitsun\\'a",
+    "meaning": "빽빽한. 촘촘한. 긴밀한",
+    "level": "N1"
+  },
+  {
+    "kanji": "見積(も)り",
+    "kana": "みつもり",
+    "romaji": "mitsumori",
+    "meaning": "어림. 견적",
+    "level": "N1"
+  },
+  {
+    "kanji": "見積書",
+    "kana": "みつもりしょ",
+    "romaji": "mitsumorisho",
+    "meaning": "견적서",
+    "level": "N1"
+  },
+  {
+    "kanji": "未定",
+    "kana": "みてい",
+    "romaji": "mitei",
+    "meaning": "미정",
+    "level": "N1"
+  },
+  {
+    "kanji": "見通し",
+    "kana": "みとおし",
+    "romaji": "mitooshi",
+    "meaning": "전망",
+    "level": "N1"
+  },
+  {
+    "kanji": "見なす",
+    "kana": "みなす",
+    "romaji": "min\\'asu",
+    "meaning": "간주하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "源",
+    "kana": "みなもと",
+    "romaji": "min\\'amoto",
+    "meaning": "기원. 근원",
+    "level": "N1"
+  },
+  {
+    "kanji": "見習う",
+    "kana": "みならう",
+    "romaji": "min\\'arau",
+    "meaning": "본받다. 보고 익히다. 수습하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "身なり",
+    "kana": "みなり",
+    "romaji": "min\\'ari",
+    "meaning": "옷차림. 복장",
+    "level": "N1"
+  },
+  {
+    "kanji": "峰",
+    "kana": "みね",
+    "romaji": "min\\'e",
+    "meaning": "봉우리",
+    "level": "N1"
+  },
+  {
+    "kanji": "身の上",
+    "kana": "みのうえ",
+    "romaji": "min\\'oue",
+    "meaning": "신상. 일신의 처지",
+    "level": "N1"
+  },
+  {
+    "kanji": "見逃す",
+    "kana": "みのがす",
+    "romaji": "min\\'ogasu",
+    "meaning": "못 보다. 놓치다. 묵인하다. 눈감아 주다",
+    "level": "N1"
+  },
+  {
+    "kanji": "身の回り",
+    "kana": "みのまわり",
+    "romaji": "min\\'omawari",
+    "meaning": "자신의 주변. 신변",
+    "level": "N1"
+  },
+  {
+    "kanji": "見計らう",
+    "kana": "みはからう",
+    "romaji": "mihakarau",
+    "meaning": "가늠보다",
+    "level": "N1"
+  },
+  {
+    "kanji": "見晴らし",
+    "kana": "みはらし",
+    "romaji": "miharashi",
+    "meaning": "전망",
+    "level": "N1"
+  },
+  {
+    "kanji": "身振(り)",
+    "kana": "みぶり",
+    "romaji": "miburi",
+    "meaning": "몸짓",
+    "level": "N1"
+  },
+  {
+    "kanji": "脈",
+    "kana": "みゃく",
+    "romaji": "myaku",
+    "meaning": "맥. 맥박",
+    "level": "N1"
+  },
+  {
+    "kanji": "ミュージック",
+    "kana": "ミュージック",
+    "romaji": "myu-jikku",
+    "meaning": "뮤직",
+    "level": "N1"
+  },
+  {
+    "kanji": "未練",
+    "kana": "みれん",
+    "romaji": "miren",
+    "meaning": "미련",
+    "level": "N1"
+  },
+  {
+    "kanji": "見渡す",
+    "kana": "みわたす",
+    "romaji": "miwatasu",
+    "meaning": "멀리 바라다보다. 전망하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "民宿",
+    "kana": "みんしゅく",
+    "romaji": "minshuku",
+    "meaning": "민박",
+    "level": "N1"
+  },
+  {
+    "kanji": "民俗",
+    "kana": "みんぞく",
+    "romaji": "minzoku",
+    "meaning": "민속",
+    "level": "N1"
+  },
+  {
+    "kanji": "民族",
+    "kana": "みんぞく",
+    "romaji": "minzoku",
+    "meaning": "민족",
+    "level": "N1"
+  },
+  {
+    "kanji": "無意味な",
+    "kana": "むいみな",
+    "romaji": "muimin\\'a",
+    "meaning": "무의미한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ムード",
+    "kana": "ムード",
+    "romaji": "mu-do",
+    "meaning": "무드",
+    "level": "N1"
+  },
+  {
+    "kanji": "無口な",
+    "kana": "むくちな",
+    "romaji": "mukuchin\\'a",
+    "meaning": "말이 없는. 과묵한",
+    "level": "N1"
+  },
+  {
+    "kanji": "婿",
+    "kana": "むこ",
+    "romaji": "muko",
+    "meaning": "사위. 신랑",
+    "level": "N1"
+  },
+  {
+    "kanji": "無効",
+    "kana": "むこう",
+    "romaji": "mukou",
+    "meaning": "무효",
+    "level": "N1"
+  },
+  {
+    "kanji": "無言",
+    "kana": "むごん",
+    "romaji": "mugon",
+    "meaning": "무언",
+    "level": "N1"
+  },
+  {
+    "kanji": "無邪気な",
+    "kana": "むじゃきな",
+    "romaji": "mujakin\\'a",
+    "meaning": "천진난만한",
+    "level": "N1"
+  },
+  {
+    "kanji": "むしる",
+    "kana": "むしる",
+    "romaji": "mushiru",
+    "meaning": "(1G) 쥐어 뜯다. 잡아 뽑다. 떼어 내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "無神経な",
+    "kana": "むしんけいな",
+    "romaji": "mushinkein\\'a",
+    "meaning": "남에 대한 배려가 없는",
+    "level": "N1"
+  },
+  {
+    "kanji": "結び",
+    "kana": "むすび",
+    "romaji": "musubi",
+    "meaning": "매듭. 끝맺음. 결말",
+    "level": "N1"
+  },
+  {
+    "kanji": "結び付き",
+    "kana": "むすびつき",
+    "romaji": "musubitsuki",
+    "meaning": "결부. 관계. 결합",
+    "level": "N1"
+  },
+  {
+    "kanji": "結び付く",
+    "kana": "むすびつく",
+    "romaji": "musubitsuku",
+    "meaning": "결부되다. 이어지다. 한패가 되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "結び付ける",
+    "kana": "むすびつける",
+    "romaji": "musubitsukeru",
+    "meaning": "연결시키다. 결부하다. 결합시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "無駄な",
+    "kana": "むだな",
+    "romaji": "mudan\\'a",
+    "meaning": "쓸데없는. 소용없는. 헛된",
+    "level": "N1"
+  },
+  {
+    "kanji": "無断で",
+    "kana": "むだんで",
+    "romaji": "mudande",
+    "meaning": "무단으로. 허가 없이",
+    "level": "N1"
+  },
+  {
+    "kanji": "無知な",
+    "kana": "むちな",
+    "romaji": "muchin\\'a",
+    "meaning": "무지한. 지식이 없다",
+    "level": "N1"
+  },
+  {
+    "kanji": "むちゃくちゃな",
+    "kana": "むちゃくちゃな",
+    "romaji": "muchakuchan\\'a",
+    "meaning": "‘むちゃな’의 힘줌말. 엉망진찬의",
+    "level": "N1"
+  },
+  {
+    "kanji": "むちゃな",
+    "kana": "むちゃな",
+    "romaji": "muchan\\'a",
+    "meaning": "터무니없는. 무턱대고 하는. 마구 하는",
+    "level": "N1"
+  },
+  {
+    "kanji": "むなしい",
+    "kana": "むなしい",
+    "romaji": "mun\\'ashii",
+    "meaning": "허무하다. 덧없다. 공허하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "無念な",
+    "kana": "むねんな",
+    "romaji": "mun\\'enn\\'a",
+    "meaning": "원통한",
+    "level": "N1"
+  },
+  {
+    "kanji": "無能な",
+    "kana": "むのうな",
+    "romaji": "mun\\'oun\\'a",
+    "meaning": "무능한",
+    "level": "N1"
+  },
+  {
+    "kanji": "無用な",
+    "kana": "むような",
+    "romaji": "muyoun\\'a",
+    "meaning": "쓸모없는. 필요없는",
+    "level": "N1"
+  },
+  {
+    "kanji": "むら",
+    "kana": "むら",
+    "romaji": "mura",
+    "meaning": "얼룩. 고르지 못함",
+    "level": "N1"
+  },
+  {
+    "kanji": "群がる",
+    "kana": "むらがる",
+    "romaji": "muragaru",
+    "meaning": "떼지어 모이다. 군집하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "無論",
+    "kana": "むろん",
+    "romaji": "muron",
+    "meaning": "물론",
+    "level": "N1"
+  },
+  {
+    "kanji": "名産",
+    "kana": "めいさん",
+    "romaji": "meisan",
+    "meaning": "명산",
+    "level": "N1"
+  },
+  {
+    "kanji": "名称",
+    "kana": "めいしょう",
+    "romaji": "meishou",
+    "meaning": "명칭",
+    "level": "N1"
+  },
+  {
+    "kanji": "命中",
+    "kana": "めいちゅう",
+    "romaji": "meichuu",
+    "meaning": "명중. 적중",
+    "level": "N1"
+  },
+  {
+    "kanji": "名簿",
+    "kana": "めいぼ",
+    "romaji": "meibo",
+    "meaning": "명부. 명단",
+    "level": "N1"
+  },
+  {
+    "kanji": "銘々",
+    "kana": "めいめい",
+    "romaji": "meimei",
+    "meaning": "각자. 제각기. 각각",
+    "level": "N1"
+  },
+  {
+    "kanji": "名誉な",
+    "kana": "めいよな",
+    "romaji": "meiyon\\'a",
+    "meaning": "명예로운",
+    "level": "N1"
+  },
+  {
+    "kanji": "明瞭な",
+    "kana": "めいりょうな",
+    "romaji": "meiryoun\\'a",
+    "meaning": "명료한",
+    "level": "N1"
+  },
+  {
+    "kanji": "明朗な",
+    "kana": "めいろうな",
+    "romaji": "meiroun\\'a",
+    "meaning": "명랑한",
+    "level": "N1"
+  },
+  {
+    "kanji": "メーカー",
+    "kana": "メーカー",
+    "romaji": "me-ka-",
+    "meaning": "메이커",
+    "level": "N1"
+  },
+  {
+    "kanji": "目方",
+    "kana": "めかた",
+    "romaji": "mekata",
+    "meaning": "무게. 중량",
+    "level": "N1"
+  },
+  {
+    "kanji": "恵み",
+    "kana": "めぐみ",
+    "romaji": "megumi",
+    "meaning": "은혜. 은총. 자비",
+    "level": "N1"
+  },
+  {
+    "kanji": "恵む",
+    "kana": "めぐむ",
+    "romaji": "megumu",
+    "meaning": "(은혜 인정을) 베풀다",
+    "level": "N1"
+  },
+  {
+    "kanji": "めくる",
+    "kana": "めくる",
+    "romaji": "mekuru",
+    "meaning": "넘기다. 젖히다. 벗기다",
+    "level": "N1"
+  },
+  {
+    "kanji": "目覚(ま)しい",
+    "kana": "めざましい",
+    "romaji": "mezamashii",
+    "meaning": "눈부시다. 놀랍다",
+    "level": "N1"
+  },
+  {
+    "kanji": "目覚める",
+    "kana": "めざめる",
+    "romaji": "mezameru",
+    "meaning": "눈뜨다. 잠을 깨다. 깨어나다",
+    "level": "N1"
+  },
+  {
+    "kanji": "雌",
+    "kana": "めす",
+    "romaji": "mesu",
+    "meaning": "암컷",
+    "level": "N1"
+  },
+  {
+    "kanji": "召す",
+    "kana": "めす",
+    "romaji": "mesu",
+    "meaning": "食べる 飲む 着る 乗る 風邪を引く 風呂に入る 気に入る 年を取る 등",
+    "level": "N1"
+  },
+  {
+    "kanji": "目付き",
+    "kana": "めつき",
+    "romaji": "metsuki",
+    "meaning": "눈. 눈매",
+    "level": "N1"
+  },
+  {
+    "kanji": "メッセージ",
+    "kana": "メッセージ",
+    "romaji": "messe-ji",
+    "meaning": "메시지",
+    "level": "N1"
+  },
+  {
+    "kanji": "滅亡",
+    "kana": "めつぼう",
+    "romaji": "metsubou",
+    "meaning": "멸망",
+    "level": "N1"
+  },
+  {
+    "kanji": "メディア",
+    "kana": "メディア",
+    "romaji": "medeia",
+    "meaning": "미디어",
+    "level": "N1"
+  },
+  {
+    "kanji": "目処",
+    "kana": "めど",
+    "romaji": "medo",
+    "meaning": "지향하는 곳. 목표. 전망",
+    "level": "N1"
+  },
+  {
+    "kanji": "目盛(り)",
+    "kana": "めもり",
+    "romaji": "memori",
+    "meaning": "눈금",
+    "level": "N1"
+  },
+  {
+    "kanji": "メロディー",
+    "kana": "メロディー",
+    "romaji": "merodei-",
+    "meaning": "멜로디",
+    "level": "N1"
+  },
+  {
+    "kanji": "免除",
+    "kana": "めんじょ",
+    "romaji": "menjo",
+    "meaning": "면제",
+    "level": "N1"
+  },
+  {
+    "kanji": "面する",
+    "kana": "めんする",
+    "romaji": "mensuru",
+    "meaning": "면하다. 향하다. 마주 대하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "面目",
+    "kana": "めんぼく",
+    "romaji": "menboku",
+    "meaning": "면목. 체면",
+    "level": "N1"
+  },
+  {
+    "kanji": "面目",
+    "kana": "めんもく",
+    "romaji": "menmoku",
+    "meaning": "면목. 체면 →めんぼく",
+    "level": "N1"
+  },
+  {
+    "kanji": "設ける",
+    "kana": "もうける",
+    "romaji": "moukeru",
+    "meaning": "마련하다. 설치하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "申し入れる",
+    "kana": "もうしいれる",
+    "romaji": "moushiireru",
+    "meaning": "제의하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "申(し)込(み)",
+    "kana": "もうしこみ",
+    "romaji": "moushikomi",
+    "meaning": "신청",
+    "level": "N1"
+  },
+  {
+    "kanji": "申(し)出",
+    "kana": "もうしで",
+    "romaji": "moushide",
+    "meaning": "신청. 의사 표시",
+    "level": "N1"
+  },
+  {
+    "kanji": "申し出る",
+    "kana": "もうしでる",
+    "romaji": "moushideru",
+    "meaning": "스스로 말하다. 신청하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "申し分",
+    "kana": "もうしぶん",
+    "romaji": "moushibun",
+    "meaning": "나무랄 데. 부족한 바 (+없다)",
+    "level": "N1"
+  },
+  {
+    "kanji": "盲点",
+    "kana": "もうてん",
+    "romaji": "mouten",
+    "meaning": "맹점",
+    "level": "N1"
+  },
+  {
+    "kanji": "猛烈な",
+    "kana": "もうれつな",
+    "romaji": "mouretsun\\'a",
+    "meaning": "맹렬한",
+    "level": "N1"
+  },
+  {
+    "kanji": "モーテル",
+    "kana": "モーテル",
+    "romaji": "mo-teru",
+    "meaning": "모텔",
+    "level": "N1"
+  },
+  {
+    "kanji": "もがく",
+    "kana": "もがく",
+    "romaji": "mogaku",
+    "meaning": "바르작거리다. 발버둥이치다. 초조해하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "目録",
+    "kana": "もくろく",
+    "romaji": "mokuroku",
+    "meaning": "목록",
+    "level": "N1"
+  },
+  {
+    "kanji": "もくろみ",
+    "kana": "もくろみ",
+    "romaji": "mokuromi",
+    "meaning": "(나쁜)계획. 의도",
+    "level": "N1"
+  },
+  {
+    "kanji": "模型",
+    "kana": "もけい",
+    "romaji": "mokei",
+    "meaning": "모형",
+    "level": "N1"
+  },
+  {
+    "kanji": "模索",
+    "kana": "もさく",
+    "romaji": "mosaku",
+    "meaning": "모색",
+    "level": "N1"
+  },
+  {
+    "kanji": "若しくは",
+    "kana": "もしくは",
+    "romaji": "moshikuha",
+    "meaning": "또는. 혹은",
+    "level": "N1"
+  },
+  {
+    "kanji": "もたらす",
+    "kana": "もたらす",
+    "romaji": "motarasu",
+    "meaning": "가져가다. 가져오다. 초래하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "持ち切り",
+    "kana": "もちきり",
+    "romaji": "mochikiri",
+    "meaning": "(소문이) 자자함",
+    "level": "N1"
+  },
+  {
+    "kanji": "目下",
+    "kana": "もっか",
+    "romaji": "mokka",
+    "meaning": "목하. 지금 현재",
+    "level": "N1"
+  },
+  {
+    "kanji": "専ら",
+    "kana": "もっぱら",
+    "romaji": "moppara",
+    "meaning": "오로지. 한결같이",
+    "level": "N1"
+  },
+  {
+    "kanji": "もてなす",
+    "kana": "もてなす",
+    "romaji": "moten\\'asu",
+    "meaning": "대접하다. 환대하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "持てる",
+    "kana": "もてる",
+    "romaji": "moteru",
+    "meaning": "이성에게 인기가 있다",
+    "level": "N1"
+  },
+  {
+    "kanji": "モニター",
+    "kana": "モニター",
+    "romaji": "mon\\'ita-",
+    "meaning": "모니터",
+    "level": "N1"
+  },
+  {
+    "kanji": "物好きな",
+    "kana": "ものずきな",
+    "romaji": "mon\\'ozukin\\'a",
+    "meaning": "유별난 것을 좋아하는",
+    "level": "N1"
+  },
+  {
+    "kanji": "物足りない",
+    "kana": "ものたりない",
+    "romaji": "mon\\'otarin\\'ai",
+    "meaning": "어딘지 불만스럽다. 어딘가 부족하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "もはや",
+    "kana": "もはや",
+    "romaji": "mohaya",
+    "meaning": "벌써. 이미. 어느새. 이제와서는",
+    "level": "N1"
+  },
+  {
+    "kanji": "模範",
+    "kana": "もはん",
+    "romaji": "mohan",
+    "meaning": "모범",
+    "level": "N1"
+  },
+  {
+    "kanji": "模倣",
+    "kana": "もほう",
+    "romaji": "mohou",
+    "meaning": "모방",
+    "level": "N1"
+  },
+  {
+    "kanji": "もめる",
+    "kana": "もめる",
+    "romaji": "momeru",
+    "meaning": "분쟁이 일어나다. 옥신각신하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "もも",
+    "kana": "もも",
+    "romaji": "momo",
+    "meaning": "넓적다리. 허벅지. 허벅다리",
+    "level": "N1"
+  },
+  {
+    "kanji": "催す",
+    "kana": "もよおす",
+    "romaji": "moyoosu",
+    "meaning": "개최하다. 열다",
+    "level": "N1"
+  },
+  {
+    "kanji": "漏らす",
+    "kana": "もらす",
+    "romaji": "morasu",
+    "meaning": "누설하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "盛り上がる",
+    "kana": "もりあがる",
+    "romaji": "moriagaru",
+    "meaning": "부풀어오르다. 솟아오르다. (분위기가)고조되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "漏る",
+    "kana": "もる",
+    "romaji": "moru",
+    "meaning": "새다",
+    "level": "N1"
+  },
+  {
+    "kanji": "漏れる",
+    "kana": "もれる",
+    "romaji": "moreru",
+    "meaning": "새다. 빠지다. 누락되다. 누설되다",
+    "level": "N1"
+  },
+  {
+    "kanji": "もろい",
+    "kana": "もろい",
+    "romaji": "moroi",
+    "meaning": "외력에 대한 저항력이 약하다. 부서지기 쉽다. 무르다. 여리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "もろに",
+    "kana": "もろに",
+    "romaji": "moron\\'i",
+    "meaning": "완전히. 근본부터. 정면으로. 직접",
+    "level": "N1"
+  },
+  {
+    "kanji": "問答",
+    "kana": "もんどう",
+    "romaji": "mondou",
+    "meaning": "문답. 물음과 답. 논쟁",
+    "level": "N1"
+  },
+  {
+    "kanji": "矢",
+    "kana": "や",
+    "romaji": "ya",
+    "meaning": "화살",
+    "level": "N1"
+  },
+  {
+    "kanji": "野外",
+    "kana": "やがい",
+    "romaji": "yagai",
+    "meaning": "야외",
+    "level": "N1"
+  },
+  {
+    "kanji": "役職",
+    "kana": "やくしょく",
+    "romaji": "yakushoku",
+    "meaning": "관리직",
+    "level": "N1"
+  },
+  {
+    "kanji": "役場",
+    "kana": "やくば",
+    "romaji": "yakuba",
+    "meaning": "지방 공무원이 사무를 보는 곳. 동사무소",
+    "level": "N1"
+  },
+  {
+    "kanji": "やけに",
+    "kana": "やけに",
+    "romaji": "yaken\\'i",
+    "meaning": "몹시. 지독히. 무턱대고",
+    "level": "N1"
+  },
+  {
+    "kanji": "屋敷",
+    "kana": "やしき",
+    "romaji": "yashiki",
+    "meaning": "저택. 특히 고급 주택",
+    "level": "N1"
+  },
+  {
+    "kanji": "養う",
+    "kana": "やしなう",
+    "romaji": "yashin\\'au",
+    "meaning": "기르다. 양육하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "野心",
+    "kana": "やしん",
+    "romaji": "yashin",
+    "meaning": "야심. 야망",
+    "level": "N1"
+  },
+  {
+    "kanji": "安っぽい",
+    "kana": "やすっぽい",
+    "romaji": "yasuppoi",
+    "meaning": "값싸보이다. 싸구려 같다. 천격스럽다",
+    "level": "N1"
+  },
+  {
+    "kanji": "休める",
+    "kana": "やすめる",
+    "romaji": "yasumeru",
+    "meaning": "쉬게 하다. 휴식시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "奴",
+    "kana": "やつ",
+    "romaji": "yatsu",
+    "meaning": "놈",
+    "level": "N1"
+  },
+  {
+    "kanji": "闇",
+    "kana": "やみ",
+    "romaji": "yami",
+    "meaning": "어둠",
+    "level": "N1"
+  },
+  {
+    "kanji": "病む",
+    "kana": "やむ",
+    "romaji": "yamu",
+    "meaning": "병들다. 앓다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ややこしい",
+    "kana": "ややこしい",
+    "romaji": "yayakoshii",
+    "meaning": "복잡해서 알기 어렵다. 까다롭다",
+    "level": "N1"
+  },
+  {
+    "kanji": "やり通す",
+    "kana": "やりとおす",
+    "romaji": "yaritoosu",
+    "meaning": "끝까지 하다. 해내다",
+    "level": "N1"
+  },
+  {
+    "kanji": "やり遂げる",
+    "kana": "やりとげる",
+    "romaji": "yaritogeru",
+    "meaning": "완수하다. 끝까지 해내다. 달성하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "和らげる",
+    "kana": "やわらげる",
+    "romaji": "yawarageru",
+    "meaning": "부드럽게 하다. 누그러뜨리다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ヤング",
+    "kana": "ヤング",
+    "romaji": "yangu",
+    "meaning": "젊은. 젊은이",
+    "level": "N1"
+  },
+  {
+    "kanji": "優",
+    "kana": "ゆう",
+    "romaji": "yuu",
+    "meaning": "우 (매우 좋음)",
+    "level": "N1"
+  },
+  {
+    "kanji": "優位",
+    "kana": "ゆうい",
+    "romaji": "yuui",
+    "meaning": "우위",
+    "level": "N1"
+  },
+  {
+    "kanji": "憂鬱な",
+    "kana": "ゆううつな",
+    "romaji": "yuuutsun\\'a",
+    "meaning": "우울한",
+    "level": "N1"
+  },
+  {
+    "kanji": "有益な",
+    "kana": "ゆうえきな",
+    "romaji": "yuuekin\\'a",
+    "meaning": "유익한",
+    "level": "N1"
+  },
+  {
+    "kanji": "優越",
+    "kana": "ゆうえつ",
+    "romaji": "yuuetsu",
+    "meaning": "우월",
+    "level": "N1"
+  },
+  {
+    "kanji": "勇敢な",
+    "kana": "ゆうかんな",
+    "romaji": "yuukann\\'a",
+    "meaning": "용감한",
+    "level": "N1"
+  },
+  {
+    "kanji": "有機",
+    "kana": "ゆうき",
+    "romaji": "yuuki",
+    "meaning": "유기",
+    "level": "N1"
+  },
+  {
+    "kanji": "夕暮(れ)",
+    "kana": "ゆうぐれ",
+    "romaji": "yuugure",
+    "meaning": "황혼. 해질녘",
+    "level": "N1"
+  },
+  {
+    "kanji": "友好",
+    "kana": "ゆうこう",
+    "romaji": "yuukou",
+    "meaning": "우호",
+    "level": "N1"
+  },
+  {
+    "kanji": "融資",
+    "kana": "ゆうし",
+    "romaji": "yuushi",
+    "meaning": "융자",
+    "level": "N1"
+  },
+  {
+    "kanji": "融通",
+    "kana": "ゆうずう",
+    "romaji": "yuuzuu",
+    "meaning": "융통",
+    "level": "N1"
+  },
+  {
+    "kanji": "有する",
+    "kana": "ゆうする",
+    "romaji": "yuusuru",
+    "meaning": "가지다. 소유하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "優勢な",
+    "kana": "ゆうせいな",
+    "romaji": "yuusein\\'a",
+    "meaning": "우세한",
+    "level": "N1"
+  },
+  {
+    "kanji": "優先",
+    "kana": "ゆうせん",
+    "romaji": "yuusen",
+    "meaning": "우선",
+    "level": "N1"
+  },
+  {
+    "kanji": "誘導",
+    "kana": "ゆうどう",
+    "romaji": "yuudou",
+    "meaning": "유도",
+    "level": "N1"
+  },
+  {
+    "kanji": "優美な",
+    "kana": "ゆうびな",
+    "romaji": "yuubin\\'a",
+    "meaning": "우미한. 뛰어나게 아름다운",
+    "level": "N1"
+  },
+  {
+    "kanji": "有望な",
+    "kana": "ゆうぼうな",
+    "romaji": "yuuboun\\'a",
+    "meaning": "유망한",
+    "level": "N1"
+  },
+  {
+    "kanji": "遊牧",
+    "kana": "ゆうぼく",
+    "romaji": "yuuboku",
+    "meaning": "유목",
+    "level": "N1"
+  },
+  {
+    "kanji": "有力な",
+    "kana": "ゆうりょくな",
+    "romaji": "yuuryokun\\'a",
+    "meaning": "유력한",
+    "level": "N1"
+  },
+  {
+    "kanji": "幽霊",
+    "kana": "ゆうれい",
+    "romaji": "yuurei",
+    "meaning": "유령",
+    "level": "N1"
+  },
+  {
+    "kanji": "誘惑",
+    "kana": "ゆうわく",
+    "romaji": "yuuwaku",
+    "meaning": "유혹",
+    "level": "N1"
+  },
+  {
+    "kanji": "故に",
+    "kana": "ゆえに",
+    "romaji": "yuen\\'i",
+    "meaning": "고로. 그러므로",
+    "level": "N1"
+  },
+  {
+    "kanji": "ゆがむ",
+    "kana": "ゆがむ",
+    "romaji": "yugamu",
+    "meaning": "비뚤어지다. 일그러지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "行き違い",
+    "kana": "ゆきちがい",
+    "romaji": "yukichigai",
+    "meaning": "서로 엇갈림 ＝いきちがい[行き違い]",
+    "level": "N1"
+  },
+  {
+    "kanji": "揺さぶる",
+    "kana": "ゆさぶる",
+    "romaji": "yusaburu",
+    "meaning": "흔들다. 동요하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ゆすぐ",
+    "kana": "ゆすぐ",
+    "romaji": "yusugu",
+    "meaning": "헹구다. 양치질하다. 가시다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ゆとり",
+    "kana": "ゆとり",
+    "romaji": "yutori",
+    "meaning": "여유",
+    "level": "N1"
+  },
+  {
+    "kanji": "ユニークな",
+    "kana": "ユニークな",
+    "romaji": "yun\\'i-kun\\'a",
+    "meaning": "유니크. 특이한. 독특한",
+    "level": "N1"
+  },
+  {
+    "kanji": "指差す",
+    "kana": "ゆびさす",
+    "romaji": "yubisasu",
+    "meaning": "손가락질하다. 가리키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "弓",
+    "kana": "ゆみ",
+    "romaji": "yumi",
+    "meaning": "활",
+    "level": "N1"
+  },
+  {
+    "kanji": "揺らぐ",
+    "kana": "ゆらぐ",
+    "romaji": "yuragu",
+    "meaning": "전체가 흔들리다. 요동하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "緩む",
+    "kana": "ゆるむ",
+    "romaji": "yurumu",
+    "meaning": "느슨해지다. 풀어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "緩める",
+    "kana": "ゆるめる",
+    "romaji": "yurumeru",
+    "meaning": "풀다. 느슨하게 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "緩やかな",
+    "kana": "ゆるやかな",
+    "romaji": "yuruyakan\\'a",
+    "meaning": "완만한. 느슨한",
+    "level": "N1"
+  },
+  {
+    "kanji": "世",
+    "kana": "よ",
+    "romaji": "yo",
+    "meaning": "세상",
+    "level": "N1"
+  },
+  {
+    "kanji": "要因",
+    "kana": "よういん",
+    "romaji": "youin",
+    "meaning": "요인",
+    "level": "N1"
+  },
+  {
+    "kanji": "溶液",
+    "kana": "ようえき",
+    "romaji": "youeki",
+    "meaning": "용액",
+    "level": "N1"
+  },
+  {
+    "kanji": "養護",
+    "kana": "ようご",
+    "romaji": "yougo",
+    "meaning": "양호. 특별한 보호 밑에서 기름",
+    "level": "N1"
+  },
+  {
+    "kanji": "様式",
+    "kana": "ようしき",
+    "romaji": "youshiki",
+    "meaning": "양식",
+    "level": "N1"
+  },
+  {
+    "kanji": "要する",
+    "kana": "ようする",
+    "romaji": "yousuru",
+    "meaning": "필요로 하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "要請",
+    "kana": "ようせい",
+    "romaji": "yousei",
+    "meaning": "요청",
+    "level": "N1"
+  },
+  {
+    "kanji": "様相",
+    "kana": "ようそう",
+    "romaji": "yousou",
+    "meaning": "양상",
+    "level": "N1"
+  },
+  {
+    "kanji": "用品",
+    "kana": "ようひん",
+    "romaji": "youhin",
+    "meaning": "용품",
+    "level": "N1"
+  },
+  {
+    "kanji": "洋風",
+    "kana": "ようふう",
+    "romaji": "youfuu",
+    "meaning": "양풍. 양식",
+    "level": "N1"
+  },
+  {
+    "kanji": "用法",
+    "kana": "ようほう",
+    "romaji": "youhou",
+    "meaning": "용법",
+    "level": "N1"
+  },
+  {
+    "kanji": "要望",
+    "kana": "ようぼう",
+    "romaji": "youbou",
+    "meaning": "요망",
+    "level": "N1"
+  },
+  {
+    "kanji": "余暇",
+    "kana": "よか",
+    "romaji": "yoka",
+    "meaning": "여가",
+    "level": "N1"
+  },
+  {
+    "kanji": "余興",
+    "kana": "よきょう",
+    "romaji": "yokyou",
+    "meaning": "여흥",
+    "level": "N1"
+  },
+  {
+    "kanji": "預金",
+    "kana": "よきん",
+    "romaji": "yokin",
+    "meaning": "예금",
+    "level": "N1"
+  },
+  {
+    "kanji": "欲",
+    "kana": "よく",
+    "romaji": "yoku",
+    "meaning": "욕심",
+    "level": "N1"
+  },
+  {
+    "kanji": "抑圧",
+    "kana": "よくあつ",
+    "romaji": "yokuatsu",
+    "meaning": "억압",
+    "level": "N1"
+  },
+  {
+    "kanji": "浴室",
+    "kana": "よくしつ",
+    "romaji": "yokushitsu",
+    "meaning": "욕실",
+    "level": "N1"
+  },
+  {
+    "kanji": "抑制",
+    "kana": "よくせい",
+    "romaji": "yokusei",
+    "meaning": "억제",
+    "level": "N1"
+  },
+  {
+    "kanji": "欲深い",
+    "kana": "よくぶかい",
+    "romaji": "yokubukai",
+    "meaning": "욕심이 많다",
+    "level": "N1"
+  },
+  {
+    "kanji": "欲望",
+    "kana": "よくぼう",
+    "romaji": "yokubou",
+    "meaning": "욕망",
+    "level": "N1"
+  },
+  {
+    "kanji": "よける",
+    "kana": "よける",
+    "romaji": "yokeru",
+    "meaning": "옆으로 비키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "予言",
+    "kana": "よげん",
+    "romaji": "yogen",
+    "meaning": "예언",
+    "level": "N1"
+  },
+  {
+    "kanji": "横綱",
+    "kana": "よこづな",
+    "romaji": "yokozun\\'a",
+    "meaning": "씨름꾼의 최고위",
+    "level": "N1"
+  },
+  {
+    "kanji": "汚れ",
+    "kana": "よごれ",
+    "romaji": "yogore",
+    "meaning": "오점. 더러움",
+    "level": "N1"
+  },
+  {
+    "kanji": "よし",
+    "kana": "よし",
+    "romaji": "yoshi",
+    "meaning": "알았어. 좋아. 옳지. 좋다(고어)",
+    "level": "N1"
+  },
+  {
+    "kanji": "善し悪し",
+    "kana": "よしあし",
+    "romaji": "yoshiashi",
+    "meaning": "좋고 나쁨. 선악",
+    "level": "N1"
+  },
+  {
+    "kanji": "よそ見",
+    "kana": "よそみ",
+    "romaji": "yosomi",
+    "meaning": "한눈 팖. 옆을 봄",
+    "level": "N1"
+  },
+  {
+    "kanji": "余地",
+    "kana": "よち",
+    "romaji": "yochi",
+    "meaning": "여지",
+    "level": "N1"
+  },
+  {
+    "kanji": "よって",
+    "kana": "よって",
+    "romaji": "yotte",
+    "meaning": "따라서. 그러므로. 이에",
+    "level": "N1"
+  },
+  {
+    "kanji": "呼び止める",
+    "kana": "よびとめる",
+    "romaji": "yobitomeru",
+    "meaning": "불러서 멈춰 세우다",
+    "level": "N1"
+  },
+  {
+    "kanji": "夜更(か)し",
+    "kana": "よふかし",
+    "romaji": "yofukashi",
+    "meaning": "밤늦게까지 자지 않음",
+    "level": "N1"
+  },
+  {
+    "kanji": "夜更け",
+    "kana": "よふけ",
+    "romaji": "yofuke",
+    "meaning": "밤이 깊어짐. 심야",
+    "level": "N1"
+  },
+  {
+    "kanji": "余程",
+    "kana": "よほど",
+    "romaji": "yohodo",
+    "meaning": "상당히. 꽤. 어지간히. 정말이지",
+    "level": "N1"
+  },
+  {
+    "kanji": "読み上げる",
+    "kana": "よみあげる",
+    "romaji": "yomiageru",
+    "meaning": "소리를 내어 읽다. 낭독하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "よみがえる",
+    "kana": "よみがえる",
+    "romaji": "yomigaeru",
+    "meaning": "(1G) 되살아나다. 소생하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "-寄り",
+    "kana": "より",
+    "romaji": "yori",
+    "meaning": "-근처. -쪽",
+    "level": "N1"
+  },
+  {
+    "kanji": "寄り掛かる",
+    "kana": "よりかかる",
+    "romaji": "yorikakaru",
+    "meaning": "기대다",
+    "level": "N1"
+  },
+  {
+    "kanji": "世論",
+    "kana": "よろん",
+    "romaji": "yoron",
+    "meaning": "여론",
+    "level": "N1"
+  },
+  {
+    "kanji": "弱まる",
+    "kana": "よわまる",
+    "romaji": "yowamaru",
+    "meaning": "약해지다. 수그러지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "弱める",
+    "kana": "よわめる",
+    "romaji": "yowameru",
+    "meaning": "약하게 하다. 약화시키다",
+    "level": "N1"
+  },
+  {
+    "kanji": "弱る",
+    "kana": "よわる",
+    "romaji": "yowaru",
+    "meaning": "약해지다. 곤란해지다. 난처해지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "来場",
+    "kana": "らいじょう",
+    "romaji": "raijou",
+    "meaning": "내장. 그 장소에 옴",
+    "level": "N1"
+  },
+  {
+    "kanji": "ライス",
+    "kana": "ライス",
+    "romaji": "raisu",
+    "meaning": "라이스. 밥",
+    "level": "N1"
+  },
+  {
+    "kanji": "酪農",
+    "kana": "らくのう",
+    "romaji": "rakun\\'ou",
+    "meaning": "낙농",
+    "level": "N1"
+  },
+  {
+    "kanji": "落下",
+    "kana": "らっか",
+    "romaji": "rakka",
+    "meaning": "낙하",
+    "level": "N1"
+  },
+  {
+    "kanji": "楽観",
+    "kana": "らっかん",
+    "romaji": "rakkan",
+    "meaning": "낙관",
+    "level": "N1"
+  },
+  {
+    "kanji": "ラベル",
+    "kana": "ラベル",
+    "romaji": "raberu",
+    "meaning": "라벨",
+    "level": "N1"
+  },
+  {
+    "kanji": "ランプ",
+    "kana": "ランプ",
+    "romaji": "ranpu",
+    "meaning": "램프",
+    "level": "N1"
+  },
+  {
+    "kanji": "乱用/濫用",
+    "kana": "らんよう",
+    "romaji": "ran\\'you",
+    "meaning": "남용",
+    "level": "N1"
+  },
+  {
+    "kanji": "リード",
+    "kana": "リード",
+    "romaji": "ri-do",
+    "meaning": "리드",
+    "level": "N1"
+  },
+  {
+    "kanji": "理屈",
+    "kana": "りくつ",
+    "romaji": "rikutsu",
+    "meaning": "도리. 이치. 이론이나 이유",
+    "level": "N1"
+  },
+  {
+    "kanji": "利子",
+    "kana": "りし",
+    "romaji": "rishi",
+    "meaning": "이자",
+    "level": "N1"
+  },
+  {
+    "kanji": "利潤",
+    "kana": "りじゅん",
+    "romaji": "rijun",
+    "meaning": "이윤",
+    "level": "N1"
+  },
+  {
+    "kanji": "理性",
+    "kana": "りせい",
+    "romaji": "risei",
+    "meaning": "이성",
+    "level": "N1"
+  },
+  {
+    "kanji": "利息",
+    "kana": "りそく",
+    "romaji": "risoku",
+    "meaning": "이자",
+    "level": "N1"
+  },
+  {
+    "kanji": "立体",
+    "kana": "りったい",
+    "romaji": "rittai",
+    "meaning": "입체",
+    "level": "N1"
+  },
+  {
+    "kanji": "立方",
+    "kana": "りっぽう",
+    "romaji": "rippou",
+    "meaning": "입방. 세제곱",
+    "level": "N1"
+  },
+  {
+    "kanji": "立法",
+    "kana": "りっぽう",
+    "romaji": "rippou",
+    "meaning": "입법",
+    "level": "N1"
+  },
+  {
+    "kanji": "利点",
+    "kana": "りてん",
+    "romaji": "riten",
+    "meaning": "이점",
+    "level": "N1"
+  },
+  {
+    "kanji": "略語",
+    "kana": "りゃくご",
+    "romaji": "ryakugo",
+    "meaning": "약어. 줄임말",
+    "level": "N1"
+  },
+  {
+    "kanji": "略奪",
+    "kana": "りゃくだつ",
+    "romaji": "ryakudatsu",
+    "meaning": "약탈",
+    "level": "N1"
+  },
+  {
+    "kanji": "流通",
+    "kana": "りゅうつう",
+    "romaji": "ryuutsuu",
+    "meaning": "유통",
+    "level": "N1"
+  },
+  {
+    "kanji": "領域",
+    "kana": "りょういき",
+    "romaji": "ryouiki",
+    "meaning": "영역",
+    "level": "N1"
+  },
+  {
+    "kanji": "了解",
+    "kana": "りょうかい",
+    "romaji": "ryoukai",
+    "meaning": "양해",
+    "level": "N1"
+  },
+  {
+    "kanji": "領海",
+    "kana": "りょうかい",
+    "romaji": "ryoukai",
+    "meaning": "영해",
+    "level": "N1"
+  },
+  {
+    "kanji": "両極",
+    "kana": "りょうきょく",
+    "romaji": "ryoukyoku",
+    "meaning": "양극",
+    "level": "N1"
+  },
+  {
+    "kanji": "良好な",
+    "kana": "りょうこうな",
+    "romaji": "ryoukoun\\'a",
+    "meaning": "양호한",
+    "level": "N1"
+  },
+  {
+    "kanji": "良識",
+    "kana": "りょうしき",
+    "romaji": "ryoushiki",
+    "meaning": "양식 (좋은 견식)",
+    "level": "N1"
+  },
+  {
+    "kanji": "良質",
+    "kana": "りょうしつ",
+    "romaji": "ryoushitsu",
+    "meaning": "양질",
+    "level": "N1"
+  },
+  {
+    "kanji": "了承",
+    "kana": "りょうしょう",
+    "romaji": "ryoushou",
+    "meaning": "승낙함. 납득함. 양해",
+    "level": "N1"
+  },
+  {
+    "kanji": "良心",
+    "kana": "りょうしん",
+    "romaji": "ryoushin",
+    "meaning": "양심",
+    "level": "N1"
+  },
+  {
+    "kanji": "領地",
+    "kana": "りょうち",
+    "romaji": "ryouchi",
+    "meaning": "영지. 영토",
+    "level": "N1"
+  },
+  {
+    "kanji": "領土",
+    "kana": "りょうど",
+    "romaji": "ryoudo",
+    "meaning": "영토",
+    "level": "N1"
+  },
+  {
+    "kanji": "両立",
+    "kana": "りょうりつ",
+    "romaji": "ryouritsu",
+    "meaning": "양립",
+    "level": "N1"
+  },
+  {
+    "kanji": "旅客",
+    "kana": "りょかく",
+    "romaji": "ryokaku",
+    "meaning": "여객",
+    "level": "N1"
+  },
+  {
+    "kanji": "旅券",
+    "kana": "りょけん",
+    "romaji": "ryoken",
+    "meaning": "여권",
+    "level": "N1"
+  },
+  {
+    "kanji": "履歴",
+    "kana": "りれき",
+    "romaji": "rireki",
+    "meaning": "이력",
+    "level": "N1"
+  },
+  {
+    "kanji": "理論",
+    "kana": "りろん",
+    "romaji": "riron",
+    "meaning": "이론",
+    "level": "N1"
+  },
+  {
+    "kanji": "林業",
+    "kana": "りんぎょう",
+    "romaji": "ringyou",
+    "meaning": "임업",
+    "level": "N1"
+  },
+  {
+    "kanji": "-類",
+    "kana": "るい",
+    "romaji": "rui",
+    "meaning": "-류 (종류)",
+    "level": "N1"
+  },
+  {
+    "kanji": "類似",
+    "kana": "るいじ",
+    "romaji": "ruiji",
+    "meaning": "유사",
+    "level": "N1"
+  },
+  {
+    "kanji": "類推",
+    "kana": "るいすい",
+    "romaji": "ruisui",
+    "meaning": "유추",
+    "level": "N1"
+  },
+  {
+    "kanji": "ルーズな",
+    "kana": "ルーズな",
+    "romaji": "ru-zun\\'a",
+    "meaning": "루스. 칠칠치 못한. 헐렁한",
+    "level": "N1"
+  },
+  {
+    "kanji": "ルール",
+    "kana": "ルール",
+    "romaji": "ru-ru",
+    "meaning": "룰. 규칙",
+    "level": "N1"
+  },
+  {
+    "kanji": "冷酷な",
+    "kana": "れいこくな",
+    "romaji": "reikokun\\'a",
+    "meaning": "냉혹한",
+    "level": "N1"
+  },
+  {
+    "kanji": "冷蔵",
+    "kana": "れいぞう",
+    "romaji": "reizou",
+    "meaning": "냉장",
+    "level": "N1"
+  },
+  {
+    "kanji": "冷淡な",
+    "kana": "れいたんな",
+    "romaji": "reitann\\'a",
+    "meaning": "냉담한",
+    "level": "N1"
+  },
+  {
+    "kanji": "レース",
+    "kana": "レース",
+    "romaji": "re-su",
+    "meaning": "레이스",
+    "level": "N1"
+  },
+  {
+    "kanji": "レギュラー",
+    "kana": "レギュラー",
+    "romaji": "regyura-",
+    "meaning": "레귤러",
+    "level": "N1"
+  },
+  {
+    "kanji": "レッスン",
+    "kana": "レッスン",
+    "romaji": "ressun",
+    "meaning": "레슨",
+    "level": "N1"
+  },
+  {
+    "kanji": "レディー",
+    "kana": "レディー",
+    "romaji": "redei-",
+    "meaning": "레이디",
+    "level": "N1"
+  },
+  {
+    "kanji": "レバー",
+    "kana": "レバー",
+    "romaji": "reba-",
+    "meaning": "레버. 지렛대",
+    "level": "N1"
+  },
+  {
+    "kanji": "恋愛",
+    "kana": "れんあい",
+    "romaji": "ren\\'ai",
+    "meaning": "연애",
+    "level": "N1"
+  },
+  {
+    "kanji": "レンジ",
+    "kana": "レンジ",
+    "romaji": "renji",
+    "meaning": "(가스)레인지",
+    "level": "N1"
+  },
+  {
+    "kanji": "連日",
+    "kana": "れんじつ",
+    "romaji": "renjitsu",
+    "meaning": "연일",
+    "level": "N1"
+  },
+  {
+    "kanji": "連帯",
+    "kana": "れんたい",
+    "romaji": "rentai",
+    "meaning": "연대",
+    "level": "N1"
+  },
+  {
+    "kanji": "レンタカー",
+    "kana": "レンタカー",
+    "romaji": "rentaka-",
+    "meaning": "렌터카",
+    "level": "N1"
+  },
+  {
+    "kanji": "連中",
+    "kana": "れんちゅう",
+    "romaji": "renchuu",
+    "meaning": "한 패. 일당. 그 패들",
+    "level": "N1"
+  },
+  {
+    "kanji": "レントゲン",
+    "kana": "レントゲン",
+    "romaji": "rentogen",
+    "meaning": "뢴트겐. 엑스레이",
+    "level": "N1"
+  },
+  {
+    "kanji": "連邦",
+    "kana": "れんぽう",
+    "romaji": "renpou",
+    "meaning": "연방",
+    "level": "N1"
+  },
+  {
+    "kanji": "連盟",
+    "kana": "れんめい",
+    "romaji": "renmei",
+    "meaning": "연맹",
+    "level": "N1"
+  },
+  {
+    "kanji": "老衰",
+    "kana": "ろうすい",
+    "romaji": "rousui",
+    "meaning": "노쇠",
+    "level": "N1"
+  },
+  {
+    "kanji": "朗読",
+    "kana": "ろうどく",
+    "romaji": "roudoku",
+    "meaning": "낭독",
+    "level": "N1"
+  },
+  {
+    "kanji": "浪費",
+    "kana": "ろうひ",
+    "romaji": "rouhi",
+    "meaning": "낭비",
+    "level": "N1"
+  },
+  {
+    "kanji": "労力",
+    "kana": "ろうりょく",
+    "romaji": "rouryoku",
+    "meaning": "노력. 수고. 일손",
+    "level": "N1"
+  },
+  {
+    "kanji": "ロープ",
+    "kana": "ロープ",
+    "romaji": "ro-pu",
+    "meaning": "로프. 줄",
+    "level": "N1"
+  },
+  {
+    "kanji": "ろくな",
+    "kana": "ろくな",
+    "romaji": "rokun\\'a",
+    "meaning": "제대로 된. 쓸 만한 (+것이 없다)",
+    "level": "N1"
+  },
+  {
+    "kanji": "露骨な",
+    "kana": "ろこつな",
+    "romaji": "rokotsun\\'a",
+    "meaning": "노골적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "ロマンチックな",
+    "kana": "ロマンチックな",
+    "romaji": "romanchikkun\\'a",
+    "meaning": "로맨틱한. 낭만적인",
+    "level": "N1"
+  },
+  {
+    "kanji": "論議",
+    "kana": "ろんぎ",
+    "romaji": "rongi",
+    "meaning": "논의",
+    "level": "N1"
+  },
+  {
+    "kanji": "論じる",
+    "kana": "ろんじる",
+    "romaji": "ronjiru",
+    "meaning": "논하다",
+    "level": "N1"
+  },
+  {
+    "kanji": "論理",
+    "kana": "ろんり",
+    "romaji": "ronri",
+    "meaning": "논리",
+    "level": "N1"
+  },
+  {
+    "kanji": "枠",
+    "kana": "わく",
+    "romaji": "waku",
+    "meaning": "테두리",
+    "level": "N1"
+  },
+  {
+    "kanji": "惑星",
+    "kana": "わくせい",
+    "romaji": "wakusei",
+    "meaning": "혹성. 행성",
+    "level": "N1"
+  },
+  {
+    "kanji": "技",
+    "kana": "わざ",
+    "romaji": "waza",
+    "meaning": "기법. 기술",
+    "level": "N1"
+  },
+  {
+    "kanji": "煩わしい",
+    "kana": "わずらわしい",
+    "romaji": "wazurawashii",
+    "meaning": "번거롭다. 귀찮다. 성가시다",
+    "level": "N1"
+  },
+  {
+    "kanji": "ワット",
+    "kana": "ワット",
+    "romaji": "watto",
+    "meaning": "와트",
+    "level": "N1"
+  },
+  {
+    "kanji": "和文",
+    "kana": "わぶん",
+    "romaji": "wabun",
+    "meaning": "일문",
+    "level": "N1"
+  },
+  {
+    "kanji": "わら",
+    "kana": "わら",
+    "romaji": "wara",
+    "meaning": "짚",
+    "level": "N1"
+  },
+  {
+    "kanji": "割(り)当(て)",
+    "kana": "わりあて",
+    "romaji": "wariate",
+    "meaning": "할당. 배당. 분담",
+    "level": "N1"
+  },
+  {
+    "kanji": "割り込む",
+    "kana": "わりこむ",
+    "romaji": "warikomu",
+    "meaning": "끼어들다. 새치기하다. 시세가 어떤 값보다도 떨어지다",
+    "level": "N1"
+  },
+  {
+    "kanji": "悪者",
+    "kana": "わるもの",
+    "romaji": "warumon\\'o",
+    "meaning": "나쁜 놈",
+    "level": "N1"
+  },
+  {
+    "kanji": "我",
+    "kana": "われ",
+    "romaji": "ware",
+    "meaning": "나",
+    "level": "N1"
+  }
+];

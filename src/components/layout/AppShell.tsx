@@ -19,7 +19,6 @@ import {
   Settings,
   Sparkles,
   Sun,
-  Timer,
   TrendingUp,
   Headphones,
   type LucideIcon,
@@ -55,8 +54,7 @@ const navGroups: { title: string; items: NavItem[] }[] = [
   {
     title: "시험",
     items: [
-      { href: "/exam", label: "기출 풀이", icon: FileText },
-      { href: "/mock", label: "모의고사 타이머", icon: Timer },
+      { href: "/mock", label: "모의고사", icon: FileText },
       { href: "/scores", label: "성적", icon: TrendingUp },
       { href: "/stats", label: "약점 분석", icon: BarChart3 },
       { href: "/schedule", label: "일정", icon: Calendar },
@@ -76,7 +74,7 @@ const mobileNavItems: NavItem[] = [
   { href: "/", label: "대시보드", icon: Home },
   { href: "/study/today", label: "오늘", icon: Sparkles },
   { href: "/study/japanese", label: "일본어", icon: Languages },
-  { href: "/exam", label: "기출", icon: FileText },
+  { href: "/mock", label: "모의고사", icon: FileText },
   { href: "/review", label: "오답", icon: RotateCcw },
 ];
 

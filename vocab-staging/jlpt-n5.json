@@ -1,0 +1,4020 @@
+[
+  {
+    "kanji": "間",
+    "kana": "あいだ",
+    "romaji": "aida",
+    "meaning": "사이. 동안",
+    "level": "N5"
+  },
+  {
+    "kanji": "会う",
+    "kana": "あう",
+    "romaji": "au",
+    "meaning": "(-に+) 만나다",
+    "level": "N5"
+  },
+  {
+    "kanji": "青い",
+    "kana": "あおい",
+    "romaji": "aoi",
+    "meaning": "푸르다. 파랗다",
+    "level": "N5"
+  },
+  {
+    "kanji": "赤い",
+    "kana": "あかい",
+    "romaji": "akai",
+    "meaning": "붉다. 빨갛다",
+    "level": "N5"
+  },
+  {
+    "kanji": "明るい",
+    "kana": "あかるい",
+    "romaji": "akarui",
+    "meaning": "밝다. 환하다. 명랑하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "秋",
+    "kana": "あき",
+    "romaji": "aki",
+    "meaning": "가을",
+    "level": "N5"
+  },
+  {
+    "kanji": "開く",
+    "kana": "あく",
+    "romaji": "aku",
+    "meaning": "열리다",
+    "level": "N5"
+  },
+  {
+    "kanji": "開ける",
+    "kana": "あける",
+    "romaji": "akeru",
+    "meaning": "열다",
+    "level": "N5"
+  },
+  {
+    "kanji": "朝",
+    "kana": "あさ",
+    "romaji": "asa",
+    "meaning": "아침",
+    "level": "N5"
+  },
+  {
+    "kanji": "朝御飯",
+    "kana": "あさごはん",
+    "romaji": "asagohan",
+    "meaning": "아침 식사",
+    "level": "N5"
+  },
+  {
+    "kanji": "あさって",
+    "kana": "あさって",
+    "romaji": "asatte",
+    "meaning": "모레",
+    "level": "N5"
+  },
+  {
+    "kanji": "足/脚",
+    "kana": "あし",
+    "romaji": "ashi",
+    "meaning": "발. 다리",
+    "level": "N5"
+  },
+  {
+    "kanji": "明日",
+    "kana": "あした",
+    "romaji": "ashita",
+    "meaning": "내일",
+    "level": "N5"
+  },
+  {
+    "kanji": "あそこ",
+    "kana": "あそこ",
+    "romaji": "asoko",
+    "meaning": "저기",
+    "level": "N5"
+  },
+  {
+    "kanji": "遊ぶ",
+    "kana": "あそぶ",
+    "romaji": "asobu",
+    "meaning": "놀다",
+    "level": "N5"
+  },
+  {
+    "kanji": "暖かい/温かい",
+    "kana": "あたたかい",
+    "romaji": "atatakai",
+    "meaning": "따뜻하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "頭",
+    "kana": "あたま",
+    "romaji": "atama",
+    "meaning": "머리",
+    "level": "N5"
+  },
+  {
+    "kanji": "新しい",
+    "kana": "あたらしい",
+    "romaji": "atarashii",
+    "meaning": "새롭다",
+    "level": "N5"
+  },
+  {
+    "kanji": "あちら",
+    "kana": "あちら",
+    "romaji": "achira",
+    "meaning": "저쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "暑い",
+    "kana": "あつい",
+    "romaji": "atsui",
+    "meaning": "덥다",
+    "level": "N5"
+  },
+  {
+    "kanji": "後",
+    "kana": "あと",
+    "romaji": "ato",
+    "meaning": "(시간적으로)후. 나중",
+    "level": "N5"
+  },
+  {
+    "kanji": "あなた",
+    "kana": "あなた",
+    "romaji": "an\\'ata",
+    "meaning": "당신",
+    "level": "N5"
+  },
+  {
+    "kanji": "兄",
+    "kana": "あに",
+    "romaji": "an\\'i",
+    "meaning": "(나의)형. 오빠",
+    "level": "N5"
+  },
+  {
+    "kanji": "姉",
+    "kana": "あね",
+    "romaji": "an\\'e",
+    "meaning": "(나의)누나. 언니",
+    "level": "N5"
+  },
+  {
+    "kanji": "あの",
+    "kana": "あの",
+    "romaji": "an\\'o",
+    "meaning": "저",
+    "level": "N5"
+  },
+  {
+    "kanji": "アパート",
+    "kana": "アパート",
+    "romaji": "apa-to",
+    "meaning": "아파트",
+    "level": "N5"
+  },
+  {
+    "kanji": "浴びる",
+    "kana": "あびる",
+    "romaji": "abiru",
+    "meaning": "뒤집어쓰다. (샤워를) 하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "危ない",
+    "kana": "あぶない",
+    "romaji": "abun\\'ai",
+    "meaning": "위험하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "甘い",
+    "kana": "あまい",
+    "romaji": "amai",
+    "meaning": "달다. 달콤하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "あまり",
+    "kana": "あまり",
+    "romaji": "amari",
+    "meaning": "별로. 그다지(+부정문)",
+    "level": "N5"
+  },
+  {
+    "kanji": "雨",
+    "kana": "あめ",
+    "romaji": "ame",
+    "meaning": "비",
+    "level": "N5"
+  },
+  {
+    "kanji": "洗う",
+    "kana": "あらう",
+    "romaji": "arau",
+    "meaning": "씻다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ありがとうございます",
+    "kana": "ありがとうございます",
+    "romaji": "arigatougozaimasu",
+    "meaning": "감사합니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ある",
+    "kana": "ある",
+    "romaji": "aru",
+    "meaning": "있다",
+    "level": "N5"
+  },
+  {
+    "kanji": "歩く",
+    "kana": "あるく",
+    "romaji": "aruku",
+    "meaning": "걷다",
+    "level": "N5"
+  },
+  {
+    "kanji": "あれ",
+    "kana": "あれ",
+    "romaji": "are",
+    "meaning": "저것",
+    "level": "N5"
+  },
+  {
+    "kanji": "あんな",
+    "kana": "あんな",
+    "romaji": "ann\\'a",
+    "meaning": "저런",
+    "level": "N5"
+  },
+  {
+    "kanji": "いい",
+    "kana": "いい",
+    "romaji": "ii",
+    "meaning": "좋다",
+    "level": "N5"
+  },
+  {
+    "kanji": "いいえ",
+    "kana": "いいえ",
+    "romaji": "iie",
+    "meaning": "아니오",
+    "level": "N5"
+  },
+  {
+    "kanji": "言う",
+    "kana": "いう/ゆう",
+    "romaji": "iu/yuu",
+    "meaning": "말하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "家",
+    "kana": "いえ",
+    "romaji": "ie",
+    "meaning": "집",
+    "level": "N5"
+  },
+  {
+    "kanji": "行く",
+    "kana": "いく",
+    "romaji": "iku",
+    "meaning": "가다",
+    "level": "N5"
+  },
+  {
+    "kanji": "いくつ",
+    "kana": "いくつ",
+    "romaji": "ikutsu",
+    "meaning": "몇. 몇개. 몇살",
+    "level": "N5"
+  },
+  {
+    "kanji": "いくら",
+    "kana": "いくら",
+    "romaji": "ikura",
+    "meaning": "얼마",
+    "level": "N5"
+  },
+  {
+    "kanji": "医者",
+    "kana": "いしゃ",
+    "romaji": "isha",
+    "meaning": "의사",
+    "level": "N5"
+  },
+  {
+    "kanji": "椅子",
+    "kana": "いす",
+    "romaji": "isu",
+    "meaning": "의자",
+    "level": "N5"
+  },
+  {
+    "kanji": "忙しい",
+    "kana": "いそがしい",
+    "romaji": "isogashii",
+    "meaning": "바쁘다",
+    "level": "N5"
+  },
+  {
+    "kanji": "痛い",
+    "kana": "いたい",
+    "romaji": "itai",
+    "meaning": "아프다",
+    "level": "N5"
+  },
+  {
+    "kanji": "いただきます",
+    "kana": "いただきます",
+    "romaji": "itadakimasu",
+    "meaning": "잘 먹겠습니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "一",
+    "kana": "いち",
+    "romaji": "ichi",
+    "meaning": "일. 하나",
+    "level": "N5"
+  },
+  {
+    "kanji": "一日",
+    "kana": "いちにち",
+    "romaji": "ichin\\'ichi",
+    "meaning": "하루 (기간)",
+    "level": "N5"
+  },
+  {
+    "kanji": "一番",
+    "kana": "いちばん",
+    "romaji": "ichiban",
+    "meaning": "일번. 첫째. 가장. 제일",
+    "level": "N5"
+  },
+  {
+    "kanji": "いつ",
+    "kana": "いつ",
+    "romaji": "itsu",
+    "meaning": "언제",
+    "level": "N5"
+  },
+  {
+    "kanji": "五日",
+    "kana": "いつか",
+    "romaji": "itsuka",
+    "meaning": "5일",
+    "level": "N5"
+  },
+  {
+    "kanji": "一週間",
+    "kana": "いっしゅうかん",
+    "romaji": "isshuukan",
+    "meaning": "일주일",
+    "level": "N5"
+  },
+  {
+    "kanji": "いっしょに",
+    "kana": "いっしょに",
+    "romaji": "isshon\\'i",
+    "meaning": "같이. 함께",
+    "level": "N5"
+  },
+  {
+    "kanji": "五つ",
+    "kana": "いつつ",
+    "romaji": "itsutsu",
+    "meaning": "다섯 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "いつも",
+    "kana": "いつも",
+    "romaji": "itsumo",
+    "meaning": "언제나.늘",
+    "level": "N5"
+  },
+  {
+    "kanji": "犬",
+    "kana": "いぬ",
+    "romaji": "in\\'u",
+    "meaning": "개",
+    "level": "N5"
+  },
+  {
+    "kanji": "今",
+    "kana": "いま",
+    "romaji": "ima",
+    "meaning": "지금",
+    "level": "N5"
+  },
+  {
+    "kanji": "意味",
+    "kana": "いみ",
+    "romaji": "imi",
+    "meaning": "의미. 뜻",
+    "level": "N5"
+  },
+  {
+    "kanji": "妹",
+    "kana": "いもうと",
+    "romaji": "imouto",
+    "meaning": "여동생",
+    "level": "N5"
+  },
+  {
+    "kanji": "嫌な",
+    "kana": "いやな",
+    "romaji": "iyan\\'a",
+    "meaning": "싫은",
+    "level": "N5"
+  },
+  {
+    "kanji": "いらっしゃいませ",
+    "kana": "いらっしゃいませ",
+    "romaji": "irasshaimase",
+    "meaning": "어서 오십시오",
+    "level": "N5"
+  },
+  {
+    "kanji": "入口",
+    "kana": "いりぐち",
+    "romaji": "iriguchi",
+    "meaning": "입구",
+    "level": "N5"
+  },
+  {
+    "kanji": "いる",
+    "kana": "いる",
+    "romaji": "iru",
+    "meaning": "(사람이나 동물이) 있다",
+    "level": "N5"
+  },
+  {
+    "kanji": "要る",
+    "kana": "いる",
+    "romaji": "iru",
+    "meaning": "(1G) 필요하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "入れる",
+    "kana": "いれる",
+    "romaji": "ireru",
+    "meaning": "넣다",
+    "level": "N5"
+  },
+  {
+    "kanji": "色",
+    "kana": "いろ",
+    "romaji": "iro",
+    "meaning": "색",
+    "level": "N5"
+  },
+  {
+    "kanji": "色々",
+    "kana": "いろいろ",
+    "romaji": "iroiro",
+    "meaning": "여러 가지로",
+    "level": "N5"
+  },
+  {
+    "kanji": "色々な",
+    "kana": "いろいろな",
+    "romaji": "iroiron\\'a",
+    "meaning": "여러가지의",
+    "level": "N5"
+  },
+  {
+    "kanji": "上",
+    "kana": "うえ",
+    "romaji": "ue",
+    "meaning": "위",
+    "level": "N5"
+  },
+  {
+    "kanji": "後ろ",
+    "kana": "うしろ",
+    "romaji": "ushiro",
+    "meaning": "뒤. 뒤쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "歌",
+    "kana": "うた",
+    "romaji": "uta",
+    "meaning": "노래",
+    "level": "N5"
+  },
+  {
+    "kanji": "歌う",
+    "kana": "うたう",
+    "romaji": "utau",
+    "meaning": "노래 부르다",
+    "level": "N5"
+  },
+  {
+    "kanji": "うどん",
+    "kana": "うどん",
+    "romaji": "udon",
+    "meaning": "우동",
+    "level": "N5"
+  },
+  {
+    "kanji": "生まれる",
+    "kana": "うまれる",
+    "romaji": "umareru",
+    "meaning": "태어나다",
+    "level": "N5"
+  },
+  {
+    "kanji": "海",
+    "kana": "うみ",
+    "romaji": "umi",
+    "meaning": "바다",
+    "level": "N5"
+  },
+  {
+    "kanji": "売る",
+    "kana": "うる",
+    "romaji": "uru",
+    "meaning": "팔다",
+    "level": "N5"
+  },
+  {
+    "kanji": "うるさい",
+    "kana": "うるさい",
+    "romaji": "urusai",
+    "meaning": "시끄럽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "上着",
+    "kana": "うわぎ",
+    "romaji": "uwagi",
+    "meaning": "겉옷. 내복 위에 입는 옷",
+    "level": "N5"
+  },
+  {
+    "kanji": "絵",
+    "kana": "え",
+    "romaji": "e",
+    "meaning": "그림",
+    "level": "N5"
+  },
+  {
+    "kanji": "英語",
+    "kana": "えいご",
+    "romaji": "eigo",
+    "meaning": "영어",
+    "level": "N5"
+  },
+  {
+    "kanji": "駅",
+    "kana": "えき",
+    "romaji": "eki",
+    "meaning": "역",
+    "level": "N5"
+  },
+  {
+    "kanji": "エレベーター",
+    "kana": "エレベーター",
+    "romaji": "erebe-ta-",
+    "meaning": "엘리베이터. 승강기",
+    "level": "N5"
+  },
+  {
+    "kanji": "-円",
+    "kana": "えん",
+    "romaji": "en",
+    "meaning": "엔(일본 화폐 단위)",
+    "level": "N5"
+  },
+  {
+    "kanji": "鉛筆",
+    "kana": "えんぴつ",
+    "romaji": "enpitsu",
+    "meaning": "연필",
+    "level": "N5"
+  },
+  {
+    "kanji": "おいしい",
+    "kana": "おいしい",
+    "romaji": "oishii",
+    "meaning": "맛있다",
+    "level": "N5"
+  },
+  {
+    "kanji": "多い",
+    "kana": "おおい",
+    "romaji": "ooi",
+    "meaning": "많다",
+    "level": "N5"
+  },
+  {
+    "kanji": "大きい",
+    "kana": "おおきい",
+    "romaji": "ookii",
+    "meaning": "크다",
+    "level": "N5"
+  },
+  {
+    "kanji": "お母さん",
+    "kana": "おかあさん",
+    "romaji": "okaasan",
+    "meaning": "어머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "お菓子",
+    "kana": "おかし",
+    "romaji": "okashi",
+    "meaning": "과자",
+    "level": "N5"
+  },
+  {
+    "kanji": "お金",
+    "kana": "おかね",
+    "romaji": "okan\\'e",
+    "meaning": "돈",
+    "level": "N5"
+  },
+  {
+    "kanji": "起きる",
+    "kana": "おきる",
+    "romaji": "okiru",
+    "meaning": "일어나다",
+    "level": "N5"
+  },
+  {
+    "kanji": "置く",
+    "kana": "おく",
+    "romaji": "oku",
+    "meaning": "두다. 놓다",
+    "level": "N5"
+  },
+  {
+    "kanji": "奥さん",
+    "kana": "おくさん",
+    "romaji": "okusan",
+    "meaning": "부인. 아주머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "お酒",
+    "kana": "おさけ",
+    "romaji": "osake",
+    "meaning": "술",
+    "level": "N5"
+  },
+  {
+    "kanji": "おじいさん",
+    "kana": "おじいさん",
+    "romaji": "ojiisan",
+    "meaning": "할아버지",
+    "level": "N5"
+  },
+  {
+    "kanji": "教える",
+    "kana": "おしえる",
+    "romaji": "oshieru",
+    "meaning": "가르치다",
+    "level": "N5"
+  },
+  {
+    "kanji": "おじさん",
+    "kana": "おじさん",
+    "romaji": "ojisan",
+    "meaning": "아저씨",
+    "level": "N5"
+  },
+  {
+    "kanji": "押す",
+    "kana": "おす",
+    "romaji": "osu",
+    "meaning": "밀다. 누르다",
+    "level": "N5"
+  },
+  {
+    "kanji": "遅い",
+    "kana": "おそい",
+    "romaji": "osoi",
+    "meaning": "늦다. 느리다",
+    "level": "N5"
+  },
+  {
+    "kanji": "お茶",
+    "kana": "おちゃ",
+    "romaji": "ocha",
+    "meaning": "차",
+    "level": "N5"
+  },
+  {
+    "kanji": "お父さん",
+    "kana": "おとうさん",
+    "romaji": "otousan",
+    "meaning": "아버지",
+    "level": "N5"
+  },
+  {
+    "kanji": "弟",
+    "kana": "おとうと",
+    "romaji": "otouto",
+    "meaning": "남동생",
+    "level": "N5"
+  },
+  {
+    "kanji": "男",
+    "kana": "おとこ",
+    "romaji": "otoko",
+    "meaning": "남자",
+    "level": "N5"
+  },
+  {
+    "kanji": "男の子",
+    "kana": "おとこのこ",
+    "romaji": "otokon\\'oko",
+    "meaning": "남자 아이",
+    "level": "N5"
+  },
+  {
+    "kanji": "おととい",
+    "kana": "おととい",
+    "romaji": "ototoi",
+    "meaning": "그저께",
+    "level": "N5"
+  },
+  {
+    "kanji": "おととし",
+    "kana": "おととし",
+    "romaji": "ototoshi",
+    "meaning": "재작년",
+    "level": "N5"
+  },
+  {
+    "kanji": "大人",
+    "kana": "おとな",
+    "romaji": "oton\\'a",
+    "meaning": "어른",
+    "level": "N5"
+  },
+  {
+    "kanji": "お腹",
+    "kana": "おなか",
+    "romaji": "on\\'aka",
+    "meaning": "배",
+    "level": "N5"
+  },
+  {
+    "kanji": "同じ",
+    "kana": "おなじ",
+    "romaji": "on\\'aji",
+    "meaning": "같은. 동일한",
+    "level": "N5"
+  },
+  {
+    "kanji": "お兄さん",
+    "kana": "おにいさん",
+    "romaji": "on\\'iisan",
+    "meaning": "형. 오빠",
+    "level": "N5"
+  },
+  {
+    "kanji": "お姉さん",
+    "kana": "おねえさん",
+    "romaji": "on\\'eesan",
+    "meaning": "누나. 언니",
+    "level": "N5"
+  },
+  {
+    "kanji": "おねがいします",
+    "kana": "おねがいします",
+    "romaji": "on\\'egaishimasu",
+    "meaning": "부탁합니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "おばあさん",
+    "kana": "おばあさん",
+    "romaji": "obaasan",
+    "meaning": "할머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "おばさん",
+    "kana": "おばさん",
+    "romaji": "obasan",
+    "meaning": "아주머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "おはようございます",
+    "kana": "おはようございます",
+    "romaji": "ohayougozaimasu",
+    "meaning": "안녕하세요(아침인사)",
+    "level": "N5"
+  },
+  {
+    "kanji": "お風呂",
+    "kana": "おふろ",
+    "romaji": "ofuro",
+    "meaning": "목욕. 목욕탕",
+    "level": "N5"
+  },
+  {
+    "kanji": "覚える",
+    "kana": "おぼえる",
+    "romaji": "oboeru",
+    "meaning": "외우다. 기억하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "重い",
+    "kana": "おもい",
+    "romaji": "omoi",
+    "meaning": "무겁다",
+    "level": "N5"
+  },
+  {
+    "kanji": "思う",
+    "kana": "おもう",
+    "romaji": "omou",
+    "meaning": "생각하다. 헤아리다. 느끼다",
+    "level": "N5"
+  },
+  {
+    "kanji": "おもしろい",
+    "kana": "おもしろい",
+    "romaji": "omoshiroi",
+    "meaning": "재미있다. 우습다",
+    "level": "N5"
+  },
+  {
+    "kanji": "おやすみなさい",
+    "kana": "おやすみなさい",
+    "romaji": "oyasumin\\'asai",
+    "meaning": "안녕히 주무세요",
+    "level": "N5"
+  },
+  {
+    "kanji": "泳ぐ",
+    "kana": "およぐ",
+    "romaji": "oyogu",
+    "meaning": "헤엄치다. 수영을 하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "降りる",
+    "kana": "おりる",
+    "romaji": "oriru",
+    "meaning": "(차에서) 내리다",
+    "level": "N5"
+  },
+  {
+    "kanji": "終わる",
+    "kana": "おわる",
+    "romaji": "owaru",
+    "meaning": "끝나다. 마치다",
+    "level": "N5"
+  },
+  {
+    "kanji": "音楽",
+    "kana": "おんがく",
+    "romaji": "ongaku",
+    "meaning": "음악",
+    "level": "N5"
+  },
+  {
+    "kanji": "女",
+    "kana": "おんな",
+    "romaji": "onn\\'a",
+    "meaning": "여자",
+    "level": "N5"
+  },
+  {
+    "kanji": "女の子",
+    "kana": "おんなのこ",
+    "romaji": "onn\\'an\\'oko",
+    "meaning": "여자 아이",
+    "level": "N5"
+  },
+  {
+    "kanji": "外国",
+    "kana": "がいこく",
+    "romaji": "gaikoku",
+    "meaning": "외국",
+    "level": "N5"
+  },
+  {
+    "kanji": "会社",
+    "kana": "かいしゃ",
+    "romaji": "kaisha",
+    "meaning": "회사",
+    "level": "N5"
+  },
+  {
+    "kanji": "階段",
+    "kana": "かいだん",
+    "romaji": "kaidan",
+    "meaning": "계단",
+    "level": "N5"
+  },
+  {
+    "kanji": "買い物",
+    "kana": "かいもの",
+    "romaji": "kaimon\\'o",
+    "meaning": "물건을 삼. 쇼핑. 장보기",
+    "level": "N5"
+  },
+  {
+    "kanji": "買う",
+    "kana": "かう",
+    "romaji": "kau",
+    "meaning": "사다. 구입하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "返す",
+    "kana": "かえす",
+    "romaji": "kaesu",
+    "meaning": "돌려주다",
+    "level": "N5"
+  },
+  {
+    "kanji": "帰る",
+    "kana": "かえる",
+    "romaji": "kaeru",
+    "meaning": "(1G) 돌아가다. 돌아오다",
+    "level": "N5"
+  },
+  {
+    "kanji": "顔",
+    "kana": "かお",
+    "romaji": "kao",
+    "meaning": "얼굴",
+    "level": "N5"
+  },
+  {
+    "kanji": "かかる",
+    "kana": "かかる",
+    "romaji": "kakaru",
+    "meaning": "(시간이) 걸리다. (돈이) 들다",
+    "level": "N5"
+  },
+  {
+    "kanji": "鍵",
+    "kana": "かぎ",
+    "romaji": "kagi",
+    "meaning": "열쇠",
+    "level": "N5"
+  },
+  {
+    "kanji": "書く",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning": "쓰다. 적다",
+    "level": "N5"
+  },
+  {
+    "kanji": "学生",
+    "kana": "がくせい",
+    "romaji": "gakusei",
+    "meaning": "학생. (특히 대학생)",
+    "level": "N5"
+  },
+  {
+    "kanji": "-か月",
+    "kana": "かげつ",
+    "romaji": "kagetsu",
+    "meaning": "-개월",
+    "level": "N5"
+  },
+  {
+    "kanji": "かける",
+    "kana": "かける",
+    "romaji": "kakeru",
+    "meaning": "(안경을) 쓰다. 끼다",
+    "level": "N5"
+  },
+  {
+    "kanji": "傘",
+    "kana": "かさ",
+    "romaji": "kasa",
+    "meaning": "우산",
+    "level": "N5"
+  },
+  {
+    "kanji": "貸す",
+    "kana": "かす",
+    "romaji": "kasu",
+    "meaning": "빌려주다",
+    "level": "N5"
+  },
+  {
+    "kanji": "風",
+    "kana": "かぜ",
+    "romaji": "kaze",
+    "meaning": "바람",
+    "level": "N5"
+  },
+  {
+    "kanji": "風邪",
+    "kana": "かぜ",
+    "romaji": "kaze",
+    "meaning": "감기",
+    "level": "N5"
+  },
+  {
+    "kanji": "家族",
+    "kana": "かぞく",
+    "romaji": "kazoku",
+    "meaning": "가족",
+    "level": "N5"
+  },
+  {
+    "kanji": "-月",
+    "kana": "がつ",
+    "romaji": "gatsu",
+    "meaning": "-월",
+    "level": "N5"
+  },
+  {
+    "kanji": "学校",
+    "kana": "がっこう",
+    "romaji": "gakkou",
+    "meaning": "학교",
+    "level": "N5"
+  },
+  {
+    "kanji": "角",
+    "kana": "かど",
+    "romaji": "kado",
+    "meaning": "모난 귀퉁이. 구석. 길모퉁이",
+    "level": "N5"
+  },
+  {
+    "kanji": "鞄",
+    "kana": "かばん",
+    "romaji": "kaban",
+    "meaning": "가방",
+    "level": "N5"
+  },
+  {
+    "kanji": "花瓶",
+    "kana": "かびん",
+    "romaji": "kabin",
+    "meaning": "화병. 꽃병",
+    "level": "N5"
+  },
+  {
+    "kanji": "かぶる",
+    "kana": "かぶる",
+    "romaji": "kaburu",
+    "meaning": "(모자를) 쓰다",
+    "level": "N5"
+  },
+  {
+    "kanji": "紙",
+    "kana": "かみ",
+    "romaji": "kami",
+    "meaning": "종이",
+    "level": "N5"
+  },
+  {
+    "kanji": "カメラ",
+    "kana": "カメラ",
+    "romaji": "kamera",
+    "meaning": "카메라",
+    "level": "N5"
+  },
+  {
+    "kanji": "火曜日",
+    "kana": "かようび",
+    "romaji": "kayoubi",
+    "meaning": "화요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "辛い",
+    "kana": "からい",
+    "romaji": "karai",
+    "meaning": "맵다",
+    "level": "N5"
+  },
+  {
+    "kanji": "体",
+    "kana": "からだ",
+    "romaji": "karada",
+    "meaning": "몸",
+    "level": "N5"
+  },
+  {
+    "kanji": "借りる",
+    "kana": "かりる",
+    "romaji": "kariru",
+    "meaning": "빌리다. 꾸다",
+    "level": "N5"
+  },
+  {
+    "kanji": "軽い",
+    "kana": "かるい",
+    "romaji": "karui",
+    "meaning": "가볍다",
+    "level": "N5"
+  },
+  {
+    "kanji": "カレンダー",
+    "kana": "カレンダー",
+    "romaji": "karenda-",
+    "meaning": "달력",
+    "level": "N5"
+  },
+  {
+    "kanji": "川",
+    "kana": "かわ",
+    "romaji": "kawa",
+    "meaning": "강",
+    "level": "N5"
+  },
+  {
+    "kanji": "かわいい",
+    "kana": "かわいい",
+    "romaji": "kawaii",
+    "meaning": "귀엽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "-間",
+    "kana": "かん",
+    "romaji": "kan",
+    "meaning": "-간",
+    "level": "N5"
+  },
+  {
+    "kanji": "漢字",
+    "kana": "かんじ",
+    "romaji": "kanji",
+    "meaning": "한자",
+    "level": "N5"
+  },
+  {
+    "kanji": "木",
+    "kana": "き",
+    "romaji": "ki",
+    "meaning": "나무",
+    "level": "N5"
+  },
+  {
+    "kanji": "黄色い",
+    "kana": "きいろい",
+    "romaji": "kiiroi",
+    "meaning": "노랗다",
+    "level": "N5"
+  },
+  {
+    "kanji": "消える",
+    "kana": "きえる",
+    "romaji": "kieru",
+    "meaning": "꺼지다. 사라지다. 지워지다",
+    "level": "N5"
+  },
+  {
+    "kanji": "聞く",
+    "kana": "きく",
+    "romaji": "kiku",
+    "meaning": "듣다. 물어보다",
+    "level": "N5"
+  },
+  {
+    "kanji": "北",
+    "kana": "きた",
+    "romaji": "kita",
+    "meaning": "북쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "ギター",
+    "kana": "ギター",
+    "romaji": "gita-",
+    "meaning": "기타",
+    "level": "N5"
+  },
+  {
+    "kanji": "汚い",
+    "kana": "きたない",
+    "romaji": "kitan\\'ai",
+    "meaning": "더럽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "喫茶店",
+    "kana": "きっさてん",
+    "romaji": "kissaten",
+    "meaning": "찻집. 다방",
+    "level": "N5"
+  },
+  {
+    "kanji": "切手",
+    "kana": "きって",
+    "romaji": "kitte",
+    "meaning": "우표",
+    "level": "N5"
+  },
+  {
+    "kanji": "切符",
+    "kana": "きっぷ",
+    "romaji": "kippu",
+    "meaning": "표",
+    "level": "N5"
+  },
+  {
+    "kanji": "昨日",
+    "kana": "きのう",
+    "romaji": "kin\\'ou",
+    "meaning": "어제",
+    "level": "N5"
+  },
+  {
+    "kanji": "九",
+    "kana": "きゅう",
+    "romaji": "kyuu",
+    "meaning": "구. 아홉",
+    "level": "N5"
+  },
+  {
+    "kanji": "牛肉",
+    "kana": "ぎゅうにく",
+    "romaji": "gyuun\\'iku",
+    "meaning": "쇠고기",
+    "level": "N5"
+  },
+  {
+    "kanji": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "romaji": "gyuun\\'yuu",
+    "meaning": "우유",
+    "level": "N5"
+  },
+  {
+    "kanji": "今日",
+    "kana": "きょう",
+    "romaji": "kyou",
+    "meaning": "오늘",
+    "level": "N5"
+  },
+  {
+    "kanji": "教室",
+    "kana": "きょうしつ",
+    "romaji": "kyoushitsu",
+    "meaning": "교실",
+    "level": "N5"
+  },
+  {
+    "kanji": "兄弟",
+    "kana": "きょうだい",
+    "romaji": "kyoudai",
+    "meaning": "형제",
+    "level": "N5"
+  },
+  {
+    "kanji": "去年",
+    "kana": "きょねん",
+    "romaji": "kyon\\'en",
+    "meaning": "작년",
+    "level": "N5"
+  },
+  {
+    "kanji": "嫌いな",
+    "kana": "きらいな",
+    "romaji": "kirain\\'a",
+    "meaning": "싫어하는",
+    "level": "N5"
+  },
+  {
+    "kanji": "着る",
+    "kana": "きる",
+    "romaji": "kiru",
+    "meaning": "입다",
+    "level": "N5"
+  },
+  {
+    "kanji": "きれいな",
+    "kana": "きれいな",
+    "romaji": "kirein\\'a",
+    "meaning": "예쁜. 깨끗한",
+    "level": "N5"
+  },
+  {
+    "kanji": "銀行",
+    "kana": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning": "은행",
+    "level": "N5"
+  },
+  {
+    "kanji": "金曜日",
+    "kana": "きんようび",
+    "romaji": "kin\\'youbi",
+    "meaning": "화요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "薬",
+    "kana": "くすり",
+    "romaji": "kusuri",
+    "meaning": "약",
+    "level": "N5"
+  },
+  {
+    "kanji": "果物",
+    "kana": "くだもの",
+    "romaji": "kudamon\\'o",
+    "meaning": "과일",
+    "level": "N5"
+  },
+  {
+    "kanji": "口",
+    "kana": "くち",
+    "romaji": "kuchi",
+    "meaning": "입",
+    "level": "N5"
+  },
+  {
+    "kanji": "靴",
+    "kana": "くつ",
+    "romaji": "kutsu",
+    "meaning": "신발. 구두",
+    "level": "N5"
+  },
+  {
+    "kanji": "靴下",
+    "kana": "くつした",
+    "romaji": "kutsushita",
+    "meaning": "양말",
+    "level": "N5"
+  },
+  {
+    "kanji": "国",
+    "kana": "くに",
+    "romaji": "kun\\'i",
+    "meaning": "나라",
+    "level": "N5"
+  },
+  {
+    "kanji": "-*",
+    "kana": "くらい/ぐらい",
+    "romaji": "kurai/gurai",
+    "meaning": "-정도. -만큼",
+    "level": "N5"
+  },
+  {
+    "kanji": "暗い",
+    "kana": "くらい",
+    "romaji": "kurai",
+    "meaning": "어둡다",
+    "level": "N5"
+  },
+  {
+    "kanji": "クラス",
+    "kana": "クラス",
+    "romaji": "kurasu",
+    "meaning": "클래스. 반. 학급",
+    "level": "N5"
+  },
+  {
+    "kanji": "来る",
+    "kana": "くる",
+    "romaji": "kuru",
+    "meaning": "오다",
+    "level": "N5"
+  },
+  {
+    "kanji": "車",
+    "kana": "くるま",
+    "romaji": "kuruma",
+    "meaning": "수레의 총칭. 차",
+    "level": "N5"
+  },
+  {
+    "kanji": "黒い",
+    "kana": "くろい",
+    "romaji": "kuroi",
+    "meaning": "검다. 까맣다",
+    "level": "N5"
+  },
+  {
+    "kanji": "今朝",
+    "kana": "けさ",
+    "romaji": "kesa",
+    "meaning": "오늘 아침",
+    "level": "N5"
+  },
+  {
+    "kanji": "消す",
+    "kana": "けす",
+    "romaji": "kesu",
+    "meaning": "끄다. 지우다",
+    "level": "N5"
+  },
+  {
+    "kanji": "結婚",
+    "kana": "けっこん",
+    "romaji": "kekkon",
+    "meaning": "결혼",
+    "level": "N5"
+  },
+  {
+    "kanji": "月曜日",
+    "kana": "げつようび",
+    "romaji": "getsuyoubi",
+    "meaning": "화요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "元気な",
+    "kana": "げんきな",
+    "romaji": "genkin\\'a",
+    "meaning": "건강한. 잘 있는",
+    "level": "N5"
+  },
+  {
+    "kanji": "五",
+    "kana": "ご",
+    "romaji": "go",
+    "meaning": "오. 다섯",
+    "level": "N5"
+  },
+  {
+    "kanji": "-語",
+    "kana": "ご",
+    "romaji": "go",
+    "meaning": "-어(언어)",
+    "level": "N5"
+  },
+  {
+    "kanji": "公園",
+    "kana": "こうえん",
+    "romaji": "kouen",
+    "meaning": "공원",
+    "level": "N5"
+  },
+  {
+    "kanji": "紅茶",
+    "kana": "こうちゃ",
+    "romaji": "koucha",
+    "meaning": "홍차",
+    "level": "N5"
+  },
+  {
+    "kanji": "交番",
+    "kana": "こうばん",
+    "romaji": "kouban",
+    "meaning": "파출소",
+    "level": "N5"
+  },
+  {
+    "kanji": "声",
+    "kana": "こえ",
+    "romaji": "koe",
+    "meaning": "소리",
+    "level": "N5"
+  },
+  {
+    "kanji": "コート",
+    "kana": "コート",
+    "romaji": "ko-to",
+    "meaning": "코트",
+    "level": "N5"
+  },
+  {
+    "kanji": "コーヒー",
+    "kana": "コーヒー",
+    "romaji": "ko-hi-",
+    "meaning": "커피",
+    "level": "N5"
+  },
+  {
+    "kanji": "ここ",
+    "kana": "ここ",
+    "romaji": "koko",
+    "meaning": "여기",
+    "level": "N5"
+  },
+  {
+    "kanji": "午後",
+    "kana": "ごご",
+    "romaji": "gogo",
+    "meaning": "오후",
+    "level": "N5"
+  },
+  {
+    "kanji": "九日",
+    "kana": "ここのか",
+    "romaji": "kokon\\'oka",
+    "meaning": "9일",
+    "level": "N5"
+  },
+  {
+    "kanji": "九つ",
+    "kana": "ここのつ",
+    "romaji": "kokon\\'otsu",
+    "meaning": "아홉 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "午前",
+    "kana": "ごぜん",
+    "romaji": "gozen",
+    "meaning": "오전",
+    "level": "N5"
+  },
+  {
+    "kanji": "答える",
+    "kana": "こたえる",
+    "romaji": "kotaeru",
+    "meaning": "대답하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ごちそうさまでした",
+    "kana": "ごちそうさまでした",
+    "romaji": "gochisousamadeshita",
+    "meaning": "잘 먹었습니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "こちら",
+    "kana": "こちら",
+    "romaji": "kochira",
+    "meaning": "이쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "コップ",
+    "kana": "コップ",
+    "romaji": "koppu",
+    "meaning": "컵",
+    "level": "N5"
+  },
+  {
+    "kanji": "今年",
+    "kana": "ことし",
+    "romaji": "kotoshi",
+    "meaning": "올해",
+    "level": "N5"
+  },
+  {
+    "kanji": "子供",
+    "kana": "こども",
+    "romaji": "kodomo",
+    "meaning": "아이. 자식",
+    "level": "N5"
+  },
+  {
+    "kanji": "この",
+    "kana": "この",
+    "romaji": "kon\\'o",
+    "meaning": "이",
+    "level": "N5"
+  },
+  {
+    "kanji": "御飯",
+    "kana": "ごはん",
+    "romaji": "gohan",
+    "meaning": "밥",
+    "level": "N5"
+  },
+  {
+    "kanji": "コピー",
+    "kana": "コピー",
+    "romaji": "kopi-",
+    "meaning": "복사",
+    "level": "N5"
+  },
+  {
+    "kanji": "困る",
+    "kana": "こまる",
+    "romaji": "komaru",
+    "meaning": "곤란하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "これ",
+    "kana": "これ",
+    "romaji": "kore",
+    "meaning": "이것",
+    "level": "N5"
+  },
+  {
+    "kanji": "-頃",
+    "kana": "ごろ",
+    "romaji": "goro",
+    "meaning": "-경. -쯤",
+    "level": "N5"
+  },
+  {
+    "kanji": "今月",
+    "kana": "こんげつ",
+    "romaji": "kongetsu",
+    "meaning": "이번달",
+    "level": "N5"
+  },
+  {
+    "kanji": "今週",
+    "kana": "こんしゅう",
+    "romaji": "konshuu",
+    "meaning": "이번주",
+    "level": "N5"
+  },
+  {
+    "kanji": "こんな",
+    "kana": "こんな",
+    "romaji": "konn\\'a",
+    "meaning": "이런",
+    "level": "N5"
+  },
+  {
+    "kanji": "こんにちは",
+    "kana": "こんにちは",
+    "romaji": "konn\\'ichiha",
+    "meaning": "안녕하세요(낮인사)",
+    "level": "N5"
+  },
+  {
+    "kanji": "今晩",
+    "kana": "こんばん",
+    "romaji": "konban",
+    "meaning": "오늘 밤",
+    "level": "N5"
+  },
+  {
+    "kanji": "こんばんは",
+    "kana": "こんばんは",
+    "romaji": "konbanha",
+    "meaning": "안녕하세요(저녁인사)",
+    "level": "N5"
+  },
+  {
+    "kanji": "-歳",
+    "kana": "さい",
+    "romaji": "sai",
+    "meaning": "-살. -세",
+    "level": "N5"
+  },
+  {
+    "kanji": "財布",
+    "kana": "さいふ",
+    "romaji": "saifu",
+    "meaning": "지갑",
+    "level": "N5"
+  },
+  {
+    "kanji": "魚",
+    "kana": "さかな",
+    "romaji": "sakan\\'a",
+    "meaning": "물고기. 생선",
+    "level": "N5"
+  },
+  {
+    "kanji": "先",
+    "kana": "さき",
+    "romaji": "saki",
+    "meaning": "앞부분. 선두. 먼저",
+    "level": "N5"
+  },
+  {
+    "kanji": "咲く",
+    "kana": "さく",
+    "romaji": "saku",
+    "meaning": "(꽃이) 피다",
+    "level": "N5"
+  },
+  {
+    "kanji": "作文",
+    "kana": "さくぶん",
+    "romaji": "sakubun",
+    "meaning": "작문",
+    "level": "N5"
+  },
+  {
+    "kanji": "雑誌",
+    "kana": "ざっし",
+    "romaji": "zasshi",
+    "meaning": "잡지",
+    "level": "N5"
+  },
+  {
+    "kanji": "砂糖",
+    "kana": "さとう",
+    "romaji": "satou",
+    "meaning": "설탕",
+    "level": "N5"
+  },
+  {
+    "kanji": "寒い",
+    "kana": "さむい",
+    "romaji": "samui",
+    "meaning": "춥다",
+    "level": "N5"
+  },
+  {
+    "kanji": "さようなら",
+    "kana": "さようなら",
+    "romaji": "sayoun\\'ara",
+    "meaning": "안녕히 가세요. 안녕히 계세요",
+    "level": "N5"
+  },
+  {
+    "kanji": "-*",
+    "kana": "さん",
+    "romaji": "san",
+    "meaning": "-씨",
+    "level": "N5"
+  },
+  {
+    "kanji": "三",
+    "kana": "さん",
+    "romaji": "san",
+    "meaning": "삼. 셋",
+    "level": "N5"
+  },
+  {
+    "kanji": "散歩",
+    "kana": "さんぽ",
+    "romaji": "sanpo",
+    "meaning": "산책",
+    "level": "N5"
+  },
+  {
+    "kanji": "四",
+    "kana": "し",
+    "romaji": "shi",
+    "meaning": "사. 넷",
+    "level": "N5"
+  },
+  {
+    "kanji": "-時",
+    "kana": "じ",
+    "romaji": "ji",
+    "meaning": "-시",
+    "level": "N5"
+  },
+  {
+    "kanji": "塩",
+    "kana": "しお",
+    "romaji": "shio",
+    "meaning": "소금",
+    "level": "N5"
+  },
+  {
+    "kanji": "-*",
+    "kana": "しか",
+    "romaji": "shika",
+    "meaning": "-밖에(+부정문)",
+    "level": "N5"
+  },
+  {
+    "kanji": "時間",
+    "kana": "じかん",
+    "romaji": "jikan",
+    "meaning": "시간",
+    "level": "N5"
+  },
+  {
+    "kanji": "仕事",
+    "kana": "しごと",
+    "romaji": "shigoto",
+    "meaning": "일. 업무",
+    "level": "N5"
+  },
+  {
+    "kanji": "辞書",
+    "kana": "じしょ",
+    "romaji": "jisho",
+    "meaning": "사전",
+    "level": "N5"
+  },
+  {
+    "kanji": "静かな",
+    "kana": "しずかな",
+    "romaji": "shizukan\\'a",
+    "meaning": "조용한",
+    "level": "N5"
+  },
+  {
+    "kanji": "下",
+    "kana": "した",
+    "romaji": "shita",
+    "meaning": "아래. 밑",
+    "level": "N5"
+  },
+  {
+    "kanji": "七",
+    "kana": "しち",
+    "romaji": "shichi",
+    "meaning": "칠. 일곱",
+    "level": "N5"
+  },
+  {
+    "kanji": "死ぬ",
+    "kana": "しぬ",
+    "romaji": "shin\\'u",
+    "meaning": "죽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "閉まる",
+    "kana": "しまる",
+    "romaji": "shimaru",
+    "meaning": "닫히다",
+    "level": "N5"
+  },
+  {
+    "kanji": "締める",
+    "kana": "しめる",
+    "romaji": "shimeru",
+    "meaning": "(넥타이를) 매다. 조이다. 조르다",
+    "level": "N5"
+  },
+  {
+    "kanji": "閉める",
+    "kana": "しめる",
+    "romaji": "shimeru",
+    "meaning": "닫다",
+    "level": "N5"
+  },
+  {
+    "kanji": "写真",
+    "kana": "しゃしん",
+    "romaji": "shashin",
+    "meaning": "사진",
+    "level": "N5"
+  },
+  {
+    "kanji": "シャツ",
+    "kana": "シャツ",
+    "romaji": "shatsu",
+    "meaning": "셔츠",
+    "level": "N5"
+  },
+  {
+    "kanji": "シャワー",
+    "kana": "シャワー",
+    "romaji": "shawa-",
+    "meaning": "샤워",
+    "level": "N5"
+  },
+  {
+    "kanji": "十",
+    "kana": "じゅう",
+    "romaji": "juu",
+    "meaning": "십. 열",
+    "level": "N5"
+  },
+  {
+    "kanji": "-週間",
+    "kana": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning": "-주일. -주간",
+    "level": "N5"
+  },
+  {
+    "kanji": "宿題",
+    "kana": "しゅくだい",
+    "romaji": "shukudai",
+    "meaning": "숙제",
+    "level": "N5"
+  },
+  {
+    "kanji": "上手な",
+    "kana": "じょうずな",
+    "romaji": "jouzun\\'a",
+    "meaning": "잘하는. 능숙한",
+    "level": "N5"
+  },
+  {
+    "kanji": "丈夫な",
+    "kana": "じょうぶな",
+    "romaji": "joubun\\'a",
+    "meaning": "튼튼한",
+    "level": "N5"
+  },
+  {
+    "kanji": "食堂",
+    "kana": "しょくどう",
+    "romaji": "shokudou",
+    "meaning": "식당",
+    "level": "N5"
+  },
+  {
+    "kanji": "知る",
+    "kana": "しる",
+    "romaji": "shiru",
+    "meaning": "(1G) (지식으로) 알다",
+    "level": "N5"
+  },
+  {
+    "kanji": "白い",
+    "kana": "しろい",
+    "romaji": "shiroi",
+    "meaning": "희다. 하얗다",
+    "level": "N5"
+  },
+  {
+    "kanji": "-人",
+    "kana": "じん",
+    "romaji": "jin",
+    "meaning": "-인. -사람",
+    "level": "N5"
+  },
+  {
+    "kanji": "新聞",
+    "kana": "しんぶん",
+    "romaji": "shinbun",
+    "meaning": "신문",
+    "level": "N5"
+  },
+  {
+    "kanji": "水曜日",
+    "kana": "すいようび",
+    "romaji": "suiyoubi",
+    "meaning": "화요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "吸う",
+    "kana": "すう",
+    "romaji": "suu",
+    "meaning": "(담배를) 피우다. 들이마시다. 빨아들이다",
+    "level": "N5"
+  },
+  {
+    "kanji": "スカート",
+    "kana": "スカート",
+    "romaji": "suka-to",
+    "meaning": "치마",
+    "level": "N5"
+  },
+  {
+    "kanji": "好きな",
+    "kana": "すきな",
+    "romaji": "sukin\\'a",
+    "meaning": "좋아하는",
+    "level": "N5"
+  },
+  {
+    "kanji": "すぐ",
+    "kana": "すぐ",
+    "romaji": "sugu",
+    "meaning": "곧. 바로",
+    "level": "N5"
+  },
+  {
+    "kanji": "少ない",
+    "kana": "すくない",
+    "romaji": "sukun\\'ai",
+    "meaning": "적다",
+    "level": "N5"
+  },
+  {
+    "kanji": "少し",
+    "kana": "すこし",
+    "romaji": "sukoshi",
+    "meaning": "조금. 약간. 좀",
+    "level": "N5"
+  },
+  {
+    "kanji": "涼しい",
+    "kana": "すずしい",
+    "romaji": "suzushii",
+    "meaning": "시원하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ストーブ",
+    "kana": "ストーブ",
+    "romaji": "suto-bu",
+    "meaning": "스토브. 난로",
+    "level": "N5"
+  },
+  {
+    "kanji": "スプーン",
+    "kana": "スプーン",
+    "romaji": "supu-n",
+    "meaning": "스푼. 숟가락",
+    "level": "N5"
+  },
+  {
+    "kanji": "スポーツ",
+    "kana": "スポーツ",
+    "romaji": "supo-tsu",
+    "meaning": "스포츠",
+    "level": "N5"
+  },
+  {
+    "kanji": "ズボン",
+    "kana": "ズボン",
+    "romaji": "zubon",
+    "meaning": "바지",
+    "level": "N5"
+  },
+  {
+    "kanji": "すみません",
+    "kana": "すみません",
+    "romaji": "sumimasen",
+    "meaning": "죄송합니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "住む",
+    "kana": "すむ",
+    "romaji": "sumu",
+    "meaning": "살다",
+    "level": "N5"
+  },
+  {
+    "kanji": "する",
+    "kana": "する",
+    "romaji": "suru",
+    "meaning": "하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "座る",
+    "kana": "すわる",
+    "romaji": "suwaru",
+    "meaning": "앉다",
+    "level": "N5"
+  },
+  {
+    "kanji": "背",
+    "kana": "せ",
+    "romaji": "se",
+    "meaning": "키",
+    "level": "N5"
+  },
+  {
+    "kanji": "生徒",
+    "kana": "せいと",
+    "romaji": "seito",
+    "meaning": "(초중고등)학생",
+    "level": "N5"
+  },
+  {
+    "kanji": "セーター",
+    "kana": "セーター",
+    "romaji": "se-ta-",
+    "meaning": "스웨터",
+    "level": "N5"
+  },
+  {
+    "kanji": "狭い",
+    "kana": "せまい",
+    "romaji": "semai",
+    "meaning": "좁다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ゼロ",
+    "kana": "ゼロ",
+    "romaji": "zero",
+    "meaning": "제로. 영",
+    "level": "N5"
+  },
+  {
+    "kanji": "千",
+    "kana": "せん",
+    "romaji": "sen",
+    "meaning": "천",
+    "level": "N5"
+  },
+  {
+    "kanji": "先月",
+    "kana": "せんげつ",
+    "romaji": "sengetsu",
+    "meaning": "지난달",
+    "level": "N5"
+  },
+  {
+    "kanji": "先週",
+    "kana": "せんしゅう",
+    "romaji": "senshuu",
+    "meaning": "지난주",
+    "level": "N5"
+  },
+  {
+    "kanji": "先生",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "meaning": "선생. 스승",
+    "level": "N5"
+  },
+  {
+    "kanji": "そこ",
+    "kana": "そこ",
+    "romaji": "soko",
+    "meaning": "거기",
+    "level": "N5"
+  },
+  {
+    "kanji": "そちら",
+    "kana": "そちら",
+    "romaji": "sochira",
+    "meaning": "그쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "外",
+    "kana": "そと",
+    "romaji": "soto",
+    "meaning": "밖. 바깥. 겉",
+    "level": "N5"
+  },
+  {
+    "kanji": "その",
+    "kana": "その",
+    "romaji": "son\\'o",
+    "meaning": "그",
+    "level": "N5"
+  },
+  {
+    "kanji": "そば",
+    "kana": "そば",
+    "romaji": "soba",
+    "meaning": "곁. 옆",
+    "level": "N5"
+  },
+  {
+    "kanji": "そば",
+    "kana": "そば",
+    "romaji": "soba",
+    "meaning": "메밀 국수",
+    "level": "N5"
+  },
+  {
+    "kanji": "空",
+    "kana": "そら",
+    "romaji": "sora",
+    "meaning": "하늘",
+    "level": "N5"
+  },
+  {
+    "kanji": "それ",
+    "kana": "それ",
+    "romaji": "sore",
+    "meaning": "그것",
+    "level": "N5"
+  },
+  {
+    "kanji": "そんな",
+    "kana": "そんな",
+    "romaji": "sonn\\'a",
+    "meaning": "그런",
+    "level": "N5"
+  },
+  {
+    "kanji": "大学",
+    "kana": "だいがく",
+    "romaji": "daigaku",
+    "meaning": "대학",
+    "level": "N5"
+  },
+  {
+    "kanji": "大丈夫な",
+    "kana": "だいじょうぶな",
+    "romaji": "daijoubun\\'a",
+    "meaning": "괜찮은",
+    "level": "N5"
+  },
+  {
+    "kanji": "大好きな",
+    "kana": "だいすきな",
+    "romaji": "daisukin\\'a",
+    "meaning": "매우 좋아하는",
+    "level": "N5"
+  },
+  {
+    "kanji": "台所",
+    "kana": "だいどころ",
+    "romaji": "daidokoro",
+    "meaning": "부엌",
+    "level": "N5"
+  },
+  {
+    "kanji": "大変",
+    "kana": "たいへん",
+    "romaji": "taihen",
+    "meaning": "매우. 대단히",
+    "level": "N5"
+  },
+  {
+    "kanji": "大変な",
+    "kana": "たいへんな",
+    "romaji": "taihenn\\'a",
+    "meaning": "힘든. 큰일의",
+    "level": "N5"
+  },
+  {
+    "kanji": "高い",
+    "kana": "たかい",
+    "romaji": "takai",
+    "meaning": "높다. 비싸다",
+    "level": "N5"
+  },
+  {
+    "kanji": "たくさん",
+    "kana": "たくさん",
+    "romaji": "takusan",
+    "meaning": "많이",
+    "level": "N5"
+  },
+  {
+    "kanji": "タクシー",
+    "kana": "タクシー",
+    "romaji": "takushi-",
+    "meaning": "택시",
+    "level": "N5"
+  },
+  {
+    "kanji": "-*",
+    "kana": "だけ",
+    "romaji": "dake",
+    "meaning": "-만. -만큼",
+    "level": "N5"
+  },
+  {
+    "kanji": "出す",
+    "kana": "だす",
+    "romaji": "dasu",
+    "meaning": "내다. 꺼내다. 내놓다",
+    "level": "N5"
+  },
+  {
+    "kanji": "立つ",
+    "kana": "たつ",
+    "romaji": "tatsu",
+    "meaning": "서다",
+    "level": "N5"
+  },
+  {
+    "kanji": "建物",
+    "kana": "たてもの",
+    "romaji": "tatemon\\'o",
+    "meaning": "건물",
+    "level": "N5"
+  },
+  {
+    "kanji": "楽しい",
+    "kana": "たのしい",
+    "romaji": "tan\\'oshii",
+    "meaning": "즐겁다",
+    "level": "N5"
+  },
+  {
+    "kanji": "食べ物",
+    "kana": "たべもの",
+    "romaji": "tabemon\\'o",
+    "meaning": "음식물. 먹을 것",
+    "level": "N5"
+  },
+  {
+    "kanji": "食べる",
+    "kana": "たべる",
+    "romaji": "taberu",
+    "meaning": "먹다",
+    "level": "N5"
+  },
+  {
+    "kanji": "卵",
+    "kana": "たまご",
+    "romaji": "tamago",
+    "meaning": "알. 달걀. 계란",
+    "level": "N5"
+  },
+  {
+    "kanji": "誰",
+    "kana": "だれ",
+    "romaji": "dare",
+    "meaning": "누구",
+    "level": "N5"
+  },
+  {
+    "kanji": "誕生日",
+    "kana": "たんじょうび",
+    "romaji": "tanjoubi",
+    "meaning": "생일",
+    "level": "N5"
+  },
+  {
+    "kanji": "段々",
+    "kana": "だんだん",
+    "romaji": "dandan",
+    "meaning": "점점. 차차",
+    "level": "N5"
+  },
+  {
+    "kanji": "小さい",
+    "kana": "ちいさい",
+    "romaji": "chiisai",
+    "meaning": "작다",
+    "level": "N5"
+  },
+  {
+    "kanji": "近い",
+    "kana": "ちかい",
+    "romaji": "chikai",
+    "meaning": "가깝다",
+    "level": "N5"
+  },
+  {
+    "kanji": "近く",
+    "kana": "ちかく",
+    "romaji": "chikaku",
+    "meaning": "가까운 곳. 근처",
+    "level": "N5"
+  },
+  {
+    "kanji": "地下鉄",
+    "kana": "ちかてつ",
+    "romaji": "chikatetsu",
+    "meaning": "지하철",
+    "level": "N5"
+  },
+  {
+    "kanji": "父",
+    "kana": "ちち",
+    "romaji": "chichi",
+    "meaning": "(나의)아버지",
+    "level": "N5"
+  },
+  {
+    "kanji": "ちょっと",
+    "kana": "ちょっと",
+    "romaji": "chotto",
+    "meaning": "조금. 좀. 잠깐",
+    "level": "N5"
+  },
+  {
+    "kanji": "一日",
+    "kana": "ついたち",
+    "romaji": "tsuitachi",
+    "meaning": "1일 (날짜)",
+    "level": "N5"
+  },
+  {
+    "kanji": "使う",
+    "kana": "つかう",
+    "romaji": "tsukau",
+    "meaning": "쓰다. 사용하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "次",
+    "kana": "つぎ",
+    "romaji": "tsugi",
+    "meaning": "다음",
+    "level": "N5"
+  },
+  {
+    "kanji": "机",
+    "kana": "つくえ",
+    "romaji": "tsukue",
+    "meaning": "책상",
+    "level": "N5"
+  },
+  {
+    "kanji": "作る",
+    "kana": "つくる",
+    "romaji": "tsukuru",
+    "meaning": "만들다",
+    "level": "N5"
+  },
+  {
+    "kanji": "つもり",
+    "kana": "つもり",
+    "romaji": "tsumori",
+    "meaning": "(-할)생각",
+    "level": "N5"
+  },
+  {
+    "kanji": "強い",
+    "kana": "つよい",
+    "romaji": "tsuyoi",
+    "meaning": "강하다. 세다",
+    "level": "N5"
+  },
+  {
+    "kanji": "手",
+    "kana": "て",
+    "romaji": "te",
+    "meaning": "손",
+    "level": "N5"
+  },
+  {
+    "kanji": "テープ",
+    "kana": "テープ",
+    "romaji": "te-pu",
+    "meaning": "테이프",
+    "level": "N5"
+  },
+  {
+    "kanji": "テーブル",
+    "kana": "テーブル",
+    "romaji": "te-buru",
+    "meaning": "테이블",
+    "level": "N5"
+  },
+  {
+    "kanji": "手紙",
+    "kana": "てがみ",
+    "romaji": "tegami",
+    "meaning": "편지",
+    "level": "N5"
+  },
+  {
+    "kanji": "出口",
+    "kana": "でぐち",
+    "romaji": "deguchi",
+    "meaning": "출구",
+    "level": "N5"
+  },
+  {
+    "kanji": "テスト",
+    "kana": "テスト",
+    "romaji": "tesuto",
+    "meaning": "테스트. 검사. 시험",
+    "level": "N5"
+  },
+  {
+    "kanji": "デパート",
+    "kana": "デパート",
+    "romaji": "depa-to",
+    "meaning": "백화점",
+    "level": "N5"
+  },
+  {
+    "kanji": "-*",
+    "kana": "でも",
+    "romaji": "demo",
+    "meaning": "-라도",
+    "level": "N5"
+  },
+  {
+    "kanji": "出る",
+    "kana": "でる",
+    "romaji": "deru",
+    "meaning": "나가다. 나오다",
+    "level": "N5"
+  },
+  {
+    "kanji": "テレビ",
+    "kana": "テレビ",
+    "romaji": "terebi",
+    "meaning": "텔레비전",
+    "level": "N5"
+  },
+  {
+    "kanji": "天気",
+    "kana": "てんき",
+    "romaji": "tenki",
+    "meaning": "날씨",
+    "level": "N5"
+  },
+  {
+    "kanji": "電気",
+    "kana": "でんき",
+    "romaji": "denki",
+    "meaning": "전기. 전깃불",
+    "level": "N5"
+  },
+  {
+    "kanji": "電車",
+    "kana": "でんしゃ",
+    "romaji": "densha",
+    "meaning": "전철",
+    "level": "N5"
+  },
+  {
+    "kanji": "電話",
+    "kana": "でんわ",
+    "romaji": "denwa",
+    "meaning": "전화",
+    "level": "N5"
+  },
+  {
+    "kanji": "ドア",
+    "kana": "ドア",
+    "romaji": "doa",
+    "meaning": "도어. 문",
+    "level": "N5"
+  },
+  {
+    "kanji": "トイレ",
+    "kana": "トイレ",
+    "romaji": "toire",
+    "meaning": "화장실",
+    "level": "N5"
+  },
+  {
+    "kanji": "どう",
+    "kana": "どう",
+    "romaji": "dou",
+    "meaning": "어떻게",
+    "level": "N5"
+  },
+  {
+    "kanji": "どういたしまして",
+    "kana": "どういたしまして",
+    "romaji": "douitashimashite",
+    "meaning": "천만의 말씀입니다. 별 말씀을 다 하십니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "どうして",
+    "kana": "どうして",
+    "romaji": "doushite",
+    "meaning": "어째서. 왜",
+    "level": "N5"
+  },
+  {
+    "kanji": "どうぞ",
+    "kana": "どうぞ",
+    "romaji": "douzo",
+    "meaning": "아무쪼록. 부디. 어서 (+…하세요)",
+    "level": "N5"
+  },
+  {
+    "kanji": "動物",
+    "kana": "どうぶつ",
+    "romaji": "doubutsu",
+    "meaning": "동물",
+    "level": "N5"
+  },
+  {
+    "kanji": "どうも",
+    "kana": "どうも",
+    "romaji": "doumo",
+    "meaning": "정말. 참. 매우 (+고마워요)",
+    "level": "N5"
+  },
+  {
+    "kanji": "十",
+    "kana": "とお",
+    "romaji": "too",
+    "meaning": "열 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "遠い",
+    "kana": "とおい",
+    "romaji": "tooi",
+    "meaning": "멀다",
+    "level": "N5"
+  },
+  {
+    "kanji": "十日",
+    "kana": "とおか",
+    "romaji": "tooka",
+    "meaning": "10일",
+    "level": "N5"
+  },
+  {
+    "kanji": "時々",
+    "kana": "ときどき",
+    "romaji": "tokidoki",
+    "meaning": "가끔. 때때로",
+    "level": "N5"
+  },
+  {
+    "kanji": "時計",
+    "kana": "とけい",
+    "romaji": "tokei",
+    "meaning": "시계",
+    "level": "N5"
+  },
+  {
+    "kanji": "どこ",
+    "kana": "どこ",
+    "romaji": "doko",
+    "meaning": "어디",
+    "level": "N5"
+  },
+  {
+    "kanji": "所",
+    "kana": "ところ",
+    "romaji": "tokoro",
+    "meaning": "곳. 장소",
+    "level": "N5"
+  },
+  {
+    "kanji": "年",
+    "kana": "とし",
+    "romaji": "toshi",
+    "meaning": "해. 나이",
+    "level": "N5"
+  },
+  {
+    "kanji": "図書館",
+    "kana": "としょかん",
+    "romaji": "toshokan",
+    "meaning": "도서관",
+    "level": "N5"
+  },
+  {
+    "kanji": "どちら",
+    "kana": "どちら",
+    "romaji": "dochira",
+    "meaning": "어느 쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "とても",
+    "kana": "とても",
+    "romaji": "totemo",
+    "meaning": "아주. 매우",
+    "level": "N5"
+  },
+  {
+    "kanji": "どなた",
+    "kana": "どなた",
+    "romaji": "don\\'ata",
+    "meaning": "어느 분. 누구(경어)",
+    "level": "N5"
+  },
+  {
+    "kanji": "隣",
+    "kana": "となり",
+    "romaji": "ton\\'ari",
+    "meaning": "이웃. 옆",
+    "level": "N5"
+  },
+  {
+    "kanji": "どの",
+    "kana": "どの",
+    "romaji": "don\\'o",
+    "meaning": "어느",
+    "level": "N5"
+  },
+  {
+    "kanji": "飛ぶ",
+    "kana": "とぶ",
+    "romaji": "tobu",
+    "meaning": "날다",
+    "level": "N5"
+  },
+  {
+    "kanji": "友達",
+    "kana": "ともだち",
+    "romaji": "tomodachi",
+    "meaning": "친구",
+    "level": "N5"
+  },
+  {
+    "kanji": "土曜日",
+    "kana": "どようび",
+    "romaji": "doyoubi",
+    "meaning": "토요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "鳥",
+    "kana": "とり",
+    "romaji": "tori",
+    "meaning": "새",
+    "level": "N5"
+  },
+  {
+    "kanji": "鳥肉",
+    "kana": "とりにく",
+    "romaji": "torin\\'iku",
+    "meaning": "닭고기",
+    "level": "N5"
+  },
+  {
+    "kanji": "撮る",
+    "kana": "とる",
+    "romaji": "toru",
+    "meaning": "(사진을) 찍다",
+    "level": "N5"
+  },
+  {
+    "kanji": "どれ",
+    "kana": "どれ",
+    "romaji": "dore",
+    "meaning": "어느 것",
+    "level": "N5"
+  },
+  {
+    "kanji": "どんな",
+    "kana": "どんな",
+    "romaji": "donn\\'a",
+    "meaning": "어떤",
+    "level": "N5"
+  },
+  {
+    "kanji": "ない",
+    "kana": "ない",
+    "romaji": "n\\'ai",
+    "meaning": "없다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ナイフ",
+    "kana": "ナイフ",
+    "romaji": "n\\'aifu",
+    "meaning": "나이프. 칼",
+    "level": "N5"
+  },
+  {
+    "kanji": "中",
+    "kana": "なか",
+    "romaji": "n\\'aka",
+    "meaning": "가운데. 중. 안. 속",
+    "level": "N5"
+  },
+  {
+    "kanji": "長い",
+    "kana": "ながい",
+    "romaji": "n\\'agai",
+    "meaning": "길다. 오래다",
+    "level": "N5"
+  },
+  {
+    "kanji": "なぜ",
+    "kana": "なぜ",
+    "romaji": "n\\'aze",
+    "meaning": "왜.어째서",
+    "level": "N5"
+  },
+  {
+    "kanji": "夏",
+    "kana": "なつ",
+    "romaji": "n\\'atsu",
+    "meaning": "여름",
+    "level": "N5"
+  },
+  {
+    "kanji": "夏休み",
+    "kana": "なつやすみ",
+    "romaji": "n\\'atsuyasumi",
+    "meaning": "여름방학. 여름휴가",
+    "level": "N5"
+  },
+  {
+    "kanji": "七",
+    "kana": "なな",
+    "romaji": "n\\'an\\'a",
+    "meaning": "일곱 ＝しち",
+    "level": "N5"
+  },
+  {
+    "kanji": "七つ",
+    "kana": "ななつ",
+    "romaji": "n\\'an\\'atsu",
+    "meaning": "일곱 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "何",
+    "kana": "なに",
+    "romaji": "n\\'an\\'i",
+    "meaning": "무엇",
+    "level": "N5"
+  },
+  {
+    "kanji": "七日",
+    "kana": "なのか",
+    "romaji": "n\\'an\\'oka",
+    "meaning": "7일",
+    "level": "N5"
+  },
+  {
+    "kanji": "名前",
+    "kana": "なまえ",
+    "romaji": "n\\'amae",
+    "meaning": "이름",
+    "level": "N5"
+  },
+  {
+    "kanji": "習う",
+    "kana": "ならう",
+    "romaji": "n\\'arau",
+    "meaning": "배우다",
+    "level": "N5"
+  },
+  {
+    "kanji": "何",
+    "kana": "なん",
+    "romaji": "n\\'an",
+    "meaning": "무엇. 몇-",
+    "level": "N5"
+  },
+  {
+    "kanji": "二",
+    "kana": "に",
+    "romaji": "n\\'i",
+    "meaning": "이. 둘",
+    "level": "N5"
+  },
+  {
+    "kanji": "にぎやかな",
+    "kana": "にぎやかな",
+    "romaji": "n\\'igiyakan\\'a",
+    "meaning": "번화한. 활기찬",
+    "level": "N5"
+  },
+  {
+    "kanji": "肉",
+    "kana": "にく",
+    "romaji": "n\\'iku",
+    "meaning": "고기",
+    "level": "N5"
+  },
+  {
+    "kanji": "西",
+    "kana": "にし",
+    "romaji": "n\\'ishi",
+    "meaning": "서쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "-日",
+    "kana": "にち",
+    "romaji": "n\\'ichi",
+    "meaning": "-일",
+    "level": "N5"
+  },
+  {
+    "kanji": "日曜日",
+    "kana": "にちようび",
+    "romaji": "n\\'ichiyoubi",
+    "meaning": "일요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "庭",
+    "kana": "にわ",
+    "romaji": "n\\'iwa",
+    "meaning": "정원. 뜰. 마당",
+    "level": "N5"
+  },
+  {
+    "kanji": "-人",
+    "kana": "にん",
+    "romaji": "n\\'in",
+    "meaning": "-명",
+    "level": "N5"
+  },
+  {
+    "kanji": "ネクタイ",
+    "kana": "ネクタイ",
+    "romaji": "n\\'ekutai",
+    "meaning": "넥타이",
+    "level": "N5"
+  },
+  {
+    "kanji": "猫",
+    "kana": "ねこ",
+    "romaji": "n\\'eko",
+    "meaning": "고양이",
+    "level": "N5"
+  },
+  {
+    "kanji": "寝る",
+    "kana": "ねる",
+    "romaji": "n\\'eru",
+    "meaning": "자다",
+    "level": "N5"
+  },
+  {
+    "kanji": "-年",
+    "kana": "ねん",
+    "romaji": "n\\'en",
+    "meaning": "-년",
+    "level": "N5"
+  },
+  {
+    "kanji": "ノート",
+    "kana": "ノート",
+    "romaji": "n\\'o-to",
+    "meaning": "노트",
+    "level": "N5"
+  },
+  {
+    "kanji": "登る",
+    "kana": "のぼる",
+    "romaji": "n\\'oboru",
+    "meaning": "(산에) 올라가다",
+    "level": "N5"
+  },
+  {
+    "kanji": "飲み物",
+    "kana": "のみもの",
+    "romaji": "n\\'omimon\\'o",
+    "meaning": "마실 것. 음료",
+    "level": "N5"
+  },
+  {
+    "kanji": "飲む",
+    "kana": "のむ",
+    "romaji": "n\\'omu",
+    "meaning": "마시다. (술을) 먹다. (약을) 복용하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "乗る",
+    "kana": "のる",
+    "romaji": "n\\'oru",
+    "meaning": "(-に+) 타다",
+    "level": "N5"
+  },
+  {
+    "kanji": "はい",
+    "kana": "はい",
+    "romaji": "hai",
+    "meaning": "예. 네",
+    "level": "N5"
+  },
+  {
+    "kanji": "入る",
+    "kana": "はいる",
+    "romaji": "hairu",
+    "meaning": "(1G) 들어가다. 들어오다",
+    "level": "N5"
+  },
+  {
+    "kanji": "葉書",
+    "kana": "はがき",
+    "romaji": "hagaki",
+    "meaning": "엽서",
+    "level": "N5"
+  },
+  {
+    "kanji": "はく",
+    "kana": "はく",
+    "romaji": "haku",
+    "meaning": "(바지 치마를) 입다. (신발을) 신다",
+    "level": "N5"
+  },
+  {
+    "kanji": "始まる",
+    "kana": "はじまる",
+    "romaji": "hajimaru",
+    "meaning": "시작되다",
+    "level": "N5"
+  },
+  {
+    "kanji": "はじめまして",
+    "kana": "はじめまして",
+    "romaji": "hajimemashite",
+    "meaning": "처음 뵙겠습니다",
+    "level": "N5"
+  },
+  {
+    "kanji": "バス",
+    "kana": "バス",
+    "romaji": "basu",
+    "meaning": "버스",
+    "level": "N5"
+  },
+  {
+    "kanji": "二十歳",
+    "kana": "はたち",
+    "romaji": "hatachi",
+    "meaning": "스무살",
+    "level": "N5"
+  },
+  {
+    "kanji": "八",
+    "kana": "はち",
+    "romaji": "hachi",
+    "meaning": "팔. 여덟",
+    "level": "N5"
+  },
+  {
+    "kanji": "二十日",
+    "kana": "はつか",
+    "romaji": "hatsuka",
+    "meaning": "20일",
+    "level": "N5"
+  },
+  {
+    "kanji": "花",
+    "kana": "はな",
+    "romaji": "han\\'a",
+    "meaning": "꽃",
+    "level": "N5"
+  },
+  {
+    "kanji": "鼻",
+    "kana": "はな",
+    "romaji": "han\\'a",
+    "meaning": "코",
+    "level": "N5"
+  },
+  {
+    "kanji": "話",
+    "kana": "はなし",
+    "romaji": "han\\'ashi",
+    "meaning": "이야기",
+    "level": "N5"
+  },
+  {
+    "kanji": "話す",
+    "kana": "はなす",
+    "romaji": "han\\'asu",
+    "meaning": "이야기하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "母",
+    "kana": "はは",
+    "romaji": "haha",
+    "meaning": "(나의)어머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "早い/速い",
+    "kana": "はやい",
+    "romaji": "hayai",
+    "meaning": "이르다. 빠르다",
+    "level": "N5"
+  },
+  {
+    "kanji": "春",
+    "kana": "はる",
+    "romaji": "haru",
+    "meaning": "봄",
+    "level": "N5"
+  },
+  {
+    "kanji": "パン",
+    "kana": "パン",
+    "romaji": "pan",
+    "meaning": "빵",
+    "level": "N5"
+  },
+  {
+    "kanji": "-半",
+    "kana": "はん",
+    "romaji": "han",
+    "meaning": "-반. 30분",
+    "level": "N5"
+  },
+  {
+    "kanji": "ハンカチ",
+    "kana": "ハンカチ",
+    "romaji": "hankachi",
+    "meaning": "손수건",
+    "level": "N5"
+  },
+  {
+    "kanji": "番号",
+    "kana": "ばんごう",
+    "romaji": "bangou",
+    "meaning": "번호",
+    "level": "N5"
+  },
+  {
+    "kanji": "晩御飯",
+    "kana": "ばんごはん",
+    "romaji": "bangohan",
+    "meaning": "저녁 식사",
+    "level": "N5"
+  },
+  {
+    "kanji": "ハンサムな",
+    "kana": "ハンサムな",
+    "romaji": "hansamun\\'a",
+    "meaning": "잘생긴. 미남의",
+    "level": "N5"
+  },
+  {
+    "kanji": "東",
+    "kana": "ひがし",
+    "romaji": "higashi",
+    "meaning": "동쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "低い",
+    "kana": "ひくい",
+    "romaji": "hikui",
+    "meaning": "낮다",
+    "level": "N5"
+  },
+  {
+    "kanji": "飛行機",
+    "kana": "ひこうき",
+    "romaji": "hikouki",
+    "meaning": "비행기",
+    "level": "N5"
+  },
+  {
+    "kanji": "左",
+    "kana": "ひだり",
+    "romaji": "hidari",
+    "meaning": "왼쪽. 좌측",
+    "level": "N5"
+  },
+  {
+    "kanji": "人",
+    "kana": "ひと",
+    "romaji": "hito",
+    "meaning": "사람",
+    "level": "N5"
+  },
+  {
+    "kanji": "一つ",
+    "kana": "ひとつ",
+    "romaji": "hitotsu",
+    "meaning": "한 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "一人",
+    "kana": "ひとり",
+    "romaji": "hitori",
+    "meaning": "한 사람",
+    "level": "N5"
+  },
+  {
+    "kanji": "暇な",
+    "kana": "ひまな",
+    "romaji": "himan\\'a",
+    "meaning": "한가한",
+    "level": "N5"
+  },
+  {
+    "kanji": "百",
+    "kana": "ひゃく",
+    "romaji": "hyaku",
+    "meaning": "백",
+    "level": "N5"
+  },
+  {
+    "kanji": "病院",
+    "kana": "びょういん",
+    "romaji": "byouin",
+    "meaning": "병원",
+    "level": "N5"
+  },
+  {
+    "kanji": "病気",
+    "kana": "びょうき",
+    "romaji": "byouki",
+    "meaning": "병",
+    "level": "N5"
+  },
+  {
+    "kanji": "昼",
+    "kana": "ひる",
+    "romaji": "hiru",
+    "meaning": "낮",
+    "level": "N5"
+  },
+  {
+    "kanji": "昼御飯",
+    "kana": "ひるごはん",
+    "romaji": "hirugohan",
+    "meaning": "점심",
+    "level": "N5"
+  },
+  {
+    "kanji": "広い",
+    "kana": "ひろい",
+    "romaji": "hiroi",
+    "meaning": "넓다",
+    "level": "N5"
+  },
+  {
+    "kanji": "服",
+    "kana": "ふく",
+    "romaji": "fuku",
+    "meaning": "옷. 양복",
+    "level": "N5"
+  },
+  {
+    "kanji": "二つ",
+    "kana": "ふたつ",
+    "romaji": "futatsu",
+    "meaning": "두 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "豚肉",
+    "kana": "ぶたにく",
+    "romaji": "butan\\'iku",
+    "meaning": "돼지고기",
+    "level": "N5"
+  },
+  {
+    "kanji": "二人",
+    "kana": "ふたり",
+    "romaji": "futari",
+    "meaning": "두 사람",
+    "level": "N5"
+  },
+  {
+    "kanji": "二日",
+    "kana": "ふつか",
+    "romaji": "futsuka",
+    "meaning": "2일",
+    "level": "N5"
+  },
+  {
+    "kanji": "冬",
+    "kana": "ふゆ",
+    "romaji": "fuyu",
+    "meaning": "겨울",
+    "level": "N5"
+  },
+  {
+    "kanji": "降る",
+    "kana": "ふる",
+    "romaji": "furu",
+    "meaning": "(비가) 내리다",
+    "level": "N5"
+  },
+  {
+    "kanji": "古い",
+    "kana": "ふるい",
+    "romaji": "furui",
+    "meaning": "오래되다. 낡다",
+    "level": "N5"
+  },
+  {
+    "kanji": "-分",
+    "kana": "ふん/-ぷん",
+    "romaji": "fun/-pun",
+    "meaning": "-분",
+    "level": "N5"
+  },
+  {
+    "kanji": "下手な",
+    "kana": "へたな",
+    "romaji": "hetan\\'a",
+    "meaning": "못하는. 서투른",
+    "level": "N5"
+  },
+  {
+    "kanji": "部屋",
+    "kana": "へや",
+    "romaji": "heya",
+    "meaning": "방",
+    "level": "N5"
+  },
+  {
+    "kanji": "ペン",
+    "kana": "ペン",
+    "romaji": "pen",
+    "meaning": "펜",
+    "level": "N5"
+  },
+  {
+    "kanji": "勉強",
+    "kana": "べんきょう",
+    "romaji": "benkyou",
+    "meaning": "공부",
+    "level": "N5"
+  },
+  {
+    "kanji": "便利な",
+    "kana": "べんりな",
+    "romaji": "benrin\\'a",
+    "meaning": "편리한",
+    "level": "N5"
+  },
+  {
+    "kanji": "方",
+    "kana": "ほう",
+    "romaji": "hou",
+    "meaning": "방면. 방향. 쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "帽子",
+    "kana": "ぼうし",
+    "romaji": "boushi",
+    "meaning": "모자",
+    "level": "N5"
+  },
+  {
+    "kanji": "ボールペン",
+    "kana": "ボールペン",
+    "romaji": "bo-rupen",
+    "meaning": "볼펜",
+    "level": "N5"
+  },
+  {
+    "kanji": "他",
+    "kana": "ほか",
+    "romaji": "hoka",
+    "meaning": "다른 것. 딴 것",
+    "level": "N5"
+  },
+  {
+    "kanji": "他に",
+    "kana": "ほかに",
+    "romaji": "hokan\\'i",
+    "meaning": "그밖에. 그외에",
+    "level": "N5"
+  },
+  {
+    "kanji": "他の",
+    "kana": "ほかの",
+    "romaji": "hokan\\'o",
+    "meaning": "다른",
+    "level": "N5"
+  },
+  {
+    "kanji": "ポケット",
+    "kana": "ポケット",
+    "romaji": "poketto",
+    "meaning": "포켓. 호주머니",
+    "level": "N5"
+  },
+  {
+    "kanji": "欲しい",
+    "kana": "ほしい",
+    "romaji": "hoshii",
+    "meaning": "갖고 싶다",
+    "level": "N5"
+  },
+  {
+    "kanji": "ボタン",
+    "kana": "ボタン",
+    "romaji": "botan",
+    "meaning": "단추. 버튼",
+    "level": "N5"
+  },
+  {
+    "kanji": "ホテル",
+    "kana": "ホテル",
+    "romaji": "hoteru",
+    "meaning": "호텔",
+    "level": "N5"
+  },
+  {
+    "kanji": "-本",
+    "kana": "ほん/-ぽん/-ぼん",
+    "romaji": "hon/-pon/-bon",
+    "meaning": "-자루. -개비. -병",
+    "level": "N5"
+  },
+  {
+    "kanji": "本",
+    "kana": "ほん",
+    "romaji": "hon",
+    "meaning": "책",
+    "level": "N5"
+  },
+  {
+    "kanji": "-枚",
+    "kana": "まい",
+    "romaji": "mai",
+    "meaning": "-장",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎朝",
+    "kana": "まいあさ",
+    "romaji": "maiasa",
+    "meaning": "매일 아침. 아침마다",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎月",
+    "kana": "まいげつ",
+    "romaji": "maigetsu",
+    "meaning": "매월 ＝まいつき",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎週",
+    "kana": "まいしゅう",
+    "romaji": "maishuu",
+    "meaning": "매주",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎月",
+    "kana": "まいつき",
+    "romaji": "maitsuki",
+    "meaning": "매월",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎年",
+    "kana": "まいとし",
+    "romaji": "maitoshi",
+    "meaning": "매년",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎日",
+    "kana": "まいにち",
+    "romaji": "main\\'ichi",
+    "meaning": "매일",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎年",
+    "kana": "まいねん",
+    "romaji": "main\\'en",
+    "meaning": "매년 ＝まいとし",
+    "level": "N5"
+  },
+  {
+    "kanji": "毎晩",
+    "kana": "まいばん",
+    "romaji": "maiban",
+    "meaning": "매일 밤. 밤마다",
+    "level": "N5"
+  },
+  {
+    "kanji": "前",
+    "kana": "まえ",
+    "romaji": "mae",
+    "meaning": "앞. 전",
+    "level": "N5"
+  },
+  {
+    "kanji": "曲がる",
+    "kana": "まがる",
+    "romaji": "magaru",
+    "meaning": "구부러지다. (우측 좌측으로) 돌다",
+    "level": "N5"
+  },
+  {
+    "kanji": "まずい",
+    "kana": "まずい",
+    "romaji": "mazui",
+    "meaning": "맛없다",
+    "level": "N5"
+  },
+  {
+    "kanji": "また",
+    "kana": "また",
+    "romaji": "mata",
+    "meaning": "또. 다시",
+    "level": "N5"
+  },
+  {
+    "kanji": "まだ",
+    "kana": "まだ",
+    "romaji": "mada",
+    "meaning": "아직",
+    "level": "N5"
+  },
+  {
+    "kanji": "町",
+    "kana": "まち",
+    "romaji": "machi",
+    "meaning": "동네. 동. 시내",
+    "level": "N5"
+  },
+  {
+    "kanji": "待つ",
+    "kana": "まつ",
+    "romaji": "matsu",
+    "meaning": "기다리다",
+    "level": "N5"
+  },
+  {
+    "kanji": "まっすぐ",
+    "kana": "まっすぐ",
+    "romaji": "massugu",
+    "meaning": "쭉. 똑바로. 곧장. 직선으로",
+    "level": "N5"
+  },
+  {
+    "kanji": "窓",
+    "kana": "まど",
+    "romaji": "mado",
+    "meaning": "창. 창문",
+    "level": "N5"
+  },
+  {
+    "kanji": "丸い",
+    "kana": "まるい",
+    "romaji": "marui",
+    "meaning": "둥글다. 동그랗다",
+    "level": "N5"
+  },
+  {
+    "kanji": "万",
+    "kana": "まん",
+    "romaji": "man",
+    "meaning": "만",
+    "level": "N5"
+  },
+  {
+    "kanji": "磨く",
+    "kana": "みがく",
+    "romaji": "migaku",
+    "meaning": "닦다",
+    "level": "N5"
+  },
+  {
+    "kanji": "右",
+    "kana": "みぎ",
+    "romaji": "migi",
+    "meaning": "오른쪽. 우측",
+    "level": "N5"
+  },
+  {
+    "kanji": "短い",
+    "kana": "みじかい",
+    "romaji": "mijikai",
+    "meaning": "짧다",
+    "level": "N5"
+  },
+  {
+    "kanji": "水",
+    "kana": "みず",
+    "romaji": "mizu",
+    "meaning": "물",
+    "level": "N5"
+  },
+  {
+    "kanji": "店",
+    "kana": "みせ",
+    "romaji": "mise",
+    "meaning": "가게",
+    "level": "N5"
+  },
+  {
+    "kanji": "見せる",
+    "kana": "みせる",
+    "romaji": "miseru",
+    "meaning": "보여주다",
+    "level": "N5"
+  },
+  {
+    "kanji": "道",
+    "kana": "みち",
+    "romaji": "michi",
+    "meaning": "길",
+    "level": "N5"
+  },
+  {
+    "kanji": "三日",
+    "kana": "みっか",
+    "romaji": "mikka",
+    "meaning": "3일",
+    "level": "N5"
+  },
+  {
+    "kanji": "三つ",
+    "kana": "みっつ",
+    "romaji": "mittsu",
+    "meaning": "세 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "緑",
+    "kana": "みどり",
+    "romaji": "midori",
+    "meaning": "녹색",
+    "level": "N5"
+  },
+  {
+    "kanji": "皆さん",
+    "kana": "みなさん",
+    "romaji": "min\\'asan",
+    "meaning": "여러분",
+    "level": "N5"
+  },
+  {
+    "kanji": "南",
+    "kana": "みなみ",
+    "romaji": "min\\'ami",
+    "meaning": "남쪽",
+    "level": "N5"
+  },
+  {
+    "kanji": "耳",
+    "kana": "みみ",
+    "romaji": "mimi",
+    "meaning": "귀",
+    "level": "N5"
+  },
+  {
+    "kanji": "見る",
+    "kana": "みる",
+    "romaji": "miru",
+    "meaning": "보다",
+    "level": "N5"
+  },
+  {
+    "kanji": "みんな",
+    "kana": "みんな",
+    "romaji": "minn\\'a",
+    "meaning": "모두들",
+    "level": "N5"
+  },
+  {
+    "kanji": "六日",
+    "kana": "むいか",
+    "romaji": "muika",
+    "meaning": "6일",
+    "level": "N5"
+  },
+  {
+    "kanji": "難しい",
+    "kana": "むずかしい",
+    "romaji": "muzukashii",
+    "meaning": "어렵다",
+    "level": "N5"
+  },
+  {
+    "kanji": "六つ",
+    "kana": "むっつ",
+    "romaji": "muttsu",
+    "meaning": "여섯 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "目",
+    "kana": "め",
+    "romaji": "me",
+    "meaning": "눈",
+    "level": "N5"
+  },
+  {
+    "kanji": "眼鏡",
+    "kana": "めがね",
+    "romaji": "megan\\'e",
+    "meaning": "안경",
+    "level": "N5"
+  },
+  {
+    "kanji": "もう",
+    "kana": "もう",
+    "romaji": "mou",
+    "meaning": "이미. 벌써",
+    "level": "N5"
+  },
+  {
+    "kanji": "もう一度",
+    "kana": "もういちど",
+    "romaji": "mouichido",
+    "meaning": "한번 더. 다시 한번",
+    "level": "N5"
+  },
+  {
+    "kanji": "木曜日",
+    "kana": "もくようび",
+    "romaji": "mokuyoubi",
+    "meaning": "화요일",
+    "level": "N5"
+  },
+  {
+    "kanji": "もしもし",
+    "kana": "もしもし",
+    "romaji": "moshimoshi",
+    "meaning": "여보세요",
+    "level": "N5"
+  },
+  {
+    "kanji": "持つ",
+    "kana": "もつ",
+    "romaji": "motsu",
+    "meaning": "들다. 가지다. 쥐다",
+    "level": "N5"
+  },
+  {
+    "kanji": "もっと",
+    "kana": "もっと",
+    "romaji": "motto",
+    "meaning": "더. 좀더. 더욱",
+    "level": "N5"
+  },
+  {
+    "kanji": "物",
+    "kana": "もの",
+    "romaji": "mon\\'o",
+    "meaning": "물건",
+    "level": "N5"
+  },
+  {
+    "kanji": "門",
+    "kana": "もん",
+    "romaji": "mon",
+    "meaning": "대문",
+    "level": "N5"
+  },
+  {
+    "kanji": "問題",
+    "kana": "もんだい",
+    "romaji": "mondai",
+    "meaning": "문제",
+    "level": "N5"
+  },
+  {
+    "kanji": "八百屋",
+    "kana": "やおや",
+    "romaji": "yaoya",
+    "meaning": "야채 가게",
+    "level": "N5"
+  },
+  {
+    "kanji": "野菜",
+    "kana": "やさい",
+    "romaji": "yasai",
+    "meaning": "야채. 채소",
+    "level": "N5"
+  },
+  {
+    "kanji": "易しい",
+    "kana": "やさしい",
+    "romaji": "yasashii",
+    "meaning": "쉽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "優しい",
+    "kana": "やさしい",
+    "romaji": "yasashii",
+    "meaning": "상냥하다. 정답다",
+    "level": "N5"
+  },
+  {
+    "kanji": "安い",
+    "kana": "やすい",
+    "romaji": "yasui",
+    "meaning": "싸다",
+    "level": "N5"
+  },
+  {
+    "kanji": "休み",
+    "kana": "やすみ",
+    "romaji": "yasumi",
+    "meaning": "쉼. 휴식. 쉬는 시간. 휴일. 휴가",
+    "level": "N5"
+  },
+  {
+    "kanji": "休む",
+    "kana": "やすむ",
+    "romaji": "yasumu",
+    "meaning": "쉬다",
+    "level": "N5"
+  },
+  {
+    "kanji": "八つ",
+    "kana": "やっつ",
+    "romaji": "yattsu",
+    "meaning": "여덟 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "山",
+    "kana": "やま",
+    "romaji": "yama",
+    "meaning": "산",
+    "level": "N5"
+  },
+  {
+    "kanji": "夕方",
+    "kana": "ゆうがた",
+    "romaji": "yuugata",
+    "meaning": "저녁때",
+    "level": "N5"
+  },
+  {
+    "kanji": "夕御飯",
+    "kana": "ゆうごはん",
+    "romaji": "yuugohan",
+    "meaning": "저녁 식사",
+    "level": "N5"
+  },
+  {
+    "kanji": "夕飯",
+    "kana": "ゆうはん",
+    "romaji": "yuuhan",
+    "meaning": "저녁 식사 ＝ゆうごはん",
+    "level": "N5"
+  },
+  {
+    "kanji": "郵便局",
+    "kana": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "meaning": "우체국",
+    "level": "N5"
+  },
+  {
+    "kanji": "雪",
+    "kana": "ゆき",
+    "romaji": "yuki",
+    "meaning": "눈",
+    "level": "N5"
+  },
+  {
+    "kanji": "ゆっくり",
+    "kana": "ゆっくり",
+    "romaji": "yukkuri",
+    "meaning": "천천히. 푹(+쉬다)",
+    "level": "N5"
+  },
+  {
+    "kanji": "良い",
+    "kana": "よい",
+    "romaji": "yoi",
+    "meaning": "좋다 ＝いい",
+    "level": "N5"
+  },
+  {
+    "kanji": "八日",
+    "kana": "ようか",
+    "romaji": "youka",
+    "meaning": "8일",
+    "level": "N5"
+  },
+  {
+    "kanji": "洋服",
+    "kana": "ようふく",
+    "romaji": "youfuku",
+    "meaning": "양복",
+    "level": "N5"
+  },
+  {
+    "kanji": "よく",
+    "kana": "よく",
+    "romaji": "yoku",
+    "meaning": "(정도)잘. (빈도)자주",
+    "level": "N5"
+  },
+  {
+    "kanji": "横",
+    "kana": "よこ",
+    "romaji": "yoko",
+    "meaning": "옆. 가로. 측면",
+    "level": "N5"
+  },
+  {
+    "kanji": "四日",
+    "kana": "よっか",
+    "romaji": "yokka",
+    "meaning": "4일",
+    "level": "N5"
+  },
+  {
+    "kanji": "四つ",
+    "kana": "よっつ",
+    "romaji": "yottsu",
+    "meaning": "네 개",
+    "level": "N5"
+  },
+  {
+    "kanji": "予定",
+    "kana": "よてい",
+    "romaji": "yotei",
+    "meaning": "예정",
+    "level": "N5"
+  },
+  {
+    "kanji": "呼ぶ",
+    "kana": "よぶ",
+    "romaji": "yobu",
+    "meaning": "부르다",
+    "level": "N5"
+  },
+  {
+    "kanji": "読む",
+    "kana": "よむ",
+    "romaji": "yomu",
+    "meaning": "읽다",
+    "level": "N5"
+  },
+  {
+    "kanji": "夜",
+    "kana": "よる",
+    "romaji": "yoru",
+    "meaning": "밤",
+    "level": "N5"
+  },
+  {
+    "kanji": "よろしく",
+    "kana": "よろしく",
+    "romaji": "yoroshiku",
+    "meaning": "잘 (+부탁합니다)",
+    "level": "N5"
+  },
+  {
+    "kanji": "弱い",
+    "kana": "よわい",
+    "romaji": "yowai",
+    "meaning": "약하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "四",
+    "kana": "よん",
+    "romaji": "yon",
+    "meaning": "넷 ＝し",
+    "level": "N5"
+  },
+  {
+    "kanji": "ラーメン",
+    "kana": "ラーメン",
+    "romaji": "ra-men",
+    "meaning": "라면",
+    "level": "N5"
+  },
+  {
+    "kanji": "来月",
+    "kana": "らいげつ",
+    "romaji": "raigetsu",
+    "meaning": "다음달",
+    "level": "N5"
+  },
+  {
+    "kanji": "来週",
+    "kana": "らいしゅう",
+    "romaji": "raishuu",
+    "meaning": "다음주",
+    "level": "N5"
+  },
+  {
+    "kanji": "来年",
+    "kana": "らいねん",
+    "romaji": "rain\\'en",
+    "meaning": "내년",
+    "level": "N5"
+  },
+  {
+    "kanji": "ラジオ",
+    "kana": "ラジオ",
+    "romaji": "rajio",
+    "meaning": "라디오",
+    "level": "N5"
+  },
+  {
+    "kanji": "留学生",
+    "kana": "りゅうがくせい",
+    "romaji": "ryuugakusei",
+    "meaning": "유학생",
+    "level": "N5"
+  },
+  {
+    "kanji": "両親",
+    "kana": "りょうしん",
+    "romaji": "ryoushin",
+    "meaning": "부모",
+    "level": "N5"
+  },
+  {
+    "kanji": "料理",
+    "kana": "りょうり",
+    "romaji": "ryouri",
+    "meaning": "요리",
+    "level": "N5"
+  },
+  {
+    "kanji": "レストラン",
+    "kana": "レストラン",
+    "romaji": "resutoran",
+    "meaning": "레스토랑",
+    "level": "N5"
+  },
+  {
+    "kanji": "六",
+    "kana": "ろく",
+    "romaji": "roku",
+    "meaning": "육. 여섯",
+    "level": "N5"
+  },
+  {
+    "kanji": "分かる",
+    "kana": "わかる",
+    "romaji": "wakaru",
+    "meaning": "알다. 이해하다",
+    "level": "N5"
+  },
+  {
+    "kanji": "私",
+    "kana": "わたし",
+    "romaji": "watashi",
+    "meaning": "저",
+    "level": "N5"
+  },
+  {
+    "kanji": "悪い",
+    "kana": "わるい",
+    "romaji": "warui",
+    "meaning": "나쁘다",
+    "level": "N5"
+  }
+]

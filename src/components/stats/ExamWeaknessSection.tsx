@@ -14,7 +14,7 @@ function barColor(acc: number): string {
   return "bg-red-500";
 }
 
-/** 기출 응시 기록 기반 단원별 약점. 시험 탭에서 채점한 결과가 여기로 흘러온다. */
+/** 모의고사 응시 기록 기반 단원별 약점. 모의고사에서 채점한 결과가 여기로 흘러온다. */
 export function ExamWeaknessSection() {
   const { data } = useStorage();
   const attempts = data.examAttempts;
@@ -31,15 +31,15 @@ export function ExamWeaknessSection() {
     return (
       <section className="rounded-2xl border border-dashed border-zinc-300 p-6 text-center dark:border-zinc-700">
         <FileText className="mx-auto h-8 w-8 text-zinc-300 dark:text-zinc-600" />
-        <p className="mt-3 text-sm font-medium">아직 기출 응시 기록이 없다</p>
+        <p className="mt-3 text-sm font-medium">아직 모의고사 응시 기록이 없다</p>
         <p className="mt-1 text-xs text-zinc-500">
-          기출을 풀고 채점하면 단원별 정답률이 여기에 쌓인다.
+          모의고사를 풀고 채점하면 단원별 정답률이 여기에 쌓인다.
         </p>
         <Link
-          href="/exam"
+          href="/mock"
           className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
         >
-          기출 풀러 가기
+          모의고사 풀러 가기
           <ArrowRight className="h-4 w-4" />
         </Link>
       </section>
@@ -49,9 +49,9 @@ export function ExamWeaknessSection() {
   return (
     <section className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-lg font-semibold">기출 단원별 약점</h2>
-        <Link href="/exam" className="text-xs text-blue-600 hover:underline">
-          기출 풀기 →
+        <h2 className="text-lg font-semibold">모의고사 단원별 약점</h2>
+        <Link href="/mock" className="text-xs text-blue-600 hover:underline">
+          모의고사 풀기 →
         </Link>
       </div>
 
@@ -91,8 +91,8 @@ export function ExamWeaknessSection() {
       {untagged > 0 && (
         <p className="flex items-start gap-2 rounded-xl bg-amber-50 p-3 text-xs text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
           <TriangleAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-          단원 태그가 없는 문항이 {untagged}개 있다. 시험 탭 → 정답표 수정에서 태그를 붙이면 아래
-          분석이 정확해진다.
+          단원 태그가 없는 문항이 {untagged}개 있다. 예전 기출 풀이 기능으로 쌓인 기록이며, 아래
+          분석에서는 &quot;미분류&quot;로 빠진다. 지금의 모의고사 문항은 전부 태그가 붙어 있다.
         </p>
       )}
 

@@ -23,7 +23,6 @@ import {
 import { SUBJECTS, UNITS, ITEMS } from "../data/subjectContent";
 import { jlptBasicWords, type WordEntry } from "../data/japaneseWords";
 import { toeflWords } from "../data/toeflWords";
-import { mergeBuiltinAnswerKeys } from "../data/ejuAnswerKeys2018_1";
 
 type Loose = Record<string, unknown>;
 
@@ -329,14 +328,15 @@ function migrateToV10(data: AppData): AppData {
 }
 
 /**
- * v11: JASSO 2018년 1회 공식 정답표를 내장한다.
- * 사용자가 이미 등록한 같은 id 정답표는 덮어쓰지 않는다.
+ * v11: 예전에는 JASSO 기출 정답표를 내장했지만, 기출 풀이 기능을 걷어내면서 함께 제거했다.
+ * 이미 v11로 올라간 사용자가 있으므로 마이그레이션 자체는 남겨 두고, 버전만 올린다.
+ * (사용자가 직접 등록해 둔 정답표가 있다면 지우지 않고 그대로 둔다.)
  */
 function migrateToV11(data: AppData): AppData {
   return {
     ...data,
     schemaVersion: 11,
-    answerKeys: mergeBuiltinAnswerKeys(data.answerKeys ?? []),
+    answerKeys: data.answerKeys ?? [],
   };
 }
 

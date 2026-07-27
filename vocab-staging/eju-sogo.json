@@ -1,0 +1,3544 @@
+[
+  {
+    "subject": "sogo",
+    "kanji": "総合科目",
+    "kana": "そうごうかもく",
+    "romaji": "sougoukamoku",
+    "meaning": "종합과목"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "現代社会",
+    "kana": "げんだいしゃかい",
+    "romaji": "gendaishakai",
+    "meaning": "현대사회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "政治",
+    "kana": "せいじ",
+    "romaji": "seiji",
+    "meaning": "정치"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "経済",
+    "kana": "けいざい",
+    "romaji": "keizai",
+    "meaning": "경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地理",
+    "kana": "ちり",
+    "romaji": "chiri",
+    "meaning": "지리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "歴史",
+    "kana": "れきし",
+    "romaji": "rekishi",
+    "meaning": "역사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日本史",
+    "kana": "にほんし",
+    "romaji": "n'ihonshi",
+    "meaning": "일본사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "世界史",
+    "kana": "せかいし",
+    "romaji": "sekaishi",
+    "meaning": "세계사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際関係",
+    "kana": "こくさいかんけい",
+    "romaji": "kokusaikankei",
+    "meaning": "국제관계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "民主主義",
+    "kana": "みんしゅしゅぎ",
+    "romaji": "minshushugi",
+    "meaning": "민주주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "憲法",
+    "kana": "けんぽう",
+    "romaji": "kenpou",
+    "meaning": "헌법"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日本国憲法",
+    "kana": "にほんこくけんぽう",
+    "romaji": "n'ihonkokukenpou",
+    "meaning": "일본국헌법"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "基本的人権",
+    "kana": "きほんてきじんけん",
+    "romaji": "kihontekijinken",
+    "meaning": "기본적 인권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平等権",
+    "kana": "びょうどうけん",
+    "romaji": "byoudouken",
+    "meaning": "평등권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "自由権",
+    "kana": "じゆうけん",
+    "romaji": "jiyuuken",
+    "meaning": "자유권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "社会権",
+    "kana": "しゃかいけん",
+    "romaji": "shakaiken",
+    "meaning": "사회권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "参政権",
+    "kana": "さんせいけん",
+    "romaji": "sanseiken",
+    "meaning": "참정권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "三権分立",
+    "kana": "さんけんぶんりつ",
+    "romaji": "sankenbunritsu",
+    "meaning": "삼권분립"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "立法",
+    "kana": "りっぽう",
+    "romaji": "rippou",
+    "meaning": "입법"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "行政",
+    "kana": "ぎょうせい",
+    "romaji": "gyousei",
+    "meaning": "행정"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "司法",
+    "kana": "しほう",
+    "romaji": "shihou",
+    "meaning": "사법"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国会",
+    "kana": "こっかい",
+    "romaji": "kokkai",
+    "meaning": "국회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "衆議院",
+    "kana": "しゅうぎいん",
+    "romaji": "shuugiin",
+    "meaning": "중의원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "参議院",
+    "kana": "さんぎいん",
+    "romaji": "sangiin",
+    "meaning": "참의원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "内閣",
+    "kana": "ないかく",
+    "romaji": "n'aikaku",
+    "meaning": "내각"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "内閣総理大臣",
+    "kana": "ないかくそうりだいじん",
+    "romaji": "n'aikakusouridaijin",
+    "meaning": "내각총리대신"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "裁判所",
+    "kana": "さいばんしょ",
+    "romaji": "saibansho",
+    "meaning": "재판소"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "最高裁判所",
+    "kana": "さいこうさいばんしょ",
+    "romaji": "saikousaibansho",
+    "meaning": "최고재판소"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "選挙",
+    "kana": "せんきょ",
+    "romaji": "senkyo",
+    "meaning": "선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "投票",
+    "kana": "とうひょう",
+    "romaji": "touhyou",
+    "meaning": "투표"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "政党",
+    "kana": "せいとう",
+    "romaji": "seitou",
+    "meaning": "정당"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "与党",
+    "kana": "よとう",
+    "romaji": "yotou",
+    "meaning": "여당"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "野党",
+    "kana": "やとう",
+    "romaji": "yatou",
+    "meaning": "야당"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地方自治",
+    "kana": "ちほうじち",
+    "romaji": "chihoujichi",
+    "meaning": "지방자치"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "都道府県",
+    "kana": "とどうふけん",
+    "romaji": "todoufuken",
+    "meaning": "도도부현"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "市町村",
+    "kana": "しちょうそん",
+    "romaji": "shichouson",
+    "meaning": "시정촌"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "条例",
+    "kana": "じょうれい",
+    "romaji": "jourei",
+    "meaning": "조례"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "住民",
+    "kana": "じゅうみん",
+    "romaji": "juumin",
+    "meaning": "주민"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "市民",
+    "kana": "しみん",
+    "romaji": "shimin",
+    "meaning": "시민"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国民",
+    "kana": "こくみん",
+    "romaji": "kokumin",
+    "meaning": "국민"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "主権",
+    "kana": "しゅけん",
+    "romaji": "shuken",
+    "meaning": "주권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国民主権",
+    "kana": "こくみんしゅけん",
+    "romaji": "kokuminshuken",
+    "meaning": "국민주권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平和主義",
+    "kana": "へいわしゅぎ",
+    "romaji": "heiwashugi",
+    "meaning": "평화주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "戦争放棄",
+    "kana": "せんそうほうき",
+    "romaji": "sensouhouki",
+    "meaning": "전쟁포기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "自衛隊",
+    "kana": "じえいたい",
+    "romaji": "jieitai",
+    "meaning": "자위대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "安全保障",
+    "kana": "あんぜんほしょう",
+    "romaji": "anzenhoshou",
+    "meaning": "안전보장"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際連合",
+    "kana": "こくさいれんごう",
+    "romaji": "kokusairengou",
+    "meaning": "국제연합"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国連",
+    "kana": "こくれん",
+    "romaji": "kokuren",
+    "meaning": "UN"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "安全保障理事会",
+    "kana": "あんぜんほしょうりじかい",
+    "romaji": "anzenhoshourijikai",
+    "meaning": "안전보장이사회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "総会",
+    "kana": "そうかい",
+    "romaji": "soukai",
+    "meaning": "총회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "条約",
+    "kana": "じょうやく",
+    "romaji": "jouyaku",
+    "meaning": "조약"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "協定",
+    "kana": "きょうてい",
+    "romaji": "kyoutei",
+    "meaning": "협정"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際法",
+    "kana": "こくさいほう",
+    "romaji": "kokusaihou",
+    "meaning": "국제법"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人権",
+    "kana": "じんけん",
+    "romaji": "jinken",
+    "meaning": "인권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "世界人権宣言",
+    "kana": "せかいじんけんせんげん",
+    "romaji": "sekaijinkensengen",
+    "meaning": "세계인권선언"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "難民",
+    "kana": "なんみん",
+    "romaji": "n'anmin",
+    "meaning": "난민"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "移民",
+    "kana": "いみん",
+    "romaji": "imin",
+    "meaning": "이민"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "多文化共生",
+    "kana": "たぶんかきょうせい",
+    "romaji": "tabunkakyousei",
+    "meaning": "다문화공생"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "グローバリゼーション",
+    "kana": "グローバリゼーション",
+    "romaji": "guro-barize-shon",
+    "meaning": "세계화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "貿易",
+    "kana": "ぼうえき",
+    "romaji": "boueki",
+    "meaning": "무역"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "輸出",
+    "kana": "ゆしゅつ",
+    "romaji": "yushutsu",
+    "meaning": "수출"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "輸入",
+    "kana": "ゆにゅう",
+    "romaji": "yun'yuu",
+    "meaning": "수입"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "関税",
+    "kana": "かんぜい",
+    "romaji": "kanzei",
+    "meaning": "관세"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "自由貿易",
+    "kana": "じゆうぼうえき",
+    "romaji": "jiyuuboueki",
+    "meaning": "자유무역"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "保護貿易",
+    "kana": "ほごぼうえき",
+    "romaji": "hogoboueki",
+    "meaning": "보호무역"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "WTO",
+    "kana": "ダブリューティーオー",
+    "romaji": "daburyu-tei-o-",
+    "meaning": "WTO"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "FTA",
+    "kana": "エフティーエー",
+    "romaji": "efutei-e-",
+    "meaning": "FTA"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "為替",
+    "kana": "かわせ",
+    "romaji": "kawase",
+    "meaning": "환율/환"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "円高",
+    "kana": "えんだか",
+    "romaji": "endaka",
+    "meaning": "엔고"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "円安",
+    "kana": "えんやす",
+    "romaji": "en'yasu",
+    "meaning": "엔저"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "物価",
+    "kana": "ぶっか",
+    "romaji": "bukka",
+    "meaning": "물가"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "インフレーション",
+    "kana": "インフレーション",
+    "romaji": "infure-shon",
+    "meaning": "인플레이션"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "デフレーション",
+    "kana": "デフレーション",
+    "romaji": "defure-shon",
+    "meaning": "디플레이션"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "景気",
+    "kana": "けいき",
+    "romaji": "keiki",
+    "meaning": "경기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "好景気",
+    "kana": "こうけいき",
+    "romaji": "koukeiki",
+    "meaning": "호경기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "不景気",
+    "kana": "ふけいき",
+    "romaji": "fukeiki",
+    "meaning": "불경기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "景気循環",
+    "kana": "けいきじゅんかん",
+    "romaji": "keikijunkan",
+    "meaning": "경기순환"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "GDP",
+    "kana": "ジーディーピー",
+    "romaji": "ji-dei-pi-",
+    "meaning": "GDP"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "GNP",
+    "kana": "ジーエヌピー",
+    "romaji": "ji-en'upi-",
+    "meaning": "GNP"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "経済成長",
+    "kana": "けいざいせいちょう",
+    "romaji": "keizaiseichou",
+    "meaning": "경제성장"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "失業率",
+    "kana": "しつぎょうりつ",
+    "romaji": "shitsugyouritsu",
+    "meaning": "실업률"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "完全雇用",
+    "kana": "かんぜんこよう",
+    "romaji": "kanzenkoyou",
+    "meaning": "완전고용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "財政",
+    "kana": "ざいせい",
+    "romaji": "zaisei",
+    "meaning": "재정"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "予算",
+    "kana": "よさん",
+    "romaji": "yosan",
+    "meaning": "예산"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "歳入",
+    "kana": "さいにゅう",
+    "romaji": "sain'yuu",
+    "meaning": "세입"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "歳出",
+    "kana": "さいしゅつ",
+    "romaji": "saishutsu",
+    "meaning": "세출"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "税金",
+    "kana": "ぜいきん",
+    "romaji": "zeikin",
+    "meaning": "세금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "所得税",
+    "kana": "しょとくぜい",
+    "romaji": "shotokuzei",
+    "meaning": "소득세"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "消費税",
+    "kana": "しょうひぜい",
+    "romaji": "shouhizei",
+    "meaning": "소비세"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "法人税",
+    "kana": "ほうじんぜい",
+    "romaji": "houjinzei",
+    "meaning": "법인세"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国債",
+    "kana": "こくさい",
+    "romaji": "kokusai",
+    "meaning": "국채"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "財政赤字",
+    "kana": "ざいせいあかじ",
+    "romaji": "zaiseiakaji",
+    "meaning": "재정적자"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "金融",
+    "kana": "きんゆう",
+    "romaji": "kin'yuu",
+    "meaning": "금융"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日本銀行",
+    "kana": "にほんぎんこう",
+    "romaji": "n'ihonginkou",
+    "meaning": "일본은행"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "金利",
+    "kana": "きんり",
+    "romaji": "kinri",
+    "meaning": "금리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "利息",
+    "kana": "りそく",
+    "romaji": "risoku",
+    "meaning": "이자"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "株式",
+    "kana": "かぶしき",
+    "romaji": "kabushiki",
+    "meaning": "주식"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "債券",
+    "kana": "さいけん",
+    "romaji": "saiken",
+    "meaning": "채권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "市場",
+    "kana": "しじょう",
+    "romaji": "shijou",
+    "meaning": "시장"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "需要",
+    "kana": "じゅよう",
+    "romaji": "juyou",
+    "meaning": "수요"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "供給",
+    "kana": "きょうきゅう",
+    "romaji": "kyoukyuu",
+    "meaning": "공급"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "均衡",
+    "kana": "きんこう",
+    "romaji": "kinkou",
+    "meaning": "균형"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "価格",
+    "kana": "かかく",
+    "romaji": "kakaku",
+    "meaning": "가격"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "独占",
+    "kana": "どくせん",
+    "romaji": "dokusen",
+    "meaning": "독점"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "寡占",
+    "kana": "かせん",
+    "romaji": "kasen",
+    "meaning": "과점"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "競争",
+    "kana": "きょうそう",
+    "romaji": "kyousou",
+    "meaning": "경쟁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "企業",
+    "kana": "きぎょう",
+    "romaji": "kigyou",
+    "meaning": "기업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "株式会社",
+    "kana": "かぶしきがいしゃ",
+    "romaji": "kabushikigaisha",
+    "meaning": "주식회사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "労働",
+    "kana": "ろうどう",
+    "romaji": "roudou",
+    "meaning": "노동"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "賃金",
+    "kana": "ちんぎん",
+    "romaji": "chingin",
+    "meaning": "임금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "労働組合",
+    "kana": "ろうどうくみあい",
+    "romaji": "roudoukumiai",
+    "meaning": "노동조합"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ストライキ",
+    "kana": "ストライキ",
+    "romaji": "sutoraiki",
+    "meaning": "파업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "社会保障",
+    "kana": "しゃかいほしょう",
+    "romaji": "shakaihoshou",
+    "meaning": "사회보장"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "年金",
+    "kana": "ねんきん",
+    "romaji": "n'enkin",
+    "meaning": "연금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "医療保険",
+    "kana": "いりょうほけん",
+    "romaji": "iryouhoken",
+    "meaning": "의료보험"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "介護保険",
+    "kana": "かいごほけん",
+    "romaji": "kaigohoken",
+    "meaning": "개호보험"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "生活保護",
+    "kana": "せいかつほご",
+    "romaji": "seikatsuhogo",
+    "meaning": "생활보호"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "少子高齢化",
+    "kana": "しょうしこうれいか",
+    "romaji": "shoushikoureika",
+    "meaning": "저출산고령화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "出生率",
+    "kana": "しゅっしょうりつ",
+    "romaji": "shusshouritsu",
+    "meaning": "출생률"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平均寿命",
+    "kana": "へいきんじゅみょう",
+    "romaji": "heikinjumyou",
+    "meaning": "평균수명"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人口",
+    "kana": "じんこう",
+    "romaji": "jinkou",
+    "meaning": "인구"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人口密度",
+    "kana": "じんこうみつど",
+    "romaji": "jinkoumitsudo",
+    "meaning": "인구밀도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "過疎",
+    "kana": "かそ",
+    "romaji": "kaso",
+    "meaning": "과소"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "過密",
+    "kana": "かみつ",
+    "romaji": "kamitsu",
+    "meaning": "과밀"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "都市化",
+    "kana": "としか",
+    "romaji": "toshika",
+    "meaning": "도시화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "過疎化",
+    "kana": "かそか",
+    "romaji": "kasoka",
+    "meaning": "과소화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "環境問題",
+    "kana": "かんきょうもんだい",
+    "romaji": "kankyoumondai",
+    "meaning": "환경문제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地球温暖化",
+    "kana": "ちきゅうおんだんか",
+    "romaji": "chikyuuondanka",
+    "meaning": "지구온난화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "温室効果",
+    "kana": "おんしつこうか",
+    "romaji": "onshitsukouka",
+    "meaning": "온실효과"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "二酸化炭素",
+    "kana": "にさんかたんそ",
+    "romaji": "n'isankatanso",
+    "meaning": "이산화탄소"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "酸性雨",
+    "kana": "さんせいう",
+    "romaji": "sanseiu",
+    "meaning": "산성비"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "オゾン層",
+    "kana": "オゾンそう",
+    "romaji": "ozonsou",
+    "meaning": "오존층"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "砂漠化",
+    "kana": "さばくか",
+    "romaji": "sabakuka",
+    "meaning": "사막화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "森林破壊",
+    "kana": "しんりんはかい",
+    "romaji": "shinrinhakai",
+    "meaning": "삼림파괴"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "生物多様性",
+    "kana": "せいぶつたようせい",
+    "romaji": "seibutsutayousei",
+    "meaning": "생물다양성"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "再生可能エネルギー",
+    "kana": "さいせいかのうエネルギー",
+    "romaji": "saiseikan'ouen'erugi-",
+    "meaning": "재생가능에너지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "化石燃料",
+    "kana": "かせきねんりょう",
+    "romaji": "kasekin'enryou",
+    "meaning": "화석연료"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "原子力発電",
+    "kana": "げんしりょくはつでん",
+    "romaji": "genshiryokuhatsuden",
+    "meaning": "원자력발전"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "持続可能性",
+    "kana": "じぞくかのうせい",
+    "romaji": "jizokukan'ousei",
+    "meaning": "지속가능성"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "SDGs",
+    "kana": "エスディージーズ",
+    "romaji": "esudei-ji-zu",
+    "meaning": "SDGs"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "資源",
+    "kana": "しげん",
+    "romaji": "shigen",
+    "meaning": "자원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "エネルギー資源",
+    "kana": "エネルギーしげん",
+    "romaji": "en'erugi-shigen",
+    "meaning": "에너지자원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "鉱産資源",
+    "kana": "こうさんしげん",
+    "romaji": "kousanshigen",
+    "meaning": "광물자원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "食料問題",
+    "kana": "しょくりょうもんだい",
+    "romaji": "shokuryoumondai",
+    "meaning": "식량문제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "水資源",
+    "kana": "みずしげん",
+    "romaji": "mizushigen",
+    "meaning": "수자원"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "公害",
+    "kana": "こうがい",
+    "romaji": "kougai",
+    "meaning": "공해"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "大気汚染",
+    "kana": "たいきおせん",
+    "romaji": "taikiosen",
+    "meaning": "대기오염"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "水質汚染",
+    "kana": "すいしつおせん",
+    "romaji": "suishitsuosen",
+    "meaning": "수질오염"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "土壌汚染",
+    "kana": "どじょうおせん",
+    "romaji": "dojouosen",
+    "meaning": "토양오염"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "騒音",
+    "kana": "そうおん",
+    "romaji": "souon",
+    "meaning": "소음"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "廃棄物",
+    "kana": "はいきぶつ",
+    "romaji": "haikibutsu",
+    "meaning": "폐기물"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "リサイクル",
+    "kana": "リサイクル",
+    "romaji": "risaikuru",
+    "meaning": "재활용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "循環型社会",
+    "kana": "じゅんかんがたしゃかい",
+    "romaji": "junkangatashakai",
+    "meaning": "순환형사회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "マスメディア",
+    "kana": "マスメディア",
+    "romaji": "masumedeia",
+    "meaning": "매스미디어"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "情報化社会",
+    "kana": "じょうほうかしゃかい",
+    "romaji": "jouhoukashakai",
+    "meaning": "정보화사회"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "インターネット",
+    "kana": "インターネット",
+    "romaji": "inta-n'etto",
+    "meaning": "인터넷"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "プライバシー",
+    "kana": "プライバシー",
+    "romaji": "puraibashi-",
+    "meaning": "프라이버시"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "個人情報",
+    "kana": "こじんじょうほう",
+    "romaji": "kojinjouhou",
+    "meaning": "개인정보"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "言論の自由",
+    "kana": "げんろんのじゆう",
+    "romaji": "genronn'ojiyuu",
+    "meaning": "언론의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "表現の自由",
+    "kana": "ひょうげんのじゆう",
+    "romaji": "hyougenn'ojiyuu",
+    "meaning": "표현의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "教育",
+    "kana": "きょういく",
+    "romaji": "kyouiku",
+    "meaning": "교육"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "義務教育",
+    "kana": "ぎむきょういく",
+    "romaji": "gimukyouiku",
+    "meaning": "의무교육"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "高等教育",
+    "kana": "こうとうきょういく",
+    "romaji": "koutoukyouiku",
+    "meaning": "고등교육"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "学歴",
+    "kana": "がくれき",
+    "romaji": "gakureki",
+    "meaning": "학력"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "格差",
+    "kana": "かくさ",
+    "romaji": "kakusa",
+    "meaning": "격차"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "貧困",
+    "kana": "ひんこん",
+    "romaji": "hinkon",
+    "meaning": "빈곤"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "福祉",
+    "kana": "ふくし",
+    "romaji": "fukushi",
+    "meaning": "복지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ジェンダー",
+    "kana": "ジェンダー",
+    "romaji": "jienda-",
+    "meaning": "젠더"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "男女平等",
+    "kana": "だんじょびょうどう",
+    "romaji": "danjobyoudou",
+    "meaning": "남녀평등"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "差別",
+    "kana": "さべつ",
+    "romaji": "sabetsu",
+    "meaning": "차별"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "偏見",
+    "kana": "へんけん",
+    "romaji": "henken",
+    "meaning": "편견"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人権侵害",
+    "kana": "じんけんしんがい",
+    "romaji": "jinkenshingai",
+    "meaning": "인권침해"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "児童労働",
+    "kana": "じどうろうどう",
+    "romaji": "jidouroudou",
+    "meaning": "아동노동"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "奴隷制",
+    "kana": "どれいせい",
+    "romaji": "doreisei",
+    "meaning": "노예제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "植民地",
+    "kana": "しょくみんち",
+    "romaji": "shokuminchi",
+    "meaning": "식민지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "帝国主義",
+    "kana": "ていこくしゅぎ",
+    "romaji": "teikokushugi",
+    "meaning": "제국주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "産業革命",
+    "kana": "さんぎょうかくめい",
+    "romaji": "sangyoukakumei",
+    "meaning": "산업혁명"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "第一次世界大戦",
+    "kana": "だいいちじせかいたいせん",
+    "romaji": "daiichijisekaitaisen",
+    "meaning": "제1차 세계대전"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "第二次世界大戦",
+    "kana": "だいにじせかいたいせん",
+    "romaji": "dain'ijisekaitaisen",
+    "meaning": "제2차 세계대전"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "冷戦",
+    "kana": "れいせん",
+    "romaji": "reisen",
+    "meaning": "냉전"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "東西対立",
+    "kana": "とうざいたいりつ",
+    "romaji": "touzaitairitsu",
+    "meaning": "동서대립"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "資本主義",
+    "kana": "しほんしゅぎ",
+    "romaji": "shihonshugi",
+    "meaning": "자본주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "社会主義",
+    "kana": "しゃかいしゅぎ",
+    "romaji": "shakaishugi",
+    "meaning": "사회주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "共産主義",
+    "kana": "きょうさんしゅぎ",
+    "romaji": "kyousanshugi",
+    "meaning": "공산주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "自由主義",
+    "kana": "じゆうしゅぎ",
+    "romaji": "jiyuushugi",
+    "meaning": "자유주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "保守",
+    "kana": "ほしゅ",
+    "romaji": "hoshu",
+    "meaning": "보수"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "革新",
+    "kana": "かくしん",
+    "romaji": "kakushin",
+    "meaning": "혁신"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "改革",
+    "kana": "かいかく",
+    "romaji": "kaikaku",
+    "meaning": "개혁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "明治維新",
+    "kana": "めいじいしん",
+    "romaji": "meijiishin",
+    "meaning": "메이지 유신"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "戦後",
+    "kana": "せんご",
+    "romaji": "sengo",
+    "meaning": "전후"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "占領",
+    "kana": "せんりょう",
+    "romaji": "senryou",
+    "meaning": "점령"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "高度経済成長",
+    "kana": "こうどけいざいせいちょう",
+    "romaji": "koudokeizaiseichou",
+    "meaning": "고도경제성장"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "バブル経済",
+    "kana": "バブルけいざい",
+    "romaji": "baburukeizai",
+    "meaning": "거품경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "失われた十年",
+    "kana": "うしなわれたじゅうねん",
+    "romaji": "ushin'awaretajuun'en",
+    "meaning": "잃어버린 10년"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "構造改革",
+    "kana": "こうぞうかいかく",
+    "romaji": "kouzoukaikaku",
+    "meaning": "구조개혁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "アジア",
+    "kana": "アジア",
+    "romaji": "ajia",
+    "meaning": "아시아"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ヨーロッパ",
+    "kana": "ヨーロッパ",
+    "romaji": "yo-roppa",
+    "meaning": "유럽"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "アフリカ",
+    "kana": "アフリカ",
+    "romaji": "afurika",
+    "meaning": "아프리카"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "北アメリカ",
+    "kana": "きたアメリカ",
+    "romaji": "kitaamerika",
+    "meaning": "북아메리카"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "南アメリカ",
+    "kana": "みなみアメリカ",
+    "romaji": "min'amiamerika",
+    "meaning": "남아메리카"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "オセアニア",
+    "kana": "オセアニア",
+    "romaji": "osean'ia",
+    "meaning": "오세아니아"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "中東",
+    "kana": "ちゅうとう",
+    "romaji": "chuutou",
+    "meaning": "중동"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "先進国",
+    "kana": "せんしんこく",
+    "romaji": "senshinkoku",
+    "meaning": "선진국"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "発展途上国",
+    "kana": "はってんとじょうこく",
+    "romaji": "hattentojoukoku",
+    "meaning": "개발도상국"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "新興国",
+    "kana": "しんこうこく",
+    "romaji": "shinkoukoku",
+    "meaning": "신흥국"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "南北問題",
+    "kana": "なんぼくもんだい",
+    "romaji": "n'anbokumondai",
+    "meaning": "남북문제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ODA",
+    "kana": "オーディーエー",
+    "romaji": "o-dei-e-",
+    "meaning": "ODA"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際協力",
+    "kana": "こくさいきょうりょく",
+    "romaji": "kokusaikyouryoku",
+    "meaning": "국제협력"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "NGO",
+    "kana": "エヌジーオー",
+    "romaji": "en'uji-o-",
+    "meaning": "NGO"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "NPO",
+    "kana": "エヌピーオー",
+    "romaji": "en'upi-o-",
+    "meaning": "NPO"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地政学",
+    "kana": "ちせいがく",
+    "romaji": "chiseigaku",
+    "meaning": "지정학"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国境",
+    "kana": "こっきょう",
+    "romaji": "kokkyou",
+    "meaning": "국경"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "領土",
+    "kana": "りょうど",
+    "romaji": "ryoudo",
+    "meaning": "영토"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "領海",
+    "kana": "りょうかい",
+    "romaji": "ryoukai",
+    "meaning": "영해"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "領空",
+    "kana": "りょうくう",
+    "romaji": "ryoukuu",
+    "meaning": "영공"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "排他的経済水域",
+    "kana": "はいたてきけいざいすいいき",
+    "romaji": "haitatekikeizaisuiiki",
+    "meaning": "배타적경제수역"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地図",
+    "kana": "ちず",
+    "romaji": "chizu",
+    "meaning": "지도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "気候",
+    "kana": "きこう",
+    "romaji": "kikou",
+    "meaning": "기후"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "気象",
+    "kana": "きしょう",
+    "romaji": "kishou",
+    "meaning": "기상"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "気温",
+    "kana": "きおん",
+    "romaji": "kion",
+    "meaning": "기온"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "降水量",
+    "kana": "こうすいりょう",
+    "romaji": "kousuiryou",
+    "meaning": "강수량"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "熱帯",
+    "kana": "ねったい",
+    "romaji": "n'ettai",
+    "meaning": "열대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "温帯",
+    "kana": "おんたい",
+    "romaji": "ontai",
+    "meaning": "온대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "冷帯",
+    "kana": "れいたい",
+    "romaji": "reitai",
+    "meaning": "냉대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "寒帯",
+    "kana": "かんたい",
+    "romaji": "kantai",
+    "meaning": "한대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "乾燥帯",
+    "kana": "かんそうたい",
+    "romaji": "kansoutai",
+    "meaning": "건조대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "季節風",
+    "kana": "きせつふう",
+    "romaji": "kisetsufuu",
+    "meaning": "계절풍"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "モンスーン",
+    "kana": "モンスーン",
+    "romaji": "monsu-n",
+    "meaning": "몬순"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "台風",
+    "kana": "たいふう",
+    "romaji": "taifuu",
+    "meaning": "태풍"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地震",
+    "kana": "じしん",
+    "romaji": "jishin",
+    "meaning": "지진"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "津波",
+    "kana": "つなみ",
+    "romaji": "tsun'ami",
+    "meaning": "쓰나미"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "火山",
+    "kana": "かざん",
+    "romaji": "kazan",
+    "meaning": "화산"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "プレート",
+    "kana": "プレート",
+    "romaji": "pure-to",
+    "meaning": "판(구조)"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "断層",
+    "kana": "だんそう",
+    "romaji": "dansou",
+    "meaning": "단층"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地形",
+    "kana": "ちけい",
+    "romaji": "chikei",
+    "meaning": "지형"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平野",
+    "kana": "へいや",
+    "romaji": "heiya",
+    "meaning": "평야"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "山地",
+    "kana": "さんち",
+    "romaji": "sanchi",
+    "meaning": "산지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "盆地",
+    "kana": "ぼんち",
+    "romaji": "bonchi",
+    "meaning": "분지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "半島",
+    "kana": "はんとう",
+    "romaji": "hantou",
+    "meaning": "반도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "島",
+    "kana": "しま",
+    "romaji": "shima",
+    "meaning": "섬"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "海峡",
+    "kana": "かいきょう",
+    "romaji": "kaikyou",
+    "meaning": "해협"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "河川",
+    "kana": "かせん",
+    "romaji": "kasen",
+    "meaning": "하천"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "湖",
+    "kana": "みずうみ",
+    "romaji": "mizuumi",
+    "meaning": "호수"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "農業",
+    "kana": "のうぎょう",
+    "romaji": "n'ougyou",
+    "meaning": "농업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "工業",
+    "kana": "こうぎょう",
+    "romaji": "kougyou",
+    "meaning": "공업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "漁業",
+    "kana": "ぎょぎょう",
+    "romaji": "gyogyou",
+    "meaning": "어업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "林業",
+    "kana": "りんぎょう",
+    "romaji": "ringyou",
+    "meaning": "임업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "第一次産業",
+    "kana": "だいいちじさんぎょう",
+    "romaji": "daiichijisangyou",
+    "meaning": "1차산업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "第二次産業",
+    "kana": "だいにじさんぎょう",
+    "romaji": "dain'ijisangyou",
+    "meaning": "2차산업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "第三次産業",
+    "kana": "だいさんじさんぎょう",
+    "romaji": "daisanjisangyou",
+    "meaning": "3차산업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "サービス業",
+    "kana": "サービスぎょう",
+    "romaji": "sa-bisugyou",
+    "meaning": "서비스업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "都市",
+    "kana": "とし",
+    "romaji": "toshi",
+    "meaning": "도시"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "首都",
+    "kana": "しゅと",
+    "romaji": "shuto",
+    "meaning": "수도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "港湾",
+    "kana": "こうわん",
+    "romaji": "kouwan",
+    "meaning": "항만"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "交通",
+    "kana": "こうつう",
+    "romaji": "koutsuu",
+    "meaning": "교통"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "鉄道",
+    "kana": "てつどう",
+    "romaji": "tetsudou",
+    "meaning": "철도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "高速道路",
+    "kana": "こうそくどうろ",
+    "romaji": "kousokudouro",
+    "meaning": "고속도로"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "航空",
+    "kana": "こうくう",
+    "romaji": "koukuu",
+    "meaning": "항공"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "物流",
+    "kana": "ぶつりゅう",
+    "romaji": "butsuryuu",
+    "meaning": "물류"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "観光",
+    "kana": "かんこう",
+    "romaji": "kankou",
+    "meaning": "관광"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "文化",
+    "kana": "ぶんか",
+    "romaji": "bunka",
+    "meaning": "문화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "伝統",
+    "kana": "でんとう",
+    "romaji": "dentou",
+    "meaning": "전통"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "宗教",
+    "kana": "しゅうきょう",
+    "romaji": "shuukyou",
+    "meaning": "종교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "仏教",
+    "kana": "ぶっきょう",
+    "romaji": "bukkyou",
+    "meaning": "불교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "神道",
+    "kana": "しんとう",
+    "romaji": "shintou",
+    "meaning": "신토"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "キリスト教",
+    "kana": "キリストきょう",
+    "romaji": "kirisutokyou",
+    "meaning": "기독교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "イスラム教",
+    "kana": "イスラムきょう",
+    "romaji": "isuramukyou",
+    "meaning": "이슬람교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "言語",
+    "kana": "げんご",
+    "romaji": "gengo",
+    "meaning": "언어"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "民族",
+    "kana": "みんぞく",
+    "romaji": "minzoku",
+    "meaning": "민족"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国家",
+    "kana": "こっか",
+    "romaji": "kokka",
+    "meaning": "국가"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国民国家",
+    "kana": "こくみんこっか",
+    "romaji": "kokuminkokka",
+    "meaning": "국민국가"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "連邦",
+    "kana": "れんぽう",
+    "romaji": "renpou",
+    "meaning": "연방"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "共和国",
+    "kana": "きょうわこく",
+    "romaji": "kyouwakoku",
+    "meaning": "공화국"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "君主制",
+    "kana": "くんしゅせい",
+    "romaji": "kunshusei",
+    "meaning": "군주제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "大統領制",
+    "kana": "だいとうりょうせい",
+    "romaji": "daitouryousei",
+    "meaning": "대통령제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "議院内閣制",
+    "kana": "ぎいんないかくせい",
+    "romaji": "giinn'aikakusei",
+    "meaning": "의원내각제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "直接民主制",
+    "kana": "ちょくせつみんしゅせい",
+    "romaji": "chokusetsuminshusei",
+    "meaning": "직접민주제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "間接民主制",
+    "kana": "かんせつみんしゅせい",
+    "romaji": "kansetsuminshusei",
+    "meaning": "간접민주제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "世論",
+    "kana": "よろん",
+    "romaji": "yoron",
+    "meaning": "여론"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "世論調査",
+    "kana": "よろんちょうさ",
+    "romaji": "yoronchousa",
+    "meaning": "여론조사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "報道",
+    "kana": "ほうどう",
+    "romaji": "houdou",
+    "meaning": "보도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ジャーナリズム",
+    "kana": "ジャーナリズム",
+    "romaji": "ja-n'arizumu",
+    "meaning": "저널리즘"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "フェイクニュース",
+    "kana": "フェイクニュース",
+    "romaji": "fueikun'yu-su",
+    "meaning": "가짜뉴스"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "情報リテラシー",
+    "kana": "じょうほうリテラシー",
+    "romaji": "jouhouriterashi-",
+    "meaning": "정보 리터러시"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "批判的思考",
+    "kana": "ひはんてきしこう",
+    "romaji": "hihantekishikou",
+    "meaning": "비판적 사고"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "統計",
+    "kana": "とうけい",
+    "romaji": "toukei",
+    "meaning": "통계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "データ分析",
+    "kana": "データぶんせき",
+    "romaji": "de-tabunseki",
+    "meaning": "데이터 분석"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "グラフの読み取り",
+    "kana": "グラフのよみとり",
+    "romaji": "gurafun'oyomitori",
+    "meaning": "그래프 읽기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "因果関係",
+    "kana": "いんがかんけい",
+    "romaji": "ingakankei",
+    "meaning": "인과관계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "相関関係",
+    "kana": "そうかんかんけい",
+    "romaji": "soukankankei",
+    "meaning": "상관관계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "仮説",
+    "kana": "かせつ",
+    "romaji": "kasetsu",
+    "meaning": "가설"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "検証",
+    "kana": "けんしょう",
+    "romaji": "kenshou",
+    "meaning": "검증"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "比較",
+    "kana": "ひかく",
+    "romaji": "hikaku",
+    "meaning": "비교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "対比",
+    "kana": "たいひ",
+    "romaji": "taihi",
+    "meaning": "대비"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "要約",
+    "kana": "ようやく",
+    "romaji": "youyaku",
+    "meaning": "요약"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "論述",
+    "kana": "ろんじゅつ",
+    "romaji": "ronjutsu",
+    "meaning": "논술"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "資料",
+    "kana": "しりょう",
+    "romaji": "shiryou",
+    "meaning": "자료"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "史料",
+    "kana": "しりょう",
+    "romaji": "shiryou",
+    "meaning": "사료"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "年表",
+    "kana": "ねんぴょう",
+    "romaji": "n'enpyou",
+    "meaning": "연표"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地図帳",
+    "kana": "ちずちょう",
+    "romaji": "chizuchou",
+    "meaning": "지도책"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "統計資料",
+    "kana": "とうけいしりょう",
+    "romaji": "toukeishiryou",
+    "meaning": "통계자료"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "時事問題",
+    "kana": "じじもんだい",
+    "romaji": "jijimondai",
+    "meaning": "시사문제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "時事",
+    "kana": "じじ",
+    "romaji": "jiji",
+    "meaning": "시사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ニュース",
+    "kana": "ニュース",
+    "romaji": "n'yu-su",
+    "meaning": "뉴스"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際情勢",
+    "kana": "こくさいじょうせい",
+    "romaji": "kokusaijousei",
+    "meaning": "국제정세"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "外交",
+    "kana": "がいこう",
+    "romaji": "gaikou",
+    "meaning": "외교"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "同盟",
+    "kana": "どうめい",
+    "romaji": "doumei",
+    "meaning": "동맹"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "交渉",
+    "kana": "こうしょう",
+    "romaji": "koushou",
+    "meaning": "교섭"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "制裁",
+    "kana": "せいさい",
+    "romaji": "seisai",
+    "meaning": "제재"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "紛争",
+    "kana": "ふんそう",
+    "romaji": "funsou",
+    "meaning": "분쟁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "紛争解決",
+    "kana": "ふんそうかいけつ",
+    "romaji": "funsoukaiketsu",
+    "meaning": "분쟁해결"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平和維持活動",
+    "kana": "へいわいじかつどう",
+    "romaji": "heiwaijikatsudou",
+    "meaning": "평화유지활동"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "PKO",
+    "kana": "ピーケーオー",
+    "romaji": "pi-ke-o-",
+    "meaning": "PKO"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "核兵器",
+    "kana": "かくへいき",
+    "romaji": "kakuheiki",
+    "meaning": "핵무기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "軍縮",
+    "kana": "ぐんしゅく",
+    "romaji": "gunshuku",
+    "meaning": "군축"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "軍備",
+    "kana": "ぐんび",
+    "romaji": "gunbi",
+    "meaning": "군비"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "非核三原則",
+    "kana": "ひかくさんげんそく",
+    "romaji": "hikakusangensoku",
+    "meaning": "비핵3원칙"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日米安全保障条約",
+    "kana": "にちべいあんぜんほしょうじょうやく",
+    "romaji": "n'ichibeianzenhoshoujouyaku",
+    "meaning": "미일안보조약"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日中関係",
+    "kana": "にっちゅうかんけい",
+    "romaji": "n'icchuukankei",
+    "meaning": "일중관계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "日韓関係",
+    "kana": "にっかんかんけい",
+    "romaji": "n'ikkankankei",
+    "meaning": "한일관계"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ASEAN",
+    "kana": "アセアン",
+    "romaji": "asean",
+    "meaning": "ASEAN"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "EU",
+    "kana": "イーユー",
+    "romaji": "i-yu-",
+    "meaning": "EU"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "NATO",
+    "kana": "ナトー",
+    "romaji": "n'ato-",
+    "meaning": "NATO"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "G7",
+    "kana": "ジーセブン",
+    "romaji": "ji-sebun",
+    "meaning": "G7"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "G20",
+    "kana": "ジー二十",
+    "romaji": "ji-",
+    "meaning": "G20"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "IMF",
+    "kana": "アイエムエフ",
+    "romaji": "aiemuefu",
+    "meaning": "IMF"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "世界銀行",
+    "kana": "せかいぎんこう",
+    "romaji": "sekaiginkou",
+    "meaning": "세계은행"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地域統合",
+    "kana": "ちいきとうごう",
+    "romaji": "chiikitougou",
+    "meaning": "지역통합"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ブロック経済",
+    "kana": "ブロックけいざい",
+    "romaji": "burokkukeizai",
+    "meaning": "블록경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "保護主義",
+    "kana": "ほごしゅぎ",
+    "romaji": "hogoshugi",
+    "meaning": "보호주의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "自由主義経済",
+    "kana": "じゆうしゅぎけいざい",
+    "romaji": "jiyuushugikeizai",
+    "meaning": "자유주의경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "計画経済",
+    "kana": "けいかくけいざい",
+    "romaji": "keikakukeizai",
+    "meaning": "계획경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "市場経済",
+    "kana": "しじょうけいざい",
+    "romaji": "shijoukeizai",
+    "meaning": "시장경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "混合経済",
+    "kana": "こんごうけいざい",
+    "romaji": "kongoukeizai",
+    "meaning": "혼합경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "福祉国家",
+    "kana": "ふくしこっか",
+    "romaji": "fukushikokka",
+    "meaning": "복지국가"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "小さな政府",
+    "kana": "ちいさなせいふ",
+    "romaji": "chiisan'aseifu",
+    "meaning": "작은 정부"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "大きな政府",
+    "kana": "おおきなせいふ",
+    "romaji": "ookin'aseifu",
+    "meaning": "큰 정부"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "規制緩和",
+    "kana": "きせいかんわ",
+    "romaji": "kiseikanwa",
+    "meaning": "규제완화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "民営化",
+    "kana": "みんえいか",
+    "romaji": "min'eika",
+    "meaning": "민영화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "公共財",
+    "kana": "こうきょうざい",
+    "romaji": "koukyouzai",
+    "meaning": "공공재"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "外部性",
+    "kana": "がいぶせい",
+    "romaji": "gaibusei",
+    "meaning": "외부효과"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "市場の失敗",
+    "kana": "しじょうのしっぱい",
+    "romaji": "shijoun'oshippai",
+    "meaning": "시장실패"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "政府の失敗",
+    "kana": "せいふのしっぱい",
+    "romaji": "seifun'oshippai",
+    "meaning": "정부실패"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "機会費用",
+    "kana": "きかいひよう",
+    "romaji": "kikaihiyou",
+    "meaning": "기회비용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "比較優位",
+    "kana": "ひかくゆうい",
+    "romaji": "hikakuyuui",
+    "meaning": "비교우위"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "絶対優位",
+    "kana": "ぜったいゆうい",
+    "romaji": "zettaiyuui",
+    "meaning": "절대우위"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "分業",
+    "kana": "ぶんぎょう",
+    "romaji": "bungyou",
+    "meaning": "분업"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "特化",
+    "kana": "とっか",
+    "romaji": "tokka",
+    "meaning": "특화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "規模の経済",
+    "kana": "きぼのけいざい",
+    "romaji": "kibon'okeizai",
+    "meaning": "규모의 경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "限界効用",
+    "kana": "げんかいこうよう",
+    "romaji": "genkaikouyou",
+    "meaning": "한계효용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "限界費用",
+    "kana": "げんかいひよう",
+    "romaji": "genkaihiyou",
+    "meaning": "한계비용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "需要曲線",
+    "kana": "じゅようきょくせん",
+    "romaji": "juyoukyokusen",
+    "meaning": "수요곡선"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "供給曲線",
+    "kana": "きょうきゅうきょくせん",
+    "romaji": "kyoukyuukyokusen",
+    "meaning": "공급곡선"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "均衡価格",
+    "kana": "きんこうかかく",
+    "romaji": "kinkoukakaku",
+    "meaning": "균형가격"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "余剰",
+    "kana": "よじょう",
+    "romaji": "yojou",
+    "meaning": "잉여"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "消費者余剰",
+    "kana": "しょうひしゃよじょう",
+    "romaji": "shouhishayojou",
+    "meaning": "소비자잉여"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "生産者余剰",
+    "kana": "せいさんしゃよじょう",
+    "romaji": "seisanshayojou",
+    "meaning": "생산자잉여"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "弾力性",
+    "kana": "だんりょくせい",
+    "romaji": "danryokusei",
+    "meaning": "탄력성"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "需要の価格弾力性",
+    "kana": "じゅようのかかくだんりょくせい",
+    "romaji": "juyoun'okakakudanryokusei",
+    "meaning": "수요의 가격탄력성"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "議題",
+    "kana": "ぎだい",
+    "romaji": "gidai",
+    "meaning": "의제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "決議",
+    "kana": "けつぎ",
+    "romaji": "ketsugi",
+    "meaning": "결의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "法案",
+    "kana": "ほうあん",
+    "romaji": "houan",
+    "meaning": "법안"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "法律",
+    "kana": "ほうりつ",
+    "romaji": "houritsu",
+    "meaning": "법률"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "政令",
+    "kana": "せいれい",
+    "romaji": "seirei",
+    "meaning": "정령"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "省令",
+    "kana": "しょうれい",
+    "romaji": "shourei",
+    "meaning": "성령"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "改正",
+    "kana": "かいせい",
+    "romaji": "kaisei",
+    "meaning": "개정"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "廃止",
+    "kana": "はいし",
+    "romaji": "haishi",
+    "meaning": "폐지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "施行",
+    "kana": "しこう",
+    "romaji": "shikou",
+    "meaning": "시행"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "公布",
+    "kana": "こうふ",
+    "romaji": "koufu",
+    "meaning": "공포"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "違憲",
+    "kana": "いけん",
+    "romaji": "iken",
+    "meaning": "위헌"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "合憲",
+    "kana": "ごうけん",
+    "romaji": "gouken",
+    "meaning": "합헌"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "違憲審査",
+    "kana": "いけんしんさ",
+    "romaji": "ikenshinsa",
+    "meaning": "위헌심사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "違憲立法審査権",
+    "kana": "いけんりっぽうしんさけん",
+    "romaji": "ikenrippoushinsaken",
+    "meaning": "위헌법률심사권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "違憲判決",
+    "kana": "いけんはんけつ",
+    "romaji": "ikenhanketsu",
+    "meaning": "위헌판결"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "判例",
+    "kana": "はんれい",
+    "romaji": "hanrei",
+    "meaning": "판례"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "訴訟",
+    "kana": "そしょう",
+    "romaji": "soshou",
+    "meaning": "소송"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "民事訴訟",
+    "kana": "みんじそしょう",
+    "romaji": "minjisoshou",
+    "meaning": "민사소송"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "刑事訴訟",
+    "kana": "けいじそしょう",
+    "romaji": "keijisoshou",
+    "meaning": "형사소송"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "行政訴訟",
+    "kana": "ぎょうせいそしょう",
+    "romaji": "gyouseisoshou",
+    "meaning": "행정소송"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "原告",
+    "kana": "げんこく",
+    "romaji": "genkoku",
+    "meaning": "원고"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "被告",
+    "kana": "ひこく",
+    "romaji": "hikoku",
+    "meaning": "피고"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "検察",
+    "kana": "けんさつ",
+    "romaji": "kensatsu",
+    "meaning": "검찰"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "弁護士",
+    "kana": "べんごし",
+    "romaji": "bengoshi",
+    "meaning": "변호사"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "裁判員制度",
+    "kana": "さいばんいんせいど",
+    "romaji": "saiban'inseido",
+    "meaning": "재판원제도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "死刑",
+    "kana": "しけい",
+    "romaji": "shikei",
+    "meaning": "사형"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "懲役",
+    "kana": "ちょうえき",
+    "romaji": "choueki",
+    "meaning": "징역"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "罰金",
+    "kana": "ばっきん",
+    "romaji": "bakkin",
+    "meaning": "벌금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "無罪",
+    "kana": "むざい",
+    "romaji": "muzai",
+    "meaning": "무죄"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "有罪",
+    "kana": "ゆうざい",
+    "romaji": "yuuzai",
+    "meaning": "유죄"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "推定無罪",
+    "kana": "すいていむざい",
+    "romaji": "suiteimuzai",
+    "meaning": "추정무죄"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "デュープロセス",
+    "kana": "デュープロセス",
+    "romaji": "deyu-purosesu",
+    "meaning": "적법절차"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人身の自由",
+    "kana": "じんしんのじゆう",
+    "romaji": "jinshinn'ojiyuu",
+    "meaning": "신체의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "思想・良心の自由",
+    "kana": "しそうりょうしんのじゆう",
+    "romaji": "shisouryoushinn'ojiyuu",
+    "meaning": "사상·양심의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "信教の自由",
+    "kana": "しんきょうのじゆう",
+    "romaji": "shinkyoun'ojiyuu",
+    "meaning": "종교의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "学問の自由",
+    "kana": "がくもんのじゆう",
+    "romaji": "gakumonn'ojiyuu",
+    "meaning": "학문의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "集会・結社の自由",
+    "kana": "しゅうかいけっしゃのじゆう",
+    "romaji": "shuukaikesshan'ojiyuu",
+    "meaning": "집회·결사의 자유"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "生存権",
+    "kana": "せいぞんけん",
+    "romaji": "seizonken",
+    "meaning": "생존권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "教育を受ける権利",
+    "kana": "きょういくをうけるけんり",
+    "romaji": "kyouikuoukerukenri",
+    "meaning": "교육을 받을 권리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "勤労の権利",
+    "kana": "きんろうのけんり",
+    "romaji": "kinroun'okenri",
+    "meaning": "근로의 권리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "労働基本権",
+    "kana": "ろうどうきほんけん",
+    "romaji": "roudoukihonken",
+    "meaning": "노동기본권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "団結権",
+    "kana": "だんけつけん",
+    "romaji": "danketsuken",
+    "meaning": "단결권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "団体交渉権",
+    "kana": "だんたいこうしょうけん",
+    "romaji": "dantaikoushouken",
+    "meaning": "단체교섭권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "争議権",
+    "kana": "そうぎけん",
+    "romaji": "sougiken",
+    "meaning": "쟁의권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "参政権の拡大",
+    "kana": "さんせいけんのかくだい",
+    "romaji": "sanseikenn'okakudai",
+    "meaning": "참정권의 확대"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "普通選挙",
+    "kana": "ふつうせんきょ",
+    "romaji": "futsuusenkyo",
+    "meaning": "보통선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "平等選挙",
+    "kana": "びょうどうせんきょ",
+    "romaji": "byoudousenkyo",
+    "meaning": "평등선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "秘密選挙",
+    "kana": "ひみつせんきょ",
+    "romaji": "himitsusenkyo",
+    "meaning": "비밀선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "直接選挙",
+    "kana": "ちょくせつせんきょ",
+    "romaji": "chokusetsusenkyo",
+    "meaning": "직접선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "小選挙区制",
+    "kana": "しょうせんきょくせい",
+    "romaji": "shousenkyokusei",
+    "meaning": "소선거구제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "比例代表制",
+    "kana": "ひれいだいひょうせい",
+    "romaji": "hireidaihyousei",
+    "meaning": "비례대표제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "並立制",
+    "kana": "へいりつせい",
+    "romaji": "heiritsusei",
+    "meaning": "병립제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "政権交代",
+    "kana": "せいけんこうたい",
+    "romaji": "seikenkoutai",
+    "meaning": "정권교체"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "連立政権",
+    "kana": "れんりつせいけん",
+    "romaji": "renritsuseiken",
+    "meaning": "연립정권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "内閣不信任決議",
+    "kana": "ないかくふしんにんけつぎ",
+    "romaji": "n'aikakufushinn'inketsugi",
+    "meaning": "내각불신임결의"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "衆議院の解散",
+    "kana": "しゅうぎいんのかいさん",
+    "romaji": "shuugiinn'okaisan",
+    "meaning": "중의원 해산"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "総選挙",
+    "kana": "そうせんきょ",
+    "romaji": "sousenkyo",
+    "meaning": "총선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "補欠選挙",
+    "kana": "ほけつせんきょ",
+    "romaji": "hoketsusenkyo",
+    "meaning": "보궐선거"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "住民投票",
+    "kana": "じゅうみんとうひょう",
+    "romaji": "juumintouhyou",
+    "meaning": "주민투표"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "直接請求",
+    "kana": "ちょくせつせいきゅう",
+    "romaji": "chokusetsuseikyuu",
+    "meaning": "직접청구"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "オンブズマン",
+    "kana": "オンブズマン",
+    "romaji": "onbuzuman",
+    "meaning": "옴부즈만"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "情報公開",
+    "kana": "じょうほうこうかい",
+    "romaji": "jouhoukoukai",
+    "meaning": "정보공개"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "行政手続",
+    "kana": "ぎょうせいてつづき",
+    "romaji": "gyouseitetsuzuki",
+    "meaning": "행정절차"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "行政指導",
+    "kana": "ぎょうせいしどう",
+    "romaji": "gyouseishidou",
+    "meaning": "행정지도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "規制",
+    "kana": "きせい",
+    "romaji": "kisei",
+    "meaning": "규제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "許認可",
+    "kana": "きょにんか",
+    "romaji": "kyon'inka",
+    "meaning": "인허가"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "マクロ経済",
+    "kana": "マクロけいざい",
+    "romaji": "makurokeizai",
+    "meaning": "거시경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ミクロ経済",
+    "kana": "ミクロけいざい",
+    "romaji": "mikurokeizai",
+    "meaning": "미시경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "有効需要",
+    "kana": "ゆうこうじゅよう",
+    "romaji": "yuukoujuyou",
+    "meaning": "유효수요"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "乗数効果",
+    "kana": "じょうすうこうか",
+    "romaji": "jousuukouka",
+    "meaning": "승수효과"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "財政政策",
+    "kana": "ざいせいせいさく",
+    "romaji": "zaiseiseisaku",
+    "meaning": "재정정책"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "金融政策",
+    "kana": "きんゆうせいさく",
+    "romaji": "kin'yuuseisaku",
+    "meaning": "금융정책"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "公開市場操作",
+    "kana": "こうかいしじょうそうさ",
+    "romaji": "koukaishijousousa",
+    "meaning": "공개시장조작"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "預金準備率",
+    "kana": "よきんじゅんびりつ",
+    "romaji": "yokinjunbiritsu",
+    "meaning": "지급준비율"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "公定歩合",
+    "kana": "こうていぶあい",
+    "romaji": "kouteibuai",
+    "meaning": "공정할인율"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "量的緩和",
+    "kana": "りょうてきかんわ",
+    "romaji": "ryoutekikanwa",
+    "meaning": "양적완화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "マイナス金利",
+    "kana": "マイナスきんり",
+    "romaji": "main'asukinri",
+    "meaning": "마이너스금리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "スタグフレーション",
+    "kana": "スタグフレーション",
+    "romaji": "sutagufure-shon",
+    "meaning": "스태그플레이션"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ハイパーインフレーション",
+    "kana": "ハイパーインフレーション",
+    "romaji": "haipa-infure-shon",
+    "meaning": "하이퍼인플레이션"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "デフレスパイラル",
+    "kana": "デフレスパイラル",
+    "romaji": "defuresupairaru",
+    "meaning": "디플레이션 스파이럴"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "実質賃金",
+    "kana": "じっしっちんぎん",
+    "romaji": "jisshicchingin",
+    "meaning": "실질임금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "名目賃金",
+    "kana": "めいもくちんぎん",
+    "romaji": "meimokuchingin",
+    "meaning": "명목임금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "購買力",
+    "kana": "こうばいりょく",
+    "romaji": "koubairyoku",
+    "meaning": "구매력"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "可処分所得",
+    "kana": "かしょぶんしょとく",
+    "romaji": "kashobunshotoku",
+    "meaning": "가처분소득"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "貯蓄",
+    "kana": "ちょちく",
+    "romaji": "chochiku",
+    "meaning": "저축"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "投資",
+    "kana": "とうし",
+    "romaji": "toushi",
+    "meaning": "투자"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "消費",
+    "kana": "しょうひ",
+    "romaji": "shouhi",
+    "meaning": "소비"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "貯蓄率",
+    "kana": "ちょちくりつ",
+    "romaji": "chochikuritsu",
+    "meaning": "저축률"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "投資率",
+    "kana": "とうしりつ",
+    "romaji": "toushiritsu",
+    "meaning": "투자율"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "経常収支",
+    "kana": "けいじょうしゅうし",
+    "romaji": "keijoushuushi",
+    "meaning": "경상수지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "貿易収支",
+    "kana": "ぼうえきしゅうし",
+    "romaji": "bouekishuushi",
+    "meaning": "무역수지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "資本収支",
+    "kana": "しほんしゅうし",
+    "romaji": "shihonshuushi",
+    "meaning": "자본수지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "国際収支",
+    "kana": "こくさいしゅうし",
+    "romaji": "kokusaishuushi",
+    "meaning": "국제수지"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "直接投資",
+    "kana": "ちょくせつとうし",
+    "romaji": "chokusetsutoushi",
+    "meaning": "직접투자"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "間接投資",
+    "kana": "かんせつとうし",
+    "romaji": "kansetsutoushi",
+    "meaning": "간접투자"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "為替介入",
+    "kana": "かわせかいにゅう",
+    "romaji": "kawasekain'yuu",
+    "meaning": "환율개입"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "変動為替相場",
+    "kana": "へんどうかわせそうば",
+    "romaji": "hendoukawasesouba",
+    "meaning": "변동환율제도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "固定為替相場",
+    "kana": "こていかわせそうば",
+    "romaji": "koteikawasesouba",
+    "meaning": "고정환율제도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ブレトン・ウッズ体制",
+    "kana": "ブレトンウッズたいせい",
+    "romaji": "bureton'uzzutaisei",
+    "meaning": "브레튼우즈 체제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "金本位制",
+    "kana": "きんほんいせい",
+    "romaji": "kinhon'isei",
+    "meaning": "금본위제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "変動相場制",
+    "kana": "へんどうそうばせい",
+    "romaji": "hendousoubasei",
+    "meaning": "변동환율제도"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "地域紛争",
+    "kana": "ちいきふんそう",
+    "romaji": "chiikifunsou",
+    "meaning": "지역분쟁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "民族問題",
+    "kana": "みんぞくもんだい",
+    "romaji": "minzokumondai",
+    "meaning": "민족문제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "宗教対立",
+    "kana": "しゅうきょうたいりつ",
+    "romaji": "shuukyoutairitsu",
+    "meaning": "종교대립"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "テロリズム",
+    "kana": "テロリズム",
+    "romaji": "terorizumu",
+    "meaning": "테러리즘"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "大量破壊兵器",
+    "kana": "たいりょうはかいへいき",
+    "romaji": "tairyouhakaiheiki",
+    "meaning": "대량살상무기"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "WMD",
+    "kana": "ダブリューエムディー",
+    "romaji": "daburyu-emudei-",
+    "meaning": "WMD"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "核不拡散",
+    "kana": "かくふかくさん",
+    "romaji": "kakufukakusan",
+    "meaning": "핵비확산"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "NPT",
+    "kana": "エヌピーティー",
+    "romaji": "en'upi-tei-",
+    "meaning": "NPT"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "核実験",
+    "kana": "かくじっけん",
+    "romaji": "kakujikken",
+    "meaning": "핵실험"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "包括的核実験禁止条約",
+    "kana": "ほうかつてきかくじっけんきんしじょうやく",
+    "romaji": "houkatsutekikakujikkenkinshijouyaku",
+    "meaning": "포괄적핵실험금지조약"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "気候変動",
+    "kana": "きこうへんどう",
+    "romaji": "kikouhendou",
+    "meaning": "기후변화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "パリ協定",
+    "kana": "パリきょうてい",
+    "romaji": "parikyoutei",
+    "meaning": "파리협정"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "京都議定書",
+    "kana": "きょうとぎていしょ",
+    "romaji": "kyoutogiteisho",
+    "meaning": "교토의정서"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "COP",
+    "kana": "コップ",
+    "romaji": "koppu",
+    "meaning": "COP"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "カーボンニュートラル",
+    "kana": "カーボンニュートラル",
+    "romaji": "ka-bonn'yu-toraru",
+    "meaning": "탄소중립"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "脱炭素",
+    "kana": "だつたんそ",
+    "romaji": "datsutanso",
+    "meaning": "탈탄소"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "エネルギー転換",
+    "kana": "エネルギーてんかん",
+    "romaji": "en'erugi-tenkan",
+    "meaning": "에너지전환"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "スマートグリッド",
+    "kana": "スマートグリッド",
+    "romaji": "suma-toguriddo",
+    "meaning": "스마트그리드"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "シェアリングエコノミー",
+    "kana": "シェアリングエコノミー",
+    "romaji": "shiearinguekon'omi-",
+    "meaning": "공유경제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "デジタル化",
+    "kana": "デジタルか",
+    "romaji": "dejitaruka",
+    "meaning": "디지털화"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "DX",
+    "kana": "ディーエックス",
+    "romaji": "dei-ekkusu",
+    "meaning": "DX"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "AI",
+    "kana": "エーアイ",
+    "romaji": "e-ai",
+    "meaning": "AI"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "人工知能",
+    "kana": "じんこうちのう",
+    "romaji": "jinkouchin'ou",
+    "meaning": "인공지능"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ビッグデータ",
+    "kana": "ビッグデータ",
+    "romaji": "biggude-ta",
+    "meaning": "빅데이터"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "サイバーセキュリティ",
+    "kana": "サイバーセキュリティ",
+    "romaji": "saiba-sekyuritei",
+    "meaning": "사이버보안"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "デジタルデバイド",
+    "kana": "デジタルデバイド",
+    "romaji": "dejitarudebaido",
+    "meaning": "디지털 격차"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "働き方改革",
+    "kana": "はたらきかたかいかく",
+    "romaji": "hatarakikatakaikaku",
+    "meaning": "일하는 방식 개혁"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ワークライフバランス",
+    "kana": "ワークライフバランス",
+    "romaji": "wa-kuraifubaransu",
+    "meaning": "워라밸"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "非正規雇用",
+    "kana": "ひせいきこよう",
+    "romaji": "hiseikikoyou",
+    "meaning": "비정규고용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "正規雇用",
+    "kana": "せいきこよう",
+    "romaji": "seikikoyou",
+    "meaning": "정규고용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "派遣労働",
+    "kana": "はけんろうどう",
+    "romaji": "hakenroudou",
+    "meaning": "파견노동"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "最低賃金",
+    "kana": "さいていちんぎん",
+    "romaji": "saiteichingin",
+    "meaning": "최저임금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "同一労働同一賃金",
+    "kana": "どういつろうどうどういつちんぎん",
+    "romaji": "douitsuroudoudouitsuchingin",
+    "meaning": "동일노동동일임금"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ジェンダーギャップ",
+    "kana": "ジェンダーギャップ",
+    "romaji": "jienda-gyappu",
+    "meaning": "젠더갭"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "クオータ制",
+    "kana": "クオータせい",
+    "romaji": "kuo-tasei",
+    "meaning": "할당제"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ポジティブアクション",
+    "kana": "ポジティブアクション",
+    "romaji": "pojiteibuakushon",
+    "meaning": "적극적 조치"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ダイバーシティ",
+    "kana": "ダイバーシティ",
+    "romaji": "daiba-shitei",
+    "meaning": "다양성"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "インクルージョン",
+    "kana": "インクルージョン",
+    "romaji": "inkuru-jon",
+    "meaning": "포용"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "LGBTQ",
+    "kana": "エルジービーティーキュー",
+    "romaji": "eruji-bi-tei-kyu-",
+    "meaning": "LGBTQ"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ヘイトスピーチ",
+    "kana": "ヘイトスピーチ",
+    "romaji": "heitosupi-chi",
+    "meaning": "혐오발언"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "ヘイトクライム",
+    "kana": "ヘイトクライム",
+    "romaji": "heitokuraimu",
+    "meaning": "혐오범죄"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "表現の自由と人権",
+    "kana": "ひょうげんのじゆうとじんけん",
+    "romaji": "hyougenn'ojiyuutojinken",
+    "meaning": "표현의 자유와 인권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "知る権利",
+    "kana": "しるけんり",
+    "romaji": "shirukenri",
+    "meaning": "알 권리"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "アクセス権",
+    "kana": "アクセスけん",
+    "romaji": "akusesuken",
+    "meaning": "접근권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "訂正権",
+    "kana": "ていせいけん",
+    "romaji": "teiseiken",
+    "meaning": "정정권"
+  },
+  {
+    "subject": "sogo",
+    "kanji": "忘れられる権利",
+    "kana": "わすれられるけんり",
+    "romaji": "wasurerarerukenri",
+    "meaning": "잊힐 권리"
+  }
+]
