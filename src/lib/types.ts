@@ -120,6 +120,45 @@ export type ExamRecord = {
   memo?: string;
 };
 
+/**
+ * 기출 회차 × 과목의 정답표.
+ * JASSO 정답 PDF가 스캔 이미지라 기계 추출이 불가능하므로 한 번만 직접 등록하면
+ * 이후 같은 회차를 풀 때마다 자동 채점된다. id = `${paperId}:${subjectCode}`
+ */
+export type AnswerKey = {
+  id: string;
+  paperId: string;
+  subjectCode: string;
+  /** index 0 = 1번 문항. "" = 미입력 */
+  answers: string[];
+  /** 문항별 단원 태그. 미지정은 "untagged" */
+  topics: string[];
+  updatedAt: string;
+};
+
+export type AttemptResult = {
+  q: number;
+  picked: string;
+  answer: string;
+  correct: boolean;
+  topicId: string;
+};
+
+/** 기출 1회분 응시 기록 */
+export type ExamAttempt = {
+  id: string;
+  paperId: string;
+  subjectCode: string;
+  date: string;
+  responses: string[];
+  correctCount: number;
+  totalCount: number;
+  /** 실제 소요 시간(분) */
+  minutes: number;
+  results: AttemptResult[];
+  memo?: string;
+};
+
 export type PlanTarget = {
   id: string;
   kind: "deck" | "subject";
@@ -178,6 +217,8 @@ export type AppData = {
   lastStudyDate: string | null;
   examProfile?: ExamProfile;
   examRecords: ExamRecord[];
+  answerKeys: AnswerKey[];
+  examAttempts: ExamAttempt[];
   planTargets: PlanTarget[];
   focusSessions: FocusSession[];
   writingEntries: WritingEntry[];
@@ -187,7 +228,7 @@ export type AppData = {
 
 export type SRSRating = 1 | 2 | 3; // 1=모름, 2=헷갈림, 3=기억함
 
-export const CURRENT_SCHEMA_VERSION = 9;
+export const CURRENT_SCHEMA_VERSION = 10;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   pomodoroWork: 25,

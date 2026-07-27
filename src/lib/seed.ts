@@ -256,6 +256,8 @@ export function getSeedData(): AppData {
     lastStudyDate: null,
     examProfile: DEFAULT_EXAM_PROFILE,
     examRecords: [],
+    answerKeys: [],
+    examAttempts: [],
     planTargets: [
       {
         id: "plan-japanese",

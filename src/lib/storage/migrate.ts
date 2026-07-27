@@ -57,6 +57,8 @@ function fillDefaults(raw: Loose, version: number): AppData {
     lastStudyDate: (raw.lastStudyDate as string | null) ?? null,
     examProfile: (raw.examProfile as AppData["examProfile"]) ?? DEFAULT_EXAM_PROFILE,
     examRecords: asArray(raw.examRecords),
+    answerKeys: asArray(raw.answerKeys),
+    examAttempts: asArray(raw.examAttempts),
     planTargets: asArray(raw.planTargets),
     focusSessions: asArray(raw.focusSessions),
     writingEntries: asArray(raw.writingEntries),
@@ -312,6 +314,19 @@ function migrateToV9(data: AppData): AppData {
   };
 }
 
+/**
+ * v10: 기출 응시 기록(examAttempts)과 정답표(answerKeys) 저장소를 추가한다.
+ * 기존 데이터는 건드리지 않고 빈 배열만 붙인다.
+ */
+function migrateToV10(data: AppData): AppData {
+  return {
+    ...data,
+    schemaVersion: 10,
+    answerKeys: data.answerKeys ?? [],
+    examAttempts: data.examAttempts ?? [],
+  };
+}
+
 const migrations: Record<number, (d: Loose) => Loose> = {
   0: (d) => fillDefaults(d, 1) as unknown as Loose,
   1: (d) => migrateToV2(d as unknown as AppData) as unknown as Loose,
@@ -322,6 +337,7 @@ const migrations: Record<number, (d: Loose) => Loose> = {
   6: (d) => migrateToV7(d as unknown as AppData) as unknown as Loose,
   7: (d) => migrateToV8(d as unknown as AppData) as unknown as Loose,
   8: (d) => migrateToV9(d as unknown as AppData) as unknown as Loose,
+  9: (d) => migrateToV10(d as unknown as AppData) as unknown as Loose,
 };
 
 export function migrate(raw: unknown): AppData {

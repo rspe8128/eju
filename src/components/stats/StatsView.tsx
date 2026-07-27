@@ -24,6 +24,7 @@ import { MASTERY_COLORS, MASTERY_LABELS, type MasteryLevel } from "@/lib/progres
 import { getSubjectColor } from "@/lib/types";
 import { getSubjectLabel } from "@/lib/eju";
 import { StudyHeatmap } from "@/components/study/StudyHeatmap";
+import { ExamWeaknessSection } from "./ExamWeaknessSection";
 
 const MASTERY_ORDER: MasteryLevel[] = ["new", "learning", "review", "mastered"];
 
@@ -57,6 +58,8 @@ export function StatsView() {
           어디서 새고 있는지 확인하고, 오늘 그것부터 잡자.
         </p>
       </header>
+
+      <ExamWeaknessSection />
 
       {/* 요약 카드 */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -2,8 +2,17 @@ export function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
-export function todayString(): string {
-  return new Date().toISOString().split("T")[0];
+/**
+ * 오늘 날짜를 YYYY-MM-DD로.
+ *
+ * toISOString()은 UTC 기준이라 한국(UTC+9)에서 새벽 0~9시에 쓰면 전날이 나온다.
+ * 새벽에 공부한 기록이 어제로 붙어 스트릭이 끊기므로 반드시 로컬 기준으로 계산한다.
+ */
+export function todayString(date = new Date()): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
 }
 
 export function getWeekStart(date = new Date()): string {

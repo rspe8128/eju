@@ -11,11 +11,13 @@ import {
 } from "react";
 import { loadData, saveData, resetData } from "@/lib/storage";
 import type {
+  AnswerKey,
   AppData,
   AppSettings,
   Card,
   Deck,
   DictationEntry,
+  ExamAttempt,
   ExamProfile,
   ExamRecord,
   FocusSession,
@@ -51,6 +53,10 @@ type StorageContextValue = {
   updateExamProfile: (profile: ExamProfile) => void;
   addExamRecord: (record: Omit<ExamRecord, "id">) => void;
   removeExamRecord: (id: string) => void;
+  saveAnswerKey: (key: AnswerKey) => void;
+  removeAnswerKey: (id: string) => void;
+  addExamAttempt: (attempt: Omit<ExamAttempt, "id">) => void;
+  removeExamAttempt: (id: string) => void;
   addPlanTarget: (target: Omit<PlanTarget, "id" | "totalUnits" | "completedUnits" | "dailyQuota">) => void;
   updatePlanTarget: (id: string, patch: Partial<PlanTarget>) => void;
   removePlanTarget: (id: string) => void;
@@ -387,6 +393,70 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     [persist]
   );
 
+  /** 같은 회차·과목의 정답표가 있으면 덮어쓴다. */
+  const saveAnswerKey = useCallback(
+    (key: AnswerKey) => {
+      persist((prev) => ({
+        ...prev,
+        answerKeys: [...prev.answerKeys.filter((k) => k.id !== key.id), key],
+      }));
+    },
+    [persist]
+  );
+
+  const removeAnswerKey = useCallback(
+    (id: string) => {
+      persist((prev) => ({
+        ...prev,
+        answerKeys: prev.answerKeys.filter((k) => k.id !== id),
+      }));
+    },
+    [persist]
+  );
+
+  /** 기출 응시 결과를 저장하고, 과목별 학습 로그에도 정오답을 반영한다. */
+  const addExamAttempt = useCallback(
+    (attempt: Omit<ExamAttempt, "id">) => {
+      persist((prev) => {
+        const next: AppData = {
+          ...prev,
+          examAttempts: [...prev.examAttempts, { ...attempt, id: generateId() }],
+        };
+        const today = todayString();
+        const logs = next.studyLogs.map((l) => ({ ...l }));
+        const wrong = attempt.totalCount - attempt.correctCount;
+        const existing = logs.find(
+          (l) => l.date === today && l.subjectId === attempt.subjectCode
+        );
+        if (existing) {
+          existing.count += attempt.totalCount;
+          existing.correct += attempt.correctCount;
+          existing.wrong += wrong;
+        } else {
+          logs.push({
+            date: today,
+            subjectId: attempt.subjectCode,
+            count: attempt.totalCount,
+            correct: attempt.correctCount,
+            wrong,
+          });
+        }
+        return { ...next, studyLogs: logs };
+      });
+    },
+    [persist]
+  );
+
+  const removeExamAttempt = useCallback(
+    (id: string) => {
+      persist((prev) => ({
+        ...prev,
+        examAttempts: prev.examAttempts.filter((a) => a.id !== id),
+      }));
+    },
+    [persist]
+  );
+
   const addPlanTarget = useCallback(
     (target: Omit<PlanTarget, "id" | "totalUnits" | "completedUnits" | "dailyQuota">) => {
       persist((prev) => {
@@ -576,6 +646,10 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       updateExamProfile,
       addExamRecord,
       removeExamRecord,
+      saveAnswerKey,
+      removeAnswerKey,
+      addExamAttempt,
+      removeExamAttempt,
       addPlanTarget,
       updatePlanTarget,
       removePlanTarget,
@@ -610,6 +684,10 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     updateExamProfile,
     addExamRecord,
     removeExamRecord,
+    saveAnswerKey,
+    removeAnswerKey,
+    addExamAttempt,
+    removeExamAttempt,
     addPlanTarget,
     updatePlanTarget,
     removePlanTarget,
