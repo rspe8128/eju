@@ -23,6 +23,7 @@ import {
 import { SUBJECTS, UNITS, ITEMS } from "../data/subjectContent";
 import { jlptBasicWords, type WordEntry } from "../data/japaneseWords";
 import { toeflWords } from "../data/toeflWords";
+import { mergeBuiltinAnswerKeys } from "../data/ejuAnswerKeys2018_1";
 
 type Loose = Record<string, unknown>;
 
@@ -327,6 +328,18 @@ function migrateToV10(data: AppData): AppData {
   };
 }
 
+/**
+ * v11: JASSO 2018년 1회 공식 정답표를 내장한다.
+ * 사용자가 이미 등록한 같은 id 정답표는 덮어쓰지 않는다.
+ */
+function migrateToV11(data: AppData): AppData {
+  return {
+    ...data,
+    schemaVersion: 11,
+    answerKeys: mergeBuiltinAnswerKeys(data.answerKeys ?? []),
+  };
+}
+
 const migrations: Record<number, (d: Loose) => Loose> = {
   0: (d) => fillDefaults(d, 1) as unknown as Loose,
   1: (d) => migrateToV2(d as unknown as AppData) as unknown as Loose,
@@ -338,6 +351,7 @@ const migrations: Record<number, (d: Loose) => Loose> = {
   7: (d) => migrateToV8(d as unknown as AppData) as unknown as Loose,
   8: (d) => migrateToV9(d as unknown as AppData) as unknown as Loose,
   9: (d) => migrateToV10(d as unknown as AppData) as unknown as Loose,
+  10: (d) => migrateToV11(d as unknown as AppData) as unknown as Loose,
 };
 
 export function migrate(raw: unknown): AppData {

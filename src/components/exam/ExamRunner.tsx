@@ -12,7 +12,7 @@ import {
   Send,
 } from "lucide-react";
 import { formatClock, getMockPlan, type MockPhase } from "@/lib/mockExam";
-import { defaultChoiceCount } from "@/lib/examTopics";
+import { defaultChoiceCount, MATH_SIGN } from "@/lib/examTopics";
 import { getSubjectLabel } from "@/lib/eju";
 import type { AnswerKey } from "@/lib/types";
 import type { PastPaper, PaperSubjectKey } from "@/lib/data/ejuPastPapers";
@@ -59,6 +59,7 @@ export function ExamRunner({
 }) {
   const { phases, total } = useMemo(() => phasesFor(subjectCode), [subjectCode]);
   const choices = defaultChoiceCount(subjectCode);
+  const isMath = subjectCode === "math1" || subjectCode === "math2";
 
   const questionCount = answerKey?.answers.length ?? 20;
   const [responses, setResponses] = useState<string[]>(() =>
@@ -237,6 +238,20 @@ export function ExamRunner({
                 <div key={i} className="flex items-center gap-2">
                   <span className="w-7 shrink-0 text-right text-xs text-zinc-400">{i + 1}</span>
                   <div className="flex flex-wrap gap-1">
+                    {isMath && (
+                      <button
+                        onClick={() => pick(i, MATH_SIGN)}
+                        className={cn(
+                          "h-7 min-w-7 rounded-full border px-1.5 text-xs font-medium transition-colors",
+                          responses[i] === MATH_SIGN
+                            ? "border-blue-600 bg-blue-600 text-white"
+                            : "border-zinc-300 text-zinc-500 hover:border-blue-400 dark:border-zinc-600"
+                        )}
+                        title="부호 −"
+                      >
+                        −
+                      </button>
+                    )}
                     {Array.from({ length: choices }, (_, c) => {
                       const value = String(choices === 10 ? c : c + 1);
                       const active = responses[i] === value;

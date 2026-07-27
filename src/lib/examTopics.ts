@@ -116,5 +116,11 @@ export function getTopicLabel(subjectCode: string, topicId: string): string {
 export function defaultChoiceCount(subjectCode: string): number {
   // 수학은 마크시트가 0~9 숫자칸 방식
   if (subjectCode === "math1" || subjectCode === "math2") return 10;
+  // 이과는 ①~⑥
+  if (["physics", "chemistry", "biology"].includes(subjectCode)) return 6;
   return 4;
 }
+
+/** 수학 마크시트 부호칸 값 */
+export const MATH_SIGN = "s";
+

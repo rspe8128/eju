@@ -34,6 +34,7 @@ yarn-error.log*
 # local SQLite progress database
 /data/*.db
 /data/*.db-*
+/data/answers/
 
 # typescript
 *.tsbuildinfo

@@ -167,7 +167,9 @@ export function ExamResult({
                   <span className="font-mono font-medium">{r.picked || "–"}</span>
                   <span className="mx-2 text-zinc-300">/</span>
                   <span className="text-zinc-400">정답</span>{" "}
-                  <span className="font-mono font-medium text-green-600">{r.answer}</span>
+                  <span className="font-mono font-medium text-green-600">
+                    {r.answer === "s" ? "−" : r.answer || "—"}
+                  </span>
                 </span>
                 <select
                   value={r.topicId}

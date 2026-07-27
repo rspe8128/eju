@@ -21,6 +21,7 @@ import { jlptGrammarPoints } from "./data/jlptGrammar";
 import { jlptGrammarN3Points } from "./data/jlptGrammarN3";
 import { ejuAcademicVocab } from "./data/ejuAcademicVocab";
 import { SUBJECTS, UNITS, ITEMS } from "./data/subjectContent";
+import { BUILTIN_ANSWER_KEYS } from "./data/ejuAnswerKeys2018_1";
 import type { WordEntry } from "./data/japaneseWords";
 
 function makeDeck(id: string, subject: string, title: string, type: Deck["type"]): Deck {
@@ -256,7 +257,7 @@ export function getSeedData(): AppData {
     lastStudyDate: null,
     examProfile: DEFAULT_EXAM_PROFILE,
     examRecords: [],
-    answerKeys: [],
+    answerKeys: BUILTIN_ANSWER_KEYS,
     examAttempts: [],
     planTargets: [
       {

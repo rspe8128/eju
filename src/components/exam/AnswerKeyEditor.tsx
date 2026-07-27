@@ -108,10 +108,10 @@ export function AnswerKeyEditor({
       </div>
 
       <div className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900 dark:bg-amber-900/20 dark:text-amber-200">
-        <p className="font-medium">JASSO 정답 PDF는 스캔 이미지라 자동으로 못 읽어온다.</p>
+        <p className="font-medium">JASSO 공식 정답 PDF에서 옮겨 적는 화면이다.</p>
         <p className="mt-1 text-xs leading-relaxed">
-          아래 버튼으로 공식 정답 PDF를 열어 한 번만 옮겨 적으면, 이 회차는 앞으로 자동 채점된다.
-          친구랑 나눠서 입력하면 금방 끝난다.
+          2018년 1회는 앱에 기본 정답표가 들어 있다. 일본어는 저작권상 일부 문항만 공개되어 빈칸은
+          채점에서 제외된다. 다른 회차는 아래 PDF를 보고 한 번만 입력하면 된다.
         </p>
         {answerPdf && (
           <a
