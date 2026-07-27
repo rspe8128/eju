@@ -20,8 +20,11 @@ export function speak(text: string, opts: { lang?: SpeechLang; rate?: number } =
   const lang = opts.lang ?? detectLang(text);
   const tag = LANG_TAG[lang];
 
+  // TOEFL은 약어라 TTS가 글자 단위로 잘못 읽는 경우가 있어 발음 표기로 치환한다.
+  const spoken = text.replace(/\bTOEFL\b/gi, "toe fell");
+
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
+  const utterance = new SpeechSynthesisUtterance(spoken);
   utterance.lang = tag;
   utterance.rate = opts.rate ?? 1;
 

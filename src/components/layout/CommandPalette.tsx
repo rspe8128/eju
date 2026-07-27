@@ -11,7 +11,7 @@ const staticLinks = [
   { label: "오늘의 학습", href: "/study/today" },
   { label: "일본어", href: "/study/japanese" },
   { label: "과목 용어", href: "/study/terms" },
-  { label: "토플", href: "/study/toefl" },
+  { label: "TOEFL", href: "/study/toefl" },
   { label: "모의고사 타이머", href: "/mock" },
   { label: "약점 분석", href: "/stats" },
   { label: "교과목", href: "/study/subjects" },

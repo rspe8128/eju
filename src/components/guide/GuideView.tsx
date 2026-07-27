@@ -502,7 +502,7 @@ export function GuideView() {
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <GuideLink href="/study/japanese" label="일본어 문법·어휘" desc="문법 50개 + EJU 독해 아카데믹 어휘 80개" />
           <GuideLink href="/study/terms" label="과목 일본어 용어" desc="수학·종합·이과 전문용어부터 외우기" />
-          <GuideLink href="/study/toefl" label="토플 단어" desc="영어 성적이 필요한 대학 지망생용" />
+          <GuideLink href="/study/toefl" label="TOEFL 단어" desc="영어 성적이 필요한 대학 지망생용" />
           <GuideLink href="/study/today" label="오늘의 학습" desc="복습 대상 + 신규 카드를 한 세션으로" />
           <GuideLink href="/mock" label="모의고사 타이머" desc="EJU 실전 시간표대로 연습" />
           <GuideLink href="/writing" label="기술(작문) 연습" desc="30분 타이머 + 400~500자 카운터" />

@@ -32,7 +32,7 @@ const shortcuts = [
   { href: "/study/terms", label: "과목 용어", desc: "수학·이과·종합", icon: BookMarked, subject: "sogo" },
   {
     href: "/study/toefl",
-    label: "토플",
+    label: "TOEFL",
     desc: "대학 영어 · EJU 과목 아님",
     icon: BookOpen,
     subject: "toefl",

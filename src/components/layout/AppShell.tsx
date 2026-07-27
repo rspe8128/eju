@@ -45,7 +45,7 @@ const navGroups: { title: string; items: NavItem[] }[] = [
     items: [
       { href: "/study/japanese", label: "일본어", icon: Languages },
       { href: "/study/terms", label: "과목 용어", icon: BookMarked },
-      { href: "/study/toefl", label: "토플", icon: BookOpen },
+      { href: "/study/toefl", label: "TOEFL", icon: BookOpen },
       { href: "/study/subjects", label: "교과목", icon: FlaskConical },
       { href: "/writing", label: "작문", icon: PenLine },
       { href: "/dictation", label: "딕테이션", icon: Headphones },

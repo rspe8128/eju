@@ -38,7 +38,7 @@ export function getActiveSubjectCodes(profile: ExamProfile): string[] {
 
 const EXTRA_LABELS: Record<string, string> = {
   japaneseWriting: "일본어 기술",
-  toefl: "토플",
+  toefl: "TOEFL",
   math: "수학",
   subjects: "교과목",
 };

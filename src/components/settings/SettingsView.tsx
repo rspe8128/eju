@@ -394,7 +394,7 @@ export function SettingsView() {
             className="rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
           >
             <option value="japanese">일본어</option>
-            <option value="toefl">토플</option>
+            <option value="toefl">TOEFL</option>
           </select>
           <select
             value={deckType}
