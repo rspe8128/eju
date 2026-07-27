@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createProgress, getProgress, saveProgress } from "@/lib/db";
+import { createProgress, getDbBackend, getProgress, saveProgress } from "@/lib/db";
 
 export const runtime = "nodejs";
 
@@ -10,20 +10,22 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "sync key가 필요합니다." }, { status: 400 });
   }
 
-  const row = await getProgress(key);
-  if (!row) {
-    return NextResponse.json({ error: "해당 키의 진행도가 없습니다." }, { status: 404 });
-  }
-
   try {
+    const row = await getProgress(key);
+    if (!row) {
+      return NextResponse.json({ error: "해당 키의 진행도가 없습니다." }, { status: 404 });
+    }
+
     const data = JSON.parse(row.data);
     return NextResponse.json({
       syncKey: row.sync_key,
       updatedAt: row.updated_at,
+      backend: getDbBackend(),
       data,
     });
-  } catch {
-    return NextResponse.json({ error: "저장된 데이터가 손상되었습니다." }, { status: 500 });
+  } catch (e) {
+    const message = e instanceof Error ? e.message : "조회 실패";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -49,15 +51,19 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "데이터가 너무 큽니다." }, { status: 413 });
   }
 
-  const key = body.key?.trim();
-  if (key) {
-    const result = await saveProgress(key, payload);
-    return NextResponse.json({ syncKey: result.syncKey, updatedAt: result.updatedAt });
-  }
+  try {
+    const key = body.key?.trim();
+    const result = key
+      ? await saveProgress(key, payload)
+      : await createProgress(payload);
 
-  const created = await createProgress(payload);
-  return NextResponse.json({
-    syncKey: created.syncKey,
-    updatedAt: created.updatedAt,
-  });
+    return NextResponse.json({
+      syncKey: result.syncKey,
+      updatedAt: result.updatedAt,
+      backend: getDbBackend(),
+    });
+  } catch (e) {
+    const message = e instanceof Error ? e.message : "저장 실패";
+    return NextResponse.json({ error: message }, { status: 500 });
+  }
 }
