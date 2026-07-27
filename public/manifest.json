@@ -1,0 +1,18 @@
+{
+  "name": "EJU Study",
+  "short_name": "EJU Study",
+  "description": "일본 유학시험(EJU) 준비용 개인 학습 앱",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#ef4444",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
