@@ -7,6 +7,8 @@ export type ProgressRow = {
   updated_at: string;
 };
 
+export type DbBackend = "turso" | "gist" | "local";
+
 const globalForDb = globalThis as unknown as {
   __ejuLibsql?: Client;
   __ejuSqlJs?: LocalDbState;
@@ -16,12 +18,20 @@ type LocalDbState = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   db: any;
   path: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  SQL: any;
 };
 
 function hasTurso() {
   return Boolean(process.env.TURSO_DATABASE_URL && process.env.TURSO_AUTH_TOKEN);
+}
+
+function hasGist() {
+  return Boolean(process.env.EJU_PROGRESS_GIST_ID && process.env.EJU_GITHUB_TOKEN);
+}
+
+export function getDbBackend(): DbBackend {
+  if (hasTurso()) return "turso";
+  if (hasGist()) return "gist";
+  return "local";
 }
 
 async function getTursoClient(): Promise<Client> {
@@ -43,6 +53,75 @@ async function getTursoClient(): Promise<Client> {
 
   globalForDb.__ejuLibsql = client;
   return client;
+}
+
+function gistHeaders() {
+  return {
+    Accept: "application/vnd.github+json",
+    Authorization: `Bearer ${process.env.EJU_GITHUB_TOKEN}`,
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "eju-study-app",
+  };
+}
+
+function gistFileName(syncKey: string) {
+  const safe = syncKey.replace(/[^a-zA-Z0-9_-]/g, "_");
+  return `${safe}.json`;
+}
+
+async function getProgressFromGist(syncKey: string): Promise<ProgressRow | null> {
+  const id = process.env.EJU_PROGRESS_GIST_ID!;
+  const res = await fetch(`https://api.github.com/gists/${id}`, {
+    headers: gistHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error(`GitHub Gist 조회 실패 (${res.status})`);
+  }
+  const gist = (await res.json()) as {
+    files: Record<string, { content?: string; truncated?: boolean; raw_url?: string }>;
+  };
+  const file = gist.files[gistFileName(syncKey)];
+  if (!file) return null;
+
+  let content = file.content ?? "";
+  if (file.truncated && file.raw_url) {
+    const raw = await fetch(file.raw_url, { headers: gistHeaders(), cache: "no-store" });
+    content = await raw.text();
+  }
+  if (!content) return null;
+
+  const parsed = JSON.parse(content) as { data: string; updated_at: string };
+  return {
+    sync_key: syncKey,
+    data: parsed.data,
+    updated_at: parsed.updated_at,
+  };
+}
+
+async function saveProgressToGist(
+  syncKey: string,
+  dataJson: string,
+  updatedAt: string
+) {
+  const id = process.env.EJU_PROGRESS_GIST_ID!;
+  const body = {
+    files: {
+      [gistFileName(syncKey)]: {
+        content: JSON.stringify({ data: dataJson, updated_at: updatedAt }),
+      },
+    },
+  };
+  const res = await fetch(`https://api.github.com/gists/${id}`, {
+    method: "PATCH",
+    headers: { ...gistHeaders(), "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GitHub Gist 저장 실패 (${res.status}): ${text.slice(0, 200)}`);
+  }
+  return { syncKey, updatedAt };
 }
 
 async function getLocalDb(): Promise<LocalDbState> {
@@ -79,28 +158,21 @@ async function getLocalDb(): Promise<LocalDbState> {
     );
   `);
 
-  const state: LocalDbState = { db, path: dbPath, SQL };
+  const state: LocalDbState = { db, path: dbPath };
   persistLocal(state);
   globalForDb.__ejuSqlJs = state;
   return state;
 }
 
-function persistLocal(state: LocalDbState) {
-  // dynamic require-style keep for node fs only
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const fs = require("fs") as typeof import("fs");
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const path = require("path") as typeof import("path");
+async function persistLocal(state: LocalDbState) {
+  const fs = await import("fs");
+  const path = await import("path");
   fs.mkdirSync(path.dirname(state.path), { recursive: true });
   fs.writeFileSync(state.path, Buffer.from(state.db.export()));
 }
 
 export function generateSyncKey() {
   return `eju-${randomBytes(8).toString("hex")}`;
-}
-
-export function getDbBackend(): "turso" | "local" {
-  return hasTurso() ? "turso" : "local";
 }
 
 export async function getProgress(syncKey: string): Promise<ProgressRow | null> {
@@ -117,6 +189,10 @@ export async function getProgress(syncKey: string): Promise<ProgressRow | null> 
       data: String(row.data),
       updated_at: String(row.updated_at),
     };
+  }
+
+  if (hasGist()) {
+    return getProgressFromGist(syncKey);
   }
 
   const { db } = await getLocalDb();
@@ -151,6 +227,10 @@ export async function saveProgress(
     return { syncKey, updatedAt };
   }
 
+  if (hasGist()) {
+    return saveProgressToGist(syncKey, dataJson, updatedAt);
+  }
+
   const state = await getLocalDb();
   state.db.run(
     `INSERT INTO progress (sync_key, data, updated_at)
@@ -160,7 +240,7 @@ export async function saveProgress(
        updated_at = excluded.updated_at`,
     [syncKey, dataJson, updatedAt]
   );
-  persistLocal(state);
+  await persistLocal(state);
   return { syncKey, updatedAt };
 }
 

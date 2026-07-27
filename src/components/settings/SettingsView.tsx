@@ -428,10 +428,10 @@ export function SettingsView() {
       </section>
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
-        <h2 className="mb-2 text-lg font-semibold">진행도 클라우드 저장 (SQLite)</h2>
+        <h2 className="mb-2 text-lg font-semibold">진행도 클라우드 저장</h2>
         <p className="mb-4 text-sm text-zinc-500">
-          학습 진행도를 서버 SQLite DB(`data/eju.db`, sql.js)에 저장합니다. 동기화 키를 다른 기기에
-          입력하면 같은 진행도를 이어갈 수 있습니다.
+          학습 진행도를 서버 DB에 저장합니다 (배포 환경: GitHub Gist / Turso, 로컬: SQLite).
+          동기화 키를 다른 기기에 입력하면 같은 진행도를 이어갈 수 있습니다.
         </p>
         <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
           <span
