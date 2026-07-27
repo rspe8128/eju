@@ -161,9 +161,6 @@ export type AppSettings = {
   showReading: boolean;
   excludeWeekends: boolean;
   planBufferDays: number;
-  /** SQLite 서버에 진행도를 동기화할 때 쓰는 키 (기기 간 공유용) */
-  syncKey: string | null;
-  cloudSync: boolean;
 };
 
 export type AppData = {
@@ -190,7 +187,7 @@ export type AppData = {
 
 export type SRSRating = 1 | 2 | 3; // 1=모름, 2=헷갈림, 3=기억함
 
-export const CURRENT_SCHEMA_VERSION = 7;
+export const CURRENT_SCHEMA_VERSION = 8;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   pomodoroWork: 25,
@@ -198,8 +195,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   showReading: true,
   excludeWeekends: true,
   planBufferDays: 7,
-  syncKey: null,
-  cloudSync: false,
 };
 
 export const DEFAULT_EXAM_PROFILE: ExamProfile = {

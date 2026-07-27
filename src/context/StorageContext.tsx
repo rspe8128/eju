@@ -6,13 +6,10 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useRef,
   useState,
   type ReactNode,
 } from "react";
-import { loadData, saveData, resetData, exportData, importData } from "@/lib/storage";
-import { fetchProgress, pushProgress } from "@/lib/sync";
-import { migrate } from "@/lib/storage/migrate";
+import { loadData, saveData, resetData } from "@/lib/storage";
 import type {
   AppData,
   AppSettings,
@@ -39,8 +36,6 @@ import { generateId, getWeekStart, todayString } from "@/lib/utils";
 type StorageContextValue = {
   data: AppData;
   ready: boolean;
-  syncStatus: "idle" | "syncing" | "ok" | "error";
-  syncMessage: string;
   updateCard: (cardId: string, rating: SRSRating) => void;
   addMistake: (sourceType: "card" | "problem", sourceId: string) => void;
   resolveMistake: (sourceType: "card" | "problem", sourceId: string) => void;
@@ -68,14 +63,7 @@ type StorageContextValue = {
   addCards: (cards: Omit<Card, "id" | "srs">[]) => void;
   updateCardContent: (cardId: string, patch: Partial<Card>) => void;
   deleteCard: (cardId: string) => void;
-  exportJson: () => string;
-  importJson: (json: string) => void;
   resetAll: () => void;
-  enableCloudSync: () => Promise<string>;
-  connectCloudSync: (syncKey: string) => Promise<void>;
-  pushCloudNow: () => Promise<void>;
-  pullCloudNow: () => Promise<void>;
-  disableCloudSync: () => void;
   getDecksBySubject: (subject: string) => Deck[];
   getCardsByDeck: (deckId: string) => Card[];
 };
@@ -135,74 +123,20 @@ function recordStudy(
 export function StorageProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<AppData | null>(null);
   const [ready, setReady] = useState(false);
-  const [syncStatus, setSyncStatus] = useState<"idle" | "syncing" | "ok" | "error">("idle");
-  const [syncMessage, setSyncMessage] = useState("");
-  const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const dataRef = useRef<AppData | null>(null);
 
   useEffect(() => {
-    dataRef.current = data;
-  }, [data]);
-
-  useEffect(() => {
-    const local = loadData();
-    setData(local);
+    setData(loadData());
     setReady(true);
-
-    // 클라우드 동기화가 켜져 있으면 서버 데이터와 병합(더 최신 쪽 우선은 서버로 덮어씀 — 개인용 단순 동기화)
-    if (local.settings.cloudSync && local.settings.syncKey) {
-      void (async () => {
-        try {
-          setSyncStatus("syncing");
-          const remote = await fetchProgress(local.settings.syncKey!);
-          if (remote?.data) {
-            const migrated = migrate(remote.data);
-            saveData(migrated);
-            setData(migrated);
-            setSyncMessage(`서버에서 불러옴 · ${new Date(remote.updatedAt).toLocaleString()}`);
-          } else {
-            setSyncMessage("서버에 아직 데이터 없음 — 로컬을 업로드합니다.");
-            await pushProgress(local, local.settings.syncKey);
-          }
-          setSyncStatus("ok");
-        } catch (e) {
-          setSyncStatus("error");
-          setSyncMessage(e instanceof Error ? e.message : "동기화 실패");
-        }
-      })();
-    }
   }, []);
 
-  const scheduleCloudPush = useCallback((next: AppData) => {
-    if (!next.settings.cloudSync || !next.settings.syncKey) return;
-    if (syncTimer.current) clearTimeout(syncTimer.current);
-    syncTimer.current = setTimeout(() => {
-      void (async () => {
-        try {
-          setSyncStatus("syncing");
-          const result = await pushProgress(next, next.settings.syncKey);
-          setSyncStatus("ok");
-          setSyncMessage(`자동 저장 · ${new Date(result.updatedAt).toLocaleString()}`);
-        } catch (e) {
-          setSyncStatus("error");
-          setSyncMessage(e instanceof Error ? e.message : "자동 저장 실패");
-        }
-      })();
-    }, 1200);
+  const persist = useCallback((updater: (prev: AppData) => AppData) => {
+    setData((prev) => {
+      if (!prev) return prev;
+      const next = updater(prev);
+      saveData(next);
+      return next;
+    });
   }, []);
-
-  const persist = useCallback(
-    (updater: (prev: AppData) => AppData) => {
-      setData((prev) => {
-        if (!prev) return prev;
-        const next = updater(prev);
-        saveData(next);
-        scheduleCloudPush(next);
-        return next;
-      });
-    },
-    [scheduleCloudPush]
-  );
 
   const updateCard = useCallback(
     (cardId: string, rating: SRSRating) => {
@@ -607,127 +541,10 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     [persist]
   );
 
-  const exportJson = useCallback(() => {
-    if (!data) return "{}";
-    return exportData(data);
-  }, [data]);
-
-  const importJson = useCallback((json: string) => {
-    const imported = importData(json);
-    setData(imported);
-  }, []);
-
   const resetAll = useCallback(() => {
     resetData();
     setData(loadData());
   }, []);
-
-  const enableCloudSync = useCallback(async () => {
-    const current = dataRef.current;
-    if (!current) throw new Error("데이터가 아직 준비되지 않았습니다.");
-    setSyncStatus("syncing");
-    try {
-      const result = await pushProgress(current, current.settings.syncKey);
-      const next: AppData = {
-        ...current,
-        settings: {
-          ...current.settings,
-          syncKey: result.syncKey,
-          cloudSync: true,
-        },
-      };
-      saveData(next);
-      setData(next);
-      setSyncStatus("ok");
-      setSyncMessage(`동기화 시작 · 키 ${result.syncKey}`);
-      return result.syncKey;
-    } catch (e) {
-      setSyncStatus("error");
-      const msg = e instanceof Error ? e.message : "동기화 실패";
-      setSyncMessage(msg);
-      throw e;
-    }
-  }, []);
-
-  const connectCloudSync = useCallback(async (syncKey: string) => {
-    const key = syncKey.trim();
-    if (!key) throw new Error("동기화 키를 입력하세요.");
-    setSyncStatus("syncing");
-    try {
-      const remote = await fetchProgress(key);
-      if (!remote?.data) throw new Error("해당 키의 진행도가 없습니다.");
-      const migrated = migrate(remote.data);
-      const next: AppData = {
-        ...migrated,
-        settings: {
-          ...migrated.settings,
-          syncKey: key,
-          cloudSync: true,
-        },
-      };
-      saveData(next);
-      setData(next);
-      setSyncStatus("ok");
-      setSyncMessage(`다른 기기 데이터 연결 · ${new Date(remote.updatedAt).toLocaleString()}`);
-    } catch (e) {
-      setSyncStatus("error");
-      const msg = e instanceof Error ? e.message : "연결 실패";
-      setSyncMessage(msg);
-      throw e;
-    }
-  }, []);
-
-  const pushCloudNow = useCallback(async () => {
-    const current = dataRef.current;
-    if (!current?.settings.syncKey) throw new Error("먼저 클라우드 동기화를 켜세요.");
-    setSyncStatus("syncing");
-    try {
-      const result = await pushProgress(current, current.settings.syncKey);
-      setSyncStatus("ok");
-      setSyncMessage(`수동 저장 · ${new Date(result.updatedAt).toLocaleString()}`);
-    } catch (e) {
-      setSyncStatus("error");
-      const msg = e instanceof Error ? e.message : "저장 실패";
-      setSyncMessage(msg);
-      throw e;
-    }
-  }, []);
-
-  const pullCloudNow = useCallback(async () => {
-    const current = dataRef.current;
-    if (!current?.settings.syncKey) throw new Error("먼저 클라우드 동기화를 켜세요.");
-    setSyncStatus("syncing");
-    try {
-      const remote = await fetchProgress(current.settings.syncKey);
-      if (!remote?.data) throw new Error("서버에 데이터가 없습니다.");
-      const migrated = migrate({
-        ...remote.data,
-        settings: {
-          ...remote.data.settings,
-          syncKey: current.settings.syncKey,
-          cloudSync: true,
-        },
-      });
-      saveData(migrated);
-      setData(migrated);
-      setSyncStatus("ok");
-      setSyncMessage(`불러오기 완료 · ${new Date(remote.updatedAt).toLocaleString()}`);
-    } catch (e) {
-      setSyncStatus("error");
-      const msg = e instanceof Error ? e.message : "불러오기 실패";
-      setSyncMessage(msg);
-      throw e;
-    }
-  }, []);
-
-  const disableCloudSync = useCallback(() => {
-    persist((prev) => ({
-      ...prev,
-      settings: { ...prev.settings, cloudSync: false },
-    }));
-    setSyncStatus("idle");
-    setSyncMessage("클라우드 동기화를 껐습니다. (로컬 저장은 유지)");
-  }, [persist]);
 
   const getDecksBySubject = useCallback(
     (subject: string) => data?.decks.filter((d) => d.subject === subject) ?? [],
@@ -744,8 +561,6 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     return {
       data,
       ready,
-      syncStatus,
-      syncMessage,
       updateCard,
       addMistake,
       resolveMistake,
@@ -773,22 +588,13 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       addCards,
       updateCardContent,
       deleteCard,
-      exportJson,
-      importJson,
       resetAll,
-      enableCloudSync,
-      connectCloudSync,
-      pushCloudNow,
-      pullCloudNow,
-      disableCloudSync,
       getDecksBySubject,
       getCardsByDeck,
     };
   }, [
     data,
     ready,
-    syncStatus,
-    syncMessage,
     updateCard,
     addMistake,
     resolveMistake,
@@ -816,14 +622,7 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     addCards,
     updateCardContent,
     deleteCard,
-    exportJson,
-    importJson,
     resetAll,
-    enableCloudSync,
-    connectCloudSync,
-    pushCloudNow,
-    pullCloudNow,
-    disableCloudSync,
     getDecksBySubject,
     getCardsByDeck,
   ]);

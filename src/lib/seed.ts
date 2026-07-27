@@ -17,6 +17,7 @@ import { jlptN5FullWords } from "./data/jlptN5FullWords";
 import { jlptN4Words } from "./data/jlptN4Words";
 import { jlptN5KanjiWords } from "./data/jlptN5KanjiWords";
 import { jlptGrammarPoints } from "./data/jlptGrammar";
+import { jlptGrammarN3Points } from "./data/jlptGrammarN3";
 import { ejuAcademicVocab } from "./data/ejuAcademicVocab";
 import { SUBJECTS, UNITS, ITEMS } from "./data/subjectContent";
 import type { WordEntry } from "./data/japaneseWords";
@@ -143,6 +144,7 @@ export function makeImportedJlptDecks(): { decks: Deck[]; cards: Card[] } {
  */
 export const JAPANESE_EXTRA_DECKS: { id: string; subject: string; title: string; type: Deck["type"]; words: WordEntry[] }[] = [
   { id: "deck-jlpt-grammar", subject: "japanese", title: "JLPT 초급 문법 (N5~N4)", type: "grammar", words: jlptGrammarPoints },
+  { id: "deck-jlpt-grammar-n3", subject: "japanese", title: "JLPT 문법 (N3)", type: "grammar", words: jlptGrammarN3Points },
   { id: "deck-eju-academic-vocab", subject: "japanese", title: "EJU 독해 아카데믹 어휘", type: "vocab", words: ejuAcademicVocab },
 ];
 

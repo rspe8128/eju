@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Download, Upload, Trash2, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import type { ExamProfile, ScienceChoice } from "@/lib/types";
 import { SCIENCE_SUBJECTS } from "@/lib/eju";
@@ -42,28 +42,14 @@ function parseDelimited(text: string) {
 export function SettingsView() {
   const {
     data,
-    exportJson,
-    importJson,
-    resetAll,
     addDeck,
     addSubject,
     addCards,
     updateExamProfile,
     updateSettings,
     updateCardContent,
-    syncStatus,
-    syncMessage,
-    enableCloudSync,
-    connectCloudSync,
-    pushCloudNow,
-    pullCloudNow,
-    disableCloudSync,
   } = useStorage();
-  const [importText, setImportText] = useState("");
   const [message, setMessage] = useState("");
-  const [syncKeyInput, setSyncKeyInput] = useState("");
-  const [syncBusy, setSyncBusy] = useState(false);
-  const fileRef = useRef<HTMLInputElement>(null);
   const tsvRef = useRef<HTMLInputElement>(null);
 
   const [deckTitle, setDeckTitle] = useState("");
@@ -78,41 +64,6 @@ export function SettingsView() {
   const [csvDeckId, setCsvDeckId] = useState(data.decks[0]?.id ?? "");
   const [dupMode, setDupMode] = useState<"skip" | "overwrite">("skip");
   const csvPreview = csvText ? parseDelimited(csvText).slice(0, 5) : [];
-
-  const handleExport = () => {
-    const json = exportJson();
-    const blob = new Blob([json], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `eju-study-backup-${new Date().toISOString().split("T")[0]}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    setMessage("백업 파일을 다운로드했습니다.");
-  };
-
-  const handleImport = () => {
-    try {
-      importJson(importText);
-      setMessage("데이터를 성공적으로 가져왔습니다.");
-      setImportText("");
-    } catch {
-      setMessage("잘못된 JSON 형식입니다.");
-    }
-  };
-
-  const handleFileUpload = (file: File) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      try {
-        importJson(String(reader.result));
-        setMessage("파일에서 데이터를 가져왔습니다.");
-      } catch {
-        setMessage("파일 형식이 올바르지 않습니다.");
-      }
-    };
-    reader.readAsText(file);
-  };
 
   const handleTsvUpload = (file: File) => {
     const reader = new FileReader();
@@ -425,194 +376,6 @@ export function SettingsView() {
         >
           일괄 등록
         </button>
-      </section>
-
-      <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
-        <h2 className="mb-2 text-lg font-semibold">진행도 클라우드 저장</h2>
-        <p className="mb-4 text-sm text-zinc-500">
-          학습 진행도를 서버 DB에 저장합니다 (배포 환경: GitHub Gist / Turso, 로컬: SQLite).
-          동기화 키를 다른 기기에 입력하면 같은 진행도를 이어갈 수 있습니다.
-        </p>
-        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
-          <span
-            className={`rounded-full px-2 py-0.5 font-medium ${
-              syncStatus === "ok"
-                ? "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300"
-                : syncStatus === "error"
-                  ? "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300"
-                  : syncStatus === "syncing"
-                    ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
-                    : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-            }`}
-          >
-            {syncStatus === "ok"
-              ? "동기화됨"
-              : syncStatus === "error"
-                ? "오류"
-                : syncStatus === "syncing"
-                  ? "동기화 중…"
-                  : data.settings.cloudSync
-                    ? "대기"
-                    : "꺼짐"}
-          </span>
-          {syncMessage && <span className="text-zinc-500">{syncMessage}</span>}
-        </div>
-        {data.settings.syncKey && (
-          <div className="mb-4 rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/50">
-            <p className="text-xs text-zinc-500">내 동기화 키</p>
-            <code className="break-all text-sm font-semibold">{data.settings.syncKey}</code>
-          </div>
-        )}
-        <div className="flex flex-wrap gap-2">
-          <button
-            disabled={syncBusy}
-            onClick={async () => {
-              setSyncBusy(true);
-              try {
-                const key = await enableCloudSync();
-                setMessage(`클라우드 저장이 켜졌습니다. 키: ${key}`);
-              } catch (e) {
-                setMessage(e instanceof Error ? e.message : "실패");
-              } finally {
-                setSyncBusy(false);
-              }
-            }}
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
-          >
-            {data.settings.cloudSync ? "다시 저장 / 키 유지" : "클라우드 저장 켜기"}
-          </button>
-          <button
-            disabled={syncBusy || !data.settings.syncKey}
-            onClick={async () => {
-              setSyncBusy(true);
-              try {
-                await pushCloudNow();
-                setMessage("진행도를 서버에 저장했습니다.");
-              } catch (e) {
-                setMessage(e instanceof Error ? e.message : "실패");
-              } finally {
-                setSyncBusy(false);
-              }
-            }}
-            className="rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700 disabled:opacity-50"
-          >
-            지금 저장
-          </button>
-          <button
-            disabled={syncBusy || !data.settings.syncKey}
-            onClick={async () => {
-              setSyncBusy(true);
-              try {
-                await pullCloudNow();
-                setMessage("서버에서 진행도를 불러왔습니다.");
-              } catch (e) {
-                setMessage(e instanceof Error ? e.message : "실패");
-              } finally {
-                setSyncBusy(false);
-              }
-            }}
-            className="rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700 disabled:opacity-50"
-          >
-            서버에서 불러오기
-          </button>
-          {data.settings.cloudSync && (
-            <button
-              disabled={syncBusy}
-              onClick={() => {
-                disableCloudSync();
-                setMessage("클라우드 동기화를 껐습니다.");
-              }}
-              className="rounded-lg border border-zinc-200 px-4 py-2 text-sm text-zinc-600 dark:border-zinc-700"
-            >
-              동기화 끄기
-            </button>
-          )}
-        </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <input
-            type="text"
-            value={syncKeyInput}
-            onChange={(e) => setSyncKeyInput(e.target.value)}
-            placeholder="다른 기기 동기화 키 (eju-…)"
-            className="min-w-[220px] flex-1 rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-          />
-          <button
-            disabled={syncBusy || !syncKeyInput.trim()}
-            onClick={async () => {
-              setSyncBusy(true);
-              try {
-                await connectCloudSync(syncKeyInput);
-                setMessage("다른 기기 진행도에 연결했습니다.");
-                setSyncKeyInput("");
-              } catch (e) {
-                setMessage(e instanceof Error ? e.message : "실패");
-              } finally {
-                setSyncBusy(false);
-              }
-            }}
-            className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900"
-          >
-            키로 연결
-          </button>
-        </div>
-      </section>
-
-      <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
-        <h2 className="mb-4 text-lg font-semibold">데이터 백업</h2>
-        <div className="flex flex-wrap gap-3">
-          <button
-            onClick={handleExport}
-            className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
-          >
-            <Download className="h-4 w-4" />
-            JSON 파일 다운로드
-          </button>
-          <button
-            onClick={() => fileRef.current?.click()}
-            className="flex items-center gap-2 rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium dark:border-zinc-700"
-          >
-            <Upload className="h-4 w-4" />
-            JSON 파일 업로드
-          </button>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="application/json,.json"
-            className="hidden"
-            onChange={(e) => {
-              const f = e.target.files?.[0];
-              if (f) handleFileUpload(f);
-            }}
-          />
-          <button
-            onClick={() => {
-              if (confirm("모든 데이터를 초기화하시겠습니까?")) {
-                resetAll();
-                setMessage("데이터가 초기화되었습니다.");
-              }
-            }}
-            className="flex items-center gap-2 rounded-lg border border-red-200 px-4 py-2 text-sm font-medium text-red-600 dark:border-red-900"
-          >
-            <Trash2 className="h-4 w-4" />
-            데이터 초기화
-          </button>
-        </div>
-        <div className="mt-4">
-          <textarea
-            value={importText}
-            onChange={(e) => setImportText(e.target.value)}
-            placeholder="또는 JSON 텍스트를 붙여넣으세요..."
-            rows={3}
-            className="w-full rounded-lg border border-zinc-200 p-3 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-          />
-          <button
-            onClick={handleImport}
-            disabled={!importText}
-            className="mt-2 rounded-lg border border-zinc-200 px-4 py-2 text-sm disabled:opacity-50 dark:border-zinc-700"
-          >
-            텍스트 가져오기
-          </button>
-        </div>
       </section>
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">

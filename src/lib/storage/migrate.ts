@@ -244,6 +244,39 @@ function migrateToV7(data: AppData): AppData {
   };
 }
 
+/**
+ * v8: JLPT N3 문법 덱을 추가한다. (deck-jlpt-grammar-n3)
+ * JAPANESE_EXTRA_DECKS에 이미 등록되어 있으므로, 아직 없는 덱/카드만 채운다.
+ */
+function migrateToV8(data: AppData): AppData {
+  const { decks: extraDecks, cards: extraCards } = makeJapaneseExtraDecks();
+  const existingDeckIds = new Set(data.decks.map((d) => d.id));
+  const newDecks = extraDecks.filter((d) => !existingDeckIds.has(d.id));
+  const newDeckIds = new Set(newDecks.map((d) => d.id));
+  const newCards = extraCards.filter((c) => newDeckIds.has(c.deckId));
+
+  const existingPlanIds = new Set(data.planTargets.map((p) => p.id));
+  const newPlans = makeTermPlanTargets(newDecks.map((d) => d.id)).filter(
+    (p) => !existingPlanIds.has(p.id)
+  );
+
+  // 덱이 이미 있는 경우(예: v4에서 이미 생성된 이후 사용자가 계속 쓰던 경우)에도
+  // 새로 추가된 문법 항목이 있으면 누락 카드만 채운다.
+  const fillCards: Card[] = [];
+  for (const d of JAPANESE_EXTRA_DECKS) {
+    if (!existingDeckIds.has(d.id)) continue;
+    fillCards.push(...syncMissingCards(data.cards, d.id, d.words));
+  }
+
+  return {
+    ...data,
+    schemaVersion: 8,
+    decks: [...data.decks, ...newDecks],
+    cards: [...data.cards, ...newCards, ...fillCards],
+    planTargets: [...data.planTargets, ...newPlans],
+  };
+}
+
 const migrations: Record<number, (d: Loose) => Loose> = {
   0: (d) => fillDefaults(d, 1) as unknown as Loose,
   1: (d) => migrateToV2(d as unknown as AppData) as unknown as Loose,
@@ -252,6 +285,7 @@ const migrations: Record<number, (d: Loose) => Loose> = {
   4: (d) => migrateToV5(d as unknown as AppData) as unknown as Loose,
   5: (d) => migrateToV6(d as unknown as AppData) as unknown as Loose,
   6: (d) => migrateToV7(d as unknown as AppData) as unknown as Loose,
+  7: (d) => migrateToV8(d as unknown as AppData) as unknown as Loose,
 };
 
 export function migrate(raw: unknown): AppData {
