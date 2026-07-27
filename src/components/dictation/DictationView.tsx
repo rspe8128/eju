@@ -1,29 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Volume2 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { normalizeAnswer } from "@/lib/progress";
+import { speak, useSpeechSupport } from "@/lib/speech";
 
 /** 브라우저 내장 Web Speech API로 일본어 음성을 재생한다. 별도 API 키·비용 없이 클라이언트에서만 동작. */
 function speakJapanese(text: string, rate: number) {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "ja-JP";
-  utterance.rate = rate;
-  const voices = window.speechSynthesis.getVoices();
-  const jaVoice = voices.find((v) => v.lang === "ja-JP") ?? voices.find((v) => v.lang.startsWith("ja"));
-  if (jaVoice) utterance.voice = jaVoice;
-  window.speechSynthesis.speak(utterance);
-}
-
-function useSpeechSupport() {
-  const [supported, setSupported] = useState(false);
-  useEffect(() => {
-    setSupported(typeof window !== "undefined" && "speechSynthesis" in window);
-  }, []);
-  return supported;
+  speak(text, { lang: "ja", rate });
 }
 
 export function DictationView() {

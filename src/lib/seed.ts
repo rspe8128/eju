@@ -9,6 +9,7 @@ import { generateId } from "./utils";
 import { jlptBasicWords } from "./data/japaneseWords";
 import { toeflWords } from "./data/toeflWords";
 import { toeflExpressions } from "./data/toeflExpressions";
+import { CORE2400_CHUNKS } from "./data/toeflCore2400";
 import { mathTerms } from "./data/mathTerms";
 import { sogoTerms } from "./data/sogoTerms";
 import { physicsTerms, chemistryTerms, biologyTerms } from "./data/scienceTerms";
@@ -27,14 +28,15 @@ function makeDeck(id: string, subject: string, title: string, type: Deck["type"]
 }
 
 export function makeCards(deckId: string, words: WordEntry[]): Card[] {
-  return words.map(([front, reading, back, example]) => ({
+  return words.map(([front, reading, back, example, notes, tags]) => ({
     id: generateId(),
     deckId,
     front,
     back,
     reading,
-    exampleSentence: example,
-    tags: [],
+    exampleSentence: example || undefined,
+    notes: notes || undefined,
+    tags: tags ?? [],
     srs: createDefaultSRS(),
   }));
 }
@@ -61,6 +63,34 @@ export const TOEFL_EXTRA_DECKS: {
     words: toeflExpressions,
   },
 ];
+
+/**
+ * TOEFL 핵심 어휘 2400. 한 덱에 2400장을 몰아넣으면 복습 큐가 감당이 안 되므로
+ * 300개씩 8개 덱으로 나눠서 "권" 단위로 끊어 학습한다.
+ */
+export const TOEFL_CORE_DECKS: {
+  id: string;
+  subject: string;
+  title: string;
+  type: Deck["type"];
+  words: WordEntry[];
+}[] = CORE2400_CHUNKS.map((c) => ({
+  id: `deck-toefl-core-${c.key}`,
+  subject: "toefl",
+  title: `TOEFL 핵심어휘 2400 ${c.label}`,
+  type: "vocab" as const,
+  words: c.words,
+}));
+
+export function makeToeflCoreDecks(): { decks: Deck[]; cards: Card[] } {
+  const decks: Deck[] = [];
+  const cards: Card[] = [];
+  for (const d of TOEFL_CORE_DECKS) {
+    decks.push(makeDeck(d.id, d.subject, d.title, d.type));
+    cards.push(...makeCards(d.id, d.words));
+  }
+  return { decks, cards };
+}
 
 export function makeToeflExtraDecks(): { decks: Deck[]; cards: Card[] } {
   const decks: Deck[] = [];
@@ -99,6 +129,7 @@ export function makeTermPlanTargets(
       JLPT_IMPORTED_DECKS.find((d) => d.id === deckId)?.words.length ??
       JAPANESE_EXTRA_DECKS.find((d) => d.id === deckId)?.words.length ??
       TOEFL_EXTRA_DECKS.find((d) => d.id === deckId)?.words.length ??
+      TOEFL_CORE_DECKS.find((d) => d.id === deckId)?.words.length ??
       0;
     return {
       id: `plan-${deckId}`,
@@ -163,6 +194,7 @@ export function getSeedData(): AppData {
   const importedJlpt = makeImportedJlptDecks();
   const japaneseExtra = makeJapaneseExtraDecks();
   const toeflExtra = makeToeflExtraDecks();
+  const toeflCore = makeToeflCoreDecks();
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     decks: [
@@ -173,6 +205,7 @@ export function getSeedData(): AppData {
         `TOEFL 아카데믹 단어 (${toeflWords.length})`,
         "vocab"
       ),
+      ...toeflCore.decks,
       ...toeflExtra.decks,
       ...termDecks.decks,
       ...importedJlpt.decks,
@@ -181,6 +214,7 @@ export function getSeedData(): AppData {
     cards: [
       ...makeCards(japaneseDeckId, jlptBasicWords),
       ...makeCards(toeflDeckId, toeflWords),
+      ...toeflCore.cards,
       ...toeflExtra.cards,
       ...termDecks.cards,
       ...importedJlpt.cards,
@@ -245,6 +279,7 @@ export function getSeedData(): AppData {
       ...makeTermPlanTargets(JLPT_IMPORTED_DECKS.map((d) => d.id)),
       ...makeTermPlanTargets(JAPANESE_EXTRA_DECKS.map((d) => d.id)),
       ...makeTermPlanTargets(TOEFL_EXTRA_DECKS.map((d) => d.id)),
+      ...makeTermPlanTargets(TOEFL_CORE_DECKS.map((d) => d.id)),
     ],
     focusSessions: [],
     writingEntries: [],

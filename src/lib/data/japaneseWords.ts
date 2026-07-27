@@ -1,5 +1,7 @@
-// [단어, 읽는 법, 뜻, 예문]
-export type WordEntry = [string, string, string, string?];
+// [단어, 읽는 법/품사, 뜻, 예문?, 보조설명(뒷면 notes)?, 태그?]
+// 4번째까지는 기존 데이터와 완전히 호환된다. 5·6번째는 영어 단어장처럼
+// "영영 정의"나 "품사 태그"가 필요한 덱에서만 채워 쓴다.
+export type WordEntry = [string, string, string, string?, string?, string[]?];
 
 export const jlptBasicWords: WordEntry[] = [
   ["私", "わたし", "나, 저", "私は韓国から来ました。"],

@@ -1,10 +1,22 @@
 "use client";
 
 import { useEffect, useCallback, useState } from "react";
+import { Volume2, Lightbulb } from "lucide-react";
 import type { Card, SRSRating } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useStorage } from "@/context/StorageContext";
+import { speak, useSpeechSupport } from "@/lib/speech";
 import { SessionSummary } from "./SessionSummary";
+
+/**
+ * 정답을 통째로 보여주지 않는 "가림 힌트".
+ * 첫 글자와 길이만 노출해서 스스로 떠올릴 여지를 남긴다. (예: accommodate → a·········· (11))
+ */
+function maskedHint(text: string): string {
+  const head = text.slice(0, 1);
+  const rest = "·".repeat(Math.max(0, text.length - 1));
+  return `${head}${rest} (${text.length})`;
+}
 
 type Props = {
   cards: Card[];
@@ -23,11 +35,14 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const [startedAt] = useState(() => Date.now());
+  const [hinted, setHinted] = useState(false);
+  const speechSupported = useSpeechSupport();
 
   useEffect(() => {
     setQueue(cards);
     setIndex(0);
     setFlipped(false);
+    setHinted(false);
     setDone(false);
     setStats({ remembered: 0, shaky: 0, forgotten: 0 });
     setWrongIds([]);
@@ -46,6 +61,7 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
       }));
       if (rating <= 2) setWrongIds((ids) => [...ids, card.id]);
       setFlipped(false);
+      setHinted(false);
       if (index + 1 >= queue.length) {
         setDone(true);
       } else {
@@ -61,6 +77,14 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
       if (e.code === "Space") {
         e.preventDefault();
         setFlipped((f) => !f);
+      }
+      if (e.key.toLowerCase() === "h") {
+        e.preventDefault();
+        setHinted((h) => !h);
+      }
+      if (e.key.toLowerCase() === "s") {
+        e.preventDefault();
+        speak(card.front);
       }
       if (flipped) {
         if (e.key === "1") handleRate(1);
@@ -109,11 +133,18 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
 
   return (
     <div className="mx-auto max-w-lg">
-      <div className="mb-4 flex items-center justify-between text-sm text-zinc-500">
+      <div className="mb-2 flex items-center justify-between text-sm text-zinc-500">
         <span>
           {index + 1} / {queue.length}
         </span>
-        <span>스페이스: 뒤집기 · 1/2/3: 평가</span>
+        <span className="hidden sm:inline">스페이스: 뒤집기 · H: 힌트 · S: 발음 · 1/2/3: 평가</span>
+      </div>
+
+      <div className="mb-4 h-1 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
+        <div
+          className="h-full bg-blue-500 transition-all duration-300"
+          style={{ width: `${(index / queue.length) * 100}%` }}
+        />
       </div>
 
       <button
@@ -121,7 +152,7 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
         className="card-flip w-full"
         aria-label="카드 뒤집기"
       >
-        <div className={cn("card-flip-inner relative h-64 w-full", flipped && "flipped")}>
+        <div className={cn("card-flip-inner relative h-72 w-full", flipped && "flipped")}>
           <div className="card-face absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-zinc-200 bg-white p-8 shadow-lg dark:border-zinc-700 dark:bg-zinc-800">
             <p className="text-3xl font-bold">{card.front}</p>
             {showReading && card.reading && (
@@ -130,9 +161,20 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
             {card.exampleSentence && (
               <p className="mt-4 text-sm text-zinc-500">{card.exampleSentence}</p>
             )}
+            {hinted && (
+              <div className="mt-4 max-w-sm rounded-lg bg-amber-50 px-3 py-2 text-center dark:bg-amber-900/20">
+                {card.notes ? (
+                  <p className="text-sm text-amber-800 dark:text-amber-300">{card.notes}</p>
+                ) : (
+                  <p className="font-mono text-sm tracking-wide text-amber-800 dark:text-amber-300">
+                    {maskedHint(card.back)}
+                  </p>
+                )}
+              </div>
+            )}
             <p className="mt-6 text-xs text-zinc-400">탭하여 뒤집기</p>
           </div>
-          <div className="card-face card-face-back absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-zinc-200 bg-white p-8 shadow-lg dark:border-zinc-700 dark:bg-zinc-800">
+          <div className="card-face card-face-back absolute inset-0 flex flex-col items-center justify-center overflow-y-auto rounded-2xl border border-zinc-200 bg-white p-8 shadow-lg dark:border-zinc-700 dark:bg-zinc-800">
             <p className="text-2xl font-semibold text-blue-600 dark:text-blue-400">{card.back}</p>
             {(card.onyomi || card.kunyomi) && (
               <div className="mt-3 text-sm text-zinc-500">
@@ -140,10 +182,38 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
                 {card.kunyomi && <p>훈독: {card.kunyomi}</p>}
               </div>
             )}
-            {card.notes && <p className="mt-4 text-sm text-zinc-500">{card.notes}</p>}
+            {card.notes && (
+              <p className="mt-4 max-w-sm text-center text-sm leading-relaxed text-zinc-500">
+                {card.notes}
+              </p>
+            )}
           </div>
         </div>
       </button>
+
+      <div className="mt-3 flex items-center justify-center gap-2">
+        <button
+          onClick={() => setHinted((h) => !h)}
+          className={cn(
+            "flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors",
+            hinted
+              ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
+              : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400"
+          )}
+        >
+          <Lightbulb className="h-3.5 w-3.5" />
+          {hinted ? "힌트 숨기기" : "힌트"}
+        </button>
+        {speechSupported && (
+          <button
+            onClick={() => speak(card.front)}
+            className="flex items-center gap-1.5 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400"
+          >
+            <Volume2 className="h-3.5 w-3.5" />
+            발음
+          </button>
+        )}
+      </div>
 
       {flipped && (
         <div className="mt-6 grid grid-cols-3 gap-3">

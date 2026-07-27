@@ -187,7 +187,7 @@ export type AppData = {
 
 export type SRSRating = 1 | 2 | 3; // 1=모름, 2=헷갈림, 3=기억함
 
-export const CURRENT_SCHEMA_VERSION = 8;
+export const CURRENT_SCHEMA_VERSION = 9;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   pomodoroWork: 25,

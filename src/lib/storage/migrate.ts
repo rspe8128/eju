@@ -15,6 +15,8 @@ import {
   JAPANESE_EXTRA_DECKS,
   TOEFL_EXTRA_DECKS,
   makeToeflExtraDecks,
+  TOEFL_CORE_DECKS,
+  makeToeflCoreDecks,
   japaneseDeckId,
   toeflDeckId,
 } from "../seed";
@@ -277,6 +279,39 @@ function migrateToV8(data: AppData): AppData {
   };
 }
 
+/**
+ * v9: TOEFL 핵심어휘 2400 덱(300개씩 8권)을 추가한다.
+ * 이미 있는 덱은 건드리지 않고, 없는 덱/카드만 추가하므로 기존 SRS 기록은 그대로 유지된다.
+ */
+function migrateToV9(data: AppData): AppData {
+  const { decks: coreDecks, cards: coreCards } = makeToeflCoreDecks();
+  const existingDeckIds = new Set(data.decks.map((d) => d.id));
+  const newDecks = coreDecks.filter((d) => !existingDeckIds.has(d.id));
+  const newDeckIds = new Set(newDecks.map((d) => d.id));
+  const newCards = coreCards.filter((c) => newDeckIds.has(c.deckId));
+
+  const existingPlanIds = new Set(data.planTargets.map((p) => p.id));
+  const newPlans = makeTermPlanTargets(
+    newDecks.map((d) => d.id),
+    data.examProfile?.examDate ?? "2028-11-05"
+  ).filter((p) => !existingPlanIds.has(p.id));
+
+  // 덱이 이미 있는데 단어만 늘어난 경우를 대비해 누락 카드도 채운다.
+  const fillCards: Card[] = [];
+  for (const d of TOEFL_CORE_DECKS) {
+    if (!existingDeckIds.has(d.id)) continue;
+    fillCards.push(...syncMissingCards(data.cards, d.id, d.words));
+  }
+
+  return {
+    ...data,
+    schemaVersion: 9,
+    decks: [...data.decks, ...newDecks],
+    cards: [...data.cards, ...newCards, ...fillCards],
+    planTargets: [...data.planTargets, ...newPlans],
+  };
+}
+
 const migrations: Record<number, (d: Loose) => Loose> = {
   0: (d) => fillDefaults(d, 1) as unknown as Loose,
   1: (d) => migrateToV2(d as unknown as AppData) as unknown as Loose,
@@ -286,6 +321,7 @@ const migrations: Record<number, (d: Loose) => Loose> = {
   5: (d) => migrateToV6(d as unknown as AppData) as unknown as Loose,
   6: (d) => migrateToV7(d as unknown as AppData) as unknown as Loose,
   7: (d) => migrateToV8(d as unknown as AppData) as unknown as Loose,
+  8: (d) => migrateToV9(d as unknown as AppData) as unknown as Loose,
 };
 
 export function migrate(raw: unknown): AppData {

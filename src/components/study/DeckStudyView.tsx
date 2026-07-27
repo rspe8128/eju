@@ -1,12 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Layers, Play, HelpCircle, Pencil, Trash2, Search } from "lucide-react";
+import { Layers, Play, HelpCircle, Pencil, Trash2, Search, Shuffle } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { FlashcardSession } from "./FlashcardSession";
 import { QuizSession } from "./QuizSession";
 import { getDueCards } from "@/lib/srs";
-import { cn } from "@/lib/utils";
+import { cn, shuffle as shuffleArray } from "@/lib/utils";
+import type { Card } from "@/lib/types";
 import { getSubjectColor } from "@/lib/types";
 import {
   getMasteryDistribution,
@@ -22,6 +23,10 @@ type Props = {
 };
 
 type Mode = "select" | "flashcard" | "quiz" | "tag-flash" | "tag-quiz";
+
+/** 한 번에 학습할 카드 수. 덱이 수백 장이어도 한 세션은 짧게 끊어야 실제로 외워진다. */
+type SessionSize = 20 | 50 | 100 | "all";
+const SESSION_SIZES: SessionSize[] = [20, 50, 100, "all"];
 
 export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
   const {
@@ -42,6 +47,9 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
   const [editBack, setEditBack] = useState("");
   const [editReading, setEditReading] = useState("");
   const [editTags, setEditTags] = useState("");
+  const [sessionSize, setSessionSize] = useState<SessionSize>(20);
+  const [shuffleOn, setShuffleOn] = useState(true);
+  const [sessionCards, setSessionCards] = useState<Card[]>([]);
 
   const accent = getSubjectColor(subject, data.subjects);
   const filteredDecks = tabs
@@ -65,12 +73,32 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
       !q ||
       c.front.toLowerCase().includes(q) ||
       c.back.toLowerCase().includes(q) ||
-      c.reading?.toLowerCase().includes(q);
+      c.reading?.toLowerCase().includes(q) ||
+      c.notes?.toLowerCase().includes(q);
     const matchTag = !tagFilter || c.tags.includes(tagFilter);
     return matchSearch && matchTag;
   });
 
   const tagCards = tagFilter ? allCards.filter((c) => c.tags.includes(tagFilter)) : [];
+
+  /** 복습 대상(없으면 전체)에서 옵션대로 섞고 잘라 한 세션 분량을 만든다. */
+  const buildSession = (): Card[] => {
+    const base = dueCards.length > 0 ? dueCards : allCards;
+    const ordered = shuffleOn ? shuffleArray(base) : base;
+    return sessionSize === "all" ? ordered : ordered.slice(0, sessionSize);
+  };
+
+  const startFlashcards = () => {
+    setSessionCards(buildSession());
+    setMode("flashcard");
+  };
+
+  const sessionCount =
+    sessionSize === "all"
+      ? dueCards.length > 0
+        ? dueCards.length
+        : allCards.length
+      : Math.min(sessionSize, dueCards.length > 0 ? dueCards.length : allCards.length);
 
   if (mode === "flashcard" && selectedDeckId) {
     return (
@@ -79,7 +107,7 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
           ← 돌아가기
         </button>
         <FlashcardSession
-          cards={dueCards.length > 0 ? dueCards : allCards}
+          cards={sessionCards.length > 0 ? sessionCards : allCards}
           onRate={updateCard}
           onComplete={() => setMode("select")}
         />
@@ -225,14 +253,45 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
             </div>
           </div>
 
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            <span className="text-xs text-zinc-500">한 세션 분량</span>
+            {SESSION_SIZES.map((s) => (
+              <button
+                key={String(s)}
+                onClick={() => setSessionSize(s)}
+                className={cn(
+                  "rounded-full px-3 py-1 text-xs font-medium transition-colors",
+                  sessionSize === s
+                    ? "text-white"
+                    : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                )}
+                style={sessionSize === s ? { backgroundColor: accent } : undefined}
+              >
+                {s === "all" ? "전체" : `${s}장`}
+              </button>
+            ))}
             <button
-              onClick={() => setMode("flashcard")}
+              onClick={() => setShuffleOn((v) => !v)}
+              className={cn(
+                "ml-1 flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium transition-colors",
+                shuffleOn
+                  ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"
+                  : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+              )}
+            >
+              <Shuffle className="h-3 w-3" />
+              섞기 {shuffleOn ? "ON" : "OFF"}
+            </button>
+          </div>
+
+          <div className="mt-3 flex gap-3">
+            <button
+              onClick={startFlashcards}
               className="flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-medium text-white"
               style={{ backgroundColor: accent }}
             >
               <Play className="h-4 w-4" />
-              플래시카드 ({dueCards.length > 0 ? dueCards.length : allCards.length}장)
+              플래시카드 ({sessionCount}장)
             </button>
             <button
               onClick={() => setMode("quiz")}
@@ -363,6 +422,9 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
                           )}
                         </p>
                         <p className="truncate text-xs text-zinc-500">{c.back}</p>
+                        {c.notes && (
+                          <p className="truncate text-[11px] italic text-zinc-400">{c.notes}</p>
+                        )}
                         {c.tags.length > 0 && (
                           <p className="mt-0.5 text-[10px] text-zinc-400">{c.tags.join(", ")}</p>
                         )}
