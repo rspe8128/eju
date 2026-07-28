@@ -67,11 +67,19 @@ export function refreshPlanTarget(
       : computeSubjectProgress(data, target.refId);
 
   const remaining = Math.max(0, progress.total - progress.completed);
+
+  // manual이면 사용자가 정한 값을 그대로 존중한다. 자동 계산으로 덮어쓰면
+  // "하루 20개"로 맞춰 놔도 다음 렌더에서 1로 되돌아가 버린다.
+  const dailyQuota =
+    target.quotaMode === "manual"
+      ? Math.max(1, Math.round(target.dailyQuota || 1))
+      : computeDailyQuota(remaining, target.dueDate, options);
+
   return {
     ...target,
     totalUnits: progress.total,
     completedUnits: progress.completed,
-    dailyQuota: computeDailyQuota(remaining, target.dueDate, options),
+    dailyQuota,
   };
 }
 

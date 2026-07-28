@@ -113,6 +113,40 @@ export function exportData(data: AppData): string {
   return JSON.stringify(data, null, 2);
 }
 
+/** 복원 확인 화면에 "무엇으로 덮어쓰는지"를 보여주기 위한 요약 */
+export type BackupSummary = {
+  schemaVersion: number | null;
+  decks: number;
+  cards: number;
+  mistakes: number;
+  examRecords: number;
+  writingEntries: number;
+  /** 백업 파일에 적힌 마지막 백업 날짜 */
+  backedUpAt: string | null;
+};
+
+/**
+ * 백업 파일을 **저장하지 않고** 훑어본다.
+ * 덮어쓰기 전에 숫자를 보여줘야 하므로, importData와 분리해 뒀다.
+ * 형식이 다르면 throw 한다.
+ */
+export function summarizeBackup(json: string): BackupSummary {
+  const parsed = decodeData(JSON.parse(json)) as Partial<AppData> | null;
+  if (!parsed || !Array.isArray(parsed.decks) || !Array.isArray(parsed.cards)) {
+    throw new Error("Invalid data format");
+  }
+  const len = (v: unknown) => (Array.isArray(v) ? v.length : 0);
+  return {
+    schemaVersion: typeof parsed.schemaVersion === "number" ? parsed.schemaVersion : null,
+    decks: parsed.decks.length,
+    cards: parsed.cards.length,
+    mistakes: len(parsed.mistakes),
+    examRecords: len(parsed.examRecords),
+    writingEntries: len(parsed.writingEntries),
+    backedUpAt: parsed.settings?.lastBackupAt ?? null,
+  };
+}
+
 export function importData(json: string): AppData {
   // 압축본으로 저장된 파일을 그대로 가져오는 경우도 받아준다.
   const parsed = decodeData(JSON.parse(json)) as { decks?: unknown; cards?: unknown };

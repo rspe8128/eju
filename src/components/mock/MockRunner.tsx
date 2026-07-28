@@ -16,6 +16,7 @@ import type { MockPaper, MockSection, MockAnswerMap } from "@/lib/mock/types";
 import { findPassage } from "@/lib/mock/types";
 import { formatClock } from "@/lib/mockExam";
 import { loadProgress, saveProgress, clearProgress } from "@/lib/mock/progress";
+import { mockMistakeId } from "@/lib/mock/mistakeIds";
 import { useStorage } from "@/context/StorageContext";
 import { todayString } from "@/lib/utils";
 import type { AttemptResult } from "@/lib/types";
@@ -35,7 +36,7 @@ export function MockRunner({
   section: MockSection;
   onExit: () => void;
 }) {
-  const { addExamAttempt } = useStorage();
+  const { addExamAttempt, addMistake, resolveMistake } = useStorage();
 
   const [answers, setAnswers] = useState<MockAnswerMap>({});
   const [cursor, setCursor] = useState(0);
@@ -169,11 +170,21 @@ export function MockRunner({
       results,
       memo: `${paper.title} · ${section.label}`,
     });
+
+    // 틀린 문항을 오답노트로 넘긴다.
+    // 문항 내용은 복사하지 않는다 — paperId:sectionId:questionId 만 남기고
+    // 화면에서는 registry로 되찾는다. 그래야 localStorage가 터지지 않는다.
+    for (const q of questions) {
+      const id = mockMistakeId(paper.id, section.id, q.id);
+      if ((answers[q.id] ?? "") === q.answer) resolveMistake("mock", id);
+      else addMistake("mock", id);
+    }
+
     clearProgress(paper.id, section.id);
     setRunning(false);
     setPhase("result");
     if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [addExamAttempt, answers, paper, questions, results, section]);
+  }, [addExamAttempt, addMistake, resolveMistake, answers, paper, questions, results, section]);
 
   const startReview = () => {
     setPhase("review");

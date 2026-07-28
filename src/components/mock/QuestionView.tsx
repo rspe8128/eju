@@ -5,6 +5,7 @@ import type { MockQuestion } from "@/lib/mock/types";
 import { questionTexts } from "@/lib/mock/types";
 import { useTranslate } from "@/lib/mock/useTranslate";
 import { getTopicLabel } from "@/lib/examTopics";
+import { useOnline, OFFLINE_MESSAGE } from "@/lib/useOnline";
 import { TranslateButton, TranslateError } from "./TranslateButton";
 import { cn } from "@/lib/utils";
 
@@ -29,8 +30,11 @@ export function QuestionView({
   review?: boolean;
 }) {
   const tr = useTranslate(questionTexts(question));
+  const online = useOnline();
   const koStem = tr.shown ? tr.lines[0] : null;
   const koChoices = tr.shown ? tr.lines.slice(1) : null;
+  // 캐시에 있으면 오프라인에서도 열린다 — 그때는 막지 않는다.
+  const translateBlocked = !online && !tr.cached && !tr.shown;
 
   const isCorrect = picked === question.answer;
 
@@ -60,6 +64,8 @@ export function QuestionView({
           cached={tr.cached}
           onClick={tr.toggle}
           label="문제 번역"
+          disabled={translateBlocked}
+          title={translateBlocked ? OFFLINE_MESSAGE : undefined}
         />
       </header>
 

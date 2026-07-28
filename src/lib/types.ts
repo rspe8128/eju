@@ -72,9 +72,15 @@ export type ProblemItem = {
 
 export type Item = ConceptItem | ProblemItem;
 
+export type MistakeSourceType = "card" | "problem" | "mock";
+
 export type MistakeEntry = {
   id: string;
-  sourceType: "card" | "problem";
+  sourceType: MistakeSourceType;
+  /**
+   * card/problem: 해당 id.
+   * mock: `${paperId}:${sectionId}:${questionId}` (문항 본문은 복사하지 않음)
+   */
   sourceId: string;
   addedAt: string;
   resolved: boolean;
@@ -118,6 +124,10 @@ export type ExamRecord = {
   kind: "mock" | "real";
   scores: Record<string, number>;
   memo?: string;
+  /** 손으로 넣은 기록 vs 모의고사 채점 자동 환산 */
+  source?: "manual" | "mock-auto";
+  /** mock-auto 일 때 회차 키 (예: jp-mock-01) — 같은 회차 최신만 추이에 쓰기 위함 */
+  mockPaperId?: string;
 };
 
 /**
@@ -166,7 +176,18 @@ export type PlanTarget = {
   totalUnits: number;
   completedUnits: number;
   dueDate: string;
+  /** 하루에 볼 개수 */
   dailyQuota: number;
+  /**
+   * 하루 개수를 정하는 방식.
+   *  · "auto"   기한에 맞춰 자동 계산 (남은 개수 ÷ 남은 평일)
+   *  · "manual" 사용자가 정한 dailyQuota를 그대로 쓴다
+   *
+   * 예전에는 auto밖에 없었다. 그런데 시험일이 2년 넘게 남아 있으면 분모가 700일쯤
+   * 되어서, 574장짜리 덱도 ceil(574/700) = 하루 1개로 나왔다. 그 속도면 끝나지
+   * 않으므로 직접 정할 수 있어야 한다. 없으면 "auto"로 본다(기존 데이터 호환).
+   */
+  quotaMode?: "auto" | "manual";
 };
 
 export type FocusSession = {
@@ -213,6 +234,8 @@ export type AppSettings = {
   showReading: boolean;
   excludeWeekends: boolean;
   planBufferDays: number;
+  /** ISO 날짜(YYYY-MM-DD). 없으면 아직 한 번도 백업 안 한 것 */
+  lastBackupAt?: string | null;
 };
 
 export type AppData = {

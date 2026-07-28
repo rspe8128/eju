@@ -9,7 +9,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { loadData, saveData, resetData, measureUsage } from "@/lib/storage";
+import { loadData, saveData, resetData, measureUsage, exportData, importData } from "@/lib/storage";
 import type { StorageUsage } from "@/lib/storage";
 import { getLibraryDeck } from "@/lib/data/vocab/library";
 import { createDefaultSRS as makeSRS } from "@/lib/srs";
@@ -27,6 +27,7 @@ import type {
   Goal,
   Item,
   MistakeEntry,
+  MistakeSourceType,
   PlanTarget,
   Subject,
   Unit,
@@ -42,8 +43,8 @@ type StorageContextValue = {
   data: AppData;
   ready: boolean;
   updateCard: (cardId: string, rating: SRSRating) => void;
-  addMistake: (sourceType: "card" | "problem", sourceId: string) => void;
-  resolveMistake: (sourceType: "card" | "problem", sourceId: string) => void;
+  addMistake: (sourceType: MistakeSourceType, sourceId: string) => void;
+  resolveMistake: (sourceType: MistakeSourceType, sourceId: string) => void;
   markProblemSolved: (itemId: string, correct: boolean) => void;
   addDeck: (deck: Omit<Deck, "id">) => string;
   addSubject: (subject: Omit<Subject, "id">) => void;
@@ -60,7 +61,10 @@ type StorageContextValue = {
   removeAnswerKey: (id: string) => void;
   addExamAttempt: (attempt: Omit<ExamAttempt, "id">) => void;
   removeExamAttempt: (id: string) => void;
-  addPlanTarget: (target: Omit<PlanTarget, "id" | "totalUnits" | "completedUnits" | "dailyQuota">) => void;
+  addPlanTarget: (
+    target: Pick<PlanTarget, "kind" | "refId" | "dueDate"> &
+      Partial<Pick<PlanTarget, "dailyQuota" | "quotaMode">>
+  ) => void;
   updatePlanTarget: (id: string, patch: Partial<PlanTarget>) => void;
   removePlanTarget: (id: string) => void;
   addFocusSession: (session: Omit<FocusSession, "id">) => void;
@@ -73,6 +77,10 @@ type StorageContextValue = {
   updateCardContent: (cardId: string, patch: Partial<Card>) => void;
   deleteCard: (cardId: string) => void;
   resetAll: () => void;
+  /** JSON 백업 문자열 생성 (다운로드용) */
+  exportBackup: () => string;
+  /** 백업 JSON 복원. 실패 시 throw */
+  importBackup: (json: string) => void;
   getDecksBySubject: (subject: string) => Deck[];
   getCardsByDeck: (deckId: string) => Card[];
   /** 단어장 보관함에서 덱을 가져온다. 단어 파일은 이때 처음 내려받는다. */
@@ -208,7 +216,7 @@ export function StorageProvider({ children }: { children: ReactNode }) {
   );
 
   const addMistake = useCallback(
-    (sourceType: "card" | "problem", sourceId: string) => {
+    (sourceType: MistakeSourceType, sourceId: string) => {
       persist((prev) => {
         const exists = prev.mistakes.find(
           (m) => m.sourceType === sourceType && m.sourceId === sourceId && !m.resolved
@@ -233,7 +241,7 @@ export function StorageProvider({ children }: { children: ReactNode }) {
   );
 
   const resolveMistake = useCallback(
-    (sourceType: "card" | "problem", sourceId: string) => {
+    (sourceType: MistakeSourceType, sourceId: string) => {
       persist((prev) => ({
         ...prev,
         mistakes: prev.mistakes.map((m) =>
@@ -478,14 +486,18 @@ export function StorageProvider({ children }: { children: ReactNode }) {
   );
 
   const addPlanTarget = useCallback(
-    (target: Omit<PlanTarget, "id" | "totalUnits" | "completedUnits" | "dailyQuota">) => {
+    (
+      target: Pick<PlanTarget, "kind" | "refId" | "dueDate"> &
+        Partial<Pick<PlanTarget, "dailyQuota" | "quotaMode">>
+    ) => {
       persist((prev) => {
         const draft: PlanTarget = {
           ...target,
           id: generateId(),
           totalUnits: 0,
           completedUnits: 0,
-          dailyQuota: 0,
+          dailyQuota: target.dailyQuota ?? 0,
+          quotaMode: target.quotaMode ?? "auto",
         };
         const refreshed = refreshPlanTarget(draft, prev, {
           excludeWeekends: prev.settings.excludeWeekends,
@@ -637,6 +649,33 @@ export function StorageProvider({ children }: { children: ReactNode }) {
   }, []);
 
   /**
+   * 백업 JSON 문자열.
+   *
+   * 내보낸 날짜를 settings.lastBackupAt에 같이 남긴다 — 대시보드가 "30일 넘게
+   * 백업 안 했다"는 알림을 띄우는 근거가 이 값이다. 백업 파일 안에도 같은
+   * 날짜가 들어가므로, 복원한 뒤에도 마지막 백업 시점을 잃지 않는다.
+   */
+  const exportBackup = useCallback(() => {
+    if (!data) return "";
+    const stamp = todayString();
+    const snapshot: AppData = {
+      ...data,
+      settings: { ...data.settings, lastBackupAt: stamp },
+    };
+    persist((prev) => ({
+      ...prev,
+      settings: { ...prev.settings, lastBackupAt: stamp },
+    }));
+    return exportData(snapshot);
+  }, [data, persist]);
+
+  const importBackup = useCallback((json: string) => {
+    const imported = importData(json);
+    setData(imported);
+    setStorageError(null);
+  }, []);
+
+  /**
    * 보관함 덱 가져오기.
    * 단어 파일은 여기서 처음 동적 import 되므로, 목록만 보고 있을 때는 내려받지 않는다.
    */
@@ -766,6 +805,8 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       updateCardContent,
       deleteCard,
       resetAll,
+      exportBackup,
+      importBackup,
       getDecksBySubject,
       getCardsByDeck,
       addLibraryDeck,
@@ -808,6 +849,8 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     updateCardContent,
     deleteCard,
     resetAll,
+    exportBackup,
+    importBackup,
     getDecksBySubject,
     getCardsByDeck,
     addLibraryDeck,

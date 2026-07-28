@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Play,
   Pause,
@@ -8,19 +8,18 @@ import {
   Save,
   Sparkles,
   Loader2,
-  CheckCircle2,
   AlertTriangle,
-  XCircle,
   Trash2,
   ChevronLeft,
 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { writingPrompts } from "@/lib/data/writingPrompts";
 import { todayString } from "@/lib/utils";
-import { analyzeWriting, type WritingCheck } from "@/lib/writing/analyze";
+import { OFFLINE_MESSAGE } from "@/lib/useOnline";
 import { MIN_CHARS, MAX_CHARS } from "@/lib/writing/rubric";
-import type { GradeResult } from "@/app/api/grade-writing/route";
 import { GradeResultPanel } from "./GradeResultPanel";
+import { WritingChecks, useWritingAnalysis } from "./WritingChecks";
+import { useWritingGrade, gradeToEntryFields } from "./useWritingGrade";
 import { cn } from "@/lib/utils";
 
 const DRAFT_KEY = "eju.writing.draft.v1";
@@ -55,37 +54,6 @@ function clearDraft() {
   }
 }
 
-const CHECK_ICON = { ok: CheckCircle2, warn: AlertTriangle, fail: XCircle } as const;
-const CHECK_STYLE = {
-  ok: "text-green-600 dark:text-green-400",
-  warn: "text-amber-600 dark:text-amber-400",
-  fail: "text-red-500",
-} as const;
-
-function CheckRow({ check }: { check: WritingCheck }) {
-  const Icon = CHECK_ICON[check.level];
-  return (
-    <li className="flex items-start gap-2">
-      <Icon className={cn("mt-0.5 h-3.5 w-3.5 shrink-0", CHECK_STYLE[check.level])} />
-      <div className="min-w-0 flex-1">
-        <p className="text-xs">
-          <span className="font-medium">{check.label}</span>
-          <span className="ml-1.5 text-zinc-500">{check.detail}</span>
-        </p>
-        {check.samples && check.samples.length > 0 && (
-          <ul className="mt-1 space-y-0.5">
-            {check.samples.map((s, i) => (
-              <li key={i} className="ja-ui truncate text-[11px] text-zinc-400">
-                {s}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </li>
-  );
-}
-
 export function WritingView() {
   const { data, addWritingEntry, removeWritingEntry } = useStorage();
 
@@ -97,16 +65,17 @@ export function WritingView() {
   const [timeUp, setTimeUp] = useState(false);
   const [viewId, setViewId] = useState<string | null>(null);
 
-  const [grading, setGrading] = useState(false);
-  const [gradeError, setGradeError] = useState<string | null>(null);
-  const [grade, setGrade] = useState<GradeResult | null>(null);
   const [saved, setSaved] = useState(false);
 
   const restored = useRef(false);
   const startedAt = useRef<number | null>(null);
 
+  // 채점 호출과 자동 점검은 모의고사 기술 세션과 같은 코드를 쓴다
+  const grader = useWritingGrade();
+  const { grade, grading, error: gradeError } = grader;
+
   const prompt = writingPrompts.find((p) => p.id === promptId) ?? writingPrompts[0];
-  const { stats, checks, readyForGrading } = useMemo(() => analyzeWriting(body), [body]);
+  const { stats, checks, readyForGrading } = useWritingAnalysis(body);
   const inRange = stats.chars >= MIN_CHARS && stats.chars <= MAX_CHARS;
 
   // ── 초안 복구 ────────────────────────────────────────────
@@ -157,27 +126,7 @@ export function WritingView() {
   const mm = String(Math.floor(secondsLeft / 60)).padStart(2, "0");
   const ss = String(secondsLeft % 60).padStart(2, "0");
 
-  // ── AI 채점 ──────────────────────────────────────────────
-  const runGrading = useCallback(async () => {
-    if (!body.trim()) return;
-    setGrading(true);
-    setGradeError(null);
-    setGrade(null);
-    try {
-      const res = await fetch("/api/grade-writing", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ promptJa: prompt.prompt, body }),
-      });
-      const json = await res.json();
-      if (!res.ok) setGradeError(json.error ?? "채점에 실패했습니다.");
-      else setGrade(json as GradeResult);
-    } catch {
-      setGradeError("채점 서버에 연결하지 못했습니다. 개발 서버가 켜져 있는지 확인하세요.");
-    } finally {
-      setGrading(false);
-    }
-  }, [body, prompt.prompt]);
+  const runGrading = () => grader.runGrading(prompt.prompt, body);
 
   const handleSave = () => {
     if (!body.trim()) return;
@@ -190,23 +139,7 @@ export function WritingView() {
       body,
       charCount: stats.chars,
       minutes: spent,
-      ...(grade
-        ? {
-            aiScore: grade.total,
-            aiMax: grade.max,
-            aiAxes: grade.axes.map((a) => ({
-              label: a.label,
-              score: a.score,
-              max: a.max,
-              comment: a.comment,
-            })),
-            aiStrengths: grade.strengths,
-            aiImprovements: grade.improvements,
-            aiFixes: grade.fixes,
-            aiAdvice: grade.advice,
-            aiModel: grade.model,
-          }
-        : {}),
+      ...gradeToEntryFields(grade),
     });
     clearDraft();
     setSaved(true);
@@ -215,8 +148,7 @@ export function WritingView() {
 
   const startNew = () => {
     setBody("");
-    setGrade(null);
-    setGradeError(null);
+    grader.reset();
     clearDraft();
     reset();
   };
@@ -364,25 +296,13 @@ export function WritingView() {
         </div>
       </div>
 
-      {body.trim().length > 0 && (
-        <section className="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-800">
-          <h3 className="mb-3 text-sm font-semibold">자동 점검</h3>
-          <ul className="space-y-2.5">
-            {checks.map((c) => (
-              <CheckRow key={c.id} check={c} />
-            ))}
-          </ul>
-          <p className="mt-3 text-[11px] leading-relaxed text-zinc-400">
-            여기 나오는 건 AI 없이 규칙으로 확실히 잡히는 것들이다. 이걸 먼저 정리하고 AI 채점을
-            받으면 내용에 대한 지적을 더 많이 받을 수 있다.
-          </p>
-        </section>
-      )}
+      {body.trim().length > 0 && <WritingChecks checks={checks} />}
 
       <div className="flex flex-wrap items-center gap-2">
         <button
           onClick={runGrading}
-          disabled={grading || !body.trim()}
+          disabled={grading || !body.trim() || grader.offline}
+          title={grader.blockedReason ?? undefined}
           className="flex items-center gap-1.5 rounded-xl bg-violet-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-violet-700 disabled:opacity-40"
         >
           {grading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
@@ -405,6 +325,12 @@ export function WritingView() {
           </button>
         )}
       </div>
+
+      {grader.offline && (
+        <p className="text-xs text-amber-600 dark:text-amber-400">
+          {OFFLINE_MESSAGE} 자동 점검과 저장은 오프라인에서도 그대로 된다.
+        </p>
+      )}
 
       {!readyForGrading && body.trim() && !grade && (
         <p className="text-xs leading-relaxed text-zinc-400">

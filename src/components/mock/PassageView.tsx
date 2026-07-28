@@ -1,12 +1,38 @@
 "use client";
 
-import { useState } from "react";
-import { BookOpen, Table2, Megaphone, BookMarked, ChevronDown } from "lucide-react";
+import { useMemo, useState } from "react";
+import { BookOpen, Table2, Megaphone, BookMarked, ChevronDown, Baseline } from "lucide-react";
 import type { MockPassage, MockTable } from "@/lib/mock/types";
 import { passageTexts, splitPassageTranslation } from "@/lib/mock/types";
 import { useTranslate } from "@/lib/mock/useTranslate";
+import { annotateFurigana } from "@/lib/mock/furigana";
+import { useOnline, OFFLINE_MESSAGE } from "@/lib/useOnline";
 import { TranslateButton, TranslateError } from "./TranslateButton";
 import { cn } from "@/lib/utils";
+
+/**
+ * 후리가나를 붙여 렌더한다.
+ *
+ * 읽기 데이터는 단어장(N5·N4)에서 표기가 그대로 일치하는 것만 쓴다.
+ * 사전에 없는 한자는 그냥 둔다 — 틀린 읽기를 붙이는 것보다 빈칸이 낫다.
+ */
+export function FuriganaText({ text }: { text: string }) {
+  const chunks = useMemo(() => annotateFurigana(text), [text]);
+  return (
+    <>
+      {chunks.map((chunk, i) =>
+        chunk.type === "ruby" ? (
+          <ruby key={i}>
+            {chunk.text}
+            <rt className="text-[0.55em] text-zinc-500 dark:text-zinc-400">{chunk.reading}</rt>
+          </ruby>
+        ) : (
+          <span key={i}>{chunk.text}</span>
+        )
+      )}
+    </>
+  );
+}
 
 const KIND_META: Record<string, { icon: typeof BookOpen; label: string }> = {
   prose: { icon: BookOpen, label: "지문" },
@@ -72,12 +98,16 @@ function TableBlock({ table, muted = false }: { table: MockTable; muted?: boolea
 export function PassageView({ passage }: { passage: MockPassage }) {
   const texts = passageTexts(passage);
   const tr = useTranslate(texts);
+  const online = useOnline();
   const [glossaryOpen, setGlossaryOpen] = useState(false);
+  // 실전에는 후리가나가 없다. 그래서 기본은 꺼짐 — 번역 토글과 같은 규칙이다.
+  const [furigana, setFurigana] = useState(false);
 
   const meta = KIND_META[passage.kind] ?? KIND_META.prose;
   const Icon = meta.icon;
   const ko = tr.shown ? splitPassageTranslation(passage, tr.lines) : null;
   const isNotice = passage.kind === "notice";
+  const translateBlocked = !online && !tr.cached && !tr.shown;
 
   return (
     <section className="rounded-2xl border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-800">
@@ -86,26 +116,56 @@ export function PassageView({ passage }: { passage: MockPassage }) {
           <Icon className="h-4 w-4 shrink-0 text-zinc-400" />
           <span className="truncate text-sm font-semibold">{passage.title ?? meta.label}</span>
         </div>
-        <TranslateButton
-          shown={tr.shown}
-          loading={tr.loading}
-          cached={tr.cached}
-          onClick={tr.toggle}
-          label="지문 번역"
-        />
+        <div className="flex shrink-0 items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => setFurigana((v) => !v)}
+            title="단어장에 있는 한자에만 읽는 법을 붙입니다"
+            className={cn(
+              "inline-flex shrink-0 items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-medium transition-colors",
+              furigana
+                ? "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300"
+                : "border-zinc-200 text-zinc-500 hover:border-emerald-300 hover:text-emerald-600 dark:border-zinc-700 dark:text-zinc-400 dark:hover:text-emerald-400"
+            )}
+          >
+            <Baseline className="h-3.5 w-3.5" />
+            {furigana ? "후리가나 숨기기" : "후리가나"}
+          </button>
+          <TranslateButton
+            shown={tr.shown}
+            loading={tr.loading}
+            cached={tr.cached}
+            onClick={tr.toggle}
+            label="지문 번역"
+            disabled={translateBlocked}
+            title={translateBlocked ? OFFLINE_MESSAGE : undefined}
+          />
+        </div>
       </header>
 
       <div className="px-4 py-4">
-        {passage.leadJa && (
-          <p className="ja-ui mb-3 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-600 dark:bg-zinc-900/50 dark:text-zinc-300">
-            {passage.leadJa}
+        {furigana && (
+          <p className="mb-3 rounded-lg bg-emerald-50 px-3 py-2 text-[11px] leading-relaxed text-emerald-800 dark:bg-emerald-900/20 dark:text-emerald-300">
+            실전 시험지에는 후리가나가 없다. 채점 후 복습할 때만 켜서 읽는 법을 확인하고, 처음
+            풀 때는 끄고 푸는 것이 실력이 된다. 단어장에 있는 한자어만 붙으므로 빈 곳이 있다.
           </p>
         )}
 
-        <div className={cn(isNotice ? "ja-ui space-y-1.5 text-[15px]" : "ja-body space-y-4 text-[15px]")}>
+        {passage.leadJa && (
+          <p className="ja-ui mb-3 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-600 dark:bg-zinc-900/50 dark:text-zinc-300">
+            {furigana ? <FuriganaText text={passage.leadJa} /> : passage.leadJa}
+          </p>
+        )}
+
+        <div
+          className={cn(
+            isNotice ? "ja-ui space-y-1.5 text-[15px]" : "ja-body space-y-4 text-[15px]",
+            furigana && "leading-[2.4]"
+          )}
+        >
           {passage.ja.map((para, i) => (
             <p key={i} className={cn(isNotice && para.startsWith("・") && "pl-2")}>
-              {para}
+              {furigana ? <FuriganaText text={para} /> : para}
             </p>
           ))}
         </div>

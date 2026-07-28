@@ -15,6 +15,8 @@ export function TranslateButton({
   onClick,
   label = "한국어 번역",
   className,
+  disabled = false,
+  title,
 }: {
   shown: boolean;
   loading: boolean;
@@ -22,13 +24,20 @@ export function TranslateButton({
   onClick: () => void;
   label?: string;
   className?: string;
+  /** 오프라인처럼 번역을 부를 수 없는 상황에서 막는다 */
+  disabled?: boolean;
+  /** 막은 이유를 알려주고 싶을 때 */
+  title?: string;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      disabled={loading}
-      title={cached ? "이미 번역해 둔 문장이라 바로 열립니다" : "DeepL로 번역합니다"}
+      disabled={loading || disabled}
+      title={
+        title ??
+        (cached ? "이미 번역해 둔 문장이라 바로 열립니다" : "DeepL로 번역합니다")
+      }
       className={cn(
         "inline-flex shrink-0 items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-medium transition-colors disabled:opacity-50",
         shown

@@ -15,6 +15,7 @@ import { Plus, Trash2 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import {
   computePlan,
+  computeSubjectProgress,
   daysDiff,
   estimateCompletionDate,
 } from "@/lib/plan";
@@ -29,6 +30,8 @@ export function PlanView() {
   const [kind, setKind] = useState<"deck" | "subject">("deck");
   const [refId, setRefId] = useState("");
   const [dueDate, setDueDate] = useState(examDate);
+  const [quotaMode, setQuotaMode] = useState<"auto" | "manual">("manual");
+  const [dailyQuota, setDailyQuota] = useState(20);
 
   const totalUnits = plans.reduce((s, p) => s + p.totalUnits, 0);
   const completed = plans.reduce((s, p) => s + p.completedUnits, 0);
@@ -58,9 +61,16 @@ export function PlanView() {
 
   const handleAdd = () => {
     if (!refId) return;
-    addPlanTarget({ kind, refId, dueDate });
+    addPlanTarget({ kind, refId, dueDate, quotaMode, dailyQuota });
     setRefId("");
   };
+
+  /** 선택한 덱·과목의 전체 개수 — 하루 몇 개로 잡을지 감을 주기 위해 미리 보여준다 */
+  const previewTotal = refId
+    ? kind === "deck"
+      ? data.cards.filter((c) => c.deckId === refId).length
+      : computeSubjectProgress(data, refId).total
+    : 0;
 
   return (
     <div className="space-y-8">
@@ -184,13 +194,48 @@ export function PlanView() {
                   style={{ width: `${pct}%` }}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 flex flex-wrap items-center gap-2">
                 <input
                   type="date"
                   value={p.dueDate}
                   onChange={(e) => updatePlanTarget(p.id, { dueDate: e.target.value })}
                   className="rounded border border-zinc-200 px-2 py-1 text-xs dark:border-zinc-700 dark:bg-zinc-800"
                 />
+                <select
+                  value={p.quotaMode ?? "auto"}
+                  onChange={(e) =>
+                    updatePlanTarget(p.id, {
+                      quotaMode: e.target.value as "auto" | "manual",
+                      // 자동 → 직접으로 바꿀 때, 지금 값이 1이면 그대로 두면 의미가 없다.
+                      // 바로 손댈 수 있게 쓸 만한 기본값을 넣어 준다.
+                      ...(e.target.value === "manual" && p.dailyQuota <= 1
+                        ? { dailyQuota: 20 }
+                        : {}),
+                    })
+                  }
+                  className="rounded border border-zinc-200 px-2 py-1 text-xs dark:border-zinc-700 dark:bg-zinc-800"
+                >
+                  <option value="auto">자동</option>
+                  <option value="manual">직접</option>
+                </select>
+                {(p.quotaMode ?? "auto") === "manual" && (
+                  <label className="flex items-center gap-1 rounded border border-zinc-200 px-2 py-1 text-xs dark:border-zinc-700 dark:bg-zinc-800">
+                    하루
+                    <input
+                      type="number"
+                      min={1}
+                      max={500}
+                      value={p.dailyQuota}
+                      onChange={(e) =>
+                        updatePlanTarget(p.id, {
+                          dailyQuota: Math.max(1, Math.min(500, parseInt(e.target.value) || 1)),
+                        })
+                      }
+                      className="w-14 bg-transparent text-right outline-none"
+                    />
+                    개
+                  </label>
+                )}
               </div>
             </div>
           );
@@ -235,6 +280,30 @@ export function PlanView() {
             onChange={(e) => setDueDate(e.target.value)}
             className="rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
           />
+          <select
+            value={quotaMode}
+            onChange={(e) => setQuotaMode(e.target.value as "auto" | "manual")}
+            className="rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
+          >
+            <option value="manual">하루 개수 직접 정하기</option>
+            <option value="auto">기한에 맞춰 자동</option>
+          </select>
+          {quotaMode === "manual" && (
+            <label className="flex items-center gap-1.5 rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800">
+              하루
+              <input
+                type="number"
+                min={1}
+                max={500}
+                value={dailyQuota}
+                onChange={(e) =>
+                  setDailyQuota(Math.max(1, Math.min(500, parseInt(e.target.value) || 1)))
+                }
+                className="w-16 bg-transparent text-right outline-none"
+              />
+              개
+            </label>
+          )}
           <button
             onClick={handleAdd}
             className="flex items-center gap-1 rounded-lg bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-purple-700"
@@ -243,6 +312,21 @@ export function PlanView() {
             추가
           </button>
         </div>
+        {refId && (
+          <p className="mt-2 text-xs text-zinc-500">
+            전체 {previewTotal.toLocaleString()}개
+            {quotaMode === "manual" && dailyQuota > 0 && previewTotal > 0 && (
+              <> · 하루 {dailyQuota}개면 평일 기준 약 {Math.ceil(previewTotal / dailyQuota)}일 걸린다</>
+            )}
+            {quotaMode === "auto" && (
+              <> · 기한까지 남은 평일로 나눠서 자동 계산된다</>
+            )}
+          </p>
+        )}
+        <p className="mt-1.5 text-[11px] leading-relaxed text-zinc-400">
+          시험일이 멀면 자동 계산은 하루 1개로 나온다(574개를 700일로 나누므로). 실제로
+          끝내려면 <b>직접 정하기</b>로 하루 분량을 잡는 편이 낫다.
+        </p>
       </section>
 
       <section>

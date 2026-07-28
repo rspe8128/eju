@@ -1,10 +1,12 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Plus } from "lucide-react";
+import { AlertTriangle, Download, Plus, ShieldAlert, Upload } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import type { ExamProfile, ScienceChoice } from "@/lib/types";
 import { SCIENCE_SUBJECTS } from "@/lib/eju";
+import { summarizeBackup, type BackupSummary } from "@/lib/storage";
+import { todayString } from "@/lib/utils";
 
 function parseDelimited(text: string) {
   const lines = text.trim().split(/\r?\n/).filter(Boolean);
@@ -48,9 +50,16 @@ export function SettingsView() {
     updateExamProfile,
     updateSettings,
     updateCardContent,
+    exportBackup,
+    importBackup,
   } = useStorage();
   const [message, setMessage] = useState("");
   const tsvRef = useRef<HTMLInputElement>(null);
+  const backupRef = useRef<HTMLInputElement>(null);
+
+  /** 복원 대기 중인 파일. 확인을 받기 전에는 절대 덮어쓰지 않는다. */
+  const [pending, setPending] = useState<{ json: string; summary: BackupSummary } | null>(null);
+  const [backupError, setBackupError] = useState<string | null>(null);
 
   const [deckTitle, setDeckTitle] = useState("");
   const [deckSubject, setDeckSubject] = useState("japanese");
@@ -72,6 +81,57 @@ export function SettingsView() {
       setMessage("JLPT TSV 파일을 불러왔습니다. 미리보기 확인 후 일괄 등록을 누르세요.");
     };
     reader.readAsText(file);
+  };
+
+  const handleExport = () => {
+    setBackupError(null);
+    try {
+      const json = exportBackup();
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `eju-backup-${todayString()}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setMessage(`백업 파일을 내보냈습니다. (eju-backup-${todayString()}.json)`);
+    } catch {
+      setBackupError("백업 파일을 만들지 못했습니다. 브라우저 다운로드 설정을 확인하세요.");
+    }
+  };
+
+  /** 파일을 읽어 요약만 만든다. 실제 덮어쓰기는 확인 버튼에서 한다. */
+  const handleBackupFile = (file: File) => {
+    setBackupError(null);
+    setMessage("");
+    const reader = new FileReader();
+    reader.onload = () => {
+      const json = String(reader.result ?? "");
+      try {
+        setPending({ json, summary: summarizeBackup(json) });
+      } catch {
+        setPending(null);
+        setBackupError(
+          "이 파일은 EJU Study 백업이 아닌 것 같습니다. 덱과 카드 목록을 찾지 못했습니다. 기존 데이터는 그대로 있습니다."
+        );
+      }
+    };
+    reader.onerror = () => {
+      setPending(null);
+      setBackupError("파일을 읽지 못했습니다.");
+    };
+    reader.readAsText(file);
+  };
+
+  const confirmRestore = () => {
+    if (!pending) return;
+    try {
+      importBackup(pending.json);
+      setPending(null);
+      setMessage("백업을 복원했습니다.");
+    } catch {
+      setBackupError("복원에 실패했습니다. 파일이 손상됐을 수 있습니다. 기존 데이터는 그대로 있습니다.");
+    }
   };
 
   const patchProfile = (patch: Partial<ExamProfile>) => {
@@ -155,6 +215,129 @@ export function SettingsView() {
           <p>오답: {data.mistakes.filter((m) => !m.resolved).length}</p>
           <p>덱: {data.decks.length}</p>
         </div>
+      </section>
+
+      <section className="rounded-xl border border-amber-300 p-6 dark:border-amber-800">
+        <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold">
+          <ShieldAlert className="h-5 w-5 text-amber-500" />
+          백업 · 복원
+        </h2>
+        <p className="mb-4 text-sm leading-relaxed text-amber-800 dark:text-amber-300">
+          이 앱의 <strong>유일한 저장소는 이 브라우저의 localStorage</strong>다. 서버에 사본이
+          없다. 브라우저 데이터(쿠키·사이트 데이터)를 지우거나, 시크릿 모드로 열거나, 다른 기기·
+          다른 브라우저로 옮기면 학습 기록은 <strong>복구할 방법이 없다</strong>. 정기적으로 파일로
+          내보내 두는 것이 유일한 대비책이다.
+        </p>
+
+        <p className="mb-4 text-xs text-zinc-500">
+          마지막 백업:{" "}
+          {data.settings.lastBackupAt ? (
+            <span className="font-medium text-zinc-700 dark:text-zinc-300">
+              {data.settings.lastBackupAt}
+            </span>
+          ) : (
+            <span className="font-medium text-red-600 dark:text-red-400">아직 없음</span>
+          )}
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={handleExport}
+            className="flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2 text-sm font-medium text-white hover:bg-amber-600"
+          >
+            <Download className="h-4 w-4" />
+            백업 파일 내보내기
+          </button>
+          <button
+            onClick={() => backupRef.current?.click()}
+            className="flex items-center gap-2 rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium dark:border-zinc-700"
+          >
+            <Upload className="h-4 w-4" />
+            백업 파일 불러오기
+          </button>
+          <input
+            ref={backupRef}
+            type="file"
+            accept=".json,application/json"
+            className="hidden"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) handleBackupFile(f);
+              // 같은 파일을 다시 고를 수 있게 값을 비운다
+              e.target.value = "";
+            }}
+          />
+        </div>
+
+        {backupError && (
+          <p className="mt-4 flex items-start gap-2 rounded-lg bg-red-50 p-3 text-sm leading-relaxed text-red-700 dark:bg-red-900/20 dark:text-red-300">
+            <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+            {backupError}
+          </p>
+        )}
+
+        {pending && (
+          <div className="mt-4 rounded-xl border border-red-300 bg-red-50 p-4 dark:border-red-800 dark:bg-red-900/20">
+            <p className="flex items-start gap-2 text-sm font-semibold text-red-800 dark:text-red-300">
+              <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+              복원하면 지금 이 브라우저의 데이터가 전부 사라진다. 되돌릴 수 없다.
+            </p>
+            <div className="mt-3 overflow-x-auto">
+              <table className="w-full min-w-[320px] text-sm">
+                <thead>
+                  <tr className="text-left text-xs text-zinc-500">
+                    <th className="py-1 pr-3 font-medium">항목</th>
+                    <th className="py-1 pr-3 font-medium">지금 (사라짐)</th>
+                    <th className="py-1 font-medium">백업 파일 (덮어씀)</th>
+                  </tr>
+                </thead>
+                <tbody className="tabular-nums">
+                  {[
+                    ["덱", data.decks.length, pending.summary.decks],
+                    ["카드", data.cards.length, pending.summary.cards],
+                    ["오답", data.mistakes.length, pending.summary.mistakes],
+                    ["시험 기록", data.examRecords.length, pending.summary.examRecords],
+                    ["작문", data.writingEntries.length, pending.summary.writingEntries],
+                  ].map(([label, now, next]) => (
+                    <tr key={String(label)} className="border-t border-red-200 dark:border-red-900">
+                      <td className="py-1.5 pr-3">{label}</td>
+                      <td className="py-1.5 pr-3 text-red-700 line-through dark:text-red-400">
+                        {now}
+                      </td>
+                      <td className="py-1.5 font-medium text-green-700 dark:text-green-400">
+                        {next}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-2 text-xs text-zinc-500">
+              백업 파일 버전 v{pending.summary.schemaVersion ?? "?"}
+              {pending.summary.backedUpAt && ` · ${pending.summary.backedUpAt}에 내보낸 파일`}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                onClick={confirmRestore}
+                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700"
+              >
+                덮어쓰고 복원
+              </button>
+              <button
+                onClick={() => setPending(null)}
+                className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium dark:border-zinc-600"
+              >
+                취소
+              </button>
+              <button
+                onClick={handleExport}
+                className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium dark:border-zinc-600"
+              >
+                먼저 지금 데이터 백업
+              </button>
+            </div>
+          </div>
+        )}
       </section>
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">

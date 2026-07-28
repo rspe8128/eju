@@ -1,20 +1,20 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ChevronLeft, Pause, Play, Save, CheckCircle2, Sparkles } from "lucide-react";
+import { ChevronLeft, Loader2, Pause, Play, Save, CheckCircle2, Sparkles } from "lucide-react";
 import type { MockPaper, MockSection, MockWritingPrompt } from "@/lib/mock/types";
 import { formatClock } from "@/lib/mockExam";
 import { useTranslate } from "@/lib/mock/useTranslate";
 import { loadWritingDraft, saveWritingDraft } from "@/lib/mock/progress";
 import { useStorage } from "@/context/StorageContext";
 import { todayString } from "@/lib/utils";
+import { useOnline, OFFLINE_MESSAGE } from "@/lib/useOnline";
+import { MIN_CHARS, MAX_CHARS } from "@/lib/writing/rubric";
+import { GradeResultPanel } from "@/components/writing/GradeResultPanel";
+import { WritingChecks, useWritingAnalysis } from "@/components/writing/WritingChecks";
+import { useWritingGrade, gradeToEntryFields } from "@/components/writing/useWritingGrade";
 import { TranslateButton, TranslateError } from "./TranslateButton";
 import { cn } from "@/lib/utils";
-
-/** 원고지 기준 글자 수 — 공백·줄바꿈은 세지 않는다. */
-function countChars(text: string): number {
-  return text.replace(/\s/g, "").length;
-}
 
 function PromptCard({
   prompt,
@@ -26,6 +26,8 @@ function PromptCard({
   onSelect: () => void;
 }) {
   const tr = useTranslate([prompt.ja]);
+  const online = useOnline();
+  const translateBlocked = !online && !tr.cached && !tr.shown;
 
   return (
     <div
@@ -44,6 +46,8 @@ function PromptCard({
           cached={tr.cached}
           onClick={tr.toggle}
           label="번역"
+          disabled={translateBlocked}
+          title={translateBlocked ? OFFLINE_MESSAGE : undefined}
         />
       </div>
       <div className="px-4 py-4">
@@ -95,8 +99,12 @@ export function WritingRunner({
   const startedAt = useRef<number>(Date.now());
   const restored = useRef(false);
 
+  const grader = useWritingGrade();
+  // 글자 수·자동 점검은 /writing 과 완전히 같은 코드를 쓴다
+  const { stats, checks, readyForGrading } = useWritingAnalysis(body);
+
   const selected = prompts.find((p) => p.id === selectedId) ?? null;
-  const chars = countChars(body);
+  const chars = stats.chars;
 
   useEffect(() => {
     if (restored.current) return;
@@ -149,6 +157,8 @@ export function WritingRunner({
       minutes,
       selfScore: Object.values(checked).filter(Boolean).length,
       memo: `${paper.title} · 기술 테마${selected.number}`,
+      // AI 채점을 받았으면 같이 남긴다 → /writing 의 과거 작성물에서도 보인다
+      ...gradeToEntryFields(grader.grade),
     });
     setSaved(true);
   };
@@ -164,7 +174,7 @@ export function WritingRunner({
     );
   }
 
-  const inRange = chars >= 400 && chars <= 500;
+  const inRange = chars >= MIN_CHARS && chars <= MAX_CHARS;
 
   return (
     <div className="pb-16">
@@ -235,11 +245,13 @@ export function WritingRunner({
               <span
                 className={cn(
                   "text-sm font-semibold tabular-nums",
-                  inRange ? "text-green-600" : chars > 500 ? "text-red-500" : "text-zinc-400"
+                  inRange ? "text-green-600" : chars > MAX_CHARS ? "text-red-500" : "text-zinc-400"
                 )}
               >
                 {chars}자
-                <span className="ml-1 text-xs font-normal text-zinc-400">/ 400~500</span>
+                <span className="ml-1 text-xs font-normal text-zinc-400">
+                  / {MIN_CHARS}~{MAX_CHARS}
+                </span>
               </span>
             </div>
             <textarea
@@ -262,7 +274,59 @@ export function WritingRunner({
             </button>
           ) : (
             <>
-              <section className="mt-5 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-700 dark:bg-zinc-800">
+              <WritingChecks checks={checks} className="mt-5" />
+
+              <section className="mt-4 rounded-2xl border border-violet-200 bg-white p-5 dark:border-violet-900/60 dark:bg-zinc-800">
+                <h3 className="flex items-center gap-1.5 text-sm font-semibold">
+                  <Sparkles className="h-4 w-4 text-violet-500" />
+                  AI 채점
+                </h3>
+                <p className="mt-0.5 text-xs leading-relaxed text-zinc-500">
+                  /writing 화면과 같은 채점 기준·같은 모델을 쓴다. 체크리스트 자가 채점과 나란히
+                  보고, 어긋나는 항목이 있으면 그쪽을 먼저 파자.
+                </p>
+                <button
+                  onClick={() => grader.runGrading(selected.ja, body)}
+                  disabled={grader.grading || !body.trim() || grader.offline}
+                  title={grader.blockedReason ?? undefined}
+                  className="mt-3 flex items-center gap-1.5 rounded-xl bg-violet-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-violet-700 disabled:opacity-40"
+                >
+                  {grader.grading ? (
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                  ) : (
+                    <Sparkles className="h-4 w-4" />
+                  )}
+                  {grader.grading
+                    ? "채점 중… (20초쯤 걸린다)"
+                    : grader.grade
+                      ? "다시 채점"
+                      : "AI 채점 받기"}
+                </button>
+                {grader.offline && (
+                  <p className="mt-2 text-xs text-amber-600 dark:text-amber-400">
+                    {OFFLINE_MESSAGE}
+                  </p>
+                )}
+                {!readyForGrading && !grader.grade && !grader.grading && (
+                  <p className="mt-2 text-xs leading-relaxed text-zinc-400">
+                    위의 자동 점검에서 빨간 항목을 먼저 고치는 걸 권한다. 분량 미달이나 문체 혼용은
+                    AI에게 묻지 않아도 감점이 확실하다.
+                  </p>
+                )}
+                {grader.error && (
+                  <p className="mt-3 rounded-xl bg-red-50 p-3 text-sm leading-relaxed text-red-700 dark:bg-red-900/20 dark:text-red-300">
+                    {grader.error}
+                  </p>
+                )}
+              </section>
+
+              {grader.grade && (
+                <div className="mt-4">
+                  <GradeResultPanel result={grader.grade} />
+                </div>
+              )}
+
+              <section className="mt-4 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-700 dark:bg-zinc-800">
                 <h3 className="flex items-center gap-1.5 text-sm font-semibold">
                   <CheckCircle2 className="h-4 w-4 text-green-500" />
                   자가 채점 체크리스트
@@ -300,7 +364,11 @@ export function WritingRunner({
                   className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-700 disabled:opacity-50"
                 >
                   <Save className="h-4 w-4" />
-                  {saved ? "작문 기록에 저장됨" : "작문 기록에 저장"}
+                  {saved
+                    ? "작문 기록에 저장됨"
+                    : grader.grade
+                      ? "채점 결과와 함께 저장"
+                      : "작문 기록에 저장"}
                 </button>
                 <button
                   onClick={() => {
@@ -315,8 +383,8 @@ export function WritingRunner({
 
               <p className="mt-4 flex items-start gap-2 rounded-xl bg-zinc-100 p-3.5 text-xs leading-relaxed text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
                 <Sparkles className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-                기술은 지금은 자가 채점이다. 나중에 AI 채점을 붙이면 위 체크리스트가 그대로 채점
-                기준으로 넘어가도록 데이터를 만들어 뒀다.
+                저장하면 작문 기록(/writing)에 남는다. AI 채점을 받은 뒤에 저장하면 점수와 첨삭까지
+                같이 남으므로, 나중에 같은 주제를 다시 쓸 때 비교할 수 있다.
               </p>
             </>
           )}

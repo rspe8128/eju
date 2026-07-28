@@ -14,6 +14,7 @@ import {
   FileText,
   CheckCircle2,
   Circle,
+  ShieldAlert,
 } from "lucide-react";
 import { getSubjectLabel } from "@/lib/eju";
 import {
@@ -25,6 +26,7 @@ import {
 import { daysUntil } from "@/lib/utils";
 import { getSubjectColor } from "@/lib/types";
 import { computePlan } from "@/lib/plan";
+import { resolveMockMistake } from "@/lib/mock/mistakeIds";
 import { StudyHeatmap } from "@/components/study/StudyHeatmap";
 
 const shortcuts = [
@@ -88,6 +90,11 @@ export function DashboardView() {
   const todoDone = todos.filter((t) => t.done).length;
   const todoPct = Math.round((todoDone / todos.length) * 100);
 
+  // 기록이 localStorage에만 있으므로, 백업이 오래되면 눈에 띄게 알린다.
+  const lastBackup = data.settings.lastBackupAt;
+  const backupAgeDays = lastBackup ? -daysUntil(lastBackup) : null;
+  const backupStale = backupAgeDays === null || backupAgeDays > 30;
+
   return (
     <div className="space-y-8">
       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -102,6 +109,26 @@ export function DashboardView() {
           EJU가 뭔지 궁금하다면 →
         </Link>
       </div>
+
+      {backupStale && (
+        <Link
+          href="/settings"
+          className="flex items-start gap-3 rounded-xl border border-amber-300 bg-amber-50 p-4 transition-colors hover:bg-amber-100 dark:border-amber-800 dark:bg-amber-900/20 dark:hover:bg-amber-900/30"
+        >
+          <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400" />
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">
+              {backupAgeDays === null
+                ? "아직 한 번도 백업하지 않았다"
+                : `마지막 백업이 ${backupAgeDays}일 전이다`}
+            </p>
+            <p className="mt-0.5 text-xs leading-relaxed text-amber-800/90 dark:text-amber-300/80">
+              모든 기록이 이 브라우저에만 있다. 브라우저 데이터를 지우면 복구할 수 없다. 설정에서
+              백업 파일을 내보내 두자 →
+            </p>
+          </div>
+        </Link>
+      )}
 
       <section className="rounded-xl border border-zinc-200 p-5 dark:border-zinc-700">
         <div className="mb-3 flex items-center justify-between">
@@ -246,16 +273,18 @@ export function DashboardView() {
                 m.sourceType === "card" ? data.cards.find((c) => c.id === m.sourceId) : null;
               const problem =
                 m.sourceType === "problem" ? data.items.find((i) => i.id === m.sourceId) : null;
-              const label =
-                card?.front ?? (problem?.type === "problem" ? problem.title : "알 수 없음");
+              const mock = m.sourceType === "mock" ? resolveMockMistake(m.sourceId) : null;
+              const label = mock
+                ? `${mock.paper.title} ${mock.question.number}번`
+                : (card?.front ?? (problem?.type === "problem" ? problem.title : "알 수 없음"));
               return (
                 <div
                   key={m.id}
                   className="flex items-center justify-between rounded-lg border border-zinc-200 px-4 py-3 dark:border-zinc-700"
                 >
-                  <span className="text-sm">{label}</span>
-                  <span className="text-xs text-zinc-400">
-                    {m.sourceType === "card" ? "카드" : "문제"}
+                  <span className="min-w-0 truncate text-sm">{label}</span>
+                  <span className="shrink-0 text-xs text-zinc-400">
+                    {m.sourceType === "card" ? "카드" : m.sourceType === "mock" ? "모의고사" : "문제"}
                   </span>
                 </div>
               );
