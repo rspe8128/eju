@@ -6,8 +6,6 @@ import {
   DEFAULT_SETTINGS,
 } from "./types";
 import { generateId } from "./utils";
-import { jlptBasicWords } from "./data/japaneseWords";
-import { toeflWords } from "./data/toeflWords";
 import { toeflExpressions } from "./data/toeflExpressions";
 import { CORE2400_CHUNKS } from "./data/toeflCore2400";
 import { mathTerms } from "./data/mathTerms";
@@ -191,37 +189,25 @@ export function makeJapaneseExtraDecks(): { decks: Deck[]; cards: Card[] } {
   return { decks, cards };
 }
 
+/**
+ * 처음 켰을 때의 데이터.
+ *
+ * ── 덱과 카드가 비어 있는 이유 ─────────────────────────────────
+ * 예전에는 여기서 24개 덱 5,726장을 통째로 넣었다. 그런데 새 카드는 전부
+ * "오늘 복습" 대상이라, 앱을 처음 켜자마자 복습할 카드가 수천 장 쌓여 있었다.
+ * 무엇부터 해야 할지 알 수 없는 화면이었다.
+ *
+ * 지금은 단어장 보관함(`/study/library`)에 전부 올려 두고, 담은 것만 들어온다.
+ * 단어가 사라진 게 아니다 — 담는 시점이 바뀐 것뿐이다.
+ *
+ * 아래의 makeTermDecks() 같은 함수들은 지우지 않았다. 예전 버전을 쓰던 사람의
+ * 데이터를 올리는 마이그레이션(storage/migrate.ts)이 아직 쓰기 때문이다.
+ */
 export function getSeedData(): AppData {
-  const termDecks = makeTermDecks();
-  const importedJlpt = makeImportedJlptDecks();
-  const japaneseExtra = makeJapaneseExtraDecks();
-  const toeflExtra = makeToeflExtraDecks();
-  const toeflCore = makeToeflCoreDecks();
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
-    decks: [
-      makeDeck(japaneseDeckId, "japanese", "일본어 기초 단어 100", "vocab"),
-      makeDeck(
-        toeflDeckId,
-        "toefl",
-        `TOEFL 아카데믹 단어 (${toeflWords.length})`,
-        "vocab"
-      ),
-      ...toeflCore.decks,
-      ...toeflExtra.decks,
-      ...termDecks.decks,
-      ...importedJlpt.decks,
-      ...japaneseExtra.decks,
-    ],
-    cards: [
-      ...makeCards(japaneseDeckId, jlptBasicWords),
-      ...makeCards(toeflDeckId, toeflWords),
-      ...toeflCore.cards,
-      ...toeflExtra.cards,
-      ...termDecks.cards,
-      ...importedJlpt.cards,
-      ...japaneseExtra.cards,
-    ],
+    decks: [],
+    cards: [],
     subjects: SUBJECTS,
     units: UNITS,
     items: ITEMS,
@@ -262,31 +248,8 @@ export function getSeedData(): AppData {
     // 타입과 저장소는 남겨 두었으므로, 나중에 다시 필요해지면 여기만 채우면 된다.
     answerKeys: [],
     examAttempts: [],
-    planTargets: [
-      {
-        id: "plan-japanese",
-        kind: "deck",
-        refId: japaneseDeckId,
-        totalUnits: 100,
-        completedUnits: 0,
-        dueDate: "2028-11-05",
-        dailyQuota: 5,
-      },
-      {
-        id: "plan-toefl",
-        kind: "deck",
-        refId: toeflDeckId,
-        totalUnits: toeflWords.length,
-        completedUnits: 0,
-        dueDate: "2028-11-05",
-        dailyQuota: 5,
-      },
-      ...makeTermPlanTargets(TERM_DECKS.map((d) => d.id)),
-      ...makeTermPlanTargets(JLPT_IMPORTED_DECKS.map((d) => d.id)),
-      ...makeTermPlanTargets(JAPANESE_EXTRA_DECKS.map((d) => d.id)),
-      ...makeTermPlanTargets(TOEFL_EXTRA_DECKS.map((d) => d.id)),
-      ...makeTermPlanTargets(TOEFL_CORE_DECKS.map((d) => d.id)),
-    ],
+    // 덱이 없으니 학습 플랜 목표도 없다. 보관함에서 덱을 담을 때 같이 만들어진다.
+    planTargets: [],
     focusSessions: [],
     writingEntries: [],
     dictationEntries: [],

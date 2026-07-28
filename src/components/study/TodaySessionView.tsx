@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { Play, HelpCircle, Sparkles } from "lucide-react";
+import { Play, HelpCircle, Sparkles, Library } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { FlashcardSession } from "./FlashcardSession";
 import { QuizSession } from "./QuizSession";
@@ -76,7 +76,25 @@ export function TodaySessionView() {
         </p>
       </header>
 
-      {sessionCards.length === 0 ? (
+      {/* 담은 단어장이 하나도 없는 것과, 오늘 몫을 다 끝낸 것은 전혀 다른 상황이다.
+          둘 다 "카드 0장"이라 예전에는 똑같이 "오늘 몫은 끝났어요"가 떴다. */}
+      {data.cards.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-zinc-300 p-10 text-center dark:border-zinc-700">
+          <Library className="mx-auto h-10 w-10 text-zinc-300 dark:text-zinc-600" />
+          <p className="mt-3 font-medium">먼저 단어장을 담자</p>
+          <p className="mx-auto mt-1.5 max-w-sm text-sm leading-relaxed text-zinc-500">
+            보관함에 JLPT N5~N1과 EJU 과목 용어가 들어 있다. 담은 단어장에서만 오늘 몫이
+            나온다. 처음이라면 <b>일본어 기초 단어 100</b>부터 담아 보자.
+          </p>
+          <Link
+            href="/study/library"
+            className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            <Library className="h-4 w-4" />
+            단어장 보관함 열기
+          </Link>
+        </div>
+      ) : sessionCards.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-zinc-300 p-10 text-center dark:border-zinc-700">
           <Sparkles className="mx-auto h-10 w-10 text-green-500" />
           <p className="mt-3 font-medium">오늘 몫은 끝났어요</p>

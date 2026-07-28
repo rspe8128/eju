@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "check:mock": "node scripts/check-mock.mjs"
+    "check:mock": "node scripts/check-mock.mjs",
+    "check:vocab": "node scripts/check-vocab.mjs",
+    "check:ai": "node scripts/check-ai.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.27.0",

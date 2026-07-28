@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Layers, Play, HelpCircle, Pencil, Trash2, Search, Shuffle } from "lucide-react";
+import { Layers, Play, HelpCircle, Pencil, Trash2, Search, Shuffle, Library } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { FlashcardSession } from "./FlashcardSession";
 import { QuizSession } from "./QuizSession";
@@ -214,10 +214,19 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
       </div>
 
       {filteredDecks.length === 0 && (
-        <div className="rounded-xl border border-dashed border-zinc-300 p-12 text-center dark:border-zinc-700">
-          <p className="mb-2 text-zinc-500">아직 덱이 없습니다.</p>
-          <a href="/settings" className="text-sm text-blue-600 hover:underline">
-            설정에서 덱 추가하기
+        <div className="rounded-xl border border-dashed border-zinc-300 p-10 text-center dark:border-zinc-700">
+          <Library className="mx-auto h-8 w-8 text-zinc-300 dark:text-zinc-600" />
+          <p className="mt-3 font-medium">아직 담은 단어장이 없다</p>
+          <p className="mx-auto mt-1.5 max-w-sm text-sm leading-relaxed text-zinc-500">
+            단어는 이미 앱 안에 들어 있다. 보관함에서 원하는 단어장을 담으면 여기에 나타난다.
+            한 권(400단어 안팎)씩 담아서 끝내는 걸 권한다.
+          </p>
+          <a
+            href="/study/library"
+            className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            <Library className="h-4 w-4" />
+            단어장 보관함 열기
           </a>
         </div>
       )}

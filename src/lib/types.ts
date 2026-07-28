@@ -181,10 +181,23 @@ export type WritingEntry = {
   date: string;
   prompt: string;
   body: string;
+  /** 원고지 기준(공백 제외) 글자 수 */
   charCount: number;
   minutes: number;
   selfScore?: number;
   memo?: string;
+  /**
+   * AI 채점 결과. 전부 선택 항목이므로 예전에 쓴 글에는 없다 —
+   * 그래서 스키마 버전을 올리지 않아도 된다.
+   */
+  aiScore?: number;
+  aiMax?: number;
+  aiAxes?: { label: string; score: number; max: number; comment: string }[];
+  aiStrengths?: string[];
+  aiImprovements?: string[];
+  aiFixes?: { original: string; corrected: string; reason: string }[];
+  aiAdvice?: string;
+  aiModel?: string;
 };
 
 export type DictationEntry = {

@@ -665,7 +665,24 @@ export function StorageProvider({ children }: { children: ReactNode }) {
           tags: tags ?? [],
           srs: makeSRS(),
         }));
-        return { ...prev, decks: [...prev.decks, deck], cards: [...prev.cards, ...cards] };
+        // 학습 플랜에도 목표를 하나 만들어 둔다. 예전에는 시드가 이걸 같이 넣어 줬다.
+        const planTarget: PlanTarget = {
+          id: `plan-${meta.id}`,
+          kind: "deck",
+          refId: meta.id,
+          totalUnits: cards.length,
+          completedUnits: 0,
+          dueDate: "2028-11-05",
+          dailyQuota: 5,
+        };
+        return {
+          ...prev,
+          decks: [...prev.decks, deck],
+          cards: [...prev.cards, ...cards],
+          planTargets: prev.planTargets.some((p) => p.id === planTarget.id)
+            ? prev.planTargets
+            : [...prev.planTargets, planTarget],
+        };
       });
     },
     [persist]
