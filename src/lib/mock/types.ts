@@ -57,6 +57,14 @@ export type MockPassage = {
   /** 일본어 본문. 배열 한 칸 = 한 문단. */
   ja: string[];
   table?: MockTable;
+  /**
+   * 음성으로만 나오는 부분 (청독해·청해).
+   *
+   * 실전에서는 이걸 **듣기만** 하고 시험지에는 없다. 그래서 풀 때는 화면에 띄우지 않고
+   * TTS로 읽어 주기만 하며, 채점한 뒤에야 글로 공개한다.
+   * 청독해는 표(table)를 보면서 이 음성을 듣는 형식이므로 둘 다 있을 수 있다.
+   */
+  scriptJa?: string[];
   /** 지문 앞에 붙는 상황 설명(청해의 「〜について話しています」 같은 것) */
   leadJa?: string;
   /** 어려운 어휘 힌트. 실전에는 없지만 복습용으로 유용하다. */
@@ -184,6 +192,18 @@ export function groupByPassage(
 }
 
 /** 지문 전체를 번역용 문자열 배열로 편다. */
+/** 이 지문이 음성 문항인가 (재생 버튼을 붙여야 하는가) */
+export function isListeningPassage(passage: MockPassage): boolean {
+  return (passage.scriptJa?.length ?? 0) > 0;
+}
+
+/**
+ * 번역 대상 텍스트.
+ *
+ * scriptJa는 **일부러 넣지 않는다.** 풀기 전에 번역 버튼을 누르면 아직 듣지도 않은
+ * 음성 내용이 한국어로 드러나 문제가 무의미해진다. 스크립트 번역은 채점 후
+ * 복습 화면에서 따로 제공한다.
+ */
 export function passageTexts(passage: MockPassage): string[] {
   const out: string[] = [];
   if (passage.leadJa) out.push(passage.leadJa);

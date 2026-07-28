@@ -76,6 +76,33 @@ export function SubjectDetailView({ subjectId }: Props) {
     );
   }
 
+  if (units.length === 0) {
+    return (
+      <div className="space-y-6">
+        <div>
+          <Link href="/study/subjects" className="text-sm text-zinc-500 hover:text-zinc-700">
+            ← 교과목 목록
+          </Link>
+          <h1 className="mt-2 text-2xl font-bold" style={{ color: subject.color }}>
+            {subject.name}
+          </h1>
+        </div>
+        <div className="rounded-xl border border-dashed border-zinc-300 p-10 text-center dark:border-zinc-700">
+          <p className="font-medium">보관함에서 학습 모듈을 담으세요</p>
+          <p className="mt-1.5 text-sm text-zinc-500">
+            이 과목에 담긴 단원이 아직 없다. 모듈을 추가하면 개념과 문제가 여기에 표시된다.
+          </p>
+          <Link
+            href="/study/modules"
+            className="mt-4 inline-flex rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            학습 모듈 보관함 열기
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   const handleSelectItem = (item: Item) => {
     setSelectedItem(item);
     setShowAnswer(false);
@@ -133,11 +160,6 @@ export function SubjectDetailView({ subjectId }: Props) {
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="space-y-4 lg:col-span-1">
-          {units.length === 0 && (
-            <div className="rounded-xl border border-dashed border-zinc-300 p-8 text-center text-sm text-zinc-500 dark:border-zinc-700">
-              단원이 없습니다.
-            </div>
-          )}
           {units.map((unit) => {
             const items = data.items.filter((i) => i.unitId === unit.id);
             return (

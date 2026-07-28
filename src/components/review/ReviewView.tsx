@@ -340,7 +340,7 @@ function MockMistakeCard({
       {open && (
         <div className="space-y-4 border-t border-zinc-100 p-4 dark:border-zinc-700">
           <p className="text-xs text-zinc-400">{section.label}</p>
-          {passage && <PassageView passage={passage} />}
+          {passage && <PassageView passage={passage} review />}
           <QuestionView
             question={question}
             subjectCode={paper.subjectCode}

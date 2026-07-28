@@ -2,6 +2,7 @@
 
 import {
   createContext,
+  useRef,
   useCallback,
   useContext,
   useEffect,
@@ -12,6 +13,9 @@ import {
 import { loadData, saveData, resetData, measureUsage, exportData, importData } from "@/lib/storage";
 import type { StorageUsage } from "@/lib/storage";
 import { getLibraryDeck } from "@/lib/data/vocab/library";
+import { getStudyModule, unitIdOf } from "@/lib/data/subjects/modules";
+import { useOnline } from "@/lib/useOnline";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { createDefaultSRS as makeSRS } from "@/lib/srs";
 import type {
   AnswerKey,
@@ -38,6 +42,8 @@ import type { SRSRating } from "@/lib/types";
 import { createDefaultSRS } from "@/lib/srs";
 import { refreshPlanTarget } from "@/lib/plan";
 import { generateId, getWeekStart, todayString } from "@/lib/utils";
+import { encodeData, decodeData } from "@/lib/storage/codec";
+import { migrate } from "@/lib/storage/migrate";
 
 type StorageContextValue = {
   data: AppData;
@@ -87,13 +93,78 @@ type StorageContextValue = {
   addLibraryDeck: (libraryDeckId: string) => Promise<void>;
   /** 덱과 그 카드·플랜·오답 기록을 통째로 제거한다 (저장 공간 회수용) */
   removeDeck: (deckId: string) => void;
+  addStudyModule: (moduleId: string) => void;
+  removeStudyModule: (moduleId: string) => void;
   /** 마지막 저장이 실패했다면 그 사유. 정상이면 null */
   storageError: string | null;
   /** 현재 localStorage 사용량 */
   storageUsage: StorageUsage;
+  syncInfo: {
+    enabled: boolean;
+    loggedIn: boolean;
+    status: "idle" | "syncing" | "synced" | "offline" | "error" | "conflict";
+    pendingCount: number;
+    lastSyncedAt: string | null;
+    error: string | null;
+  };
+  resetLocalOnly: () => void;
+  resetWithServerDelete: () => Promise<boolean>;
 };
 
 const StorageContext = createContext<StorageContextValue | null>(null);
+
+const SYNC_META_KEY = "eju-sync-meta-v1";
+type SyncMeta = Record<string, { lastPulledVersion: number; lastPulledAt: string }>;
+
+function loadSyncMeta(): SyncMeta {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = localStorage.getItem(SYNC_META_KEY);
+    return raw ? (JSON.parse(raw) as SyncMeta) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveSyncMeta(meta: SyncMeta) {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(SYNC_META_KEY, JSON.stringify(meta));
+}
+
+function setLastPulledVersion(userId: string, version: number) {
+  const meta = loadSyncMeta();
+  meta[userId] = {
+    lastPulledVersion: version,
+    lastPulledAt: new Date().toISOString(),
+  };
+  saveSyncMeta(meta);
+}
+
+function getLastPulledVersion(userId: string): number {
+  return loadSyncMeta()[userId]?.lastPulledVersion ?? 0;
+}
+
+function hasMeaningfulData(data: AppData): boolean {
+  return (
+    data.cards.length > 0 ||
+    data.decks.length > 0 ||
+    data.items.length > 0 ||
+    data.units.length > 0 ||
+    data.mistakes.length > 0 ||
+    data.examRecords.length > 0 ||
+    data.examAttempts.length > 0 ||
+    data.writingEntries.length > 0
+  );
+}
+
+function lastStudyStamp(data: AppData): string {
+  const times: string[] = [];
+  if (data.lastStudyDate) times.push(data.lastStudyDate);
+  for (const w of data.writingEntries) times.push(w.date);
+  for (const a of data.examAttempts) times.push(a.date);
+  for (const r of data.examRecords) times.push(r.date);
+  return times.sort().at(-1) ?? "-";
+}
 
 function recordStudy(
   data: AppData,
@@ -149,6 +220,28 @@ export function StorageProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<AppData | null>(null);
   const [ready, setReady] = useState(false);
   const [storageError, setStorageError] = useState<string | null>(null);
+  const [pendingPushCount, setPendingPushCount] = useState(0);
+  const [lastSyncedAt, setLastSyncedAt] = useState<string | null>(null);
+  const [syncStatus, setSyncStatus] = useState<
+    "idle" | "syncing" | "synced" | "offline" | "error" | "conflict"
+  >("idle");
+  const [syncError, setSyncError] = useState<string | null>(null);
+  const [syncUserId, setSyncUserId] = useState<string | null>(null);
+  const [conflictState, setConflictState] = useState<{
+    serverVersion: number;
+    serverLabel: string | null;
+    serverUpdatedAt: string | null;
+    serverData: AppData;
+  } | null>(null);
+  const online = useOnline();
+  const supabase = useMemo(() => getSupabaseBrowserClient(), []);
+  const pushTimerRef = useRef<number | null>(null);
+  const applyingRemoteRef = useRef(false);
+  /** 로그인 직후 1회만 서버/로컬 초기 맞춤을 돌린다 (data 변경마다 돌리면 안 됨) */
+  const bootstrappedUserRef = useRef<string | null>(null);
+  const dataRef = useRef<AppData | null>(null);
+  const pendingPushCountRef = useRef(0);
+  const skipNextPushRef = useRef(false);
 
   useEffect(() => {
     setData(loadData());
@@ -165,8 +258,28 @@ export function StorageProvider({ children }: { children: ReactNode }) {
    */
   useEffect(() => {
     if (!ready || !data) return;
+    dataRef.current = data;
     setStorageError(saveData(data));
   }, [data, ready]);
+
+  useEffect(() => {
+    pendingPushCountRef.current = pendingPushCount;
+  }, [pendingPushCount]);
+
+  useEffect(() => {
+    if (!supabase) return;
+    const boot = async () => {
+      const { data: auth } = await supabase.auth.getUser();
+      setSyncUserId(auth.user?.id ?? null);
+    };
+    void boot();
+    const { data: listener } = supabase.auth.onAuthStateChange((_evt, session) => {
+      const nextId = session?.user?.id ?? null;
+      if (!nextId) bootstrappedUserRef.current = null;
+      setSyncUserId(nextId);
+    });
+    return () => listener.subscription.unsubscribe();
+  }, [supabase]);
 
   const persist = useCallback((updater: (prev: AppData) => AppData) => {
     setData((prev) => (prev ? updater(prev) : prev));
@@ -750,6 +863,265 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     [persist]
   );
 
+  const addStudyModule = useCallback(
+    (moduleId: string) => {
+      const module = getStudyModule(moduleId);
+      if (!module) return;
+      persist((prev) => {
+        const { unit, items } = module.build();
+        if (prev.units.some((u) => u.id === unit.id)) return prev;
+        return {
+          ...prev,
+          units: [...prev.units, unit],
+          items: [...prev.items, ...items],
+        };
+      });
+    },
+    [persist]
+  );
+
+  const removeStudyModule = useCallback(
+    (moduleId: string) => {
+      const targetUnitId = unitIdOf(moduleId);
+      persist((prev) => {
+        if (!prev.units.some((u) => u.id === targetUnitId)) return prev;
+        const itemIds = new Set(prev.items.filter((i) => i.unitId === targetUnitId).map((i) => i.id));
+        return {
+          ...prev,
+          units: prev.units.filter((u) => u.id !== targetUnitId),
+          items: prev.items.filter((i) => i.unitId !== targetUnitId),
+          mistakes: prev.mistakes.filter(
+            (m) => !(m.sourceType === "problem" && itemIds.has(m.sourceId))
+          ),
+        };
+      });
+    },
+    [persist]
+  );
+
+  const applyServerData = useCallback((next: AppData, version: number) => {
+    applyingRemoteRef.current = true;
+    setData(next);
+    setLastPulledVersion(syncUserId ?? "", version);
+    setLastSyncedAt(new Date().toISOString());
+    setPendingPushCount(0);
+    setSyncStatus("synced");
+    setSyncError(null);
+    window.setTimeout(() => {
+      applyingRemoteRef.current = false;
+    }, 0);
+  }, [syncUserId]);
+
+  const fetchServerRow = useCallback(async () => {
+    if (!supabase || !syncUserId) return null;
+    const { data: row, error } = await supabase
+      .from("study_data")
+      .select("payload, version, device_label, updated_at")
+      .eq("user_id", syncUserId)
+      .maybeSingle();
+    if (error) throw error;
+    return row;
+  }, [supabase, syncUserId]);
+
+  const pushLocalToServer = useCallback(
+    async (opts?: { forceOverwrite?: boolean; snapshot?: AppData }) => {
+      const local = opts?.snapshot ?? dataRef.current;
+      if (!supabase || !syncUserId || !local) return;
+      if (!online) {
+        setSyncStatus("offline");
+        return;
+      }
+      setSyncStatus("syncing");
+      setSyncError(null);
+      try {
+        const row = await fetchServerRow();
+        const knownVersion = getLastPulledVersion(syncUserId);
+        const pending = pendingPushCountRef.current;
+        if (!opts?.forceOverwrite && row && row.version > knownVersion && pending > 0) {
+          const decoded = migrate(decodeData(row.payload));
+          setConflictState({
+            serverVersion: row.version,
+            serverLabel: row.device_label,
+            serverUpdatedAt: row.updated_at,
+            serverData: decoded,
+          });
+          setSyncStatus("conflict");
+          return;
+        }
+
+        const nextVersion = Math.max(row?.version ?? 0, knownVersion) + 1;
+        const payload = encodeData(local) as unknown as Record<string, unknown>;
+        const deviceLabel =
+          typeof navigator !== "undefined"
+            ? `${navigator.userAgent.includes("Windows") ? "Windows" : "Browser"} · ${navigator.userAgent.includes("Chrome") ? "Chrome" : "Web"}`
+            : "Browser";
+        const { error: upsertError } = await supabase.from("study_data").upsert(
+          {
+            user_id: syncUserId,
+            payload,
+            version: nextVersion,
+            device_label: deviceLabel,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "user_id" }
+        );
+        if (upsertError) throw upsertError;
+        setLastPulledVersion(syncUserId, nextVersion);
+        setPendingPushCount(0);
+        setLastSyncedAt(new Date().toISOString());
+        setSyncStatus("synced");
+      } catch (e) {
+        setSyncStatus("error");
+        setSyncError(e instanceof Error ? e.message : "동기화에 실패했습니다.");
+      }
+    },
+    [supabase, syncUserId, online, fetchServerRow]
+  );
+
+  const pullIfServerNewer = useCallback(async () => {
+    if (!supabase || !syncUserId || !online) return;
+    try {
+      const row = await fetchServerRow();
+      if (!row) return;
+      const knownVersion = getLastPulledVersion(syncUserId);
+      if (row.version <= knownVersion) return;
+
+      const decoded = migrate(decodeData(row.payload));
+      if (pendingPushCountRef.current > 0) {
+        setConflictState({
+          serverVersion: row.version,
+          serverLabel: row.device_label,
+          serverUpdatedAt: row.updated_at,
+          serverData: decoded,
+        });
+        setSyncStatus("conflict");
+        return;
+      }
+      applyServerData(decoded, row.version);
+    } catch (e) {
+      setSyncStatus("error");
+      setSyncError(e instanceof Error ? e.message : "서버 데이터를 확인하지 못했습니다.");
+    }
+  }, [supabase, syncUserId, online, fetchServerRow, applyServerData]);
+
+  /** 로컬 변경 → 3초 디바운스 후 업로드 */
+  useEffect(() => {
+    if (!ready || !data || !syncUserId || !supabase) return;
+    if (applyingRemoteRef.current) return;
+    if (skipNextPushRef.current) {
+      skipNextPushRef.current = false;
+      return;
+    }
+    setPendingPushCount((n) => n + 1);
+    if (pushTimerRef.current) window.clearTimeout(pushTimerRef.current);
+    pushTimerRef.current = window.setTimeout(() => {
+      void pushLocalToServer();
+    }, 3000);
+    return () => {
+      if (pushTimerRef.current) window.clearTimeout(pushTimerRef.current);
+    };
+  }, [data, ready, syncUserId, supabase, pushLocalToServer]);
+
+  /** 로그인 직후 1회: 서버/로컬 초기 맞춤 */
+  useEffect(() => {
+    if (!ready || !syncUserId || !supabase || !online) return;
+    if (bootstrappedUserRef.current === syncUserId) return;
+    bootstrappedUserRef.current = syncUserId;
+    // 초기 맞춤이 끝날 때까지는 "로드"를 push로 취급하지 않는다
+    skipNextPushRef.current = true;
+
+    const run = async () => {
+      const local = dataRef.current;
+      if (!local) return;
+      try {
+        const row = await fetchServerRow();
+        if (!row) {
+          if (hasMeaningfulData(local)) {
+            await pushLocalToServer({ forceOverwrite: true, snapshot: local });
+          } else {
+            setSyncStatus("synced");
+          }
+          return;
+        }
+        const knownVersion = getLastPulledVersion(syncUserId);
+        if (!hasMeaningfulData(local)) {
+          applyServerData(migrate(decodeData(row.payload)), row.version);
+          return;
+        }
+        if (knownVersion === 0) {
+          setConflictState({
+            serverVersion: row.version,
+            serverLabel: row.device_label,
+            serverUpdatedAt: row.updated_at,
+            serverData: migrate(decodeData(row.payload)),
+          });
+          setSyncStatus("conflict");
+          return;
+        }
+        if (row.version > knownVersion) {
+          await pullIfServerNewer();
+        } else {
+          setSyncStatus("synced");
+        }
+      } catch (e) {
+        setSyncStatus("error");
+        setSyncError(e instanceof Error ? e.message : "동기화 초기화에 실패했습니다.");
+      }
+    };
+    void run();
+  }, [
+    ready,
+    syncUserId,
+    supabase,
+    online,
+    fetchServerRow,
+    pushLocalToServer,
+    applyServerData,
+    pullIfServerNewer,
+  ]);
+
+  /** 오프라인 → 온라인 복귀 시 대기분 올리기 */
+  useEffect(() => {
+    if (!online || !syncUserId || !supabase) return;
+    if (pendingPushCountRef.current <= 0) return;
+    void pushLocalToServer();
+  }, [online, syncUserId, supabase, pushLocalToServer]);
+
+  useEffect(() => {
+    if (!syncUserId || !online || !supabase) return;
+    const onFocus = () => {
+      void pullIfServerNewer();
+    };
+    window.addEventListener("focus", onFocus);
+    document.addEventListener("visibilitychange", onFocus);
+    return () => {
+      window.removeEventListener("focus", onFocus);
+      document.removeEventListener("visibilitychange", onFocus);
+    };
+  }, [syncUserId, online, supabase, pullIfServerNewer]);
+
+  const resetLocalOnly = useCallback(() => {
+    resetData();
+    setData(loadData());
+    setPendingPushCount(0);
+  }, []);
+
+  const resetWithServerDelete = useCallback(async () => {
+    if (!supabase || !syncUserId) {
+      resetLocalOnly();
+      return false;
+    }
+    const { error } = await supabase.from("study_data").delete().eq("user_id", syncUserId);
+    if (error) {
+      setSyncStatus("error");
+      setSyncError(error.message);
+      return false;
+    }
+    resetLocalOnly();
+    setLastPulledVersion(syncUserId, 0);
+    return true;
+  }, [supabase, syncUserId, resetLocalOnly]);
+
   const storageUsage = useMemo(
     () =>
       data
@@ -805,14 +1177,26 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       updateCardContent,
       deleteCard,
       resetAll,
+      resetLocalOnly,
+      resetWithServerDelete,
       exportBackup,
       importBackup,
       getDecksBySubject,
       getCardsByDeck,
       addLibraryDeck,
       removeDeck,
+      addStudyModule,
+      removeStudyModule,
       storageError,
       storageUsage,
+      syncInfo: {
+        enabled: Boolean(supabase),
+        loggedIn: Boolean(syncUserId),
+        status: syncStatus,
+        pendingCount: pendingPushCount,
+        lastSyncedAt,
+        error: syncError,
+      },
     };
   }, [
     data,
@@ -849,14 +1233,24 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     updateCardContent,
     deleteCard,
     resetAll,
+    resetLocalOnly,
+    resetWithServerDelete,
     exportBackup,
     importBackup,
     getDecksBySubject,
     getCardsByDeck,
     addLibraryDeck,
     removeDeck,
+    addStudyModule,
+    removeStudyModule,
     storageError,
     storageUsage,
+    supabase,
+    syncUserId,
+    syncStatus,
+    pendingPushCount,
+    lastSyncedAt,
+    syncError,
   ]);
 
   if (!value) {
@@ -867,7 +1261,66 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     );
   }
 
-  return <StorageContext.Provider value={value}>{children}</StorageContext.Provider>;
+  return (
+    <StorageContext.Provider value={value}>
+      {children}
+      {conflictState && data && (
+        <div className="fixed inset-0 z-[120] flex items-center justify-center bg-black/40 p-4">
+          <div className="w-full max-w-lg rounded-2xl bg-white p-5 dark:bg-zinc-800">
+            <h3 className="text-base font-semibold">동기화 충돌</h3>
+            <p className="mt-1 text-xs text-zinc-500">
+              서버가 더 최신이지만 이 기기에도 아직 올리지 않은 변경이 있습니다.
+            </p>
+            <div className="mt-3 rounded-lg bg-zinc-50 p-3 text-sm dark:bg-zinc-900">
+              <p>
+                이 기기: 카드 {data.cards.length.toLocaleString()}장 · 마지막 학습{" "}
+                {lastStudyStamp(data)}
+              </p>
+              <p className="mt-1">
+                서버: 카드 {conflictState.serverData.cards.length.toLocaleString()}장 · 마지막 학습{" "}
+                {lastStudyStamp(conflictState.serverData)}{" "}
+                {conflictState.serverLabel ? `(${conflictState.serverLabel})` : ""}
+              </p>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                onClick={() => {
+                  const blob = new Blob([exportData(data)], { type: "application/json" });
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement("a");
+                  a.href = url;
+                  a.download = `eju-backup-before-conflict-${todayString()}.json`;
+                  a.click();
+                  URL.revokeObjectURL(url);
+                }}
+                className="rounded-lg border border-zinc-300 px-3 py-2 text-sm dark:border-zinc-600"
+              >
+                먼저 백업받기
+              </button>
+              <button
+                onClick={() => {
+                  void pushLocalToServer({ forceOverwrite: true });
+                  setConflictState(null);
+                }}
+                className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white"
+              >
+                이 기기 것으로 덮어쓰기
+              </button>
+              <button
+                onClick={() => {
+                  applyServerData(conflictState.serverData, conflictState.serverVersion);
+                  setConflictState(null);
+                }}
+                className="rounded-lg border border-zinc-300 px-3 py-2 text-sm dark:border-zinc-600"
+              >
+                서버 것 내려받기
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </StorageContext.Provider>
+  );
 }
 
 export function useStorage() {

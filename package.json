@@ -10,9 +10,12 @@
     "typecheck": "tsc --noEmit",
     "check:mock": "node scripts/check-mock.mjs",
     "check:vocab": "node scripts/check-vocab.mjs",
+    "check:modules": "node scripts/check-modules.mjs",
     "check:ai": "node scripts/check-ai.mjs"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.3",
+    "@supabase/supabase-js": "^2.110.9",
     "lucide-react": "^1.27.0",
     "next": "^16.2.12",
     "react": "^19.2.8",

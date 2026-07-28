@@ -30,11 +30,11 @@ const fail = (m) => {
 };
 
 function compile() {
-  const npx = process.platform === "win32" ? "npx.cmd" : "npx";
+  const tscBin = require.resolve("typescript/bin/tsc");
   execFileSync(
-    npx,
+    process.execPath,
     [
-      "tsc",
+      tscBin,
       "src/lib/data/vocab/library.ts",
       "src/lib/storage/codec.ts",
       "src/lib/seed.ts",

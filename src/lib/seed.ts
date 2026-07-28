@@ -18,7 +18,7 @@ import { jlptN5KanjiWords } from "./data/jlptN5KanjiWords";
 import { jlptGrammarPoints } from "./data/jlptGrammar";
 import { jlptGrammarN3Points } from "./data/jlptGrammarN3";
 import { ejuAcademicVocab } from "./data/ejuAcademicVocab";
-import { SUBJECTS, UNITS, ITEMS } from "./data/subjectContent";
+import { SUBJECTS } from "./data/subjectContent";
 import type { WordEntry } from "./data/japaneseWords";
 
 function makeDeck(id: string, subject: string, title: string, type: Deck["type"]): Deck {
@@ -209,8 +209,8 @@ export function getSeedData(): AppData {
     decks: [],
     cards: [],
     subjects: SUBJECTS,
-    units: UNITS,
-    items: ITEMS,
+    units: [],
+    items: [],
     mistakes: [],
     goals: [
       {

@@ -11,6 +11,7 @@ const staticLinks = [
   { label: "오늘의 학습", href: "/study/today" },
   { label: "일본어", href: "/study/japanese" },
   { label: "단어장 보관함", href: "/study/library" },
+  { label: "학습 모듈 보관함", href: "/study/modules" },
   { label: "과목 용어", href: "/study/terms" },
   { label: "TOEFL", href: "/study/toefl" },
   { label: "모의고사", href: "/mock" },
@@ -23,6 +24,9 @@ const staticLinks = [
   { label: "오답노트", href: "/review" },
   { label: "일정", href: "/schedule" },
   { label: "설정", href: "/settings" },
+  { label: "로그인", href: "/login" },
+  { label: "프로필", href: "/profile" },
+  { label: "계정 관리", href: "/admin" },
 ];
 
 const TERM_SUBJECTS = new Set(["math", "sogo", "physics", "chemistry", "biology"]);

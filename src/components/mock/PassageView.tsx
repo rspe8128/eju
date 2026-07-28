@@ -8,6 +8,7 @@ import { useTranslate } from "@/lib/mock/useTranslate";
 import { annotateFurigana } from "@/lib/mock/furigana";
 import { useOnline, OFFLINE_MESSAGE } from "@/lib/useOnline";
 import { TranslateButton, TranslateError } from "./TranslateButton";
+import { ListeningPanel } from "./ListeningPanel";
 import { cn } from "@/lib/utils";
 
 /**
@@ -95,13 +96,21 @@ function TableBlock({ table, muted = false }: { table: MockTable; muted?: boolea
   );
 }
 
-export function PassageView({ passage }: { passage: MockPassage }) {
+export function PassageView({
+  passage,
+  review = false,
+}: {
+  passage: MockPassage;
+  /** 채점 후인가. 음성 스크립트는 이때만 자동으로 공개된다. */
+  review?: boolean;
+}) {
   const texts = passageTexts(passage);
   const tr = useTranslate(texts);
   const online = useOnline();
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   // 실전에는 후리가나가 없다. 그래서 기본은 꺼짐 — 번역 토글과 같은 규칙이다.
   const [furigana, setFurigana] = useState(false);
+  const hasScript = (passage.scriptJa?.length ?? 0) > 0;
 
   const meta = KIND_META[passage.kind] ?? KIND_META.prose;
   const Icon = meta.icon;
@@ -151,10 +160,21 @@ export function PassageView({ passage }: { passage: MockPassage }) {
           </p>
         )}
 
-        {passage.leadJa && (
+        {/* 음성 문항이면 lead도 음성으로만 나온다 — 여기서 글로 보여주면 안 된다 */}
+        {passage.leadJa && !hasScript && (
           <p className="ja-ui mb-3 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-600 dark:bg-zinc-900/50 dark:text-zinc-300">
             {furigana ? <FuriganaText text={passage.leadJa} /> : passage.leadJa}
           </p>
+        )}
+
+        {hasScript && (
+          <div className="mb-4">
+            <ListeningPanel
+              scriptJa={passage.scriptJa!}
+              leadJa={passage.leadJa}
+              review={review}
+            />
+          </div>
         )}
 
         <div

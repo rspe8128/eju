@@ -19,11 +19,11 @@ const out = mkdtempSync(join(tmpdir(), "eju-mock-"));
 const require = createRequire(import.meta.url);
 
 function compile() {
-  const tsc = process.platform === "win32" ? "npx.cmd" : "npx";
+  const tscBin = require.resolve("typescript/bin/tsc");
   execFileSync(
-    tsc,
+    process.execPath,
     [
-      "tsc",
+      tscBin,
       "src/lib/mock/registry.ts",
       "src/lib/examTopics.ts",
       "--ignoreConfig",
@@ -69,8 +69,20 @@ function main() {
       for (const p of s.passages) {
         if (seenIds.has(p.id)) fail(`중복 id: ${p.id}`);
         seenIds.add(p.id);
-        if (p.ja.length === 0 && !p.table) fail(`빈 지문: ${p.id}`);
+
+        const hasScript = (p.scriptJa?.length ?? 0) > 0;
+        // 청해는 시험지에 인쇄되는 본문이 없다(ja: []). 대신 음성 스크립트가 있어야 한다.
+        if (p.ja.length === 0 && !p.table && !hasScript) fail(`빈 지문: ${p.id}`);
         for (const para of p.ja) if (!para.trim()) fail(`빈 문단: ${p.id}`);
+
+        if (hasScript) {
+          for (const line of p.scriptJa) if (!line.trim()) fail(`${p.id}: 빈 스크립트 줄`);
+          const slen = p.scriptJa.join("").length;
+          if (slen < 60) fail(`${p.id}: 음성 스크립트가 너무 짧다 (${slen}자)`);
+          // 「〜について話しています」처럼 무엇을 들을지 알려주는 도입이 있어야 한다
+          if (!p.leadJa || !p.leadJa.trim()) fail(`${p.id}: 음성 문항인데 leadJa(상황 설명)가 없다`);
+        }
+
         const len = p.ja.join("").length;
         if (p.kind === "prose" && len < 120) fail(`${p.id}: 지문이 너무 짧다 (${len}자)`);
 

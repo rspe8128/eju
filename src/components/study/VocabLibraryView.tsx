@@ -8,8 +8,6 @@ import {
   Check,
   Loader2,
   Trash2,
-  HardDrive,
-  TriangleAlert,
   ArrowRight,
 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
@@ -20,6 +18,8 @@ import {
   type LibraryDeck,
 } from "@/lib/data/vocab/library";
 import { cn } from "@/lib/utils";
+import { StorageMeter } from "@/components/library/StorageMeter";
+import { ConfirmRemoveModal } from "@/components/library/ConfirmRemoveModal";
 
 function mb(bytes: number): string {
   return `${(bytes / 1024 / 1024).toFixed(2)}MB`;
@@ -28,45 +28,6 @@ function mb(bytes: number): string {
 /** 이 덱을 넣으면 저장 공간이 얼마나 늘어나는지 (UTF-16 기준 바이트) */
 function estimatedBytes(count: number): number {
   return count * APPROX_CHARS_PER_CARD * 2;
-}
-
-function StorageMeter() {
-  const { storageUsage, storageError } = useStorage();
-  const pct = Math.min(100, Math.round(storageUsage.ratio * 100));
-  const tight = storageUsage.ratio > 0.8;
-
-  return (
-    <section className="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-800">
-      <div className="flex items-center justify-between text-sm">
-        <span className="flex items-center gap-1.5 font-medium">
-          <HardDrive className="h-4 w-4 text-zinc-400" />
-          브라우저 저장 공간
-        </span>
-        <span className={cn("tabular-nums", tight ? "text-red-500" : "text-zinc-500")}>
-          {mb(storageUsage.bytes)} / {mb(storageUsage.limitBytes)} ({pct}%)
-        </span>
-      </div>
-      <div className="mt-2 h-2 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-700">
-        <div
-          className={cn(
-            "h-full rounded-full transition-all",
-            pct >= 90 ? "bg-red-500" : pct >= 70 ? "bg-amber-500" : "bg-blue-500"
-          )}
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-      <p className="mt-2 text-[11px] leading-relaxed text-zinc-500">
-        학습 기록은 이 브라우저 안에만 저장된다. 기준은 가장 빡빡한 Safari(5MB)로 잡았다.
-        Chrome·Firefox는 10MB 정도라 더 여유가 있다.
-      </p>
-      {storageError && (
-        <p className="mt-3 flex items-start gap-2 rounded-xl bg-red-50 p-3 text-xs leading-relaxed text-red-700 dark:bg-red-900/20 dark:text-red-300">
-          <TriangleAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-          {storageError}
-        </p>
-      )}
-    </section>
-  );
 }
 
 function DeckRow({
@@ -245,35 +206,17 @@ export function VocabLibraryView() {
         <ArrowRight className="h-4 w-4" />
       </Link>
 
-      {confirmRemove && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
-          <div className="w-full max-w-sm rounded-2xl bg-white p-5 dark:bg-zinc-800">
-            <h3 className="text-sm font-semibold">이 덱을 뺄까요?</h3>
-            <p className="mt-2 text-xs leading-relaxed text-zinc-500">
-              이 덱의 카드 {(cardCounts.get(confirmRemove) ?? 0).toLocaleString()}장과 그 복습
-              진행도(몇 번 맞혔는지, 다음 복습일)가 함께 지워집니다. 다시 추가하면 처음부터
-              시작합니다. 다른 덱의 기록에는 영향이 없습니다.
-            </p>
-            <div className="mt-4 flex gap-2">
-              <button
-                onClick={() => setConfirmRemove(null)}
-                className="flex-1 rounded-xl border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700"
-              >
-                취소
-              </button>
-              <button
-                onClick={() => {
-                  removeDeck(confirmRemove);
-                  setConfirmRemove(null);
-                }}
-                className="flex-1 rounded-xl bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700"
-              >
-                빼기
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <ConfirmRemoveModal
+        open={Boolean(confirmRemove)}
+        title="이 덱을 뺄까요?"
+        description={`이 덱의 카드 ${(cardCounts.get(confirmRemove ?? "") ?? 0).toLocaleString()}장과 그 복습 진행도(몇 번 맞혔는지, 다음 복습일)가 함께 지워집니다. 다시 추가하면 처음부터 시작합니다. 다른 덱의 기록에는 영향이 없습니다.`}
+        onCancel={() => setConfirmRemove(null)}
+        onConfirm={() => {
+          if (!confirmRemove) return;
+          removeDeck(confirmRemove);
+          setConfirmRemove(null);
+        }}
+      />
     </div>
   );
 }

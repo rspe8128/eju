@@ -350,7 +350,7 @@ export function MockRunner({
       <div className={cn("grid gap-4", passage && "lg:grid-cols-2")}>
         {passage && (
           <div className="lg:sticky lg:top-[9.5rem] lg:max-h-[calc(100vh-13rem)] lg:self-start lg:overflow-y-auto">
-            <PassageView passage={passage} />
+            <PassageView passage={passage} review={review} />
           </div>
         )}
         <div className="space-y-4">

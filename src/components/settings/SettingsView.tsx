@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { AlertTriangle, Download, Plus, ShieldAlert, Upload } from "lucide-react";
+import { AlertTriangle, Download, Plus, RotateCcw, ShieldAlert, Upload } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import type { ExamProfile, ScienceChoice } from "@/lib/types";
 import { SCIENCE_SUBJECTS } from "@/lib/eju";
@@ -52,10 +52,21 @@ export function SettingsView() {
     updateCardContent,
     exportBackup,
     importBackup,
+    resetLocalOnly,
+    resetWithServerDelete,
+    syncInfo,
   } = useStorage();
   const [message, setMessage] = useState("");
   const tsvRef = useRef<HTMLInputElement>(null);
   const backupRef = useRef<HTMLInputElement>(null);
+
+  /**
+   * 전체 초기화 확인 단계.
+   * 되돌릴 수 없는 조작이라 버튼 한 번으로는 실행하지 않는다.
+   * "초기화"라고 직접 입력받아야 버튼이 열린다.
+   */
+  const [resetOpen, setResetOpen] = useState(false);
+  const [resetConfirmText, setResetConfirmText] = useState("");
 
   /** 복원 대기 중인 파일. 확인을 받기 전에는 절대 덮어쓰지 않는다. */
   const [pending, setPending] = useState<{ json: string; summary: BackupSummary } | null>(null);
@@ -222,12 +233,19 @@ export function SettingsView() {
           <ShieldAlert className="h-5 w-5 text-amber-500" />
           백업 · 복원
         </h2>
-        <p className="mb-4 text-sm leading-relaxed text-amber-800 dark:text-amber-300">
-          이 앱의 <strong>유일한 저장소는 이 브라우저의 localStorage</strong>다. 서버에 사본이
-          없다. 브라우저 데이터(쿠키·사이트 데이터)를 지우거나, 시크릿 모드로 열거나, 다른 기기·
-          다른 브라우저로 옮기면 학습 기록은 <strong>복구할 방법이 없다</strong>. 정기적으로 파일로
-          내보내 두는 것이 유일한 대비책이다.
-        </p>
+        {syncInfo.loggedIn ? (
+          <p className="mb-4 text-sm leading-relaxed text-amber-800 dark:text-amber-300">
+            지금은 계정 동기화가 켜져 있어 여러 기기에서 같은 기록을 쓸 수 있다. 그래도 파일 백업은
+            별개의 안전장치다. 실수로 초기화하거나 충돌 정리 전에 스냅샷을 남겨 두면 복구가 쉽다.
+          </p>
+        ) : (
+          <p className="mb-4 text-sm leading-relaxed text-amber-800 dark:text-amber-300">
+            이 앱의 <strong>유일한 저장소는 이 브라우저의 localStorage</strong>다. 서버에 사본이
+            없다. 브라우저 데이터(쿠키·사이트 데이터)를 지우거나, 시크릿 모드로 열거나, 다른 기기·
+            다른 브라우저로 옮기면 학습 기록은 <strong>복구할 방법이 없다</strong>. 정기적으로
+            파일로 내보내 두는 것이 유일한 대비책이다.
+          </p>
+        )}
 
         <p className="mb-4 text-xs text-zinc-500">
           마지막 백업:{" "}
@@ -338,6 +356,127 @@ export function SettingsView() {
             </div>
           </div>
         )}
+      </section>
+
+      {/* ── 전체 초기화 ─────────────────────────────────────────
+          되돌릴 수 없으므로 (1) 지워질 것을 숫자로 보여주고
+          (2) "초기화"를 직접 입력받고 (3) 먼저 백업할 길을 옆에 둔다. */}
+      <section className="rounded-xl border border-red-300 p-6 dark:border-red-900">
+        <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold text-red-600 dark:text-red-400">
+          <RotateCcw className="h-5 w-5" />
+          전체 초기화
+        </h2>
+        <p className="mb-4 text-sm leading-relaxed text-zinc-500">
+          이 브라우저에 저장된 학습 기록을 전부 지우고 처음 상태로 되돌린다. 담아 둔 단어장과
+          학습 모듈, 복습 진행도, 모의고사 응시 기록, 작문, 오답노트가 모두 사라진다.
+          <b className="text-red-600 dark:text-red-400"> 되돌릴 수 없다.</b>
+        </p>
+
+        {!resetOpen ? (
+          <button
+            onClick={() => {
+              setResetOpen(true);
+              setResetConfirmText("");
+            }}
+            className="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
+          >
+            전체 초기화…
+          </button>
+        ) : (
+          <div className="rounded-xl border border-red-300 bg-red-50 p-4 dark:border-red-800 dark:bg-red-900/20">
+            <p className="mb-3 flex items-start gap-2 text-sm font-medium text-red-700 dark:text-red-300">
+              <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+              아래 기록이 지워진다
+            </p>
+            <div className="mb-4 grid grid-cols-2 gap-2 text-sm text-zinc-600 dark:text-zinc-300 sm:grid-cols-3">
+              <p>단어장 {data.decks.length}개</p>
+              <p>카드 {data.cards.length.toLocaleString()}장</p>
+              <p>학습 모듈 {data.units.length}개</p>
+              <p>모의고사 기록 {data.examAttempts.length}개</p>
+              <p>작문 {data.writingEntries.length}편</p>
+              <p>오답 {data.mistakes.filter((m) => !m.resolved).length}개</p>
+            </div>
+
+            <label className="mb-1.5 block text-xs text-zinc-600 dark:text-zinc-400">
+              계속하려면 <b>초기화</b> 라고 입력하세요
+            </label>
+            <input
+              value={resetConfirmText}
+              onChange={(e) => setResetConfirmText(e.target.value)}
+              placeholder="초기화"
+              className="mb-3 w-full max-w-xs rounded-lg border border-red-300 px-3 py-2 text-sm dark:border-red-800 dark:bg-zinc-800"
+            />
+
+            <div className="flex flex-wrap gap-2">
+              <button
+                disabled={resetConfirmText.trim() !== "초기화"}
+                onClick={() => {
+                  resetLocalOnly();
+                  setResetOpen(false);
+                  setResetConfirmText("");
+                  setMessage("전체 초기화가 끝났습니다. 보관함에서 단어장과 학습 모듈을 다시 담으세요.");
+                }}
+                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                전부 지우고 초기화
+              </button>
+              <button
+                onClick={() => {
+                  setResetOpen(false);
+                  setResetConfirmText("");
+                }}
+                className="rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700"
+              >
+                취소
+              </button>
+              {syncInfo.loggedIn && (
+                <button
+                  onClick={async () => {
+                    const ok = await resetWithServerDelete();
+                    if (ok) {
+                      setResetOpen(false);
+                      setResetConfirmText("");
+                      setMessage("이 기기와 서버 데이터를 함께 초기화했습니다.");
+                    } else {
+                      setMessage("서버 초기화에 실패했습니다. 네트워크/권한을 확인하세요.");
+                    }
+                  }}
+                  className="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 dark:border-red-800 dark:text-red-400"
+                >
+                  서버 데이터까지 삭제
+                </button>
+              )}
+              <button
+                onClick={handleExport}
+                className="flex items-center gap-1.5 rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700"
+              >
+                <Download className="h-4 w-4" />
+                먼저 지금 데이터 백업
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
+        <h2 className="mb-2 text-lg font-semibold">동기화 상태</h2>
+        <p className="mb-4 text-sm text-zinc-500">
+          {syncInfo.enabled
+            ? syncInfo.loggedIn
+              ? syncInfo.status === "offline"
+                ? `오프라인 - 대기 중 ${syncInfo.pendingCount}건`
+                : syncInfo.status === "synced"
+                  ? `동기화됨 · ${syncInfo.lastSyncedAt ? new Date(syncInfo.lastSyncedAt).toLocaleString() : "방금 전"}`
+                  : syncInfo.status === "syncing"
+                    ? "동기화 중..."
+                    : syncInfo.status === "conflict"
+                      ? "동기화 충돌 - 선택 필요"
+                      : syncInfo.status === "error"
+                        ? `동기화 실패: ${syncInfo.error ?? "알 수 없는 오류"}`
+                        : "대기 중"
+              : "로그인하면 여러 기기 동기화를 사용할 수 있습니다."
+            : "Supabase 환경변수가 없어 동기화가 비활성화되어 있습니다."}
+        </p>
       </section>
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">

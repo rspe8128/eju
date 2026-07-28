@@ -45,7 +45,7 @@ const shortcuts = [
 ];
 
 export function DashboardView() {
-  const { data } = useStorage();
+  const { data, syncInfo } = useStorage();
   const dueCards = useDueCards();
   const weekGoals = useWeekGoals();
   const mistakes = useUnresolvedMistakes();
@@ -93,7 +93,7 @@ export function DashboardView() {
   // 기록이 localStorage에만 있으므로, 백업이 오래되면 눈에 띄게 알린다.
   const lastBackup = data.settings.lastBackupAt;
   const backupAgeDays = lastBackup ? -daysUntil(lastBackup) : null;
-  const backupStale = backupAgeDays === null || backupAgeDays > 30;
+  const backupStale = (backupAgeDays === null || backupAgeDays > 30) && !syncInfo.loggedIn;
 
   return (
     <div className="space-y-8">

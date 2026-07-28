@@ -15,6 +15,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export function SubjectListView() {
   const { data } = useStorage();
+  const hasAnyModule = data.units.length > 0;
 
   return (
     <div className="space-y-6">
@@ -22,6 +23,21 @@ export function SubjectListView() {
         <h1 className="text-2xl font-bold">교과목</h1>
         <p className="text-sm text-zinc-500">수학, 종합과목 등 개념·문제 학습</p>
       </div>
+
+      {!hasAnyModule && (
+        <div className="rounded-xl border border-dashed border-zinc-300 p-8 text-center dark:border-zinc-700">
+          <p className="font-medium">보관함에서 학습 모듈을 담으세요</p>
+          <p className="mt-1.5 text-sm text-zinc-500">
+            단원은 기본으로 모두 켜지지 않는다. 필요한 모듈만 담아 학습 목록을 구성한다.
+          </p>
+          <Link
+            href="/study/modules"
+            className="mt-4 inline-flex rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            학습 모듈 보관함 열기
+          </Link>
+        </div>
+      )}
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.subjects.map((subject) => {
