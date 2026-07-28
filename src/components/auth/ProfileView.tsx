@@ -130,13 +130,13 @@ export function ProfileView() {
       <div className="mx-auto max-w-xl rounded-xl border border-zinc-200 p-8 text-center dark:border-zinc-700">
         <p className="font-medium">로그인 후 프로필을 편집할 수 있습니다.</p>
         <p className="mt-1.5 text-sm text-zinc-500">
-          로그인하지 않아도 학습 기능은 그대로 사용할 수 있습니다.
+          로그인하지 않으면 앱 기능을 사용할 수 없습니다.
         </p>
         <Link
           href="/login"
           className="mt-4 inline-flex rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white"
         >
-          로그인하러 가기
+          Google로 로그인
         </Link>
       </div>
     );

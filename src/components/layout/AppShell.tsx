@@ -103,13 +103,19 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const { syncInfo } = useStorage();
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
   const [user, setUser] = useState<User | null>(null);
+  const [authReady, setAuthReady] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [profileName, setProfileName] = useState<string>("");
   const [avatarUrl, setAvatarUrl] = useState<string>("");
   const navGroups = useMemo(() => buildNavGroups(isAdmin), [isAdmin]);
+  const isLoginPage = pathname === "/login";
+  const showAppChrome = Boolean(user) && !isLoginPage;
 
   useEffect(() => {
-    if (!supabase) return;
+    if (!supabase) {
+      setAuthReady(true);
+      return;
+    }
     const load = async () => {
       const { data } = await supabase.auth.getUser();
       setUser(data.user ?? null);
@@ -117,6 +123,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         setProfileName("");
         setAvatarUrl("");
         setIsAdmin(false);
+        setAuthReady(true);
         return;
       }
       const { data: profile } = await supabase
@@ -128,6 +135,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       setProfileName(p?.display_name ?? "");
       setAvatarUrl(p?.avatar_url ?? "");
       setIsAdmin(p?.role === "admin");
+      setAuthReady(true);
     };
     void load();
     const { data: authListener } = supabase.auth.onAuthStateChange(() => {
@@ -135,6 +143,37 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     });
     return () => authListener.subscription.unsubscribe();
   }, [supabase]);
+
+  const signOut = async () => {
+    await supabase?.auth.signOut();
+    window.location.href = "/login";
+  };
+
+  if (!authReady) {
+    return (
+      <div className="flex min-h-screen items-center justify-center text-sm text-zinc-500">
+        불러오는 중...
+      </div>
+    );
+  }
+
+  if (!showAppChrome) {
+    return (
+      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+        <header className="flex items-center justify-between border-b border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900">
+          <h1 className="font-bold">EJU Study</h1>
+          <button
+            onClick={toggle}
+            className="rounded-lg p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+            aria-label="테마 전환"
+          >
+            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </button>
+        </header>
+        <main className="p-4 lg:p-8">{children}</main>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen">
@@ -170,56 +209,47 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </nav>
         <div className="border-t border-zinc-200 p-3 dark:border-zinc-800">
           <div className="mb-2 rounded-lg border border-zinc-200 p-2.5 dark:border-zinc-700">
-            {user ? (
-              <div className="space-y-2">
-                <Link href="/profile" className="flex items-center gap-2">
-                  {avatarUrl ? (
-                    <img
-                      src={avatarUrl}
-                      alt="avatar"
-                      className="h-7 w-7 rounded-full object-cover"
-                    />
-                  ) : (
-                    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-200 text-[10px] text-zinc-500 dark:bg-zinc-700">
-                      U
-                    </div>
-                  )}
-                  <div className="min-w-0">
-                    <p className="truncate text-xs font-medium">
-                      {profileName || user.email || "사용자"}
-                    </p>
-                    <p className="truncate text-[11px] text-zinc-500">로그인됨</p>
+            <div className="space-y-2">
+              <Link href="/profile" className="flex items-center gap-2">
+                {avatarUrl ? (
+                  <img
+                    src={avatarUrl}
+                    alt="avatar"
+                    className="h-7 w-7 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-200 text-[10px] text-zinc-500 dark:bg-zinc-700">
+                    U
                   </div>
-                </Link>
-                <p className="text-[10px] text-zinc-500">
-                  {syncInfo.status === "offline"
-                    ? `오프라인 대기 ${syncInfo.pendingCount}`
-                    : syncInfo.status === "synced"
-                      ? "동기화됨"
-                      : syncInfo.status === "syncing"
-                        ? "동기화 중"
-                        : syncInfo.status === "error"
-                          ? "동기화 실패"
-                          : syncInfo.status === "conflict"
-                            ? "충돌 해결 필요"
-                            : "동기화 대기"}
-                </p>
-                <button
-                  onClick={() => void supabase?.auth.signOut()}
-                  className="flex w-full items-center justify-center gap-1 rounded-md border border-zinc-200 px-2 py-1.5 text-xs hover:bg-zinc-50 dark:border-zinc-600 dark:hover:bg-zinc-800"
-                >
-                  <LogOut className="h-3.5 w-3.5" />
-                  로그아웃
-                </button>
-              </div>
-            ) : (
-              <Link
-                href="/login"
-                className="block rounded-md bg-blue-600 px-2 py-2 text-center text-xs font-medium text-white hover:bg-blue-700"
-              >
-                로그인 / 회원가입
+                )}
+                <div className="min-w-0">
+                  <p className="truncate text-xs font-medium">
+                    {profileName || user?.email || "사용자"}
+                  </p>
+                  <p className="truncate text-[11px] text-zinc-500">로그인됨</p>
+                </div>
               </Link>
-            )}
+              <p className="text-[10px] text-zinc-500">
+                {syncInfo.status === "offline"
+                  ? `오프라인 대기 ${syncInfo.pendingCount}`
+                  : syncInfo.status === "synced"
+                    ? "동기화됨"
+                    : syncInfo.status === "syncing"
+                      ? "동기화 중"
+                      : syncInfo.status === "error"
+                        ? "동기화 실패"
+                        : syncInfo.status === "conflict"
+                          ? "충돌 해결 필요"
+                          : "동기화 대기"}
+              </p>
+              <button
+                onClick={() => void signOut()}
+                className="flex w-full items-center justify-center gap-1 rounded-md border border-zinc-200 px-2 py-1.5 text-xs hover:bg-zinc-50 dark:border-zinc-600 dark:hover:bg-zinc-800"
+              >
+                <LogOut className="h-3.5 w-3.5" />
+                로그아웃
+              </button>
+            </div>
           </div>
           <button
             onClick={toggle}

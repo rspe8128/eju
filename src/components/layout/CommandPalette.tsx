@@ -24,7 +24,6 @@ const staticLinks = [
   { label: "오답노트", href: "/review" },
   { label: "일정", href: "/schedule" },
   { label: "설정", href: "/settings" },
-  { label: "로그인", href: "/login" },
   { label: "프로필", href: "/profile" },
   { label: "계정 관리", href: "/admin" },
 ];

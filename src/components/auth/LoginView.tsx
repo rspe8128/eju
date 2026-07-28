@@ -1,59 +1,21 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
-type Mode = "signin" | "signup";
-
 export function LoginView() {
-  const router = useRouter();
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
-  const [mode, setMode] = useState<Mode>("signin");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
 
   const unavailable = !supabase;
 
-  const onSubmit = async () => {
-    if (!supabase) return;
-    setBusy(true);
-    setError("");
-    setMessage("");
-    try {
-      if (mode === "signin") {
-        const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
-        if (signInError) throw signInError;
-        setMessage("로그인되었습니다.");
-        router.replace("/profile");
-        return;
-      }
-
-      const { data, error: signUpError } = await supabase.auth.signUp({ email, password });
-      if (signUpError) throw signUpError;
-      if (data.session) {
-        setMessage("회원가입이 완료되었습니다.");
-        router.replace("/profile");
-        return;
-      }
-      setMessage("가입 확인 메일을 보냈습니다. 메일 확인 후 로그인해 주세요.");
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "인증 요청에 실패했습니다.");
-    } finally {
-      setBusy(false);
-    }
-  };
-
   const onGoogleLogin = async () => {
     if (!supabase) return;
     setBusy(true);
     setError("");
-    setMessage("");
     try {
+      // Supabase Redirect URL에 등록된 경로로만 보낸다 (/profile)
       const redirectTo = `${window.location.origin}/profile`;
       const { error: oauthError } = await supabase.auth.signInWithOAuth({
         provider: "google",
@@ -67,7 +29,7 @@ export function LoginView() {
       const raw = e instanceof Error ? e.message : "Google 로그인에 실패했습니다.";
       if (/provider is not enabled|Unsupported provider/i.test(raw)) {
         setError(
-          "Google 로그인이 아직 꺼져 있습니다. Supabase → Authentication → Sign In / Providers → Google을 켠 뒤, Google Cloud Client ID/Secret을 넣으세요."
+          "Google 로그인이 아직 꺼져 있습니다. Supabase → Authentication → Providers → Google을 확인하세요."
         );
       } else {
         setError(raw);
@@ -76,125 +38,57 @@ export function LoginView() {
     }
   };
 
-  const onResetPassword = async () => {
-    if (!supabase) return;
-    if (!email.trim()) {
-      setError("비밀번호 재설정 메일을 받으려면 이메일을 먼저 입력하세요.");
-      return;
-    }
-    setBusy(true);
-    setError("");
-    setMessage("");
-    try {
-      const { error: resetError } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/reset-password`,
-      });
-      if (resetError) throw resetError;
-      setMessage("비밀번호 재설정 메일을 보냈습니다.");
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "재설정 메일 전송에 실패했습니다.");
-    } finally {
-      setBusy(false);
-    }
-  };
-
   return (
-    <div className="mx-auto max-w-md space-y-5">
-      <div>
-        <h1 className="text-2xl font-bold">로그인</h1>
-        <p className="mt-1.5 text-sm text-zinc-500">
-          로그인은 선택사항이다. 로그인하지 않아도 학습은 그대로 가능하다.
-        </p>
+    <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center space-y-5">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold">EJU Study</h1>
+        <p className="mt-2 text-sm text-zinc-500">Google 계정으로 로그인해 주세요.</p>
       </div>
 
-      <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-700 dark:bg-zinc-800">
-        <div className="mb-4 flex rounded-lg bg-zinc-100 p-1 dark:bg-zinc-700">
-          <button
-            onClick={() => setMode("signin")}
-            className={`flex-1 rounded-md px-3 py-1.5 text-sm ${mode === "signin" ? "bg-white shadow dark:bg-zinc-900" : ""}`}
-          >
-            로그인
-          </button>
-          <button
-            onClick={() => setMode("signup")}
-            className={`flex-1 rounded-md px-3 py-1.5 text-sm ${mode === "signup" ? "bg-white shadow dark:bg-zinc-900" : ""}`}
-          >
-            회원가입
-          </button>
-        </div>
-
-        <div className="space-y-3">
-          <label className="block text-sm">
-            이메일
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full rounded-lg border border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
-              placeholder="you@example.com"
-            />
-          </label>
-          <label className="block text-sm">
-            비밀번호
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 w-full rounded-lg border border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
-              placeholder="8자 이상"
-            />
-          </label>
-
-          <button
-            onClick={onSubmit}
-            disabled={busy || unavailable}
-            className="w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 disabled:opacity-50"
-          >
-            {busy ? "처리 중..." : mode === "signin" ? "로그인" : "회원가입"}
-          </button>
-          <button
-            onClick={onGoogleLogin}
-            disabled={busy || unavailable}
-            className="w-full rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium hover:bg-zinc-50 disabled:opacity-50 dark:border-zinc-700 dark:hover:bg-zinc-700/40"
-          >
-            Google로 계속하기
-          </button>
-
-          <button
-            onClick={onResetPassword}
-            disabled={busy || unavailable}
-            className="text-xs text-zinc-500 underline underline-offset-2"
-          >
-            비밀번호 재설정 메일 보내기
-          </button>
-        </div>
+      <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-800">
+        <button
+          onClick={() => void onGoogleLogin()}
+          disabled={busy || unavailable}
+          className="flex w-full items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium hover:bg-zinc-50 disabled:opacity-50 dark:border-zinc-600 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <GoogleIcon />
+          {busy ? "이동 중..." : "Google로 계속하기"}
+        </button>
 
         {unavailable && (
-          <div className="mt-4 space-y-2 rounded-lg bg-amber-50 p-3 text-xs leading-relaxed text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
-            <p className="font-medium">Supabase가 아직 연결되지 않았습니다.</p>
-            <ol className="list-decimal space-y-1 pl-4">
-              <li>Supabase 프로젝트 Settings → API에서 URL / anon key 복사</li>
-              <li>
-                `.env.local`과 Vercel Environment Variables에
-                `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` 등록
-              </li>
-              <li>
-                SQL Editor에서 `supabase/setup_all.sql` 실행
-              </li>
-              <li>Auth → URL Configuration에 redirect URL 등록 후 재배포</li>
-            </ol>
+          <div className="mt-4 rounded-lg bg-amber-50 p-3 text-xs leading-relaxed text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
+            Supabase 환경변수가 없어 로그인할 수 없습니다.
           </div>
         )}
-        {message && <p className="mt-4 text-sm text-green-600">{message}</p>}
         {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
       </div>
 
-      <p className="text-xs text-zinc-500">
-        로그인하면 이 기기 학습 기록이 계정에 동기화된다.{" "}
-        <Link href="/" className="underline">
-          대시보드로 돌아가기
-        </Link>
+      <p className="text-center text-xs text-zinc-500">
+        로그인 후에만 학습·성적·관리 기능을 사용할 수 있습니다.
       </p>
     </div>
+  );
+}
+
+function GoogleIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+      <path
+        fill="#FFC107"
+        d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.2 6.1 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.5-.4-3.5z"
+      />
+      <path
+        fill="#FF3D00"
+        d="M6.3 14.7l6.6 4.8C14.7 16.1 19 13.2 24 13.2c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.2 6.1 29.4 4 24 4 16.1 4 9.2 8.5 6.3 14.7z"
+      />
+      <path
+        fill="#4CAF50"
+        d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.3 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-7.9l-6.5 5C9.1 39.4 15.9 44 24 44z"
+      />
+      <path
+        fill="#1976D2"
+        d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.1-4.1 5.5l.1.1 6.2 5.2C39.2 36.9 44 31.8 44 24c0-1.3-.1-2.5-.4-3.5z"
+      />
+    </svg>
   );
 }
