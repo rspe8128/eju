@@ -9,7 +9,10 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { loadData, saveData, resetData } from "@/lib/storage";
+import { loadData, saveData, resetData, measureUsage } from "@/lib/storage";
+import type { StorageUsage } from "@/lib/storage";
+import { getLibraryDeck } from "@/lib/data/vocab/library";
+import { createDefaultSRS as makeSRS } from "@/lib/srs";
 import type {
   AnswerKey,
   AppData,
@@ -72,6 +75,14 @@ type StorageContextValue = {
   resetAll: () => void;
   getDecksBySubject: (subject: string) => Deck[];
   getCardsByDeck: (deckId: string) => Card[];
+  /** 단어장 보관함에서 덱을 가져온다. 단어 파일은 이때 처음 내려받는다. */
+  addLibraryDeck: (libraryDeckId: string) => Promise<void>;
+  /** 덱과 그 카드·플랜·오답 기록을 통째로 제거한다 (저장 공간 회수용) */
+  removeDeck: (deckId: string) => void;
+  /** 마지막 저장이 실패했다면 그 사유. 정상이면 null */
+  storageError: string | null;
+  /** 현재 localStorage 사용량 */
+  storageUsage: StorageUsage;
 };
 
 const StorageContext = createContext<StorageContextValue | null>(null);
@@ -129,19 +140,28 @@ function recordStudy(
 export function StorageProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<AppData | null>(null);
   const [ready, setReady] = useState(false);
+  const [storageError, setStorageError] = useState<string | null>(null);
 
   useEffect(() => {
     setData(loadData());
     setReady(true);
   }, []);
 
+  /**
+   * 저장은 여기 한 곳에서만 한다.
+   *
+   * 예전에는 setData의 갱신 함수 안에서 saveData를 불렀는데, 두 가지가 문제였다.
+   *  1) 갱신 함수는 순수해야 하는데 부수효과가 들어갔다 (StrictMode에서 두 번 저장)
+   *  2) 용량 초과로 저장이 실패하면 그 예외가 상태 갱신 도중에 터져 화면이 죽었다
+   * 이제 data가 바뀔 때마다 이 effect가 저장하고, 실패 사유만 상태로 남긴다.
+   */
+  useEffect(() => {
+    if (!ready || !data) return;
+    setStorageError(saveData(data));
+  }, [data, ready]);
+
   const persist = useCallback((updater: (prev: AppData) => AppData) => {
-    setData((prev) => {
-      if (!prev) return prev;
-      const next = updater(prev);
-      saveData(next);
-      return next;
-    });
+    setData((prev) => (prev ? updater(prev) : prev));
   }, []);
 
   const updateCard = useCallback(
@@ -616,6 +636,72 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     setData(loadData());
   }, []);
 
+  /**
+   * 보관함 덱 가져오기.
+   * 단어 파일은 여기서 처음 동적 import 되므로, 목록만 보고 있을 때는 내려받지 않는다.
+   */
+  const addLibraryDeck = useCallback(
+    async (libraryDeckId: string) => {
+      const meta = getLibraryDeck(libraryDeckId);
+      if (!meta) return;
+      const words = await meta.load();
+      persist((prev) => {
+        // 이미 있으면 아무것도 하지 않는다 (버튼 연타·새로고침 대비)
+        if (prev.decks.some((d) => d.id === meta.id)) return prev;
+        const deck: Deck = {
+          id: meta.id,
+          subject: meta.subject,
+          title: meta.title,
+          type: meta.type,
+        };
+        const cards: Card[] = words.map(([front, reading, back, example, notes, tags]) => ({
+          id: generateId(),
+          deckId: meta.id,
+          front,
+          back,
+          reading: reading || undefined,
+          exampleSentence: example || undefined,
+          notes: notes || undefined,
+          tags: tags ?? [],
+          srs: makeSRS(),
+        }));
+        return { ...prev, decks: [...prev.decks, deck], cards: [...prev.cards, ...cards] };
+      });
+    },
+    [persist]
+  );
+
+  /** 덱을 통째로 뺀다. 딸린 카드·오답·플랜 목표까지 같이 지워야 공간이 실제로 회수된다. */
+  const removeDeck = useCallback(
+    (deckId: string) => {
+      persist((prev) => {
+        const cardIds = new Set(
+          prev.cards.filter((c) => c.deckId === deckId).map((c) => c.id)
+        );
+        return {
+          ...prev,
+          decks: prev.decks.filter((d) => d.id !== deckId),
+          cards: prev.cards.filter((c) => c.deckId !== deckId),
+          mistakes: prev.mistakes.filter(
+            (m) => !(m.sourceType === "card" && cardIds.has(m.sourceId))
+          ),
+          planTargets: prev.planTargets.filter(
+            (p) => !(p.kind === "deck" && p.refId === deckId)
+          ),
+        };
+      });
+    },
+    [persist]
+  );
+
+  const storageUsage = useMemo(
+    () =>
+      data
+        ? measureUsage(data)
+        : { chars: 0, bytes: 0, limitBytes: 5 * 1024 * 1024, ratio: 0 },
+    [data]
+  );
+
   const getDecksBySubject = useCallback(
     (subject: string) => data?.decks.filter((d) => d.subject === subject) ?? [],
     [data]
@@ -665,6 +751,10 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       resetAll,
       getDecksBySubject,
       getCardsByDeck,
+      addLibraryDeck,
+      removeDeck,
+      storageError,
+      storageUsage,
     };
   }, [
     data,
@@ -703,6 +793,10 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     resetAll,
     getDecksBySubject,
     getCardsByDeck,
+    addLibraryDeck,
+    removeDeck,
+    storageError,
+    storageUsage,
   ]);
 
   if (!value) {

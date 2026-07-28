@@ -10,6 +10,7 @@ const staticLinks = [
   { label: "EJU 가이드", href: "/guide" },
   { label: "오늘의 학습", href: "/study/today" },
   { label: "일본어", href: "/study/japanese" },
+  { label: "단어장 보관함", href: "/study/library" },
   { label: "과목 용어", href: "/study/terms" },
   { label: "TOEFL", href: "/study/toefl" },
   { label: "모의고사", href: "/mock" },

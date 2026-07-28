@@ -33,7 +33,9 @@ export function makeCards(deckId: string, words: WordEntry[]): Card[] {
     deckId,
     front,
     back,
-    reading,
+    // 빈 문자열 대신 undefined로 통일한다. 저장 압축(codec.ts)을 거치면 ""와 undefined가
+    // 같은 것으로 되돌아오므로, 처음부터 undefined로 맞춰 두어야 왕복이 정확히 일치한다.
+    reading: reading || undefined,
     exampleSentence: example || undefined,
     notes: notes || undefined,
     tags: tags ?? [],

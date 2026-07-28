@@ -28,8 +28,11 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
-.env*.local
+# env files — API 키가 들어가므로 .env.example 외에는 전부 제외한다.
+# (예전에는 .env*.local 만 막고 있어서, .env 를 만들면 그대로 커밋될 수 있었다)
+.env
+.env.*
+!.env.example
 
 # local SQLite progress database
 /data/*.db

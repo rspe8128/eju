@@ -17,5 +17,6 @@
     "paths": { "@/*": ["./src/*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "// exclude": "vocab-staging은 앱이 import하지 않는 원본 보관용 폴더다. 여기 있는 *-staging.ts는 합쳐서 1.5MB가 넘어서, 타입체크에 넣으면 tsc가 몇 분씩 걸린다. 실제로 쓰는 단어 데이터는 scripts/gen-vocab.py 로 src/lib/data/vocab/ 아래에 생성한 것이다.",
+  "exclude": ["node_modules", "vocab-staging", "scripts"]
 }

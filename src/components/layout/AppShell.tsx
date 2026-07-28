@@ -13,6 +13,7 @@ import {
   Home,
   Info,
   Languages,
+  Library,
   Moon,
   PenLine,
   RotateCcw,
@@ -44,6 +45,7 @@ const navGroups: { title: string; items: NavItem[] }[] = [
     title: "학습",
     items: [
       { href: "/study/japanese", label: "일본어", icon: Languages },
+      { href: "/study/library", label: "단어장 보관함", icon: Library },
       { href: "/study/terms", label: "과목 용어", icon: BookMarked },
       { href: "/study/toefl", label: "TOEFL", icon: BookOpen },
       { href: "/study/subjects", label: "교과목", icon: FlaskConical },
