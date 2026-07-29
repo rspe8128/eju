@@ -18,11 +18,9 @@ import { cn } from "@/lib/utils";
 
 function PromptCard({
   prompt,
-  selected,
   onSelect,
 }: {
   prompt: MockWritingPrompt;
-  selected: boolean;
   onSelect: () => void;
 }) {
   const tr = useTranslate([prompt.ja]);
@@ -30,14 +28,7 @@ function PromptCard({
   const translateBlocked = !online && !tr.cached && !tr.shown;
 
   return (
-    <div
-      className={cn(
-        "rounded-2xl border bg-white transition-colors dark:bg-zinc-800",
-        selected
-          ? "border-blue-500 ring-1 ring-blue-500"
-          : "border-zinc-200 dark:border-zinc-700"
-      )}
-    >
+    <div className="rounded-2xl border border-zinc-200 bg-white transition-colors dark:border-zinc-700 dark:bg-zinc-800">
       <div className="flex items-center justify-between gap-2 border-b border-zinc-100 px-4 py-2.5 dark:border-zinc-700">
         <span className="text-sm font-semibold">テーマ {prompt.number}</span>
         <TranslateButton
@@ -63,14 +54,9 @@ function PromptCard({
         </p>
         <button
           onClick={onSelect}
-          className={cn(
-            "mt-3 w-full rounded-xl px-4 py-2.5 text-sm font-medium transition-colors",
-            selected
-              ? "bg-blue-600 text-white"
-              : "border border-zinc-200 hover:border-blue-400 hover:text-blue-600 dark:border-zinc-700"
-          )}
+          className="mt-3 w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm font-medium transition-colors hover:border-blue-400 hover:text-blue-600 dark:border-zinc-700"
         >
-          {selected ? "이 주제로 쓰는 중" : "이 주제로 쓰기"}
+          이 주제로 쓰기
         </button>
       </div>
     </div>
@@ -208,7 +194,10 @@ export function WritingRunner({
         )}
       </div>
 
-      {!submitted && (
+      {/* 주제를 고르기 전에는 주제 목록만, 고른 뒤에는 답안 화면만 보여준다.
+          예전에는 주제 카드가 그대로 남고 그 아래에 답안란이 붙어서, 쓰는 내내
+          위쪽에 안 쓰는 주제 카드가 자리를 차지했다. */}
+      {!submitted && !selected && (
         <>
           <p className="ja-ui mb-4 rounded-xl border border-zinc-200 bg-white p-3.5 text-sm text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
             {section.instructionsJa}
@@ -219,12 +208,7 @@ export function WritingRunner({
 
           <div className="grid gap-4 lg:grid-cols-2">
             {prompts.map((p) => (
-              <PromptCard
-                key={p.id}
-                prompt={p}
-                selected={selectedId === p.id}
-                onSelect={() => choose(p.id)}
-              />
+              <PromptCard key={p.id} prompt={p} onSelect={() => choose(p.id)} />
             ))}
           </div>
         </>
@@ -232,12 +216,28 @@ export function WritingRunner({
 
       {selected && (
         <div className="mt-6">
-          {submitted && (
-            <div className="mb-4 rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-800">
-              <p className="text-xs text-zinc-400">선택한 주제</p>
-              <p className="ja-body mt-1 text-[15px]">{selected.ja}</p>
+          <div className="mb-4 rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-800">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-xs text-zinc-400">선택한 주제 · テーマ {selected.number}</p>
+                <p className="ja-body mt-1 text-[15px]">{selected.ja}</p>
+              </div>
+              {!submitted && (
+                <button
+                  onClick={() => {
+                    if (body.trim() && !confirm("쓴 내용은 그대로 두고 주제 목록으로 돌아갑니다.")) {
+                      return;
+                    }
+                    setSelectedId(null);
+                    setRunning(false);
+                  }}
+                  className="shrink-0 text-xs text-zinc-500 hover:text-blue-600"
+                >
+                  주제 바꾸기
+                </button>
+              )}
             </div>
-          )}
+          </div>
 
           <div className="rounded-2xl border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-800">
             <div className="flex items-center justify-between border-b border-zinc-100 px-4 py-2.5 dark:border-zinc-700">

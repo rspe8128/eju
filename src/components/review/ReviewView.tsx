@@ -5,8 +5,8 @@ import {
   Check,
   X,
   HelpCircle,
-  ChevronDown,
   ChevronLeft,
+  ChevronRight,
   RotateCcw,
   FileText,
 } from "lucide-react";
@@ -34,6 +34,7 @@ export function ReviewView() {
   const { data, updateCard, resolveMistake, markProblemSolved } = useStorage();
   const mistakes = useUnresolvedMistakes();
   const [mode, setMode] = useState<"list" | "flash" | "quiz" | "mockQuiz">("list");
+  const [openMockId, setOpenMockId] = useState<string | null>(null);
 
   const mistakeCards = mistakes
     .filter((m) => m.sourceType === "card")
@@ -111,6 +112,20 @@ export function ReviewView() {
         items={mockMistakes}
         onCorrect={(sourceId) => resolveMistake("mock", sourceId)}
         onExit={() => setMode("list")}
+      />
+    );
+  }
+
+  const openMock = mockMistakes.find((m) => m.sourceId === openMockId) ?? null;
+  if (openMock) {
+    return (
+      <MockMistakeDetail
+        mistake={openMock}
+        onBack={() => setOpenMockId(null)}
+        onResolve={() => {
+          resolveMistake("mock", openMock.sourceId);
+          setOpenMockId(null);
+        }}
       />
     );
   }
@@ -238,13 +253,14 @@ export function ReviewView() {
         ) : (
           <div className="space-y-3">
             <p className="text-xs leading-relaxed text-zinc-500">
-              문항 내용은 저장하지 않는다. 회차·문항 번호만 남기고 펼칠 때 원본에서 불러오므로,
+              문항 내용은 저장하지 않는다. 회차·문항 번호만 남기고 열어 볼 때 원본에서 불러오므로,
               오답이 쌓여도 저장 공간을 거의 쓰지 않는다.
             </p>
             {mockMistakes.map((m) => (
-              <MockMistakeCard
+              <MockMistakeRow
                 key={m.sourceId}
                 mistake={m}
+                onOpen={() => setOpenMockId(m.sourceId)}
                 onResolve={() => resolveMistake("mock", m.sourceId)}
               />
             ))}
@@ -292,63 +308,95 @@ function EmptyTab({
 }
 
 /**
- * 모의고사 오답 한 건.
- * 펼치면 지문·발문·선택지·해설이 전부 나온다. 번역 토글과 후리가나 토글은
- * 모의고사 화면에서 쓰는 컴포넌트를 그대로 재사용하므로 동작이 같다.
+ * 모의고사 오답 목록의 한 줄.
+ * 누르면 지문·발문·선택지·해설을 별도 화면에서 본다. 지문이 길어서 목록 안에서
+ * 펼치면 아래 항목들이 저 멀리 밀려나기 때문이다.
  */
-function MockMistakeCard({
+function MockMistakeRow({
   mistake,
+  onOpen,
   onResolve,
 }: {
   mistake: MockMistake;
+  onOpen: () => void;
   onResolve: () => void;
 }) {
-  const [open, setOpen] = useState(false);
+  const { paper, question } = mistake;
+
+  return (
+    <div className="flex items-center gap-2 rounded-xl border border-zinc-200 px-4 py-3 dark:border-zinc-700">
+      <button onClick={onOpen} className="flex min-w-0 flex-1 items-center gap-3 text-left">
+        <FileText className="h-4 w-4 shrink-0 text-zinc-400" />
+        <span className="min-w-0 flex-1">
+          <span className="block text-sm font-medium">
+            {paper.title} · {question.number}번
+          </span>
+          <span className="ja-ui mt-0.5 block truncate text-xs text-zinc-500">
+            {question.stemJa}
+          </span>
+        </span>
+        <ChevronRight className="h-4 w-4 shrink-0 text-zinc-400" />
+      </button>
+      <button
+        onClick={onResolve}
+        className="shrink-0 rounded-lg p-2 text-green-600 hover:bg-green-50 dark:hover:bg-green-900/20"
+        title="해결됨"
+        aria-label="해결됨"
+      >
+        <Check className="h-5 w-5" />
+      </button>
+    </div>
+  );
+}
+
+/** 모의고사 오답 한 건을 전체 화면으로 다시 본다. */
+function MockMistakeDetail({
+  mistake,
+  onBack,
+  onResolve,
+}: {
+  mistake: MockMistake;
+  onBack: () => void;
+  onResolve: () => void;
+}) {
   const { paper, section, question } = mistake;
   const passage = findPassage(section, question.passageId);
 
   return (
-    <div className="rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <div className="flex items-center gap-2 px-4 py-3">
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="flex min-w-0 flex-1 items-center gap-3 text-left"
-        >
-          <FileText className="h-4 w-4 shrink-0 text-zinc-400" />
-          <span className="min-w-0 flex-1">
-            <span className="block text-sm font-medium">
-              {paper.title} · {question.number}번
-            </span>
-            <span className="ja-ui mt-0.5 block truncate text-xs text-zinc-500">
-              {question.stemJa}
-            </span>
-          </span>
-          <ChevronDown
-            className={cn("h-4 w-4 shrink-0 text-zinc-400 transition-transform", open && "rotate-180")}
-          />
-        </button>
+    <div>
+      <button
+        onClick={onBack}
+        className="mb-4 flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
+      >
+        <ChevronLeft className="h-4 w-4" />
+        오답 목록
+      </button>
+
+      <div className="mb-4 flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-xs text-zinc-400">
+            {paper.title} · {section.label}
+          </p>
+          <h2 className="text-lg font-semibold">{question.number}번</h2>
+        </div>
         <button
           onClick={onResolve}
-          className="shrink-0 rounded-lg p-2 text-green-600 hover:bg-green-50 dark:hover:bg-green-900/20"
-          title="해결됨"
-          aria-label="해결됨"
+          className="flex shrink-0 items-center gap-1.5 rounded-lg border border-green-200 px-3 py-1.5 text-sm text-green-600 hover:bg-green-50 dark:border-green-900 dark:hover:bg-green-900/20"
         >
-          <Check className="h-5 w-5" />
+          <Check className="h-4 w-4" />
+          해결됨
         </button>
       </div>
 
-      {open && (
-        <div className="space-y-4 border-t border-zinc-100 p-4 dark:border-zinc-700">
-          <p className="text-xs text-zinc-400">{section.label}</p>
-          {passage && <PassageView passage={passage} review />}
-          <QuestionView
-            question={question}
-            subjectCode={paper.subjectCode}
-            picked={undefined}
-            review
-          />
-        </div>
-      )}
+      <div className="space-y-4">
+        {passage && <PassageView passage={passage} review />}
+        <QuestionView
+          question={question}
+          subjectCode={paper.subjectCode}
+          picked={undefined}
+          review
+        />
+      </div>
     </div>
   );
 }

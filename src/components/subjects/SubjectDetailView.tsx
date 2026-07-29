@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Check, X, ChevronRight, Pencil } from "lucide-react";
+import { Check, X, ChevronLeft, ChevronRight, Pencil } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import type { ConceptItem, Item, ProblemItem } from "@/lib/types";
 
@@ -147,19 +147,21 @@ export function SubjectDetailView({ subjectId }: Props) {
     setEditing(false);
   };
 
-  return (
-    <div className="space-y-6">
-      <div>
-        <Link href="/study/subjects" className="text-sm text-zinc-500 hover:text-zinc-700">
-          ← 교과목 목록
-        </Link>
-        <h1 className="mt-2 text-2xl font-bold" style={{ color: subject.color }}>
-          {subject.name}
-        </h1>
-      </div>
+  // ── 단원·항목 목록 ──────────────────────────────────────
+  // 항목을 고르면 목록을 접고 내용 화면으로 넘어간다.
+  if (!selectedItem) {
+    return (
+      <div className="space-y-6">
+        <div>
+          <Link href="/study/subjects" className="text-sm text-zinc-500 hover:text-zinc-700">
+            ← 교과목 목록
+          </Link>
+          <h1 className="mt-2 text-2xl font-bold" style={{ color: subject.color }}>
+            {subject.name}
+          </h1>
+        </div>
 
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="space-y-4 lg:col-span-1">
+        <div className="space-y-4">
           {units.map((unit) => {
             const items = data.items.filter((i) => i.unitId === unit.id);
             return (
@@ -172,9 +174,7 @@ export function SubjectDetailView({ subjectId }: Props) {
                     <button
                       key={item.id}
                       onClick={() => handleSelectItem(item)}
-                      className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/50 ${
-                        selectedItem?.id === item.id ? "bg-zinc-50 dark:bg-zinc-800/50" : ""
-                      }`}
+                      className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
                     >
                       <span className="flex items-center gap-2">
                         <span
@@ -196,148 +196,155 @@ export function SubjectDetailView({ subjectId }: Props) {
             );
           })}
         </div>
+      </div>
+    );
+  }
 
-        <div className="lg:col-span-2">
-          {selectedItem ? (
-            <div className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
-              <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-lg font-semibold">{selectedItem.title}</h2>
+  // ── 고른 항목의 내용 화면 ────────────────────────────────
+  return (
+    <div className="space-y-6">
+      <div>
+        <button
+          onClick={() => setSelectedItem(null)}
+          className="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:hover:text-white"
+        >
+          <ChevronLeft className="h-4 w-4" />
+          {subject.name} 단원 목록
+        </button>
+      </div>
+
+      <div className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-semibold">{selectedItem.title}</h2>
+          <button
+            onClick={startEdit}
+            className="flex items-center gap-1 text-sm text-zinc-500 hover:text-blue-600"
+            aria-label="편집"
+          >
+            <Pencil className="h-4 w-4" />
+            편집
+          </button>
+        </div>
+
+        {editing ? (
+          <div className="space-y-3">
+            <input
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+              className="w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
+              placeholder="제목"
+            />
+            {selectedItem.type === "concept" ? (
+              <div className="grid gap-3 md:grid-cols-2">
+                <textarea
+                  value={editMarkdown}
+                  onChange={(e) => setEditMarkdown(e.target.value)}
+                  rows={12}
+                  className="rounded-lg border border-zinc-200 p-3 font-mono text-xs dark:border-zinc-700 dark:bg-zinc-800"
+                />
+                <div className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-700">
+                  <p className="mb-2 text-xs text-zinc-400">미리보기</p>
+                  <MarkdownPreview markdown={editMarkdown} />
+                </div>
+              </div>
+            ) : (
+              <>
+                <textarea
+                  value={editQuestion}
+                  onChange={(e) => setEditQuestion(e.target.value)}
+                  rows={3}
+                  placeholder="문제"
+                  className="w-full rounded-lg border border-zinc-200 p-3 text-sm dark:border-zinc-700 dark:bg-zinc-800"
+                />
+                <input
+                  value={editAnswer}
+                  onChange={(e) => setEditAnswer(e.target.value)}
+                  placeholder="정답"
+                  className="w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
+                />
+                <textarea
+                  value={editExplanation}
+                  onChange={(e) => setEditExplanation(e.target.value)}
+                  rows={3}
+                  placeholder="해설 (선택)"
+                  className="w-full rounded-lg border border-zinc-200 p-3 text-sm dark:border-zinc-700 dark:bg-zinc-800"
+                />
+              </>
+            )}
+            <div className="flex gap-2">
+              <button
+                onClick={saveEdit}
+                className="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white"
+              >
+                저장
+              </button>
+              <button
+                onClick={() => setEditing(false)}
+                className="rounded-lg px-4 py-2 text-sm text-zinc-500"
+              >
+                취소
+              </button>
+            </div>
+          </div>
+        ) : selectedItem.type === "concept" ? (
+          <MarkdownPreview markdown={selectedItem.markdown} />
+        ) : (
+          <div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">{selectedItem.question}</p>
+            {showAnswer ? (
+              <div className="mt-4 rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
+                <p className="text-sm font-medium text-blue-700 dark:text-blue-400">
+                  정답: {selectedItem.answer}
+                </p>
+                {selectedItem.explanation && (
+                  <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                    해설: {selectedItem.explanation}
+                  </p>
+                )}
+              </div>
+            ) : (
+              <button
+                onClick={() => setShowAnswer(true)}
+                className="mt-4 text-sm text-blue-600 hover:underline"
+              >
+                정답 보기
+              </button>
+            )}
+
+            {showAnswer && !userAnswer && (
+              <div className="mt-4 flex gap-3">
                 <button
-                  onClick={startEdit}
-                  className="flex items-center gap-1 text-sm text-zinc-500 hover:text-blue-600"
-                  aria-label="편집"
+                  onClick={() => {
+                    setUserAnswer("correct");
+                    markProblemSolved(selectedItem.id, true);
+                  }}
+                  className="flex items-center gap-2 rounded-lg bg-green-100 px-4 py-2 text-sm font-medium text-green-700 dark:bg-green-900/30 dark:text-green-400"
                 >
-                  <Pencil className="h-4 w-4" />
-                  편집
+                  <Check className="h-4 w-4" />
+                  맞았어요
+                </button>
+                <button
+                  onClick={() => {
+                    setUserAnswer("wrong");
+                    markProblemSolved(selectedItem.id, false);
+                  }}
+                  className="flex items-center gap-2 rounded-lg bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-400"
+                >
+                  <X className="h-4 w-4" />
+                  틀렸어요
                 </button>
               </div>
+            )}
 
-              {editing ? (
-                <div className="space-y-3">
-                  <input
-                    value={editTitle}
-                    onChange={(e) => setEditTitle(e.target.value)}
-                    className="w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-                    placeholder="제목"
-                  />
-                  {selectedItem.type === "concept" ? (
-                    <div className="grid gap-3 md:grid-cols-2">
-                      <textarea
-                        value={editMarkdown}
-                        onChange={(e) => setEditMarkdown(e.target.value)}
-                        rows={12}
-                        className="rounded-lg border border-zinc-200 p-3 font-mono text-xs dark:border-zinc-700 dark:bg-zinc-800"
-                      />
-                      <div className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-700">
-                        <p className="mb-2 text-xs text-zinc-400">미리보기</p>
-                        <MarkdownPreview markdown={editMarkdown} />
-                      </div>
-                    </div>
-                  ) : (
-                    <>
-                      <textarea
-                        value={editQuestion}
-                        onChange={(e) => setEditQuestion(e.target.value)}
-                        rows={3}
-                        placeholder="문제"
-                        className="w-full rounded-lg border border-zinc-200 p-3 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-                      />
-                      <input
-                        value={editAnswer}
-                        onChange={(e) => setEditAnswer(e.target.value)}
-                        placeholder="정답"
-                        className="w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-                      />
-                      <textarea
-                        value={editExplanation}
-                        onChange={(e) => setEditExplanation(e.target.value)}
-                        rows={3}
-                        placeholder="해설 (선택)"
-                        className="w-full rounded-lg border border-zinc-200 p-3 text-sm dark:border-zinc-700 dark:bg-zinc-800"
-                      />
-                    </>
-                  )}
-                  <div className="flex gap-2">
-                    <button
-                      onClick={saveEdit}
-                      className="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white"
-                    >
-                      저장
-                    </button>
-                    <button
-                      onClick={() => setEditing(false)}
-                      className="rounded-lg px-4 py-2 text-sm text-zinc-500"
-                    >
-                      취소
-                    </button>
-                  </div>
-                </div>
-              ) : selectedItem.type === "concept" ? (
-                <MarkdownPreview markdown={selectedItem.markdown} />
-              ) : (
-                <div>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">{selectedItem.question}</p>
-                  {showAnswer ? (
-                    <div className="mt-4 rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
-                      <p className="text-sm font-medium text-blue-700 dark:text-blue-400">
-                        정답: {selectedItem.answer}
-                      </p>
-                      {selectedItem.explanation && (
-                        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                          해설: {selectedItem.explanation}
-                        </p>
-                      )}
-                    </div>
-                  ) : (
-                    <button
-                      onClick={() => setShowAnswer(true)}
-                      className="mt-4 text-sm text-blue-600 hover:underline"
-                    >
-                      정답 보기
-                    </button>
-                  )}
-
-                  {showAnswer && !userAnswer && (
-                    <div className="mt-4 flex gap-3">
-                      <button
-                        onClick={() => {
-                          setUserAnswer("correct");
-                          markProblemSolved(selectedItem.id, true);
-                        }}
-                        className="flex items-center gap-2 rounded-lg bg-green-100 px-4 py-2 text-sm font-medium text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                      >
-                        <Check className="h-4 w-4" />
-                        맞았어요
-                      </button>
-                      <button
-                        onClick={() => {
-                          setUserAnswer("wrong");
-                          markProblemSolved(selectedItem.id, false);
-                        }}
-                        className="flex items-center gap-2 rounded-lg bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-400"
-                      >
-                        <X className="h-4 w-4" />
-                        틀렸어요
-                      </button>
-                    </div>
-                  )}
-
-                  {userAnswer && (
-                    <p className="mt-4 text-sm text-zinc-500">
-                      {userAnswer === "correct"
-                        ? "정답으로 기록했습니다."
-                        : "오답노트에 추가했습니다."}
-                    </p>
-                  )}
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="flex h-64 items-center justify-center rounded-xl border border-dashed border-zinc-300 dark:border-zinc-700">
-              <p className="text-zinc-500">항목을 선택하세요</p>
-            </div>
-          )}
-        </div>
+            {userAnswer && (
+              <p className="mt-4 text-sm text-zinc-500">
+                {userAnswer === "correct"
+                  ? "정답으로 기록했습니다."
+                  : "오답노트에 추가했습니다."}
+              </p>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
