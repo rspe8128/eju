@@ -30,6 +30,10 @@ import {
 } from "@/lib/nav";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import type { ProfileRow } from "@/lib/supabase/types";
+import {
+  recordTermsIfPending,
+  setTermsAgreedAtIfEmpty,
+} from "@/lib/supabase/termsConsent";
 import { PomodoroTimer } from "./PomodoroTimer";
 import { CommandPalette } from "./CommandPalette";
 import { LayoutModePicker } from "./LayoutModePicker";
@@ -193,6 +197,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [isAdmin, setIsAdmin] = useState(false);
   const [profileName, setProfileName] = useState<string>("");
   const [avatarUrl, setAvatarUrl] = useState<string>("");
+  const [needsTermsConsent, setNeedsTermsConsent] = useState(false);
+  const [termsBusy, setTermsBusy] = useState(false);
   const headerObserver = useRef<ResizeObserver | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -221,18 +227,28 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         setProfileName("");
         setAvatarUrl("");
         setIsAdmin(false);
+        setNeedsTermsConsent(false);
         setAuthReady(true);
         return;
       }
+      try {
+        await recordTermsIfPending(supabase, data.user.id);
+      } catch {
+        // 동의 기록 실패 시 배너로 보완
+      }
       const { data: profile } = await supabase
         .from("profiles")
-        .select("display_name, avatar_url, role")
+        .select("display_name, avatar_url, role, terms_agreed_at")
         .eq("id", data.user.id)
         .maybeSingle();
-      const p = profile as Pick<ProfileRow, "display_name" | "avatar_url" | "role"> | null;
+      const p = profile as Pick<
+        ProfileRow,
+        "display_name" | "avatar_url" | "role" | "terms_agreed_at"
+      > | null;
       setProfileName(p?.display_name ?? "");
       setAvatarUrl(p?.avatar_url ?? "");
       setIsAdmin(p?.role === "admin");
+      setNeedsTermsConsent(!p?.terms_agreed_at);
       setAuthReady(true);
     };
     void load();
@@ -317,6 +333,44 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     await supabase?.auth.signOut();
     window.location.href = "/login";
   };
+
+  const agreeToTerms = async () => {
+    if (!supabase || !user) return;
+    setTermsBusy(true);
+    try {
+      await setTermsAgreedAtIfEmpty(supabase, user.id);
+      setNeedsTermsConsent(false);
+    } catch {
+      // 조용히 실패 — 다음에 다시 배너
+    } finally {
+      setTermsBusy(false);
+    }
+  };
+
+  const termsBanner = needsTermsConsent ? (
+    <div className="mb-4 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm dark:border-amber-800 dark:bg-amber-950/40">
+      <p className="font-medium text-amber-900 dark:text-amber-200">약관에 동의해 주세요</p>
+      <p className="mt-1 text-xs leading-relaxed text-amber-800 dark:text-amber-300/90">
+        서비스를 계속 이용하려면{" "}
+        <Link href="/privacy" target="_blank" className="underline underline-offset-2">
+          개인정보처리방침
+        </Link>
+        과{" "}
+        <Link href="/terms" target="_blank" className="underline underline-offset-2">
+          이용약관
+        </Link>
+        에 동의가 필요합니다.
+      </p>
+      <button
+        type="button"
+        disabled={termsBusy}
+        onClick={() => void agreeToTerms()}
+        className="mt-2 rounded-lg bg-amber-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-amber-800 disabled:opacity-50 dark:bg-amber-600 dark:hover:bg-amber-500"
+      >
+        {termsBusy ? "저장 중..." : "동의하고 계속"}
+      </button>
+    </div>
+  ) : null;
 
   if (!authReady) {
     return (
@@ -448,7 +502,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           />
         </aside>
 
-        <main className="p-4 pb-[calc(var(--bottom-nav-h)+1.5rem)]">{children}</main>
+        <main className="p-4 pb-[calc(var(--bottom-nav-h)+1.5rem)]">
+          {termsBanner}
+          {children}
+        </main>
 
         <nav
           className="fixed inset-x-0 bottom-0 z-30 flex border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900"
@@ -553,7 +610,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           {headerActions}
         </header>
 
-        <main className="mx-auto w-full max-w-5xl flex-1 p-8">{children}</main>
+        <main className="mx-auto w-full max-w-5xl flex-1 p-8">
+          {termsBanner}
+          {children}
+        </main>
       </div>
     </div>
   );

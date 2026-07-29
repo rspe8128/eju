@@ -3,19 +3,22 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { markTermsPending } from "@/lib/supabase/termsConsent";
 
 export function LoginView() {
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
+  const [agreed, setAgreed] = useState(false);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
 
   const unavailable = !supabase;
 
   const onGoogleLogin = async () => {
-    if (!supabase) return;
+    if (!supabase || !agreed) return;
     setBusy(true);
     setError("");
     try {
+      markTermsPending();
       // Supabase Redirect URL에 등록된 경로로만 보낸다 (/profile)
       const redirectTo = `${window.location.origin}/profile`;
       const { error: oauthError } = await supabase.auth.signInWithOAuth({
@@ -47,14 +50,51 @@ export function LoginView() {
       </div>
 
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-800">
+        <label className="mb-4 flex cursor-pointer items-start gap-2.5 text-xs leading-relaxed text-zinc-600 dark:text-zinc-300">
+          <input
+            type="checkbox"
+            checked={agreed}
+            onChange={(e) => setAgreed(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 rounded border-zinc-300 text-blue-600 focus:ring-blue-500"
+          />
+          <span>
+            <Link
+              href="/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-white"
+              onClick={(e) => e.stopPropagation()}
+            >
+              개인정보처리방침
+            </Link>
+            과{" "}
+            <Link
+              href="/terms"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-white"
+              onClick={(e) => e.stopPropagation()}
+            >
+              이용약관
+            </Link>
+            에 동의합니다.
+          </span>
+        </label>
+
         <button
           onClick={() => void onGoogleLogin()}
-          disabled={busy || unavailable}
+          disabled={busy || unavailable || !agreed}
           className="flex w-full items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium hover:bg-zinc-50 disabled:opacity-50 dark:border-zinc-600 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <GoogleIcon />
           {busy ? "이동 중..." : "Google로 계속하기"}
         </button>
+
+        {!agreed && !unavailable && (
+          <p className="mt-3 text-center text-[11px] text-zinc-400">
+            약관에 동의하면 로그인할 수 있습니다.
+          </p>
+        )}
 
         {unavailable && (
           <div className="mt-4 rounded-lg bg-amber-50 p-3 text-xs leading-relaxed text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
@@ -66,15 +106,6 @@ export function LoginView() {
 
       <p className="text-center text-xs text-zinc-500">
         로그인 후에만 학습·성적·관리 기능을 사용할 수 있습니다.
-      </p>
-      <p className="text-center text-xs text-zinc-400">
-        <Link href="/privacy" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
-          개인정보처리방침
-        </Link>
-        <span className="mx-1.5">·</span>
-        <Link href="/terms" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
-          이용약관
-        </Link>
       </p>
     </div>
   );

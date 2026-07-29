@@ -11,6 +11,7 @@ export type Database = {
           exam_target_date: string | null;
           email: string | null;
           role: "user" | "admin";
+          terms_agreed_at: string | null;
           created_at: string;
           updated_at: string;
         };
@@ -23,6 +24,7 @@ export type Database = {
           exam_target_date?: string | null;
           email?: string | null;
           role?: "user" | "admin";
+          terms_agreed_at?: string | null;
           created_at?: string;
           updated_at?: string;
         };
@@ -34,6 +36,7 @@ export type Database = {
           exam_target_date?: string | null;
           email?: string | null;
           role?: "user" | "admin";
+          terms_agreed_at?: string | null;
           updated_at?: string;
         };
         Relationships: [];

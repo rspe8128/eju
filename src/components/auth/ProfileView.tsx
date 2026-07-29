@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { User } from "@supabase/supabase-js";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import type { ProfileRow } from "@/lib/supabase/types";
+import { recordTermsIfPending } from "@/lib/supabase/termsConsent";
 
 type ProfileForm = {
   display_name: string;
@@ -43,6 +44,11 @@ export function ProfileView() {
       const { data } = await supabase.auth.getUser();
       setUser(data.user ?? null);
       if (data.user) {
+        try {
+          await recordTermsIfPending(supabase, data.user.id);
+        } catch {
+          // 동의 기록 실패해도 프로필은 보여 준다
+        }
         const { data: profile } = await supabase
           .from("profiles")
           .select("*")

@@ -337,3 +337,8 @@ $$;
 
 revoke all on function public.admin_delete_user(uuid) from public;
 grant execute on function public.admin_delete_user(uuid) to authenticated;
+
+-- ── Phase 4: terms consent ─────────────────────────────────────
+
+alter table public.profiles
+  add column if not exists terms_agreed_at timestamptz;
