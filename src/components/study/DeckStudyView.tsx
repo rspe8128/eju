@@ -166,11 +166,22 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
   if (!selectedDeck) {
     return (
       <div>
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold" style={{ color: accent }}>
-            {subjectLabel}
-          </h1>
-          <p className="text-sm text-zinc-500">플래시카드와 퀴즈로 암기 학습</p>
+        <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h1 className="text-2xl font-bold" style={{ color: accent }}>
+              {subjectLabel}
+            </h1>
+            <p className="text-sm text-zinc-500">플래시카드와 퀴즈로 암기 학습</p>
+          </div>
+          {/* 단어장을 담고 빼는 곳은 여기서 항상 한 번에 갈 수 있어야 한다.
+              예전에는 담은 덱이 하나도 없을 때만 링크가 보였다. */}
+          <a
+            href="/study/library"
+            className="flex shrink-0 items-center gap-1.5 rounded-xl border border-zinc-200 px-3 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
+          >
+            <Library className="h-4 w-4" />
+            단어장 보관함
+          </a>
         </div>
 
         {tabs && (

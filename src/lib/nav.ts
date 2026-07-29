@@ -21,7 +21,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-export type NavLink = { href: string; label: string; desc?: string; icon?: LucideIcon };
+export type NavLink = { href: string; label: string; icon: LucideIcon };
 
 /** 단일 링크 섹션(대시보드처럼 하위가 없는 것)과 그룹 섹션을 구분한다. */
 export type NavSection =
@@ -31,23 +31,18 @@ export type NavSection =
 /**
  * 사이드 메뉴 위계.
  *
- * 예전에는 20개 가까운 링크가 4개 묶음으로 평평하게 나열돼 있어서 훑기 힘들었다.
- * 지금은 "무엇을 하려는가"(오늘 / 일본어 / 과목 / 영어 / 시험 / 설정) 기준으로
- * 접을 수 있는 섹션을 만들고, 현재 페이지가 속한 섹션만 펼쳐 보여준다.
+ * 섹션은 "무엇을 하려는가"(오늘 / 일본어 / 교과목 / 영어 / 시험 / 설정) 기준이고,
+ * 기본값은 전부 펼침이다. 접는 기능은 안 쓰는 영역을 치우고 싶을 때만 쓴다 —
+ * 처음부터 접어 두면 어디에 뭐가 있는지 몰라서 매번 두 번 눌러 찾아야 했다.
  */
 export function buildNavSections(isAdmin: boolean): NavSection[] {
   const settingsItems: NavLink[] = [
-    { href: "/guide", label: "EJU 가이드", desc: "시험 개요와 공부법", icon: Info },
-    { href: "/profile", label: "프로필", desc: "내 정보와 목표", icon: UserCircle2 },
-    { href: "/settings", label: "설정", desc: "백업 · 동기화 · 테마", icon: Settings },
+    { href: "/guide", label: "EJU 가이드", icon: Info },
+    { href: "/profile", label: "프로필", icon: UserCircle2 },
+    { href: "/settings", label: "설정", icon: Settings },
   ];
   if (isAdmin) {
-    settingsItems.push({
-      href: "/admin",
-      label: "계정 관리",
-      desc: "사용자 권한",
-      icon: Shield,
-    });
+    settingsItems.push({ href: "/admin", label: "계정 관리", icon: Shield });
   }
 
   return [
@@ -58,9 +53,9 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
       label: "오늘",
       icon: Sparkles,
       items: [
-        { href: "/study/today", label: "오늘의 학습", desc: "복습 카드 · 추천 학습", icon: Sparkles },
-        { href: "/plan", label: "학습 플랜", desc: "주간 계획", icon: ClipboardList },
-        { href: "/review", label: "오답노트", desc: "틀린 문제 다시 풀기", icon: RotateCcw },
+        { href: "/study/today", label: "오늘의 학습", icon: Sparkles },
+        { href: "/plan", label: "학습 플랜", icon: ClipboardList },
+        { href: "/review", label: "오답노트", icon: RotateCcw },
       ],
     },
     {
@@ -69,10 +64,9 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
       label: "일본어",
       icon: Languages,
       items: [
-        { href: "/study/japanese", label: "단어 · 문법", desc: "JLPT 학습", icon: Languages },
-        { href: "/study/library", label: "단어장 보관함", desc: "덱 추가 · 관리", icon: Library },
-        { href: "/dictation", label: "딕테이션", desc: "듣고 받아쓰기", icon: Headphones },
-        { href: "/writing", label: "기술(작문)", desc: "AI 첨삭", icon: PenLine },
+        { href: "/study/japanese", label: "단어 · 문법", icon: Languages },
+        { href: "/dictation", label: "딕테이션", icon: Headphones },
+        { href: "/writing", label: "기술(작문)", icon: PenLine },
       ],
     },
     {
@@ -81,9 +75,8 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
       label: "교과목",
       icon: FlaskConical,
       items: [
-        { href: "/study/subjects", label: "과목 학습", desc: "종합 · 수학 · 이과", icon: FlaskConical },
-        { href: "/study/terms", label: "과목 용어", desc: "일본어 전문 용어", icon: BookMarked },
-        { href: "/study/modules", label: "학습 모듈 보관함", desc: "단원 추가 · 관리", icon: Library },
+        { href: "/study/subjects", label: "과목 학습", icon: FlaskConical },
+        { href: "/study/terms", label: "과목 용어", icon: BookMarked },
       ],
     },
     {
@@ -91,7 +84,7 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
       id: "english",
       label: "영어",
       icon: BookOpen,
-      items: [{ href: "/study/toefl", label: "TOEFL 단어", desc: "핵심 어휘", icon: BookOpen }],
+      items: [{ href: "/study/toefl", label: "TOEFL 단어", icon: BookOpen }],
     },
     {
       kind: "group",
@@ -99,10 +92,22 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
       label: "시험",
       icon: FileText,
       items: [
-        { href: "/mock", label: "모의고사", desc: "실전 연습", icon: FileText },
-        { href: "/scores", label: "성적", desc: "점수 기록", icon: TrendingUp },
-        { href: "/stats", label: "약점 분석", desc: "취약 단원", icon: BarChart3 },
-        { href: "/schedule", label: "일정", desc: "시험 · 접수일", icon: Calendar },
+        { href: "/mock", label: "모의고사", icon: FileText },
+        { href: "/scores", label: "성적", icon: TrendingUp },
+        { href: "/stats", label: "약점 분석", icon: BarChart3 },
+        { href: "/schedule", label: "일정", icon: Calendar },
+      ],
+    },
+    {
+      // 보관함은 "무엇을 공부할지 고르는" 준비 작업이라 학습 항목들과 성격이 다르다.
+      // 일본어·교과목 섹션 안에 흩어져 있으면 필요할 때 찾기 어려워 따로 묶었다.
+      kind: "group",
+      id: "library",
+      label: "보관함",
+      icon: Library,
+      items: [
+        { href: "/study/library", label: "단어장 보관함", icon: Library },
+        { href: "/study/modules", label: "학습 모듈 보관함", icon: Library },
       ],
     },
     {
@@ -115,12 +120,21 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
   ];
 }
 
-/** 모바일 하단 탭 — 가장 자주 열리는 5개만. 나머지는 ☰ 드로어에 있다. */
-export const mobileTabs: { href: string; label: string; icon: LucideIcon }[] = [
+/** 그룹 섹션 id 전체 — 메뉴를 처음 열 때 모두 펼쳐 두는 데 쓴다. */
+export function allGroupIds(sections: NavSection[]): string[] {
+  return sections.filter((s) => s.kind === "group").map((s) => s.id);
+}
+
+/**
+ * 모바일 하단 탭.
+ *
+ * 매일 도는 4개만 두고, 마지막 칸은 ☰ 메뉴를 여는 "더보기"로 쓴다(AppShell에서 붙인다).
+ * 휴대폰에서 좌측 상단 ☰는 엄지가 닿지 않아, 나머지 화면으로 가려면 손을 옮겨야 했다.
+ */
+export const mobileTabs: NavLink[] = [
   { href: "/", label: "홈", icon: Home },
   { href: "/study/today", label: "오늘", icon: Sparkles },
   { href: "/study/japanese", label: "일본어", icon: Languages },
-  { href: "/mock", label: "모의고사", icon: FileText },
   { href: "/review", label: "오답", icon: RotateCcw },
 ];
 

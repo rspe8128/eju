@@ -14,6 +14,8 @@ import {
   FileText,
   CheckCircle2,
   Circle,
+  Library,
+  Play,
   ShieldAlert,
 } from "lucide-react";
 import { getSubjectLabel } from "@/lib/eju";
@@ -29,19 +31,51 @@ import { computePlan } from "@/lib/plan";
 import { resolveMockMistake } from "@/lib/mock/mistakeIds";
 import { StudyHeatmap } from "@/components/study/StudyHeatmap";
 
-const shortcuts = [
-  { href: "/study/japanese", label: "일본어", desc: "JLPT · EJU 독해", icon: Languages, subject: "japanese" },
-  { href: "/study/terms", label: "과목 용어", desc: "수학·이과·종합", icon: BookMarked, subject: "sogo" },
+/**
+ * subject는 아이콘 색을 고르는 데 쓰고, deckSubjects는 "복습 N" 배지를 셀 덱 과목이다.
+ * 둘을 한 값으로 쓰면 작문·모의고사처럼 덱이 없는 화면에도 카드 복습 수가 붙는다.
+ */
+const shortcuts: {
+  href: string;
+  label: string;
+  desc: string;
+  icon: typeof Languages;
+  subject: string;
+  deckSubjects?: string[];
+}[] = [
+  {
+    href: "/study/japanese",
+    label: "일본어",
+    desc: "JLPT · EJU 독해",
+    icon: Languages,
+    subject: "japanese",
+    deckSubjects: ["japanese"],
+  },
+  {
+    href: "/study/terms",
+    label: "과목 용어",
+    desc: "수학·이과·종합",
+    icon: BookMarked,
+    subject: "sogo",
+    deckSubjects: ["math", "sogo", "physics", "chemistry", "biology"],
+  },
   {
     href: "/study/toefl",
     label: "TOEFL",
     desc: "대학 영어 · EJU 과목 아님",
     icon: BookOpen,
     subject: "toefl",
+    deckSubjects: ["toefl"],
   },
   { href: "/writing", label: "기술(작문)", desc: "記述 연습", icon: PenLine, subject: "japanese" },
   { href: "/mock", label: "모의고사", desc: "풀고 바로 채점", icon: FileText, subject: "physics" },
   { href: "/stats", label: "약점 분석", desc: "정답률 · 잔디", icon: BarChart3, subject: "math" },
+];
+
+/** 무엇을 공부할지 고르는 준비 화면. 학습 바로가기와 성격이 달라 따로 묶는다. */
+const libraryShortcuts = [
+  { href: "/study/library", label: "단어장 보관함", desc: "덱 담기 · 빼기" },
+  { href: "/study/modules", label: "학습 모듈 보관함", desc: "단원 담기 · 빼기" },
 ];
 
 export function DashboardView() {
@@ -89,6 +123,8 @@ export function DashboardView() {
 
   const todoDone = todos.filter((t) => t.done).length;
   const todoPct = Math.round((todoDone / todos.length) * 100);
+  /** 시작 버튼에 띄울 오늘 세션 분량 (오늘의 학습 화면이 실제로 다루는 카드 수와 같은 기준) */
+  const sessionTotal = dueCards.length + newQuota;
 
   // 기록이 localStorage에만 있으므로, 백업이 오래되면 눈에 띄게 알린다.
   const lastBackup = data.settings.lastBackupAt;
@@ -130,15 +166,23 @@ export function DashboardView() {
         </Link>
       )}
 
-      <section className="rounded-xl border border-zinc-200 p-5 dark:border-zinc-700">
+      {/* 오늘 해야 할 것과 시작 버튼을 한 카드에 모은다.
+          예전에는 할 일 목록과 지표 카드가 같은 숫자(복습·오답)를 두세 번 반복해서
+          보여주면서, 정작 "지금 시작" 버튼은 어디에도 없었다. */}
+      <section className="rounded-2xl border border-zinc-200 p-5 dark:border-zinc-700">
         <div className="mb-3 flex items-center justify-between">
           <h2 className="font-semibold">오늘의 할 일</h2>
-          <span className="text-xs text-zinc-500">{todoDone}/{todos.length}</span>
+          <span className="text-xs text-zinc-500">
+            {todoDone}/{todos.length}
+          </span>
         </div>
         <div className="mb-4 h-2 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
-          <div className="h-full rounded-full bg-green-500 transition-all" style={{ width: `${todoPct}%` }} />
+          <div
+            className="h-full rounded-full bg-green-500 transition-all"
+            style={{ width: `${todoPct}%` }}
+          />
         </div>
-        <ul className="space-y-2">
+        <ul className="space-y-1">
           {todos.map((t) => (
             <li key={t.id}>
               <Link
@@ -146,9 +190,9 @@ export function DashboardView() {
                 className="flex items-center gap-3 rounded-lg px-2 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
               >
                 {t.done ? (
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 text-green-500" />
                 ) : (
-                  <Circle className="h-5 w-5 text-zinc-300" />
+                  <Circle className="h-5 w-5 shrink-0 text-zinc-300" />
                 )}
                 <span className={`text-sm ${t.done ? "text-zinc-400 line-through" : ""}`}>
                   {t.label}
@@ -157,32 +201,45 @@ export function DashboardView() {
             </li>
           ))}
         </ul>
+
+        <Link
+          href={sessionTotal > 0 ? "/study/today" : "/study/library"}
+          className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-red-500 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-red-600"
+        >
+          <Play className="h-4 w-4" />
+          {sessionTotal > 0
+            ? `오늘의 학습 시작 (${sessionTotal}장)`
+            : data.cards.length === 0
+              ? "먼저 단어장 담으러 가기"
+              : "오늘 몫 완료 · 더 학습하기"}
+        </Link>
       </section>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <StatCard
-          icon={<BookOpen className="h-5 w-5 text-blue-500" />}
-          label="오늘 복습"
-          value={`${dueCards.length}장`}
-          sub="간격 반복 대상"
-        />
-        <StatCard
-          icon={<Flame className="h-5 w-5 text-orange-500" />}
+      {/* 지표는 숫자만 크게 띄우는 대신, 눌러서 해당 화면으로 가는 한 줄 칩으로. */}
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <StatChip
+          icon={<Flame className="h-4 w-4 text-orange-500" />}
           label="연속 학습"
           value={`${data.streak}일`}
-          sub="스트릭"
+          href="/stats"
         />
-        <StatCard
-          icon={<Calendar className="h-5 w-5 text-purple-500" />}
-          label={nearestDeadline?.label ?? "D-day"}
-          value={nearestDeadline ? `D-${daysUntil(nearestDeadline.date)}` : "-"}
-          sub={nearestDeadline ? nearestDeadline.date : "다가올 일정 없음"}
+        <StatChip
+          icon={<BookOpen className="h-4 w-4 text-blue-500" />}
+          label="오늘 학습"
+          value={`${todayStudied}장`}
+          href="/stats"
         />
-        <StatCard
-          icon={<AlertCircle className="h-5 w-5 text-red-500" />}
-          label="오답"
+        <StatChip
+          icon={<AlertCircle className="h-4 w-4 text-red-500" />}
+          label="미해결 오답"
           value={`${mistakes.length}개`}
-          sub="미해결"
+          href="/review"
+        />
+        <StatChip
+          icon={<Calendar className="h-4 w-4 text-purple-500" />}
+          label={nearestDeadline?.label ?? "다가올 일정"}
+          value={nearestDeadline ? `D-${daysUntil(nearestDeadline.date)}` : "없음"}
+          href="/schedule"
         />
       </div>
 
@@ -223,11 +280,13 @@ export function DashboardView() {
       <section>
         <h2 className="mb-4 text-lg font-semibold">바로가기</h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {shortcuts.map(({ href, label, desc, icon: Icon, subject: sub }) => {
-            const dueForSubject = dueCards.filter((c) => {
-              const deck = data.decks.find((d) => d.id === c.deckId);
-              return deck?.subject === sub;
-            }).length;
+          {shortcuts.map(({ href, label, desc, icon: Icon, subject: sub, deckSubjects }) => {
+            const dueForSubject = deckSubjects
+              ? dueCards.filter((c) => {
+                  const deck = data.decks.find((d) => d.id === c.deckId);
+                  return deck ? deckSubjects.includes(deck.subject) : false;
+                }).length
+              : 0;
             return (
               <Link
                 key={href}
@@ -254,6 +313,24 @@ export function DashboardView() {
               </Link>
             );
           })}
+        </div>
+
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          {libraryShortcuts.map(({ href, label, desc }) => (
+            <Link
+              key={href}
+              href={href}
+              className="flex items-center gap-3 rounded-xl border border-dashed border-zinc-300 p-4 transition-colors hover:bg-zinc-50 dark:border-zinc-600 dark:hover:bg-zinc-800/50"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 dark:bg-zinc-800">
+                <Library className="h-5 w-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="font-medium">{label}</p>
+                <p className="truncate text-xs text-zinc-500">{desc}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -296,23 +373,27 @@ export function DashboardView() {
   );
 }
 
-function StatCard({
+function StatChip({
   icon,
   label,
   value,
-  sub,
+  href,
 }: {
   icon: React.ReactNode;
   label: string;
   value: string;
-  sub: string;
+  href: string;
 }) {
   return (
-    <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900">
-      <div className="mb-2">{icon}</div>
-      <p className="text-xs text-zinc-500">{label}</p>
-      <p className="text-2xl font-bold">{value}</p>
-      <p className="text-xs text-zinc-400">{sub}</p>
-    </div>
+    <Link
+      href={href}
+      className="flex items-center gap-2.5 rounded-xl border border-zinc-200 bg-white px-3 py-2.5 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800/50"
+    >
+      <span className="shrink-0">{icon}</span>
+      <span className="min-w-0">
+        <span className="block truncate text-[11px] text-zinc-500">{label}</span>
+        <span className="block truncate text-base font-bold leading-tight">{value}</span>
+      </span>
+    </Link>
   );
 }

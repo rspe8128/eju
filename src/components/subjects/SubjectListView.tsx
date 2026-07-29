@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Atom, Calculator, FlaskConical, BookOpen, Globe, Leaf } from "lucide-react";
+import { Atom, Calculator, FlaskConical, BookOpen, Globe, Leaf, Library } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -19,9 +19,18 @@ export function SubjectListView() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold">교과목</h1>
-        <p className="text-sm text-zinc-500">수학, 종합과목 등 개념·문제 학습</p>
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-bold">교과목</h1>
+          <p className="text-sm text-zinc-500">수학, 종합과목 등 개념·문제 학습</p>
+        </div>
+        <Link
+          href="/study/modules"
+          className="flex shrink-0 items-center gap-1.5 rounded-xl border border-zinc-200 px-3 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
+        >
+          <Library className="h-4 w-4" />
+          모듈 보관함
+        </Link>
       </div>
 
       {!hasAnyModule && (

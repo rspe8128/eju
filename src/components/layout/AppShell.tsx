@@ -20,6 +20,7 @@ import { useStorage } from "@/context/StorageContext";
 import { useLayout } from "@/context/LayoutContext";
 import { cn } from "@/lib/utils";
 import {
+  allGroupIds,
   buildNavSections,
   findActiveNav,
   isActiveHref,
@@ -112,24 +113,21 @@ function NavTree({
               <ul className="ml-[1.4rem] space-y-0.5 border-l border-zinc-200 pb-1 pl-2 dark:border-zinc-700">
                 {section.items.map((item) => {
                   const isActive = isActiveHref(item.href, pathname);
+                  const ItemIcon = item.icon;
                   return (
                     <li key={item.href}>
                       <Link
                         href={item.href}
                         onClick={onNavigate}
                         className={cn(
-                          "block rounded-md px-3 py-2 transition-colors",
+                          "flex items-center gap-2.5 rounded-md px-3 py-2 text-sm transition-colors",
                           isActive
-                            ? "bg-red-50 text-red-600 dark:bg-red-500/10 dark:text-red-400"
+                            ? "bg-red-50 font-medium text-red-600 dark:bg-red-500/10 dark:text-red-400"
                             : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-white"
                         )}
                       >
-                        <span className="block text-sm font-medium">{item.label}</span>
-                        {item.desc && (
-                          <span className="block truncate text-[11px] text-zinc-400">
-                            {item.desc}
-                          </span>
-                        )}
+                        <ItemIcon className="h-4 w-4 shrink-0 opacity-60" />
+                        {item.label}
                       </Link>
                     </li>
                   );
@@ -196,9 +194,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [avatarUrl, setAvatarUrl] = useState<string>("");
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [expanded, setExpanded] = useState<string[]>([]);
+  // 기본은 전부 펼침. 접는 건 안 쓰는 영역을 치우고 싶을 때만 하는 선택이다.
+  const [collapsed, setCollapsed] = useState<string[]>([]);
 
   const navSections = useMemo(() => buildNavSections(isAdmin), [isAdmin]);
+  const expanded = useMemo(
+    () => allGroupIds(navSections).filter((id) => !collapsed.includes(id)),
+    [navSections, collapsed]
+  );
   const active = useMemo(() => findActiveNav(navSections, pathname), [navSections, pathname]);
   const isLoginPage = pathname === "/login";
   const showAppChrome = Boolean(user) && !isLoginPage;
@@ -237,12 +240,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return () => authListener.subscription.unsubscribe();
   }, [supabase]);
 
-  /** 페이지를 옮기면 드로어는 닫고, 현재 페이지가 속한 섹션만 펼쳐 둔다. */
+  /** 페이지를 옮기면 드로어를 닫고, 접어 둔 섹션으로 갔다면 도로 펼친다. */
   useEffect(() => {
     setDrawerOpen(false);
     if (active?.section.kind === "group") {
       const id = active.section.id;
-      setExpanded((prev) => (prev.includes(id) ? prev : [...prev, id]));
+      setCollapsed((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : prev));
     }
   }, [pathname, active?.section]);
 
@@ -279,7 +282,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, [showAppChrome, isMobile]);
 
   const toggleSection = useCallback((id: string) => {
-    setExpanded((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+    setCollapsed((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
   }, []);
 
   const signOut = async () => {
@@ -435,6 +438,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               </Link>
             );
           })}
+          {/* 나머지 화면(보관함·모의고사·설정…)으로 가는 통로.
+              좌측 상단 ☰는 휴대폰에서 엄지가 닿지 않아 여기에도 둔다. */}
+          <button
+            onClick={() => setDrawerOpen(true)}
+            className={cn(
+              "flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px]",
+              drawerOpen ? "text-red-500" : "text-zinc-500"
+            )}
+            aria-label="메뉴 열기"
+            aria-expanded={drawerOpen}
+          >
+            <Menu className="h-5 w-5" />
+            더보기
+          </button>
         </nav>
       </div>
     );
