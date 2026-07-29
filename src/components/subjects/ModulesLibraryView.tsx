@@ -7,6 +7,7 @@ import { useStorage } from "@/context/StorageContext";
 import { MODULE_TOTALS, modulesBySubject, type StudyModule } from "@/lib/data/subjects/modules";
 import { ConfirmRemoveModal } from "@/components/library/ConfirmRemoveModal";
 import { StorageMeter } from "@/components/library/StorageMeter";
+import { FilterTabs } from "@/components/library/FilterTabs";
 
 type PendingRemove = {
   moduleId: string;
@@ -63,10 +64,14 @@ function ModuleRow({
   );
 }
 
+/** 담은 모듈만 모아 보는 탭. */
+const ADDED_TAB = "added";
+
 export function ModulesLibraryView() {
   const { data, addStudyModule, removeStudyModule } = useStorage();
   const [pendingRemove, setPendingRemove] = useState<PendingRemove | null>(null);
   const groups = useMemo(() => modulesBySubject(), []);
+  const [tab, setTab] = useState<string>(() => modulesBySubject()[0]?.subjectId ?? ADDED_TAB);
   const unitIds = useMemo(() => new Set(data.units.map((u) => u.id)), [data.units]);
   const subjectNames = useMemo(
     () => new Map(data.subjects.map((subject) => [subject.id, subject.name])),
@@ -80,6 +85,30 @@ export function ModulesLibraryView() {
     }
     return m;
   }, [data.items]);
+
+  const addedCount = (mods: StudyModule[]) =>
+    mods.filter((mod) => unitIds.has(`unit-${mod.id}`)).length;
+
+  /**
+   * 과목 탭은 해당 과목만, '담음' 탭은 과목 구분은 살린 채 담은 모듈만 보여준다.
+   * total은 원래 과목의 모듈 수 — 걸러낸 뒤에도 전체 대비로 표시하기 위해서.
+   */
+  const visibleGroups = useMemo(() => {
+    if (tab === ADDED_TAB) {
+      return groups
+        .map((g) => ({
+          subjectId: g.subjectId,
+          total: g.modules.length,
+          modules: g.modules.filter((mod) => unitIds.has(`unit-${mod.id}`)),
+        }))
+        .filter((g) => g.modules.length > 0);
+    }
+    return groups
+      .filter((g) => g.subjectId === tab)
+      .map((g) => ({ subjectId: g.subjectId, total: g.modules.length, modules: g.modules }));
+  }, [groups, tab, unitIds]);
+
+  const totalAdded = groups.reduce((n, g) => n + addedCount(g.modules), 0);
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -100,16 +129,41 @@ export function ModulesLibraryView() {
         <StorageMeter />
       </div>
 
-      {groups.map((group) => {
-        const addedCount = group.modules.filter((mod) => unitIds.has(`unit-${mod.id}`)).length;
-        const allAdded = addedCount === group.modules.length;
+      <div className="sticky top-[var(--app-header-h)] z-10 mb-5 bg-zinc-50 py-2 dark:bg-zinc-950">
+        <FilterTabs
+          tabs={[
+            ...groups.map((g) => ({
+              id: g.subjectId,
+              label: subjectNames.get(g.subjectId) ?? g.subjectId,
+              count: addedCount(g.modules),
+              highlight: true,
+            })),
+            { id: ADDED_TAB, label: "담음", count: totalAdded, highlight: true },
+          ]}
+          active={tab}
+          onChange={setTab}
+        />
+      </div>
+
+      {tab === ADDED_TAB && visibleGroups.length === 0 && (
+        <div className="rounded-xl border border-dashed border-zinc-300 p-10 text-center dark:border-zinc-700">
+          <p className="font-medium">아직 담은 모듈이 없다</p>
+          <p className="mt-1.5 text-sm text-zinc-500">
+            위 탭에서 과목을 골라 필요한 단원을 담으면 여기에 모인다.
+          </p>
+        </div>
+      )}
+
+      {visibleGroups.map((group) => {
+        const addedInGroup = addedCount(group.modules);
+        const allAdded = addedInGroup === group.total;
         return (
           <section key={group.subjectId} className="mb-7">
             <div className="mb-2.5 flex items-center justify-between">
               <h2 className="text-sm font-semibold">
                 {subjectNames.get(group.subjectId) ?? group.subjectId}
                 <span className="ml-2 text-xs font-normal text-zinc-400">
-                  {addedCount}/{group.modules.length}모듈
+                  {addedInGroup}/{group.total}모듈
                 </span>
               </h2>
               {!allAdded && group.modules.length > 1 && (

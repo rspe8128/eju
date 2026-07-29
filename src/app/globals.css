@@ -7,6 +7,8 @@
   --accent-toefl: #3b82f6;
   /* 모바일 UI의 하단 탭 높이. AppShell이 UI 모드에 따라 덮어쓴다. */
   --bottom-nav-h: 0px;
+  /* 상단 헤더 높이. 페이지 안 sticky 요소가 헤더 밑에 붙을 때 쓴다. */
+  --app-header-h: 0px;
 }
 
 body {

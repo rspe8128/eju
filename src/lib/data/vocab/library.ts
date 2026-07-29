@@ -175,6 +175,26 @@ export function libraryGroups(): { group: string; decks: LibraryDeck[] }[] {
   return out;
 }
 
+/**
+ * 보관함 탭.
+ *
+ * 그룹이 8개, 덱이 40권을 넘어가서 한 화면에 다 쌓으면 원하는 걸 찾기 어렵다.
+ * 그룹을 그대로 탭으로 만들면 탭이 8개라 그것대로 복잡하므로, 성격이 같은
+ * 그룹끼리 묶어 4개로 줄였다. 탭 안에서는 기존 그룹 구분이 그대로 남는다.
+ */
+export const LIBRARY_CATEGORIES: { id: string; label: string; groups: string[] }[] = [
+  { id: "basic", label: "기초 · 문법", groups: ["일본어 기초", "JLPT 문법"] },
+  { id: "jlpt", label: "JLPT 단어", groups: ["JLPT N3", "JLPT N2", "JLPT N1"] },
+  { id: "eju", label: "EJU", groups: ["EJU 일본어", "EJU 과목 용어"] },
+  { id: "toefl", label: "TOEFL", groups: ["TOEFL"] },
+];
+
+/** 어느 탭에도 안 들어간 그룹은 마지막 탭에 붙인다(새 그룹이 생겨도 사라지지 않게). */
+export function categoryOfGroup(group: string): string {
+  const hit = LIBRARY_CATEGORIES.find((c) => c.groups.includes(group));
+  return hit?.id ?? LIBRARY_CATEGORIES[LIBRARY_CATEGORIES.length - 1].id;
+}
+
 export const LIBRARY_TOTAL = LIBRARY_DECKS.reduce((n, d) => n + d.count, 0);
 
 /**

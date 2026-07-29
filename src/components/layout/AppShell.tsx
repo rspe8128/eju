@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -192,6 +192,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [isAdmin, setIsAdmin] = useState(false);
   const [profileName, setProfileName] = useState<string>("");
   const [avatarUrl, setAvatarUrl] = useState<string>("");
+  const headerObserver = useRef<ResizeObserver | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   // 기본은 전부 펼침. 접는 건 안 쓰는 영역을 치우고 싶을 때만 하는 선택이다.
@@ -281,6 +282,32 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     document.documentElement.style.setProperty("--bottom-nav-h", height);
   }, [showAppChrome, isMobile]);
 
+  /**
+   * 상단 헤더 높이도 같은 이유로 알려준다 — 페이지 안에서 sticky 탭 줄을 쓰는 곳
+   * (보관함 필터)이 헤더 밑에 정확히 붙게. 모바일/PC에 따라 헤더 높이가 달라서
+   * 값을 박아 두면 한쪽이 어긋난다.
+   *
+   * useEffect가 아니라 콜백 ref인 이유: 헤더는 로그인 확인이 끝난 뒤에야 붙는데,
+   * effect를 쓰면 헤더가 없던 시점에 한 번 돌고 다시 돌지 않아 0px로 남는다.
+   */
+  const headerRef = useCallback((el: HTMLElement | null) => {
+    headerObserver.current?.disconnect();
+    headerObserver.current = null;
+    if (!el) {
+      document.documentElement.style.setProperty("--app-header-h", "0px");
+      return;
+    }
+    const sync = () =>
+      document.documentElement.style.setProperty(
+        "--app-header-h",
+        `${el.getBoundingClientRect().height}px`
+      );
+    sync();
+    const observer = new ResizeObserver(sync);
+    observer.observe(el);
+    headerObserver.current = observer;
+  }, []);
+
   const toggleSection = useCallback((id: string) => {
     setCollapsed((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
   }, []);
@@ -350,7 +377,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
         <CommandPalette />
 
-        <header className="sticky top-0 z-30 flex items-center gap-2 border-b border-zinc-200 bg-white/85 px-3 py-2.5 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/85">
+        <header
+          ref={headerRef}
+          className="sticky top-0 z-30 flex items-center gap-2 border-b border-zinc-200 bg-white/85 px-3 py-2.5 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/85"
+        >
           <button
             onClick={() => setDrawerOpen(true)}
             className="rounded-lg p-2 text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-800"
@@ -496,7 +526,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       )}
 
       <div className={cn("flex min-h-screen flex-col", sidebarOpen && "pl-64")}>
-        <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-zinc-200 bg-white/85 px-4 py-2.5 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/85">
+        <header
+          ref={headerRef}
+          className="sticky top-0 z-30 flex items-center gap-3 border-b border-zinc-200 bg-white/85 px-4 py-2.5 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/85"
+        >
           {!sidebarOpen && (
             <button
               onClick={() => setSidebarOpen(true)}
