@@ -206,7 +206,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   );
   const active = useMemo(() => findActiveNav(navSections, pathname), [navSections, pathname]);
   const isLoginPage = pathname === "/login";
-  const showAppChrome = !isLoginPage; // TEMP-PREVIEW
+  const showAppChrome = Boolean(user) && !isLoginPage;
   const isMobile = layout === "mobile";
 
   useEffect(() => {
