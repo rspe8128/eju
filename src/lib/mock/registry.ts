@@ -3,6 +3,9 @@ import { japanese01 } from "./papers/japanese01";
 import { japanese02 } from "./papers/japanese02";
 import { japanese03 } from "./papers/japanese03";
 import { japanese04 } from "./papers/japanese04";
+import { math101 } from "./papers/math101";
+import { sogo01 } from "./papers/sogo01";
+import { physics01 } from "./papers/physics01";
 
 /**
  * 모의고사 카탈로그.
@@ -12,7 +15,15 @@ import { japanese04 } from "./papers/japanese04";
  *   2) 아래 배열에 넣는다
  * 화면·채점·번역·약점분석은 전부 이 배열만 보고 동작하므로 UI는 손대지 않아도 된다.
  */
-export const MOCK_PAPERS: MockPaper[] = [japanese01, japanese02, japanese03, japanese04];
+export const MOCK_PAPERS: MockPaper[] = [
+  japanese01,
+  japanese02,
+  japanese03,
+  japanese04,
+  math101,
+  sogo01,
+  physics01,
+];
 
 export function getMockPaper(id: string): MockPaper | undefined {
   return MOCK_PAPERS.find((p) => p.id === id);

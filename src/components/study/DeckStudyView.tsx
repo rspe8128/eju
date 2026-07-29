@@ -8,17 +8,20 @@ import {
   Play,
   HelpCircle,
   Pencil,
+  Pin,
+  Repeat,
   Trash2,
   Search,
   Shuffle,
+  Undo2,
   Library,
 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
 import { FlashcardSession } from "./FlashcardSession";
 import { QuizSession } from "./QuizSession";
-import { getDueCards } from "@/lib/srs";
+import { getDueCards, getLeechCards, LEECH_LAPSES } from "@/lib/srs";
 import { cn, shuffle as shuffleArray } from "@/lib/utils";
-import type { Card } from "@/lib/types";
+import type { Card, SessionSize } from "@/lib/types";
 import { getSubjectColor } from "@/lib/types";
 import {
   getMasteryDistribution,
@@ -33,10 +36,9 @@ type Props = {
   tabs?: { key: string; label: string; type: string }[];
 };
 
-type Mode = "select" | "flashcard" | "quiz" | "tag-flash" | "tag-quiz";
+type Mode = "select" | "flashcard" | "quiz" | "tag-flash" | "tag-quiz" | "leech";
 
 /** 한 번에 학습할 카드 수. 덱이 수백 장이어도 한 세션은 짧게 끊어야 실제로 외워진다. */
-type SessionSize = 20 | 50 | 100 | "all";
 const SESSION_SIZES: SessionSize[] = [20, 50, 100, "all"];
 
 export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
@@ -47,6 +49,9 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
     updateCard,
     updateCardContent,
     deleteCard,
+    restoreCard,
+    toggleDeckPinned,
+    updateSettings,
   } = useStorage();
   const [activeTab, setActiveTab] = useState(tabs?.[0]?.type ?? "vocab");
   const [selectedDeckId, setSelectedDeckId] = useState<string | null>(null);
@@ -58,14 +63,25 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
   const [editBack, setEditBack] = useState("");
   const [editReading, setEditReading] = useState("");
   const [editTags, setEditTags] = useState("");
-  const [sessionSize, setSessionSize] = useState<SessionSize>(20);
-  const [shuffleOn, setShuffleOn] = useState(true);
   const [sessionCards, setSessionCards] = useState<Card[]>([]);
+  const [deleted, setDeleted] = useState<{ card: Card; index: number } | null>(null);
+
+  // 세션 분량과 섞기는 설정에 저장한다 — 화면에 들어올 때마다 다시 고르지 않도록.
+  const sessionSize = data.settings.sessionSize ?? 20;
+  const shuffleOn = data.settings.sessionShuffle ?? true;
+  const setSessionSize = (v: SessionSize) => updateSettings({ sessionSize: v });
+  const setShuffleOn = (v: boolean) => updateSettings({ sessionShuffle: v });
 
   const accent = getSubjectColor(subject, data.subjects);
-  const filteredDecks = tabs
-    ? getDecksBySubject(subject).filter((d) => d.type === activeTab)
-    : getDecksBySubject(subject);
+  // 고정한 덱을 맨 위로. 그 안에서는 원래 순서를 지킨다.
+  const filteredDecks = (
+    tabs
+      ? getDecksBySubject(subject).filter((d) => d.type === activeTab)
+      : getDecksBySubject(subject)
+  )
+    .map((deck, i) => ({ deck, i }))
+    .sort((a, b) => Number(Boolean(b.deck.pinned)) - Number(Boolean(a.deck.pinned)) || a.i - b.i)
+    .map(({ deck }) => deck);
 
   const selectedDeck = filteredDecks.find((d) => d.id === selectedDeckId);
   const allCards = selectedDeckId ? getCardsByDeck(selectedDeckId) : [];
@@ -91,6 +107,7 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
   });
 
   const tagCards = tagFilter ? allCards.filter((c) => c.tags.includes(tagFilter)) : [];
+  const leechCards = useMemo(() => getLeechCards(allCards), [allCards]);
 
   /** 복습 대상(없으면 전체)에서 옵션대로 섞고 잘라 한 세션 분량을 만든다. */
   const buildSession = (): Card[] => {
@@ -104,6 +121,12 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
     setMode("flashcard");
   };
 
+  const startLeechSession = () => {
+    const ordered = shuffleOn ? shuffleArray(leechCards) : leechCards;
+    setSessionCards(sessionSize === "all" ? ordered : ordered.slice(0, sessionSize));
+    setMode("leech");
+  };
+
   const sessionCount =
     sessionSize === "all"
       ? dueCards.length > 0
@@ -111,12 +134,18 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
         : allCards.length
       : Math.min(sessionSize, dueCards.length > 0 ? dueCards.length : allCards.length);
 
-  if (mode === "flashcard" && selectedDeckId) {
+  if ((mode === "flashcard" || mode === "leech") && selectedDeckId) {
     return (
       <div>
         <button onClick={() => setMode("select")} className="mb-4 text-sm text-zinc-500">
           ← 돌아가기
         </button>
+        {mode === "leech" && (
+          <p className="mb-3 rounded-xl bg-amber-50 px-3.5 py-2.5 text-xs leading-relaxed text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
+            {LEECH_LAPSES}번 이상 틀린 카드만 모았다. 뜻을 외우려 하지 말고 예문이나 나만의 힌트를
+            붙여 두면 이 고리에서 빠져나오기 쉽다.
+          </p>
+        )}
         <FlashcardSession
           cards={sessionCards.length > 0 ? sessionCards : allCards}
           onRate={updateCard}
@@ -213,22 +242,45 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
             const due = getDueCards(cards).length;
 
             return (
-              <button
+              <div
                 key={deck.id}
-                onClick={() => setSelectedDeckId(deck.id)}
-                className="flex items-center gap-4 rounded-xl border border-zinc-200 p-5 text-left transition-colors hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-800/50"
+                className={cn(
+                  "flex items-center gap-2 rounded-xl border pr-2 transition-colors",
+                  deck.pinned
+                    ? "border-zinc-300 bg-zinc-50 dark:border-zinc-600 dark:bg-zinc-800/50"
+                    : "border-zinc-200 hover:border-zinc-300 dark:border-zinc-700"
+                )}
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800">
-                  <Layers className="h-5 w-5" style={{ color: accent }} />
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-semibold">{deck.title}</span>
-                  <span className="mt-1 block text-sm text-zinc-500">
-                    {cards.length}장 · 오늘 복습 {due}장
+                <button
+                  onClick={() => setSelectedDeckId(deck.id)}
+                  className="flex min-w-0 flex-1 items-center gap-4 p-5 text-left"
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800">
+                    <Layers className="h-5 w-5" style={{ color: accent }} />
                   </span>
-                </span>
-                <ChevronRight className="h-4 w-4 shrink-0 text-zinc-400" />
-              </button>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-semibold">{deck.title}</span>
+                    <span className="mt-1 block text-sm text-zinc-500">
+                      {cards.length}장 · 오늘 복습 {due}장
+                    </span>
+                  </span>
+                  <ChevronRight className="h-4 w-4 shrink-0 text-zinc-400" />
+                </button>
+                <button
+                  onClick={() => toggleDeckPinned(deck.id)}
+                  title={deck.pinned ? "고정 해제" : "맨 위에 고정"}
+                  aria-label={deck.pinned ? "고정 해제" : "맨 위에 고정"}
+                  aria-pressed={Boolean(deck.pinned)}
+                  className={cn(
+                    "shrink-0 rounded-lg p-2 transition-colors",
+                    deck.pinned
+                      ? "text-amber-500 hover:bg-amber-50 dark:hover:bg-amber-900/20"
+                      : "text-zinc-300 hover:bg-zinc-100 hover:text-zinc-500 dark:text-zinc-600 dark:hover:bg-zinc-800"
+                  )}
+                >
+                  <Pin className={cn("h-4 w-4", deck.pinned && "fill-current")} />
+                </button>
+              </div>
             );
           })}
         </div>
@@ -292,7 +344,7 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
             </button>
           ))}
           <button
-            onClick={() => setShuffleOn((v) => !v)}
+            onClick={() => setShuffleOn(!shuffleOn)}
             className={cn(
               "ml-1 flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium transition-colors",
               shuffleOn
@@ -322,6 +374,17 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
             퀴즈 모드
           </button>
         </div>
+
+        {/* 간격 반복만으로는 안 빠져나오는 카드들 — 따로 돌릴 수 있게 */}
+        {leechCards.length > 0 && (
+          <button
+            onClick={startLeechSession}
+            className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-amber-300 py-2.5 text-sm font-medium text-amber-700 hover:bg-amber-50 dark:border-amber-800 dark:text-amber-400 dark:hover:bg-amber-900/20"
+          >
+            <Repeat className="h-4 w-4" />
+            자주 틀린 {leechCards.length}장만 학습
+          </button>
+        )}
       </div>
 
       <div className="mt-6">
@@ -495,7 +558,9 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
                     </button>
                     <button
                       onClick={() => {
-                        if (confirm("이 카드를 삭제할까요?")) deleteCard(c.id);
+                        // confirm으로 한 번 더 묻는 것보다, 지우고 무를 수 있는 편이 빠르다.
+                        setDeleted({ card: c, index: allCards.findIndex((x) => x.id === c.id) });
+                        deleteCard(c.id);
                       }}
                       className="p-1 text-zinc-400 hover:text-red-500"
                       aria-label="삭제"
@@ -508,6 +573,27 @@ export function DeckStudyView({ subject, subjectLabel, tabs }: Props) {
             </div>
           ))}
         </div>
+
+        {deleted && (
+          <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-xs dark:border-zinc-700 dark:bg-zinc-800">
+            <span className="min-w-0 truncate text-zinc-500">
+              <span className="font-medium text-zinc-700 dark:text-zinc-200">
+                {deleted.card.front}
+              </span>
+              {" 삭제함"}
+            </span>
+            <button
+              onClick={() => {
+                restoreCard(deleted.card, deleted.index);
+                setDeleted(null);
+              }}
+              className="flex shrink-0 items-center gap-1 rounded-lg border border-zinc-200 px-2.5 py-1.5 font-medium hover:bg-zinc-50 dark:border-zinc-600 dark:hover:bg-zinc-700"
+            >
+              <Undo2 className="h-3.5 w-3.5" />
+              되돌리기
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

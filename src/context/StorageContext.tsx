@@ -22,6 +22,7 @@ import type {
   AppData,
   AppSettings,
   Card,
+  CardSRS,
   Deck,
   DictationEntry,
   ExamAttempt,
@@ -82,6 +83,17 @@ type StorageContextValue = {
   addCards: (cards: Omit<Card, "id" | "srs">[]) => void;
   updateCardContent: (cardId: string, patch: Partial<Card>) => void;
   deleteCard: (cardId: string) => void;
+  /** 지운 카드를 원래 자리에 되돌린다 */
+  restoreCard: (card: Card, index: number) => void;
+  /** 방금 매긴 평가를 무른다 (SRS·오답·학습로그 되돌리기) */
+  undoCardRating: (
+    cardId: string,
+    previous: CardSRS,
+    wasCorrect: boolean,
+    hadMistake: boolean
+  ) => void;
+  /** 덱을 목록 맨 위에 고정 */
+  toggleDeckPinned: (deckId: string) => void;
   resetAll: () => void;
   /** JSON 백업 문자열 생성 (다운로드용) */
   exportBackup: () => string;
@@ -756,6 +768,76 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     [persist]
   );
 
+  /** 지운 카드를 원래 자리에 되돌린다 (삭제 되돌리기용). */
+  const restoreCard = useCallback(
+    (card: Card, index: number) => {
+      persist((prev) => {
+        if (prev.cards.some((c) => c.id === card.id)) return prev;
+        const cards = [...prev.cards];
+        cards.splice(Math.min(Math.max(index, 0), cards.length), 0, card);
+        return { ...prev, cards };
+      });
+    },
+    [persist]
+  );
+
+  /**
+   * 평가 되돌리기 — 방금 매긴 평가 이전의 SRS 값으로 돌려놓는다.
+   *
+   * updateCard는 SRS·오답노트·학습로그·스트릭을 한꺼번에 건드리므로, 되돌릴 때도
+   * 같이 되돌린다. 스트릭은 손대지 않는다 — 오늘 이미 다른 카드도 공부했을 수 있고,
+   * 오답 하나 무르자고 연속 일수를 깎는 건 사용자가 기대하는 동작이 아니다.
+   */
+  const undoCardRating = useCallback(
+    (cardId: string, previous: CardSRS, wasCorrect: boolean, hadMistake: boolean) => {
+      persist((prev) => {
+        const card = prev.cards.find((c) => c.id === cardId);
+        if (!card) return prev;
+        const deck = prev.decks.find((d) => d.id === card.deckId);
+        const subjectId = deck?.subject ?? "unknown";
+
+        const cards = prev.cards.map((c) => (c.id === cardId ? { ...c, srs: previous } : c));
+
+        // 이 평가 때문에 새로 생긴 오답만 지운다. 원래 있던 오답은 그대로 둔다.
+        let mistakes = prev.mistakes;
+        if (!hadMistake) {
+          mistakes = mistakes.filter(
+            (m) => !(m.sourceType === "card" && m.sourceId === cardId && !m.resolved)
+          );
+        } else {
+          mistakes = mistakes.map((m) =>
+            m.sourceType === "card" && m.sourceId === cardId ? { ...m, resolved: false } : m
+          );
+        }
+
+        const today = todayString();
+        const studyLogs = prev.studyLogs.map((l) => {
+          if (l.date !== today || l.subjectId !== subjectId) return l;
+          return {
+            ...l,
+            count: Math.max(0, l.count - 1),
+            correct: Math.max(0, l.correct - (wasCorrect ? 1 : 0)),
+            wrong: Math.max(0, l.wrong - (wasCorrect ? 0 : 1)),
+          };
+        });
+
+        return { ...prev, cards, mistakes, studyLogs };
+      });
+    },
+    [persist]
+  );
+
+  /** 덱 고정 토글 — 지금 도는 덱을 목록 맨 위로. */
+  const toggleDeckPinned = useCallback(
+    (deckId: string) => {
+      persist((prev) => ({
+        ...prev,
+        decks: prev.decks.map((d) => (d.id === deckId ? { ...d, pinned: !d.pinned } : d)),
+      }));
+    },
+    [persist]
+  );
+
   const resetAll = useCallback(() => {
     resetData();
     setData(loadData());
@@ -1176,6 +1258,9 @@ export function StorageProvider({ children }: { children: ReactNode }) {
       addCards,
       updateCardContent,
       deleteCard,
+      restoreCard,
+      undoCardRating,
+      toggleDeckPinned,
       resetAll,
       resetLocalOnly,
       resetWithServerDelete,
@@ -1232,6 +1317,9 @@ export function StorageProvider({ children }: { children: ReactNode }) {
     addCards,
     updateCardContent,
     deleteCard,
+    restoreCard,
+    undoCardRating,
+    toggleDeckPinned,
     resetAll,
     resetLocalOnly,
     resetWithServerDelete,

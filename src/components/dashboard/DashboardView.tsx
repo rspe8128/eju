@@ -25,7 +25,7 @@ import {
   useWeekGoals,
   useUnresolvedMistakes,
 } from "@/context/StorageContext";
-import { daysUntil } from "@/lib/utils";
+import { daysUntil, todayString } from "@/lib/utils";
 import { getSubjectColor } from "@/lib/types";
 import { computePlan } from "@/lib/plan";
 import { resolveMockMistake } from "@/lib/mock/mistakeIds";
@@ -93,9 +93,23 @@ export function DashboardView() {
   const nearestDeadline = upcomingDeadlines[0];
 
   const recentMistakes = mistakes.slice(0, 5);
+  const today = todayString();
   const todayStudied = data.studyLogs
-    .filter((l) => l.date === new Date().toISOString().split("T")[0])
+    .filter((l) => l.date === today)
     .reduce((s, l) => s + l.count, 0);
+  /** 오늘 뽀모도로로 채운 시간 (약점 분석은 7일 합계라 오늘치는 여기서 따로 센다) */
+  const todayMinutes = data.focusSessions
+    .filter((s) => s.startedAt.slice(0, 10) === today)
+    .reduce((n, s) => n + s.minutes, 0);
+
+  /**
+   * 스트릭이 끊기기 직전인지.
+   * 어제까지 이어 왔는데 오늘 아직 기록이 없으면 알려 준다 — 앱을 켠 김에 한 장이라도
+   * 하면 이어지기 때문이다. 이미 끊긴 뒤(그저께가 마지막)라면 재촉하지 않는다.
+   */
+  const yesterday = todayString(new Date(Date.now() - 86400000));
+  const streakAtRisk =
+    data.streak > 0 && data.lastStudyDate === yesterday && todayStudied === 0;
 
   const todos = [
     {
@@ -145,6 +159,23 @@ export function DashboardView() {
           EJU가 뭔지 궁금하다면 →
         </Link>
       </div>
+
+      {streakAtRisk && (
+        <Link
+          href="/study/today"
+          className="flex items-start gap-3 rounded-xl border border-orange-300 bg-orange-50 p-4 transition-colors hover:bg-orange-100 dark:border-orange-800 dark:bg-orange-900/20 dark:hover:bg-orange-900/30"
+        >
+          <Flame className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-orange-900 dark:text-orange-200">
+              {data.streak}일 연속 · 오늘 아직 기록이 없다
+            </p>
+            <p className="mt-0.5 text-xs leading-relaxed text-orange-800/90 dark:text-orange-300/80">
+              오늘 안에 한 장이라도 하면 이어진다. 지금 시작하기 →
+            </p>
+          </div>
+        </Link>
+      )}
 
       {backupStale && (
         <Link
@@ -226,7 +257,7 @@ export function DashboardView() {
         <StatChip
           icon={<BookOpen className="h-4 w-4 text-blue-500" />}
           label="오늘 학습"
-          value={`${todayStudied}장`}
+          value={todayMinutes > 0 ? `${todayStudied}장 · ${todayMinutes}분` : `${todayStudied}장`}
           href="/stats"
         />
         <StatChip

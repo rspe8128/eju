@@ -33,6 +33,7 @@ import type { ProfileRow } from "@/lib/supabase/types";
 import { PomodoroTimer } from "./PomodoroTimer";
 import { CommandPalette } from "./CommandPalette";
 import { LayoutModePicker } from "./LayoutModePicker";
+import { ShortcutHelp } from "./ShortcutHelp";
 
 const SYNC_LABEL: Record<string, string> = {
   offline: "오프라인 대기",
@@ -205,7 +206,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   );
   const active = useMemo(() => findActiveNav(navSections, pathname), [navSections, pathname]);
   const isLoginPage = pathname === "/login";
-  const showAppChrome = Boolean(user) && !isLoginPage;
+  const showAppChrome = !isLoginPage; // TEMP-PREVIEW
   const isMobile = layout === "mobile";
 
   useEffect(() => {
@@ -376,6 +377,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return (
       <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
         <CommandPalette />
+        <ShortcutHelp />
 
         <header
           ref={headerRef}
@@ -491,6 +493,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
       <CommandPalette />
+      <ShortcutHelp />
 
       {sidebarOpen && (
         <aside className="fixed inset-y-0 left-0 z-40 flex w-64 flex-col border-r border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">

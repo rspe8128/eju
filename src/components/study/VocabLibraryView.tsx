@@ -22,6 +22,7 @@ import {
 import { StorageMeter } from "@/components/library/StorageMeter";
 import { ConfirmRemoveModal } from "@/components/library/ConfirmRemoveModal";
 import { FilterTabs } from "@/components/library/FilterTabs";
+import { ReviewForecast } from "@/components/study/ReviewForecast";
 
 function mb(bytes: number): string {
   return `${(bytes / 1024 / 1024).toFixed(2)}MB`;
@@ -185,6 +186,11 @@ export function VocabLibraryView() {
 
       <div className="mb-5">
         <StorageMeter />
+      </div>
+
+      {/* 한 권 더 담아도 되는지 여기서 판단할 수 있게 */}
+      <div className="mb-5">
+        <ReviewForecast days={10} />
       </div>
 
       <p className="mb-5 rounded-xl bg-blue-50 p-3.5 text-xs leading-relaxed text-blue-800 dark:bg-blue-900/20 dark:text-blue-300">

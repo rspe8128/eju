@@ -606,6 +606,32 @@ export function SettingsView() {
         <label className="mb-3 flex items-center gap-2 text-sm">
           <input
             type="checkbox"
+            checked={data.settings.autoSpeak ?? false}
+            onChange={(e) => updateSettings({ autoSpeak: e.target.checked })}
+          />
+          카드를 뒤집을 때 발음 자동 재생
+        </label>
+        <label className="mb-4 flex flex-col gap-1 text-sm">
+          <span>
+            발음 속도{" "}
+            <span className="text-zinc-400">×{(data.settings.speechRate ?? 1).toFixed(1)}</span>
+          </span>
+          <input
+            type="range"
+            min={0.5}
+            max={1.5}
+            step={0.1}
+            value={data.settings.speechRate ?? 1}
+            onChange={(e) => updateSettings({ speechRate: parseFloat(e.target.value) })}
+            className="w-56 max-w-full"
+          />
+          <span className="text-xs text-zinc-500">
+            딕테이션을 뺀 모든 발음 재생(플래시카드 · S 키)에 적용된다.
+          </span>
+        </label>
+        <label className="mb-3 flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
             checked={data.settings.excludeWeekends}
             onChange={(e) => updateSettings({ excludeWeekends: e.target.checked })}
           />

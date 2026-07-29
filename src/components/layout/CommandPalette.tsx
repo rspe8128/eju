@@ -17,14 +17,6 @@ const staticLinks = buildNavSections(true).flatMap((section) =>
       }))
 );
 
-const TERM_SUBJECTS = new Set(["math", "sogo", "physics", "chemistry", "biology"]);
-
-function deckHref(subject: string | undefined): string {
-  if (subject === "toefl") return "/study/toefl";
-  if (subject && TERM_SUBJECTS.has(subject)) return "/study/terms";
-  return "/study/japanese";
-}
-
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -68,7 +60,8 @@ export function CommandPalette() {
         const deck = data.decks.find((d) => d.id === card.deckId);
         items.push({
           label: `${card.front} — ${card.back}`,
-          href: deckHref(deck?.subject),
+          // 덱 화면이 아니라 그 카드로 바로 간다. 찾은 카드를 다시 찾을 일이 없게.
+          href: `/study/card/${card.id}`,
           sub: deck?.title ?? "카드",
         });
       }

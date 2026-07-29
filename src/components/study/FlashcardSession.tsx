@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useCallback, useState } from "react";
-import { Volume2, Lightbulb } from "lucide-react";
-import type { Card, SRSRating } from "@/lib/types";
+import { useEffect, useCallback, useRef, useState } from "react";
+import { Undo2, Volume2, Lightbulb } from "lucide-react";
+import type { Card, CardSRS, SRSRating } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useStorage } from "@/context/StorageContext";
 import { speak, useSpeechSupport } from "@/lib/speech";
@@ -24,9 +24,29 @@ type Props = {
   onComplete?: () => void;
 };
 
+const RATING_LABEL: Record<SRSRating, string> = {
+  1: "모름",
+  2: "헷갈림",
+  3: "기억함",
+};
+
+/** 방금 매긴 평가 — 되돌리기 한 번 분량만 들고 있는다. */
+type LastRating = {
+  card: Card;
+  rating: SRSRating;
+  /** 평가 직전의 SRS 값 */
+  previous: CardSRS;
+  /** 평가 전에 이미 미해결 오답이었는지 (되돌릴 때 원래 상태로 두기 위해) */
+  hadMistake: boolean;
+  /** 되돌아갈 큐 위치 */
+  index: number;
+};
+
 export function FlashcardSession({ cards, onRate, onComplete }: Props) {
-  const { data } = useStorage();
+  const { data, undoCardRating } = useStorage();
   const showReading = data.settings.showReading;
+  const autoSpeak = data.settings.autoSpeak ?? false;
+  const speechRate = data.settings.speechRate ?? 1;
 
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -36,7 +56,16 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
   const [done, setDone] = useState(false);
   const [startedAt] = useState(() => Date.now());
   const [hinted, setHinted] = useState(false);
+  const [lastRating, setLastRating] = useState<LastRating | null>(null);
   const speechSupported = useSpeechSupport();
+
+  /**
+   * 평가 직전 값을 읽으려면 화면에 그린 카드가 아니라 저장소의 최신 카드를 봐야 한다.
+   * queue는 세션 시작 시점의 스냅샷이라, 틀린 카드 다시 풀기에서 같은 카드를 두 번째로
+   * 평가하면 첫 평가 이전 값이 들어가 되돌리기가 어긋난다.
+   */
+  const liveRef = useRef(data);
+  liveRef.current = data;
 
   useEffect(() => {
     setQueue(cards);
@@ -46,14 +75,28 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
     setDone(false);
     setStats({ remembered: 0, shaky: 0, forgotten: 0 });
     setWrongIds([]);
+    setLastRating(null);
   }, [cards]);
 
   const card = queue[index];
 
+  /** 카드를 뒤집어 답을 볼 때 앞면을 읽어 준다 (설정에서 켠 경우). */
+  useEffect(() => {
+    if (!flipped || !autoSpeak || !card) return;
+    speak(card.front, { rate: speechRate });
+  }, [flipped, autoSpeak, card, speechRate]);
+
   const handleRate = useCallback(
     (rating: SRSRating) => {
       if (!card) return;
+      const live = liveRef.current;
+      const previous = live.cards.find((c) => c.id === card.id)?.srs ?? card.srs;
+      const hadMistake = live.mistakes.some(
+        (m) => m.sourceType === "card" && m.sourceId === card.id && !m.resolved
+      );
+
       onRate(card.id, rating);
+      setLastRating({ card, rating, previous, hadMistake, index });
       setStats((s) => ({
         remembered: s.remembered + (rating === 3 ? 1 : 0),
         shaky: s.shaky + (rating === 2 ? 1 : 0),
@@ -71,8 +114,38 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
     [card, index, queue.length, onRate]
   );
 
+  /** 방금 매긴 평가를 무르고 그 카드로 돌아간다. */
+  const undo = useCallback(() => {
+    if (!lastRating) return;
+    const { card: target, rating, previous, hadMistake, index: at } = lastRating;
+    undoCardRating(target.id, previous, rating >= 3, hadMistake);
+    setStats((s) => ({
+      remembered: s.remembered - (rating === 3 ? 1 : 0),
+      shaky: s.shaky - (rating === 2 ? 1 : 0),
+      forgotten: s.forgotten - (rating === 1 ? 1 : 0),
+    }));
+    if (rating <= 2) {
+      setWrongIds((ids) => {
+        const i = ids.lastIndexOf(target.id);
+        return i === -1 ? ids : [...ids.slice(0, i), ...ids.slice(i + 1)];
+      });
+    }
+    setDone(false);
+    setIndex(at);
+    setFlipped(true);
+    setHinted(false);
+    setLastRating(null);
+  }, [lastRating, undoCardRating]);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      // U / Ctrl+Z 는 카드가 끝난 뒤(요약 화면)에도 눌릴 수 있어야 한다.
+      const isUndo = e.key.toLowerCase() === "u" || ((e.ctrlKey || e.metaKey) && e.key === "z");
+      if (isUndo && lastRating) {
+        e.preventDefault();
+        undo();
+        return;
+      }
       if (!card || done) return;
       if (e.code === "Space") {
         e.preventDefault();
@@ -84,7 +157,7 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
       }
       if (e.key.toLowerCase() === "s") {
         e.preventDefault();
-        speak(card.front);
+        speak(card.front, { rate: speechRate });
       }
       if (flipped) {
         if (e.key === "1") handleRate(1);
@@ -94,29 +167,52 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [card, flipped, handleRate, done]);
+  }, [card, flipped, handleRate, done, lastRating, undo, speechRate]);
+
+  const undoBar = lastRating && (
+    <div className="mt-4 flex items-center justify-between gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-xs dark:border-zinc-700 dark:bg-zinc-800">
+      <span className="min-w-0 truncate text-zinc-500">
+        <span className="font-medium text-zinc-700 dark:text-zinc-200">
+          {lastRating.card.front}
+        </span>
+        {` · ${RATING_LABEL[lastRating.rating]}으로 평가함`}
+      </span>
+      <button
+        onClick={undo}
+        className="flex shrink-0 items-center gap-1 rounded-lg border border-zinc-200 px-2.5 py-1.5 font-medium hover:bg-zinc-50 dark:border-zinc-600 dark:hover:bg-zinc-700"
+      >
+        <Undo2 className="h-3.5 w-3.5" />
+        되돌리기
+      </button>
+    </div>
+  );
 
   if (done) {
     const total = stats.remembered + stats.shaky + stats.forgotten;
     return (
-      <SessionSummary
-        total={total}
-        remembered={stats.remembered}
-        shaky={stats.shaky}
-        forgotten={stats.forgotten}
-        correctRate={total ? Math.round((stats.remembered / total) * 100) : 0}
-        elapsedSec={Math.round((Date.now() - startedAt) / 1000)}
-        hasWrong={wrongIds.length > 0}
-        onRetryWrong={() => {
-          const retry = cards.filter((c) => wrongIds.includes(c.id));
-          setQueue(retry);
-          setIndex(0);
-          setWrongIds([]);
-          setStats({ remembered: 0, shaky: 0, forgotten: 0 });
-          setDone(false);
-        }}
-        onDone={() => onComplete?.()}
-      />
+      <div className="mx-auto max-w-lg">
+        <SessionSummary
+          total={total}
+          remembered={stats.remembered}
+          shaky={stats.shaky}
+          forgotten={stats.forgotten}
+          correctRate={total ? Math.round((stats.remembered / total) * 100) : 0}
+          elapsedSec={Math.round((Date.now() - startedAt) / 1000)}
+          hasWrong={wrongIds.length > 0}
+          onRetryWrong={() => {
+            const retry = cards.filter((c) => wrongIds.includes(c.id));
+            setQueue(retry);
+            setIndex(0);
+            setWrongIds([]);
+            setStats({ remembered: 0, shaky: 0, forgotten: 0 });
+            setLastRating(null);
+            setDone(false);
+          }}
+          onDone={() => onComplete?.()}
+        />
+        {/* 마지막 카드를 잘못 눌러 세션이 끝나 버린 경우가 가장 아쉬우므로 여기서도 무를 수 있게 */}
+        {undoBar}
+      </div>
     );
   }
 
@@ -137,7 +233,9 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
         <span>
           {index + 1} / {queue.length}
         </span>
-        <span className="hidden sm:inline">스페이스: 뒤집기 · H: 힌트 · S: 발음 · 1/2/3: 평가</span>
+        <span className="hidden sm:inline">
+          스페이스: 뒤집기 · H: 힌트 · S: 발음 · 1/2/3: 평가 · U: 되돌리기
+        </span>
       </div>
 
       <div className="mb-4 h-1 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
@@ -206,7 +304,7 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
         </button>
         {speechSupported && (
           <button
-            onClick={() => speak(card.front)}
+            onClick={() => speak(card.front, { rate: speechRate })}
             className="flex items-center gap-1.5 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400"
           >
             <Volume2 className="h-3.5 w-3.5" />
@@ -237,6 +335,8 @@ export function FlashcardSession({ cards, onRate, onComplete }: Props) {
           </button>
         </div>
       )}
+
+      {undoBar}
     </div>
   );
 }

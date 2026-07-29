@@ -5,6 +5,8 @@ export type Deck = {
   subject: "japanese" | "toefl" | string;
   title: string;
   type: DeckType;
+  /** 지금 도는 덱을 목록 맨 위로 올린다. 없으면 고정 안 함 */
+  pinned?: boolean;
 };
 
 export type CardSRS = {
@@ -228,6 +230,9 @@ export type DictationEntry = {
   createdAt: string;
 };
 
+/** 한 세션에 돌릴 카드 수. "all"은 대상 전체. */
+export type SessionSize = 20 | 50 | 100 | "all";
+
 export type AppSettings = {
   pomodoroWork: number;
   pomodoroBreak: number;
@@ -236,6 +241,18 @@ export type AppSettings = {
   planBufferDays: number;
   /** ISO 날짜(YYYY-MM-DD). 없으면 아직 한 번도 백업 안 한 것 */
   lastBackupAt?: string | null;
+  /**
+   * 아래는 전부 선택 항목이다. 예전 백업을 복원해도 없는 값은 DEFAULT_SETTINGS로
+   * 채워지므로 스키마 버전을 올릴 필요가 없다.
+   */
+  /** 덱 학습 화면의 세션 분량 — 들어갈 때마다 다시 고르지 않도록 기억한다 */
+  sessionSize?: SessionSize;
+  /** 세션 카드 섞기 */
+  sessionShuffle?: boolean;
+  /** 플래시카드를 뒤집을 때 앞면을 자동으로 읽어 준다 */
+  autoSpeak?: boolean;
+  /** 발음 속도 (0.5~1.5) */
+  speechRate?: number;
 };
 
 export type AppData = {
@@ -272,6 +289,10 @@ export const DEFAULT_SETTINGS: AppSettings = {
   showReading: true,
   excludeWeekends: true,
   planBufferDays: 7,
+  sessionSize: 20,
+  sessionShuffle: true,
+  autoSpeak: false,
+  speechRate: 1,
 };
 
 export const DEFAULT_EXAM_PROFILE: ExamProfile = {

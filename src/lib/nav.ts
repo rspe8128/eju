@@ -161,3 +161,12 @@ export function findActiveNav(
 
 /** 커맨드 팔레트를 여는 전역 이벤트(헤더 검색 버튼 ↔ CommandPalette). */
 export const OPEN_COMMAND_PALETTE = "eju:open-command-palette";
+
+const TERM_SUBJECTS = new Set(["math", "sogo", "physics", "chemistry", "biology"]);
+
+/** 덱의 과목이 어느 학습 화면에 속하는지. */
+export function deckStudyHref(subject: string | undefined): string {
+  if (subject === "toefl") return "/study/toefl";
+  if (subject && TERM_SUBJECTS.has(subject)) return "/study/terms";
+  return "/study/japanese";
+}

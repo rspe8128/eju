@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -10,8 +10,11 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { AlertTriangle, Clock, Target, TrendingUp } from "lucide-react";
+import { AlertTriangle, Clock, Repeat, Target, TrendingUp } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
+import { getLeechCards, LEECH_LAPSES } from "@/lib/srs";
+import { FlashcardSession } from "@/components/study/FlashcardSession";
+import { ReviewForecast } from "@/components/study/ReviewForecast";
 import {
   getDeckStats,
   getWeakCards,
@@ -36,12 +39,15 @@ function accuracyColor(acc: number | null): string {
 }
 
 export function StatsView() {
-  const { data } = useStorage();
+  const { data, updateCard } = useStorage();
+  const [leechMode, setLeechMode] = useState(false);
 
   const deckStats = useMemo(() => getDeckStats(data), [data]);
   const weakCards = useMemo(() => getWeakCards(data, 10), [data]);
   const daily = useMemo(() => getDailyStats(data, 14), [data]);
   const subjectStats = useMemo(() => getSubjectStats(data), [data]);
+  /** 전 덱을 통틀어 자주 틀린 카드. 목록에서 바로 학습으로 넘어갈 수 있게 한다. */
+  const leechCards = useMemo(() => getLeechCards(data.cards), [data.cards]);
   const focusMinutes = getFocusMinutes(data, 7);
   const totalStudied = getTotalStudied(data);
 
@@ -49,6 +55,24 @@ export function StatsView() {
     .filter((d) => d.accuracy !== null)
     .sort((a, b) => (a.accuracy ?? 100) - (b.accuracy ?? 100))
     .slice(0, 3);
+
+  if (leechMode && leechCards.length > 0) {
+    return (
+      <div>
+        <button onClick={() => setLeechMode(false)} className="mb-4 text-sm text-zinc-500">
+          ← 약점 분석
+        </button>
+        <p className="mb-3 rounded-xl bg-amber-50 px-3.5 py-2.5 text-xs leading-relaxed text-amber-800 dark:bg-amber-900/20 dark:text-amber-300">
+          {LEECH_LAPSES}번 이상 틀린 카드 {leechCards.length}장을 덱 구분 없이 모았다.
+        </p>
+        <FlashcardSession
+          cards={leechCards}
+          onRate={updateCard}
+          onComplete={() => setLeechMode(false)}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-8">
@@ -210,9 +234,22 @@ export function StatsView() {
         </div>
       </section>
 
+      <ReviewForecast />
+
       {/* 자주 틀리는 카드 */}
       <section>
-        <h2 className="mb-4 text-lg font-semibold">자주 틀리는 카드 TOP 10</h2>
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-semibold">자주 틀리는 카드 TOP 10</h2>
+          {leechCards.length > 0 && (
+            <button
+              onClick={() => setLeechMode(true)}
+              className="flex items-center gap-1.5 rounded-xl border border-amber-300 px-3 py-1.5 text-sm font-medium text-amber-700 hover:bg-amber-50 dark:border-amber-800 dark:text-amber-400 dark:hover:bg-amber-900/20"
+            >
+              <Repeat className="h-4 w-4" />
+              이 카드들만 학습 ({leechCards.length})
+            </button>
+          )}
+        </div>
         {weakCards.length === 0 ? (
           <p className="rounded-xl border border-dashed border-zinc-300 p-8 text-center text-sm text-zinc-500 dark:border-zinc-700">
             아직 오답 데이터가 없어요. 학습을 시작하면 여기에 쌓입니다.
