@@ -369,8 +369,8 @@ export function MockRunner({
         </div>
       </div>
 
-      {/* 하단 고정 바 */}
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-zinc-200 bg-white/95 px-4 py-3 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/95">
+      {/* 하단 고정 바 — 모바일 UI에서는 AppShell의 하단 탭 위에 앉는다 */}
+      <div className="fixed inset-x-0 bottom-[var(--bottom-nav-h)] z-30 border-t border-zinc-200 bg-white/95 px-4 py-3 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/95">
         <div className="mx-auto flex max-w-5xl items-center gap-2">
           <button
             onClick={() => go(-1)}

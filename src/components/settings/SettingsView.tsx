@@ -1,8 +1,17 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { AlertTriangle, Download, Plus, RotateCcw, ShieldAlert, Upload } from "lucide-react";
+import {
+  AlertTriangle,
+  Download,
+  MonitorSmartphone,
+  Plus,
+  RotateCcw,
+  ShieldAlert,
+  Upload,
+} from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
+import { LayoutModePicker } from "@/components/layout/LayoutModePicker";
 import type { ExamProfile, ScienceChoice } from "@/lib/types";
 import { SCIENCE_SUBJECTS } from "@/lib/eju";
 import { summarizeBackup, type BackupSummary } from "@/lib/storage";
@@ -217,6 +226,18 @@ export function SettingsView() {
           {message}
         </div>
       )}
+
+      <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
+        <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold">
+          <MonitorSmartphone className="h-5 w-5 text-zinc-400" />
+          화면 UI
+        </h2>
+        <p className="mb-4 text-sm text-zinc-500">
+          PC UI는 왼쪽에 메뉴가 항상 붙어 있고, 모바일 UI는 ☰ 메뉴와 하단 탭을 쓴다. 자동은 창
+          크기를 따라간다.
+        </p>
+        <LayoutModePicker />
+      </section>
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
         <h2 className="mb-2 text-lg font-semibold">데이터 요약</h2>

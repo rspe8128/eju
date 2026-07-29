@@ -5,6 +5,8 @@
 :root {
   --accent-japanese: #ef4444;
   --accent-toefl: #3b82f6;
+  /* 모바일 UI의 하단 탭 높이. AppShell이 UI 모드에 따라 덮어쓴다. */
+  --bottom-nav-h: 0px;
 }
 
 body {

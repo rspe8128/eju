@@ -115,6 +115,15 @@ export function buildNavSections(isAdmin: boolean): NavSection[] {
   ];
 }
 
+/** 모바일 하단 탭 — 가장 자주 열리는 5개만. 나머지는 ☰ 드로어에 있다. */
+export const mobileTabs: { href: string; label: string; icon: LucideIcon }[] = [
+  { href: "/", label: "홈", icon: Home },
+  { href: "/study/today", label: "오늘", icon: Sparkles },
+  { href: "/study/japanese", label: "일본어", icon: Languages },
+  { href: "/mock", label: "모의고사", icon: FileText },
+  { href: "/review", label: "오답", icon: RotateCcw },
+];
+
 export function isActiveHref(href: string, pathname: string): boolean {
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);

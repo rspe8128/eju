@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { AppShell } from "@/components/layout/AppShell";
 import { ServiceWorkerRegister } from "@/components/pwa/ServiceWorkerRegister";
+import { LayoutProvider } from "@/context/LayoutContext";
 import { StorageProvider } from "@/context/StorageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
@@ -25,10 +26,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <StorageProvider>
-            <AppShell>{children}</AppShell>
-            <ServiceWorkerRegister />
-          </StorageProvider>
+          <LayoutProvider>
+            <StorageProvider>
+              <AppShell>{children}</AppShell>
+              <ServiceWorkerRegister />
+            </StorageProvider>
+          </LayoutProvider>
         </ThemeProvider>
       </body>
     </html>
