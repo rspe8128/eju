@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 import {
   AlertTriangle,
   Download,
@@ -819,6 +820,16 @@ export function SettingsView() {
           </button>
         </div>
       </section>
+
+      <p className="pb-2 text-center text-xs text-zinc-400">
+        <Link href="/privacy" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
+          개인정보처리방침
+        </Link>
+        <span className="mx-1.5">·</span>
+        <Link href="/terms" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
+          이용약관
+        </Link>
+      </p>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 export function LoginView() {
@@ -65,6 +66,15 @@ export function LoginView() {
 
       <p className="text-center text-xs text-zinc-500">
         로그인 후에만 학습·성적·관리 기능을 사용할 수 있습니다.
+      </p>
+      <p className="text-center text-xs text-zinc-400">
+        <Link href="/privacy" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
+          개인정보처리방침
+        </Link>
+        <span className="mx-1.5">·</span>
+        <Link href="/terms" className="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-300">
+          이용약관
+        </Link>
       </p>
     </div>
   );
