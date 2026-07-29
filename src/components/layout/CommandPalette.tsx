@@ -4,29 +4,18 @@ import { useEffect, useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useStorage } from "@/context/StorageContext";
+import { buildNavSections, OPEN_COMMAND_PALETTE } from "@/lib/nav";
 
-const staticLinks = [
-  { label: "대시보드", href: "/" },
-  { label: "EJU 가이드", href: "/guide" },
-  { label: "오늘의 학습", href: "/study/today" },
-  { label: "일본어", href: "/study/japanese" },
-  { label: "단어장 보관함", href: "/study/library" },
-  { label: "학습 모듈 보관함", href: "/study/modules" },
-  { label: "과목 용어", href: "/study/terms" },
-  { label: "TOEFL", href: "/study/toefl" },
-  { label: "모의고사", href: "/mock" },
-  { label: "약점 분석", href: "/stats" },
-  { label: "교과목", href: "/study/subjects" },
-  { label: "학습 플랜", href: "/plan" },
-  { label: "성적", href: "/scores" },
-  { label: "기술(작문)", href: "/writing" },
-  { label: "딕테이션", href: "/dictation" },
-  { label: "오답노트", href: "/review" },
-  { label: "일정", href: "/schedule" },
-  { label: "설정", href: "/settings" },
-  { label: "프로필", href: "/profile" },
-  { label: "계정 관리", href: "/admin" },
-];
+/** 사이드 메뉴와 같은 위계를 그대로 쓴다(라벨/그룹이 두 곳에서 갈라지지 않도록). */
+const staticLinks = buildNavSections(true).flatMap((section) =>
+  section.kind === "link"
+    ? [{ label: section.label, href: section.href, group: "" }]
+    : section.items.map((item) => ({
+        label: item.label,
+        href: item.href,
+        group: section.label,
+      }))
+);
 
 const TERM_SUBJECTS = new Set(["math", "sogo", "physics", "chemistry", "biology"]);
 
@@ -50,8 +39,13 @@ export function CommandPalette() {
       }
       if (e.key === "Escape") setOpen(false);
     };
+    const onOpen = () => setOpen(true);
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    window.addEventListener(OPEN_COMMAND_PALETTE, onOpen);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener(OPEN_COMMAND_PALETTE, onOpen);
+    };
   }, []);
 
   const results = useMemo(() => {
@@ -59,8 +53,8 @@ export function CommandPalette() {
     const items: { label: string; href: string; sub?: string }[] = [];
 
     for (const link of staticLinks) {
-      if (!q || link.label.toLowerCase().includes(q)) {
-        items.push({ label: link.label, href: link.href, sub: "페이지" });
+      if (!q || link.label.toLowerCase().includes(q) || link.group.toLowerCase().includes(q)) {
+        items.push({ label: link.label, href: link.href, sub: link.group || "페이지" });
       }
     }
 

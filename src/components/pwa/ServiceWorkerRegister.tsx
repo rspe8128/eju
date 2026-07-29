@@ -81,8 +81,8 @@ export function ServiceWorkerRegister() {
   if (!waiting && (online || !offlineNoticeOpen)) return null;
 
   return (
-    // 모바일에서는 하단 탭(약 3.5rem) 위에 띄운다. 두 배너가 같이 뜨면 세로로 쌓인다.
-    <div className="fixed inset-x-3 bottom-20 z-50 mx-auto flex max-w-md flex-col gap-2 lg:bottom-6">
+    // 두 배너가 같이 뜨면 세로로 쌓인다.
+    <div className="fixed inset-x-3 bottom-6 z-50 mx-auto flex max-w-md flex-col gap-2">
       {waiting && (
         <div className="rounded-xl border border-blue-300 bg-white p-3 shadow-lg dark:border-blue-800 dark:bg-zinc-900">
           <div className="flex items-center gap-3">
