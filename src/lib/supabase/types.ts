@@ -122,6 +122,10 @@ export type Database = {
         };
         Returns: undefined;
       };
+      self_delete_account: {
+        Args: Record<string, never>;
+        Returns: undefined;
+      };
       admin_list_errors: {
         Args: {
           limit_count?: number;

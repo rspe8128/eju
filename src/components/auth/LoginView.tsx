@@ -9,6 +9,7 @@ export function LoginView() {
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
   const [agreed, setAgreed] = useState(false);
   const [error, setError] = useState("");
+  const [info, setInfo] = useState("");
   const [busy, setBusy] = useState(false);
 
   const unavailable = !supabase;
@@ -17,6 +18,9 @@ export function LoginView() {
     const params = new URLSearchParams(window.location.search);
     if (params.get("error") === "auth_callback_failed") {
       setError("로그인 처리 중 문제가 발생했습니다. 다시 시도해 주세요.");
+    } else if (params.get("deleted") === "1") {
+      setError("");
+      setInfo("계정이 삭제되었습니다.");
     }
   }, []);
 
@@ -24,6 +28,7 @@ export function LoginView() {
     if (!supabase || !agreed) return;
     setBusy(true);
     setError("");
+    setInfo("");
     try {
       markTermsPending();
       const redirectTo = `${window.location.origin}/auth/callback?next=/profile`;
@@ -107,6 +112,7 @@ export function LoginView() {
             Supabase 환경변수가 없어 로그인할 수 없습니다.
           </div>
         )}
+        {info && <p className="mt-4 text-sm text-green-600 dark:text-green-400">{info}</p>}
         {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
       </div>
 

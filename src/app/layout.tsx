@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "EJU Study - 일본 유학 준비",
   description: "EJU·JLPT·TOEFL 학습, 플랜, 성적, 작문 연습",
   manifest: "/manifest.json",
+  // 애플은 manifest.json의 icons를 안 읽는다 — 홈 화면 아이콘은 이 링크로만 잡는다.
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: "/apple-icon-180.png",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

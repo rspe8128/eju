@@ -9,6 +9,7 @@ import {
   Plus,
   RotateCcw,
   ShieldAlert,
+  Trash2,
   Upload,
 } from "lucide-react";
 import { useStorage } from "@/context/StorageContext";
@@ -17,6 +18,7 @@ import type { ExamProfile, ScienceChoice } from "@/lib/types";
 import { SCIENCE_SUBJECTS } from "@/lib/eju";
 import { summarizeBackup, type BackupSummary } from "@/lib/storage";
 import { todayString } from "@/lib/utils";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 function parseDelimited(text: string) {
   const lines = text.trim().split(/\r?\n/).filter(Boolean);
@@ -77,6 +79,10 @@ export function SettingsView() {
    */
   const [resetOpen, setResetOpen] = useState(false);
   const [resetConfirmText, setResetConfirmText] = useState("");
+  const [deleteOpen, setDeleteOpen] = useState(false);
+  const [deleteConfirmText, setDeleteConfirmText] = useState("");
+  const [deleteBusy, setDeleteBusy] = useState(false);
+  const [deleteError, setDeleteError] = useState("");
 
   /** 복원 대기 중인 파일. 확인을 받기 전에는 절대 덮어쓰지 않는다. */
   const [pending, setPending] = useState<{ json: string; summary: BackupSummary } | null>(null);
@@ -479,6 +485,109 @@ export function SettingsView() {
           </div>
         )}
       </section>
+
+      {/* ── 회원 탈퇴 ───────────────────────────────────────────
+          전체 초기화와 달리 로그인 자격 자체를 지운다. 로그인된 경우만 표시. */}
+      {syncInfo.loggedIn && (
+        <section className="rounded-xl border border-red-300 p-6 dark:border-red-900">
+          <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold text-red-600 dark:text-red-400">
+            <Trash2 className="h-5 w-5" />
+            회원 탈퇴
+          </h2>
+          <p className="mb-4 text-sm leading-relaxed text-zinc-500">
+            위의 &quot;전체 초기화&quot;는 이 기기의 학습 기록만 지우고 계정은 남긴다. 회원 탈퇴는
+            Google 로그인 자격과 서버에 저장된 계정 데이터까지 완전히 삭제한다.
+            <b className="text-red-600 dark:text-red-400"> 되돌릴 수 없다.</b>
+          </p>
+
+          {!deleteOpen ? (
+            <button
+              onClick={() => {
+                setDeleteOpen(true);
+                setDeleteConfirmText("");
+                setDeleteError("");
+              }}
+              className="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
+            >
+              회원 탈퇴…
+            </button>
+          ) : (
+            <div className="rounded-xl border border-red-300 bg-red-50 p-4 dark:border-red-800 dark:bg-red-900/20">
+              <p className="mb-3 flex items-start gap-2 text-sm font-medium text-red-700 dark:text-red-300">
+                <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+                탈퇴하면 로그인 자격과 계정에 연결된 모든 서버 데이터(프로필, 학습 동기화
+                기록)가 완전히 삭제되고, 다시 같은 Google 계정으로 로그인해도 새 계정으로
+                취급됩니다. 되돌릴 수 없습니다.
+              </p>
+
+              <label className="mb-1.5 block text-xs text-zinc-600 dark:text-zinc-400">
+                계속하려면 <b>탈퇴</b> 라고 입력하세요
+              </label>
+              <input
+                value={deleteConfirmText}
+                onChange={(e) => setDeleteConfirmText(e.target.value)}
+                placeholder="탈퇴"
+                className="mb-3 w-full max-w-xs rounded-lg border border-red-300 px-3 py-2 text-sm dark:border-red-800 dark:bg-zinc-800"
+              />
+
+              {deleteError && (
+                <p className="mb-3 text-sm text-red-700 dark:text-red-300">{deleteError}</p>
+              )}
+
+              <div className="flex flex-wrap gap-2">
+                <button
+                  disabled={deleteConfirmText.trim() !== "탈퇴" || deleteBusy}
+                  onClick={() => {
+                    void (async () => {
+                      const supabase = getSupabaseBrowserClient();
+                      if (!supabase) {
+                        setDeleteError("Supabase가 연결되어 있지 않습니다.");
+                        return;
+                      }
+                      setDeleteBusy(true);
+                      setDeleteError("");
+                      try {
+                        const { error } = await supabase.rpc("self_delete_account");
+                        if (error) throw error;
+                        resetLocalOnly();
+                        await supabase.auth.signOut();
+                        window.location.href = "/login?deleted=1";
+                      } catch (e) {
+                        setDeleteError(
+                          e instanceof Error ? e.message : "회원 탈퇴에 실패했습니다."
+                        );
+                        setDeleteBusy(false);
+                      }
+                    })();
+                  }}
+                  className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  {deleteBusy ? "탈퇴 처리 중..." : "계정 영구 삭제"}
+                </button>
+                <button
+                  disabled={deleteBusy}
+                  onClick={() => {
+                    setDeleteOpen(false);
+                    setDeleteConfirmText("");
+                    setDeleteError("");
+                  }}
+                  className="rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700"
+                >
+                  취소
+                </button>
+                <button
+                  disabled={deleteBusy}
+                  onClick={handleExport}
+                  className="flex items-center gap-1.5 rounded-lg border border-zinc-200 px-4 py-2 text-sm dark:border-zinc-700"
+                >
+                  <Download className="h-4 w-4" />
+                  먼저 지금 데이터 백업
+                </button>
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
         <h2 className="mb-2 text-lg font-semibold">동기화 상태</h2>
