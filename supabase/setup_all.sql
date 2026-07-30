@@ -342,3 +342,85 @@ grant execute on function public.admin_delete_user(uuid) to authenticated;
 
 alter table public.profiles
   add column if not exists terms_agreed_at timestamptz;
+
+-- ── Phase 5: error logging ──────────────────────────────────────
+
+create table if not exists public.error_logs (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users(id) on delete set null,
+  message text not null,
+  stack text,
+  path text,
+  context text not null,
+  user_agent text,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists error_logs_created_at_idx on public.error_logs (created_at desc);
+
+alter table public.error_logs enable row level security;
+
+drop policy if exists "error_logs_insert_any" on public.error_logs;
+create policy "error_logs_insert_any"
+  on public.error_logs
+  for insert
+  to anon, authenticated
+  with check (true);
+
+create or replace function public.admin_list_errors(limit_count int default 200)
+returns table (
+  id uuid,
+  user_email text,
+  message text,
+  stack text,
+  path text,
+  context text,
+  user_agent text,
+  created_at timestamptz
+)
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'not authorized';
+  end if;
+
+  return query
+  select
+    e.id,
+    u.email::text,
+    e.message,
+    e.stack,
+    e.path,
+    e.context,
+    e.user_agent,
+    e.created_at
+  from public.error_logs e
+  left join auth.users u on u.id = e.user_id
+  order by e.created_at desc
+  limit greatest(1, least(limit_count, 500));
+end;
+$$;
+
+revoke all on function public.admin_list_errors(int) from public;
+grant execute on function public.admin_list_errors(int) to authenticated;
+
+create or replace function public.admin_clear_errors()
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'not authorized';
+  end if;
+
+  delete from public.error_logs;
+end;
+$$;
+
+revoke all on function public.admin_clear_errors() from public;
+grant execute on function public.admin_clear_errors() to authenticated;

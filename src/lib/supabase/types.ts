@@ -64,6 +64,30 @@ export type Database = {
         };
         Relationships: [];
       };
+      error_logs: {
+        Row: {
+          id: string;
+          user_id: string | null;
+          message: string;
+          stack: string | null;
+          path: string | null;
+          context: string;
+          user_agent: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id?: string | null;
+          message: string;
+          stack?: string | null;
+          path?: string | null;
+          context: string;
+          user_agent?: string | null;
+          created_at?: string;
+        };
+        Update: never;
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: {
@@ -98,6 +122,25 @@ export type Database = {
         };
         Returns: undefined;
       };
+      admin_list_errors: {
+        Args: {
+          limit_count?: number;
+        };
+        Returns: {
+          id: string;
+          user_email: string | null;
+          message: string;
+          stack: string | null;
+          path: string | null;
+          context: string;
+          user_agent: string | null;
+          created_at: string;
+        }[];
+      };
+      admin_clear_errors: {
+        Args: Record<string, never>;
+        Returns: undefined;
+      };
     };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
@@ -107,3 +150,6 @@ export type Database = {
 export type ProfileRow = Database["public"]["Tables"]["profiles"]["Row"];
 
 export type AdminUserRow = Database["public"]["Functions"]["admin_list_users"]["Returns"][number];
+
+export type AdminErrorRow =
+  Database["public"]["Functions"]["admin_list_errors"]["Returns"][number];

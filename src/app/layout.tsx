@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { AppShell } from "@/components/layout/AppShell";
+import { ErrorReporter } from "@/components/layout/ErrorReporter";
 import { ServiceWorkerRegister } from "@/components/pwa/ServiceWorkerRegister";
 import { LayoutProvider } from "@/context/LayoutContext";
 import { StorageProvider } from "@/context/StorageContext";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <StorageProvider>
               <AppShell>{children}</AppShell>
               <ServiceWorkerRegister />
+              <ErrorReporter />
             </StorageProvider>
           </LayoutProvider>
         </ThemeProvider>
