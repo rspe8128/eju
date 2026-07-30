@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { markTermsPending } from "@/lib/supabase/termsConsent";
@@ -13,14 +13,20 @@ export function LoginView() {
 
   const unavailable = !supabase;
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("error") === "auth_callback_failed") {
+      setError("로그인 처리 중 문제가 발생했습니다. 다시 시도해 주세요.");
+    }
+  }, []);
+
   const onGoogleLogin = async () => {
     if (!supabase || !agreed) return;
     setBusy(true);
     setError("");
     try {
       markTermsPending();
-      // Supabase Redirect URL에 등록된 경로로만 보낸다 (/profile)
-      const redirectTo = `${window.location.origin}/profile`;
+      const redirectTo = `${window.location.origin}/auth/callback?next=/profile`;
       const { error: oauthError } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
