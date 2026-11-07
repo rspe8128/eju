@@ -88,6 +88,23 @@ export type Database = {
         Update: never;
         Relationships: [];
       };
+      token_balances: {
+        Row: {
+          user_id: string;
+          balance: number;
+          updated_at: string;
+        };
+        Insert: {
+          user_id: string;
+          balance?: number;
+          updated_at?: string;
+        };
+        Update: {
+          balance?: number;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: {
@@ -107,6 +124,7 @@ export type Database = {
           target_major: string | null;
           created_at: string;
           last_sign_in_at: string | null;
+          token_balance: number;
         }[];
       };
       admin_set_role: {
@@ -145,6 +163,19 @@ export type Database = {
         Args: Record<string, never>;
         Returns: undefined;
       };
+      spend_tokens: {
+        Args: {
+          p_action: "grade_writing" | "translate";
+        };
+        Returns: number;
+      };
+      admin_grant_tokens: {
+        Args: {
+          target_id: string;
+          amount: number;
+        };
+        Returns: number;
+      };
     };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
@@ -152,6 +183,8 @@ export type Database = {
 };
 
 export type ProfileRow = Database["public"]["Tables"]["profiles"]["Row"];
+
+export type TokenBalanceRow = Database["public"]["Tables"]["token_balances"]["Row"];
 
 export type AdminUserRow = Database["public"]["Functions"]["admin_list_users"]["Returns"][number];
 

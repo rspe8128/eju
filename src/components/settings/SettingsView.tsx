@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
   AlertTriangle,
+  Coins,
   Download,
   MonitorSmartphone,
   Plus,
@@ -83,6 +84,34 @@ export function SettingsView() {
   const [deleteConfirmText, setDeleteConfirmText] = useState("");
   const [deleteBusy, setDeleteBusy] = useState(false);
   const [deleteError, setDeleteError] = useState("");
+
+  /** 채점·번역이 쓰는 토큰 잔액. 로그인 계정에만 있는 값이라 서버에서 따로 받아온다. */
+  const [tokenBalance, setTokenBalance] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!syncInfo.loggedIn) {
+      setTokenBalance(null);
+      return;
+    }
+    const supabase = getSupabaseBrowserClient();
+    if (!supabase) return;
+    let cancelled = false;
+    (async () => {
+      const { data: authData } = await supabase.auth.getUser();
+      if (!authData.user) return;
+      const { data: row, error: balanceError } = await supabase
+        .from("token_balances")
+        .select("balance")
+        .eq("user_id", authData.user.id)
+        .maybeSingle();
+      // 에러(예: 마이그레이션 전이라 테이블이 없음)면 0이 아니라 물음표로 — "0개 남음"은
+      // "다 썼다"는 뜻인데, 실제로는 "아직 안 만들어졌다"는 전혀 다른 상태다.
+      if (!cancelled) setTokenBalance(balanceError ? null : (row?.balance ?? 0));
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [syncInfo.loggedIn]);
 
   /** 복원 대기 중인 파일. 확인을 받기 전에는 절대 덮어쓰지 않는다. */
   const [pending, setPending] = useState<{ json: string; summary: BackupSummary } | null>(null);
@@ -255,6 +284,25 @@ export function SettingsView() {
           <p>덱: {data.decks.length}</p>
         </div>
       </section>
+
+      {/* AI 채점·번역은 실비가 드는 기능이라 계정마다 토큰을 두고 깎는다.
+          로그인 안 했으면 애초에 이 기능들을 쓸 수 없으니 표시하지 않는다. */}
+      {syncInfo.loggedIn && (
+        <section className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-700">
+          <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold">
+            <Coins className="h-5 w-5 text-amber-500" />
+            AI 사용 토큰
+          </h2>
+          <p className="mb-3 text-sm leading-relaxed text-zinc-500">
+            작문(記述) AI 채점은 5토큰, 번역은 1토큰씩 쓴다. 다 쓰면 관리자에게 충전을
+            요청하면 된다.
+          </p>
+          <p className="text-2xl font-bold">
+            {tokenBalance === null ? "…" : tokenBalance.toLocaleString()}
+            <span className="ml-1 text-sm font-normal text-zinc-400">토큰 남음</span>
+          </p>
+        </section>
+      )}
 
       <section className="rounded-xl border border-amber-300 p-6 dark:border-amber-800">
         <h2 className="mb-1 flex items-center gap-2 text-lg font-semibold">

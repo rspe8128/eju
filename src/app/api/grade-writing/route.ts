@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { WRITING_RUBRIC, RUBRIC_MAX, MIN_CHARS, MAX_CHARS } from "@/lib/writing/rubric";
+import { spendToken } from "@/lib/supabase/spendToken";
 
 /**
  * 記述(작문) AI 채점 — OpenRouter 경유.
@@ -171,6 +172,12 @@ export async function POST(req: Request) {
       { error: "답안이 너무 깁니다. 記述는 500자 이내입니다." },
       { status: 400 }
     );
+  }
+
+  // 실제 호출(비용 발생) 직전에만 토큰을 깎는다 — 잘못된 요청까지 깎이지 않게.
+  const spend = await spendToken("grade_writing");
+  if (!spend.ok) {
+    return NextResponse.json({ error: spend.error }, { status: spend.status });
   }
 
   const model = process.env.OPENROUTER_MODEL?.trim() || DEFAULT_MODEL;

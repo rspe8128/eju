@@ -454,3 +454,189 @@ $$;
 
 revoke all on function public.self_delete_account() from public;
 grant execute on function public.self_delete_account() to authenticated;
+
+-- ── Phase 7: token system ────────────────────────────────────────
+
+create table if not exists public.token_balances (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  balance int not null default 0,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.token_balances enable row level security;
+
+drop policy if exists "token_balances_select_own" on public.token_balances;
+create policy "token_balances_select_own"
+  on public.token_balances
+  for select
+  to authenticated
+  using (auth.uid() = user_id);
+
+create table if not exists public.token_ledger (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  delta int not null,
+  reason text not null,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists token_ledger_user_id_idx on public.token_ledger (user_id, created_at desc);
+
+alter table public.token_ledger enable row level security;
+
+create or replace function public.grant_initial_tokens()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  insert into public.token_balances (user_id, balance)
+  values (new.id, 50)
+  on conflict (user_id) do nothing;
+
+  insert into public.token_ledger (user_id, delta, reason)
+  values (new.id, 50, 'grant_initial');
+
+  return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created_grant_tokens on auth.users;
+create trigger on_auth_user_created_grant_tokens
+  after insert on auth.users
+  for each row execute function public.grant_initial_tokens();
+
+create or replace function public.spend_tokens(p_action text)
+returns int
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  cost int;
+  new_balance int;
+begin
+  cost := case p_action
+    when 'grade_writing' then 5
+    when 'translate' then 1
+    else null
+  end;
+
+  if cost is null then
+    raise exception 'unknown action: %', p_action;
+  end if;
+
+  if public.is_admin() then
+    return 999999;
+  end if;
+
+  update public.token_balances
+  set balance = balance - cost, updated_at = now()
+  where user_id = auth.uid() and balance >= cost
+  returning balance into new_balance;
+
+  if new_balance is null then
+    raise exception 'insufficient_tokens';
+  end if;
+
+  insert into public.token_ledger (user_id, delta, reason)
+  values (auth.uid(), -cost, p_action);
+
+  return new_balance;
+end;
+$$;
+
+revoke all on function public.spend_tokens(text) from public;
+grant execute on function public.spend_tokens(text) to authenticated;
+
+create or replace function public.admin_grant_tokens(target_id uuid, amount int)
+returns int
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  new_balance int;
+begin
+  if not public.is_admin() then
+    raise exception 'not authorized';
+  end if;
+
+  if amount = 0 then
+    raise exception 'amount must not be zero';
+  end if;
+
+  insert into public.token_balances (user_id, balance)
+  values (target_id, greatest(0, amount))
+  on conflict (user_id) do update
+    set balance = greatest(0, public.token_balances.balance + amount),
+        updated_at = now()
+  returning balance into new_balance;
+
+  insert into public.token_ledger (user_id, delta, reason)
+  values (target_id, amount, 'grant_admin');
+
+  return new_balance;
+end;
+$$;
+
+revoke all on function public.admin_grant_tokens(uuid, int) from public;
+grant execute on function public.admin_grant_tokens(uuid, int) to authenticated;
+
+drop function if exists public.admin_list_users();
+
+create or replace function public.admin_list_users()
+returns table (
+  id uuid,
+  email text,
+  display_name text,
+  avatar_url text,
+  role text,
+  target_university text,
+  target_major text,
+  created_at timestamptz,
+  last_sign_in_at timestamptz,
+  token_balance int
+)
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'not authorized';
+  end if;
+
+  return query
+  select
+    p.id,
+    coalesce(p.email, u.email)::text,
+    p.display_name,
+    p.avatar_url,
+    p.role,
+    p.target_university,
+    p.target_major,
+    p.created_at,
+    u.last_sign_in_at,
+    coalesce(tb.balance, 0)
+  from public.profiles p
+  join auth.users u on u.id = p.id
+  left join public.token_balances tb on tb.user_id = p.id
+  order by p.created_at desc;
+end;
+$$;
+
+revoke all on function public.admin_list_users() from public;
+grant execute on function public.admin_list_users() to authenticated;
+
+insert into public.token_balances (user_id, balance)
+select id, 50 from auth.users
+on conflict (user_id) do nothing;
+
+insert into public.token_ledger (user_id, delta, reason)
+select u.id, 50, 'grant_initial_backfill'
+from auth.users u
+where not exists (
+  select 1 from public.token_ledger l where l.user_id = u.id
+);

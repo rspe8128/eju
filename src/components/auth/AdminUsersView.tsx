@@ -89,6 +89,36 @@ export function AdminUsersView() {
     }
   };
 
+  const grantTokens = async (targetId: string, email: string | null, currentBalance: number) => {
+    if (!supabase) return;
+    const raw = window.prompt(
+      `${email ?? targetId}에게 지급할 토큰 수를 입력하세요 (현재 ${currentBalance}개). 차감하려면 음수를 넣으세요.`,
+      "50"
+    );
+    if (raw === null) return;
+    const amount = parseInt(raw.trim(), 10);
+    if (!Number.isFinite(amount) || amount === 0) {
+      setError("숫자를 입력해야 합니다 (0은 안 됨).");
+      return;
+    }
+    setBusyId(targetId);
+    setError("");
+    setMessage("");
+    try {
+      const { data: newBalance, error: rpcError } = await supabase.rpc("admin_grant_tokens", {
+        target_id: targetId,
+        amount,
+      });
+      if (rpcError) throw rpcError;
+      setMessage(`토큰을 조정했습니다. 잔액: ${newBalance}개`);
+      await load();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "토큰 지급에 실패했습니다.");
+    } finally {
+      setBusyId(null);
+    }
+  };
+
   const deleteUser = async (targetId: string, email: string | null) => {
     if (!supabase) return;
     const ok = window.confirm(
@@ -169,6 +199,7 @@ export function AdminUsersView() {
               <th className="px-4 py-3 font-medium">이메일</th>
               <th className="px-4 py-3 font-medium">이름</th>
               <th className="px-4 py-3 font-medium">역할</th>
+              <th className="px-4 py-3 font-medium">토큰</th>
               <th className="px-4 py-3 font-medium">가입</th>
               <th className="px-4 py-3 font-medium">최근 로그인</th>
               <th className="px-4 py-3 font-medium">관리</th>
@@ -177,7 +208,7 @@ export function AdminUsersView() {
           <tbody>
             {users.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-4 py-8 text-center text-zinc-500">
+                <td colSpan={7} className="px-4 py-8 text-center text-zinc-500">
                   등록된 계정이 없습니다.
                 </td>
               </tr>
@@ -208,6 +239,7 @@ export function AdminUsersView() {
                       </span>
                       {isSelf && <span className="ml-2 text-xs text-zinc-400">나</span>}
                     </td>
+                    <td className="px-4 py-3 whitespace-nowrap">{row.token_balance.toLocaleString()}</td>
                     <td className="px-4 py-3 whitespace-nowrap text-xs text-zinc-500">
                       {formatDate(row.created_at)}
                     </td>
@@ -233,6 +265,13 @@ export function AdminUsersView() {
                             관리자 지정
                           </button>
                         )}
+                        <button
+                          disabled={busy}
+                          onClick={() => void grantTokens(row.id, row.email, row.token_balance)}
+                          className="rounded-md border border-zinc-200 px-2 py-1 text-xs hover:bg-zinc-50 disabled:opacity-50 dark:border-zinc-600 dark:hover:bg-zinc-700"
+                        >
+                          토큰 충전
+                        </button>
                         {!isSelf && (
                           <button
                             disabled={busy}

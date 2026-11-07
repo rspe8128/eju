@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { spendToken } from "@/lib/supabase/spendToken";
 
 /**
  * DeepL 번역 프록시.
@@ -149,6 +150,18 @@ export async function POST(req: Request) {
     const indexed = inputs.map((t, i) => ({ t, i })).filter((x) => x.t.trim().length > 0);
     const result = new Array<string>(inputs.length).fill("");
 
+    // 보낼 게 하나도 없으면(전부 빈 문자열) 토큰을 쓰지 않는다.
+    if (indexed.length === 0) {
+      return NextResponse.json({ texts: result });
+    }
+
+    // 클라이언트가 캐시에 없는 것만 걸러서 보내므로, 여기 도달했다는 건 실제로
+    // DeepL을 부른다는 뜻이다 — 그 직전에만 토큰을 깎는다.
+    const spend = await spendToken("translate");
+    if (!spend.ok) {
+      return NextResponse.json({ error: spend.error }, { status: spend.status });
+    }
+
     try {
       for (const group of batches(indexed, MAX_TEXTS_PER_CALL)) {
         const r = await callDeepL(
@@ -187,6 +200,11 @@ export async function POST(req: Request) {
       { error: "한 번에 번역할 수 있는 길이를 넘었습니다. 지문을 나눠서 넣어주세요." },
       { status: 400 }
     );
+  }
+
+  const spend = await spendToken("translate");
+  if (!spend.ok) {
+    return NextResponse.json({ error: spend.error }, { status: spend.status });
   }
 
   try {
